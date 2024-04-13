@@ -1,3 +1,3 @@
-# Data Structures and Algorithms
+# CS124 Data Structures and Algorithms
 
 #### anusha-murali.github.io
