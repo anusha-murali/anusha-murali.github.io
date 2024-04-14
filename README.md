@@ -14,6 +14,8 @@ For $k=23$, this probability crosses over 49.3%. So, if there are at least 23 pe
 
 $`\sqrt{3x-1}+(1+x)^2`$
 
+$`\sqrt{3}`$
+
 
 
 <!--
