@@ -25,7 +25,7 @@ The birthday paradox is often formulated in terms of balls and bins.
 Consider $m$ bins and $n$ balls. The probability that all of the $n$ balls land in different bins, given that $n < m$ is,
 
 $$
-\left(1 - \frac{1}{m}\right) \left(1 - \frac{2}{m}\right) \cdots \left(1 - \frac{n-1}{m}\right) \leq \text{exp}\left ( -\frac{1}{m}\sum_{i=1}^{n-1}i \right)
+\left(1 - \frac{1}{m}\right) \left(1 - \frac{2}{m}\right) \cdots \left(1 - \frac{n-1}{m}\right) \leq \text{exp}\left ( -\frac{1}{m}\sum_{i=1}^{n-1}i \right) \leq \text{exp}(-\Omega(n^2/m))
 $$
 
 <!--
