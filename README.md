@@ -7,7 +7,7 @@ Assuming birthdays are distributed uniformly at random across the 365 days of th
 The probability the first two people have different birthdays is $ (1−\frac{1}{365} )$. So, the probability that all of the first $k$ people have different birthdays is,
 
 $$
-(1 - \frac{1}{365} )(1 - \frac{2}{365} ) \cdots  (1 - \frac{k-1}{365} )
+\left(1 - \frac{1}{365} )(1 - \frac{2}{365} ) \cdots  (1 - \frac{k-1}{365} \right)
 $$
 
 For $k=23$, this probability crosses over 49.3%.
