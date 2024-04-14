@@ -4,6 +4,8 @@
 
 Assuming birthdays are distributed uniformly at random across the 365 days of the year, how many people do there need to be in a room before there is a > 50% chance that two of them have the same birthday?
 
+The probability the first two people have different birthdays is $(1−\frac{1}{365})$.
+
 
 | Rank | THING-TO-RANK |
 |-----:|---------------|
