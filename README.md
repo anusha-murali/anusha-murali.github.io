@@ -2,6 +2,7 @@
 
 ## Hashing
 
+theme: jekylle-theme-minimal
 
 #### anusha-murali.github.io
 
