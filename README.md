@@ -1,6 +1,6 @@
-# Hashing
+## Hashing
 
-## 1. The Birthday Paradox
+### 1. The Birthday Paradox
 
 Assuming birthdays are distributed uniformly at random across the 365 days of the year, how many people do there need to be in a room before there is a > 50% chance that two of them have the same birthday?
 
