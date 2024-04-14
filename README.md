@@ -10,7 +10,6 @@ The probability the first two people have different birthdays is $`(1−\frac{1}
 \left(1 - \frac{1}{365} \right)\left(1 - \frac{2}{365} \right) \cdots  \left(1 - \frac{k-1}{365} \right)
 ```
 
-
 For $k=23$, this probability crosses over 49.3%. So, if there are at least 23 people in the room, the probability that two of them will have the same birthday is > 50%.
 
 
