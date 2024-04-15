@@ -71,27 +71,7 @@ For example, with $n/m = 0.5$, this false positive probability is $\approx 0.4$,
 
 **An Example**
 
-beginning to work
-
-$$
-\begin{array}{|c|c|c|}
-\hline
-  \text{Set} & \text{Operation} & \text{Identity} \\ 
-\hline
-   \mathbb{Z} & + & 0 \\
-\hline
-   \mathbb{Q} & + & 0 \\
-\hline
-   \mathbb{R} & + & 0 \\ 
-\hline
-   \mathbb{Z} & \times & 1 \\
-\hline
-   \mathbb{Q} & \times & 1 \\
-\hline
-   \mathbb{R} & \times & 1 \\ 
-\hline
-\end{array}
-$$
+Let $m = 10$ and $k = 3$, so there are 3 hash functions, $h_1, h_2$ and $h_3$. The entries in array $A$ are all initialized to 0 first.
 
 $$
 \begin{array}{|c|c|c|c|c|c|c|c|c|c|}
