@@ -101,7 +101,7 @@ A = \begin{array}{|c|c|c|c|c|c|c|c|c|c|}
 \end{array}
 $$
 
-Let us consider the two elements $y_1$ and $y_2$ that are **not present** in $A$.
+Let us consider searching for the two elements $y_1$ and $y_2$ that are **not present** in $A$.
 
 Let $h_1(y_1) = 2, h_2(y_1) = 4$ and $h_3(y_1) = 7$. We find that $A[h_1(y_1)] = A[2] = 1$ and $A[h_3(y_1)] = 1$. But $A[h_2(y_1)] = A[4] = 0$. Therefore, we conclude **with 100% certainty** that $y_1$ is not present in $A$.
 
