@@ -1,7 +1,7 @@
 ---
 title: Table of Contents
 ---
-# Table of Contents
+Table of Contents
 
 1. [Fundamentals](./fundamentals.md)
 2. [Graph Algorithms](./graphs.md)
