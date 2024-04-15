@@ -24,7 +24,7 @@ The birthday paradox is often formulated in terms of balls and bins.
 
 Consider $n$ balls that are randomly thrown into $m$ bins. 
 
-##### Collision Probability
+#### Collision Probability
 
 The probability that all of the $n$ balls land in different bins, given that $n < m$ is,
 
