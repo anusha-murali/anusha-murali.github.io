@@ -68,6 +68,17 @@ For example, with $n/m = 0.5$, this false positive probability is $\approx 0.4$,
 1. A Bloom filter is an array $A$ of $m$ bits representing a set $S=\\{ x_1, x_2, \ldots, x_n \\}$ of $n$ elements. All entries in $A = 0$ initially.
 2. $k$ independent hash functions, $h_1, h_2, \ldots, h_k$ with range $\\{1, 2, \ldots, m\\}$.
 3. For eacch $x_i \in S$, the bit $h_j(x_i)$ in the array $A$ is set to 1, for $1 \leq j \leq k$.
+
+**An Example**
+
+$$
+\begin{tabular}{|c|c|c|}\hlline
+a & b & c \\ \hline
+\end{tabular}
+$$
+
+
+
 <!--
 ![111596338](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/639243aa-2857-4595-a65a-7852762bb002)
 -->
