@@ -74,7 +74,7 @@ For example, with $n/m = 0.5$, this false positive probability is $\approx 0.4$,
 Let $m = 10$ and $k = 3$, so there are 3 hash functions, $h_1, h_2$ and $h_3$. The entries in array $A$ are all initialized to 0 first.
 
 $$
-\begin{array}{|c|c|c|c|c|c|c|c|c|c|}
+A = \begin{array}{|c|c|c|c|c|c|c|c|c|c|}
 \hline
 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
 \hline
@@ -90,6 +90,17 @@ A = \begin{array}{|c|c|c|c|c|c|c|c|c|c|}
 \hline
 \end{array}
 $$
+
+Let $h_1(x_2) = 5, h_2(x_2) = 7$ and $h_3(x_2) = 10$.  After inserting $x_2$ next, array $A$ is as follows:
+
+$$
+A = \begin{array}{|c|c|c|c|c|c|c|c|c|c|}
+\hline
+0 & 1 & 0 & 0 & 1 & 0 & 1 & 0 & 0 & 1\\
+\hline
+\end{array}
+$$
+
 
 <!--
 ![111596338](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/639243aa-2857-4595-a65a-7852762bb002)
