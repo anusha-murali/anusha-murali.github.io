@@ -1,4 +1,3 @@
-**Table of Contents**
 ---
 
 1. [Fundamentals](./fundamentals.md)
