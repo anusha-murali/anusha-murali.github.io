@@ -134,6 +134,7 @@ Counting Bloom filters are Bloom filters that support deletions.
 ## Counter Overflow Probability
 
 Consider a set of $n$ elements, $k$ hash functions and $m$ counters. Let $c(i)$ be the count for the $i$-th counter. Therefore,
+
 $$
 P[c(i) = j] = \binom{nk}{j}
 $$
