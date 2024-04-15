@@ -26,6 +26,11 @@ plugins:
   - jekyll-seo-tag
   - jekyll-toc
 
+titles_from_headings:
+  enabled:     true
+  strip_title: true
+  collections: true 
+  
 # Theme-specific settings
 
 # If you want to link only specific pages in your header, use this and add the path to the pages
