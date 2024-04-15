@@ -10,6 +10,9 @@
 9. [NP-Completeness](./np.md)
 10. [Linear Programming](./lp.md)
 
+
+working
+
 * * *
 ###### anusha-murali.github.io
 
