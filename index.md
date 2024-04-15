@@ -71,11 +71,18 @@ For example, with $n/m = 0.5$, this false positive probability is $\approx 0.4$,
 
 **An Example**
 
-$$
-\begin{tabular}{|c|c|c|}\hlline
-a & b & c \\ \hline
-\end{tabular}
-$$
+[latex]
+\\newcommand\\T{\\Rule{0pt}{1em}{.3em}}
+\\begin{array}{|c|c|}
+\\hline X & P(X = i) \\T \\\\\\hline
+  1 \\T & 1/6 \\\\\\hline
+  2 \\T & 1/6 \\\\\\hline
+  3 \\T & 1/6 \\\\\\hline
+  4 \\T & 1/6 \\\\\\hline
+  5 \\T & 1/6 \\\\\\hline
+  6 \\T & 1/6 \\\\\\hline
+\\end{array}
+[/latex]
 
 
 
