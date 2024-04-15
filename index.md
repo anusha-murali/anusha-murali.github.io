@@ -121,6 +121,17 @@ $$
 
 Differentiating $P$ with respect to $k$, we find the optimal value for $k$ as $k \approx \frac{m}{n} \ln 2$.
 
+
+### 4. Counting Bloom Filters
+
+Counting Bloom filters are Bloom filters that support deletions.
+
+1. Each entry in a Counting Bloom filter is a small counter (instead of a single bit).
+2. When an item is inserted into the set, we increment the corresponding counters by 1.
+3. When an item is deleted from the set, we decrement the corresponding counters by 1
+4. The counter size must be large enough to avoid overflow. Typically 4 bit counters are sufficient.
+
+
 <!--
 ![111596338](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/639243aa-2857-4595-a65a-7852762bb002)
 -->
