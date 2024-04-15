@@ -94,9 +94,9 @@ $$
 $$
 
 $$
-\begin{array}{|c|c|c|}
+\begin{array}{|c|c|c|c|c|c|c|c|c|c|}
 \hline
-0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
 \hline
 \end{array}
 $$
