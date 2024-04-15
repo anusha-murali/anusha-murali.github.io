@@ -72,13 +72,28 @@ For example, with $n/m = 0.5$, this false positive probability is $\approx 0.4$,
 **An Example**
 
 
-working2
 
-$$
-\\begin{array}{|c|c|} \\hline
-0&0 \\\\ \\hline
-\\end{array}
-$$
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML-full"></script>
+
+\[
+\begin{array}{|c|c|c|}
+\hline
+  \text{Set} & \text{Operation} & \text{Identity} \\ 
+\hline
+   \mathbb{Z} & + & 0 \\
+\hline
+   \mathbb{Q} & + & 0 \\
+\hline
+   \mathbb{R} & + & 0 \\ 
+\hline
+   \mathbb{Z} & \times & 1 \\
+\hline
+   \mathbb{Q} & \times & 1 \\
+\hline
+   \mathbb{R} & \times & 1 \\ 
+\hline
+\end{array}
+\]
 
 
 
