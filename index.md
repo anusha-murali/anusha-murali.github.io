@@ -36,7 +36,7 @@ $$
 
 For the first bin to be empty, it has to be missed by all $n$ balls. Since each ball hits the first bin with probability $\frac{1}{m}$, the probability that the first bin remains empty is,
 $$
-\left( 1 - \frac{1}{m} \right)^n \approx e^{-n/m}.
+\left(1 - \frac{1}{m} \right)^n \approx e^{-n/m}.
 $$
 
 <!--
