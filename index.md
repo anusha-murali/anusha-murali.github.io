@@ -111,7 +111,7 @@ On the other hand, let us say that we are looking for $y_2$ in $A$, where $h_1(y
 
 The probability of false positive is the probability that all hash functions return 1.
 
-With $m$ bins and $kn$ balls, the probability of false positive is,
+With $m$ bins and $kn$ balls analogy, the probability of false positive is,
 
 $$
 P \approx (1-e^{-kn/m})^k
