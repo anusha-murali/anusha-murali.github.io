@@ -1,5 +1,5 @@
 
-**Table of Contents**
+**Contents**
 ---
 
 1. [Fundamentals](./fundamentals.md)
