@@ -77,6 +77,12 @@ $$
 \\end{array}
 $$
 
+$$
+\\begin{tabular}{|c|c|}
+\\hline X & P(X = i)  \\\\\\hline
+\\end{tabular}
+$$
+
 
 
 <!--
