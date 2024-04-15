@@ -73,9 +73,7 @@ For example, with $n/m = 0.5$, this false positive probability is $\approx 0.4$,
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML-full"></script>
-
-\[
+$$
 \begin{array}{|c|c|c|}
 \hline
   \text{Set} & \text{Operation} & \text{Identity} \\ 
@@ -93,7 +91,7 @@ For example, with $n/m = 0.5$, this false positive probability is $\approx 0.4$,
    \mathbb{R} & \times & 1 \\ 
 \hline
 \end{array}
-\]
+$$
 
 
 
