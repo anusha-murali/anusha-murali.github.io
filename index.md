@@ -81,6 +81,16 @@ $$
 \end{array}
 $$
 
+Let $h_1(x_1) = 2, h_2(x_1) = 5$ and $h_3(x_1) = 7$.  After inserting $x_1$, array $A$ is as follows:
+
+$$
+A = \begin{array}{|c|c|c|c|c|c|c|c|c|c|}
+\hline
+0 & 1 & 0 & 0 & 1 & 0 & 1 & 0 & 0 & 0\\
+\hline
+\end{array}
+$$
+
 <!--
 ![111596338](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/639243aa-2857-4595-a65a-7852762bb002)
 -->
