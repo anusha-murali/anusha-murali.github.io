@@ -24,6 +24,7 @@ classes: wide
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-toc
 
 # Theme-specific settings
 
