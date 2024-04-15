@@ -69,7 +69,7 @@ For example, with $n/m = 0.5$, this false positive probability is $\approx 0.4$,
 2. $k$ independent hash functions, $h_1, h_2, \ldots, h_k$ with range $\\{1, 2, \ldots, m\\}$.
 3. For eacch $x_i \in S$, the bit $h_j(x_i)$ in the array $A$ is set to 1, for $1 \leq j \leq k$.
 
-**An Example**
+### 1. An Example
 
 Let $m = 10$ and $k = 3$, so there are 3 hash functions, $h_1, h_2$ and $h_3$. The entries in array $A$ are all initialized to 0 first.
 
@@ -107,7 +107,7 @@ Let $h_1(y_1) = 2, h_2(y_1) = 4$ and $h_3(y_1) = 7$. We find that $A[h_1(y_1)] =
 
 On the other hand, let us say that we are looking for $y_2$ in $A$, where $h_1(y_2) = 5, h_2(y_2) = 7$ and $h_3(y_2) = 10$. We find that $A[h_1(y_2)] = A[5] = 1, A[h_2(y_2) = A[7] = 1, A[h_3(y_2)] = A[10] = 1$. Therefore, we conclude that element $y_2$ **may** be present in $A$.
 
-### False Positives
+### 2. False Positives
 
 The probability of false positive is the probability that all hash functions return 1.
 
@@ -116,6 +116,8 @@ With $m$ bins and $kn$ balls, the probability of false positive is,
 $$
 P \approx (1-e^{-kn/m})^k
 $$
+
+### 3. Optimal $k$
 
 The optimal value for $k$ is $k \approx \frac{m}{n} \ln 2$.
 
