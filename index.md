@@ -71,7 +71,7 @@ For example, with $n/m = 0.5$, this false positive probability is $\approx 0.4$,
 
 **An Example**
 
-[latex]
+$$
 \\newcommand\\T{\\Rule{0pt}{1em}{.3em}}
 \\begin{array}{|c|c|}
 \\hline X & P(X = i) \\T \\\\\\hline
@@ -82,7 +82,7 @@ For example, with $n/m = 0.5$, this false positive probability is $\approx 0.4$,
   5 \\T & 1/6 \\\\\\hline
   6 \\T & 1/6 \\\\\\hline
 \\end{array}
-[/latex]
+$$
 
 
 
