@@ -1,4 +1,8 @@
-# Hashing
+# Master Theorem
+
+$$
+T(n) = a \cdot T \left( \frac{n}{b} \right) + \Theta(n^c)
+$$
 
 ## 1. The Birthday Paradox
 
