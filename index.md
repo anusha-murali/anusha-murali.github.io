@@ -42,6 +42,11 @@ $$
 
 Since the same argument holds for all bins, on average an $e^{-n/m}$ fraction of the bins will remain empty.
 
+### Hash Functions
+
+A hash function, $H(x)$ is a deterministic mapping from one set (balls) to another set (bins) that appears random across different elements of the first set (balls).
+
+Let $A$ be an array of $m$ bits representing a set $S = \{x_1, x_2, \ldots, x_n\}$ of $n$ elements.
 
 ### 3. Hashing and Passwords
 
