@@ -1,4 +1,3 @@
-# Hashing
 
 1. [Fundamentals](./fundamentals.md)
 2. [Hashing](./hashing.md)
