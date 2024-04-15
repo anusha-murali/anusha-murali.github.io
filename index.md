@@ -73,16 +73,9 @@ For example, with $n/m = 0.5$, this false positive probability is $\approx 0.4$,
 
 $$
 \\begin{array}{|c|c|} \\hline
-0&0 \\\\ \\hline
+0 & 0 \\\\ \\hline
 \\end{array}
 $$
-
-$$
-\\begin{array}{|c|c|}\\hline
-0 & 0\\\\\\hline
-\\end{array}
-$$
-
 
 
 
