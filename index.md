@@ -101,6 +101,8 @@ A = \begin{array}{|c|c|c|c|c|c|c|c|c|c|}
 \end{array}
 $$
 
+Let us say that we are looking for element $y_1$ in $A$. Let $h_1(y_1) = 1, h_2(y_1) = 4$ and $h_3(y_1) = 7$.
+
 
 <!--
 ![111596338](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/639243aa-2857-4595-a65a-7852762bb002)
