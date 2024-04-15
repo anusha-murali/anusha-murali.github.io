@@ -45,6 +45,8 @@ Since the same argument holds for all bins, on average an $e^{-n/m}$ fraction of
 
 ### 3. Hashing and Passwords
 
+To protect against hackers, computer systems prefer that users don't use dictionary words as passwords. The probability of rejecting a password that should be accepted is the same as the probability that the first bin is not empty in the balls and bins analysis, which is $1-e^{-n/m}$.
+
 <!--
 ![111596338](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/639243aa-2857-4595-a65a-7852762bb002)
 -->
