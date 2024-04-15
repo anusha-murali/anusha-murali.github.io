@@ -1,6 +1,6 @@
 # Hashing
 
-### 1. The Birthday Paradox
+## 1. The Birthday Paradox
 
 Assuming birthdays are distributed uniformly at random across the 365 days of the year, how many people do there need to be in a room before there is a > 50% chance that two of them have the same birthday?
 
@@ -18,13 +18,13 @@ $$
 
 For $k=23$, this probability crosses over 49.3%. So, if there are at least 23 people in the room, the probability that two of them will have the same birthday is > 50%.
 
-### 2. Balls into Bins
+## 2. Balls into Bins
 
 The birthday paradox is often formulated in terms of balls and bins. 
 
 Consider $n$ balls that are randomly thrown into $m$ bins. 
 
-#### Collision Probability
+### Collision Probability
 
 The probability that all of the $n$ balls land in different bins, given that $n < m$ is,
 
@@ -32,7 +32,7 @@ $$
 \left(1 - \frac{1}{m}\right) \left(1 - \frac{2}{m}\right) \cdots \left(1 - \frac{n-1}{m}\right) \leq \text{exp}\left ( -\frac{1}{m}\sum_{i=1}^{n-1}i \right) \leq \text{exp}(-\Omega(n^2/m))
 $$
 
-#### Number of Empty Bins
+### Number of Empty Bins
 
 For the first bin to be empty, it has to be missed by all $n$ balls. Since each ball hits the first bin with probability $\frac{1}{m}$, the probability that the first bin remains empty is,
 
@@ -42,7 +42,7 @@ $$
 
 Since the same argument holds for all bins, on average an $e^{-n/m}$ fraction of the bins will remain empty.
 
-### 3. Hash Functions
+## 3. Hash Functions
 
 A hash function, $H(x)$ is a deterministic mapping from one set (balls) to another set (bins) that appears random across different elements of the first set (balls).
 
@@ -52,7 +52,7 @@ False positives can occur. It is possible that for some $x_j \not \in S$, it may
 
 False positive probability = $1 - e^{-n/m}$.
 
-### 4. Hashing and Passwords
+## 4. Hashing and Passwords
 
 To protect against hackers, computer systems prefer that users don't use dictionary words as passwords. The probability of rejecting a password that should be accepted is the same as the probability that the first bin is not empty in the balls and bins analysis, which is $1-e^{-n/m}$. 
 
@@ -69,7 +69,7 @@ For example, with $n/m = 0.5$, this false positive probability is $\approx 0.4$,
 2. $k$ independent hash functions, $h_1, h_2, \ldots, h_k$ with range $\\{1, 2, \ldots, m\\}$.
 3. For eacch $x_i \in S$, the bit $h_j(x_i)$ in the array $A$ is set to 1, for $1 \leq j \leq k$.
 
-### 1. An Example
+## 1. An Example
 
 Let $m = 10$ and $k = 3$, so there are 3 hash functions, $h_1, h_2$ and $h_3$. The entries in array $A$ are all initialized to 0 first.
 
@@ -107,7 +107,7 @@ Let $h_1(y_1) = 2, h_2(y_1) = 4$ and $h_3(y_1) = 7$. We find that $A[h_1(y_1)] =
 
 On the other hand, let us say that we are looking for $y_2$ in $A$, where $h_1(y_2) = 5, h_2(y_2) = 7$ and $h_3(y_2) = 10$. We find that $A[h_1(y_2)] = A[5] = 1, A[h_2(y_2) = A[7] = 1, A[h_3(y_2)] = A[10] = 1$. Therefore, we conclude that element $y_2$ **may** be present in $A$.
 
-### 2. False Positives
+## 2. False Positives
 
 The probability of false positive is the probability that all hash functions return 1.
 
@@ -117,7 +117,7 @@ $$
 P \approx (1-e^{-kn/m})^k
 $$
 
-### 3. Optimal $k$
+## 3. Optimal $k$
 
 Differentiating $P$ with respect to $k$, we find the optimal value for $k$ as $k \approx \frac{m}{n} \ln 2$.
 
