@@ -139,6 +139,11 @@ $$
 P[c(i) = j] = \dbinom{nk}{j} \left(\frac{1}{m}\right)^j \left(1-\frac{1}{m}\right)^{nk-j}
 $$
 
+Therefore,
+
+$$
+P[c(i) \geq j] = \dbinom{nk}{j}  \frac{1}{m^j} 
+$$
 <!--
 ![111596338](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/639243aa-2857-4595-a65a-7852762bb002)
 -->
