@@ -101,7 +101,7 @@ A = \begin{array}{|c|c|c|c|c|c|c|c|c|c|}
 \end{array}
 $$
 
-Let us say that we are looking for element $y_1$ in $A$. Let $h_1(y_1) = 1, h_2(y_1) = 4$ and $h_3(y_1) = 7$.
+Let us say that we are looking for element $y_1$ in $A$. Let $h_1(y_1) = 1, h_2(y_1) = 4$ and $h_3(y_1) = 7$. We find even though $A[h_1(y_1)] = A[1] = 1$ and $A[h_3(y_1)] = 1$, $A[h_2(y_1)] = A[4] = 0$. Therefore, we conclude with 100% certainty that $y_1$ is not present in $A$.
 
 
 <!--
