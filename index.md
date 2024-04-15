@@ -42,13 +42,15 @@ $$
 
 Since the same argument holds for all bins, on average an $e^{-n/m}$ fraction of the bins will remain empty.
 
-### Hash Functions
+### 3. Hash Functions
 
 A hash function, $H(x)$ is a deterministic mapping from one set (balls) to another set (bins) that appears random across different elements of the first set (balls).
 
 Let $A$ be an array of $m$ bits representing a set $S=\\{ x_1, x_2, \ldots, x_n \\}$ of $n$ elements. We will turn on the bit corresponding to the index returned by $H(x_i)$, indicating that the element $x_i$ is present in the set. Therefore, if $x_i \in S$, then $A[H(x_i)] = 1$.
 
-### 3. Hashing and Passwords
+False positives can occur. It is possible that for some $x_j \not \in S$, it may be that $A[H(x_j)] =1$.
+
+### 4. Hashing and Passwords
 
 To protect against hackers, computer systems prefer that users don't use dictionary words as passwords. The probability of rejecting a password that should be accepted is the same as the probability that the first bin is not empty in the balls and bins analysis, which is $1-e^{-n/m}$. 
 
