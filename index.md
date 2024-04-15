@@ -46,9 +46,9 @@ Since the same argument holds for all bins, on average an $e^{-n/m}$ fraction of
 
 A hash function, $H(x)$ is a deterministic mapping from one set (balls) to another set (bins) that appears random across different elements of the first set (balls).
 
-Let $A$ be an array of $m$ bits representing a set $S=\\{ x_1, x_2, \ldots, x_n \\}$ of $n$ elements. We will turn on the bit corresponding to the index returned by $H(x_i)$, indicating that the element $x_i$ is present in the set. Therefore, if $x_i \in S$, then $A[H(x_i)] = 1$.
+Let $A$ be an array of $m$ bits representing a set $S=\\{ x_1, x_2, \ldots, x_n \\}$ of $n$ elements. We will turn on the bit corresponding to the index returned by $h(x_i)$, indicating that the element $x_i$ is present in the set. Therefore, if $x_i \in S$, then $A[h(x_i)] = 1$.
 
-False positives can occur. It is possible that for some $x_j \not \in S$, it may be that $A[H(x_j)] =1$.
+False positives can occur. It is possible that for some $x_j \not \in S$, it may be that $A[h(x_j)] =1$.
 
 False positive probability = $1 - e^{-n/m}$.
 
@@ -65,6 +65,9 @@ For example, with $n/m = 0.5$, this false positive probability is $\approx 0.4$,
 
 # Bloom Filters
 
+1. A Bloom filter is an array $A$ of $m$ bits representing a set $S=\\{ x_1, x_2, \ldots, x_n \\}$ of $n$ elements. All entries in $A = 0$ initially.
+2. $k$ independent hash functions, $h_1, h_2, \ldots, h_k$ with range $\\{1, 2, \ldots, m\\}$.
+3. For eacch $x_i \in S$, the bit $h_j(x_i)$ in the array $A$ is set to 1, for $1 \leq j \leq k$.
 <!--
 ![111596338](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/639243aa-2857-4595-a65a-7852762bb002)
 -->
