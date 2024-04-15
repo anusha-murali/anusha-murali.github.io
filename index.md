@@ -50,6 +50,8 @@ Let $A$ be an array of $m$ bits representing a set $S=\\{ x_1, x_2, \ldots, x_n 
 
 False positives can occur. It is possible that for some $x_j \not \in S$, it may be that $A[H(x_j)] =1$.
 
+False positive probability = $1 - e^{-n/m}$.
+
 ### 4. Hashing and Passwords
 
 To protect against hackers, computer systems prefer that users don't use dictionary words as passwords. The probability of rejecting a password that should be accepted is the same as the probability that the first bin is not empty in the balls and bins analysis, which is $1-e^{-n/m}$. 
