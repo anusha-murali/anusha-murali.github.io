@@ -136,7 +136,7 @@ Counting Bloom filters are Bloom filters that support deletions.
 Consider a set of $n$ elements, $k$ hash functions and $m$ counters. Let $c(i)$ be the count for the $i$-th counter. Therefore,
 
 $$
-P[c(i) = j] = \binom{nk}{j}
+P[c(i) = j] = \dbinom{nk}{j}
 $$
 
 <!--
