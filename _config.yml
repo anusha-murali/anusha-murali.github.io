@@ -27,7 +27,7 @@ plugins:
   - jekyll-toc
 
 titles_from_headings:
-  enabled:     true
+  enabled:     false
   strip_title: false
   collections: true 
   
