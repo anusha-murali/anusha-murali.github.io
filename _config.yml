@@ -53,6 +53,10 @@ minima:
   # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
   #date_format: "%b-%d-%Y"
 
+toc:
+  min_level: 1
+  max_level: 3
+  
   # Generate social links in footer.
   #social_links:
   #  - { platform: devto,          user_url: "https://dev.to/jekyll" }
