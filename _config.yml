@@ -29,8 +29,8 @@ plugins:
 
 titles_from_headings:
   enabled:     true
-  strip_title: false
-  collections: false 
+  strip_title: true
+  collections: true
   
 # Theme-specific settings
 
