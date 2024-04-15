@@ -30,7 +30,7 @@ plugins:
 titles_from_headings:
   enabled:     true
   strip_title: false
-  collections: true 
+  collections: false 
   
 # Theme-specific settings
 
