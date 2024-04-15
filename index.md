@@ -47,7 +47,7 @@ Since the same argument holds for all bins, on average an $e^{-n/m}$ fraction of
 
 To protect against hackers, computer systems prefer that users don't use dictionary words as passwords. The probability of rejecting a password that should be accepted is the same as the probability that the first bin is not empty in the balls and bins analysis, which is $1-e^{-n/m}$. 
 
-For $n/m = 0.5$, this false positive probability is $\approx 0.4$, which is very high!
+For example, with $n/m = 0.5$, this false positive probability is $\approx 0.4$, which is very high! So, we need $m$ to be very large or alternative solutions such as the following:
 
 * Hashing with chaining
 * Hashing with linear probing
