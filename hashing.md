@@ -197,6 +197,17 @@ $$
 
 How do we turn document similarity into a set resemblance problem? The key idea is to hash pieces of the document– say every four consecutive words - into say, 64 bit numbers. This process is called shingling, and each set of consecutive words is called a shingle. Using hashing, the shingles give rise to the resulting numbers for the set resemblance problem.
 
+## MinHash based sketch
+
+Once we have the shingles for the document, we associate to each document a sketch. If $N$ random permutations are taken in the definition of MinHash, then the sketch of a document $S$ is a list of $N$ numbers:
+
+$$
+(\min(\pi_1(S)), \min(\pi_2(S)),\ldots, \min(\pi_N(S))).
+$$
+
+Now we choose a threshold -  for example, if $N = 100$ we might say that two documents are similar if 90 out of the 100 entries in the sketch match.
+
+
 [Table of Contents](./index.md)
 <!--
 ![111596338](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/639243aa-2857-4595-a65a-7852762bb002)
