@@ -122,7 +122,7 @@ $$
 Differentiating $P$ with respect to $k$, we find the optimal value for $k$ as $k \approx \frac{m}{n} \ln 2$.
 
 
-# 1. Counting Bloom Filters
+# Counting Bloom Filters
 
 Counting Bloom filters are Bloom filters that support deletions.
 
@@ -131,7 +131,7 @@ Counting Bloom filters are Bloom filters that support deletions.
 3. When an item is deleted from the set, we decrement the corresponding counters by 1
 4. The counter size must be large enough to avoid overflow. Typically 4 bit counters are sufficient.
 
-## Counter Overflow Probability
+## 1. Counter Overflow Probability
 
 Consider a set of $n$ elements, $k$ hash functions and $m$ counters. Let $c(i)$ be the count for the $i$-th counter. Therefore,
 
