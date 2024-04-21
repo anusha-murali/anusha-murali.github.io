@@ -183,7 +183,14 @@ Suppose that we do not need to exactly compute the resemblance $R(A,B)$. We can 
 
 **Lemma 1** Let $\pi(A)$ and $\pi(B)$ be some random permutations of the $n!$ possible permutations of the set $S$. Then $\min(\pi(A)) = \min(\pi(B))$ if and only if there exists $x \in A \cup B$ such that:
 1. $x \in A \cap B$
-2. $\pi(x) = \min(\pi(A)) = \min(\pi(B))$. 
+2. $\pi(x) = \min(\pi(A)) = \min(\pi(B))$.
+
+**Lemma 2** If $\pi$ is a random permutation, then for any $x, y \in A \cup B$,
+
+$$
+{\bf Pr}[\pi(x) = \min(\pi(A \cup B))] = {\bf Pr}[\pi(y) = \min(\pi(A \cup B))].
+$$
+   
 
 [Table of Contents](./index.md)
 <!--
