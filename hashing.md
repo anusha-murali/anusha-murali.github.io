@@ -171,7 +171,9 @@ $$
 
 so $H(D_i)$ can be computed from $H(D_{i+1})$ in $O(1)$ time.
 
-# Set Resemblance: Detecting Near Duplicate Documents
+# Set Resemblance
+
+**Problem**: We want to detect near duplicate documents. How can we do it without doing an $O(n^2)$ comparisons?
 
 The resemblance (or Jaccard coefficient) of two sets $A$ and $B$ is defined as
 
