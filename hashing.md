@@ -192,7 +192,10 @@ Suppose that we do not need to exactly compute the resemblance $R(A,B)$. We can 
 $$
 {\bf Pr}[\pi(x) = \min(\pi(A \cup B))] = {\bf Pr}[\pi(y) = \min(\pi(A \cup B))].
 $$
-   
+
+## 1. Shingling 
+
+How do we turn document similarity into a set resemblance problem? The key idea is to hash pieces of the document– say every four consecutive words - into say, 64 bit numbers. This process is called shingling, and each set of consecutive words is called a shingle. Using hashing, the shingles give rise to the resulting numbers for the set resemblance problem.
 
 [Table of Contents](./index.md)
 <!--
