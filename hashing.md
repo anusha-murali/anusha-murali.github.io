@@ -179,6 +179,12 @@ $$
 R(A, B) = \frac{|A \cap B|}{|A \cup B|}.
 $$
 
+Suppose that we do not need to exactly compute the resemblance $R(A,B)$. We can obtain a reasonable approximation to $R(A,B)$ using randomization, specifically using hash functions.
+
+\begin{lemma}
+ads
+\end{lemma}
+
 [Table of Contents](./index.md)
 <!--
 ![111596338](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/639243aa-2857-4595-a65a-7852762bb002)
