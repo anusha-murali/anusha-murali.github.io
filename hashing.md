@@ -122,7 +122,7 @@ $$
 Differentiating $P$ with respect to $k$, we find the optimal value for $k$ as $k \approx \frac{m}{n} \ln 2$.
 
 
-# Counting Bloom Filters
+# 1. Counting Bloom Filters
 
 Counting Bloom filters are Bloom filters that support deletions.
 
@@ -152,6 +152,11 @@ P[c(i) \geq j] \leq \left(\frac{enk}{jm}\right)^j
 $$ 
 
 This is with modernist WORKING with TOC hmin = 1 and hmax = 2!!!
+
+# Fingerprinting
+
+Problem: We want to find a paterrn string $P$ in a long document $D$. How can we do it quickly and efficiently?
+
 
 
 [Table of Contents](./index.md)
