@@ -176,7 +176,7 @@ so $H(D_i)$ can be computed from $H(D_{i+1})$ in $O(1)$ time.
 The resemblance (or Jaccard coefficient) of two sets $A$ and $B$ is defined as
 
 $$
-R(A, B) = \frac{\|A \cap B\|}{\|A \cup B\|}.
+R(A, B) = \frac{|A \cap B|}{|A \cup B|}.
 $$
 
 [Table of Contents](./index.md)
