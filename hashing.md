@@ -153,11 +153,15 @@ $$
 
 This is with modernist WORKING with TOC hmin = 1 and hmax = 2!!!
 
-# Fingerprinting
+# Fingerprinting by Modular Arithmetic
 
 **Problem**: We want to find a paterrn string $P$ in a long document $D$. How can we do it quickly and efficiently?
 
 In other words, we want to find all occurrences of pattern $P$ in $D$, i.e: the set of all indices $i$ such that $D_i = (d_i, \ldots, d_{i+k-1}) = P$, where $k = \|P\|$.
+
+The idea of pattern matching using finger printing is to pick an appropriately large prime number $q$, so that $H(P) = P (mod q)$.
+
+Naively computing $H(D_i)$ from scratch eatch time to check a document of length $n$ takes $O(nk)$ time.
 
 [Table of Contents](./index.md)
 <!--
