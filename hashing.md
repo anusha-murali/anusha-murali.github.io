@@ -171,6 +171,14 @@ $$
 
 so $H(D_i)$ can be computed from $H(D_{i+1})$ in $O(1)$ time.
 
+# Set Resemblance: Detecting Near Duplicate Documents
+
+The resemblance (or Jaccard coefficient) of two sets $A$ and $B$ is defined as
+
+$$
+R(A, B) = \frac{\|A \cap B\|}{\|A \cup B\|}.
+$$
+
 [Table of Contents](./index.md)
 <!--
 ![111596338](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/639243aa-2857-4595-a65a-7852762bb002)
