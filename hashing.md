@@ -161,7 +161,13 @@ In other words, we want to find all occurrences of pattern $P$ in $D$, i.e: the 
 
 The idea of pattern matching using finger printing is to pick an appropriately large prime number $q$, so that $H(P) = P \pmod{q}$.
 
-Naively computing $H(D_i)$ from scratch eatch time to check a document of length $n$ takes $O(nk)$ time.
+Naively computing $H(D_i)$ from scratch each time to check a document of length $n$ takes $O(nk)$ time.
+
+So, we use the simple identity: $D_i = 10D_{i+1} + d_i - 10^k \cdot d_{i+k}$. Applying the hash function, we find,
+$$
+H(D_i) = D_i \pmod{q} = (10D_{i+1} + d_i - 10^k \cdot d_{i+k}) \pmod{q},
+$$
+so $H(D_i)$ can be computed from $H(D_{i+1})$ in $O(1)$ time.
 
 [Table of Contents](./index.md)
 <!--
