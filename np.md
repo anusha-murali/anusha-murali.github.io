@@ -10,7 +10,11 @@ Let $G = (V, E)$ be a graph. An independent set $V'$ is a subset of $V$ such tha
 
 It is known that max independent set is NP-hard.
 
+**Algorithm VC**
 
+```
+C $\leftarrow$
+```
 
 [Table of Contents](./index.md)
 <!--
