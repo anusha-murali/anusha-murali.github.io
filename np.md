@@ -7,11 +7,11 @@ Let $G = (V,E)$ be a graph. The minimum vertex cover is the minimum sized set of
 **Algorithm VC**
 
 ```
-   C <- Empty Set
-   while E is not empty
-      Arbitrarily pick e = (u,v) in E
-      C <- C U {u, v}
-      Remove all edges incident to u, v from E
+C <- Empty Set
+while E is not empty
+  Arbitrarily pick e = (u,v) in E
+  C <- C U {u, v}
+  Remove all edges incident to u, v from E
 ```
 
 **Theorem**: Algoritm VC has approximation ratio 2.
