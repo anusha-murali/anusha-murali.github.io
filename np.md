@@ -35,6 +35,9 @@ Let $G = (V, E)$ be a graph. An independent set $V'$ is a subset of $V$ such tha
 It is known that max independent set is NP-hard.
 
 
+## 3. Traveling Salesman Problem
+
+
 [Table of Contents](./index.md)
 <!--
 ![111596338](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/639243aa-2857-4595-a65a-7852762bb002)
