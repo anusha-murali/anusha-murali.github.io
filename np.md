@@ -3,7 +3,7 @@
 **Definition**: Let $P$ be a minimization problem, and $I$ be an instance of $P$. Let $A$ be an algorithm that finds feasible solution to instances of $P$. Let $A(I)$ is the cost of the solution returned by $A$ for instance $I$, and $OPT(I)$ is the cost of the optimal solution (mimimum) for $I$. Then, $A$ is said to be an $\alpha$-approximation algorithm for $P$ if
 
 $$
-\forall I, ~~~\frac{A(I)}{OPT(I)} \leq alpha,
+\forall I, ~~~\frac{A(I)}{OPT(I)} \leq \alpha,
 $$
 
 where $\alpha \geq 1$.
