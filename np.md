@@ -55,7 +55,7 @@ Return s_1
 *Proof*: Because of triangle inequality, we find,
 
 $$
-d(s_1, s_i) \leq d(t_{\text{OPT}}, s_1) + d
+d(s_1, s_i) \leq d(t_{\text{OPT}}, s_1) + d(t_{\text{OPT}}, s_i) ~ \leq ~ 2d.
 $$
 
 
