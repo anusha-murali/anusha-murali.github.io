@@ -13,7 +13,8 @@ It is known that max independent set is NP-hard.
 **Algorithm VC**
 
 >
-C $\leftarrow$
+C $\leftarrow \emptyset$
+> while $E$ is not empty
 >
 
 [Table of Contents](./index.md)
