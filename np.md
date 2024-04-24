@@ -19,7 +19,7 @@ Let $G = (V,E)$ be a graph. The minimum vertex cover is the minimum sized set of
 *Proof*: Clearly VC is a vertex cover. Next let us prove the ratio. Suppose we pick $k$ edges during the execution of algorithm VC. These $k$ edges form a matching (they don’t share vertices). So, the optimal vertex cover should contain at least one vertex from each of these $k$ edges. Thus $OPT \geq k$.  On the other hand, algorithm VC’s output has size at most $2k$.
 
 
-## Maximum Independent Set
+## 2. Maximum Independent Set
 
 Let $G = (V, E)$ be a graph. An independent set $V'$ is a subset of $V$ such that no edge connects two vertices in $V'$.
 
