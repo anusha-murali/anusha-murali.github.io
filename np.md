@@ -13,8 +13,11 @@ It is known that max independent set is NP-hard.
 **Algorithm VC**
 
 ```
-C $\leftarrow \emptyset$
-while $E$ is not empty
+C <- Empty Set
+while E is not empty
+   Arbitrarily pick e = (u,v) in E
+   C <- C U {u, v}
+   Remove all edges incident to u, v from E
 ```
 
 [Table of Contents](./index.md)
