@@ -39,6 +39,26 @@ It is known that max independent set is NP-hard.
 
 Given a graph $G = (V,E)$, the Traveling salesman problem (TSP) with arbitrary weight is to finding a Hamiltonian cycle that has the minimum total weight. 
 
+
+## 4. Closest String
+
+**Problem** Given $n$ length-$L$ binary strings $s_1, \ldots, s_n$, compute a new string $t$, such that $d = \max_i d_H(t, s_i)$ is minimized. Note that $d_H$ is the Hamming distance.
+
+This is a minimization problem. It has been proved that it is NP-hard. The following is a 2-approximation algorithm for solving the closest string problem.
+
+**Algorithm CLOSEST_STRING**
+
+```
+Return s_1
+```
+
+*Proof*: Because of triangle inequality, we find,
+
+$$
+d(s_1, s_i) \leq d(t_{\text{OPT}}, s_1) + d
+$$
+
+
 [Table of Contents](./index.md)
 <!--
 ![111596338](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/639243aa-2857-4595-a65a-7852762bb002)
