@@ -14,6 +14,7 @@ It is known that max independent set is NP-hard.
 
 >
 > C $\leftarrow \emptyset$
+>
 > while $E$ is not empty
 >
 
