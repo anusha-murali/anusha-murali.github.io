@@ -37,6 +37,7 @@ It is known that max independent set is NP-hard.
 
 ## 3. Traveling Salesman Problem
 
+Given a graph $G = (V,E)$, the Traveling salesman problem (TSP) with arbitrary weight is to finding a Hamiltonian cycle that has the minimum total weight. 
 
 [Table of Contents](./index.md)
 <!--
