@@ -42,7 +42,7 @@ Given a graph $G = (V,E)$, the Traveling salesman problem (TSP) with arbitrary w
 
 ## 4. Closest String
 
-**Problem** Given $n$ length-$L$ binary strings $s_1, \ldots, s_n$, compute a new string $t$, such that $d = \max_i d_H(t, s_i)$ is minimized. Note that $d_H$ is the Hamming distance.
+**Problem** Given $n$ length-$L$ binary strings $s_1, \ldots, s_n$, compute a new string $t$, such that $d = \max_i d(t, s_i)$ is minimized. Note that $d$ is the Hamming distance.
 
 This is a minimization problem. It has been proved that it is NP-hard. The following is a 2-approximation algorithm for solving the closest string problem.
 
