@@ -12,6 +12,7 @@ title: Table of Contents
 8. [Randomized Algorithms](./randomized.md)
 9. [NP-Completeness](./np.md)
 10. [Linear Programming](./lp.md)
+11. [Network Flows](./network_flows.md)
 
 
 
