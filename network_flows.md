@@ -25,16 +25,6 @@ Only the following edges can be used for augmentation:
 
 Max-flow and min-cut for the above graph is 19. Why?
 
-```{r,echo=FALSE,engine='tikz',fig.ext=if 
-(knitr:::is_latex_output()) 'pdf' else 'png'}
-\begin{tikzpicture}
-  \node (A) at (0,0) {$A$};
-  \node (B) at (2,0) {$B$};
-  \draw[thick,->] (A) to (B);
-\end{tikzpicture}
-```
-
-
 ### Run-time
 
 1. Ford-Fulkerson has a run-time of $O(Ef^{\*})$ because each time we augment a path, we increase the total flow, so at worst the number of times we find an augmenting path is $O(f^*)$, where $f^{\*}$ is the value of the max flow. We can find an augmenting path in $O(E)$ with DFS.
