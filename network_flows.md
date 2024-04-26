@@ -21,9 +21,13 @@ Only the following edges can be used for augmentation:
 1. Non-null forward edges
 2. Non-empty backward edges
 
+Max-flow and min-cut for the graph below is 19. Why?
+
 <img width="400" alt="1" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/db030dff-f39f-4139-9fc8-a7a76efd4118">
 
-Max-flow and min-cut for the above graph is 19. Why?
+We run the Ford-Fulkerson method on the above graph as follows:
+
+We find the path $S-A-B-T$ with the residual capacities of 10, 4, 10. Their minimum is 4, so we can increase the flow along this path by 4. This gives a flows of 4 for the network.
 
 <img width="400" alt="2" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/84959a8e-6f97-4dc3-b03f-3ad7af97d354">
 
