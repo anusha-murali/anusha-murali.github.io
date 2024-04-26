@@ -5,6 +5,9 @@
 2. The residual network $G_f$ contains no augmenting paths.
 3. $\|f\| = c(S, T)$ for some cut $(S, T)$ of $G$.
 
+Only the following edges can be used for augmentation:
+1. Non-null forward edges
+2. Non-empty backward edges
 
 [Table of Contents](./index.md)
 <!--
