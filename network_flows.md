@@ -1,3 +1,7 @@
+# Network Flow
+
+Model a connection of water pipes (a network of roads) as edges with capacity on a directed graph. We want to solve the problem of finding how many units of water (or trucks) can we send from the source to the sink?
+
 ## The Ford-Fulkerson Method
 
 **Max-flow Min-cut Theorem**: For every directed graph $G$, the maximum flow on $G$
@@ -13,7 +17,7 @@ Only the following edges can be used for augmentation:
 1. Non-null forward edges
 2. Non-empty backward edges
 
-### 1. Network flow as a linear program.
+## 1. Network flow as a linear program.
 
 Let $f_{uv}$ be the amount of flow set along the edge $(u, v)$ and $c_{uv}$ be the capacity of the edge $(u, v)$.  We want to maximize the flow into the sink subject to the following conditions:
 1. **Capacity**: $f_{uv} \leq c_{uv}$.
