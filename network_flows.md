@@ -30,7 +30,7 @@ Max-flow and min-cut for the above graph is 19. Why?
 1. Ford-Fulkerson has a run-time of $O(Ef^{\*})$ because each time we augment a path, we increase the total flow, so at worst the number of times we find an augmenting path is $O(f^*)$, where $f^{\*}$ is the value of the max flow. We can find an augmenting path in $O(E)$ with DFS.
 2. **Edmond-Karp algorithm**: If we use BFS instead of find our augmenting paths, then can be proved that the run-time is $(O(V E^2)$, which does not depend on $f^{\*}$ anymore.
 
-Edmonds-Karp differs from Ford-Fulkerson in that it chooses the next augmenting path using BFS. So, if there are multiple augmenting paths to choose from, Edmonds-Karp will be sure to choose the shortest augmenting path from the source to the sink.
+Edmonds-Karp differs from Ford-Fulkerson in that it chooses the next augmenting path using BFS with the weight of 1 for every edge. So, if there are multiple augmenting paths to choose from, Edmonds-Karp will be sure to choose the shortest augmenting path from the source to the sink.
 
 ## 2. Network flow as a linear program.
 
