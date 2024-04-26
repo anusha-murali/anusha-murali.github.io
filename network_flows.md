@@ -7,6 +7,10 @@ Model a connection of water pipes (a network of roads) as edges with capacity on
 **Max-flow Min-cut Theorem**: For every directed graph $G$, the maximum flow on $G$
 with capacities $c$ equals the minimum cut in $G$ with capacities $c$.
 
+In the following graph, the minimum cut of the flow network. It shows that the capacity of the cut  $\{s, A, D\}$  and  $\{B, C, t\}$  is  $5 + 3 + 2 = 10$ , which is equal to the maximum flow. Other cuts will have a bigger capacity, like the capacity between  $\{s, A\}$  and  $\{B, C, D, t\}$  is  $4 + 3 + 5 = 12$ .
+
+![Cut](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/fb2d4dc9-9e8d-44ed-a3b5-c36345871528)
+
 
 If $f$ is a flow in a flow network $G = (V, E)$ with source $s$ and sink $t$,then the following conditions are equivalent:
 1. $f$ is a maximum flow in $G$
