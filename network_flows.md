@@ -16,8 +16,10 @@ If $f$ is a flow in a flow network $G = (V, E)$ with source $s$ and sink $t$,the
 Only the following edges can be used for augmentation:
 1. Non-null forward edges
 2. Non-empty backward edges
+  
+<img width="463" alt="ff_example1" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/f5822b9f-9fb6-40c6-947c-d64d47681907">
 
-![ff_example](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/3387d0c3-a02b-463c-9cd7-f27230d71cb3)
+
 
 <img width="463" alt="ff_example1" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/5c81c7d0-5ddc-49a9-877b-a15de52d4cb5">
 
