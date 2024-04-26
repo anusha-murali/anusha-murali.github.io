@@ -21,6 +21,8 @@ Only the following edges can be used for augmentation:
 1. Non-null forward edges
 2. Non-empty backward edges
 
+<img width="701" alt="1" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/db030dff-f39f-4139-9fc8-a7a76efd4118">
+
 <img width="463" alt="ff_example1" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/f5822b9f-9fb6-40c6-947c-d64d47681907" width="300">
 
 Max-flow and min-cut for the above graph is 19. Why?
