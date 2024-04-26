@@ -25,7 +25,14 @@ Only the following edges can be used for augmentation:
 
 Max-flow and min-cut for the above graph is 19. Why?
 
-<img width="476" alt="test" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/8ab4e374-ffac-4d81-af4a-20ec7c249b8f">
+```{r,echo=FALSE,engine='tikz',fig.ext=if 
+(knitr:::is_latex_output()) 'pdf' else 'png'}
+\begin{tikzpicture}
+  \node (A) at (0,0) {$A$};
+  \node (B) at (2,0) {$B$};
+  \draw[thick,->] (A) to (B);
+\end{tikzpicture}
+```
 
 
 ### Run-time
