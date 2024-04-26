@@ -17,6 +17,9 @@ Only the following edges can be used for augmentation:
 1. Non-null forward edges
 2. Non-empty backward edges
 
+![ff_example](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/3387d0c3-a02b-463c-9cd7-f27230d71cb3)
+
+
 ### Run-time
 
 1. Ford-Fulkerson has a run-time of $O(Ef^{\*})$ because each time we augment a path, we increase the total flow, so at worst the number of times we find an augmenting path is $O(f^*)$, where $f^{\*}$ is the value of the max flow. We can find an augmenting path in $O(E)$ with DFS.
