@@ -17,6 +17,11 @@ Only the following edges can be used for augmentation:
 1. Non-null forward edges
 2. Non-empty backward edges
 
+### Run-time
+
+1. Ford-Fulkerson has a run-time of $O(Ef^*)$ because each time we augment a path, we increase the total flow, so at worst the number of times we find an augmenting path is $O(f^*)$, where $f^*$ is the value of the max flow. We can find an augmenting path in $O(E)$ with DFS.
+2. **Edmond-Karp algorithm**: If we use BFS instead of find our augmenting paths, then can be proved that the run-time is $(O(V E^2)$, which does not depend on $f^*$ anymore.
+
 ## 2. Network flow as a linear program.
 
 Let $f_{uv}$ be the amount of flow set along the edge $(u, v)$ and $c_{uv}$ be the capacity of the edge $(u, v)$.  We want to maximize the flow into the sink subject to the following conditions:
