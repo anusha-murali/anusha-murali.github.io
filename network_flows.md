@@ -19,6 +19,7 @@ Only the following edges can be used for augmentation:
 
 ![ff_example](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/3387d0c3-a02b-463c-9cd7-f27230d71cb3)
 
+<img width="463" alt="ff_example1" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/5c81c7d0-5ddc-49a9-877b-a15de52d4cb5">
 
 ### Run-time
 
