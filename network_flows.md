@@ -5,6 +5,8 @@
 2. The residual network $G_f$ contains no augmenting paths.
 3. $\|f\| = c(S, T)$ for some cut $(S, T)$ of $G$.
 
+![ff_example](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/9d911024-195b-4fce-ab0f-b471129cfab7)
+
 
 
 
