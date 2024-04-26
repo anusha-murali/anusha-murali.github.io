@@ -13,6 +13,18 @@ Only the following edges can be used for augmentation:
 1. Non-null forward edges
 2. Non-empty backward edges
 
+### 1. Network flow as a linear program.
+
+Let $f_{uv}$ be the amount of flow set along the edge $(u, v)$ and $c_{uv}$ be the capacity of the edge $(u, v)$.  We want to maximize the flow into the sink subject to the following conditions:
+1. **Capacity**: $f_{uv} \leq c_{uv}$.
+2. **Conservation**: For every vertex $w$ besides $w = s$ and $w = t$, we must have that
+
+   $$
+    \sum_{u,w} f_{uw} - \sum_{w,v} f_{wv} = 0.
+   $$
+   
+4. **Nonnegativity**: $f_{uv} \geq 0$.
+
 [Table of Contents](./index.md)
 <!--
 ![111596338](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/639243aa-2857-4595-a65a-7852762bb002)
