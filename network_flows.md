@@ -25,7 +25,8 @@ Only the following edges can be used for augmentation:
 
 Max-flow and min-cut for the above graph is 19. Why?
 
-<img width="473" alt="test" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/89709757-f5c6-476c-b2db-df7c389779b9">
+<img width="476" alt="test" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/8ab4e374-ffac-4d81-af4a-20ec7c249b8f">
+
 
 ### Run-time
 
