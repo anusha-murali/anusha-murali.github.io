@@ -23,6 +23,8 @@ Only the following edges can be used for augmentation:
 
 <img width="463" alt="ff_example1" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/f5822b9f-9fb6-40c6-947c-d64d47681907" width="300">
 
+![Model](https://github.com/anusha-murali/anusha-murali.github.io/blob/main/images/Ffexample1.png)
+
 Max-flow and min-cut for the above graph is 19. Why?
 
 ### Run-time
