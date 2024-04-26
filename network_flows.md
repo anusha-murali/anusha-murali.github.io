@@ -7,7 +7,7 @@ Model a connection of water pipes (a network of roads) as edges with capacity on
 **Max-flow Min-cut Theorem**: For every directed graph $G$, the maximum flow on $G$
 with capacities $c$ equals the minimum cut in $G$ with capacities $c$.
 
-In the following graph, the minimum cut of the flow network. It shows that the capacity of the cut  $\{s, A, D\}$  and  $\{B, C, t\}$  is  $5 + 3 + 2 = 10$ , which is equal to the maximum flow. Other cuts will have a bigger capacity, like the capacity between  $\{s, A\}$  and  $\{B, C, D, t\}$  is  $4 + 3 + 5 = 12$ .
+In the following graph, the minimum cut of the flow network. It shows that the capacity of the cut  $\{s, A, D\}$  and  $\{B, C, t\}$  is  $5 + 3 + 2 = 10$ , which is equal to the maximum flow. Other cuts will have a bigger capacity, like the capacity between  $\{s, A\}$  and  $\{B, C, D, t\}$  is  $4 + 3 + 5 = 12$.
 
 ![Cut](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/fb2d4dc9-9e8d-44ed-a3b5-c36345871528)
 
@@ -20,7 +20,7 @@ If $f$ is a flow in a flow network $G = (V, E)$ with source $s$ and sink $t$,the
 Only the following edges can be used for augmentation:
 1. Non-null forward edges
 2. Non-empty backward edges
-  
+
 <img width="463" alt="ff_example1" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/f5822b9f-9fb6-40c6-947c-d64d47681907" width="300">
 
 Max-flow and min-cut for the above graph is 19. Why?
