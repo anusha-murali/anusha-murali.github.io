@@ -12,7 +12,7 @@ The minimum cut of the flow network is shown in the following graph. We see that
 ![Cut](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/fb2d4dc9-9e8d-44ed-a3b5-c36345871528)
 
 
-If $f$ is a flow in a flow network $G = (V, E)$ with source $s$ and sink $t$,then the following conditions are equivalent:
+If $f$ is a flow in a flow network $G = (V, E)$ with source $S$ and sink $T$,then the following conditions are equivalent:
 1. $f$ is a maximum flow in $G$
 2. The residual network $G_f$ contains no augmenting paths.
 3. $\|f\| = c(S, T)$ for some cut $(S, T)$ of $G$.
