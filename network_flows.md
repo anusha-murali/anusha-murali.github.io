@@ -47,7 +47,7 @@ We again carefully check for more augmenting paths. We recall that an augmenting
 
 The intuition of this is the following: Instead of sending a flow of 2 from $A$ to $C$, we reduce it to 0, and compensate this by sending an additional flow of 2 from $S$ to $C$, which allows us to send an additional flow of 2 along the path $A-D-T$.
 
-
+<img width="400" alt="6" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/b35adaa8-69cd-49d9-8aca-f49689081038">
 
 
 ### Run-time
