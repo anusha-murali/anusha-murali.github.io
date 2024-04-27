@@ -77,7 +77,7 @@ Edmonds-Karp differs from Ford-Fulkerson in that it chooses the next augmenting 
 
 ## 2. Network flow as a linear program.
 
-Let $f_{uv}$ be the amount of flow set along the edge $(u, v)$ and $c_{uv}$ be the capacity of the edge $(u, v)$.  We want to maximize the flow into the sink subject to the following conditions:
+Let $f_{uv}$ be the amount of flow sent along the edge $(u, v)$ and $c_{uv}$ be the capacity of the edge $(u, v)$.  We want to maximize the flow into the sink subject to the following conditions:
 1. **Capacity**: $f_{uv} \leq c_{uv}$.
 2. **Conservation**: For every vertex $w$ besides $w = s$ and $w = t$, we must have that $\displaystyle \sum_{u,w} f_{uw} - \sum_{w,v} f_{wv} = 0.$
 3. **Nonnegativity**: $f_{uv} \geq 0$.
