@@ -4,9 +4,6 @@ Model a connection of water pipes (a network of roads) as edges with capacity on
 
 ## 1. The Ford-Fulkerson Method
 
-**Max-flow Min-cut Theorem**: For every directed graph $G$, the maximum flow on $G$
-with capacities $c$ equals the minimum cut in $G$ with capacities $c$.
-
 **Residual Capacity**: A residual capacity of a directed edge is the capacity minus the flow. 
 
 The Ford-Fulkerson method works as follows. First, we set the flow of each edge to zero. Then we look for an augmenting path from  $S$  to  $T$ . An augmenting path is a simple path in the residual graph, i.e. along the edges whose residual capacity is positive. If such a path is found, then we can increase the flow along these edges. We keep on searching for augmenting paths and increasing the flow. Once an augmenting path doesn't exist anymore, the flow is maximal.
@@ -52,6 +49,18 @@ So, the total flow to $T$ is 4 + 2 + 7 + 4 + 2 = 19.
 
 Now, it is impossible to find any more augmenting path between $S$ and $T$, therefore 19 is the maximal possible flow.
 
+## 2. Max-flow Min-cut Theorem
+
+**Theorem**: For every directed graph $G$, the maximum flow on $G$
+with capacities $c$ equals the minimum cut in $G$ with capacities $c$.
+
+A  $s$-$t$-cut is a partition of the vertices of a flow network into two sets, such that a set includes the source  $s$  and the other one includes the sink  $t$. The capacity of an  $s$-$t$-cut is defined as the sum of capacities of the edges from the source side to the sink side.
+
+Obviously, we cannot send more flow from  $s$  to  $t$  than the capacity of any  $s$-$t$-cut. Therefore, the maximum flow is bounded by the minimum cut capacity.
+
+The max-flow min-cut theorem goes even further. It says that the capacity of the maximum flow has to be equal to the capacity of the minimum cut.
+
+
 **Example 2**: Find the max-flow in the graph of Example 1 using the min-cut property.
 
 <img width="410" alt="7" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/6de40a34-4d86-48d2-8702-effb7e5a4b39">
@@ -75,7 +84,7 @@ The minimum cut of the given flow network is shown above. We see that the capaci
 
 Edmonds-Karp differs from Ford-Fulkerson in that it chooses the next augmenting path using BFS with the weight of 1 for every edge. So, if there are multiple augmenting paths to choose from, Edmonds-Karp will be sure to choose the shortest augmenting path from the source to the sink.
 
-## 2. Network flow as a linear program
+## 3. Network flow as a linear program
 
 Let $f_{uv}$ be the amount of flow sent along the edge $(u, v)$ and $c_{uv}$ be the capacity of the edge $(u, v)$.  We want to maximize the flow into the sink subject to the following conditions:
 1. **Capacity**: $f_{uv} \leq c_{uv}$.
