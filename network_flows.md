@@ -43,6 +43,11 @@ We look for an augmenting path again and find that $S-A-D-B-T$ with the residual
 
 <img width="400" alt="5" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/eb964b05-1a42-40b6-8d9e-f577dfd6c1e7">
 
+We again carefully check for more augmenting paths. We recall that an augmenting path is either a **non-null forward edge** or a **non-empty backward edge**. We find the path $S-C-A-D-B-T$ with the residual capacities 3, 2, 4, 2, 2. Their minimum is 2, so we can increase the flow along this path by 2. Note that this path is very interesting. It includes the **reversed edge** $(C, A)$. In the original network, we are not allowed to send any flow from $C$ to $A$. But because we already have a flow of 2 from $A$ to $C$, this is possible. 
+
+The intuition of this is the following: Instead of sending a flow of 2 from $A$ to $C$, we reduce it to 0, and compensate this by sending an additional flow of 2 from $S$ to $C$, which allows us to send an additional flow of 2 along the path $A-D-T$.
+
+
 
 
 ### Run-time
