@@ -11,12 +11,6 @@ with capacities $c$ equals the minimum cut in $G$ with capacities $c$.
 
 The Ford-Fulkerson method works as follows. First, we set the flow of each edge to zero. Then we look for an augmenting path from  $S$  to  $T$ . An augmenting path is a simple path in the residual graph, i.e. along the edges whose residual capacity is positive. If such a path is found, then we can increase the flow along these edges. We keep on searching for augmenting paths and increasing the flow. Once an augmenting path doesn't exist anymore, the flow is maximal.
 
-
-The minimum cut of the flow network is shown in the following graph. We see that the capacity of the cut  $\\{s, A, D\\}$  and  $\\{B, C, t\\}$  is  $5 + 3 + 2 = 10$ , which is equal to the maximum flow. Other cuts will have a bigger capacity, like the capacity between  $\\{s, A\\}$  and  $\\{B, C, D, t\\}$  is  $4 + 3 + 5 = 12$.
-
-![Cut](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/fb2d4dc9-9e8d-44ed-a3b5-c36345871528)
-
-
 If $f$ is a flow in a flow network $G = (V, E)$ with source $S$ and sink $T$,then the following conditions are equivalent:
 1. $f$ is a maximum flow in $G$
 2. The residual network $G_f$ contains no augmenting paths.
@@ -26,7 +20,7 @@ Only the following edges can be used for augmentation:
 1. Non-null forward edges
 2. Non-empty backward edges
 
-**Example**: Find the max-flow in the following graph.
+**Example 1**: Find the max-flow in the following graph.
 
 <img width="400" alt="1" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/db030dff-f39f-4139-9fc8-a7a76efd4118">
 
@@ -57,6 +51,16 @@ The intuition of this is the following: Instead of sending a flow of 2 from $A$ 
 So, the total flow to $T$ is 4 + 2 + 7 + 4 + 2 = 19.
 
 Now, it is impossible to find any more augmenting path between $S$ and $T$, therefore 19 is the maximal possible flow.
+
+**Example 2**: Find the max-flow in the above graph using the min-cut property.
+
+**Example 3**: Find the max-flow in the graph below using the min-cut property.
+
+![Cut](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/fb2d4dc9-9e8d-44ed-a3b5-c36345871528)
+
+The minimum cut of the given flow network is shown above. We see that the capacity of the cut  $\\{s, A, D\\}$  and  $\\{B, C, t\\}$  is  $5 + 3 + 2 = 10$ , which is equal to the maximum flow. Other cuts will have a bigger capacity, like the capacity between  $\\{s, A\\}$  and  $\\{B, C, D, t\\}$  is  $4 + 3 + 5 = 12$.
+
+
 
 ### Run-time
 
