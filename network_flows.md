@@ -35,6 +35,9 @@ We look for augmenting path again and find that the path $S-A-C-D-T$ with the re
 
 <img width="400" alt="3" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/28031b00-f3fc-4eaf-95fe-055850233b4c">
 
+This time we find the path $S-C-D-T$ with the residual capacities of 10, 7, and 8. Their minimum is 7, so we can increase the flow along this path by 7. This gives a total flow to $T of 4 + 2 + 7 = 13.
+
+<img width="400" alt="4" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/16594731-5f49-479c-b9a8-cac872b79cc6">
 
 
 ### Run-time
