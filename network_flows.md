@@ -31,21 +31,21 @@ We find the path $S \rightarrow A\rightarrow B\rightarrow T$ with the residual c
 
 <img width="400" alt="2" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/84959a8e-6f97-4dc3-b03f-3ad7af97d354">
 
-We look for augmenting path again and find that the path $S-A-C-D-T$ with the residual capacities 6, 2, 7, and 8. Their minimum is 2, so we can increase the flow along this path by 2. This gives a total flow to $T$ of 4 + 2 = 6.
+We look for augmenting path again and find that the path $S\rightarrow A\rightarrow C\rightarrow D\rightarrow T$ with the residual capacities 6, 2, 7, and 8. Their minimum is 2, so we can increase the flow along this path by 2. This gives a total flow to $T$ of 4 + 2 = 6.
 
 <img width="400" alt="3" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/28031b00-f3fc-4eaf-95fe-055850233b4c">
 
-This time we find the path $S-C-D-T$ with the residual capacities of 10, 7, and 8. Their minimum is 7, so we can increase the flow along this path by 7. This gives a total flow to $T$ of 4 + 2 + 7 = 13.
+This time we find the path $S\rightarrow C\rightarrow D\rightarrow T$ with the residual capacities of 10, 7, and 8. Their minimum is 7, so we can increase the flow along this path by 7. This gives a total flow to $T$ of 4 + 2 + 7 = 13.
 
 <img width="400" alt="4" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/16594731-5f49-479c-b9a8-cac872b79cc6">
 
-We look for an augmenting path again and find that $S-A-D-B-T$ with the residual capacities 4, 8, 6, and 6. Their minimum is 4, so we can increase the flow along this path by 4. This gives a total flow to $T$ of 4 + 2 + 7 + 4 = 17.
+We look for an augmenting path again and find that $S\rightarrow A\rightarrow D\rightarrow B\rightarrow T$ with the residual capacities 4, 8, 6, and 6. Their minimum is 4, so we can increase the flow along this path by 4. This gives a total flow to $T$ of 4 + 2 + 7 + 4 = 17.
 
 <img width="400" alt="5" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/eb964b05-1a42-40b6-8d9e-f577dfd6c1e7">
 
-We again carefully check for more augmenting paths. We recall that an augmenting path is either a **non-null forward edge** or a **non-empty backward edge**. We find the path $S-C-A-D-B-T$ with the residual capacities 3, 2, 4, 2, 2. Their minimum is 2, so we can increase the flow along this path by 2. Note that this path is very interesting. It includes the **reversed edge** $(C, A)$. In the original network, we are not allowed to send any flow from $C$ to $A$. But because we already have a flow of 2 from $A$ to $C$, this is possible. 
+We again carefully check for more augmenting paths. We recall that an augmenting path is either a **non-null forward edge** or a **non-empty backward edge**. We find the path $S\rightarrow C\rightarrow A\rightarrow D\rightarrow B\rightarrow T$ with the residual capacities 3, 2, 4, 2, 2. Their minimum is 2, so we can increase the flow along this path by 2. Note that this path is very interesting. It includes the **reversed edge** $(C, A)$. In the original network, we are not allowed to send any flow from $C$ to $A$. But because we already have a flow of 2 from $A$ to $C$, this is possible. 
 
-The intuition of this is the following: Instead of sending a flow of 2 from $A$ to $C$, we reduce it to 0, and compensate this by sending an additional flow of 2 from $S$ to $C$, which allows us to send an additional flow of 2 along the path $A-D-T$.
+The intuition of this is the following: Instead of sending a flow of 2 from $A$ to $C$, we reduce it to 0, and compensate this by sending an additional flow of 2 from $S$ to $C$, which allows us to send an additional flow of 2 along the path $A\rightarrow D\rightarrow T$.
 
 <img width="400" alt="6" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/b35adaa8-69cd-49d9-8aca-f49689081038">
 
