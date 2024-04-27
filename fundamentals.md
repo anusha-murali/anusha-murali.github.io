@@ -2,7 +2,7 @@
 
 ## 1. Asymptotic Notation
 
-<img width="856" alt="asymptotic" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/c0c15fe6-36a6-41f6-8249-0bbde38bc15b">
+<img width="856" alt="asymptotic" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/cb2a42a0-56f8-4d5c-ac7e-4f37d72f9967">
 
 
 
