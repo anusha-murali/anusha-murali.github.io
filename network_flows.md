@@ -52,7 +52,7 @@ So, the total flow to $T$ is 4 + 2 + 7 + 4 + 2 = 19.
 
 Now, it is impossible to find any more augmenting path between $S$ and $T$, therefore 19 is the maximal possible flow.
 
-**Example 2**: Find the max-flow in the above graph using the min-cut property.
+**Example 2**: Find the max-flow in the graph of Example 1 using the min-cut property.
 
 **Example 3**: Find the max-flow in the graph below using the min-cut property.
 
