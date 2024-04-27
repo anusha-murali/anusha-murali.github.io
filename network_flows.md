@@ -49,6 +49,13 @@ So, the total flow to $T$ is 4 + 2 + 7 + 4 + 2 = 19.
 
 Now, it is impossible to find any more augmenting path between $S$ and $T$, therefore 19 is the maximal possible flow.
 
+### Run-time
+
+1. Ford-Fulkerson has a run-time of $O(Ef^{\*})$ because each time we augment a path, we increase the total flow, so at worst the number of times we find an augmenting path is $O(f^*)$, where $f^{\*}$ is the value of the max flow. We can find an augmenting path in $O(E)$ with DFS.
+2. **Edmond-Karp algorithm**: If we use BFS instead of find our augmenting paths, then can be proved that the run-time is $(O(V E^2)$, which does not depend on $f^{\*}$ anymore.
+
+Edmonds-Karp differs from Ford-Fulkerson in that it chooses the next augmenting path using BFS with the weight of 1 for every edge. So, if there are multiple augmenting paths to choose from, Edmonds-Karp will be sure to choose the shortest augmenting path from the source to the sink.
+
 ## 2. Max-flow Min-cut Theorem
 
 **Theorem**: For every directed graph $G$, the maximum flow on $G$
@@ -75,14 +82,6 @@ Note that we don't consider the flow on edge $A\rightarrow C$, as it is going in
 
 The minimum cut of the given flow network is shown above. We see that the capacity of the cut  $\\{s, A, D\\}$  and  $\\{B, C, t\\}$  is  $5 + 3 + 2 = 10$ , which is equal to the maximum flow. Other cuts will have a bigger capacity, like the capacity between  $\\{s, A\\}$  and  $\\{B, C, D, t\\}$  is  $4 + 3 + 5 = 12$.
 
-
-
-### Run-time
-
-1. Ford-Fulkerson has a run-time of $O(Ef^{\*})$ because each time we augment a path, we increase the total flow, so at worst the number of times we find an augmenting path is $O(f^*)$, where $f^{\*}$ is the value of the max flow. We can find an augmenting path in $O(E)$ with DFS.
-2. **Edmond-Karp algorithm**: If we use BFS instead of find our augmenting paths, then can be proved that the run-time is $(O(V E^2)$, which does not depend on $f^{\*}$ anymore.
-
-Edmonds-Karp differs from Ford-Fulkerson in that it chooses the next augmenting path using BFS with the weight of 1 for every edge. So, if there are multiple augmenting paths to choose from, Edmonds-Karp will be sure to choose the shortest augmenting path from the source to the sink.
 
 ## 3. Network flow as a linear program
 
