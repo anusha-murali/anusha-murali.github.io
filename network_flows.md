@@ -54,6 +54,9 @@ Now, it is impossible to find any more augmenting path between $S$ and $T$, ther
 
 **Example 2**: Find the max-flow in the graph of Example 1 using the min-cut property.
 
+<img width="400" alt="7" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/2b9fbf96-1382-464d-bbcb-b5471a8bc7df">
+
+
 The red dotted-line shows the min-cut of all the possible cuts. The flow coming out of $S$ is 10 + 9 = 19, which is the max-flow of this network. 
 
 Note that we don't consider the flow on edge $A-C$, as it is going into the source node, $S$.
