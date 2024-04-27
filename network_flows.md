@@ -27,7 +27,7 @@ Only the following edges can be used for augmentation:
 
 We run the Ford-Fulkerson method on the above graph as follows:
 
-We find the path $S-A-B-T$ with the residual capacities of 10, 4, 10. Their minimum is 4, so we can increase the flow along this path by 4. This gives a flows of 4 for the network.
+We find the path $S \rightarrow A\rightarrow B\rightarrow T$ with the residual capacities of 10, 4, 10. Their minimum is 4, so we can increase the flow along this path by 4. This gives a flows of 4 for the network.
 
 <img width="400" alt="2" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/84959a8e-6f97-4dc3-b03f-3ad7af97d354">
 
