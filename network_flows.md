@@ -7,6 +7,11 @@ Model a connection of water pipes (a network of roads) as edges with capacity on
 **Max-flow Min-cut Theorem**: For every directed graph $G$, the maximum flow on $G$
 with capacities $c$ equals the minimum cut in $G$ with capacities $c$.
 
+**Residual Capacity**: A residual capacity of a directed edge is the capacity minus the flow. 
+
+The Ford-Fulkerson method works as follows. First, we set the flow of each edge to zero. Then we look for an augmenting path from  $S$  to  $T$ . An augmenting path is a simple path in the residual graph, i.e. along the edges whose residual capacity is positive. If such a path is found, then we can increase the flow along these edges. We keep on searching for augmenting paths and increasing the flow. Once an augmenting path doesn't exist anymore, the flow is maximal.
+
+
 The minimum cut of the flow network is shown in the following graph. We see that the capacity of the cut  $\\{s, A, D\\}$  and  $\\{B, C, t\\}$  is  $5 + 3 + 2 = 10$ , which is equal to the maximum flow. Other cuts will have a bigger capacity, like the capacity between  $\\{s, A\\}$  and  $\\{B, C, D, t\\}$  is  $4 + 3 + 5 = 12$.
 
 ![Cut](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/fb2d4dc9-9e8d-44ed-a3b5-c36345871528)
