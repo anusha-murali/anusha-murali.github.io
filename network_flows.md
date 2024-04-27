@@ -49,6 +49,9 @@ The intuition of this is the following: Instead of sending a flow of 2 from $A$ 
 
 <img width="400" alt="6" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/b35adaa8-69cd-49d9-8aca-f49689081038">
 
+So, the total flow to $T$ is 4 + 2 + 7 + 4 + 2 = 19.
+
+Now, it is impossible to find any more augmenting path between $S$ and $T$, therefore 19 is the maximal possible flow.
 
 ### Run-time
 
