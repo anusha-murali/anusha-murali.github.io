@@ -30,7 +30,7 @@ We find the path $S \rightarrow A\rightarrow B\rightarrow T$ with the residual c
 
 <img width="400" alt="2" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/84959a8e-6f97-4dc3-b03f-3ad7af97d354">
 
-We look for augmenting path again and find that the path $S\rightarrow A\rightarrow C\rightarrow D\rightarrow T$ with the residual capacities 6, 2, 7, and 8. Their minimum is 2, so we can increase the flow along this path by 2. This gives a total flow to $T$ of 4 + 2 = 6.
+We look for augmenting path again and find that the path $S\rightarrow A\rightarrow C\rightarrow D\rightarrow T$ with the residual capacities 6, 2, 9, and 10. Their minimum is 2, so we can increase the flow along this path by 2. This gives a total flow to $T$ of 4 + 2 = 6.
 
 <img width="400" alt="3" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/28031b00-f3fc-4eaf-95fe-055850233b4c">
 
