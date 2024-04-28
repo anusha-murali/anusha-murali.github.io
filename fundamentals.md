@@ -83,6 +83,12 @@ $f(n) = \Omega(f(n))$.
 $f(n) = \Theta(g(n))$ if and only if $g(n) = \Theta(f(n))$.
 
 
+**Transpose symmetry**
+
+$f(n) = O(g(n))$ if and only if $g(n) = \Omega(f(n))$,
+
+$f(n) = o(g(n))$ if and only if $g(n) = \omega(f(n))$.
+
 
 ## 2. Master Theorem
 
