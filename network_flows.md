@@ -53,12 +53,15 @@ Now, it is impossible to find any more augmenting path between $S$ and $T$, ther
 
 The following flow example shows the importance of choosing good augmenting paths.
 
-<img width="500" alt="8" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/3a82d8ac-4da0-4022-9792-2d2fc570cb3e">
+<img width="450" alt="8" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/3a82d8ac-4da0-4022-9792-2d2fc570cb3e">
 
 Let the first augmenting path be $S\rightarrow A \rightarrow B \rightarrow S$, giving a flow of 1.
 
-<img width="500" alt="9" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/d5146cf1-a134-4a9d-bcd3-4ea8d7f7ba59">
+<img width="450" alt="9" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/d5146cf1-a134-4a9d-bcd3-4ea8d7f7ba59">
 
+Let the second augmenting path be $S\rightarrow B \rightarrow A \rightarrow S$, which increments the total flow to 2. We are able to send 1 unit in the reversed direction of $B \rightarrow A$, because the forward direction $A \rightarrow B$ is at its maximum capacity (or its residual capacity is 0).
+
+<img width="450" alt="10" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/e63a2a81-6eac-426c-aacc-1e05960d149a">
 
 
 ### Run-time
