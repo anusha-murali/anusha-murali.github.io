@@ -211,6 +211,19 @@ There are 6 permuations of the universe $U$, namely $\\{A, B, C\\}$, $\\{A, C, B
 
 We note that 3 out of the 6 permuations have matching MinHash values, which is equal to the actual set resemblance of $\dfrac{1}{2}$. 
 
+In fact, we have the following MinHash property:
+
+$$
+{\bf Pr}(\text{MinHash}(S_1) = \text{MinHash}(S_1)) = \dfrac{\|S_1 \cap S_2\|}{\|S_1 \cup S_2\|}  R(S_1, S_2),
+$$
+
+where the probability is taken over all choices of permutations.
+
+**Why?**
+
+1. The first row where one of the two sets has value 1 belongs to the union. Recall that union contains rows with at least one 1.
+2. We have equality if both sets have value 1, and this row belongs to the intersection.
+
 ## 2. Shingling 
 
 How do we turn document similarity into a set resemblance problem? The key idea is to hash pieces of the document– say every four consecutive words - into say, 64 bit numbers. This process is called shingling, and each set of consecutive words is called a shingle. Using hashing, the shingles give rise to the resulting numbers for the set resemblance problem.
