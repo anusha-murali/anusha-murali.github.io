@@ -21,7 +21,10 @@ Rabin testing says that if an odd number $n$ is a prime, the only solutions to $
 Since $n$ is odd, $n-1$ is even. Therefore, we can represent $n-1$ as $n -1 = 2^i \cdot u$, where $u$ is odd. Suppose we choose a random base $a$ and compute $a^{n-1}$ by first computing $a^u$ and then repeatedly squaring. Along the way, we will check to see for the values, $a^u, a^{2u}, a^{4u}, \ldots$ and verify whether they have the following property:
 
 $$
-a^{2^{i-1}u} ~~ \not \equiv ~~\pm 1 \pmod{n}\\
+a^{2^{i-1}u} ~~ \not \equiv ~~\pm 1 \pmod{n}
+$$
+
+$$
 a^{2^i u} ~~  \equiv ~~ 1 \pmod{n}.
 $$
 
