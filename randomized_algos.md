@@ -43,9 +43,9 @@ Let $n = 63973$. Hence $n-1 = 63972 = 2^2 \cdot 15993$. Let $a = 3$ (3 is relati
 
 Since $a^{2^{i-1} \cdot u} \neq \pm 1 \pmod{n}$ and $a^{2^i \cdot u} = 1 \pmod{n}$, where $a = 3, i = 1, u = 15993$, we have found a non-trivial square root of 1 modulo $n$. In our case, the non-trivial square root of 1 modulo $n$ is $3^{15993} \pmod{63973} = 19683$. Therefore, 63973 is a composite number and $a = 3$ is the witness for the compositeness of $63973$.
 
-**Example 2**: True or False. Let $n$ be an odd integer and write $n-1 = 2^t \cdot u$ with $u$ odd. Then, if for some $a$, $a^{2^i u} \equiv 1 \pmod{n}$, but $a^{2^{i+1}u} \not \equiv \pm 1 \pmod{n}$, then $n$ is composite.
+**Example 2**: True or False? Let $n$ be an odd integer and write $n-1 = 2^t \cdot u$ with $u$ odd. Then, if for some $a$, $a^{2^i u} \equiv 1 \pmod{n}$, but $a^{2^{i+1}u} \not \equiv \pm 1 \pmod{n}$, then $n$ is composite.
 
-**False** It is the wrong direction for Rabin-Miller Testing. We should be checking for non-trivial square roots.
+**False.** It is the wrong direction for Rabin-Miller Testing. We should be checking for non-trivial square roots.
 
 
 [Table of Contents](./index.md)
