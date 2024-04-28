@@ -69,9 +69,13 @@ Now, let the third augmenting path be $S\rightarrow A \rightarrow B \rightarrow 
 
 We can continue in this manner, each time reversing the flow between $A \rightarrow B$ and $B \rightarrow A$, for a total of 200 iterations before reaching the max flow of 200.
 
-On the other hand, let the first augmenting path be $S \righarrow A \rightarrow T$. This gives us a flow of 100.
+On the other hand, let the first augmenting path be $S \rightarrow A \rightarrow T$. This gives us a flow of 100.
 
 <img width="450" alt="12" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/107518e6-a1e0-405e-958e-015f62540def">
+
+Now, let the second augmenting path be $S \rightarrow B \rightarrow T$, which gives us a total flow of 200. There are no more augmenting paths and our max-flow for the network is 200, which we obtained in just 2 iterations.
+
+<img width="450" alt="13" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/ccea07f9-7a2a-4781-857e-7fe8a9900a26">
 
 
 ### Run-time
