@@ -200,6 +200,12 @@ $$
 \text{MinHash}(\pi_1(S_1)) = 1, \quad \text{MinHash}(\pi_1(S_2)) = 3, \quad \text{MinHash}(\pi_1(S_3)) = 2, \quad \text{MinHash}(\pi_1(S_4)) = 1.
 $$
 
+The MinHash values for the right permutation $(\pi_2)$ is as follows:
+
+$$
+\text{MinHash}(\pi_2(S_1)) = 1, \quad \text{MinHash}(\pi_2(S_2)) = 6, \quad \text{MinHash}(\pi_2(S_3)) = 1, \quad \text{MinHash}(\pi_2(S_4)) = 3.
+$$
+
 **Lemma 1** Let $\pi(A)$ and $\pi(B)$ be some random permutations of the $n!$ possible permutations of the set $S$. Then $\min(\pi(A)) = \min(\pi(B))$ if and only if there exists $x \in A \cup B$ such that:
 1. $x \in A \cap B$
 2. $\pi(x) = \min(\pi(A)) = \min(\pi(B))$.
