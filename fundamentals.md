@@ -40,6 +40,12 @@ $$
 \lim_{n \rightarrow \infty} \frac{f(n)}{g(n)} = 0.
 $$
 
+
+### $\omega$-notation
+
+$\omega(g(n)) = \\{f(n):$ there exist positive constants $c$ and $n_0$ such that $0  \leq  cg(n) < f(n)$ for all $n \geq n_0 \\}$.
+
+
 ## 2. Master Theorem
 
 $$
