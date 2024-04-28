@@ -69,6 +69,14 @@ $f(n) = o(g(n))$ and $g(n) = o(h(n))$ imply $f(n) = o(h(n))$,
 
 $f(n) = \omega(g(n))$ and $g(n) = \omega(h(n))$ imply $f(n) = \omega(h(n))$.
 
+**Reflexivity**
+
+$f(n) = \Theta(f(n))$,
+
+$f(n) = O(f(n))$,
+
+$f(n) = \Omega(f(n))$.
+
 ## 2. Master Theorem
 
 $$
