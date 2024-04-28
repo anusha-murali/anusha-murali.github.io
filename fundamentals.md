@@ -148,10 +148,21 @@ def F(n):
     return F(n-1) + F(n-2)
 ```
 
-Runtime of the iterative Fibonacci is $O(2^{n/2})$.
+**Runtime** of the recursive Fibonacci is $O(2^{n/2})$.
 
+### 3.2. Iterative Fibonacci
 
+```
+def F(n):
+  A = []
+  A[0] = 0
+  A[1] = 1
+  for i in range(2,n+1):
+    A[i] = A[i-1] + A[i-2]
+  return A[n]
+```
 
+**Runtime** of the iterative Fibonacci is $(O(n^2)$. Note that we do $O(n)$ additions on $O(n)$ bit integers.
 
 [Table of Contents](./index.md)
 <!--
