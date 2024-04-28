@@ -248,7 +248,7 @@ Now we choose a threshold -  for example, if $N = 100$ we might say that two doc
 
 **Problem 1**: Recall that *resemblance* $R(A, B)$ of two sets $A$ and $B$ is defined as R(A, B) = \dfrac{\|A \cap B\|}{\|A \cup B\|}$.
 
-Suppose that for some positive integer $N$, $A$ and $B$ are subsets of $\[N\]$ (i.e: $\{0, 1, \ldots, N-1\}$) with $\|A\| \geq 2$ and $\|B\| \geq 2$. Prove or disprove: For every such  $A$ and $B$, if we choose a uniformly random permutation $\pi: \[N\] \rightarrow \[N\]$, the probability that $\text{second-largest}(\{\pi(a):a \in A\})$ = $\text{second-largest}(\{\pi(b):b \in B\})$ is $R(A, B)$. Note that given a set $X$, second-largest($X$) is the second-largest element of $X$.
+Suppose that for some positive integer $N$, $A$ and $B$ are subsets of $\[N\]$ (i.e: $\{0, 1, \ldots, N-1\}$) with $\|A\| \geq 2$ and $\|B\| \geq 2$. Prove or disprove: For every such  $A$ and $B$, if we choose a uniformly random permutation $\pi: \[N\] \rightarrow \[N\]$, the probability that $\text{second-largest}(\{\pi(a):a \in A\})$ = $\text{second-largest}(\{\pi(b):b \in B\})$ is $R(A, B)$. Note that given a set $X$, $\text{second-largest}(X)$ is the second-largest element of $X$.
 
 [Table of Contents](./index.md)
 <!--
