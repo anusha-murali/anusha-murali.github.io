@@ -30,7 +30,7 @@ $\Omega(g(n)) = \\{f(n):$ there exist positive constants $c$ and $n_0$ such that
 
 ### $o$-notation
 
-$o(g(n)) = \\{f(n):$ there exist positive constants $c$ and $n_0$ such that $0  \leq f(n) < cg(n)$ for all $n \geq n_0 \\}$.
+$o(g(n)) = \\{f(n):$ for any positive constant $c > 0$, there exists a constant $n_0 > 0$ such that $0  \leq f(n) < cg(n)$ for all $n \geq n_0 \\}$.
 
 Example: $5n = o(n^2)$, but $5n^2 \neq o(n^2)$.
 
@@ -43,7 +43,7 @@ $$
 
 ### $\omega$-notation
 
-$\omega(g(n)) = \\{f(n):$ there exist positive constants $c$ and $n_0$ such that $0  \leq  cg(n) < f(n)$ for all $n \geq n_0 \\}$.
+$\omega(g(n)) = \\{f(n):$ for any positive constant $c > 0$, there exists a constant $n_0 > 0$ such that $0  \leq  cg(n) < f(n)$ for all $n \geq n_0 \\}$.
 
 
 ## 2. Master Theorem
