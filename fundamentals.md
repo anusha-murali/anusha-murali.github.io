@@ -210,9 +210,9 @@ def mergeSort(s):
   s2 = mergesort(s2)
   return merge(s1,s2)
 ```
-The recurrence relation for *mergeSort()* is $T(n) \leq 2T(n/2) + n - 1$. This is because each call of *mergeSort()* in turn makes two recursive calls to *mergeSort()* and performs a linear time merge.
+**Recurrence relation**: $T(n) \leq 2T(n/2) + n - 1$. This is because each call of *mergeSort()* in turn makes two recursive calls to *mergeSort()* and performs a linear time merge.
 
-From the Master theorem, we find $T(n) = \Theta(n \log n)$.
+**Runtime**: From the Master theorem, we find $T(n) = \Theta(n \log n)$.
 
 ### 4.2. Insertion Sort
 
@@ -227,6 +227,28 @@ def InsertionSort(x): # S is a list
   return S
 ```
 **Runtime** $O(n^2)$.
+
+### 4.3 Binary Search
+
+```
+def binary_tree(array, val):
+  l = 0                    # Right index = 0
+  r = len(array)           # Left index = length of array
+  while l < r:
+    m = l + (r - l) // 2   # Middle index
+    if array[m] == val:
+      return m
+    if array[m] > val:
+      l = m
+    else:
+      r = m + 1
+  return -1                # Not found
+```
+Let $T(n)$ be the number of comparisons needed to search an element in an array of $n$ elements. 
+
+**Recurrence relation**: $T(n) = T(n/2) + c$.
+
+**Runtime**: $O(log_2 n)$.
 
 [Table of Contents](./index.md)
 <!--
