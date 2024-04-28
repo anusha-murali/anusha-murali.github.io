@@ -27,6 +27,14 @@ $\Omega(g(n)) = \\{f(n):$ there exist positive constants $c$ and $n_0$ such that
 
 **Theorem**: For any two functions $f(n)$ and $g(n)$, we have $f(n) = \Theta(g(n))$ if and only if $f(n) = O(g(n))$ and $f(n) = \Omega(g(n))$.
 
+
+### $o$-notation
+
+$o(g(n)) = \\{f(n):$ there exist positive constants $c$ and $n_0$ such that $0  \leq f(n) < cg(n)$ for all $n \geq n_0 \\}$.
+
+Example: $5n = o(n^2)$, but $5n^2 \neq o(n^2)$.
+
+
 ## 2. Master Theorem
 
 $$
