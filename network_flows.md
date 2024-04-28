@@ -53,7 +53,7 @@ Now, it is impossible to find any more augmenting path between $S$ and $T$, ther
 
 The following flow example shows the importance of choosing good augmenting paths.
 
-<img width="546" alt="8" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/3a82d8ac-4da0-4022-9792-2d2fc570cb3e">
+<img width="500" alt="8" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/3a82d8ac-4da0-4022-9792-2d2fc570cb3e">
 
 
 
