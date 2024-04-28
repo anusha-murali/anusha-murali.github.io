@@ -189,6 +189,8 @@ Suppose that we do not need to exactly compute the resemblance $R(A,B)$. We can 
 2. Define a hash function for set $S$. For example, $h(S)$ = the index of the first row (in the permuted order), in which colum $S$ has 1.
 4. Use $k$ (e.g., $k = 100$) independent random permutations to create a signature.
 
+For example, let $U= \\{A, B, C, D, E, F\\}$ and $S_1 \\{A, B, E\\},$S_2 = \\{C\\},$ $S_3 = \\{B, C, D, F\\},$, $S_4 = \\{A, D, F\\}.$ Following is the characteristic matrix representing these sets.
+
 **Lemma 1** Let $\pi(A)$ and $\pi(B)$ be some random permutations of the $n!$ possible permutations of the set $S$. Then $\min(\pi(A)) = \min(\pi(B))$ if and only if there exists $x \in A \cup B$ such that:
 1. $x \in A \cap B$
 2. $\pi(x) = \min(\pi(A)) = \min(\pi(B))$.
@@ -199,7 +201,7 @@ $$
 {\bf Pr}[\pi(x) = \min(\pi(A \cup B))] = {\bf Pr}[\pi(y) = \min(\pi(A \cup B))].
 $$
 
-**Example 1**: For example, let the universe be $U = \\{A, B, C\\}$ and some two arbitrary subsets be $S_1 = \\{B\\}$ and $S_2 = \\{A, B\\}$. Compute the similarity between $S_1$ and $S_2$ **directly using set resemblance** and **using MinHash** considering **all** possible permutations in $U$.
+**Example 1**: Let the universe be $U = \\{A, B, C\\}$ and some two arbitrary subsets be $S_1 = \\{B\\}$ and $S_2 = \\{A, B\\}$. Compute the similarity between $S_1$ and $S_2$ **directly using set resemblance** and **using MinHash** considering **all** possible permutations in $U$.
 
 The set resemblance (or Jaccard coefficient) of $S_1$ and $S_2$ is $R(S_1, S_2) = \dfrac{\|S_1 \cap S_2\|}{\|S_1 \cup S_2\|} = \dfrac{1}{2}$.
 
