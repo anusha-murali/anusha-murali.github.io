@@ -77,11 +77,14 @@ Now, let the second augmenting path be $S \rightarrow B \rightarrow T$, which gi
 
 <img width="450" alt="13" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/ccea07f9-7a2a-4781-857e-7fe8a9900a26">
 
+Therefore, we notice that some choices lead to **exponential** algorithms, while clever choices lead to **polynomial** algorithms.
+
+In order to choose augmenting paths with few iterations, we need to select the ones with fewest number of arcs (i.e: shortest path) and with maximum bottleneck capacity (i.e: fattest path). One such algorithm is the **Edmonds-Karp** algorithm, which uses BFS.
 
 ### Run-time
 
 1. Ford-Fulkerson has a run-time of $O(Ef^{\*})$ because each time we augment a path, we increase the total flow, so at worst the number of times we find an augmenting path is $O(f^*)$, where $f^{\*}$ is the value of the max flow. We can find an augmenting path in $O(E)$ with DFS.
-2. **Edmond-Karp algorithm**: If we use BFS instead of find our augmenting paths, then can be proved that the run-time is $(O(V E^2)$, which does not depend on $f^{\*}$ anymore.
+2. **Edmonds-Karp algorithm**: If we use BFS instead of find our augmenting paths, then can be proved that the run-time is $(O(V E^2)$, which does not depend on $f^{\*}$ anymore.
 
 Edmonds-Karp differs from Ford-Fulkerson in that it chooses the next augmenting path using BFS with the weight of 1 for every edge. So, if there are multiple augmenting paths to choose from, Edmonds-Karp will be sure to choose the shortest augmenting path from the source to the sink.
 
