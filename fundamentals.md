@@ -185,7 +185,7 @@ $$
 
 ## 4. Sorting and Searching
 
-### 4.1 Merge Sort
+### 4.1. Merge Sort
 
 We first define the function *merge()*, which takes two unsorted lists and outputs a single sorted list. 
 
@@ -213,6 +213,18 @@ def mergeSort(s):
 The recurrence relation for *mergeSort()* is $T(n) \leq 2T(n/2) + n - 1$. This is because each call of *mergeSort()* in turn makes two recursive calls to *mergeSort()* and performs a linear time merge.
 
 From the Master theorem, we find $T(n) = \Theta(n \log n)$.
+
+### 4.2. Bubble Sort (a.k.a. Insertion Sort)
+
+```
+def BubbleSort(x): # x is a list
+  n = len(x)
+  for i in range(n-1):
+    j = i
+    while j > 0 and x[j+1] < x[j]:
+      x[j], x[j+1] = x[j+1], x[j] # swap
+      j = j-1
+```
 
 [Table of Contents](./index.md)
 <!--
