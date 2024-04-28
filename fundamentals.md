@@ -210,7 +210,9 @@ def mergeSort(s):
   s2 = mergesort(s2)
   return merge(s1,s2)
 ```
-The recurrence relation for *mergeSort()* is $T(n) \leq 2T(n/2) + n - 1$. From the Master theorem, we find $T(n) = \Theta(n \log n)$.
+The recurrence relation for *mergeSort()* is $T(n) \leq 2T(n/2) + n - 1$. This is because each call of *mergeSort()* in turn makes two recursive calls to *mergeSort()* and performs a linear time merge.
+
+From the Master theorem, we find $T(n) = \Theta(n \log n)$.
 
 [Table of Contents](./index.md)
 <!--
