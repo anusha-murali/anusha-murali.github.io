@@ -203,7 +203,7 @@ For example, let the universe be $U = \\{A, B, C\\}$ and some two arbitrary subs
 
 We are interested in finding out the similarity between $S_1$ and $S_2$.
 
-<img width="982" alt="14" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/bb864334-bdad-4fc1-9b2e-e230a9187436">
+<img width="700" alt="14" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/bb864334-bdad-4fc1-9b2e-e230a9187436">
 
 
 ## 2. Shingling 
