@@ -113,7 +113,7 @@ $$
 
 **Case 2** $\quad c = \log_b a \quad T = \Theta(n^c \log_b a)$
 
-**Case 3** $\quad c > \log_b a \quad T = \Theta(n^c$
+**Case 3** $\quad c > \log_b a \quad T = \Theta(n^c)$
 
 [Table of Contents](./index.md)
 <!--
