@@ -53,19 +53,19 @@ Now, it is impossible to find any more augmenting path between $S$ and $T$, ther
 
 The following flow example shows the importance of choosing good augmenting paths.
 
-<img width="450" alt="8" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/3a82d8ac-4da0-4022-9792-2d2fc570cb3e">
+<img width="450" alt="8" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/2c815eb0-2e3b-4619-a047-ccee0cf9ede3">
 
 Let the first augmenting path be $S\rightarrow A \rightarrow B \rightarrow T$, giving a flow of 1.
 
-<img width="450" alt="9" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/d5146cf1-a134-4a9d-bcd3-4ea8d7f7ba59">
+<img width="450" alt="9" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/cb81e4e1-d6ad-4e23-b7f2-b9bff20a4ccb">
 
 Let the second augmenting path be $S\rightarrow B \rightarrow A \rightarrow T$, which increments the total flow to 2. We are able to send 1 unit in the reversed direction of $B \rightarrow A$, because the forward direction $A \rightarrow B$ is at its maximum capacity (or its residual capacity is 0).
 
-<img width="450" alt="10" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/e63a2a81-6eac-426c-aacc-1e05960d149a">
+<img width="450" alt="10" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/a645699d-0dc4-404a-9aa8-b02f71f5b4c2">
 
 Now, let the third augmenting path be $S\rightarrow A \rightarrow B \rightarrow T$, again reversing the flow. This increments the total flow to 3.
 
-<img width="450" alt="11" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/a90dade5-b3e3-4f9f-b82b-11185360d29c">
+<img width="450" alt="11" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/364d60cc-3d9f-4264-af33-ea575a2dccb2">
 
 We can continue in this manner, each time reversing the flow between $A \rightarrow B$ and $B \rightarrow A$, for a total of 200 iterations before reaching the max flow of 200.
 
