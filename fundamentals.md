@@ -106,7 +106,7 @@ $f(n) = \omega(g(n))\qquad$ is like $\qquad a > b$,
 ## 2. Master Theorem
 
 $$
-T(n) = a \cdot T \left( \frac{n}{b} \right) + \Theta(n^c)
+T(n) = a \cdot T \left( \frac{n}{b} \right) + \Theta(n^c) \qquad \text{for }a \geq 1, b \geq 2, d, c \geq 0.
 $$
 
 
