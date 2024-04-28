@@ -166,7 +166,8 @@ def F(n):
 
 ### 3.3. Fibonacci using matrix multiplication
 
-$$\left ( 
+$$
+\left ( 
 \begin{bmatrix}
 F_1\\\
 F_2
