@@ -199,6 +199,10 @@ $$
 {\bf Pr}[\pi(x) = \min(\pi(A \cup B))] = {\bf Pr}[\pi(y) = \min(\pi(A \cup B))].
 $$
 
+For example, let the universe be $U = \\{A, B, C, D, E, F, G\\}$ and some two arbitrary subsets be $S_1 = \\{A, B, F, G\\}$ and $S_2 = \\{A, E, F, G\\}$. 
+
+We are interested in finding out the similarity between $S_1$ and $S_2$.
+
 ## 2. Shingling 
 
 How do we turn document similarity into a set resemblance problem? The key idea is to hash pieces of the document– say every four consecutive words - into say, 64 bit numbers. This process is called shingling, and each set of consecutive words is called a shingle. Using hashing, the shingles give rise to the resulting numbers for the set resemblance problem.
