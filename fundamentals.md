@@ -85,9 +85,9 @@ $f(n) = \Theta(g(n))$ if and only if $g(n) = \Theta(f(n))$.
 
 **Transpose symmetry**
 
-$f(n) = O(g(n))$ if and only if $g(n) = \Omega(f(n))$,
+$f(n) = O(g(n))\quad$ if and only if $\quad g(n) = \Omega(f(n))$,
 
-$f(n) = o(g(n))$ if and only if $g(n) = \omega(f(n))$.
+$f(n) = o(g(n))\quad$ if and only if $\quad g(n) = \omega(f(n))$.
 
 
 Because these properties hold for asymptotic notations, we can draw an analogy between the asymptotic comparison of two functions $f$ and $g$ and the comparison of two real numbers $a$ and $b$:
