@@ -191,7 +191,7 @@ Suppose that we do not need to exactly compute the resemblance $R(A,B)$. We can 
 
 For example, let $U= \\{A, B, C, D, E, F\\}$ and $S_1 = \\{A, B, E\\},$ $S_2 = \\{C\\},$ $S_3 = \\{B, C, D, F\\},$ $S_4 = \\{A, D, F\\}.$ Following is the characteristic matrix representing these sets.
 
-<img width="300" alt="15" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/7b742d9a-c534-4e5b-9aad-02046bc8c477">
+<img width="250" alt="15" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/7b742d9a-c534-4e5b-9aad-02046bc8c477">
 
 The MinHash values for the above permutation is as follows:
 
