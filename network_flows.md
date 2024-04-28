@@ -55,6 +55,10 @@ The following flow example shows the importance of choosing good augmenting path
 
 <img width="500" alt="8" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/3a82d8ac-4da0-4022-9792-2d2fc570cb3e">
 
+Let the first augmenting path be $S\rightarrow A \rightarrow B \rightarrow S$, giving a flow of 1.
+
+<img width="500" alt="9" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/d5146cf1-a134-4a9d-bcd3-4ea8d7f7ba59">
+
 
 
 ### Run-time
