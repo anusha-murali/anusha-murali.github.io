@@ -16,13 +16,15 @@ When the above equation doesn't hold, we know for certain that $p$ is not a prim
 
 Rabin's primality test can be used to find the compositeness of a number. 
 
-Rabin testing says that if an odd number $n$ is a prime, the only solutions to $a^2 \equiv 1 \pmod{n}$ are $a \in \{ \pm 1\}$.  
+Rabin testing says that if an odd number $n$ is a prime, the only solutions to $a^2 \equiv 1 \pmod{n}$ are $a \in \\{ \pm 1\\}$.  
 
 Since $n$ is odd, $n-1$ is even. Therefore, we can represent $n-1$ as $n -1 = 2^i \cdot u$, where $u$ is odd. Suppose we choose a random base $a$ and compute $a^{n-1}$ by first computing $a^u$ and then repeatedly squaring. Along the way, we will check to see for the values, $a^u, a^{2u}, a^{4u}, \ldots$ and verify whether they have the following property:
-\begin{align*}
+
+$$
 a^{2^{i-1}u} ~~ &\not \equiv ~~\pm 1 \pmod{n}\\
 a^{2^i u} ~~ & \equiv ~~ 1 \pmod{n}.
-\end{align*}
+$$
+
 If we see the above property, we have encountered a non-trivial square root of $1 \pmod{n}$. Rabin primality test, presented in Theorem 2 of Lecture 17, says that only composite numbers have non-trivial square roots of $1 \pmod{n}$. For a random $2 \leq a  <  n -1$ ($a$ is relatively prime to $n$), we check whether $a^u \equiv 1 \pmod{n}$ or $a^{2^j \cdot u} \equiv 1 \pmod{n}, 0 \leq j \leq i -1$. If we found an $a$ which doesn't satisfy these properties, then we have found a witness for the compositeness of $n$, so $n$ is not a prime number.
 
 
