@@ -176,11 +176,7 @@ $$
 
 Since the number of multiplications is given by the recurrence $T(n) = T(n/2) +1$, using Master theorem, we find $T(n) = \log n$.
 
-**Closed form expression for $F_n$**
-
-$$
-F_n = \frac{1}{\sqrt{5}} \begin{bmatrix} \left ( \frac{1 + \sqrt{5}}{2} \right)^n - \left ( \frac{1 - \sqrt{5}}{2} \right)^n \end{bmatrix}
-$$
+### 3.4. Closed form expression for $F_n$
 
 $$
 F_n = \frac{1}{\sqrt{5}} \left [ \left ( \frac{1 + \sqrt{5}}{2} \right)^n - \left ( \frac{1 - \sqrt{5}}{2} \right)^n \right ]
