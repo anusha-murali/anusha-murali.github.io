@@ -9,7 +9,7 @@ title: Table of Contents
 4. [Dynamic Programming](./dp.md)
 5. [Divide and Combine](./dc.md)
 7. [Hashing](./hashing.md)
-8. [Randomized Algorithms](./randomized.md)
+8. [Randomized Algorithms](./randomized_algos.md)
 9. [NP-Completeness](./np.md)
 10. [Linear Programming](./lp.md)
 11. [Network Flows](./network_flows.md)
