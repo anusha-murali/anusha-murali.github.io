@@ -30,6 +30,20 @@ $$
 
 If we see the above property, we have encountered a non-trivial square root of $1 \pmod{n}$. Rabin primality test, presented in Theorem 2 of Lecture 17, says that only composite numbers have non-trivial square roots of $1 \pmod{n}$. For a random $2 \leq a  <  n -1$ ($a$ is relatively prime to $n$), we check whether $a^u \equiv 1 \pmod{n}$ or $a^{2^j \cdot u} \equiv 1 \pmod{n}, 0 \leq j \leq i -1$. If we found an $a$ which doesn't satisfy these properties, then we have found a witness for the compositeness of $n$, so $n$ is not a prime number.
 
+**Example** Prove 63973 (a Carmichael number) is composite by finding a witness in the form of a non-trivial square root of 1.
+
+Following is a description of how Rabin primality test finds the compositeness of the given $n$.
+
+Let $n = 63973$. Hence $n-1 = 63972 = 2^2 \cdot 15993$. Let $a = 3$ (3 is relatively prime to $n$) and we run Rabin Testing for primality as follows:
+
+1. $a^{2^2 \cdot 15993} = 1 \pmod{n}$
+2. $a^{2^1 \cdot 15993} = 1 \pmod{n}$
+3. $a^{15993} = 19683 \pmod{n}$
+
+
+Since $a^{2^{i-1} \cdot u} \neq \pm 1 \pmod{n}$ and $a^{2^i \cdot u} = 1 \pmod{n}$, where $a = 3, i = 1, u = 15993$, we have found a non-trivial square root of 1 modulo $n$. In our case, the non-trivial square root of 1 modulo $n$ is $3^{15993} \pmod{63973} = 19683$. Therefore, 63973 is a composite number and $a = 3$ is the witness for the compositeness of $63973$.
+
+
 
 [Table of Contents](./index.md)
 
