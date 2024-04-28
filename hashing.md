@@ -191,13 +191,13 @@ Suppose that we do not need to exactly compute the resemblance $R(A,B)$. We can 
 
 For example, let $U= \\{A, B, C, D, E, F\\}$ and $S_1 = \\{A, B, E\\},$ $S_2 = \\{C\\},$ $S_3 = \\{B, C, D, F\\},$ $S_4 = \\{A, D, F\\}.$ Following are the characteristic matrix representations of these sets for two different permutations $\pi_1$ and $\pi_2$ of $U$.
 
-<img width="500" alt="15" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/f579559e-b759-4319-9996-21f9fd9776cc">
+<img width="480" alt="15" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/f579559e-b759-4319-9996-21f9fd9776cc">
 
 
-The MinHash values for the above permutation is as follows:
+The MinHash values for the left permutation $(\pi_1)$ is as follows:
 
 $$
-\text{MinHash}(S_1) = 1, \quad \text{MinHash}(S_2) = 3, \quad \text{MinHash}(S_3) = 2, \quad \text{MinHash}(S_4) = 1.
+\text{MinHash}(\pi_1(S_1)) = 1, \quad \text{MinHash}(\pi_1(S_2)) = 3, \quad \text{MinHash}(\pi_1(S_3)) = 2, \quad \text{MinHash}(\pi_1(S_4)) = 1.
 $$
 
 **Lemma 1** Let $\pi(A)$ and $\pi(B)$ be some random permutations of the $n!$ possible permutations of the set $S$. Then $\min(\pi(A)) = \min(\pi(B))$ if and only if there exists $x \in A \cup B$ such that:
