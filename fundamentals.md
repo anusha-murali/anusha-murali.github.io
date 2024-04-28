@@ -248,7 +248,7 @@ Let $T(n)$ be the number of comparisons needed to search an element in an array 
 
 **Recurrence relation**: $T(n) = T(n/2) + c$.
 
-**Runtime**: $O(log_2 n)$.
+**Runtime**: $O(\log_2 n)$.
 
 [Table of Contents](./index.md)
 <!--
