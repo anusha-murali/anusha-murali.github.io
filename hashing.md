@@ -275,6 +275,9 @@ $$
 
 Since there are 3 elements in our example, namely 1, 2, and 3, using a cyclic permutation, we can permute the rows in the above characteristic matrix in only three ways. 
 
+<img width="500" alt="16" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/a18d448d-70e6-408e-a9e6-8e0698609047">
+
+
 
 **Problem 2**: Recall that *resemblance* $R(A, B)$ of two sets $A$ and $B$ is defined as $R(A, B) = \dfrac{\|A \cap B\|}{\|A \cup B\|}$.
 
