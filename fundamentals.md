@@ -168,7 +168,7 @@ def F(n):
 
 $$\left ( 
 \begin{array}
-F_1\\
+~F_1\\
 F_2
 \end{array} 
 \right )
