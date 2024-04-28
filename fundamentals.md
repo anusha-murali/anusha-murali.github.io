@@ -214,17 +214,19 @@ The recurrence relation for *mergeSort()* is $T(n) \leq 2T(n/2) + n - 1$. This i
 
 From the Master theorem, we find $T(n) = \Theta(n \log n)$.
 
-### 4.2. Bubble Sort (a.k.a. Insertion Sort)
+### 4.2. Insertion Sort
 
 ```
-def BubbleSort(x): # x is a list
-  n = len(x)
+def InsertionSort(x): # S is a list
+  n = len(S)
   for i in range(n-1):
     j = i
-    while j > 0 and x[j+1] < x[j]:
-      x[j], x[j+1] = x[j+1], x[j] # swap
+    while j > 0 and S[j+1] < S[j]:
+      S[j], S[j+1] = S[j+1], S[j] # swap
       j = j-1
+  return S
 ```
+**Runtime** $O(n^2)$.
 
 [Table of Contents](./index.md)
 <!--
