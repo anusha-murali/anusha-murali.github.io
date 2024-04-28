@@ -167,10 +167,10 @@ def F(n):
 ### 3.3. Fibonacci using matrix multiplication
 
 $$\left ( 
-\begin{matrix}
-F_1\\
+\begin{bmatrix}
+F_1\\\
 F_2
-\end{matrix} 
+\end{bmatrix} 
 \right )
 = 
 $$
