@@ -201,7 +201,9 @@ $$
 
 For example, let the universe be $U = \\{A, B, C\\}$ and some two arbitrary subsets be $S_1 = \\{B\\}$ and $S_2 = \\{A, B\\}$. 
 
-We are interested in finding out the similarity between $S_1$ and $S_2$.
+We are interested in finding out the similarity between $S_1$ and $S_2$. 
+
+The set resemblance (or Jaccard coefficient) of $S_1$ and $S_2$ is $R(S_1, S_2) = \frac{|S_1 \cap S_2|}{|S_1 \cup S_2|} = \frac{1}{2}$.
 
 <img width="700" alt="14" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/4e557587-6ba2-45d5-a883-f4c02c2290ed">
 
