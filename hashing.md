@@ -199,9 +199,7 @@ $$
 {\bf Pr}[\pi(x) = \min(\pi(A \cup B))] = {\bf Pr}[\pi(y) = \min(\pi(A \cup B))].
 $$
 
-For example, let the universe be $U = \\{A, B, C\\}$ and some two arbitrary subsets be $S_1 = \\{B\\}$ and $S_2 = \\{A, B\\}$. 
-
-We are interested in finding out the similarity between $S_1$ and $S_2$. 
+**Example 1**: For example, let the universe be $U = \\{A, B, C\\}$ and some two arbitrary subsets be $S_1 = \\{B\\}$ and $S_2 = \\{A, B\\}$. Compute the similarity between $S_1$ and $S_2$ **directly using set resemblance** and **using MinHash** considering **all** possible permutations in $U$.
 
 The set resemblance (or Jaccard coefficient) of $S_1$ and $S_2$ is $R(S_1, S_2) = \dfrac{\|S_1 \cap S_2\|}{\|S_1 \cup S_2\|} = \dfrac{1}{2}$.
 
