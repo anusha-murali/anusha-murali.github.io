@@ -164,10 +164,9 @@ def F(n):
 
 **Runtime** of the iterative Fibonacci is $O(n^2)$. Note that we do $O(n)$ additions on $O(n)$ bit integers.
 
-### 3.3. Computing Fibonacci number using matrix multiplication
+### 3.3. Fibonacci using matrix multiplication
 
-$$
-\left ( 
+$$\left ( 
 \begin{array}
 F_1\\
 F_2
@@ -185,8 +184,7 @@ F_2
 F_0\\
 F_1
 \end{array} 
-\right )
-$$
+\right )$$
 
 [Table of Contents](./index.md)
 <!--
