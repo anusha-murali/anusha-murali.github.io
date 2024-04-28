@@ -182,6 +182,11 @@ $$
 F_n = \frac{1}{\sqrt{5}} \begin{bmatrix} \left ( \frac{1 + \sqrt{5}}{2} \right)^n - \left ( \frac{1 - \sqrt{5}}{2} \right)^n \end{bmatrix}
 $$
 
+$$
+F_n = \frac{1}{\sqrt{5}} \left [ \left ( \frac{1 + \sqrt{5}}{2} \right)^n - \left ( \frac{1 - \sqrt{5}}{2} \right)^n \right ]
+$$
+
+
 [Table of Contents](./index.md)
 <!--
 ![111596338](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/639243aa-2857-4595-a65a-7852762bb002)
