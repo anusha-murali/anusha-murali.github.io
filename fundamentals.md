@@ -133,7 +133,7 @@ $$
 $$
 T(n) =
 \begin{cases}
-1 & \text{if }n \eq 1\\
+0 & \text{if }n \leq 1\\
 T(n-1) + T(n-2) + 1& \text{otherwise}.
 \end{cases}
 $$
