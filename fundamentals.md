@@ -7,9 +7,13 @@
 
 ### $\Theta$-notation
 
+The $\Theta$-notation asymptotically bounds a function from above and below.
+
 $\Theta(g(n)) = \\{f(n):$ there exist positive constants $c_1, c_2$ and $n_0$ such that $0 \leq c_1g(n) \leq f(n) \leq c_2g(n)$ for all $n \geq n_0 \\}$.
 
 ### $O$-notation
+
+When we have only an **asymptotic upper bound**, we use $O$-notation.
 
 $O(g(n)) = \\{f(n):$ there exist positive constants $c$ and $n_0$ such that $0  \leq f(n) \leq cg(n)$ for all $n \geq n_0 \\}$.
 
