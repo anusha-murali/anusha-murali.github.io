@@ -174,6 +174,13 @@ $$
 \begin{bmatrix} F_n \\\ F_{n+1} \end{bmatrix}  = \begin{bmatrix} 0 & 1 \\\ 1 & 1  \end{bmatrix}^n \begin{bmatrix} F_0 \\\ F_1 \end{bmatrix}
 $$
 
+Since the number of multiplications is given by the recurrence $T(n) = T(n/2) +1$, using Master theorem, we find $T(n) = \log n$.
+
+**Closed form expression for $F_n$**
+
+$$
+F_n = \frac{1}{\sqrt{5}} \begin{bmatrix} \left ( \frac{1 + \sqrt{5}}{2} \right)^n - \left ( \frac{1 - \sqrt{5}}{2} \right)^n \end{bmatrix}
+$$
 
 [Table of Contents](./index.md)
 <!--
