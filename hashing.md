@@ -191,8 +191,13 @@ Suppose that we do not need to exactly compute the resemblance $R(A,B)$. We can 
 
 For example, let $U= \\{A, B, C, D, E, F\\}$ and $S_1 = \\{A, B, E\\},$ $S_2 = \\{C\\},$ $S_3 = \\{B, C, D, F\\},$ $S_4 = \\{A, D, F\\}.$ Following is the characteristic matrix representing these sets.
 
-<img width="450" alt="15" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/7b742d9a-c534-4e5b-9aad-02046bc8c477">
+<img width="350" alt="15" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/7b742d9a-c534-4e5b-9aad-02046bc8c477">
 
+The MinHash values for the above permutation is as follows:
+
+$$
+\text{MinHash}(S_1) = 1, \quad \text{MinHash}(S_2) = 3, \quad \text{MinHash}(S_3) = 2, \quad \text{MinHash}(S_4) = 1.
+$$
 
 **Lemma 1** Let $\pi(A)$ and $\pi(B)$ be some random permutations of the $n!$ possible permutations of the set $S$. Then $\min(\pi(A)) = \min(\pi(B))$ if and only if there exists $x \in A \cup B$ such that:
 1. $x \in A \cap B$
