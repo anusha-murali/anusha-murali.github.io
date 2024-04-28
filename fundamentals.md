@@ -34,7 +34,7 @@ $o(g(n)) = \\{f(n):$ for any positive constant $c > 0$, there exists a constant 
 
 Example: $5n = o(n^2)$, but $5n^2 \neq o(n^2)$.
 
-If $f(n) = o(g(n)$, then
+If $f(n) = o(g(n))$, then
 
 $$
 \lim_{n \rightarrow \infty} \frac{f(n)}{g(n)} = 0.
@@ -47,7 +47,7 @@ $\omega(g(n)) = \\{f(n):$ for any positive constant $c > 0$, there exists a cons
 
 Example: $n^2/3 = \omega(n)$, but $n^2/3 \neq \omega(n^2)$.
 
-If $f(n) = \omega(g(n)$, then
+If $f(n) = \omega(g(n))$, then
 
 $$
 \lim_{n \rightarrow \infty} \frac{f(n)}{g(n)} = \infty.
