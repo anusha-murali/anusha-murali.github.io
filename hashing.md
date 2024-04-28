@@ -199,9 +199,12 @@ $$
 {\bf Pr}[\pi(x) = \min(\pi(A \cup B))] = {\bf Pr}[\pi(y) = \min(\pi(A \cup B))].
 $$
 
-For example, let the universe be $U = \\{A, B, C, D, E, F, G\\}$ and some two arbitrary subsets be $S_1 = \\{A, B, F, G\\}$ and $S_2 = \\{A, E, F, G\\}$. 
+For example, let the universe be $U = \\{A, B, C\\}$ and some two arbitrary subsets be $S_1 = \\{B\\}$ and $S_2 = \\{A, B\\}$. 
 
 We are interested in finding out the similarity between $S_1$ and $S_2$.
+
+<img width="982" alt="14" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/bb864334-bdad-4fc1-9b2e-e230a9187436">
+
 
 ## 2. Shingling 
 
