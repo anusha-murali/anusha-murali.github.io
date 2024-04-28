@@ -18,6 +18,12 @@ When we have only an **asymptotic upper bound**, we use $O$-notation.
 $O(g(n)) = \\{f(n):$ there exist positive constants $c$ and $n_0$ such that $0  \leq f(n) \leq cg(n)$ for all $n \geq n_0 \\}$.
 
 
+### $\Omega$-notation
+
+$\Omega$-notation provides an **asymptotic lower bound**.
+
+
+
 ## 2. Master Theorem
 
 $$
