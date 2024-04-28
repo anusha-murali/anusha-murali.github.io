@@ -244,6 +244,12 @@ $$
 Now we choose a threshold -  for example, if $N = 100$ we might say that two documents are similar if 90 out of the 100 entries in the sketch match.
 
 
+## 4. Problems
+
+**Problem 1**: Recall that *resemblance* $R(A, B)$ of two sets $A$ and $B$ is defined as R(A, B) = \dfrac{\|A \cap B\|}{\|A \cup B\|}$.
+
+Suppose that for some positive integer $N$, $A$ and $B$ are subsets of $\[N\]$ (i.e: \{0, 1, \ldots, N-1\}$) with $\|A\| \geq 2$ and $\|B\| \geq 2$. Prove or disprove: For every such  $A$ and $B$, if we choose a uniformly random permutation $\pi: \[N\] \rightarrow \[N\]$, the probability that second-largest$(\{\pi(a):a \in A\})$ = second-largest$(\{\pi(b):b \in B\})$ is $R(A, B)$. Note that given a set $X$, second-largest($X$) is the second-largest element of $X$.
+
 [Table of Contents](./index.md)
 <!--
 ![111596338](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/639243aa-2857-4595-a65a-7852762bb002)
