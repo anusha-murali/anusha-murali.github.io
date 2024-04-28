@@ -95,7 +95,13 @@ Because these properties hold for asymptotic notations, we can draw an analogy b
 
 $f(n) = O(g(n))\qquad$ is like $\qquad a\leq b$,
 
+$f(n) = \Omega(g(n))\qquad$ is like $\qquad a\geq b$,
 
+$f(n) = \Theta(g(n))\qquad$ is like $\qquad a = b$,
+
+$f(n) = o(g(n))\qquad$ is like $\qquad a <  b$,
+
+$f(n) = \omega(g(n))\qquad$ is like $\qquad a > b$,
 
 ## 2. Master Theorem
 
