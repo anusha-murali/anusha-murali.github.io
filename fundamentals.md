@@ -183,6 +183,24 @@ F_n = \frac{1}{\sqrt{5}} \left [ \left ( \frac{1 + \sqrt{5}}{2} \right)^n - \lef
 $$
 
 
+## 4. Sorting and Searching
+
+### 4.1 Merge Sort
+
+We first define the function *merge()*, which takes two unsorted lists and outputs a single sorted list. 
+
+```
+def merge(s,t)
+  if not s: return t
+  if not t: return s
+  if s[0] <= t[0]:
+    u = pop(s)
+  else:
+    u = pop(t)
+  return u 
+```
+
+
 [Table of Contents](./index.md)
 <!--
 ![111596338](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/639243aa-2857-4595-a65a-7852762bb002)
