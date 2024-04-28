@@ -209,12 +209,12 @@ There are 6 permuations of the universe $U$, namely $\\{A, B, C\\}$, $\\{A, C, B
 
 <img width="600" alt="14" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/4e557587-6ba2-45d5-a883-f4c02c2290ed">
 
-We note that 3 out of the 6 permuations have matching MinHash values, which is equal to the actual set resemblance of $\dfrac{1}{2}$. 
+We note that 3 out of the 6 permuations have matching MinHash values, which is equal to the actual set resemblance of $\frac{1}{2}$. 
 
 In fact, we have the following MinHash property:
 
 $$
-{\bf Pr}(\text{MinHash}(S_1) = \text{MinHash}(S_1)) = \dfrac{\|S_1 \cap S_2\|}{\|S_1 \cup S_2\|} =  R(S_1, S_2),
+{\bf Pr}(\text{MinHash}(S_1) = \text{MinHash}(S_1)) = \dfrac{|S_1 \cap S_2|}{|S_1 \cup S_2|} =  R(S_1, S_2),
 $$
 
 where the probability is taken over all choices of permutations.
@@ -223,6 +223,11 @@ where the probability is taken over all choices of permutations.
 
 1. The first row where one of the two sets has value 1 belongs to the union. Recall that union contains rows with at least one 1.
 2. We have equality if both sets have value 1, and this row belongs to the intersection.
+
+In practice, documents contain thousands or hundreds of thousands of words, so we can just randomly select a few permutations and compute MinHash on them to determine the approximate set resemblance.
+
+
+
 
 ## 2. Shingling 
 
