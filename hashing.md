@@ -183,6 +183,12 @@ $$
 
 Suppose that we do not need to exactly compute the resemblance $R(A,B)$. We can obtain a reasonable approximation to $R(A,B)$ using randomization, specifically using hash functions.
 
+## 1. MinHash
+
+1. Pick a random permutation of the rows (the universe $U$)
+2. Define a hash function for set $S$. For example, $h(S)$ = the index of the first row (in the permuted order), in which colum $S$ has 1.
+4. Use $k$ (e.g., $k = 100$) independent random permutations to create a signature.
+
 **Lemma 1** Let $\pi(A)$ and $\pi(B)$ be some random permutations of the $n!$ possible permutations of the set $S$. Then $\min(\pi(A)) = \min(\pi(B))$ if and only if there exists $x \in A \cup B$ such that:
 1. $x \in A \cap B$
 2. $\pi(x) = \min(\pi(A)) = \min(\pi(B))$.
@@ -193,11 +199,11 @@ $$
 {\bf Pr}[\pi(x) = \min(\pi(A \cup B))] = {\bf Pr}[\pi(y) = \min(\pi(A \cup B))].
 $$
 
-## 1. Shingling 
+## 2. Shingling 
 
 How do we turn document similarity into a set resemblance problem? The key idea is to hash pieces of the document– say every four consecutive words - into say, 64 bit numbers. This process is called shingling, and each set of consecutive words is called a shingle. Using hashing, the shingles give rise to the resulting numbers for the set resemblance problem.
 
-## 2. MinHash based sketch
+## 3. MinHash based sketch
 
 Once we have the shingles for the document, we associate to each document a sketch. If $N$ random permutations are taken in the definition of MinHash, then the sketch of a document $S$ is a list of $N$ numbers:
 
