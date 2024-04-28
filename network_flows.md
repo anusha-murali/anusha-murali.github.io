@@ -82,7 +82,7 @@ Note that we don't consider the flow on edge $A\rightarrow C$, as it is going in
 
 The minimum cut of the given flow network is shown above. We see that the capacity of the cut  $\\{s, A, D\\}$  and  $\\{B, C, t\\}$  is  $5 + 3 + 2 = 10$ , which is equal to the maximum flow. Other cuts will have a bigger capacity, like the capacity between  $\\{s, A\\}$  and  $\\{B, C, D, t\\}$  is  $4 + 3 + 5 = 12$.
 
-** Example 4**: True or False? If an iteration of the Ford-Fulkerson algorithm on a network places flow 1 through an edge $(u,v)$, then in every later iteration, the flow through $(u,v)$ is at least 1.
+**Example 4**: True or False? If an iteration of the Ford-Fulkerson algorithm on a network places flow 1 through an edge $(u,v)$, then in every later iteration, the flow through $(u,v)$ is at least 1.
 
 **False**. A later augmenting path may pass through $(v, u)$, causing the flow on $(u, v)$ to be decreased.
 
