@@ -77,6 +77,13 @@ $f(n) = O(f(n))$,
 
 $f(n) = \Omega(f(n))$.
 
+
+**Symmetry**
+
+$f(n) = \Theta(g(n))$ if and only if $g(n) = \Theta(f(n))$.
+
+
+
 ## 2. Master Theorem
 
 $$
