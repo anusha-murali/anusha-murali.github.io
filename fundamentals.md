@@ -200,6 +200,17 @@ def merge(s,t)
   return u 
 ```
 
+The function *mergeSort()* uses the above *merge()* to recursively merge two sorted lists:
+
+```
+def mergeSort(s):
+  if len(s) == 1: return s
+  split(s, s1, s2)
+  s1 = mergesort(s1)
+  s2 = mergesort(s2)
+  return merge(s1,s2)
+```
+The recurrence relation for *mergeSort()* is $T(n) \leq 2T(n/2) + n - 1$. From the Master theorem, we find $T(n) = \Theta(n \log n)$.
 
 [Table of Contents](./index.md)
 <!--
