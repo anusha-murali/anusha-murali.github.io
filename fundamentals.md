@@ -34,6 +34,11 @@ $o(g(n)) = \\{f(n):$ there exist positive constants $c$ and $n_0$ such that $0  
 
 Example: $5n = o(n^2)$, but $5n^2 \neq o(n^2)$.
 
+If $f(n) = o(g(n)$, then
+
+$$
+\lim_{n \rightarrow \infty} \frac{f(n)}{g(n)} = 0.
+$$
 
 ## 2. Master Theorem
 
