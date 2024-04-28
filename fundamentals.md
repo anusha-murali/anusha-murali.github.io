@@ -109,8 +109,11 @@ $$
 T(n) = a \cdot T \left( \frac{n}{b} \right) + \Theta(n^c) \qquad \text{for }a \geq 1, b \geq 2, d, c \geq 0.
 $$
 
+**Case 1** $\quad c < \log_b a \quad T = \Theta(n^{\log_b a})$
 
+**Case 2** $\quad c = \log_b a \quad T = \Theta(n^c \log_b a)$
 
+**Case 3** $\quad c > \log_b a \quad T = \Theta(n^c$
 
 [Table of Contents](./index.md)
 <!--
