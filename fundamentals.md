@@ -5,20 +5,20 @@
 <img width="856" alt="asymptotic" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/cb2a42a0-56f8-4d5c-ac7e-4f37d72f9967">
 
 
-### $\Theta$-notation
+### 1.1 $\Theta$-notation
 
 The $\Theta$-notation asymptotically bounds a function from above and below.
 
 $\Theta(g(n)) = \\{f(n):$ there exist positive constants $c_1, c_2$ and $n_0$ such that $0 \leq c_1g(n) \leq f(n) \leq c_2g(n)$ for all $n \geq n_0 \\}$.
 
-### $O$-notation
+### 1.2 $O$-notation
 
 When we have only an **asymptotic upper bound**, we use $O$-notation.
 
 $O(g(n)) = \\{f(n):$ there exist positive constants $c$ and $n_0$ such that $0  \leq f(n) \leq cg(n)$ for all $n \geq n_0 \\}$.
 
 
-### $\Omega$-notation
+### 1.3 $\Omega$-notation
 
 $\Omega$-notation provides an **asymptotic lower bound**.
 
@@ -28,7 +28,7 @@ $\Omega(g(n)) = \\{f(n):$ there exist positive constants $c$ and $n_0$ such that
 **Theorem**: For any two functions $f(n)$ and $g(n)$, we have $f(n) = \Theta(g(n))$ if and only if $f(n) = O(g(n))$ and $f(n) = \Omega(g(n))$.
 
 
-### $o$-notation
+### 1.4 $o$-notation
 
 $o(g(n)) = \\{f(n):$ for any positive constant $c > 0$, there exists a constant $n_0 > 0$ such that $0  \leq f(n) < cg(n)$ for all $n \geq n_0 \\}$.
 
@@ -41,7 +41,7 @@ $$
 $$
 
 
-### $\omega$-notation
+### 1.5 $\omega$-notation
 
 $\omega(g(n)) = \\{f(n):$ for any positive constant $c > 0$, there exists a constant $n_0 > 0$ such that $0  \leq  cg(n) < f(n)$ for all $n \geq n_0 \\}$.
 
@@ -52,6 +52,15 @@ If $f(n) = \omega(g(n))$, then
 $$
 \lim_{n \rightarrow \infty} \frac{f(n)}{g(n)} = \infty.
 $$
+
+### 1.6 Comparing functions
+
+Assuming that $f(n)$ and $g(n)$ are asymptotically positive, we have the following:
+
+**Transitivity**
+
+$f(n) = \Theta(g(n))$ and $g(n) = \Theta(h(n))$ imply $f(n) = \Theta(h(n))$,
+
 
 
 ## 2. Master Theorem
