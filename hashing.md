@@ -207,7 +207,7 @@ The set resemblance (or Jaccard coefficient) of $S_1$ and $S_2$ is $R(S_1, S_2) 
 
 There are 6 permuations of the universe $U$, namely $\\{A, B, C\\}, \\{A, C, B\\}, \\{B, A, C \\}, \\{B, C, A\\}, \\{C, A, B\\}, \\{C, B, A\\}$. Computing the MinHash values of each of these 6 permutations, we obtain the following:
 
-<img width="700" alt="14" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/4e557587-6ba2-45d5-a883-f4c02c2290ed">
+<img width="600" alt="14" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/4e557587-6ba2-45d5-a883-f4c02c2290ed">
 
 
 ## 2. Shingling 
