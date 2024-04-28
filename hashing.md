@@ -265,6 +265,15 @@ Now we choose a threshold -  for example, if $N = 100$ we might say that two doc
 
 True or false: the algorithm would still work if instead of random permutations, we took $\pi_1,\ldots,\pi_n$ to be random *cyclic* permutations (that is, to sample each $\pi_i$, sample a random number $y$ from $\{0,\ldots,N-1\}$ and take $\pi_i$ to be the permutation which maps every element $x\in\{1,\ldots,N\}$ to $x + y \pmod{N}$). If the statement is true, provide a proof. Otherwise, you should specify (with proof) some choice of $A, B, N$ such that for a uniformly random *cyclic* permutation, $R(A,B)$ does not equal the probability that $\min(\pi(A)) = \min(\pi(B))$.
 
+The claim is false. We will prove this with the following counter example.
+    
+Let us consider the two sets $A, B \subset \{1, 2, 3\}$, where $N = 3$,  $A = \{2 \}$ and $B = \{1, 2 \}$. The set resemblance (or Jaccard coefficient) is,
+
+$$
+R(A, B) = \frac{|A \cap B|}{|A \cup B|} = \frac{1}{2}.
+$$
+
+Since there are 3 elements in our example, namely 1, 2, and 3, using a cyclic permutation, we can permute the rows in the above characteristic matrix in only three ways. 
 
 
 **Problem 2**: Recall that *resemblance* $R(A, B)$ of two sets $A$ and $B$ is defined as $R(A, B) = \dfrac{\|A \cap B\|}{\|A \cup B\|}$.
