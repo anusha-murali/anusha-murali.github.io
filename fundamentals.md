@@ -90,6 +90,13 @@ $f(n) = O(g(n))$ if and only if $g(n) = \Omega(f(n))$,
 $f(n) = o(g(n))$ if and only if $g(n) = \omega(f(n))$.
 
 
+Because these properties hold for asymptotic notations, we can draw an analogy between the asymptotic comparison of two functions $f$ and $g$ and the comparison of two real numbers $a$ and $b$:
+
+
+$f(n) = O(g(n))\qquad$ is like $\qquad a\leq b$,
+
+
+
 ## 2. Master Theorem
 
 $$
