@@ -166,13 +166,7 @@ def F(n):
 
 ### 3.3. Fibonacci using matrix multiplication
 
-$$
-\begin{bmatrix}
-F_1\\\
-F_2
-\end{bmatrix} 
-= 
-$$
+$\begin{bmatrix} F_1 \\\ F_2 \end{bmatrix}  =$
 
 $$
 \left (
