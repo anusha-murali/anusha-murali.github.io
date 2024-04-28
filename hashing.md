@@ -189,9 +189,10 @@ Suppose that we do not need to exactly compute the resemblance $R(A,B)$. We can 
 2. Define a hash function for set $S$. For example, $h(S)$ = the index of the first row (in the permuted order), in which colum $S$ has 1.
 4. Use $k$ (e.g., $k = 100$) independent random permutations to create a signature.
 
-For example, let $U= \\{A, B, C, D, E, F\\}$ and $S_1 = \\{A, B, E\\},$ $S_2 = \\{C\\},$ $S_3 = \\{B, C, D, F\\},$ $S_4 = \\{A, D, F\\}.$ Following is the characteristic matrix representing these sets.
+For example, let $U= \\{A, B, C, D, E, F\\}$ and $S_1 = \\{A, B, E\\},$ $S_2 = \\{C\\},$ $S_3 = \\{B, C, D, F\\},$ $S_4 = \\{A, D, F\\}.$ Following are the characteristic matrix representations of these sets for two different permutations $\pi_1$ and $\pi_2$ of $U$.
 
-<img width="250" alt="15" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/7b742d9a-c534-4e5b-9aad-02046bc8c477">
+<img width="500" alt="15" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/f579559e-b759-4319-9996-21f9fd9776cc">
+
 
 The MinHash values for the above permutation is as follows:
 
