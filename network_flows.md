@@ -55,13 +55,23 @@ The following flow example shows the importance of choosing good augmenting path
 
 <img width="450" alt="8" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/3a82d8ac-4da0-4022-9792-2d2fc570cb3e">
 
-Let the first augmenting path be $S\rightarrow A \rightarrow B \rightarrow S$, giving a flow of 1.
+Let the first augmenting path be $S\rightarrow A \rightarrow B \rightarrow T$, giving a flow of 1.
 
 <img width="450" alt="9" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/d5146cf1-a134-4a9d-bcd3-4ea8d7f7ba59">
 
-Let the second augmenting path be $S\rightarrow B \rightarrow A \rightarrow S$, which increments the total flow to 2. We are able to send 1 unit in the reversed direction of $B \rightarrow A$, because the forward direction $A \rightarrow B$ is at its maximum capacity (or its residual capacity is 0).
+Let the second augmenting path be $S\rightarrow B \rightarrow A \rightarrow T$, which increments the total flow to 2. We are able to send 1 unit in the reversed direction of $B \rightarrow A$, because the forward direction $A \rightarrow B$ is at its maximum capacity (or its residual capacity is 0).
 
 <img width="450" alt="10" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/e63a2a81-6eac-426c-aacc-1e05960d149a">
+
+Now, let the third augmenting path be $S\rightarrow A \rightarrow B \rightarrow T$, again reversing the flow. This increments the total flow to 3.
+
+<img width="450" alt="11" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/a90dade5-b3e3-4f9f-b82b-11185360d29c">
+
+We can continue in this manner, each time reversing the flow between $A \rightarrow B$ and $B \rightarrow A$, for a total of 200 iterations before reaching the max flow of 200.
+
+On the other hand, let the first augmenting path be $S \righarrow A \rightarrow T$. This gives us a flow of 100.
+
+<img width="450" alt="12" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/107518e6-a1e0-405e-958e-015f62540def">
 
 
 ### Run-time
