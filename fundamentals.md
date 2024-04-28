@@ -128,6 +128,27 @@ F(n-1) + F(n-2) & \text{otherwise}.
 \end{cases}
 $$
 
+**Runtime equation**:
+
+$$
+T(n) =
+\begin{cases}
+1 & \text{if }n \eq 1\\
+T(n-1) + T(n-2) + 1& \text{otherwise}.
+\end{cases}
+$$
+
+Following is the Python code for the recursive version of computing the $n$-th Fibonacci number:
+
+```
+def F(n):
+  if n <= 1:
+    return 0
+  else:
+    return F(n-1) + F(n-2)
+```
+
+Runtime of the iterative Fibonacci is $O(2^{n/2})$.
 
 
 
