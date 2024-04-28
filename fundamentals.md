@@ -206,8 +206,8 @@ The function *mergeSort()* uses the above *merge()* to recursively merge two sor
 def mergeSort(s):
   if len(s) == 1: return s
   split(s, s1, s2)
-  s1 = mergesort(s1)
-  s2 = mergesort(s2)
+  s1 = mergeSort(s1)
+  s2 = mergeSort(s2)
   return merge(s1,s2)
 ```
 **Recurrence relation**: $T(n) \leq 2T(n/2) + n - 1$. This is because each call of *mergeSort()* in turn makes two recursive calls to *mergeSort()* and performs a linear time merge.
@@ -217,7 +217,7 @@ def mergeSort(s):
 ### 4.2. Insertion Sort
 
 ```
-def InsertionSort(x): # S is a list
+def insertionSort(x): # S is a list
   n = len(S)
   for i in range(n-1):
     j = i
@@ -231,7 +231,7 @@ def InsertionSort(x): # S is a list
 ### 4.3 Binary Search
 
 ```
-def binary_tree(array, val):
+def binarySearch(array, val):
   l = 0                    # Right index = 0
   r = len(array)           # Left index = length of array
   while l < r:
