@@ -49,6 +49,14 @@ So, the total flow to $T$ is 4 + 2 + 7 + 4 + 2 = 19.
 
 Now, it is impossible to find any more augmenting path between $S$ and $T$, therefore 19 is the maximal possible flow.
 
+###  Choosing good augmenting paths
+
+The following flow example shows the importance of choosing good augmenting paths.
+
+<img width="546" alt="8" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/3a82d8ac-4da0-4022-9792-2d2fc570cb3e">
+
+
+
 ### Run-time
 
 1. Ford-Fulkerson has a run-time of $O(Ef^{\*})$ because each time we augment a path, we increase the total flow, so at worst the number of times we find an augmenting path is $O(f^*)$, where $f^{\*}$ is the value of the max flow. We can find an augmenting path in $O(E)$ with DFS.
