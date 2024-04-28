@@ -115,6 +115,23 @@ $$
 
 **Case 3** $\quad c > \log_b a \quad T = \Theta(n^c)$
 
+
+## 3. Recurrence Relations: Fibonacci Sequence
+
+### 3.1. Recurrence relation
+
+$$
+F(n) =
+\begin{cases}
+1 & \text{if }0 < n \leq 2 \\
+F(n-1) + F(n-2) & \text{otherwise}.
+\end{cases}
+$$
+
+
+
+
+
 [Table of Contents](./index.md)
 <!--
 ![111596338](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/639243aa-2857-4595-a65a-7852762bb002)
