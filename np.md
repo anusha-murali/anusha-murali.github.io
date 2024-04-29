@@ -73,9 +73,18 @@ Following are two minimum vertex cover examples:
 Independent Set and Vertex Cover reduce to each other by observing that $C$ is an independent set if and only if $V-C$ is a vertex cover. Since Independent Set is NP-Complete, it follows that Vertex Cover is also NP-Complete.
 
 
-**Dominating Set** Given an undirected graph $G = (V, E)$, a subset of vertices $D \subseteq V$ is called a **dominating set** if for every vertex $u \in V - D$, there is a vertex $v \in D$ such that $(u, v) \in E$.
+**Dominating Set**: Given an undirected graph $G = (V, E)$, a subset of vertices $D \subseteq V$ is called a **dominating set** if for every vertex $u \in V - D$, there is a vertex $v \in D$ such that $(u, v) \in E$.
 
 Informally, dominating set for a graph $G = (V, E)$ is a subset $D$ of $V$ such that every vertex not in $D$ is adjacent to at least one member of $D$.
+
+![x](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/61f6ebd4-de65-4d69-862e-5495407b4162)
+![y](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/de8dc6c3-e39c-48d8-912a-5055a22b4af7)
+![z](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/aec93d11-7c1b-4ea2-a26f-03d8960ee0ea)
+
+
+
+
+Dominating sets are closely related to independent sets: an independent set is also a dominating set if and only if it is a maximal independent set, so any maximal independent set in a graph is necessarily also a minimal dominating set.
 
 
 ***
