@@ -36,7 +36,7 @@ $$
 A problem is NP-complete if it is both NP-hard and is an element of NP. Informally, NP-complete problems are the hardest problems in NP. A polynomial-time algorithm for even one NP-complete problem would immediately imply a polynomial-time algorithm for every NP-complete problem.
 
 <p align="center">
-<img width="400" alt="18" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/9cec12a4-ea78-4a3a-99df-333d2d5121d8">
+<img width="350" alt="18" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/9cec12a4-ea78-4a3a-99df-333d2d5121d8">
 </p>
 
 Examples: 3-SAT, Circuit-SAT
