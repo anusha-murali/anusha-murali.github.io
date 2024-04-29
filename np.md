@@ -124,7 +124,8 @@ Let $k$ denote the number of clauses in $\Phi$. The graph $G$ contains exactly $
 Two vertices in $G$ are connected by an edge if and only if either
 1. they correspond to literals in the same clause, or
 2. they correspond to a variable and its inverse.
-For example, the formula $(a \lor b \lor c)$.
+
+For example, the formula $(a \lor b \lor c) \land (b \lor \neg{c} \lor \neg{d}) \land$.
 
 ***
 # Approximation Algorithms
