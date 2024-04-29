@@ -73,6 +73,10 @@ Following are two minimum vertex cover examples:
 Independent Set and Vertex Cover reduce to each other by observing that $C$ is an independent set if and only if $V-C$ is a vertex cover. Since Independent Set is NP-Complete, it follows that Vertex Cover is also NP-Complete.
 
 
+**Dominating Set** Given an undirected graph $G = (V, E)$, a subset of vertices $D \subseteq V$ is called a **dominating set** if for every vertex $u \in V - D$, there is a vertex $v \in D$ such that $(u, v) \in E$.
+
+Informally, dominating set for a graph $G = (V, E)$ is a subset $D$ of $V$ such that every vertex not in $D$ is adjacent to at least one member of $D$.
+
 
 ***
 # Approximation Algorithms
