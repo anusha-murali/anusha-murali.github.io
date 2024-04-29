@@ -90,6 +90,7 @@ Informally, dominating set for a graph $G = (V, E)$ is a subset $D$ of $V$ such 
 
 Dominating sets are closely related to independent sets: an independent set is also a dominating set if and only if it is a maximal independent set, so any maximal independent set in a graph is necessarily also a minimal dominating set.
 
+**Maximum Cut**: Given a graph $G = (V, E)$, find two disjoint subsets $S$ and $T$ such that $S \cap T = \emptyset$, $S \cup T = V$, and the number of $(u,v) \in E$ that cross the cut is maximized.
 
 ***
 # Approximation Algorithms
