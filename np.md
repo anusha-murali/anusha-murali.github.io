@@ -63,7 +63,7 @@ The following graph of the cube has 6 different independent sets (2 of them are 
 
 Informally, vertex cover of a graph is a set of vertices that includes at least one endpoint of every edge of the graph.
 
-We can think of a vertex cover as polices who have an eye on any passage (edges). By this, they can have an eye on any node except the isolated ones because nodes are not their concerns. They must cover all passages.
+$\color{blue}\text{We can think of a vertex cover as polices who have an eye on any passage (edges). By this, they can have an eye on any node except the isolated ones because nodes are not their concerns. They must cover all passages.}$
 
 Following are two vertex cover examples:
 
