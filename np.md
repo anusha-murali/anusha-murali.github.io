@@ -92,6 +92,12 @@ Dominating sets are closely related to independent sets: an independent set is a
 
 **Maximum Cut**: Given a graph $G = (V, E)$, find two disjoint subsets $S$ and $T$ such that $S \cap T = \emptyset$, $S \cup T = V$, and the number of $(u,v) \in E$ that cross the cut is maximized.
 
+Following is an example of a maximum cut:
+
+<img width="350" alt="23" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/31988ea6-a4ae-4008-bcc7-0c42f5a33863">
+
+
+
 ***
 # Approximation Algorithms
 
