@@ -95,7 +95,7 @@ Dominating sets are closely related to independent sets: an independent set is a
 Following is an example of a maximum cut:
 
 <p align="center">
-<img width="150" alt="23" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/31988ea6-a4ae-4008-bcc7-0c42f5a33863">
+<img width="180" alt="23" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/31988ea6-a4ae-4008-bcc7-0c42f5a33863">
 </p>
 
 
