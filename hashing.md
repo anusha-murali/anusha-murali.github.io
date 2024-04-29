@@ -261,7 +261,7 @@ Now we choose a threshold -  for example, if $N = 100$ we might say that two doc
 
 ## 4. Problems
 
-**Problem 1**:  Let $A, B\subset\\{1,\ldots,N\\}$. In class we saw how to estimate the resemblance $R(A,B) = \\|A\cap B\\| / \\|A\cup B\\|$ by sampling random permutations $\pi_1,\ldots,\pi_n$ of $\{1,\ldots,N\}$ and computing the fraction of these for which $\min(\pi(A)) = \min(\pi(B))$. 
+**Problem 1**:  Let $A, B\subset\\{1,\ldots,N\\}$. In class we saw how to estimate the resemblance $R(A,B) = \|A\cap B\| / \|A\cup B\|$ by sampling random permutations $\pi_1,\ldots,\pi_n$ of $\{1,\ldots,N\}$ and computing the fraction of these for which $\min(\pi(A)) = \min(\pi(B))$. 
 
 True or false: the algorithm would still work if instead of random permutations, we took $\pi_1,\ldots,\pi_n$ to be random *cyclic* permutations (that is, to sample each $\pi_i$, sample a random number $y$ from $\{0,\ldots,N-1\}$ and take $\pi_i$ to be the permutation which maps every element $x\in\{1,\ldots,N\}$ to $x + y \pmod{N}$). If the statement is true, provide a proof. Otherwise, you should specify (with proof) some choice of $A, B, N$ such that for a uniformly random *cyclic* permutation, $R(A,B)$ does not equal the probability that $\min(\pi(A)) = \min(\pi(B))$.
 
@@ -277,7 +277,24 @@ Since there are 3 elements in our example, namely 1, 2, and 3, using a cyclic pe
 
 <img width="500" alt="16" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/a18d448d-70e6-408e-a9e6-8e0698609047">
 
+For the permutation $\pi_1$, the MinHash values are as follows:
 
+$$
+\text{MinHash}($\pi_1(A)$) = 2, \quad \neq \quad \text{MinHash} ($\pi_1(B)$) = 1
+$$
+
+
+For the permutation $\pi_2$, the MinHash values are as follows:
+
+$$
+\text{MinHash}($\pi_2(A)$) = 1, \quad =  \quad \text{MinHash} ($\pi_2(B)$) = 1
+$$
+
+For the permutation $\pi_3$, the MinHash values are as follows:
+
+$$
+\text{MinHash}($\pi_3(A)$) = 3, \quad \neq \quad \text{MinHash} ($\pi_3(B)$) = 2
+$$
 
 **Problem 2**: Recall that *resemblance* $R(A, B)$ of two sets $A$ and $B$ is defined as $R(A, B) = \dfrac{\|A \cap B\|}{\|A \cup B\|}$.
 
