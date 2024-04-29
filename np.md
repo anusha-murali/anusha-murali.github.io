@@ -181,9 +181,10 @@ Let $G = (V, E)$ be a graph. An independent set $V'$ is a subset of $V$ such tha
 It is known that max independent set is NP-hard.
 
 
-## 3. Traveling Salesman Problem
+## 3. Euclidean Traveling Salesman Problem
 
-Given a graph $G = (V,E)$, the Traveling salesman problem (TSP) with arbitrary weight is to finding a Hamiltonian cycle that has the minimum total weight. 
+In the Euclidean Travelling Salesman Problem, we are given $n$ points (cities) in the $x$-$y$ plane, and we seek the tour (cycle) of minimum length that travels through all the cities. This problem is NP-complete
+
 
 
 ## 4. Closest String
