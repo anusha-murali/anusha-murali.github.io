@@ -47,7 +47,15 @@ A problem is NP-complete if it is both NP-hard and is an element of NP. Informal
 
 **Independent Set**: 3-SAT reduces to Independent Set via constructing a strange graph where nodes represent assignments of the literals and edges connect assignments that conflict with each other.
 
-**Vertex Cover**: Independent Set and Vertex Cover reduce to each other by observing that $C$ is an independent set if and only if $V-C$ is a vertex cover. Since Independent Set is NP-Complete, it follows that Vertex Cover is also NP-Complete.
+**Vertex Cover**: Given a graph $G = (V, E)$, a vertex cover of $G$ is a set $V' \subseteq V$ such that all edges in $E$ have at least one endpoint in $V'$. The vertex cover problem is that given a graph $G$, and a number $k$, to determine if $G$ has a vertex cover of size at most $k$.
+
+<p align="center">
+![vc](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/7bd78898-c70f-45bc-b5d8-d4d8b615503d)
+</p>
+
+
+
+Independent Set and Vertex Cover reduce to each other by observing that $C$ is an independent set if and only if $V-C$ is a vertex cover. Since Independent Set is NP-Complete, it follows that Vertex Cover is also NP-Complete.
 
 
 
