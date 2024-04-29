@@ -10,7 +10,7 @@ title: Table of Contents
 5. [Divide and Combine](./dc.md)
 7. [Hashing](./hashing.md)
 8. [Randomized Algorithms](./randomized_algos.md)
-9. [NP-Completeness](./np.md)
+9. [NP, NP-Completeness, NP Hard](./np.md)
 10. [Linear Programming](./lp.md)
 11. [Network Flows](./network_flows.md)
 
