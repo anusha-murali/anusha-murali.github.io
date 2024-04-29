@@ -191,8 +191,9 @@ Suppose that we do not need to exactly compute the resemblance $R(A,B)$. We can 
 
 For example, let $U= \\{A, B, C, D, E, F\\}$ and $S_1 = \\{A, B, E\\},$ $S_2 = \\{C\\},$ $S_3 = \\{B, C, D, F\\},$ $S_4 = \\{A, D, F\\}.$ Following are the characteristic matrix representations of these sets for two different permutations $\pi_1$ and $\pi_2$ of $U$.
 
+<p align="center">
 <img width="480" alt="15" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/f579559e-b759-4319-9996-21f9fd9776cc">
-
+</p>
 
 The MinHash values for the left permutation $(\pi_1)$ is as follows:
 
@@ -222,7 +223,9 @@ The set resemblance (or Jaccard coefficient) of $S_1$ and $S_2$ is $R(S_1, S_2) 
 
 There are 6 permuations of the universe $U$, namely $\\{A, B, C\\}$, $\\{A, C, B\\}$, $\\{B, A, C \\}$, $\\{B, C, A\\},$ $\\{C, A, B\\},$  and $\\{C, B, A\\}$. Computing the MinHash values of each of these 6 permutations, we obtain the following:
 
+<p align="center">
 <img width="600" alt="14" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/4e557587-6ba2-45d5-a883-f4c02c2290ed">
+</p>
 
 We note that 3 out of the 6 permuations have matching MinHash values, which is equal to the actual set resemblance of $\frac{1}{2}$. 
 
@@ -284,7 +287,9 @@ $$
 
 Since there are 3 elements in our example, namely 1, 2, and 3, using a cyclic permutation, we can permute the rows in only three ways. 
 
+<p align="center">
 <img width="480" alt="16" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/a18d448d-70e6-408e-a9e6-8e0698609047">
+</p>
 
 For the permutation $\pi_1$, the MinHash values are as follows:
 
