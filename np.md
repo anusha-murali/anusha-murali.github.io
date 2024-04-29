@@ -45,9 +45,18 @@ A problem is NP-complete if it is both NP-hard and is an element of NP. Informal
 1. Show $X$ is in NP
 2. Show $X$ reduces from 3-SAT.
 
-**Independent Set**: 3-SAT reduces to Independent Set via constructing a strange graph where nodes represent assignments of the literals and edges connect assignments that conflict with each other.
+**Independent Set**:  Given a graph $G = (V, E)$, an independent set of $G$ is a subset $I \subseteq V$ such that $\forall e, e \not \subseteq I$ (i.e: no edge has both endpoints in $I$). The independent set problem is that given a graph $G$, and a number $k$, to determine if $G$ has an independent set of size at least $k$.
 
-**Vertex Cover**: Given a graph $G = (V, E)$, a vertex cover of $G$ is a set $V' \subseteq V$ such that all edges in $E$ have at least one endpoint in $V'$. The vertex cover problem is that given a graph $G$, and a number $k$, to determine if $G$ has a vertex cover of size at most $k$.
+The following graph of the cube has 6 different independent sets (2 of them are maximum), shown as the red vertices:
+
+<p align="center">
+<img width="500" alt="21" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/fd3536bb-86a7-4058-855b-33965c0d3b02">
+</p>
+
+
+3-SAT reduces to Independent Set via constructing a strange graph where nodes represent assignments of the literals and edges connect assignments that conflict with each other.
+
+**Vertex Cover**: Given a graph $G = (V, E)$, a vertex cover of $G$ is a subset $V' \subseteq V$ such that all edges in $E$ have at least one endpoint in $V'$. The vertex cover problem is that given a graph $G$, and a number $k$, to determine if $G$ has a vertex cover of size at most $k$.
 
 Following are two vertex cover examples:
 
