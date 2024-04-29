@@ -1,3 +1,16 @@
+# P, NP, and NP-Completeness
+
+## P versus NP
+
+An algorithm is considered "efficient" if its running time is bounded by a polynomial function of the input size: $O(n^k)$, where $k > 0$.
+
+A **decision problem** is a problem whose output is a single boolean value: YES or NO. We define 3 classes of decision problems:
+
+1. **P** is the set of decision problems that can be solved in polynomial time. Intuitively, P is the set of problems that can be solved quickly.
+2. **NP** is the set of all YES/NO problems where a solution can be verified in polynomial time. In other words, if the answer is YES, then there is a *proof* of this fact that can be checked in polynomial time. Intuitively, NP is the set of decision problems where we can verify a YES answer quickly if we have the solution in front of us.
+3. **co-NP** is essentially the opposite of NP. If the answer to a problem in co-NP is NO, then there is a proof of this fact that can be checked in polynomial time.
+
+
 # Approximation Algorithms
 
 **Definition**: Let $P$ be a minimization problem, and $I$ be an instance of $P$. Let $A$ be an algorithm that finds feasible solution to instances of $P$. Let $A(I)$ is the cost of the solution returned by $A$ for instance $I$, and $OPT(I)$ is the cost of the optimal solution (mimimum) for $I$. Then, $A$ is said to be an $\alpha$-approximation algorithm for $P$ if
