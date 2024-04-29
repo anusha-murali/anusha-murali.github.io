@@ -318,6 +318,12 @@ $$
 (b) Suppose we restrict our choice of permutations to *derangements*, that is, permutations $\pi$ such that for all $x$, $\pi(x) \neq x$. What's the probability that if we choose a uniformly random derangement, then $\min(\\{\pi(a): a \in A \\}) = \min(\\{\pi(b): a \in B \\})$, if 
 $A = \\{1, 2, 4\\}$ and $B = \\{1, 2, 3\\}$ and $N = 4$?
 
+There are 9 derangements of (1, 2, 3, 4), namely (2,1,4,3), (2,3,4,1), (2,4,1,3), (3,1,4,2), (3,4,1,2),(3,4,2,1),(4,1,2,3),(4,3,1,2),and(4,3,2,1). The characteristic matrices for all 9 of them are shown below:
+
+<img width="500" alt="25" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/679aaebe-a842-43a8-8eb3-2a2afed1864e">
+
+
+
 **Problem 3**: Recall that *resemblance* $R(A, B)$ of two sets $A$ and $B$ is defined as $R(A, B) = \dfrac{\|A \cap B\|}{\|A \cup B\|}$.
 
 Suppose that for some positive integer $N$, $A$ and $B$ are subsets of $\[N\]$ (i.e: $\{0, 1, \ldots, N-1\}$) with $\|A\| \geq 2$ and $\|B\| \geq 2$. Prove or disprove: For every such  $A$ and $B$, if we choose a uniformly random permutation $\pi: \[N\] \rightarrow \[N\]$, the probability that $\text{second-largest}(\{\pi(a):a \in A\})$ = $\text{second-largest}(\{\pi(b):b \in B\})$ is $R(A, B)$. Note that given a set $X$, $\text{second-largest}(X)$ is the second-largest element of $X$.
