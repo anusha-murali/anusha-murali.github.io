@@ -63,6 +63,8 @@ The following graph of the cube has 6 different independent sets (2 of them are 
 
 Informally, vertex cover of a graph is a set of vertices that includes at least one endpoint of every edge of the graph.
 
+We can think of a vertex cover as polices who have an eye on any passage (edges). By this, they can have an eye on any node except the isolated ones because nodes are not their concerns. They must cover all passages.
+
 Following are two vertex cover examples:
 
 <p align="center">
@@ -83,6 +85,8 @@ Independent Set and Vertex Cover reduce to each other by observing that $C$ is a
 **Dominating Set**: Given an undirected graph $G = (V, E)$, a subset of vertices $D \subseteq V$ is called a **dominating set** if for every vertex $u \in V - D$, there is a vertex $v \in D$ such that $(u, v) \in E$.
 
 Informally, dominating set for a graph $G = (V, E)$ is a subset $D$ of $V$ such that every vertex not in $D$ is adjacent to at least one member of $D$.
+
+We can think of a dominating set as polices who have an eye on any node. The passages aren't important, so if one of them monitors a node via an edge, the other edges connected to that node may not be covered because the passages are not the concern of these polices.
 
 <p align="center">
 <img width="500" alt="22" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/7a959e61-0812-4e97-af17-b23d79c4a826">
