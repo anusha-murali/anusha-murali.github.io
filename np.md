@@ -77,12 +77,7 @@ Independent Set and Vertex Cover reduce to each other by observing that $C$ is a
 
 Informally, dominating set for a graph $G = (V, E)$ is a subset $D$ of $V$ such that every vertex not in $D$ is adjacent to at least one member of $D$.
 
-![x](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/61f6ebd4-de65-4d69-862e-5495407b4162)
-![y](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/de8dc6c3-e39c-48d8-912a-5055a22b4af7)
-![z](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/aec93d11-7c1b-4ea2-a26f-03d8960ee0ea)
-
-
-
+<img width="500" alt="22" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/7a959e61-0812-4e97-af17-b23d79c4a826">
 
 Dominating sets are closely related to independent sets: an independent set is also a dominating set if and only if it is a maximal independent set, so any maximal independent set in a graph is necessarily also a minimal dominating set.
 
