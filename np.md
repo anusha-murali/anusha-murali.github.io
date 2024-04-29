@@ -41,7 +41,7 @@ A problem is NP-complete if it is both NP-hard and is an element of NP. Informal
 
 Examples: 3-SAT, Circuit-SAT
 
-**** How to prove a given problem $X$ is NP-complete?
+#### How to prove a given problem $X$ is NP-complete?
 1. Show $X$ is in NP
 2. Show $X$ reduces from 3-SAT.
 
