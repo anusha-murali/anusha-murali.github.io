@@ -14,8 +14,9 @@ Every decision problem in P is also in NP. If a problem is in P, we can verify Y
 
 Perhaps the single most important unanswered question in theoretical computer science is whether the complexity classes P and NP are actually different. (The Clay Mathematics Institute lists P-versus-NP as the first of its seven Millennium Prize Problems).
 
-<img width="100" alt="17" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/08969ad5-f5f6-4833-adf9-bc068934bbdb">
-
+<p align="center">
+<img width="150" alt="17" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/08969ad5-f5f6-4833-adf9-bc068934bbdb">
+</p>
 
 
 
