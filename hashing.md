@@ -307,16 +307,16 @@ $$
 
 Hence, out of the three possible cyclic permutations, each corresponding to modulo 3,  MinHash match occurs only on one of them.  Hence the average MinHash match for the above cyclic permutations, which is equal to the probability that $\text{MinHash}(\pi_1(A))  = \text{MinHash}(\pi_1(B))$  is $\dfrac{1}{3}$, while the actual set resemblance is $\dfrac{1}{2}$. Therefore, the algorithm will not work if we use random cyclic permutations.
 
-**Problem 2**: Recall that *resemblance* $R(A, B)$ of two sets $A$ and $B$ is defined as $R(A, B) = \dfrac{\|A \cap B\|}{\|A \cup B\|}$, and we proved in class that if $A, B \subseteq \[N\]$ and we choose a uniformly random permutation $\pi: \[N\] \rightarrow \[N\]$, the probability that $\min(\{\pi(a): a \in A \}) = \min(\{\pi(b): a \in B \})$ is $R(A, B)$.
+**Problem 2**: Recall that *resemblance* $R(A, B)$ of two sets $A$ and $B$ is defined as $R(A, B) = \dfrac{\|A \cap B\|}{\|A \cup B\|}$, and we proved in class that if $A, B \subseteq \[N\]$ and we choose a uniformly random permutation $\pi: \[N\] \rightarrow \[N\]$, the probability that $\min(\\{\pi(a): a \in A \\}) = \min(\\{\pi(b): a \in B \\})$ is $R(A, B)$.
 
 (a) What is the resemblance of the sets $A = \{1, 2, 4\}$ and $B = \{1, 2, 3\}$? (Here $N = 4$).
 
 $$
-R(A, B) = \frac{\|A \cap B\|}{\|A \cup B\|} = \frac{1}{2}.
+R(A, B) = \frac{|A \cap B|}{|A \cup B|} = \frac{1}{2}.
 $$
 
-(b) Suppose we restrict our choice of permutations to *derangements*, that is, permutations $\pi$ such that for all $x$, $\pi(x) \neq x$. What's the probability that if we choose a uniformly random derangement, then $\min(\{\pi(a): a \in A \}) = \min(\{\pi(b): a \in B \})$, if 
-$A = \{1, 2, 4\}$ and $B = \{1, 2, 3\}$ and $N = 4$?
+(b) Suppose we restrict our choice of permutations to *derangements*, that is, permutations $\pi$ such that for all $x$, $\pi(x) \neq x$. What's the probability that if we choose a uniformly random derangement, then $\min(\\{\pi(a): a \in A \\}) = \min(\\{\pi(b): a \in B \\})$, if 
+$A = \\{1, 2, 4\\}$ and $B = \\{1, 2, 3\\}$ and $N = 4$?
 
 **Problem 3**: Recall that *resemblance* $R(A, B)$ of two sets $A$ and $B$ is defined as $R(A, B) = \dfrac{\|A \cap B\|}{\|A \cup B\|}$.
 
