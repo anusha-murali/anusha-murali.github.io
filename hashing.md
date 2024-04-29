@@ -320,8 +320,9 @@ $A = \\{1, 2, 4\\}$ and $B = \\{1, 2, 3\\}$ and $N = 4$?
 
 There are 9 derangements of (1, 2, 3, 4), namely (2,1,4,3), (2,3,4,1), (2,4,1,3), (3,1,4,2), (3,4,1,2),(3,4,2,1),(4,1,2,3),(4,3,1,2),and(4,3,2,1). The characteristic matrices for all 9 of them are shown below:
 
+<p align="center">
 <img width="500" alt="25" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/679aaebe-a842-43a8-8eb3-2a2afed1864e">
-
+</p>
 
 
 **Problem 3**: Recall that *resemblance* $R(A, B)$ of two sets $A$ and $B$ is defined as $R(A, B) = \dfrac{\|A \cap B\|}{\|A \cup B\|}$.
