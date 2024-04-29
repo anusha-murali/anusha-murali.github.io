@@ -51,6 +51,7 @@ A problem is NP-complete if it is both NP-hard and is an element of NP. Informal
 
 ![vc](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/7bd78898-c70f-45bc-b5d8-d4d8b615503d)
 
+<img width="500" alt="19" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/d85ae15b-b5f6-42e7-b79c-271e30302cea">
 
 
 Independent Set and Vertex Cover reduce to each other by observing that $C$ is an independent set if and only if $V-C$ is a vertex cover. Since Independent Set is NP-Complete, it follows that Vertex Cover is also NP-Complete.
