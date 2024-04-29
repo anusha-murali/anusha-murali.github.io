@@ -128,6 +128,8 @@ Two vertices in $G$ are connected by an edge if and only if either
 For example, the formula $(a \lor b \lor c) \land (b \lor \neg{c} \lor \neg{d}) \land (\neg{a} \lor c \lor d) \land (a \lor \neg{b} \lor \neg{d})$ is transformed into the following graph:
 
 
+<img width="500" alt="24" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/091d5300-fc04-4a44-8eb0-2d2599501951">
+
 
 ***
 # Approximation Algorithms
