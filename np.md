@@ -139,7 +139,7 @@ Let's consider  the forward direction. Suppose $\Phi$ is satisfiable. Fix an arb
 
 Let's consider the backward direction. Suppose $G$ contains an independent set $S$ of size $k$. Each vertex in $S$ must lie in a different clause triangle. Suppose we assign the value TRUE to each literal in $S$; because contradictory literals are connected by edges, this assignment is consistent. There may be variables $x$ such that neither $x$ nor $\neg{x}$ corresponds to a vertex in $S$; we can set these variables to any value we like. Because $S$ contains one vertex in each clause triangle, each clause in $\Phi$ contains (at least) one TRUE literal. We conclude that $\Phi$ is satisfiable.
 
-
+Transforming the 3CNF formula $\Phi$ into the graph $G$ takes polynomial time. Therefore, if we could solve the Maximum Independent Set problem in polynomial time, then we could also solve 3-SAT in polynomial time. But that would imply P = NP, which is ridiculous! We conclude that the Maximum Independent Set problem is NP-hard.
 
 ***
 # Approximation Algorithms
