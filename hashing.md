@@ -324,6 +324,7 @@ There are 9 derangements of (1, 2, 3, 4), namely (2,1,4,3), (2,3,4,1), (2,4,1,3)
 <img width="500" alt="25" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/679aaebe-a842-43a8-8eb3-2a2afed1864e">
 </p>
 
+As we can see only the first 3 have $\min(\\{\pi(a): a \in A \\}) = \min(\\{\pi(b): a \in B \\})$. So, the desired probability of the match is $\dfrac{1}{3}$.
 
 **Problem 3**: Recall that *resemblance* $R(A, B)$ of two sets $A$ and $B$ is defined as $R(A, B) = \dfrac{\|A \cap B\|}{\|A \cup B\|}$.
 
