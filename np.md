@@ -39,13 +39,15 @@ A problem is NP-complete if it is both NP-hard and is an element of NP. Informal
 <img width="350" alt="18" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/9cec12a4-ea78-4a3a-99df-333d2d5121d8">
 </p>
 
-Examples: 3-SAT, Circuit-SAT
+**3-SAT** is NP-complete as shown by the Cook-Levin Theorem.
 
 #### How to prove a given problem $X$ is NP-complete?
 1. Show $X$ is in NP
 2. Show $X$ reduces from 3-SAT.
 
+**Independent Set**: 3-SAT reduces to Independent Set via constructing a strange graph where nodes represent assignments of the literals and edges connect assignments that conflict with each other.
 
+**Vertex Cover**: Independent Set and Vertex Cover reduce to each other by observing that $C$ is an independent set if and only if $V-C$ is a vertex cover. Since Independent Set is NP-Complete, it follows that Vertex Cover is also NP-Complete.
 
 
 
