@@ -128,8 +128,15 @@ Two vertices in $G$ are connected by an edge if and only if either
 For example, the formula $(a \lor b \lor c) \land (b \lor \neg{c} \lor \neg{d}) \land (\neg{a} \lor c \lor d) \land (a \lor \neg{b} \lor \neg{d})$ is transformed into the following graph:
 
 <p align="center">
-<img width="500" alt="24" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/fb75bdf7-d0ea-4b44-bf09-9d8c4a913223">
+<img width="450" alt="24" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/fb75bdf7-d0ea-4b44-bf09-9d8c4a913223">
 </p>
+
+Each independent set in $G$ contains at most one vertex from each clause triangle, because any two vertices in each triangle are connected. Thus, the largest independent set in $G$ has size at most $k$. 
+
+We claim that $G$ contains an independent set of size exactly $k$ if and only if the original formula $\Phi$ is satisfiable. As usual for “if and only if” statements, the proof consists of two parts.
+
+Let's consider  the forward direction. Suppose $\Phi$ is satisfiable. Fix an arbitrary satisfying assignment. By definition, each clause in $\Phi$ contains at least one TRUE literal. So, we can choose a subset $S$ of $k$ vertices in $G$ that contains exactly one vertex per clause triangle, such that the corresponding $k$ literals are all TRUE. Because each triangle contains at most one vertex in $S$, no two vertices in $S$ are connected by a triangle edge. Because every literal corresponding to a vertex in $S$ is TRUE, no two vertices in $S$ are connected by a negation edge. We conclude that $S$ is an independent set of size $k$ in $G$.
+
 
 ***
 # Approximation Algorithms
