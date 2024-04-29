@@ -241,7 +241,7 @@ where the probability is taken over all choices of permutations.
 
 In practice, documents contain thousands or hundreds of thousands of words, so we can just randomly select a few permutations and compute MinHash on them to determine the approximate set resemblance.
 
-**Lemma** {\bf Pr}(\text{MinHash}(S_1) = \text{MinHash}(S_1))  =  R(S_1, S_2)
+**Lemma 3**: ${\bf Pr}(\text{MinHash}(S_1) = \text{MinHash}(S_1))  =  R(S_1, S_2)$
 
 *Proof*: There are three types of rows in the characteristic matrix:
 1. Type $X$: There are $x$ rows with 1 in both columns
