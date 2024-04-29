@@ -53,6 +53,11 @@ The following graph of the cube has 6 different independent sets (2 of them are 
 <img width="500" alt="21" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/fd3536bb-86a7-4058-855b-33965c0d3b02">
 </p>
 
+**Maximal Independent Set** For a graph $G = (V, E)$, an independent set $S$ is a maximal independent set if for $v \in V$, one of the following is true:
+1. $v \in S$
+2. $N(v) \cap S \neq \emptyset$, where $N(v)$ denotes the neighbors of $v$.
+
+
 
 3-SAT reduces to Independent Set via constructing a strange graph where nodes represent assignments of the literals and edges connect assignments that conflict with each other.
 
