@@ -107,6 +107,10 @@ Following is an example of a maximum cut:
 
 To prove that any problem other than circuit satisfiability is NP-hard, we use a reduction argument. 
 
+$$
+\text{To prove that problem} A \text{is NP-hard, reduce a known NP-hard problem to } A.
+$$
+
 Reducing problem $A$ to another problem $B$ means describing an algorithm to solve problem $A$ under the assumption that an algorithm for problem $B$ already exists.
 
 
