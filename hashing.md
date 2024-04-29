@@ -326,7 +326,7 @@ $A = \\{1, 2, 4\\}$ and $B = \\{1, 2, 3\\}$ and $N = 4$?
 There are 9 derangements of (1, 2, 3, 4), namely (2,1,4,3), (2,3,4,1), (2,4,1,3), (3,1,4,2), (3,4,1,2),(3,4,2,1),(4,1,2,3),(4,3,1,2),and(4,3,2,1). The characteristic matrices for all 9 of them are shown below:
 
 <p align="center">
-<img width="500" alt="25" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/679aaebe-a842-43a8-8eb3-2a2afed1864e">
+<img width="450" alt="25" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/679aaebe-a842-43a8-8eb3-2a2afed1864e">
 </p>
 
 As we can see only the first 3 have $\min(\\{\pi(a): a \in A \\}) = \min(\\{\pi(b): a \in B \\})$. So, the desired probability of the match is $\dfrac{1}{3}$.
