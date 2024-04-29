@@ -167,6 +167,8 @@ while E is not empty
   Remove all edges incident to u, v from E
 ```
 
+The above algorithm for vertex cover does the following: repeatedly choose an edge, and include both of its endpoints into the cover. Throw the vertices and its adjacent edges out of the graph, and continue.
+
 **Theorem**: Algoritm VC has approximation ratio 2.
 
 *Proof*: Clearly VC is a vertex cover. Next let us prove the ratio. Suppose we pick $k$ edges during the execution of algorithm VC. These $k$ edges form a matching (they don’t share vertices). So, the optimal vertex cover should contain at least one vertex from each of these $k$ edges. Thus $OPT \geq k$.  On the other hand, algorithm VC’s output has size at most $2k$.
