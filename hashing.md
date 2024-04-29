@@ -276,7 +276,7 @@ True or false: the algorithm would still work if instead of random permutations,
 
 The claim is false. We will prove this with the following counter example.
     
-Let us consider the two sets $A, B \subset \{1, 2, 3\}$, where $N = 3$,  $A = \{2 \}$ and $B = \{1, 2 \}$. The set resemblance (or Jaccard coefficient) is,
+Let us consider the two sets $A, B \subset \\{1, 2, 3\\}$, where $N = 3$,  $A = \\{2 \\}$ and $B = \\{1, 2 \\}$. The set resemblance (or Jaccard coefficient) is,
 
 $$
 R(A, B) = \frac{|A \cap B|}{|A \cup B|} = \frac{1}{2}.
