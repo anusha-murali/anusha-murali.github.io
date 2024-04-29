@@ -1,6 +1,6 @@
 # P, NP, and NP-Completeness
 
-## P versus NP
+## 1. P versus NP
 
 An algorithm is considered "efficient" if its running time is bounded by a polynomial function of the input size: $O(n^k)$, where $k > 0$.
 
@@ -19,7 +19,7 @@ Perhaps the single most important unanswered question in theoretical computer sc
 </p>
 
 
-## NP-Hard and NP-Complete
+## 2. NP-Hard and NP-Complete
 
 ### NP-Hard
 
@@ -103,7 +103,7 @@ Following is an example of a maximum cut:
 </p>
 
 
-## Reductions
+## 3. Reductions
 
 To prove that any problem other than circuit satisfiability is NP-hard, we use a reduction argument. 
 
@@ -113,7 +113,7 @@ $$
 
 Reducing problem $A$ to another problem $B$ means describing an algorithm to solve problem $A$ under the assumption that an algorithm for problem $B$ already exists.
 
-### Maximum Independent Set (from 3SAT)
+### 3.1. Maximum Independent Set (from 3SAT)
 
 The maximum independent set problem asks for the size of the largest independent set in a given graph. We shall prove that maximum independent set problem is NP-hard using a reduction from 3-SAT.
 
