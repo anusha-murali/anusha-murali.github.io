@@ -117,7 +117,14 @@ Reducing problem $A$ to another problem $B$ means describing an algorithm to sol
 
 The maximum independent set problem asks for the size of the largest independent set in a given graph. We shall prove that maximum independent set problem is NP-hard using a reduction from 3-SAT.
 
+Given an arbitrary 3CNF formula $\Phi$, we construct a graph $G$ as follows.
 
+Let $k$ denote the number of clauses in $\Phi$. The graph $G$ contains exactly $3k$ vertices, one for each literal in $\Phi$.
+
+Two vertices in $G$ are connected by an edge if and only if either
+1. they correspond to literals in the same clause, or
+2. they correspond to a variable and its inverse.
+For example, the formula $(a \or b \or c)$.
 
 ***
 # Approximation Algorithms
