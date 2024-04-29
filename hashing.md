@@ -250,7 +250,7 @@ In practice, documents contain thousands or hundreds of thousands of words, so w
 
 The total number of rows is $x+y+z$. The set resemblance is precisely $R(S_1, S_2) = \dfrac{\|S_1 \cap S_2\|}{\|S_1 \cup S_2\|} = \dfrac{x}{x+y}.$
 
-Let row $r$ be the $\min\\{\text{MinHash}(S_1), \text{MinHash}(S_2)\\}$. It is either Type $X$ or Type $Y$, and it is Type $X$ with probability exactly $\dfrac{x}{x+y}$, since the permutation is random. This is the only case that $\min\\{\text{MinHash}(S_1), \text{MinHash}(S_2)\\}$, otherwise $S_1$ or $S_2$ has 1, but not both. 
+Let row $r$ be the $\min\\{\text{MinHash}(S_1), \text{MinHash}(S_2)\\}$. It is either Type $X$ or Type $Y$, and it is Type $X$ with probability exactly $\dfrac{x}{x+y}$, since the permutation is random. This is the only case that $\min\\{\text{MinHash}(S_1) = \text{MinHash}(S_2)\\}$, otherwise $S_1$ or $S_2$ has 1, but not both. 
 
 
 ## 2. Shingling 
