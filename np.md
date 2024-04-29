@@ -57,8 +57,6 @@ The following graph of the cube has 6 different independent sets (2 of them are 
 1. $v \in S$
 2. $N(v) \cap S \neq \emptyset$, where $N(v)$ denotes the neighbors of $v$.
 
-
-
 3-SAT reduces to Independent Set via constructing a strange graph where nodes represent assignments of the literals and edges connect assignments that conflict with each other.
 
 **Vertex Cover**: Given a graph $G = (V, E)$, a vertex cover of $G$ is a subset $D C \subseteq V$ such that all edges in $E$ have at least one endpoint in $C$. The vertex cover problem is that given a graph $G$, and a number $k$, to determine if $G$ has a vertex cover of size at most $k$.
@@ -70,6 +68,8 @@ Following are two vertex cover examples:
 <p align="center">
 <img width="300" alt="19" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/d85ae15b-b5f6-42e7-b79c-271e30302cea">
 </p>
+
+**Minimum Vertex Cover**: Goven a graph $G= (V, E)$, find the minimum set of vertices $S \subseteq V$ such that for all $(u, v) \in E$, we have at least one of $u\in S$ or $v \in S$.
 
 Following are two minimum vertex cover examples:
 
