@@ -23,11 +23,13 @@ Perhaps the single most important unanswered question in theoretical computer sc
 
 ### NP-Hard
 
-A problem $\prod$ is NP-hard if a polynomial-time algorithm for $\prod$ would imply a polynomial-time algorithm for every problem in NP. In other words,
+A problem $A$ is NP-hard if a polynomial-time algorithm for $A$ would imply a polynomial-time algorithm for every problem in NP. In other words,
 
 $$
-\boxed{\prod \text{ is NP-hard } {\large \iff} \text{ If } \prod \text{ can be solved in polynomial time, then P = NP}}
+\boxed{A \text{ is NP-hard } {\large \iff} \text{ If } A \text{ can be solved in polynomial time, then P = NP}}
 $$
+
+**To prove that problem A is NP-hard, reduce a known NP-hard problem to A**
 
 ### NP-Complete
 
