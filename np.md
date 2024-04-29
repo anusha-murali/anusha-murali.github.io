@@ -125,7 +125,7 @@ Two vertices in $G$ are connected by an edge if and only if either
 1. they correspond to literals in the same clause, or
 2. they correspond to a variable and its inverse.
 
-For example, the formula $(a \lor b \lor c) \land (b \lor \neg{c} \lor \neg{d}) \land )\neg{a} \lor c \lor d) \land (a \lor \neg{b} \lor \neg{d})$ is transformed into the following graph:
+For example, the formula $(a \lor b \lor c) \land (b \lor \neg{c} \lor \neg{d}) \land (\neg{a} \lor c \lor d) \land (a \lor \neg{b} \lor \neg{d})$ is transformed into the following graph:
 
 
 
