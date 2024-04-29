@@ -137,6 +137,9 @@ We claim that $G$ contains an independent set of size exactly $k$ if and only if
 
 Let's consider  the forward direction. Suppose $\Phi$ is satisfiable. Fix an arbitrary satisfying assignment. By definition, each clause in $\Phi$ contains at least one TRUE literal. So, we can choose a subset $S$ of $k$ vertices in $G$ that contains exactly one vertex per clause triangle, such that the corresponding $k$ literals are all TRUE. Because each triangle contains at most one vertex in $S$, no two vertices in $S$ are connected by a triangle edge. Because every literal corresponding to a vertex in $S$ is TRUE, no two vertices in $S$ are connected by a negation edge. We conclude that $S$ is an independent set of size $k$ in $G$.
 
+Let's consider the backward direction. Suppose $G$ contains an independent set $S$ of size $k$. Each vertex in $S$ must lie in a different clause triangle. Suppose we assign the value TRUE to each literal in $S$; because contradictory literals are connected by edges, this assignment is consistent. There may be variables $x$ such that neither $x$ nor $\neg{x}$ corresponds to a vertex in $S$; we can set these variables to any value we like. Because $S$ contains one vertex in each clause triangle, each clause in $\Phi$ contains (at least) one TRUE literal. We conclude that $\Phi$ is satisfiable.
+
+
 
 ***
 # Approximation Algorithms
