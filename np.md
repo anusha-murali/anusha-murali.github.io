@@ -61,13 +61,13 @@ The following graph of the cube has 6 different independent sets (2 of them are 
 Following are two vertex cover examples:
 
 <p align="center">
-<img width="350" alt="19" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/d85ae15b-b5f6-42e7-b79c-271e30302cea">
+<img width="300" alt="19" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/d85ae15b-b5f6-42e7-b79c-271e30302cea">
 </p>
 
 Following are two minimum vertex cover examples:
 
 <p align="center">
-<img width="350" alt="20" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/2c66357b-a852-4f11-9f2d-25df618f9d90">
+<img width="300" alt="20" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/2c66357b-a852-4f11-9f2d-25df618f9d90">
 </p>
 
 Independent Set and Vertex Cover reduce to each other by observing that $C$ is an independent set if and only if $V-C$ is a vertex cover. Since Independent Set is NP-Complete, it follows that Vertex Cover is also NP-Complete.
