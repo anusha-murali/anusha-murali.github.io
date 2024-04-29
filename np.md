@@ -19,7 +19,9 @@ Perhaps the single most important unanswered question in theoretical computer sc
 </p>
 
 
+## NP-Hard and NP-Complete
 
+A problem $\Pi$ is NP-hard if a polynomial-time algorithm for $\Pi$ would imply a polynomial-time algorithm for every problem in NP.
 
 
 
