@@ -261,7 +261,7 @@ Now we choose a threshold -  for example, if $N = 100$ we might say that two doc
 
 ## 4. Problems
 
-**Problem 1**:  Let $A, B\subset\{1,\ldots,N\}$. In class we saw how to estimate the resemblance $R(A,B) = |A\cap B| / |A\cup B|$ by sampling random permutations $\pi_1,\ldots,\pi_n$ of $\{1,\ldots,N\}$ and computing the fraction of these for which $\min(\pi(A)) = \min(\pi(B))$. 
+**Problem 1**:  Let $A, B\subset\\{1,\ldots,N\\}$. In class we saw how to estimate the resemblance $R(A,B) = \\|A\cap B\\| / \\|A\cup B\\|$ by sampling random permutations $\pi_1,\ldots,\pi_n$ of $\{1,\ldots,N\}$ and computing the fraction of these for which $\min(\pi(A)) = \min(\pi(B))$. 
 
 True or false: the algorithm would still work if instead of random permutations, we took $\pi_1,\ldots,\pi_n$ to be random *cyclic* permutations (that is, to sample each $\pi_i$, sample a random number $y$ from $\{0,\ldots,N-1\}$ and take $\pi_i$ to be the permutation which maps every element $x\in\{1,\ldots,N\}$ to $x + y \pmod{N}$). If the statement is true, provide a proof. Otherwise, you should specify (with proof) some choice of $A, B, N$ such that for a uniformly random *cyclic* permutation, $R(A,B)$ does not equal the probability that $\min(\pi(A)) = \min(\pi(B))$.
 
