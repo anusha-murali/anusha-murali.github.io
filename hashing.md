@@ -280,20 +280,20 @@ Since there are 3 elements in our example, namely 1, 2, and 3, using a cyclic pe
 For the permutation $\pi_1$, the MinHash values are as follows:
 
 $$
-\text{MinHash}($\pi_1(A)$) = 2, \quad \neq \quad \text{MinHash} ($\pi_1(B)$) = 1
+\text{MinHash}(\pi_1(A)) = 2, \quad \neq \quad \text{MinHash} (\pi_1(B)) = 1
 $$
 
 
 For the permutation $\pi_2$, the MinHash values are as follows:
 
 $$
-\text{MinHash}($\pi_2(A)$) = 1, \quad =  \quad \text{MinHash} ($\pi_2(B)$) = 1
+\text{MinHash}(\pi_2(A)) = 1, \quad =  \quad \text{MinHash} (\pi_2(B)) = 1
 $$
 
 For the permutation $\pi_3$, the MinHash values are as follows:
 
 $$
-\text{MinHash}($\pi_3(A)$) = 3, \quad \neq \quad \text{MinHash} ($\pi_3(B)$) = 2
+\text{MinHash}(\pi_3(A)) = 3, \quad \neq \quad \text{MinHash} (\pi_3(B)) = 2
 $$
 
 Hence, out of the three possible cyclic permutations, each corresponding to modulo 3,  MinHash match occurs only on one of them.  Hence the average MinHash match for the above cyclic permutations, which is equal to the probability that MinHash($\pi_1(A)$)  $=$ MinHash($\pi_1(B)$)  is $\dfrac{1}{3}$, while the actual set resemblance is $\dfrac{1}{2}$. Therefore, the algorithm will not work if we use random cyclic permutations.
