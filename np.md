@@ -21,12 +21,17 @@ Perhaps the single most important unanswered question in theoretical computer sc
 
 ## NP-Hard and NP-Complete
 
+##$ NP-Hard
+
 A problem $\prod$ is NP-hard if a polynomial-time algorithm for $\prod$ would imply a polynomial-time algorithm for every problem in NP. In other words,
 
 $$
 \boxed{\prod \text{ is NP-hard } {\large \iff} \text{ If } \prod \text{ can be solved in polynomial time, then P = NP}}
 $$
 
+### NP-Complete
+
+A problem is NP-complete if it is both NP-hard and is an element of NP. Informally, NP-complete problems are the hardest problems in NP. A polynomial-time algorithm for even one NP-complete problem would immediately imply a polynomial-time algorithm for every NP-complete problem.
 
 
 ***
