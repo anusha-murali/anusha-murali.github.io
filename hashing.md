@@ -229,7 +229,7 @@ We note that 3 out of the 6 permuations have matching MinHash values, which is e
 In fact, we have the following MinHash property:
 
 $$
-{\bf Pr}(\text{MinHash}(S_1) = \text{MinHash}(S_1)) = \dfrac{|S_1 \cap S_2|}{|S_1 \cup S_2|} =  R(S_1, S_2),
+{\bf Pr}(\text{MinHash}(S_1) = \text{MinHash}(S_2)) = \dfrac{|S_1 \cap S_2|}{|S_1 \cup S_2|} =  R(S_1, S_2),
 $$
 
 where the probability is taken over all choices of permutations.
