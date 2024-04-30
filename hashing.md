@@ -153,7 +153,7 @@ $$
 
 # Fingerprinting by Modular Arithmetic
 
-**Problem**: We want to find a paterrn string $P$ in a long document $D$. How can we do it quickly and efficiently?
+**Problem**: We want to find a pattern string $P$ in a long document $D$. How can we do it quickly and efficiently?
 
 In other words, we want to find all occurrences of pattern $P$ in $D$, i.e: the set of all indices $i$ such that $D_i = (d_i, \ldots, d_{i+k-1}) = P$, where $k = \|P\|$.
 
