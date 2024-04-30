@@ -118,6 +118,13 @@ The minimum cut of the given flow network is shown above. We see that the capaci
 
 **False**. A later augmenting path may pass through $(v, u)$, causing the flow on $(u, v)$ to be decreased.
 
+**Example 5** Let G be an input graph to the max flow problem. Let $C$ be a minimum $S$-$T$ cut in the graph. Suppose we add 1 to the capacity of every edge in the graph. Is it necessarily true that $C$ is still a minimum cut? If so, prove it, if not give a counterexample.
+
+**False**. Let $G = (V, E)$, where $V = \{S, A, B, T\}$ and $E = \{(S, A),(A,T), (B, T)\}$ with initial capacities 2.5, 1, and 1 respectively. So the min-cut is $\{(A,T), (B,T)\}$ with the max-flow of 2. 
+
+However, if you increase the capacity of each edge by 1, then the min-cut will be $\{S, A\}$ with the max-flow of 3.5.
+
+
 ## 3. Network flow as a linear program
 
 Let $f_{uv}$ be the amount of flow sent along the edge $(u, v)$ and $c_{uv}$ be the capacity of the edge $(u, v)$.  We want to maximize the flow into the sink subject to the following conditions:
