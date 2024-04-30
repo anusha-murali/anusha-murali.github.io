@@ -151,8 +151,6 @@ $$
 P[c(i) \geq j] \leq \left(\frac{enk}{jm}\right)^j
 $$ 
 
-This is with modernist WORKING with TOC hmin = 1 and hmax = 2!!!
-
 # Fingerprinting by Modular Arithmetic
 
 **Problem**: We want to find a paterrn string $P$ in a long document $D$. How can we do it quickly and efficiently?
