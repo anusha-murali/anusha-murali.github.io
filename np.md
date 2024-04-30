@@ -38,9 +38,12 @@ $$
 **To prove that problem $A$ is NP-hard, reduce a known NP-hard problem to $A$**
 
 #### List of NP-hard problems
-1. **Circuit-SAT**: Cook-Levin Theorem - Given a Boolean circuit and the values of some of its inputs, determine if there is an assignment to the rest of its inputs such that output is TRUE.
-2. **3-SAT**: Circuit-SAT reduced to 3-SAT. Given a 3-CNF formula, find the values of the Boolean variables that make this formula TRUE.
-3. **Independent Set**
+1. **Circuit-SAT**: Given a Boolean circuit and the values of some of its inputs, determine if there is an assignment to the rest of its inputs such that output is TRUE. (Proof: Cook-Levin Theorem)
+2. **3-SAT**: Given a 3-CNF formula, find the values of the Boolean variables that make this formula TRUE. (Proof: Circuit-SAT reduced to 3-SAT)
+3. **Independent Set**: A subset of vertices of a graph with no edges between the vertices. (Proof: 3-SAT reduced to independent set).
+4. **Vertex Cover** A subset of vertices of a graph that includes at least 1 endpoint of every edge of thee graph. (Proof: Independent Set and VC reduce to each other by observing that a subset of vertices, $I$, is an Independent Set if and only if  $V-I$ is a vertex cover).
+5. **Integer Linear Program**: Find an integer assignment to the variables that maximizes a given objective function while respecting given constraints.
+6. **Clique**: 
 
 ### NP-Complete
 
