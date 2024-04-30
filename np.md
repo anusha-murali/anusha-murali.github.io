@@ -218,7 +218,7 @@ while G is not empty
 Return S
 ```
 
-**Theorem**: Algorithm MIS has approximation ratio $1/1+\Delta$, where $\Delta$ is the maximum degree of any node in the graph.
+**Theorem**: Algorithm MIS has approximation ratio $1+\Delta$, where $\Delta$ is the maximum degree of any node in the graph. In other words, $\|S\| \geq \|\text{OPT}\|/{1 + \Delta}$.
 
 ## 3. Maximum Cut
 
