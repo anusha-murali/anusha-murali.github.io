@@ -157,7 +157,7 @@ $$
 
 In other words, we want to find all occurrences of pattern $P$ in $D$, i.e: the set of all indices $i$ such that $D_i = (d_i, \ldots, d_{i+k-1}) = P$, where $k = \|P\|$.
 
-The idea of pattern matching using finger printing is to pick an appropriately large prime number $q$, so that $H(P) = P \pmod{q}$.
+The idea of pattern matching using fingerprinting is to pick an appropriately large prime number $q$, so that $H(P) = P \pmod{q}$.
 
 Naively computing $H(D_i)$ from scratch each time to check a document of length $n$ takes $O(nk)$ time.
 
