@@ -35,7 +35,12 @@ $$
 \boxed{A \text{ is NP-hard } {\large \iff} \text{ If } A \text{ can be solved in polynomial time, then P = NP}}
 $$
 
-**To prove that problem A is NP-hard, reduce a known NP-hard problem to A**
+**To prove that problem $A$ is NP-hard, reduce a known NP-hard problem to $A$**
+
+#### List of NP-hard problems
+1. **Circuit-SAT**: Cook-Levin Theorem - Given a Boolean circuit and the values of some of its inputs, determine if there is an assignment to the rest of its inputs such that output is TRUE.
+2. **3-SAT**: Circuit-SAT reduced to 3-SAT. Given a 3-CNF formula, find the values of the Boolean variables that make this formula TRUE.
+3. **Independent Set**
 
 ### NP-Complete
 
