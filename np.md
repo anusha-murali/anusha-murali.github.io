@@ -94,7 +94,7 @@ Following are two vertex cover examples:
 <img width="300" alt="19" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/d85ae15b-b5f6-42e7-b79c-271e30302cea">
 </p>
 
-**Minimum Vertex Cover**: Goven a graph $G= (V, E)$, find the minimum set of vertices $S \subseteq V$ such that for all $(u, v) \in E$, we have at least one of $u\in S$ or $v \in S$.
+**Minimum Vertex Cover**: Given a graph $G= (V, E)$, find the minimum set of vertices $S \subseteq V$ such that for all $(u, v) \in E$, we have at least one of $u\in S$ or $v \in S$.
 
 Following are two minimum vertex cover examples:
 
@@ -107,9 +107,9 @@ Independent Set and Vertex Cover reduce to each other by observing that $C$ is a
 
 ### 4.3. Minimal Dominating Set
 
-**Dominating Set**: Given an undirected graph $G = (V, E)$, a subset of vertices $D \subseteq V$ is called a **dominating set** if for every vertex $u \in V - D$, there is a vertex $v \in D$ such that $(u, v) \in E$.
+**Dominating Set**: Dominating set for a graph $G = (V, E)$ is a subset $D$ of $V$ such that every vertex not in $D$ is adjacent to at least one member of $D$.
 
-Informally, dominating set for a graph $G = (V, E)$ is a subset $D$ of $V$ such that every vertex not in $D$ is adjacent to at least one member of $D$.
+Formally, given an undirected graph $G = (V, E)$, a subset of vertices $D \subseteq V$ is called a **dominating set** if for every vertex $u \in V - D$, there is a vertex $v \in D$ such that $(u, v) \in E$.
 
 *We can think of a dominating set as polices who have an eye on any node. The passages aren't important, so if one of them monitors a node via an edge, the other edges connected to that node may not be covered because the passages are not the concern of these polices.*
 
