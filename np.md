@@ -296,7 +296,23 @@ $$
    6. If X is in P, then Y is in P.
    7. If Y is in P, then X is in P.
 
+###Answers
 
+1. We can infer (2) and (4) only
+   1. The brute force TSP algorithm always works. (It's just painfully slow.)
+   2. If P != NP, then there does not exist an efficient algorithm for any NP-complete problem, including TSP.
+   3. We could infer this if P = NP.
+   4. If P != NP, then no NP-complete problem can be in P.
+   5. The brute force TSP algorithm always takes $N!$ steps to solve a problem with $N$ points. This is not polynomial.
+   6. There may be easy instances. E.g., if all the TSP points lie on a line (or the boundary of a circle).
+2. (1) only
+   1. All problem in NP are solvable.
+   2. There are problems in NP that are neither in P or NP-complete (assuming P != NP). PRIMALITY could be one of them.
+   3. This cannot be inferred since we don't know if PRIMALITY is NP-complete.
+3. None. NP-completeness deals with **problems** not specific algorithm for problems. The Halting problem and Hilbert's 10th problem are undecidable, so they are not in NP (and all NP-complete problems are in NP).
+4. (4) and (7) only.
+   X reduces to Y means that if you had a black box to solve Y efficiently, you could use
+    it to solve X efficiently. X is no harder than Y.
 
 [Table of Contents](./index.md)
 <!--
