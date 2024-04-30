@@ -296,7 +296,7 @@ $$
    6. If X is in P, then Y is in P.
    7. If Y is in P, then X is in P.
 
-###Answers
+### Answers
 
 1. We can infer (2) and (4) only
    1. The brute force TSP algorithm always works. (It's just painfully slow.)
