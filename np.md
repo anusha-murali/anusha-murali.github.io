@@ -64,7 +64,7 @@ A problem is NP-complete if it is both NP-hard and is an element of NP. Informal
 
 ### 4.1. Maximal Independent Set
 
-**Independent Set**: An independent set in G is a subset of the vertices of G with no edges between them.
+**Independent Set**: An independent set in a graph $G$ is a subset of the vertices of $G$ with no edges between them.
 
 Formally, given a graph $G = (V, E)$, an independent set of $G$ is a subset $I \subseteq V$ such that $\forall e, e \not \subseteq I$ (i.e: no edge has both endpoints in $I$). The independent set problem is that given a graph $G$, and a number $k$, to determine if $G$ has an independent set of size at least $k$.
 
@@ -82,7 +82,7 @@ The following graph of the cube has 6 different independent sets (2 of them are 
 
 ### 4.2. Minimum Vertex Cover
 
-**Vertex Cover**: Vertex cover of a graph is a set of vertices that includes at least one endpoint of every edge of the graph.
+**Vertex Cover**: Vertex cover of a graph $G$ is a subset of vertices of $G$ that includes at least one endpoint of every edge of the graph.
 
 Formally, given a graph $G = (V, E)$, a vertex cover of $G$ is a subset $C \subseteq V$ such that all edges in $E$ have at least one endpoint in $C$. The vertex cover problem is that given a graph $G$, and a number $k$, to determine if $G$ has a vertex cover of size at most $k$.
 
