@@ -272,14 +272,30 @@ $$
 # Problems
 
 1. Which of the following can we infer from the fact that the traveling salesperson problem is NP-complete, if we assume that P is not equal to NP?
-  - (A) There does not exist an algorithm that solves arbitrary instances of the TSP problem.
-  - (B) There does not exist an algorithm that efficiently solves arbitrary instances of the TSP problem.
-  - (C) There exists an algorithm that efficiently solves arbitrary instances of the TSP problem, but no one has been able to find it.
-  - (D) The TSP is not in P.
-  - (E) All algorithms that are guaranteed to solve the TSP run in polynomial time for some family of input points.
-  - (F) All algorithms that are guaranteed to solve the TSP run in exponential time for all families of input points.
-3. dsafd
-4. adsffds
+   1. There does not exist an algorithm that solves arbitrary instances of the TSP problem.
+   2. There does not exist an algorithm that efficiently solves arbitrary instances of the TSP problem.
+   3. There exists an algorithm that efficiently solves arbitrary instances of the TSP problem, but no one has been able to find it.
+   4. The TSP is not in P.
+   5. All algorithms that are guaranteed to solve the TSP run in polynomial time for some family of input points.
+   6. All algorithms that are guaranteed to solve the TSP run in exponential time for all families of input points.
+2. Which of the following can we infer from the fact that the PRIMALITY problem is in NP but not known to be NP-complete, if we assume that P is not equal to NP?
+   1. There exists an algorithm that solves arbitrary instances of PRIMALITY.
+   2. There exists an algorithm that efficiently solves arbitary instances of PRIMALITY.
+   3. If we found an efficient algorithm for PRIMALITY, we could immediately use it as a black box to solve TSP.
+3. Which of the following are NP-complete?
+   1. The brute force TSP algorithm.
+   2. The quicksort algorithm for sorting.
+   3. The Halting problem.
+   4. Hilbert's 10th problem.
+4. Let X and Y be two decision problems.  Suppose we know that X reduces Y. Which of the following can we infer? 
+   1. If Y is NP-complete then so is X.
+   2. If X is NP-complete then so is Y.
+   3. If Y is NP-complete and X is in NP then X is NP-complete.
+   4. If X is NP-complete and Y is in NP then Y is NP-complete
+   5. X and Y can't both be NP-complete.
+   6. If X is in P, then Y is in P.
+   7. If Y is in P, then X is in P.
+
 
 
 [Table of Contents](./index.md)
