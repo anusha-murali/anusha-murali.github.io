@@ -55,8 +55,6 @@ A problem is NP-complete if it is both NP-hard and is an element of NP. Informal
 <img width="350" alt="18" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/9cec12a4-ea78-4a3a-99df-333d2d5121d8">
 </p>
 
-**3-SAT** is NP-complete as shown by the Cook-Levin Theorem.
-
 #### How to prove a given problem $X$ is NP-complete?
 1. Show $X$ is in NP
 2. Show $X$ reduces from a known NP-Hard problem (say 3-SAT).
