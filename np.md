@@ -43,7 +43,11 @@ $$
 3. **Independent Set**: A subset of vertices of a graph with no edges between the vertices. (Proof: 3-SAT reduced to independent set).
 4. **Vertex Cover** A subset of vertices of a graph that includes at least 1 endpoint of every edge of thee graph. (Proof: Independent Set and VC reduce to each other by observing that a subset of vertices, $I$, is an Independent Set if and only if  $V-I$ is a vertex cover).
 5. **Integer Linear Program**: Find an integer assignment to the variables that maximizes a given objective function while respecting given constraints.
-6. **Clique**: 
+6. **Clique**: A clique is a set of vertices such that every possible edge between vertices in the set is in the graph. Given a graph $G$ and a number $K$, is there a clique of size at least $K$?
+7. **Max Cut**: Given a graph $G$, divide the vertices into 2 sets such that the number of edges crossing the cut is maximized.
+8. **Euclidean TSP**: Given $n$ cities in the $x$-$y$ plane, find a tour of minimum length that travels through all the cities.
+9. **Max SAT** Find the truth assignment that satisfies the largest number of OR clauses. (A 2-approximation algorithm relies on random coin-flipping).
+10. **Minimum Set Cover**: Given a set $S$ and a set of subsets of $S$, find the minimum number of subsets such that the union of those subsets is $S$.
 
 ### NP-Complete
 
