@@ -105,7 +105,7 @@ Let us consider searching for the two elements $y_1$ and $y_2$ that are **not pr
 
 Let $h_1(y_1) = 2, h_2(y_1) = 4$ and $h_3(y_1) = 7$. We find that $A[h_1(y_1)] = A[2] = 1$ and $A[h_3(y_1)] = 1$. But $A[h_2(y_1)] = A[4] = 0$. Therefore, we conclude **with 100% certainty** that $y_1$ is not present in $A$.
 
-On the other hand, let us say that we are looking for $y_2$ in $A$, where $h_1(y_2) = 5, h_2(y_2) = 7$ and $h_3(y_2) = 10$. We find that $A[h_1(y_2)] = A[5] = 1, A[h_2(y_2) = A[7] = 1, A[h_3(y_2)] = A[10] = 1$. Therefore, we conclude that element $y_2$ **may** be present in $A$.
+On the other hand, let us say that we are looking for $y_2$ in $A$, where $h_1(y_2) = 5, h_2(y_2) = 7$ and $h_3(y_2) = 10.$ We find that $A[h_1(y_2)] = A[5] = 1, A[h_2(y_2) = A[7] = 1, A[h_3(y_2)] = A[10] = 1$. Therefore, we conclude that element $y_2$ **may** be present in $A$.
 
 ## 2. False Positives
 
