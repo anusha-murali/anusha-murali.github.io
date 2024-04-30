@@ -193,6 +193,7 @@ while E is not empty
   Arbitrarily pick e = (u,v) in E
   C <- C U {u, v}
   Remove all edges incident to u, v from E
+Return C
 ```
 
 The above algorithm for vertex cover does the following: repeatedly choose an edge, and include both of its endpoints into the cover. Throw the vertices and its adjacent edges out of the graph, and continue.
@@ -206,7 +207,18 @@ The above algorithm for vertex cover does the following: repeatedly choose an ed
 
 Let $G = (V, E)$ be a graph. An independent set $V'$ is a subset of $V$ such that no edge connects two vertices in $V'$.
 
-It is known that max independent set is NP-hard.
+**Algorithm MIS**
+
+```
+S <- Empty Set
+while G is not empty
+  Let v be a node of minimum degree in G
+  S <- S U {v}
+  Remove v and its neighbors from G
+Return S
+```
+
+**Theorem**: Algorithm MIS has approximation ratio $1/1+\Delta$, where $\Delta$ is the maximum degree of any node in the graph.
 
 ## 3. Maximum Cut
 
