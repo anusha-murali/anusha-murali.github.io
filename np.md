@@ -80,7 +80,7 @@ The following graph of the cube has 6 different independent sets (2 of them are 
 
 ### 4.2. Minimum Vertex Cover
 
-**Vertex Cover**: Given a graph $G = (V, E)$, a vertex cover of $G$ is a subset $D C \subseteq V$ such that all edges in $E$ have at least one endpoint in $C$. The vertex cover problem is that given a graph $G$, and a number $k$, to determine if $G$ has a vertex cover of size at most $k$.
+**Vertex Cover**: Given a graph $G = (V, E)$, a vertex cover of $G$ is a subset $C \subseteq V$ such that all edges in $E$ have at least one endpoint in $C$. The vertex cover problem is that given a graph $G$, and a number $k$, to determine if $G$ has a vertex cover of size at most $k$.
 
 Informally, vertex cover of a graph is a set of vertices that includes at least one endpoint of every edge of the graph.
 
