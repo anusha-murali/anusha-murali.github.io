@@ -59,7 +59,7 @@ A problem is NP-complete if it is both NP-hard and is an element of NP. Informal
 
 #### How to prove a given problem $X$ is NP-complete?
 1. Show $X$ is in NP
-2. Show $X$ reduces from 3-SAT.
+2. Show $X$ reduces from a known NP-Hard problem (say 3-SAT).
 
 **Independent Set**:  Given a graph $G = (V, E)$, an independent set of $G$ is a subset $I \subseteq V$ such that $\forall e, e \not \subseteq I$ (i.e: no edge has both endpoints in $I$). The independent set problem is that given a graph $G$, and a number $k$, to determine if $G$ has an independent set of size at least $k$.
 
