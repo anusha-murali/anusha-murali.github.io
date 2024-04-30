@@ -218,7 +218,14 @@ while G is not empty
 Return S
 ```
 
-**Theorem**: Algorithm MIS has approximation ratio $1+\Delta$, where $\Delta$ is the maximum degree of any node in the graph. In other words, $\|S\| \geq \|\text{OPT}\|/{1 + \Delta}$.
+**Theorem**: Algorithm MIS has approximation ratio $1+\Delta$, where $\Delta$ is the maximum degree of any node in the graph. In other words, $\|S\| \geq \|\text{OPT}\|/{(1 + \Delta)}$.
+
+*Proof*: Let $V$ be the set of vertices of $G$ To show that $\|S\| \geq \|\text{OPT}\|/{(1 + \Delta)}$,  we only need to show
+$\|S\| \geq \|V\|/{(1 + \Delta)}$.
+
+For each vertex $v \in V - S$, it is removed in the algorithm because some other vertex $u$ is put into $S$. Note that $v$must be a neighbor of $u$ in this case. Charge $v$ to $u$. Therefore, the size of $V-S$ satisfies $\|V - S \| = \|V \| - \|S\| \leq \Delta \|S\|$.
+which implies $\|V\| \leq (1 + \Delta ) \|S \|$. So,  $\|S\| \geq \|V\|/{(1 + \Delta)} $, which means $\|S\| \geq \|\text{OPT}\|/{(1 + \Delta)}$.
+
 
 ## 3. Maximum Cut
 
