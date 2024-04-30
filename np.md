@@ -1,4 +1,4 @@
-# P, NP, and NP-Completeness
+# P, NP, NP-Hard and NP-Completeness
 
 ## 1. P versus NP
 
