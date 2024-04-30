@@ -202,6 +202,8 @@ We discuss two approximation algorithms for this problem.
 
 The first algorithm randomly assigns each $u \in V$ to either $S$ or $T$ , such that each edge has a 1/2 probability of crossing the cut, leading to an average outcome of 1/2 of the edges in the graph crossing the cut, which is 1/2 of the optimal solution (every edge crosses the cut).
 
+The second algorithm begins with all vertices on one side of the cut, and deterministically switches a vertex to the other side if it increases the number of edges crossing the cut until the size of the cut can no longer be increased in this manner. This type of algorithm is a local search algorithm, and also results in a 1/2-approximation.
+
 
 ## 3. Euclidean Traveling Salesman Problem
 
