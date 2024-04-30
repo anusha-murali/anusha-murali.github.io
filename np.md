@@ -268,6 +268,19 @@ $$
 d(s_1, s_i) \leq d(t_{\text{OPT}}, s_1) + d(t_{\text{OPT}}, s_i) ~ \leq ~ 2d.
 $$
 
+***
+# Problems
+
+1. Which of the following can we infer from the fact that the traveling salesperson problem is NP-complete, if we assume that P is not equal to NP?
+  - (A) There does not exist an algorithm that solves arbitrary instances of the TSP problem.
+  - (B) There does not exist an algorithm that efficiently solves arbitrary instances of the TSP problem.
+  - (C) There exists an algorithm that efficiently solves arbitrary instances of the TSP problem, but no one has been able to find it.
+  - (D) The TSP is not in P.
+  - (E) All algorithms that are guaranteed to solve the TSP run in polynomial time for some family of input points.
+  - (F) All algorithms that are guaranteed to solve the TSP run in exponential time for all families of input points.
+3. dsafd
+4. adsffds
+
 
 [Table of Contents](./index.md)
 <!--
