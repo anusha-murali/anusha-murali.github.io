@@ -9,12 +9,14 @@ A **decision problem** is a problem whose output is a single boolean value: YES 
 1. **P** is the set of decision problems that can be solved in polynomial time. Intuitively, P is the set of problems that can be solved quickly. (Examples: Shortest Paths, Finding MSTs, String Reconstruction)
 2. **NP** is the set of all YES/NO problems where a solution can be verified in polynomial time. In other words, if the answer is YES, then there is a *proof* of this fact that can be checked in polynomial time. Intuitively, NP is the set of decision problems where we can verify a YES answer quickly if we have the solution in front of us. (Examples: Traveling Salesman, 3-SAT, Maximum Independent Set, Vertex Cover)
    - 3-SAT: Is there are solution to $(x_1 \lor x_2 \lor \bar{x}_3) \land (x_1 \lor \bar{x}_2 \lor x_3) \land (\bar{x}_1 \lor x_2 \lor x_3) \land (\bar{x}_1 \lor \bar{x}_2 \lor \bar{x}_3)$?
-        - **Witness** An assignment of each of the variables to TRUE or FALSE. Ex: $x_1 = F, x_2 = F, x_3 = F$.
+        - **Witness**: An assignment of each of the variables to TRUE or FALSE. Ex: $x_1 = F, x_2 = F, x_3 = F$.
         - **Polynomial time verifier**: Plug the witness into the 3-SAT formula.
-   - Independent Set:
+   - Independent Set: Is there an independent set of size $k$?
+        - **Witness**: A set of $k$ vertices that form an independent set.
+        - **Polynomial time verifier**: Ensure that no 2 vertices in the witness have an edge between them.
 4. **co-NP** is essentially the opposite of NP. If the answer to a problem in co-NP is NO, then there is a proof of this fact that can be checked in polynomial time.
   
-Every decision problem in P is also in NP. If a problem is in P, we can verify YES answers in polynomial time recomputing the answer from scratch! Similarly, every problem in P is also in co-NP.
+Every decision problem in P is also in NP, so **P is a subset of NP**. If a problem is in P, we can verify YES answers in polynomial time recomputing the answer from scratch! Similarly, every problem in P is also in co-NP.
 
 Perhaps the single most important unanswered question in theoretical computer science is whether the complexity classes P and NP are actually different. (The Clay Mathematics Institute lists P-versus-NP as the first of its seven Millennium Prize Problems).
 
