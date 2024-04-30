@@ -231,7 +231,7 @@ which implies $\|V\| \leq (1 + \Delta ) \|S \|$. So,  $\|S\| \geq \|V\|/{(1 + \D
 
 Given a graph $G = (V,E)$, find two disjoint subsets $S$ and $T$ such that $S \cap T = \emptyset, S \cup T = V$, and the number of $(u, v) \in E$ that cross the cut is maximized.
 
-We discuss two approximation algorithms for this problem.
+We discuss two **2-approximation algorithms** for this problem.
 
 The first algorithm randomly assigns each $u \in V$ to either $S$ or $T$ , such that each edge has a 1/2 probability of crossing the cut, leading to an average outcome of 1/2 of the edges in the graph crossing the cut, which is 1/2 of the optimal solution (every edge crosses the cut).
 
