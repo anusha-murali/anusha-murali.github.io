@@ -59,6 +59,9 @@ A problem is NP-complete if it is both NP-hard and is an element of NP. Informal
 1. Show $X$ is in NP
 2. Show $X$ reduces from a known NP-Hard problem (say 3-SAT).
 
+
+## 4. Selected NP-Hard Problems
+
 **Independent Set**:  Given a graph $G = (V, E)$, an independent set of $G$ is a subset $I \subseteq V$ such that $\forall e, e \not \subseteq I$ (i.e: no edge has both endpoints in $I$). The independent set problem is that given a graph $G$, and a number $k$, to determine if $G$ has an independent set of size at least $k$.
 
 The following graph of the cube has 6 different independent sets (2 of them are maximum), shown as the red vertices:
@@ -117,7 +120,7 @@ Following is an example of a maximum cut:
 </p>
 
 
-## 4. Reductions
+## 5. Reductions
 
 To prove that any problem other than circuit satisfiability is NP-hard, we use a reduction argument. 
 
@@ -127,7 +130,7 @@ $$
 
 Reducing problem $A$ to another problem $B$ means describing an algorithm to solve problem $A$ under the assumption that an algorithm for problem $B$ already exists.
 
-### 4.1. Maximum Independent Set (from 3SAT)
+### 5.1. Maximum Independent Set (from 3SAT)
 
 The maximum independent set problem asks for the size of the largest independent set in a given graph. We shall prove that maximum independent set problem is NP-hard using a reduction from 3-SAT.
 
