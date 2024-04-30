@@ -207,9 +207,15 @@ The second algorithm begins with all vertices on one side of the cut, and determ
 
 ## 3. Euclidean Traveling Salesman Problem
 
-In the Euclidean Travelling Salesman Problem, we are given $n$ points (cities) in the $x$-$y$ plane, and we seek the tour (cycle) of minimum length that travels through all the cities. This problem is NP-complete
+In the Euclidean Traveling Salesman Problem, we are given $n$ points (cities) in the $x$-$y$ plane, and we seek the tour (cycle) of minimum length that travels through all the cities. This problem is NP-complete
 
+A greedy algorithm for this problem is to run DFS on the minimum spanning tree and skipping vertices that have already been visited (i.e. shortcutting). This can be shown to be within a factor of 2 of optimal, since running DFS on the MST visits each edge at most twice, and shortcutting a node can only reduce the travel time due to the triangle inequality, plus we know that the optimal tour is at least the size of the MST since any tour must be a spanning tree (with an additional edge for the final leg back to the origin). That is, if $T$ is the length of the MST, then we have:
 
+$$
+\text{tour}_{\text{greedy}} \leq 2T (\text{after shortcutting}) \leq 2\text{OPT},
+$$
+
+so this is a 2-approximation algorithm for Euclidean TSP. With some more work, we can improve the bound to a 3/2-approximation algorithm, which is known as the Christofides–Serdyukov algorithm.
 
 ## 4. Closest String
 
