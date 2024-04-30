@@ -25,9 +25,7 @@ Perhaps the single most important unanswered question in theoretical computer sc
 </p>
 
 
-## 2. NP-Hard and NP-Complete
-
-### NP-Hard
+## 2. NP-Hard 
 
 A problem $A$ is NP-hard if a polynomial-time algorithm for $A$ would imply a polynomial-time algorithm for every problem in NP. In other words,
 
@@ -49,7 +47,7 @@ $$
 9. **Max SAT** Find the truth assignment that satisfies the largest number of OR clauses. (A 2-approximation algorithm relies on random coin-flipping).
 10. **Minimum Set Cover**: Given a set $S$ and a set of subsets of $S$, find the minimum number of subsets such that the union of those subsets is $S$.
 
-### NP-Complete
+## 3. NP-Complete
 
 A problem is NP-complete if it is both NP-hard and is an element of NP. Informally, NP-complete problems are the hardest problems in NP. A polynomial-time algorithm for even one NP-complete problem would immediately imply a polynomial-time algorithm for every NP-complete problem.
 
@@ -121,7 +119,7 @@ Following is an example of a maximum cut:
 </p>
 
 
-## 3. Reductions
+## 4. Reductions
 
 To prove that any problem other than circuit satisfiability is NP-hard, we use a reduction argument. 
 
@@ -131,7 +129,7 @@ $$
 
 Reducing problem $A$ to another problem $B$ means describing an algorithm to solve problem $A$ under the assumption that an algorithm for problem $B$ already exists.
 
-### 3.1. Maximum Independent Set (from 3SAT)
+### 4.1. Maximum Independent Set (from 3SAT)
 
 The maximum independent set problem asks for the size of the largest independent set in a given graph. We shall prove that maximum independent set problem is NP-hard using a reduction from 3-SAT.
 
