@@ -14,7 +14,8 @@ Consider a **mixed strategey** game between two players, $X$ and $Y$, where each
 
 $$
 \begin{bmatrix}
-A & B
+ & A & B & C \\
+A& 3 & 1 & -1  
 \end{bmatrix}
 $$
 
