@@ -75,13 +75,25 @@ $$
 - Choose $p=3$ and $q=11$, so $n = pq = 33$
 - Compute $\phi(n) = (p-1)(q-1) = 20$
 - Choose the encryption key $e$ such that $1 < e < \phi(n)$ and $e$ and $\phi(n)$ are coprime. Let $e = 7$.
-- Compute the decryption key, $d$, which is the multiplicative inverse of $e \pmod{\phi(n)}$. Hence $d = 3$.
-- Public key is $(e, n) = (7, 33)$
+- Compute the decryption key, $d$, which is the multiplicative inverse of $e \pmod{\phi(n)}$. We use **Extended Euclidean algorithm** to find the multiplicative inverse. Hence $d = 3$.
+- Public key is $(e, n) = (7, 33)$.
 - Private key is $(d, n) = (3, 33)$.
 
 Let us say that Alice wants to send message $m = 2$ to Bob. She uses Bob's public key, $(e, n) = (7, 33)$ to encrypt the message as $m^e \pmod{n} = 2^7 \pmod{33} = 29$, and sends 29 to Bob.
 
 Bob decrypts the encrypted message using his private key, $(d, n) = (3, 33)$ and obtains $m = 29^3 \pmod{33} = 2$.
+
+**Example 2**
+- Choose $p=11, q=29$, and $e = 3$. So $n = pq = 319$.
+- Compute $\phi(n) = (p-1)(q-1) = 280$
+- Compute the decryption key, $d$, which is the multiplicative inverse of $e \pmod{\phi(n)}$. We use **Extended Euclidean algorithm** to find the multiplicative inverse. Hence $d = 187$.
+- Public key is $(e, n) = (3, 319)$.
+- Private key is $(d, n) = (187, 319)$.
+
+Let us say that Alice wants to send message $m = 100$ to Bob. She uses Bob's public key, $(e, n) = (3, 319)$ to encrypt the message as $m^e \pmod{n} = 100^3 \pmod{319} = 254$, and sends 254 to Bob.
+
+Bob decrypts the encrypted message using his private key, $(d, n) = (187, 319)$ and obtains $m = 254^{187} \pmod{319} = 100$.
+
 
 [Table of Contents](./index.md)
 
