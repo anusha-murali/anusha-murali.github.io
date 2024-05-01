@@ -102,8 +102,11 @@ The decryption key in the RSA algorithm uses the multiplicative inverse  of $e$ 
 
 We are asked to find $y$ where $31x + 7y = 1$. We run the Extended Euclidean Algorithm as shown in the table below:
 
+We fill-up the $a, b, q$ columns of the table top-down, then find $d = 1$, and then fill-up the $x$ and $y$ columns bottom-up from the base case as shown below.
 
-
+<p align="center">
+<img width="200" alt="27" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/f7e25590-38dc-4cdc-8895-911976fa206f">
+</p>
 
 
 [Table of Contents](./index.md)
