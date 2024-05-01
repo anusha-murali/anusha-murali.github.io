@@ -94,7 +94,16 @@ Let us say that Alice wants to send message $m = 100$ to Bob. She uses Bob's pub
 
 Bob decrypts the encrypted message using his private key, $(d, n) = (187, 319)$ and obtains $m = 254^{187} \pmod{319} = 100$.
 
-### Finding Multiplicative Modulo Inverse of a Number
+### 2.1. Finding Multiplicative Modulo Inverse of a Number
+
+The decryption key in the RSA algorithm uses the multiplicative inverse  of $e$ with respect to $\phi(n) = (p-1)(q-1)$. Therefore, it is imporant to learn how to compute a multiplicative inverse, which can be easily computed using the Extended Euclidean Algorithm. We show the process with an example.
+
+**Example 1** Find the multiplicative inverse of 7 with respect to 31.
+
+We are asked to find $y$ where $31x + 7y = 1$. We run the Extended Euclidean Algorithm as shown in the table below:
+
+
+
 
 
 [Table of Contents](./index.md)
