@@ -55,9 +55,9 @@ Alice wants to securely send message to Bob, but Eve is listening.
 <img width="500" alt="26" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/66a1b2d1-133f-45ce-abd5-208813458952">
 </p>
 
-**Bob's pubic key**: $(n, e)$, $n=pq$ and $e$ is coprime to $(p-1)(q-1)$.
+**Bob's pubic key**: $(n, e)$, $n=pq$ and $e$ is coprime to $\phi(n) = (p-1)(q-1)$.
 
-**Bob's private key**: $d = e^{-1} \pmod{(p-1)(q-1)}$
+**Bob's private key**: $d = e^{-1} \pmod{\phi(n)}$
 
 **Encryption**: $e(x) = x^e \pmod{n}$, 
 
@@ -72,7 +72,14 @@ x^{1+k(p-1)(q-1)} \pmod{pq} = x \cdot x^{k(p-1)(q-1)} \pmod{pq} = x \pmod{pq}.
 $$
 
 **Example 1**:
+- Choose $p=3$ and $q=11$, so $n = pq = 33$
+- Compute $\phi(n) = (p-1)(q-1) = 20$
+- Choose the encryption key $e$ such that $1 < e < \phi(n)$ and $e$ and $\phi(n)$ are coprime. Let $e = 7$.
+- Compute the decryption key, $d$, which is the multiplicative inverse of $e \pmod(\phi(n))$. Hence $d = 3$.
+- Public key is $(e, n) = (7, 33)$
+- Private key is $(d, n) = (3, 33)$.
 
+  
 [Table of Contents](./index.md)
 
 * * *
