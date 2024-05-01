@@ -21,7 +21,7 @@ C&1 & -2 & 4
 \end{bmatrix}
 $$
 
-Let $X$ play actions $A, B,$ and $C$ with probabilities $x_1, x_2$ and $x_3$ respectively. Player $X$ wants to choose these probabilities in such a way that no mater what her opponent ($Y$) chooses, $X$ can be guaranteed to get a payoff of at least $x_4$. Hence, we have the following LP:
+Let $X$ play actions $A, B,$ and $C$ with probabilities $x_1, x_2$ and $x_3$ respectively. Player $X$ wants to choose these probabilities in such a way that no mater what her opponent ($Y$) chooses, $X$ can be guaranteed to get a payoff of at least $x_4$. Hence, we have the following LP that **maximizes** the payoff for the row player $X$:
 - $\max x_4$
 - $x_1, x_2, x3 \geq 0$
 - $x_1 + x_2 + x_3 = 1$
@@ -29,7 +29,13 @@ Let $X$ play actions $A, B,$ and $C$ with probabilities $x_1, x_2$ and $x_3$ res
 - $x_1 + 3x_2 - 2x_3 \geq x_4$
 - $-x_1 + 2x_2 + 4x_3 \geq x_4$
 
-
+Now, we can write the dual LP, which is the column player, $B$'s **minimization** problem:
+- $\min y_4$
+- $y_1,y_2,y_3 \geq 0$
+- $y_1 + y_2 + y_3 =1$
+- $3y_1 + y_2 -y_3 \leq y_4$
+- $-2y_1 + 3y_2 + 2y_3 \leq y_4$
+- $y_1 -2y_2 + 4y_3 \leq y_4$
 
 [Table of Contents](./index.md)
 
