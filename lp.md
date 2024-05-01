@@ -8,6 +8,19 @@ Many of the problems for which we want algorithms are optimization tasks: the sh
 
 Linear programs, in general, have the following form: there is a objective function that one seeks to maximize or minimize, along with constraints on the variables. The objective function and the constraints are all linear in the variables; that is, all equations have no higher powers of the variables, nor are the variables multiplied together.
 
+## 1. Two Player Games
+
+Consider a **mixed strategey** game between two players, $X$ and $Y$, where each player can choose between 3 actions, namely $A, B,$ and $C$. Following is the game matrix with $X$ as the row player and $Y$ as the column player.
+
+Let $X$ play actions $A, B,$ and $C$ with probabilities $x_1, x_2$ and $x_3$ respectively. Player $X$ wants to choose these probabilities in such a way that no mater what her opponent ($Y$) chooses, $X$ can be guaranteed to get a payoff of at least $x_4$. Hence, we have the following LP:
+- $\max x_4$
+- $x_1, x_2, x3 \geq 0$
+- $x_1 + x_2 + x_3 = 1$
+- $3x_1 - 2x_2 + x_3 \geq x_4$
+- $x_1 + 3x_2 - 2x_3 \geq x_4$
+- $-x_1 + 2x_2 + 4x_3 \geq x_4$
+
+
 
 [Table of Contents](./index.md)
 
