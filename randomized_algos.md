@@ -51,9 +51,9 @@ Since $a^{2^{i-1} \cdot u} \neq \pm 1 \pmod{n}$ and $a^{2^i \cdot u} = 1 \pmod{n
 
 Alice wants to securely send message to Bob, but Eve is listening.
 
-
+<p align="center">
 <img width="500" alt="26" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/66a1b2d1-133f-45ce-abd5-208813458952">
-
+</p>
 
 **Bob's pubic key**: $(n, e)$, $n=pq$ and $e$ is coprime to $(p-1)(q-1)$.
 
