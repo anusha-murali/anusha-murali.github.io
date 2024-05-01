@@ -55,13 +55,15 @@ Alice wants to securely send message to Bob, but Eve is listening.
 <img width="500" alt="26" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/66a1b2d1-133f-45ce-abd5-208813458952">
 </p>
 
-**Bob's pubic key**: $(n, e)$, $n=pq$, $p,q$ are large primes and $e$ is coprime to $\phi(n) = (p-1)(q-1)$.
+**Bob's pubic key**: $(n, e)$, $n=pq$, $p,q$ are large primes and $e$ is coprime to $\phi(n) = (p-1)(q-1)$,
 
-**Bob's private key**: $d = e^{-1} \pmod{\phi(n)}$ ($d$ is multiplicative inverse modulo or $e$ with respect to $\phi(n)$),
+**Bob's private key**: $d = e^{-1} \pmod{\phi(n)}$ ,
 
 **Encryption**: $e(x) = x^e \pmod{n}$, 
 
 **Decryption**:  $d(y) = y^d \pmod{n}$
+
+**Note** $d$ is the multiplicative inverse modulo or $e$ with respect to $\phi(n)$.
 
 **Claim**: $d(e(x)) = x^{1+k(p-1)(q-1)} = x \pmod{n}$.
 
