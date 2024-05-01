@@ -63,7 +63,7 @@ Alice wants to securely send message to Bob, but Eve is listening.
 
 **Decryption**:  $d(y) = y^d \pmod{n}$
 
-**Note** $d$ is the multiplicative inverse modulo or $e$ with respect to $\phi(n)$.
+**Note** $d$ is the multiplicative inverse modulo of $e$ with respect to $\phi(n)$.
 
 **Claim**: $d(e(x)) = x^{1+k(p-1)(q-1)} = x \pmod{n}$.
 
