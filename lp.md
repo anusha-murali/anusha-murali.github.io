@@ -11,6 +11,11 @@ Linear programs, in general, have the following form: there is a objective funct
 ## 1. Two Player Games
 
 Consider a **mixed strategey** game between two players, $X$ and $Y$, where each player can choose between 3 actions, namely $A, B,$ and $C$. Following is the game matrix with $X$ as the row player and $Y$ as the column player.
+$$
+\begin{bmatrix}
+A & B
+\end{bmatrix}
+$$
 
 Let $X$ play actions $A, B,$ and $C$ with probabilities $x_1, x_2$ and $x_3$ respectively. Player $X$ wants to choose these probabilities in such a way that no mater what her opponent ($Y$) chooses, $X$ can be guaranteed to get a payoff of at least $x_4$. Hence, we have the following LP:
 - $\max x_4$
