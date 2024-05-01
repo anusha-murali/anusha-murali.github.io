@@ -55,9 +55,17 @@ Alice wants to securely send message to Bob, but Eve is listening.
 
 **Bob's private key**: $d = e^{-1} \pmod{(p-1)(q-1)}$
 
-**Encryption**: $e(x) = x^e \pmod{n}$, {\bf Decryption}:  $d(y) = y^d \pmod{n}$
+**Encryption**: $e(x) = x^e \pmod{n}$, 
+
+**Decryption**:  $d(y) = y^d \pmod{n}$
 
 **Claim**: $d(e(x)) = x^{1+k(p-1)(q-1)} = x \pmod{n}$.
+
+*Proof*: By Fermat's little theorem, $x^{k(p-1)}^{q-1} \pmod{q} = 1$, and $x^{k(q-1)}^{p-1} \pmod{p} = 1$, because $p$ and $q$ are primes. Therefore,
+
+$$
+x^{1+k(p-1)(q-1)} \pmod{pq} = x \cdot x^{k(p-1)(q-1)} \pmod{pq} = x \pmod{pq}.
+$$
 
 
 [Table of Contents](./index.md)
