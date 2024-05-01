@@ -47,6 +47,18 @@ Since $a^{2^{i-1} \cdot u} \neq \pm 1 \pmod{n}$ and $a^{2^i \cdot u} = 1 \pmod{n
 
 **False.** It is the wrong direction for Rabin-Miller Testing. We should be checking for non-trivial square roots.
 
+## 2. RSA Algorithm
+
+Alice wants to securely send message to Bob, but Eve is listening.
+
+**Bob's pubic key**: $(n, e)$, $n=pq$ and $e$ is coprime to $(p-1)(q-1)$.
+
+**Bob's private key**: $d = e^{-1} \pmod{(p-1)(q-1)}$
+
+**Encryption**: $e(x) = x^e \pmod{n}$, {\bf Decryption}:  $d(y) = y^d \pmod{n}$
+
+**Claim**: $d(e(x)) = x^{1+k(p-1)(q-1)} = x \pmod{n}$.
+
 
 [Table of Contents](./index.md)
 
