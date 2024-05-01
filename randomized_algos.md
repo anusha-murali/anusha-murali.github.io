@@ -98,7 +98,9 @@ Bob decrypts the encrypted message using his private key, $(d, n) = (187, 319)$ 
 
 ### 2.1. Finding Multiplicative Modulo Inverse of a Number
 
-The decryption key in the RSA algorithm uses the multiplicative inverse  of $e$ with respect to $\phi(n) = (p-1)(q-1)$. Therefore, it is imporant to learn how to compute a multiplicative inverse, which can be easily computed using the Extended Euclidean Algorithm. We show the process with an example.
+The decryption key in the RSA algorithm uses the multiplicative inverse  of $e$ with respect to $\phi(n) = (p-1)(q-1)$. Therefore, it is imporant to learn how to compute a multiplicative inverse.
+
+It can be easily computed using the Extended Euclidean Algorithm. We show the process with an example.
 
 **Example 1** Find the multiplicative inverse of 7 with respect to 31.
 
