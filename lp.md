@@ -11,6 +11,7 @@ Linear programs, in general, have the following form: there is a objective funct
 ## 1. Two Player Games
 
 Consider a **mixed strategey** game between two players, $X$ and $Y$, where each player can choose between 3 actions, namely $A, B,$ and $C$. Following is the game matrix with $X$ as the row player and $Y$ as the column player.
+
 $$
 \begin{bmatrix}
 A & B
