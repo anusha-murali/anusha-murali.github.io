@@ -57,7 +57,7 @@ Alice wants to securely send message to Bob, but Eve is listening.
 
 **Bob's pubic key**: $(n, e)$, $n=pq$, $p,q$ are large primes and $e$ is coprime to $\phi(n) = (p-1)(q-1)$.
 
-**Bob's private key**: $d = e^{-1} \pmod{\phi(n)}$
+**Bob's private key**: $d = e^{-1} \pmod{\phi(n)}$ ($d$ is multiplicative inverse modulo or $e$ with respect to $\phi(n)$),
 
 **Encryption**: $e(x) = x^e \pmod{n}$, 
 
