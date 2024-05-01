@@ -79,7 +79,10 @@ $$
 - Public key is $(e, n) = (7, 33)$
 - Private key is $(d, n) = (3, 33)$.
 
-  
+Let us say that Alice wants to send message $m = 2$ to Bob. She uses Bob's public key, $(e, n) = (7, 33)$ to encrypt the message as $m^e \pmod{n} = 2^7 \pmod{33} = 29$, and sends 29 to Bob.
+
+Bob decrypts the encrypted message using his private key, $(d, n) = (3, 33)$ and obtains $m = 29^3 \pmod{33} = 2$.
+
 [Table of Contents](./index.md)
 
 * * *
