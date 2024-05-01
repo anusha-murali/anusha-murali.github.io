@@ -106,6 +106,17 @@ if b = 0 return(a)
 return (Euclid(b, a mod b))
 ```
 
+Euclid’s algorithm can be extended to give not just the GCD $d = gcd(a, b)$, but also two integers $x$ and $y$ such that $ax + by = d$. 
+
+```
+Extended-Euclid(a, b) 
+if b = 0 return(a, 1, 0)
+Compute k such that a = bk + (a mod b)
+(d, x, y) = Extended-Euclid(b, a mod b)
+return((d, y, x − ky))
+```
+
+
 ### 2.2. Finding Multiplicative Modulo Inverse of a Number
 
 The decryption key in the RSA algorithm uses the multiplicative inverse  of $e$ with respect to $\phi(n) = (p-1)(q-1)$. Therefore, it is imporant to learn how to compute a multiplicative inverse.
