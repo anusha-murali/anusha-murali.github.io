@@ -96,7 +96,17 @@ Let us say that Alice wants to send message $m = 100$ to Bob. She uses Bob's pub
 
 Bob decrypts the encrypted message using his private key, $(d, n) = (187, 319)$ and obtains $m = 254^{187} \pmod{319} = 100$.
 
-### 2.1. Finding Multiplicative Modulo Inverse of a Number
+### 2.1. Euclid's GCD Algorithm and Extended Euclid's Algorithm
+
+One way of computing the gcd is to factor the two numbers, and find the common prime factors. Factoring, however, is a problem for which we do not have general efficient algorithms. The following Euclid's algorithm avoids factoring. Assume $a,b \geq 0$.
+
+```
+function Euclid(a, b)
+if b = 0 return(a)
+return (Euclid(b, a mod b))
+```
+
+### 2.2. Finding Multiplicative Modulo Inverse of a Number
 
 The decryption key in the RSA algorithm uses the multiplicative inverse  of $e$ with respect to $\phi(n) = (p-1)(q-1)$. Therefore, it is imporant to learn how to compute a multiplicative inverse.
 
