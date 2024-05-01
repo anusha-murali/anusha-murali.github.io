@@ -75,7 +75,7 @@ $$
 - Choose $p=3$ and $q=11$, so $n = pq = 33$
 - Compute $\phi(n) = (p-1)(q-1) = 20$
 - Choose the encryption key $e$ such that $1 < e < \phi(n)$ and $e$ and $\phi(n)$ are coprime. Let $e = 7$.
-- Compute the decryption key, $d$, which is the multiplicative inverse of $e \pmod(\phi(n))$. Hence $d = 3$.
+- Compute the decryption key, $d$, which is the multiplicative inverse of $e \pmod{\phi(n)}$. Hence $d = 3$.
 - Public key is $(e, n) = (7, 33)$
 - Private key is $(d, n) = (3, 33)$.
 
