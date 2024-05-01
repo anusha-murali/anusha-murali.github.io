@@ -94,6 +94,8 @@ Let us say that Alice wants to send message $m = 100$ to Bob. She uses Bob's pub
 
 Bob decrypts the encrypted message using his private key, $(d, n) = (187, 319)$ and obtains $m = 254^{187} \pmod{319} = 100$.
 
+### Finding Multiplicative Modulo Inverse of a Number
+
 
 [Table of Contents](./index.md)
 
