@@ -67,7 +67,7 @@ Alice wants to securely send message to Bob, but Eve is listening.
 
 **Note** $d$ is the multiplicative inverse modulo of $e$ with respect to $\phi(n)$.
 
-**Claim**: $d(e(x)) = x^{1+k(p-1)(q-1)} = x \pmod{n}$.
+**Claim**: $d(e(x)) = x^{de} = x^{1+k(p-1)(q-1)} = x \pmod{n}$.
 
 *Proof*: By Fermat's little theorem, ${(x^{k(p-1)})}^{q-1} \pmod{q} = 1$, and ${(x^{k(q-1)})}^{p-1} \pmod{p} = 1$, because $p$ and $q$ are primes. Therefore,
 
