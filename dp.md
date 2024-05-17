@@ -8,7 +8,7 @@ A **dynamic programming** algorithm is suitable when the subproblems overlap. We
 3. Compute the value of an optimal solution solution to the original problem (with reuse, generally in a bottom-up fashion).
 
 
-[here](./README.md)
+[Table of Contents](./index.md)
 
 * * *
 ###### anusha-murali.github.io
