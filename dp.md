@@ -75,7 +75,7 @@ $$
 We can guess that $T(n) = 2^n$ is a solution to the above recurrence. For $n=0$, $2^0 = 1$. For $n>0$, we find,
 
 $$
-T(n) = 1 + \displaystyle{\sum_{k = 0}^{n-1}} T(k) = 1 + \displaystyle{\sum_{k = 0}^{n-1}} 2^j = 1 + (2^n -1) = 2^n.
+T(n) = 1 + \displaystyle{\sum_{k = 0}^{n-1}} T(k) = 1 + \displaystyle{\sum_{k = 0}^{n-1}} 2^k = 1 + (2^n -1) = 2^n.
 $$
 
 [Table of Contents](./index.md)
