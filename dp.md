@@ -54,6 +54,10 @@ def cutRod(p, n):
     return q
 ```
 
+Let's say that we are calling cutRod() for $n=4$, How many total number of calls to cutRod() will be made? When the first call to cutRod() is made, the for loop calls cutRoad() $n$ times, for $i = 0$ to $i=3$. So, we obtain the following recursion tree:
+
+
+
 For $n = 30$, on my Mac Mini, the above function takes at least 2 minutes to return the optimal value. 
 
 Why is this approach so inefficient? This is because, cutRoad() calls itself recursively over and over again with the same parameter values. In other words, it solves the same subproblems repeatedly. Let $T(n)$ be the total number of calls to CutRod(). We have the following recursion:
