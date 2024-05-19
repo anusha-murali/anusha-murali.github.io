@@ -54,6 +54,17 @@ def cutRod(p, n):
     return q
 ```
 
+For $n = 30$, on my Mac Mini, the above function takes at least 2 minutes to return the optimal value. 
+
+Why is this approach so inefficient? This is because, cutRoad() calls itself recursively over and over again with the same parameter values. In other words, it solves the same subproblems repeatedly. Let $T(n)$ be the total number of calls to CutRod(). We have the following recursion:
+
+$$
+T(n) = 
+\begin{cases}
+1 & \text{for }n = 0\\
+1 + \displaystyle{\sum_{k = 0}^{n-1} T(k) & \text{for } n > 0
+\end{cases}
+$$
 
 
 [Table of Contents](./index.md)
