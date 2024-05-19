@@ -2,7 +2,9 @@
 
 A **divide-and-conquer** algorithm partitions the problem into **disjoint subproblems**, solves the subproblems recursively, and then combine the solutions to solve the original problem. 
 
-A **dynamic programming** algorithm is suitable when the subproblems overlap. A divide-and-conquer approach is not optimal when the subproblems overlap. We have the following three steps in this approach:
+A **dynamic programming** algorithm is suitable when the subproblems overlap. A divide-and-conquer approach is not optimal when the subproblems overlap as it will unnecessarily do more work than necessary, repeatedly solving common subproblems that were previously solved. 
+
+We have the following three steps in using dynamic programming to solving a problem where subproblems overlap:
 1. Define the structure of the subproblem.
 2. Define the recurrence for an optimal solution to the subproblem.
 3. Compute the value of an optimal solution solution to the original problem (with reuse, generally in a bottom-up fashion).
