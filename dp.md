@@ -17,6 +17,20 @@ We have the following four steps in using dynamic programming to solving a probl
 
 We can cut a rod of length $n$ in $2^{n-1}$ ways (either cut or not cut at each of the $n-1$ integer lengths).
 
+Let us say that the shop has a rod of length $n$, which the owner wants to cut into lengths $i_1, i_2, \ldots, i_k$, $1 \leq k \leq n$, in such a way to maximize the revenue. So, we have,
+
+$$
+n = i_1 + i_2 + \cdots + i_k,
+$$
+
+and the corresponding maximum revenue is,
+
+$$
+r_n = p_{i_1} + p_{i_2} + \cdots + p_{i_k}.
+$$
+
+
+
 
 [Table of Contents](./index.md)
 
