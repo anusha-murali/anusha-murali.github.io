@@ -49,8 +49,8 @@ def cutRod(p, n):
     if n==0:
         return 0
     q = float('-inf')
-    for i in range(n):
-        q = max(q, p[i] + cutRod(p, n-i-1))   
+    for i in range(1, n+1):
+        q = max(q, p[i] + cutRod(p, n-i))   
     return q
 ```
 
