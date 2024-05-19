@@ -62,7 +62,7 @@ $$
 T(n) = 
 \begin{cases}
 1 & \text{for }n = 0\\
-1 + \displaystyle{\sum_{k = 0}^{n-1} T(k) & \text{for } n > 0
+1 + \displaystyle{\sum_{k = 0}^{n-1}} T(k) & \text{for } n > 0
 \end{cases}
 $$
 
