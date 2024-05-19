@@ -13,7 +13,7 @@ We have the following four steps in using dynamic programming to solving a probl
 
 ## Rod Cutting
 
-**Problem** A steel shop sells rods of different *integer* lengths, which are cut from a long steel rod. The shop charges $p_i$ dollars for a rod of length $i$. The shop wants to sell the rod pieces in such a way so as to maximize its revenue.
+**Problem**: A steel shop sells rods of different *integer* lengths, which are cut from a long steel rod. The shop charges $p_i$ dollars for a rod of length $i$. The shop wants to sell the rod pieces in such a way so as to maximize its revenue.
 
 Let us say that the shop has a rod of length $n$, which the owner wants to cut into lengths $i_1, i_2, \ldots, i_k$, $1 \leq k \leq n$, in such a way so as to maximize the revenue. So, we have,
 
@@ -27,7 +27,7 @@ $$
 r_n = p_{i_1} + p_{i_2} + \cdots + p_{i_k}.
 $$
 
-**Optimal Substructure** We note that this problem exhibits the *optimal substructure* property, which is in order to solve the original problem of size $n$, we solve the same problem on smaller sizes. In other words, once we make a cut, we can consider the two pieces as independent instances of the rod-cutting problem.
+**Optimal Substructure**: We note that this problem exhibits the *optimal substructure* property, which is in order to solve the original problem of size $n$, we solve the same problem on smaller sizes. In other words, once we make a cut, we can consider the two pieces as independent instances of the rod-cutting problem. For example, if we cut the rod into lengths of $k$ and $n-k$, then we find the optimum revenues $r_k$ and $r_{n-k}$ of further cutting the two pieces, for a total revenue of $r_n = r_k + r_{n-k}$.
 
 We can cut a rod of length $n$ in $2^{n-1}$ ways (either cut or not cut at each of the $n-1$ integer lengths).
 
