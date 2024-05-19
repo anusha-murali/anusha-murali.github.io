@@ -42,7 +42,17 @@ r_n =
 $$
 
 
+### Solution 1: Recursion
 
+```
+def cutRod(p, n):
+    if n==0:
+        return 0
+    q = float('-inf')
+    for i in range(n):
+        q = max(q, p[i] + cutRod(p, n-i-1))   
+    return q
+```
 
 
 
