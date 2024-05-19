@@ -37,7 +37,7 @@ $$
 r_n = 
 \begin{cases}
 0 & \text{for }n = 0\\
-\max_{1 \leq i \leq n} (p_i + r_{n-1}) & \text{for } n > 0
+\displaystyle{\max_{1 \leq i \leq n}} (p_i + r_{n-1}) & \text{for } n > 0
 \end{cases}
 $$
 
