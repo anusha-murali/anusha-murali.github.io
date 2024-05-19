@@ -56,7 +56,9 @@ def cutRod(p, n):
 
 Let's say that we are calling cutRod() for $n=4$, How many total number of calls to cutRod() will be made? When the first call to cutRod() is made, the for loop calls cutRoad() $n$ times, for $i = 0$ to $i=3$. So, we obtain the following recursion tree:
 
-
+<p align="center">
+<img width="500" alt="tree" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/92de7bb7-cc8b-4e3e-ad11-926ad4e96edf">
+</p>
 
 For $n = 30$, on my Mac Mini, the above function takes at least 2 minutes to return the optimal value. 
 
