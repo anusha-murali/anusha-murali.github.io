@@ -11,7 +11,7 @@ We have the following four steps in using dynamic programming to solving a probl
 4. Generate the optimal solution, in addition to the optimal value.
 
 
-## Rod Cutting
+## 1. Rod Cutting
 
 **Problem**: A steel shop sells rods of different *integer* lengths, which are cut from a long steel rod. The shop charges $p_i$ dollars for a rod of length $i$. The shop wants to sell the rod pieces in such a way so as to maximize its revenue.
 
@@ -79,6 +79,10 @@ T(n) = 1 + \displaystyle{\sum_{k = 0}^{n-1}} T(k) = 1 + \displaystyle{\sum_{k = 
 $$
 
 Hence the time complexity of the recursive cutRod() is exponential in $n$.
+
+### Solution 2: Dynamic Programming with Memoization
+
+This approach is identical to the recursive solution above, except that we will save the result of each subproblem. Each recursive call now first checks to see whether it has previously solved this subproblem. If so, it returns the saved value, which avoids repeated calculations of the subproblem; if not, it computes the value and saves it.
 
 [Table of Contents](./index.md)
 
