@@ -56,7 +56,7 @@ def cutRod(p, n):
 
 > **Example**: Let $p = [0, 2, 7, 8, 10]$. Hence `cutRod(p, 3)` returns 9 and `cutRod(p, 4)` returns 14.
 
-Let's say that we are calling cutRod() for $n=4$, How many total number of calls to cutRod() will be made? When the first call to cutRod() is made, the for loop calls cutRoad() $n$ times, for $i = 0$ to $i=3$. So, we obtain the following recursion tree:
+Let's say that we are calling `cutRod()` for $n=4$, How many total number of calls to `cutRod()` will be made? When the first call to `cutRod()` is made, the for loop calls `cutRod()` $n$ times, for $i = 0$ to $i=3$. So, we obtain the following recursion tree:
 
 <p align="center">
 <img width="400" alt="tree" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/92de7bb7-cc8b-4e3e-ad11-926ad4e96edf">
@@ -64,7 +64,7 @@ Let's say that we are calling cutRod() for $n=4$, How many total number of calls
 
 For $n = 30$, on my Mac Mini, the above function takes at least 2 minutes to return the optimal value. 
 
-Why is this approach so inefficient? This is because, cutRoad() calls itself recursively over and over again with the same parameter values. In other words, it solves the same subproblems repeatedly. Let $T(n)$ be the total number of calls to CutRod(). We have the following recursion:
+Why is this approach so inefficient? This is because, `cutRod()` calls itself recursively over and over again with the same parameter values. In other words, it solves the same subproblems repeatedly. Let $T(n)$ be the total number of calls to `CutRod()`. We have the following recursion:
 
 $$
 T(n) = 
@@ -80,7 +80,7 @@ $$
 T(n) = 1 + \displaystyle{\sum_{k = 0}^{n-1}} T(k) = 1 + \displaystyle{\sum_{k = 0}^{n-1}} 2^k = 1 + (2^n -1) = 2^n.
 $$
 
-Hence the time complexity of the recursive cutRod() is exponential in $n$.
+Hence the time complexity of the recursive `cutRod()` is exponential in $n$.
 
 ### Solution 2: Dynamic Programming with Memoization
 
