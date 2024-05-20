@@ -113,6 +113,18 @@ def cutRodMemoized(p, n, r):
 
 In the bottom-up approach, we solve the sub-problems of sizes $i = 0, 1, \ldots, n$ in increasing order. Hence, when a problem of size $k$ is encountered, it can make use of all the sub-problems of size $i < k$, as they have been already been computed.
 
+```
+def cutRod(p, n):    
+    r = [0 for i in range(n+1)]   
+    for i in range(1, n+1):
+        q = float('-inf')
+        for j in range(1, i+1):
+            max(q, p[j] + r[i-j])
+        r[i] = q       
+    return r[n]
+```
+
+
 [Table of Contents](./index.md)
 
 * * *
