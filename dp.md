@@ -42,7 +42,7 @@ r_n =
 $$
 
 
-### Solution 1: Recursion
+### Solution 1: Top-down Recursion
 
 ```
 def cutRod(p, n):
@@ -80,11 +80,11 @@ $$
 T(n) = 1 + \displaystyle{\sum_{k = 0}^{n-1}} T(k) = 1 + \displaystyle{\sum_{k = 0}^{n-1}} 2^k = 1 + (2^n -1) = 2^n.
 $$
 
-Hence the time complexity of the recursive `cutRod()` is exponential in $n$.
+Hence the time complexity of the top-down recursive `cutRod()` is exponential in $n$.
 
 ### Solution 2: Dynamic Programming with Memoization
 
-This approach is identical to the recursive solution above, except that we will save the result of each subproblem. Each recursive call now first checks to see whether it has previously solved this subproblem. If so, it returns the saved value, which avoids repeated calculations of the subproblem; if not, it computes the value and saves it.
+This approach is identical to the top-down recursive solution above, except that we will save the result of each subproblem. Each recursive call now first checks to see whether it has previously solved this subproblem. If so, it returns the saved value, which avoids repeated calculations of the subproblem; if not, it computes the value and saves it.
 
 We save the revenues for each length from 0 to $n$ in array `r[0..n]`. 
 
