@@ -56,7 +56,7 @@ def cutRod(p, n):
 
 **Example** Let $p = [0, 2, 7, 8, 10]$. Hence 
 
-> Example: Let $p = [0, 2, 7, 8, 10]$. Hence `cutRod(p, 3)` returns 9 and `cutRod(p, 4)` returns 14.
+> **Example**: Let $p = [0, 2, 7, 8, 10]$. Hence `cutRod(p, 3)` returns 9 and `cutRod(p, 4)` returns 14.
 
 Let's say that we are calling cutRod() for $n=4$, How many total number of calls to cutRod() will be made? When the first call to cutRod() is made, the for loop calls cutRoad() $n$ times, for $i = 0$ to $i=3$. So, we obtain the following recursion tree:
 
