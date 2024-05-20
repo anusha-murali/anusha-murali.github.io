@@ -109,7 +109,9 @@ def cutRodMemoized(p, n, r):
 ```
 
 
+### Solution 3: Dynamic Programming Bottom-up Approach
 
+In the bottom-up approach, we solve the sub-problems of sizes $i = 0, 1, \ldots, n$ in increasing order. Hence, when a problem of size $k$ is encountered, it can make use of all the sub-problems of size $i < k$, as they have been already been computed.
 
 [Table of Contents](./index.md)
 
