@@ -86,6 +86,8 @@ Hence the time complexity of the recursive `cutRod()` is exponential in $n$.
 
 This approach is identical to the recursive solution above, except that we will save the result of each subproblem. Each recursive call now first checks to see whether it has previously solved this subproblem. If so, it returns the saved value, which avoids repeated calculations of the subproblem; if not, it computes the value and saves it.
 
+We save the revenues for each length from 0 to $n$ in array `r[0..n]`. 
+
 ```
 def cutRod(p, n):
     r = [0 for i in range(n+1)]
