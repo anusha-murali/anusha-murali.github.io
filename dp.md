@@ -119,7 +119,7 @@ def cutRod(p, n):
     for i in range(1, n+1):
         q = float('-inf')
         for j in range(1, i+1):
-            max(q, p[j] + r[i-j])
+            q = max(q, p[j] + r[i-j])
         r[i] = q       
     return r[n]
 ```
