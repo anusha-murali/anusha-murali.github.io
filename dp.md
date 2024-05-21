@@ -113,6 +113,8 @@ def cutRodMemoized(p, n, r):
 
 In the bottom-up approach, we solve the sub-problems of sizes $i = 0, 1, \ldots, n$ in increasing order. Hence, when a problem of size $k$ is encountered, it can make use of all the sub-problems of size $i < k$, as they have been already been computed. The results of the subproblems are saved in the revenue array $r$, where we initialize $r[0] = 0$ as there is no revenue from a rod of lengh 0.
 
+We cut a piece of length $i$ (outer for loop) from the left end of the rod, and then find the maximum possible revenue for the remaining length of $j = n-i$ by iterating through every possible ways to cut it (inner for loop).
+
 ```
 def cutRod(p, n):    
     r = [0 for i in range(n+1)]   
