@@ -134,6 +134,25 @@ In addition to finding the maximum possible revenue for a give rod length, we ar
 
 We use one additional array, $s[0 \cdots n]$, which saves the optimal size of the first piece that was cut.
 
+```
+def cutRod(p, n):
+    r = [0 for i in range(n+1)]
+    s = [0 for i in range(n+1)]
+    for i in range(1, n+1):
+        q = float('-inf')
+        for j in range(1, i+1):
+            if (q < p[j] + r[i-j]):
+                q = p[j] + r[i-j]
+                s[i] = j
+        r[i] = q
+    return (r, s)
+
+def printCuts(p, n):
+    (r, s) = cutRod(p, n)
+    while n > 0:
+        print(s[n])
+        n = n - s[n]
+```
 
 
 
