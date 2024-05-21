@@ -126,6 +126,15 @@ def cutRod(p, n):
 
 **Runtime**: Due to the doubly-nested loop structure, the bottom-up `cutRod()` has a runtime of $\Theta(n^2)$. 
 
+### Reconstructing the solution
+
+In addition to finding the maximum possible revenue for a give rod length, we are also interested in finding the lengths of pieces, which led to the maximum revenue.
+
+We use one additional array, $s[0 \cdots n]$, which saves the optimal size of the first piece that was cut.
+
+
+
+
 [Table of Contents](./index.md)
 
 * * *
