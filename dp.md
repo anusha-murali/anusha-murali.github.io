@@ -107,11 +107,11 @@ def cutRodMemoized(p, n, r):
     r[n] = q
     return q
 ```
-
+**Runtime**: 
 
 ### Solution 3: Dynamic Programming Bottom-up Approach
 
-In the bottom-up approach, we solve the sub-problems of sizes $i = 0, 1, \ldots, n$ in increasing order. Hence, when a problem of size $k$ is encountered, it can make use of all the sub-problems of size $i < k$, as they have been already been computed.
+In the bottom-up approach, we solve the sub-problems of sizes $i = 0, 1, \ldots, n$ in increasing order. Hence, when a problem of size $k$ is encountered, it can make use of all the sub-problems of size $i < k$, as they have been already been computed. The results of the subproblems are saved in the revenue array $r$, where we initialize $r[0] = 0$ as there is no revenue from a rod of lengh 0.
 
 ```
 def cutRod(p, n):    
@@ -124,6 +124,7 @@ def cutRod(p, n):
     return r[n]
 ```
 
+**Runtime**: Due to the doubly-nested loop structure, the bottom-up `cutRod()` has a runtime of $\Theta(n^2)$. 
 
 [Table of Contents](./index.md)
 
