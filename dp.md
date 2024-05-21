@@ -154,6 +154,7 @@ def printCuts(p, n):
         n = n - s[n]
 ```
 
+> **Example**: Let $p = [0, 2, 7, 8, 10]$. Hence `printCuts(p, 3)` returns 1, 2, and `printCuts(p, 4)` returns 2, 2.
 
 
 [Table of Contents](./index.md)
