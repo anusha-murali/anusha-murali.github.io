@@ -107,7 +107,7 @@ def cutRodMemoized(p, n, r):
     r[n] = q
     return q
 ```
-**Runtime**: 
+**Runtime**: Unlike Solution 1, the memoized version solves each subproblem only once. We note that the for loop results in an arithmetic series, which therefore results in a runtime of $\Theta(n^2)$. 
 
 ### Solution 3: Dynamic Programming Bottom-up Approach
 
