@@ -27,7 +27,7 @@ $$
 r_n = p_{i_1} + p_{i_2} + \cdots + p_{i_k}.
 $$
 
-> **Example**: For example, consider the price list, $p = [0, 2, 7, 8, 10]$. This indicates the price of a 0 length rod is \$0, the price of length 1 is \$2, the price of length 2 is \$7 and so on.
+> **Example**: For example, consider the price list, $p = [0, 2, 7, 8, 10]$. This indicates the price of a 0 length rod is \\$0, the price of length 1 is \\$2, the price of length 2 is \\$7 and so on.
 
 
 **Optimal Substructure**: We note that this problem exhibits the *optimal substructure* property - in order to solve the original problem of size $n$, we solve the same problem on smaller sizes. In other words, once we make a cut, we can consider the two pieces as independent instances of the rod-cutting problem. For example, if we cut the rod into lengths of $k$ and $n-k$, then we find the optimum revenues $r_k$ and $r_{n-k}$ of further cutting the two pieces, for a total revenue of $r_n = r_k + r_{n-k}$.
