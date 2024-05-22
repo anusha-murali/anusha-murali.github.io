@@ -157,7 +157,7 @@ def printCuts(p, n):
         n = n - s[n]
 ```
 
-> **Example**: Let $p = [0, 2, 7, 8, 10]$. Hence `printCuts(p, 3)` returns 1, 2, and `printCuts(p, 4)` returns 2, 2.
+> **Example**: Let $p = [0, 2, 7, 8, 10]$. Hence `printCuts(p, 3)` returns 1, 2, so the revenue is $p[1] + p[2] = 2 + 7 = \\$9$.  `printCuts(p, 4)` returns 2, 2, so the revenue is $p[2] + p[2] = 7 + 7 = \\$14$.
 
 
 [Table of Contents](./index.md)
