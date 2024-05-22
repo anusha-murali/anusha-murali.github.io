@@ -60,6 +60,8 @@ Let's say that we are calling `cutRod()` for $n=4$, How many total number of cal
 <img width="500" alt="recursion_tree" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/5198bf47-c8a4-4fd6-80ed-92200d399ece">
 </p>
 
+There are 16 nodes in the above recursion tree, which means `cutRod()` is called 16 times for $n = 4$. In fact, we only need to compute the optimal revenue for $n = 0, n = 1, n=2$ and $n= 3$. Therefore 12 out of the above 16 calls are redundant!
+
 For $n = 30$, on my Mac Mini, the above function takes at least 2 minutes to return the optimal value. 
 
 Why is this approach so inefficient? This is because, `cutRod()` calls itself recursively over and over again with the same parameter values. In other words, it solves the same subproblems repeatedly. Let $T(n)$ be the total number of calls to `CutRod()`. We have the following recursion:
