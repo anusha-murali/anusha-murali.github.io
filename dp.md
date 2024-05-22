@@ -34,6 +34,12 @@ $$
 
 We can cut a rod of length $n$ in $2^{n-1}$ ways (either cut or not cut at each of the $n-1$ integer lengths).
 
+For example, for a rod of length = 4, if $p = [0, 2, 7, 8, 10]$, then we have the following $2^3 = 8$ possible cuts:
+
+<p align="center">
+<img width="600" alt="rod_cutting" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/531609ca-1f25-42de-a4c6-78ce1459fd1a">
+</p>p>
+
 Therefore, for each of the $2^{n-1}$ cuts, we cut the rod into a left piece of length $i$, which can be sold for $p_i$, and sell the remaining length $n-i$ for an optimal revenue of $r_{n-i}$. Hence, we have the following recurrence:
 
 $$
