@@ -1,4 +1,4 @@
-## 1. Rod Cutting
+### 1. Rod Cutting
 
 **Problem**: A steel shop sells rods of different *integer* lengths, which are cut from a long steel rod. The shop charges $p_i$ dollars for a rod of length $i$. The shop wants to sell the rod pieces in such a way so as to maximize its revenue.
 
