@@ -1,5 +1,5 @@
 <p align="center">
-### **1. Rod Cutting**
+### 1. Rod Cutting
 </p>
 
 ***
