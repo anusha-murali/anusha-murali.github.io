@@ -22,7 +22,7 @@ We have the following four steps in using dynamic programming to solving a probl
 
 ## 2. Fibonacci Sequence
 
-The $n$th Fibonacci number is given by,
+The $n^{\text{th}}$ Fibonacci number is given by,
 
 $$
 F(n) = 
