@@ -17,7 +17,7 @@ We have the following four steps in using dynamic programming to solving a probl
 1. What is the maximum revenue the shop can get on a rod of length $n$?
 2. What are the lengths of the rod pieces that yield the maximum revenue?
 
-[Rod Cutting](./rod_cutting.md)
+[Rod Cutting Solution](./rod_cutting.md)
 
 
 
