@@ -20,7 +20,18 @@ We have the following four steps in using dynamic programming to solving a probl
 [Rod Cutting Solution](./rod_cutting.md)
 
 
+## 2. Fibonacci Sequence
 
+The $n$th Fibonacci number is given by,
+
+$$
+F(n) = 
+\begin{cases}
+0 & \text{for }n=0\\
+1 & \text{for }n=1\\
+F(n-1) + F(n-2) & \text{for }n >1
+\end{cases}
+$$
 
 [Table of Contents](./index.md)
 
