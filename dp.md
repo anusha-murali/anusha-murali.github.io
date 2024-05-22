@@ -14,6 +14,8 @@ We have the following four steps in using dynamic programming to solving a probl
 ## 1. Rod Cutting
 
 **Problem**: A steel shop sells rods of different *integer* lengths, which are cut from a long steel rod. The shop charges $p_i$ dollars for a rod of length $i$. The shop wants to sell the rod pieces in such a way so as to maximize its revenue.
+1. What is the maximum revenue the shop can get on a rod of length $n$?
+2. What are the lengths of the rod pieces that yield the maximum revenue?
 
 Let us say that the shop has a rod of length $n$, which the owner wants to cut into lengths $i_1, i_2, \ldots, i_k$, $1 \leq k \leq n$, in such a way so as to maximize the revenue. So, we have,
 
