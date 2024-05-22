@@ -1,6 +1,4 @@
-<p align="center">
-### 1. Rod Cutting
-</p>
+### **1. Rod Cutting**
 
 ***
 
