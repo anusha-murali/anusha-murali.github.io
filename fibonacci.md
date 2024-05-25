@@ -1,5 +1,29 @@
 ### Fibonacci Sequence
 
+**Problem**: The $n^{\text{th}}$ Fibonacci number is given by,
+
+$$
+F(n) = 
+\begin{cases}
+0 & \text{for }n=0\\
+1 & \text{for }n=1\\
+F(n-1) + F(n-2) & \text{for }n >1
+\end{cases}
+$$
+
+Find the $n^{\text{th}}$ Fibonacci number.
+
+#### Solution 1: Top-down Recursion
+
+```
+def fib(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fib(n-1) + fib(n-2)
+```
 
 [Dynamic Programming](./dp.md)
 
