@@ -49,6 +49,7 @@ $$
 F(n) = F(n-1) + F(n-2) \geq 2^{(n-1)/2} + 2^{(n-2)/2} \geq  2^{(n-2)/2} + 2^{(n-2)/2} \geq 2^{n/2}.
 $$
 
+Hence, the Fibonacci numbers grow exponentially. Hence the runtime of the recursive solution is $2^{\Theta(n)}$.
 
 [Dynamic Programming](./dp.md)
 
