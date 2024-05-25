@@ -33,6 +33,23 @@ $$
 T(n) = T(n-1) + T(n-2) + 1
 $$
 
+We can prove by induction that $F(n) = 2^{\Theta(n)}$.
+
+**Lemma 1**. *For $n > 5, 2^{n/2} \leq F(n) \leq 2^n$.
+
+*Proof*. We can verify that the above inequality for the base cases of $n=6$ and $n=7$.  Now, let us assume that the above inequality holds for all $F(n), n \geq 6$. Hence, we find,
+
+$$
+F(n) = F(n-1) + F(n-2) \leq 2^{n-1} + 2^{n-2} \leq  2^{n-1} + 2^{n-1} \leq 2^n.
+$$
+
+Similarly,
+
+$$
+F(n) = F(n-1) + F(n-2) \geq 2^{(n-1)/2} + 2^{(n-2)/2} \geq  2^{(n-2)/2} + 2^{(n-2)/2} \geq 2^{n/2}.
+$$
+
+
 [Dynamic Programming](./dp.md)
 
 * * *
