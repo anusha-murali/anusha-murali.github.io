@@ -51,6 +51,19 @@ $$
 
 Hence, the Fibonacci numbers grow exponentially. Hence the runtime of the recursive solution is $2^{\Theta(n)}$.
 
+#### Dynamic Programming with Memoization
+
+The reason why the recursive solution above has an exponential runtime is that it repeatedly calculates the subproblems. By saving the results of each subproblem in an array (memoization), we can avoid repeated calculations of the subproblems. We now have the following solution:
+
+```
+def fib(n):
+    f = [0, 1]
+    for i in range(2, n+1):
+        f.append(f[i-1] + f[i-2])
+    return f[n]
+```
+
+
 [Dynamic Programming](./dp.md)
 
 * * *
