@@ -35,7 +35,7 @@ $$
 
 We can prove by induction that $F(n) = 2^{\Theta(n)}$.
 
-**Lemma 1**. *For $n > 5, 2^{n/2} \leq F(n) \leq 2^n$.
+**Lemma 1**. *For $n > 5, 2^{n/2} \leq F(n) \leq 2^n$*.
 
 *Proof*. We can verify that the above inequality for the base cases of $n=6$ and $n=7$.  Now, let us assume that the above inequality holds for all $F(n), n \geq 6$. Hence, we find,
 
