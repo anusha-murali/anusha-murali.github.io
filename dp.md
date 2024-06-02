@@ -17,6 +17,8 @@ We have the following four steps in using dynamic programming to solving a probl
 1. What is the maximum revenue the shop can get on a rod of length $n$?
 2. What are the lengths of the rod pieces that yield the maximum revenue?
 
+> **Example**: Let $p = [0, 2, 7, 8, 10]$. The maximum revenue the shop can get on a rod of length 3 is \$9, which is obtained by cutting it into pieces of lengths 1 and 2. Similarly, the maximum revenue the shop can get on a rod of length 4 is \$14, which is obtained by cutting it into two pieces of equal lengths 2. 
+
 [Rod Cutting Solution](./rod_cutting.md)
 
 
