@@ -24,7 +24,7 @@ def maxSumSubarray(A):
     return m
 ```
 
-Obviously the brute-force algorithm has $O(n^2)$ runtime.
+Obviously the brute-force algorithm is $O(n^2)$.
 
 [Dynamic Programming](./dp.md)
 
