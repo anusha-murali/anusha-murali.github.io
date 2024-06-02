@@ -46,7 +46,7 @@ Find the contiguous subarray of a given array $A$ such that it has the largest p
 
 > **Example**: $A = [5, -2, 4, -10,  1, 7, -9, 8]$. The maximum sum subarray of $A$ is $[1, 7]$ and the maximum sum is 8.
 
-
+[Maximum Sum Subarray Solution](./max_sum_subarray.md)
 
 [Table of Contents](./index.md)
 
