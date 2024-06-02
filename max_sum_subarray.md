@@ -6,7 +6,9 @@ Find the contiguous subarray of a given array $A$ such that it has the largest p
 
 > **Example**: $A = [5, -2, 4, -10,  1, 7, -9, 8]$. The maximum sum subarray of $A$ is $[1, 7]$ and the maximum sum is 8.
 
+How many possible contiguous subarrays of any size are there in an array of size $n$?
 
+Using the above example, we see that there are 8 subarrays of length 1, namely $[5],  [-2], [4], [-10],  [1], [7], [-9]$ and  $[8]$. There are 7 subarrays of length 2, namely $[5, -2], [-2, 4], [4, -10], [-10, 1], [1, 7], [7, -9]$ and  $[-9, 8]$.
 
 [Dynamic Programming](./dp.md)
 
