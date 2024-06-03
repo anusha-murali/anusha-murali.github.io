@@ -30,9 +30,11 @@ Obviously the brute-force algorithm is $O(n^2)$.
 
 Let us say that for each index $i$ of the given array $A$, $DP[i]$ denotes the maximum possible sum of the contiguous subarray of $A[0\cdots i]$.
 
-Therefore, $DP[i-1]$ gives the maximum sum of the contiguous subarray of $A[0\cdots i-1]$.
+Therefore, $DP[i-1]$ denotes the maximum sum of the contiguous subarray of $A[0\cdots i-1]$.
 
-Now consider the array $A[0\cdots i]$. We see tha the maximum sum of the contiguous subarray of $A[0\cdots i]$ is $\max(DP[i-1] + A[i], A[i]$.
+Now consider the array $A[0\cdots i]$. We see that the maximum sum of the contiguous subarray of $A[0\cdots i]$ is $\max(DP[i-1] + A[i], A[i])$.
+
+This is because if $DP[i-1] \leq -A[i]$, we should look for a new contiguous subarray starting with the element $A[i]$.
 
 
 [Dynamic Programming](./dp.md)
