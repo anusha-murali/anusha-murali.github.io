@@ -36,7 +36,23 @@ Now consider the array $A[0\cdots i]$. We see that the maximum sum of the contig
 
 This is because if $DP[i-1] + A[i] < A[i]$, then $DP[i-1] \leq -A[i]$. So, a subarray consisting of $A[i]$ by itself will have a larger sum than $DP[i-1]$. This means, we can look for a new contiguous subarray starting with the element $A[i]$.
 
+Letting $DP[0] = A[0]$ and using 
 
+$$
+DP[i] = \max(DP[i-1] + A[i], A[i]),
+$$
+
+we can find the largest sum of array $A$ in just one pass over the array.
+
+```
+def maxSumSubarrayDP(A):
+    DP = [0]*len(A)
+    
+    DP[0] = A[0]
+    for i in range(1, len(A)):
+        DP[i] = max(DP[i-1] + A[i], A[i])
+    return max(DP)
+```
 
 
 [Dynamic Programming](./dp.md)
