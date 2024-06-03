@@ -55,6 +55,19 @@ def maxSumSubarray(A):
 
 Since we are only making a single pass over the array, the runtime of the dynamic programming solution above is $O(n)$.
 
+How do we find the contiguous subarray that gives the largest sum? Let us say that $DP[0\cdots n-1]$ contains the maximum sums for subarrays of size $0$ to $n-1$. The following routine returns the contiguous subarray that gives the largest sum.
+
+```
+def findSubarray(A, DP):
+    m = max(DP)
+    end = DP.index(m)
+    start = end
+    while m > 0:
+        m = m - A[start]
+        start = start - 1
+    return A[start+1: end+1]
+```
+
 [Dynamic Programming](./dp.md)
 
 * * *
