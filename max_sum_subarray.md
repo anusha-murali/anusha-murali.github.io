@@ -65,7 +65,7 @@ def findSubarray(A, DP):
     while m > 0:
         m = m - A[start]
         start = start - 1
-    return A[start+1: end+1]
+    return A[start+1 : end+1]
 ```
 
 [Dynamic Programming](./dp.md)
