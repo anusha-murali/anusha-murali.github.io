@@ -2,7 +2,7 @@
 
 ***
 
-Find the contiguous subarray of a given array $A$ such that it has the largest possible sum.
+Find a non-empty contiguous subarray of a given array $A$ such that it has the largest possible sum.
 
 > **Example**: $A = [5, -2, 4, -10,  7, -2, 3, -8]$. The maximum sum subarray of $A$ is $[7, -2, 3]$ and the maximum sum is 8.
 
