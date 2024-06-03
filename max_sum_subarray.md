@@ -30,6 +30,8 @@ Obviously the brute-force algorithm is $O(n^2)$.
 
 Let us say that for each index $i$ of the given array $A$, $DP[i]$ denotes the maximum possible sum of the contiguous subarray of $A[0\cdots i]$.
 
+Therefore, $DP[i-1]$ gives the maximum sum of the contiguous subarray of $A[0\cdots i-1]$.
+
 [Dynamic Programming](./dp.md)
 
 * * *
