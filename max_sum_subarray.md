@@ -34,7 +34,7 @@ Therefore, $DP[i-1]$ denotes the maximum sum of the contiguous subarray of $A[0\
 
 Now consider the array $A[0\cdots i]$. We see that the maximum sum of the contiguous subarray of $A[0\cdots i]$ is $\max(DP[i-1] + A[i], A[i])$.
 
-This is because if $DP[i-1] + A[i] < A[i]$, then $DP[i-1] < 0$. So, a subarray consisting of $A[i]$ by itself will have a larger sum than $DP[i-1]$. In other words, only when $DP[i-1]$ is positive, it will be useful to remain in the subarray. If not, we should look for a new contiguous subarray starting with the element $A[i]$.
+This is because if $DP[i-1] + A[i] < A[i]$, then $DP[i-1] < 0$. So, a subarray consisting of $A[i]$ by itself will have a larger sum than $DP[i-1]$. In other words, only when $DP[i-1]$ is positive, it will be useful to remain in the subarray. If not, we should look for a new contiguous subarray starting with the element $A[i]$. The idea is that if we encounter a subarray that has a negative sum, we discard it and only consider a subarray that has a positive sum.
 
 Letting $DP[0] = A[0]$ and using 
 
