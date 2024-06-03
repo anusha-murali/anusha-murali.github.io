@@ -46,14 +46,14 @@ we can find the largest sum of array $A$ in just one pass over the array.
 
 ```
 def maxSumSubarray(A):
-    DP = [0]*len(A)
-    
+    DP = [0]*len(A)  
     DP[0] = A[0]
     for i in range(1, len(A)):
         DP[i] = max(DP[i-1] + A[i], A[i])
     return max(DP)
 ```
 
+Since we are only making a single pass over the array, the runtime of the dynamic programming solution above is $O(n)$.
 
 [Dynamic Programming](./dp.md)
 
