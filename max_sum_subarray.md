@@ -1,4 +1,4 @@
-### 1. Maximum Sub Subarray
+### Maximum Sub Subarray
 
 ***
 
