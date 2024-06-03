@@ -45,7 +45,7 @@ $$
 we can find the largest sum of array $A$ in just one pass over the array.
 
 ```
-def maxSumSubarrayDP(A):
+def maxSumSubarray(A):
     DP = [0]*len(A)
     
     DP[0] = A[0]
