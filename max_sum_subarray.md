@@ -32,6 +32,9 @@ Let us say that for each index $i$ of the given array $A$, $DP[i]$ denotes the m
 
 Therefore, $DP[i-1]$ gives the maximum sum of the contiguous subarray of $A[0\cdots i-1]$.
 
+Now consider the array $A[0\cdots i]$. What is the maximum sum of the contiguous subarray of $A[0\cdots i]$?
+
+
 [Dynamic Programming](./dp.md)
 
 * * *
