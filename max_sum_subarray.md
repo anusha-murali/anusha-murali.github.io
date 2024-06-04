@@ -68,6 +68,14 @@ def findSubarray(A, DP):
     return A[start+1 : end+1]
 ```
 
+### Maximum Sum Circular Subarray
+
+***
+
+Find a non-empty contiguous subarray of a given circular array $A$ of length $n$ such that it has the largest possible sum.
+
+> **Example**: $A = [7, -12, 2, 6]$. The maximum sum circular subarray of $A$ is $[2, 6, 7]$ and the maximum sum is 15.
+
 [Dynamic Programming](./dp.md)
 
 * * *
