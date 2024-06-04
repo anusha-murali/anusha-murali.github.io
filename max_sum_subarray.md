@@ -90,6 +90,9 @@ def maxSumCircularSubarray(A):
             maxSum = temp
     return maxSum
 ```
+The runtime of this approach is $O(n^2)$ as we are calling Kadane algorithm (maxSumSubarray()) $n$ times.
+
+#### Solution 2:
 
 [Dynamic Programming](./dp.md)
 
