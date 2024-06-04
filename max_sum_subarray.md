@@ -92,7 +92,10 @@ def maxSumCircularSubarray(A):
 ```
 The runtime of this approach is $O(n^2)$ as we are calling Kadane algorithm (maxSumSubarray()) $n$ times.
 
-#### Solution 2:
+#### Solution 2: Modified Kadane Algorithm
+
+We can find the minimum sum subarray using the Kadane algorithm. Subtracting this minimum sum from the linear sum of the entire array results in the maximum sum circular subarray.
+
 
 [Dynamic Programming](./dp.md)
 
