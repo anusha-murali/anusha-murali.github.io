@@ -98,18 +98,17 @@ We can find the minimum sum subarray using the Kadane algorithm. Let $x$ be the 
 
 
 ```
-def maxSubarraySumCircular(self, nums: List[int]) -> int:
-    DP = [0]*len(nums)
-    DP[0] = nums[0]
-    for i in range(1, len(nums)):
-        DP[i] = min(DP[i-1] + nums[i], nums[i])
-
-    maxSum = self.maxSumSubarray(nums)
-
-    if (maxSum < 0):
+def maxSumCircularSubarray(A):
+    maxSum = maxSumSubarray(A)
+    if maxSum < 0:
         return maxSum
-    else:
-        return max(maxSum, (sum(nums) - min(DP)))
+    
+    DP = [0]*len(A)
+    DP[0] = A[0]
+    for i in range(1, len(A)):
+        DP[i] = min(DP[i-1] + A[i], A[i])
+
+    return max(maxSum, sum(A) - min(DP))
 ```
 
 [Dynamic Programming](./dp.md)
