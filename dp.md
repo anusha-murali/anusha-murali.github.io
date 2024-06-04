@@ -44,7 +44,7 @@ Find the $n^{\text{th}}$ Fibonacci number.
 
 Find a non-empty contiguous subarray of a given array $A$ such that it has the largest possible sum.
 
-> **Example**: $A = [5, -2, 4, -10,  1, 7, -9, 8]$. The maximum sum subarray of $A$ is $[1, 7]$ and the maximum sum is 8.
+> **Example**: $A = [5, -2, 4, -10,  7, -2, 3, -8]$. The maximum sum subarray of $A$ is $[7, -2, 3]$ and the maximum sum is 8.
 
 [Maximum Sum Subarray Solution](./max_sum_subarray.md)
 
