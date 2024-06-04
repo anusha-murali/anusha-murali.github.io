@@ -76,6 +76,9 @@ Find a non-empty contiguous subarray of a given circular array $A$ of length $n$
 
 > **Example**: $A = [7, -12, 2, 6]$. The maximum sum circular subarray of $A$ is $[2, 6, 7]$ and the maximum sum is 15.
 
+#### Solution 1: Kadane Algorithm on Array of $2n$ Length
+
+
 [Dynamic Programming](./dp.md)
 
 * * *
