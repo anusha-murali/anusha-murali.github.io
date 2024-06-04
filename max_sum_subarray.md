@@ -111,7 +111,7 @@ def maxSumCircularSubarray(A):
     return max(maxSum, sum(A) - min(DP))
 ```
 
-The runtime of the above algorithm is $O(n)$ we at most traverse $2n$ elements.
+The runtime of the above algorithm is $O(n)$ we at most look at $2n$ elements.
 
 [Dynamic Programming](./dp.md)
 
