@@ -28,18 +28,18 @@ Obviously the brute-force algorithm is $O(n^2)$.
 
 ### 2. Dynamic Programming: Kadane's Algorithm
 
-Let us say that for each index $i$ of the given array $A$, $DP[i]$ denotes the maximum possible sum of the contiguous subarray of $A[0\cdots i]$.
+Let us say that for each index $i$ of the given array $A$, DP$[i]$ denotes the maximum possible sum of the contiguous subarray of $A[0\cdots i]$.
 
-Therefore, $DP[i-1]$ denotes the maximum sum of the contiguous subarray of $A[0\cdots i-1]$.
+Therefore, DP$[i-1]$ denotes the maximum sum of the contiguous subarray of $A[0\cdots i-1]$.
 
-Now consider the array $A[0\cdots i]$. We see that the maximum sum of the contiguous subarray of $A[0\cdots i]$ is $\max(DP[i-1] + A[i], A[i])$.
+Now consider the array $A[0\cdots i]$. We see that the maximum sum of the contiguous subarray of $A[0\cdots i]$ is $\max(\text{DP}[i-1] + A[i], A[i])$.
 
-This is because if $DP[i-1] + A[i] < A[i]$, then $DP[i-1] < 0$. So, a subarray consisting of $A[i]$ by itself will have a larger sum than $DP[i-1]$. In other words, only when $DP[i-1]$ is positive, it will be useful to remain in the subarray. If not, we should look for a new contiguous subarray starting with the element $A[i]$. The idea is that if we encounter a subarray that has a negative sum, we discard it and only consider a subarray that has a positive sum.
+This is because if DP$[i-1] + A[i] < A[i]$, then DP$[i-1] < 0$. So, a subarray consisting of $A[i]$ by itself will have a larger sum than DP$[i-1]$. In other words, only when DP$[i-1]$ is positive, it will be useful to remain in the subarray. If not, we should look for a new contiguous subarray starting with the element $A[i]$. The idea is that if we encounter a subarray that has a negative sum, we discard it and only consider a subarray that has a positive sum.
 
-Letting $DP[0] = A[0]$ and using 
+Letting DP$[0] = A[0]$ and using 
 
 $$
-DP[i] = \max(DP[i-1] + A[i], A[i]),
+\text{DP}[i] = \max(\text{DP}[i-1] + A[i], A[i]),
 $$
 
 we can find the largest sum of array $A$ in just one pass over the array.
