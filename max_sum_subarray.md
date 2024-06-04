@@ -78,6 +78,8 @@ Find a non-empty contiguous subarray of a given circular array $A$ of length $n$
 
 #### Solution 1: Kadane Algorithm on Array of $2n$ Length
 
+We can view the circulr array as a linear array of length $2n$, and apply Kadane algorithm $n$ times on an array of length $n$, each time shifting the starting position right by one index.
+
 
 [Dynamic Programming](./dp.md)
 
