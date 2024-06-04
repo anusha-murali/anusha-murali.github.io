@@ -94,8 +94,23 @@ The runtime of this approach is $O(n^2)$ as we are calling Kadane algorithm (max
 
 #### Solution 2: Modified Kadane Algorithm
 
-We can find the minimum sum subarray using the Kadane algorithm. Subtracting this minimum sum from the linear sum of the entire array results in the maximum sum circular subarray.
+We can find the minimum sum subarray using the Kadane algorithm. Let $x$ be the value obtained by subtracting this minimum sum from the linear sum of the entire array. The maximum sum of the circular subarray is the maximum of the maximum sum returned by the Kadane algorithm and $x$. 
 
+
+```
+def maxSubarraySumCircular(self, nums: List[int]) -> int:
+    DP = [0]*len(nums)
+    DP[0] = nums[0]
+    for i in range(1, len(nums)):
+        DP[i] = min(DP[i-1] + nums[i], nums[i])
+
+    maxSum = self.maxSumSubarray(nums)
+
+    if (maxSum < 0):
+        return maxSum
+    else:
+        return max(maxSum, (sum(nums) - min(DP)))
+```
 
 [Dynamic Programming](./dp.md)
 
