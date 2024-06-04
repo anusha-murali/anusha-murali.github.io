@@ -83,12 +83,12 @@ We can view the circular array as a linear array of length $2n$, and apply Kadan
 ```
 def maxSumCircularSubarray(A):
     B = A + A
-    m = float('-inf')
+    maxSum = float('-inf')
     for i in range(len(A)):
         temp = maxSumSubarray(B[i:i+len(A)])
-        if temp > m:
-            m = temp
-    return m
+        if temp > maxSum:
+            maxSum = temp
+    return maxSum
 ```
 
 [Dynamic Programming](./dp.md)
