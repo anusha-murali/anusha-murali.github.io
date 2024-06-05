@@ -21,7 +21,7 @@ def maxSumSubarray(A):
             localSum = localSum + A[j]
             if localSum > maxVal:
                 maxVal = localSum
-    return m
+    return maxVal
 ```
 
 Obviously the brute-force algorithm is $O(n^2)$.
