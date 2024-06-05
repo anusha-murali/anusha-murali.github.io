@@ -14,13 +14,13 @@ Using the above example, we see that there are 8 subarrays of length 1, namely $
 
 ```
 def maxSumSubarray(A):
-    m = float('-inf')
+    maxVal = float('-inf')
     for i in range(len(A)):
-        temp = 0
+        localSum = 0
         for j in range(i, len(A)):
-            temp = temp + A[j]
-            if temp > m:
-                m = temp
+            localSum = localSum + A[j]
+            if localSum > maxVal:
+                maxVal = localSum
     return m
 ```
 
