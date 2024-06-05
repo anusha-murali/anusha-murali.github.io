@@ -19,8 +19,8 @@ def maxSumSubarray(A):
         temp = 0
         for j in range(i, len(A)):
             temp = temp + A[j]
-        if temp > m:
-            m = temp
+            if temp > m:
+                m = temp
     return m
 ```
 
