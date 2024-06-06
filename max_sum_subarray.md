@@ -113,6 +113,12 @@ def maxSumCircularSubarray(A):
 
 The runtime of the above algorithm is $O(n)$ as we at most look at $2n$ elements.
 
+### Longest Turbulent Subarray
+
+A subarray is called turbulent if the comparision sign flips between each consecutive pair of elements in the subarray. Find the length of the longest turbulent subarray of a given array $A$.
+
+> **Example**: $A = [6, 3, 2, 9, 5, 6, 4, 2, 7$. The longest turbulent subarray is $[2, 9, 5, 6, 4]$ and its length is 5.
+
 [Dynamic Programming](./dp.md)
 
 * * *
