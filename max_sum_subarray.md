@@ -117,7 +117,33 @@ The runtime of the above algorithm is $O(n)$ as we at most look at $2n$ elements
 
 A subarray is called turbulent if the comparision sign flips between each consecutive pair of elements in the subarray. Find the length of the longest turbulent subarray of a given array $A$.
 
+If all elements of the array are equal, then we assume the length of the longest turbulent subarray is 1.
+
 > **Example**: $A = [6, 3, 2, 9, 5, 6, 4, 2, 7]$. The longest turbulent subarray is $[2, 9, 5, 6, 4]$ and its length is 5.
+
+```
+def longestTurbulentSubarray(A):
+    # If all elements of the array are equal, just return 1
+    allEqual = True
+    for i in range(1, len(A)):
+        if A[i] != A[i-1]:
+            allEqual = False
+            exit
+    if allEqual:
+        return 1
+    
+    longest = 2  # At least 2 elements are in A
+    count = 2
+    for i in range(1, len(A)-1):
+        if ((A[i] > A[i-1]) and (A[i+1] < A[i])) or \
+           ((A[i] < A[i-1]) and (A[i+1] > A[i])):
+            count = count + 1
+            if count > longest:
+                longest = count
+        else:
+            count = 2
+    return longest
+```
 
 [Dynamic Programming](./dp.md)
 
