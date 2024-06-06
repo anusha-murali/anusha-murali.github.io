@@ -115,6 +115,8 @@ The runtime of the above algorithm is $O(n)$ as we at most look at $2n$ elements
 
 ### Longest Turbulent Subarray
 
+***
+
 A subarray is called turbulent if the comparision sign flips between each consecutive pair of elements in the subarray. Find the length of the longest turbulent subarray of a given array $A$.
 
 If all elements of the array are equal, then we assume the length of the longest turbulent subarray is 1.
