@@ -55,7 +55,7 @@ Given an array $A$ of $n$ numbers, find the longest, strictly increasing subsequ
 
 > **Example**: $A = [2, 17, 3, 20, 1, 11, 9, 5, 6, 78, 11]$. The longest, strictly increasing subsequence of $A$ is $[2, 3, 5, 6, 11]$ and its length is 5.
 
-
+[LIS Solution](./lis.md)
 
 [Table of Contents](./index.md)
 
