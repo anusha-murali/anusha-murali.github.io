@@ -18,7 +18,7 @@ A &=  [2, 6, 3, 5, 1, 8, 4, 7]\\
 \end{align*}
 $$
 
-The longest increasing subsequence (LIS) that ends at index 2 is $\text{LIS}(2) = [2, 3]$, which has a length of 2. The LIS that ends at index 3 is $\text{LIS}(3) = [2, 3, 9]$, with the length of 3. We can compute DP[3] from DP[2] by checking $A[3] > A[2]$.
+The longest increasing subsequence (LIS) that ends at index 2 is $\text{LIS}(2) = [2, 3]$, which has a length of 2. The LIS that ends at index 3 is $\text{LIS}(3) = [2, 3, 5]$, with the length of 3. We can compute DP[3] from DP[2] by checking $A[3] > A[2]$.
 
 [Dynamic Programming](./dp.md)
 
