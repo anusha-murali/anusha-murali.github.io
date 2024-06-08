@@ -12,9 +12,10 @@ Let $\text{DP}[i]$ be the length of the longest increasing subsequence that ends
 For the above example array $A$, the DP array will be as follows:
 
 $$
+\begin{align*}
 A = 3\\
-
-B = 3
+B = 2
+\end{align*}
 $$
 
 <p align="center">
