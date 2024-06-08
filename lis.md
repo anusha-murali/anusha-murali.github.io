@@ -12,7 +12,7 @@ Let DP$[i]$ be the length of the longest increasing subsequence that ends $A[i]$
 For the above example array $A$, the DP array will be as follows:
 
 <p align="center">
-> DP = [1, 2, 2, 3, 1, 3, 3, 3, 4, 4, 5]
+DP = [1, 2, 2, 3, 1, 3, 3, 3, 4, 4, 5]
 </p>
 
 
