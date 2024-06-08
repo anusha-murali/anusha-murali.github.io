@@ -6,6 +6,7 @@ Given an array $A$ of $n$ numbers, find the longest, strictly increasing subsequ
 
 > **Example**: $A = [2, 6, 3, 5, 1, 0, 4, 7]$. The longest, strictly increasing subsequence of $A$ is $[2, 3, 4, 7]$ and its length is 4.
 
+#### Dynamic Programming Solution
 
 Let $\text{DP}[i]$ be the length of the longest increasing subsequence that ends $A[i]$.
 
@@ -38,6 +39,17 @@ DP[i] =
 \displaystyle{\max_{A[j] < A[i]}} (DP[j] + 1) & \text{for } m > 1 \text{ and } j < i
 \end{cases}
 $$
+
+```
+def lis(A):
+    D = [1]*len(A)
+    for i in range(len(A)):
+        for j in range(i):
+            if A[j] < A[i]:
+                D[i] = max(D[i], D[j] + 1)
+    return max(D)
+```
+
 
 [Dynamic Programming](./dp.md)
 
