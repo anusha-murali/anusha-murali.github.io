@@ -53,7 +53,7 @@ Find a non-empty contiguous subarray of a given array $A$ such that it has the l
 
 Given an array $A$ of $n$ numbers, find the longest, strictly increasing subsequence of $A$.
 
-> **Example**: $A = [2, 17, 1, 20, 3, 11, 9, 5, 6, 78, 11]$. The longest, strictly increasing subsequence of $A$ is $[2, 3, 5, 6, 11]$ and its length is 5.
+> **Example**: $A = [2, 17, 3, 20, 1, 11, 9, 5, 6, 78, 11]$. The longest, strictly increasing subsequence of $A$ is $[2, 3, 5, 6, 11]$ and its length is 5.
 
 
 
