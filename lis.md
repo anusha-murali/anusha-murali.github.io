@@ -33,7 +33,7 @@ We note that there are two distinct possibilities:
 Hence, letting $m$ be the number of elements in the LIS ending in $A[i]$, we find,
 
 $$
-DP[i] = 
+\text{DP}[i] = 
 \begin{cases}
 1 & \text{for }m = 1\\
 \displaystyle{\max_{A[j] < A[i]}} (\text{DP}[j] + 1) & \text{for } m > 1 \text{ and } j < i
