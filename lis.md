@@ -7,6 +7,10 @@ Given an array $A$ of $n$ numbers, find the longest, strictly increasing subsequ
 > **Example**: $A = [2, 17, 3, 20, 1, 11, 9, 5, 6, 78, 11]$. The longest, strictly increasing subsequence of $A$ is $[2, 3, 5, 6, 11]$ and its length is 5.
 
 
+Let DP$[i]$ be the length of the longest increasing subsequence that ends $A[i]$.
+
+> **Example**: For the above example array $A$, the DP array will be as follows:
+
 
 [Dynamic Programming](./dp.md)
 
