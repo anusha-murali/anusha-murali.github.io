@@ -13,7 +13,7 @@ For the above example array $A$, the DP array will be as follows:
 
 $$
 \begin{align*}
-A &= 1[2, 8, 3, 9, 1, 6, 4, 7]\\
+A &=  [2, 8, 3, 9, 1, 6, 4, 7]\\
 DP &= [1, 2, 2, 3, 1, 3, 3, 4] 
 \end{align*}
 $$
