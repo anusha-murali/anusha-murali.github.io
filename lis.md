@@ -35,7 +35,7 @@ $$
 DP[i] = 
 \begin{cases}
 1 & \text{for }n = 1\\
-\displaystyle{\max_{j < i and A[j] < a[i]}} (DP[j] + 1) & \text{for } n > 1
+\displaystyle{\max_{j < i \text{ and } A[j] < a[i]}} (DP[j] + 1) & \text{for } n > 1
 \end{cases}
 $$
 
