@@ -48,6 +48,11 @@ Find a non-empty contiguous subarray of a given array $A$ such that it has the l
 
 [Maximum Sum Subarray Solution](./max_sum_subarray.md)
 
+
+## 4. Longest Increasing Subsequence (LIS)
+
+Given an array $A$ of $n$ numbers, find the longest, strictly increasing subsequence of $A$.
+
 [Table of Contents](./index.md)
 
 * * *
