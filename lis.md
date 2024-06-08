@@ -36,7 +36,7 @@ $$
 DP[i] = 
 \begin{cases}
 1 & \text{for }m = 1\\
-\displaystyle{\max_{A[j] < A[i]}} (DP[j] + 1) & \text{for } m > 1 \text{ and } j < i
+\displaystyle{\max_{A[j] < A[i]}} (\text{DP}[j] + 1) & \text{for } m > 1 \text{ and } j < i
 \end{cases}
 $$
 
