@@ -13,6 +13,7 @@ For the above example array $A$, the DP array will be as follows:
 
 $$
 A = 3\\
+
 B = 3
 $$
 
