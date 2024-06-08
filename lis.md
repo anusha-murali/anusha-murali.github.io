@@ -50,6 +50,7 @@ def lis(A):
     return max(D)
 ```
 
+**Runtime** The total number of times the "if" statement gets executed is $1 + 2 + \cdots + n = n(n+1)/2$. Therefore, the runtime of the dynamic programming solution is $O(n^2)$. 
 
 [Dynamic Programming](./dp.md)
 
