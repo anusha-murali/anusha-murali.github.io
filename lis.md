@@ -22,7 +22,7 @@ The longest increasing subsequence (LIS) that ends at index 2 is $\text{LIS}(2) 
 
 We will compute the array DP from $i = 0 \ldots n-1$, in the order of $\text{DP}[0], \text{DP}[1], \ldots, \text{DP}[n-1]$.
 
-Hence, when we want to compute $\text{DP}[i]$, we have already computed all the previous values $\text{DP}[0], \text{DP}[1], \ldots, \text{DP}[i-1]$.
+Hence, when we want to compute $\text{DP}[i]$, we have already computed all the previous values $\text{DP}[0]$, $\text{DP}[1], \ldots$, \text{DP}[i-1]$.
 
 We note that there are two distinct possibilities:
 
