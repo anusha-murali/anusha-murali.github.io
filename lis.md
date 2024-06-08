@@ -24,6 +24,11 @@ We will compute the array DP from $i = 0 \ldots n-1$, in the order of $\text{DP}
 
 Hence, when we want to compute $\text{DP}[i]$, we have already computed all the previous values $\text{DP}[0], \text{DP}[1], \ldots, \text{DP}[i-1]$.
 
+We note that there are two distinct possibilities:
+
+1. If $\text{DP}[i] = 1$, then the LIS ending in index $i$ has only 1 element.
+2. If $\text{DP}[i] > 1$, then the LIS ending in index $i$ has more than 1 element, and the last element $A[i]$$ is greater than the immediately preceding element $A[j]$ of the LIS. It is obvious that the subsequence ending in $A[j]$ itself is one of the LIS's ending in $A[j]$. Therefore, $DP[i] = DP[j] + 1$.
+
 [Dynamic Programming](./dp.md)
 
 * * *
