@@ -32,10 +32,10 @@ We note that there are two distinct possibilities:
 Hence, we find,
 
 $$
-r_n = 
+DP[i] = 
 \begin{cases}
-0 & \text{for }n = 0\\
-\displaystyle{\max_{1 \leq i \leq n}} (p_i + r_{n-i}) & \text{for } n > 0
+1 & \text{for }n = 1\\
+\displaystyle{\max_{j < i and A[j] < a[i]}} (DP[j] + 1) & \text{for } n > 1
 \end{cases}
 $$
 
