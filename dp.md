@@ -57,7 +57,7 @@ Given an array $A$ of $n$ numbers, find the longest, strictly increasing subsequ
 
 [LIS Solution](./lis.md)
 
-## Longest Common Subsequence (LCS)
+## 5. Longest Common Subsequence (LCS)
 
 Given two strings $S_1$ and $S_2$ find the longest common subsequence or LCS of $S_1$ and $S_2$.
 
