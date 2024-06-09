@@ -42,15 +42,38 @@ $$
 
 ```
 def lis(A):
-    D = [1]*len(A)
+    DP = [1]*len(A)
     for i in range(len(A)):
         for j in range(i):
             if A[j] < A[i]:
-                D[i] = max(D[i], D[j] + 1)
-    return max(D)
+                DP[i] = max(DP[i], DP[j] + 1)
+    return max(DP)
 ```
 
 **Runtime** The total number of times the "if" statement gets executed is $1 + 2 + \cdots + n = n(n+1)/2$. Therefore, the runtime of the dynamic programming solution is $O(n^2)$. 
+
+In the above discussion, we found the length of the LIS. How do we find the actual longest increasing subsequence itself?
+
+Having found the DP array, which stores the longest increasing subsequence for every sequence ending in index $i$, we can modify the above function to return the actual LIS itself:
+
+```
+def lis(A):
+    DP = [1]*len(A)
+    for i in range(len(A)):
+        for j in range(i):
+            if A[j] < A[i]:
+                DP[i] = max(DP[i], DP[j] + 1)
+
+    currentMax = max(DP)
+    longestSubSequence = [] 
+    i = DP.index(currentMax)
+    for j in range(i, -1, -1):  
+        if DP[j] == currentMax:
+            longestSubSequence = [A[j]] + longestSubSequence  
+            currentMax = currentMax - 1
+    return longestSubSequence
+```
+
 
 [Dynamic Programming](./dp.md)
 
