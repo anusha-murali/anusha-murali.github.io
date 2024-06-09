@@ -1,6 +1,12 @@
-## Longest Common Subsequence (LCS)
+### Longest Common Subsequence (LCS)
 
 *** 
+
+Given two strings $S_1$ and $S_2$ find the longest common subsequence or LCS of $S_1$ and $S_2$.
+
+> **Example**: $S_1$ = 'ANUSHAMURALI' and $S_2$ = 'ANUPAMURALI'. The LCS of $S_1$ and $S_2$ is 'ANUAMURALI' and its length is 10.
+
+
 
 
 [Dynamic Programming](./dp.md)
