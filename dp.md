@@ -63,6 +63,10 @@ Given two strings $S_1$ and $S_2$ find the longest common subsequence or LCS of 
 
 > **Example**: $S_1$ = 'ANUSHAMURALI' and $S_2$ = 'ANUPAMURALI'. The LCS of $S_1$ and $S_2$ is 'ANUAMURALI' and its length is 10.
 
+[LCS Solution](./lcs.md)
+
+* * *
+
 [Table of Contents](./index.md)
 
 * * *
