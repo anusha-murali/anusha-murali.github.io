@@ -2,14 +2,14 @@
 
 *** 
 
-Given two strings $S_1$ and $S_2$ find the longest common subsequence or LCS of $S_1$ and $S_2$.
+Given two strings $A$ and $B$ find their longest common subsequence or LCS.
 
-> **Example**: $S_1$ = 'ANUSHAMURALI' and $S_2$ = 'ANUPAMURALI'. The LCS of $S_1$ and $S_2$ is 'ANUAMURALI' and its length is 10.
+> **Example**: $A$ = 'ANUSHAMURALI' and $B$ = 'ANUPAMURALI'. The LCS of $A$ and $B$ is 'ANUAMURALI' and its length is 10.
 
 
 #### Solution 1: Top-down Recursion
 
-If the last characters of strings $S1$ and $S2$ are equal, then we need to recursively compare the remaining strings after removing the last character. Otherwise, we have compare one string with the other after removing the last character from one of them. We should do this for both strings and select the one with the larger value. Following is the Python code for this recursive approach:
+If the last characters of strings $A$ and $B$ are equal, then we need to recursively compare the remaining strings after removing the last character. Otherwise, we have compare one string with the other after removing the last character from one of them. We should do this for both strings and select the one with the larger value. Following is the Python code for this recursive approach:
 
 ```
 def lcs(A, B, m, n):
