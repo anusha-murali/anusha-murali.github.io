@@ -51,11 +51,17 @@ Find a non-empty contiguous subarray of a given array $A$ such that it has the l
 
 ## 4. Longest Increasing Subsequence (LIS)
 
-Given an array $A$ of $n$ numbers, find the longest, strictly increasing subsequence of $A$.
+Given an array $A$ of $n$ numbers, find the longest, strictly increasing subsequence or LIS of $A$.
 
 > **Example**: $A = [2, 6, 3, 5, 1, 0, 4, 7]$. The longest, strictly increasing subsequence of $A$ is $[2, 3, 4, 7]$ and its length is 4.
 
 [LIS Solution](./lis.md)
+
+## Longest Common Subsequence (LCS)
+
+Given two strings $S_1$ and $S_2$ find the longest common subsequence or LCS of $S_1$ and $S_2$.
+
+> **Example**: $S_1 = 'ANUSHAMURALI'$ and $S_2 = 'ANUPAMURALI'$. The LCS of $S_1$ and $S_2$ is $'ANUAMURALI'$.
 
 [Table of Contents](./index.md)
 
