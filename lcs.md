@@ -21,7 +21,7 @@ def lcs(A, B, m, n):
         return max(lcs(A, B, m-1, n), lcs(A, B, m, n-1))
 ```
 
-**Runtime**: For a string containing $k$ characters, there are $2^k$ possible substrings. The above function computes all possible subsequences of both strings $A$ and $B$. Hence the runtime is $O(2^m \cdot 2^n) = O(2^{m+n})$.
+**Runtime**: For a string containing $k$ characters, there are $2^k$ possible substrings. The above function computes all possible subsequences of both strings $A$ and $B$. Hence the runtime is $O(2^m \cdot 2^n) = O(2^{m+n})$. The space complexity is $O(\max(m, n))$ as the depth of the recursion is the larger of $m$ and $n$.
 
 [Dynamic Programming](./dp.md)
 
