@@ -9,7 +9,7 @@ Given two strings $A$ and $B$ find their longest common subsequence or LCS.
 
 #### Solution 1: Top-down Recursion
 
-If the last characters of strings $A$ and $B$ are equal, then we need to recursively compare the remaining strings after removing the last character. Otherwise, we have compare one string with the other after removing the last character from one of them. We should do this for both strings and select the one with the larger value. Following is the Python code for this recursive approach:
+If the last characters of strings $A$ and $B$ are equal, then we need to recursively compare the remaining strings after removing the last character. Otherwise, we have to compare one string with the other after removing the last character from one of them. We should do this for both strings and select the one with the larger value. Following is the Python code for this recursive approach:
 
 ```
 def lcs(A, B, m, n):
