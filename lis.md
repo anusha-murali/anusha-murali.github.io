@@ -28,7 +28,7 @@ Hence, when we want to compute $\text{DP}[i]$, we have already computed all the 
 We note that there are two distinct possibilities:
 
 1. If $\text{DP}[i] = 1$, then the $\text{LIS}$ ending in index $i$ has only 1 element.
-2. If $\text{DP}[i] > 1$, then the $\text{LIS}$ ending in index $i$ has more than 1 element, and the last element $A[i]$ is greater than the immediately preceding element $A[j]$ of the $\text{LIS}$. It is obvious that the subsequence ending in $A[j]$ itself is one of the LIS's ending in $A[j]$. Therefore, $\text{DP}[i] = \text{DP}[j] + 1$.
+2. If $\text{DP}[i] > 1$, then the $\text{LIS}$ ending in index $i$ has more than 1 element, and the last element $A[i]$ is greater than the immediately preceding element $A[j]$ of the $\text{LIS}$. It is obvious that the subsequence ending in $A[j]$ itself is one of the $\text{LIS}$'s ending in $A[j]$. Therefore, $\text{DP}[i] = \text{DP}[j] + 1$.
 
 Hence, letting $m$ be the number of elements in the $\text{LIS}$ ending in $A[i]$, we find,
 
