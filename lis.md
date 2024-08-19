@@ -19,7 +19,7 @@ A &=  [2, 6, 3, 5, 1, 0, 4, 7]\\
 \end{align*}
 $$
 
-The longest increasing subsequence (LIS) that ends at index 2 is $\text{LIS}(2) = [2, 3]$, which has a length of 2. The LIS that ends at index 3 is $\text{LIS}(3) = [2, 3, 5]$, with the length of 3. We can compute DP[3] from DP[2] by checking if $A[3] > A[2]$.
+The longest increasing subsequence (LIS) that ends at index 2 is $\text{LIS}(2) = [2, 3]$, which has a length of 2. The LIS that ends at index 3 is $\text{LIS}(3) = [2, 3, 5]$, with the length of 3. We can compute $\text{DP}[3]$ from $\text{DP}[2]$ by checking if $A[3] > A[2]$.
 
 We will compute the array DP from $i = 0 \ldots n-1$, in the order of $\text{DP}[0], \text{DP}[1], \ldots, \text{DP}[n-1]$.
 
