@@ -54,7 +54,7 @@ def lis(A):
 
 In the above discussion, we found the length of the $\text{LIS}$. How do we find the actual longest increasing subsequence itself?
 
-Having found the DP array, which stores the longest increasing subsequence for every sequence ending in index $i$, we can modify the above function to return the actual $\text{LIS}$ itself. We start from the largest value of the subsequence and backtrack to find the $\text{LIS}$. Note the following function returns just one of the possibly many $\text{LIS}$.
+Having found the $\text{DP}$ array, which stores the longest increasing subsequence for every sequence ending in index $i$, we can modify the above function to return the actual $\text{LIS}$ itself. We start from the largest value of the subsequence and backtrack to find the $\text{LIS}$. Note the following function returns just one of the possibly many $\text{LIS}$.
 
 ```
 def lis(A):
