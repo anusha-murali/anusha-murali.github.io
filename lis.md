@@ -27,10 +27,10 @@ Hence, when we want to compute $\text{DP}[i]$, we have already computed all the 
 
 We note that there are two distinct possibilities:
 
-1. If $\text{DP}[i] = 1$, then the LIS ending in index $i$ has only 1 element.
-2. If $\text{DP}[i] > 1$, then the LIS ending in index $i$ has more than 1 element, and the last element $A[i]$ is greater than the immediately preceding element $A[j]$ of the LIS. It is obvious that the subsequence ending in $A[j]$ itself is one of the LIS's ending in $A[j]$. Therefore, $\text{DP}[i] = \text{DP}[j] + 1$.
+1. If $\text{DP}[i] = 1$, then the $\text{LIS}$ ending in index $i$ has only 1 element.
+2. If $\text{DP}[i] > 1$, then the $\text{LIS}$ ending in index $i$ has more than 1 element, and the last element $A[i]$ is greater than the immediately preceding element $A[j]$ of the $\text{LIS}$. It is obvious that the subsequence ending in $A[j]$ itself is one of the LIS's ending in $A[j]$. Therefore, $\text{DP}[i] = \text{DP}[j] + 1$.
 
-Hence, letting $m$ be the number of elements in the LIS ending in $A[i]$, we find,
+Hence, letting $m$ be the number of elements in the $\text{LIS}$ ending in $A[i]$, we find,
 
 $$
 \text{DP}[i] = 
@@ -52,9 +52,9 @@ def lis(A):
 
 **Runtime** The total number of times the "if" statement gets executed is $1 + 2 + \cdots + n = n(n+1)/2$. Therefore, the runtime of the dynamic programming solution is $O(n^2)$. 
 
-In the above discussion, we found the length of the LIS. How do we find the actual longest increasing subsequence itself?
+In the above discussion, we found the length of the $\text{LIS}$. How do we find the actual longest increasing subsequence itself?
 
-Having found the DP array, which stores the longest increasing subsequence for every sequence ending in index $i$, we can modify the above function to return the actual LIS itself. We start from the largest value of the subsequence and backtrack to find the LIS. Note the following function returns just one of the possibly many LIS.
+Having found the DP array, which stores the longest increasing subsequence for every sequence ending in index $i$, we can modify the above function to return the actual $\text{LIS}$ itself. We start from the largest value of the subsequence and backtrack to find the $\text{LIS}$. Note the following function returns just one of the possibly many $\text{LIS}$.
 
 ```
 def lis(A):
