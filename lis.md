@@ -8,6 +8,8 @@ Given an array $A$ of $n$ numbers, find the longest, strictly increasing subsequ
 
 #### Dynamic Programming Solution
 
+Following is the classic Dynamic Programming solution for the LIS problem.
+
 Let $\text{DP}[i]$ be the length of the longest increasing subsequence that **ends** in $A[i]$.
 
 For the above example array $A$, the DP array will be as follows:
@@ -74,6 +76,11 @@ def lis(A):
     return longestSubSequence
 ```
 
+#### Greedy Solution
+
+Following greedy approach yields an  $O(n \log n)$ runtime.
+
+Starting from the left end of the given sequence of numbers, we build an increasing sequence, $\text{IS}$. When we encounter a number $A[i] < A[i-1]$, we insert $A[i]$ in its correct position of $\text{IS}$ while removing the number right of its new position. 
 
 [Dynamic Programming](./dp.md)
 
