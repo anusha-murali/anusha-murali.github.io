@@ -113,6 +113,8 @@ def lis_greedy(A):
     return IS
 ```
 
+**Runtime** The helper function, `bisect_left()` is called $n$ times. The argument to `bisect_left()` is the LIS being formed, which can have at most $n$ elements. Given that `bisect_left()` effectively does a binary search, its runtime is $\log n$. Therefore, the overall complexity of the greedy solution is $n \log n$. 
+
 [Dynamic Programming](./dp.md)
 
 * * *
