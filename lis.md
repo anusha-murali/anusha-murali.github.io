@@ -82,7 +82,7 @@ Following greedy approach yields an  $O(n \log n)$ runtime.
 
 Starting from the left end of the given sequence of numbers, we build an increasing sequence, $\text{IS}$. When we encounter a number $A[i] < A[i-1]$, we insert $A[i]$ in its correct position of $\text{IS}$ while removing the number right of its new position. 
 
-> **Example**: $A = [2, 6, 3, 5, 1, 0, 4, 7]$. We start from the left and build the increasing sequence, $\text{IS}$. The first two numbers are in increasing order, so we have $\text{IS} = [2, 6]$. Since $3 < 6$, we insert 3 in its correct position of $\text{IS}$ and remove the number just right of it. Hence $\text{IS}$ now becomes $\text{IS} = [2, 3]$. Now $\text{IS}$ grows to become $\text{IS} = [2, 3, 5$. Since the next number $1 < 5$, we insert 1 in its correct position of $\text{IS}$ and remove the number right of it. So $\text{IS}$ now becomes $\text{IS} = [1, 3, 5]$. In a similar manner, we process the following numbers of $A$ and obtain the final $\text{LIS}$ as $\text{IS} = [0, 4, 5, 7]$.
+> **Example**: $A = [2, 6, 3, 5, 1, 0, 4, 7]$. We start from the left and build the increasing sequence, $\text{IS}$. The first two numbers are in increasing order, so we have $\text{IS} = [2, 6]$. Since $3 < 6$, we insert 3 in its correct position of $\text{IS}$ and remove the number just right of it. Hence $\text{IS}$ now becomes $\text{IS} = [2, 3]$. Now $\text{IS}$ grows to become $\text{IS} = [2, 3, 5$. Since the next number $1 < 5$, we insert 1 in its correct position of $\text{IS}$ and remove the number right of it. So $\text{IS}$ now becomes $\text{IS} = [1, 3, 5]$. In a similar manner, we process the following numbers of $A$ and obtain the final $\text{LIS}$ as $\text{IS} = [0, 3, 4, 7]$.
 
 [Dynamic Programming](./dp.md)
 
