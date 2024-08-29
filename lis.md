@@ -80,9 +80,25 @@ def lis(A):
 
 Following greedy approach yields an  $O(n \log n)$ runtime.
 
-Starting from the left end of the given sequence of numbers, we build an increasing sequence, $\text{IS}$. When we encounter a number $A[i] < A[i-1]$, we insert $A[i]$ in its correct position of $\text{IS}$ while removing the number right of its new position. 
+Starting from the left end of the given sequence of numbers, we build an increasing sequence, $\text{IS}$. When we encounter a number $A[i] < A[i-1]$, we insert $A[i]$ in its correct position of $\text{IS}$ while removing the number right of its new position. This can be done using a binary search on $\text{IS}$.
 
 > **Example**: $A = [2, 6, 3, 5, 1, 0, 4, 7]$. We start from the left and build the increasing sequence, $\text{IS}$. The first two numbers are in increasing order, so we have $\text{IS} = [2, 6]$. Since $3 < 6$, we insert 3 in its correct position of $\text{IS}$ and remove the number just right of it. Hence $\text{IS}$ now becomes $\text{IS} = [2, 3]$. Now $\text{IS}$ grows to become $\text{IS} = [2, 3, 5$. Since the next number $1 < 5$, we insert 1 in its correct position of $\text{IS}$ and remove the number right of it. So $\text{IS}$ now becomes $\text{IS} = [1, 3, 5]$. In a similar manner, we process the following numbers of $A$ and obtain the final $\text{LIS}$ as $\text{IS} = [0, 3, 4, 7]$.
+
+The following function $\text{\tt bisect\_left()}$ does a binary search on $\text{IS}$ to insert the number $A[i]$, whenever $A[i] < A[i-1]$.
+
+```
+def bisect_left(self, A, x):
+    '''returns i where all A[:i] is less than x'''
+    left = 0
+    right = len(A)
+    while left < right:
+        mid = left + (right - left)//2
+        if A[mid] < x:
+            left = mid + 1
+        else:
+            right = mid
+    return left
+```
 
 [Dynamic Programming](./dp.md)
 
