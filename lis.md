@@ -54,6 +54,8 @@ def lis(A):
 
 **Runtime** The total number of times the "if" statement gets executed is $1 + 2 + \cdots + n = n(n+1)/2$. Therefore, the runtime of the dynamic programming solution is $O(n^2)$. 
 
+**Space** $O(n)$.
+
 In the above discussion, we found the length of the $\text{LIS}$. How do we find the actual longest increasing subsequence itself?
 
 Having found the $\text{DP}$ array, which stores the longest increasing subsequence for every sequence ending in index $i$, we can modify the above function to return the actual $\text{LIS}$ itself. We start from the largest value of the subsequence and backtrack to find the $\text{LIS}$. Note the following function returns just one of the possibly many $\text{LIS}$.
@@ -114,6 +116,8 @@ def lis_greedy(A):
 ```
 
 **Runtime** The helper function, `bisect_left()` is called $n$ times. The argument to `bisect_left()` is the LIS being formed, which can have at most $n$ elements. Given that `bisect_left()` effectively does a binary search, its runtime is $\log n$. Therefore, the overall complexity of the greedy solution is $n \log n$. 
+
+**Space** $O(n)$.
 
 The advantage of the above greedy solution comparing to the dynamic programming solution discussed earlier is that the greedy approach is able to return the actual LIS in a single pass.
 
