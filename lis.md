@@ -84,11 +84,11 @@ Starting from the left end of the given sequence of numbers, we build an increas
 
 > **Example**: $A = [2, 6, 3, 5, 1, 0, 4, 7]$. We start from the left and build the increasing sequence, $\text{IS}$. The first two numbers are in increasing order, so we have $\text{IS} = [2, 6]$. Since $3 < 6$, we insert 3 in its correct position of $\text{IS}$ and remove the number just right of it. Hence $\text{IS}$ now becomes $\text{IS} = [2, 3]$. Now $\text{IS}$ grows to become $\text{IS} = [2, 3, 5$. Since the next number $1 < 5$, we insert 1 in its correct position of $\text{IS}$ and remove the number right of it. So $\text{IS}$ now becomes $\text{IS} = [1, 3, 5]$. In a similar manner, we process the following numbers of $A$ and obtain the final $\text{LIS}$ as $\text{IS} = [0, 3, 4, 7]$.
 
-The following function $\text{\tt bisect\\_left()}$ does a binary search on $\text{IS}$ to insert the number $A[i]$, whenever $A[i] < A[i-1]$.
+The following helper function `bisect_left()` does a binary search on $\text{IS}$ to insert the number $A[i]$, whenever $A[i] < A[i-1]$.
 
 ```
-def bisect_left(self, A, x):
-    '''returns i where all A[:i] is less than x'''
+def bisect_left(A, n):
+    '''Returns the index i where all A[:i] is less than n'''
     left = 0
     right = len(A)
     while left < right:
@@ -98,6 +98,19 @@ def bisect_left(self, A, x):
         else:
             right = mid
     return left
+```
+Using the above helper function, we implement the greedy solution for LIS as follows:
+
+```
+def lis_greedy(A):
+    IS = []
+    for  a in A:
+        if len(IS) == 0 or IS[-1] < a:
+            IS.append(a)
+        else:
+            i = self.bisect_left(IS, a)  # Get the index of the first element >= a
+            IS[i] = a                    # Replace that number with a
+    return IS
 ```
 
 [Dynamic Programming](./dp.md)
