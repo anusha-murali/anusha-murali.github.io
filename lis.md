@@ -93,7 +93,7 @@ def bisect_left(A, n):
     right = len(A)
     while left < right:
         mid = left + (right - left)//2
-        if A[mid] < x:
+        if A[mid] < n:
             left = mid + 1
         else:
             right = mid
