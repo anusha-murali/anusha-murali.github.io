@@ -84,7 +84,7 @@ Starting from the left end of the given sequence of numbers, we build an increas
 
 > **Example**: $A = [2, 6, 3, 5, 1, 0, 4, 7]$. We start from the left and build the increasing sequence, $\text{IS}$. The first two numbers are in increasing order, so we have $\text{IS} = [2, 6]$. Since $3 < 6$, we insert 3 in its correct position of $\text{IS}$ and remove the number just right of it. Hence $\text{IS}$ now becomes $\text{IS} = [2, 3]$. Now $\text{IS}$ grows to become $\text{IS} = [2, 3, 5$. Since the next number $1 < 5$, we insert 1 in its correct position of $\text{IS}$ and remove the number right of it. So $\text{IS}$ now becomes $\text{IS} = [1, 3, 5]$. In a similar manner, we process the following numbers of $A$ and obtain the final $\text{LIS}$ as $\text{IS} = [0, 3, 4, 7]$.
 
-The following function $\text{\tt bisect\_left()}$ does a binary search on $\text{IS}$ to insert the number $A[i]$, whenever $A[i] < A[i-1]$.
+The following function $\text{\tt bisect\\_left()}$ does a binary search on $\text{IS}$ to insert the number $A[i]$, whenever $A[i] < A[i-1]$.
 
 ```
 def bisect_left(self, A, x):
