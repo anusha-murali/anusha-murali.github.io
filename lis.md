@@ -108,7 +108,7 @@ def lis_greedy(A):
         if len(IS) == 0 or IS[-1] < a:
             IS.append(a)
         else:
-            i = self.bisect_left(IS, a)  # Get the index of the first element >= a
+            i = bisect_left(IS, a)  # Get the index of the first element >= a
             IS[i] = a                    # Replace that number with a
     return IS
 ```
