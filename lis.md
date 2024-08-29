@@ -8,7 +8,7 @@ Given an array $A$ of $n$ numbers, find the longest, strictly increasing subsequ
 
 #### Dynamic Programming Solution
 
-Let $\text{DP}[i]$ be the length of the longest increasing subsequence that ends in $A[i]$.
+Let $\text{DP}[i]$ be the length of the longest increasing subsequence that **ends** in $A[i]$.
 
 For the above example array $A$, the DP array will be as follows:
 
