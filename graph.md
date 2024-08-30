@@ -10,7 +10,7 @@
 ## Bellman-Ford Algorithm
 
 
-[here](./README.md)
+[Table of Contents](./index.md)
 
 * * *
 ###### anusha-murali.github.io
