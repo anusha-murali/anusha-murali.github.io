@@ -4,9 +4,9 @@
 The Bellman-Ford algorithm allows us to find the shortest paths with arbitrary edge weights. We decrease $d[v]$ only when $d[v] > d[u] + length(u,v)$.
 ```
 def update (u,v):
-   if $d[v] > d[u] + length(u,v)$:
-      $d[v] = d[u] + length(u,v)$
-      $\pi[v] = u$
+   if d[v] > d[u] + length(u,v):
+      d[v] = d[u] + length(u,v)
+      prev[v] = u
 ```
 
 
