@@ -9,6 +9,9 @@
 
 ## 4. Bellman-Ford Algorithm
 
+Bellman-Ford algorithm is useful when the graph has negative lengths (of course, negative cycles are still not allowed).
+
+
 
 [Table of Contents](./index.md)
 
