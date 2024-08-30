@@ -4,7 +4,7 @@ title: Table of Contents
 **Table of Contents**
 
 1. [Fundamentals](./fundamentals.md)
-2. [Graph Algorithms](./graphs.md)
+2. [Graph Algorithms](./graph.md)
 3. [Greedy Algorithms](./greedy.md)
 4. [Dynamic Programming](./dp.md)
 5. [Divide and Combine](./dc.md)
