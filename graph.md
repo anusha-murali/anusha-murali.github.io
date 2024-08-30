@@ -1,13 +1,13 @@
 # Graph Algorithms
 
 
-## Depth First Search
+## 1. Depth First Search
 
-## Breadth First Search
+## 2. Breadth First Search
 
-## Dijkstra's Algorithm
+## 3. Dijkstra's Algorithm
 
-## Bellman-Ford Algorithm
+## 4. Bellman-Ford Algorithm
 
 
 [Table of Contents](./index.md)
