@@ -1,9 +1,9 @@
 # Graph Algorithms
 
 
-## DFS
+## Depth First Search
 
-## BFS
+## Breadth First Search
 
 ## Dijkstra's Algorithm
 
