@@ -2,10 +2,10 @@
 
 
 ```
-update (u,v)
-if $d[v] > d[u] + length(u,v)$:
-   $d[v] = d[u] + length(u,v)$
-   $\pi[v] = u$
+def update (u,v):
+   if $d[v] > d[u] + length(u,v)$:
+      $d[v] = d[u] + length(u,v)$
+      $\pi[v] = u$
 ```
 
 
