@@ -1,7 +1,13 @@
 # Graph Algorithms
 
 
-This is with modernist WORKING with TOC hmin = 1 and hmax = 2!!!
+## DFS
+
+## BFS
+
+## Dijkstra's Algorithm
+
+## Bellman-Ford Algorithm
 
 
 [here](./README.md)
