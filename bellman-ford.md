@@ -1,12 +1,12 @@
 
 # Bellman-Ford Algorithm
 
-The Bellman-Ford algorithm allows us to find the shortest paths with arbitrary edge weights. We decrease $d[v]$ only when $d[v] > d[u] + length(u,v)$.
+The Bellman-Ford algorithm allows us to find the shortest paths with arbitrary edge weights. We decrease $d[v]$ only when the current value of $d[v]$ is greater than  $d[u] + \text{length}(u,v)$.
 ```
 def update (u,v):
    if d[v] > d[u] + length(u,v):
       d[v] = d[u] + length(u,v)
-      prev[v] = u
+      prev[v] = u               # Remember the previous node
 ```
 
 
