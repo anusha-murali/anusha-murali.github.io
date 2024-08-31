@@ -6,6 +6,8 @@ The *adjacency matrix* for $G = (V, E)$ is an $n \times n$ matrix $A$, where the
 
 The *adjacency list* for $G = (V, E)$ contains $n = \|V\|$ number of adjacency lists, which can be represented by an array of size $n$. The adjacency list for a vertex $i$ (which corresponds to the $i$th index of the array) is a list of all the vertices adjacent to $i$ (in any order). Therefore, the total storage used by an adjacency list representation of a graph with n vertices and m edges is $O(n + m)$. However, the major disadvantage of adjacency list is that determining whether there is an edge from vertex $i$ to vertex $j$ may take as many as $n$ steps, since there is no systematic shortcut to scanning the adjacency list of vertex $i$. 
 
+There are two fundamental algorithms for searching a graph: *depth-first search* (DFS) and *breadth-first search* (BFS).
+
 ## 1. Depth First Search
 
 ## 2. Breadth First Search
