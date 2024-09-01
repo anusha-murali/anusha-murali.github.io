@@ -2,7 +2,7 @@
 
 DFS is a technique for exploring a graph using a stack as the basic data structure.
 
-We define a recursive helper procedure called `search()` first
+We first define a recursive helper procedure called `search()`.
 ```
 def search(v):
   explored(v) = 1
