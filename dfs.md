@@ -13,6 +13,18 @@ def search(v):
   post-visit(v)          # Pop v off stack
 ```
 
+We then define the actual DFS() as follows:
+```
+def DFS(G):
+  for vertex v in V:
+    explored(v) = 0
+  for vertex v in V:
+    if explored(v) == 0:
+      search(v)
+```
+By designing `pre-visit()` and `post-visit()` appropriately, we can use DFS to solve various important problems.
+
+**Run-time** Assuming both `pre-visit()` and `post-visit()` take $O(1)$ time, `DFS()` takes $O(\|V\| + \|E\|)$ time.
 
 [Table of Contents](./index.md)
 
