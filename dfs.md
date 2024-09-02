@@ -30,7 +30,13 @@ By designing `pre-visit()` and `post-visit()` appropriately, we can use DFS to s
 
 ## Applications of DFS: Topological Sort
 
-Given a directed graph $G = (V, E)$, whose vertices $V = \{v_1, \ldots, v_n\}$ represent tasks, and whose edges represent precedence constraints such that a directed edge from $u$ to $v$ indicates that task $u$ must be completed before $v$, the problem of topological sort is to find the order in which the tasks be scheduled.
+**Problem**: Given a directed graph $G = (V, E)$, whose vertices $V = \{v_1, \ldots, v_n\}$ represent tasks, and whose edges represent precedence constraints such that a directed edge from $u$ to $v$ indicates that task $u$ must be completed before $v$, the problem of topological sort is to find the order in which the tasks be scheduled.
+
+**Solution**: First run DFS on $G$ and then sort vertices based on descending post-order number.
+
+**Claim**: If the tasks are scheduled by decreasing postorder number, then all precedence constraints are satisfied.
+
+**Proof**: 
 
 One of the pre-conditions for topological sort is that that $G$ must be acyclic.
 
