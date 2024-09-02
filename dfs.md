@@ -26,6 +26,8 @@ By designing `pre-visit()` and `post-visit()` appropriately, we can use DFS to s
 
 **Run-time** Assuming both `pre-visit()` and `post-visit()` take $O(1)$ time, `DFS()` takes $O(\|V\| + \|E\|)$ time.
 
+**Pre-order and Post-order Numbers** If we think of DFS as using an explicit stack, then the pre-order number is assigned when the vertex is first placed on the stack, and the post-order number is assigned when the vertex is removed from the stack.
+
 [Table of Contents](./index.md)
 
 * * *
