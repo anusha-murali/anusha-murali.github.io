@@ -32,11 +32,11 @@ By designing `pre-visit()` and `post-visit()` appropriately, we can use DFS to s
 
 **Problem**: Given a directed graph $G = (V, E)$, whose vertices $V = \{v_1, \ldots, v_n\}$ represent tasks, and whose edges represent precedence constraints such that a directed edge from $u$ to $v$ indicates that task $u$ must be completed before $v$, the problem of topological sort is to find the order in which the tasks be scheduled.
 
-**Solution**: First run DFS on $G$ and then sort vertices based on descending post-order number.
+**Solution**: First run DFS on $G$ and then sort vertices based on descending post-order numbers.
 
 **Claim**: If the tasks are scheduled by decreasing postorder number, then all precedence constraints are satisfied.
 
-**Proof**: 
+**Proof**: If $(u, v) \in E$, then postorder$(u) >$ postorder$(v)$. Therefore, if we process the tasks in decreasing order of postorder numbers, when task $v$ is processed, all tasks with precedence constraints into $v$ (and therefore higher postorde numbers) must already have been processed.
 
 One of the pre-conditions for topological sort is that that $G$ must be acyclic.
 
