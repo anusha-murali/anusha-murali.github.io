@@ -48,6 +48,7 @@ Call two vertices $u$ and $v$ of a directed graph $G = (V, E)$ *connected* if th
   <img width="990" alt="scc" src="https://github.com/user-attachments/assets/4507efdb-1e67-4592-b6bb-999e559a84fb">
 </p>
 
+There are two SCC's in the directed graph on the left above. By shrinking each SCC into a (super) vertex, drawing an (super) edge between the SCC, as shown on the right above, we obtain a DAG.
 
 [Table of Contents](./index.md)
 
