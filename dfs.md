@@ -36,7 +36,7 @@ By designing `pre-visit()` and `post-visit()` appropriately, we can use DFS to s
 
 **Claim**: If the tasks are scheduled by decreasing postorder number, then all precedence constraints are satisfied.
 
-**Proof**: If $(u, v) \in E$, then postorder$(u) >$ postorder$(v)$. Therefore, if we process the tasks in decreasing order of postorder numbers, when task $v$ is processed, all tasks with precedence constraints into $v$ (and therefore higher postorde numbers) must already have been processed.
+**Proof**: If $(u, v) \in E$, then postorder$(u) >$ postorder$(v)$. Therefore, if we process the tasks in decreasing order of postorder numbers, when task $v$ is processed, all tasks with precedence constraints into $v$ (and therefore higher postorder numbers) must already have been processed.
 
 One of the pre-conditions for topological sort is that that $G$ must be acyclic.
 
