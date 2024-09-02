@@ -44,6 +44,8 @@ One of the pre-conditions for topological sort is that that $G$ must be acyclic 
 
 ### 2. Finding Stongly Connected Components (SCC)
 
+Call two vertices $u$ and $v$ of a directed graph $G = (V, E)$ *connected* if there is a path from $u$ to $v$, and one from $v$ to $u$. Within a strongly connected component, every pair of vertices are connected.
+
 [Table of Contents](./index.md)
 
 * * *
