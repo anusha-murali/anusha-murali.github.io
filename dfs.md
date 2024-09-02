@@ -51,14 +51,13 @@ Call two vertices $u$ and $v$ of a directed graph $G = (V, E)$ *connected* if th
 ```
 
 
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-    B-->C;
-```
+#```mermaid
+#graph LR;
+#    A-->B;
+#    A-->C;
+#    B-->D;
+#    C-->D;
+#```
 
 
 [Table of Contents](./index.md)
