@@ -28,6 +28,14 @@ By designing `pre-visit()` and `post-visit()` appropriately, we can use DFS to s
 
 **Pre-order and Post-order Numbers** If we think of DFS as using an explicit stack, then the pre-order number is assigned when the vertex is first placed on the stack, and the post-order number is assigned when the vertex is removed from the stack.
 
+## Applications of DFS: Topological Sort
+
+Given a directed graph $G = (V, E)$, whose vertices $V = \{v_1, \ldots, v_n\}$ represent tasks, and whose edges represent precedence constraints such that a directed edge from $u$ to $v$ indicates that task $u$ must be completed before $v$, the problem of topological sort is to find the order in which the tasks be scheduled.
+
+One of the pre-conditions for topological sort is that that $G$ must be acyclic.
+
+
+
 [Table of Contents](./index.md)
 
 * * *
