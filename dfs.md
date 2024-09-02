@@ -45,7 +45,7 @@ One of the pre-conditions for topological sort is that that $G$ must be acyclic 
 Call two vertices $u$ and $v$ of a directed graph $G = (V, E)$ *connected* if there is a path from $u$ to $v$, and one from $v$ to $u$. Within a strongly connected component, every pair of vertices are connected.
 
 <p align="center">
-  <img width="1083" alt="scc" src="https://github.com/user-attachments/assets/b40c0b5a-2619-40ca-af93-ba056e24086d">
+  <img width="990" alt="scc" src="https://github.com/user-attachments/assets/4507efdb-1e67-4592-b6bb-999e559a84fb">
 </p>
 
 
