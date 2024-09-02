@@ -10,6 +10,8 @@ There are two fundamental algorithms for searching a graph: *depth-first search*
 
 ## 1. Depth First Search
 
+[Depth First Search](./dfs.md)
+
 ## 2. Breadth First Search
 
 ## 3. Dijkstra's Algorithm
