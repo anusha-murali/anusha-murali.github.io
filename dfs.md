@@ -50,6 +50,9 @@ Call two vertices $u$ and $v$ of a directed graph $G = (V, E)$ *connected* if th
 
 There are two SCC's in the directed graph on the left above. By shrinking each SCC into a (super) vertex, drawing an (super) edge between the SCC, as shown on the right above, we obtain a DAG.
 
+This important decomposition allows one to think of connectivity information of a directed graph in two levels. At the top level we have a DAG, which has a useful, simple structure. A DAG is guaranteed to have at least one source (a vertex without incoming edges) and a sink (a vertex without outgoing edges). If we want more details, we could look inside a vertex of the DAG to see the full-fledged SCC — a completely connected graph — that lies there.
+
+
 [Table of Contents](./index.md)
 
 * * *
