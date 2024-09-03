@@ -45,8 +45,7 @@ One of the pre-conditions for topological sort is that that $G$ must be acyclic 
 Call two vertices $u$ and $v$ of a directed graph $G = (V, E)$ *connected* if there is a path from $u$ to $v$, and one from $v$ to $u$. Within a strongly connected component, every pair of vertices are connected.
 
 <p align="center">
-  <img width="985" alt="scc" src="https://github.com/user-attachments/assets/a7e047ba-3fbd-4988-b36e-ef760219d01e">
-</p>
+  <img width="985" alt="scc" src="https://github.com/user-attachments/assets/a7e047ba-3fbd-4988-b36e-ef760219d01e"> </p>
 
 There are two SCC's in the directed graph on the left above. By shrinking each SCC into a (super) vertex, drawing an (super) edge between the SCC, as shown on the right above, we obtain a DAG.
 
