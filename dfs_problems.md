@@ -11,7 +11,7 @@
 
    Then we run DFS on $G^R$ and enumerate the vertices in **decreasing postorder** number:
    
-<img width="360" alt="scc_problem1_c" src="https://github.com/user-attachments/assets/1ffaf47b-1762-41dc-955c-8256f5743d38">
+   <img width="360" alt="scc_problem1_c" src="https://github.com/user-attachments/assets/1ffaf47b-1762-41dc-955c-8256f5743d38">
 
 The postorder numbers of DFS on $G^R$ are shown in red. Therefore, the vertices in decreasing postorder number are:
 
@@ -19,10 +19,20 @@ $$
 B, G, C, A, D, H, E, F.
 $$
    
+Now, run DFS on the original graph $G$ in the order of the above decreasing postorder numbers. We first start from vertex $B$ and get stuck after traversing $B, G,$ and $C$. So, $DFS(B) = \{B, G, C\}$.
 
-3. asdfasasd
-4. asdfdfass
-5. 
+Now we start DFS on $A$ and find $DFS(A) = \{A\}$.
+
+Then we start DFS on $D$ and find $DFS(D) = \{D, H, E\}$.
+
+Finally, we start DFS on $F$ and find $DFS(F) = \{F\}$.
+
+Therefore, there are 4 SCCs in the given graph $G$, namely $(B, G, C), (A), (D, H, E),$ and $(F)$.
+
+
+
+3. Problem 2
+
 
 
 [here](./README.md)
