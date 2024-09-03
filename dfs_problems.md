@@ -35,7 +35,7 @@ Therefore, there are 4 SCCs in the given graph $G$, namely $(B, G, C), (A), (D, 
 
 
 
-[here](./README.md)
+[Back to DFS](./dfs.md)
 
 * * *
 ###### anusha-murali.github.io
