@@ -29,6 +29,7 @@ Finally, we start DFS on $F$ and find $DFS(F) = \{F\}$.
 
 Therefore, there are 4 SCCs in the given graph $G$, namely $(B, G, C), (A), (D, H, E),$ and $(F)$.
 
+<img width="370" alt="scc_problem1_d" src="https://github.com/user-attachments/assets/b08196b8-fbbf-4706-9b40-38d5863112b0">
 
 
 3. Problem 2
