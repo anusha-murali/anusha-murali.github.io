@@ -56,6 +56,12 @@ The decomposition of an arbitrary directed graph into SCC's is extremely useful 
 
 ### Kosaraju's Algorithm
 
+Kosaraju's algorithm finds all the SCC's in a graph in linear time. This simple algorithm involves the following two steps:
+
+
+1. Perform DFS on $G^R$.
+2. Perform DFS on $G$, processing unsearched vertices in the order of decreasing postorder numbers from the DFS on Step 1 above. At the beginning and every restart, print "New SCC:". When visiting vertex $v$, print $v$.
+
 
 [Table of Contents](./index.md)
 
