@@ -63,8 +63,7 @@ Kosaraju's algorithm finds all the SCC's in a graph in linear time. This simple 
 
 > **Example**: Find all the strongly connected components in the following graph.
 > <p align="center">
-  <img width="300" alt="scc2" src="https://github.com/user-attachments/assets/6b574f2f-060f-4449-9ce7-7aba139175b1">
-</p>
+  <img width="300" alt="scc2" src="https://github.com/user-attachments/assets/6b574f2f-060f-4449-9ce7-7aba139175b1"> </p>
 
 **Step 1**: Perform DFS on $G^R$
 
