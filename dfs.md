@@ -87,7 +87,7 @@ New SCC: $A, B, C, D$.
 
 Therefore, the SCC's of $G$ are (1) $\{E, F, G\}$ and (2) $\{A, B, C, D\}$.
 
-##[DFS Problems](./dfs_problems.md)
+[DFS Problems](./dfs_problems.md)
 
 [Table of Contents](./index.md)
 
