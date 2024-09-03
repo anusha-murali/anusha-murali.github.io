@@ -1,7 +1,12 @@
-# Master Theorem
+# Problems on DFS
 
 
-This is with modernist WORKING with TOC hmin = 1 and hmax = 2!!!
+1. Find all SCC's in the following graph.
+
+   <img width="434" alt="scc_problem1" src="https://github.com/user-attachments/assets/74590a7e-c9fa-4c3f-bfa1-a4affe8e11cf">
+2. asdfasasd
+3. asdfdfass
+4. 
 
 
 [here](./README.md)
