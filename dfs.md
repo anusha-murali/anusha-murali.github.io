@@ -80,6 +80,7 @@ $$
 **Step 2**: Perform DFS on $G$, processing unsearched vertices in the order of decreasing postorder numbers from Step 1:
 
 New SCC: $E, G, F$
+
 New SCC: $A, B, C, D$.
 
 [Table of Contents](./index.md)
