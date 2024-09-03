@@ -67,6 +67,17 @@ Kosaraju's algorithm finds all the SCC's in a graph in linear time. This simple 
   <img width="300" alt="scc2" src="https://github.com/user-attachments/assets/6b574f2f-060f-4449-9ce7-7aba139175b1">
 </p>
 
+**Step 1** Perform DFS on $G^R$
+
+<p align="center">
+  <img width="300" alt="scc3" src="https://github.com/user-attachments/assets/99c38018-38c6-44fc-b647-8a2fe4affdef">
+</p>
+The pair of numbers next to each vertex indicates the preorder and postorder numbers. Therefore, enumerating the vertices in decreasing postorder numbers, we obtain the following:
+
+$$
+E, F, G, A, D, C, B.
+$$
+
 
 [Table of Contents](./index.md)
 
