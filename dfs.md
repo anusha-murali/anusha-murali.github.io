@@ -33,8 +33,7 @@ By designing `pre-visit()` and `post-visit()` appropriately, we can use DFS to s
 **Problem**: Given a directed graph $G = (V, E)$, whose vertices $V = \{v_1, \ldots, v_n\}$ represent tasks, and whose edges represent precedence constraints such that a directed edge from $u$ to $v$ indicates that task $u$ must be completed before $v$, the problem of topological sort is to find the order in which the tasks be scheduled.
 
 > **Example**: In what order the ingredients should be added to make pomegranate ice cream?
-> <p align="center">
- ![Pomegranate_Ice_Cream](https://github.com/user-attachments/assets/18e6fb3d-d282-47e8-bbf9-699a4ad15bb0) </p>
+> <p align="center"><img width="592" alt="Pomegranate_Ice_Cream" src="https://github.com/user-attachments/assets/20765bed-28d2-41f3-9627-609181c10676"></p>
 
 **Solution**: First run DFS on $G$ and then sort vertices based on descending post-order numbers.
 
