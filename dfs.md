@@ -77,6 +77,7 @@ $$
 E, F, G, A, D, C, B.
 $$
 
+**Step 2**: Perform DFS on $G$, processing unsearched vertices in the order of decreasing postorder numbers from Step 1:
 
 [Table of Contents](./index.md)
 
