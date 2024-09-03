@@ -62,6 +62,11 @@ Kosaraju's algorithm finds all the SCC's in a graph in linear time. This simple 
 1. Perform DFS on $G^R$.
 2. Perform DFS on $G$, processing unsearched vertices in the order of decreasing postorder numbers from the DFS on Step 1 above. At the beginning and every restart, print "New SCC:". When visiting vertex $v$, print $v$.
 
+> **Example**: Find all the strongly connected components in the following graph.
+<p align="center">
+  <img width="428" alt="scc2" src="https://github.com/user-attachments/assets/6b574f2f-060f-4449-9ce7-7aba139175b1">
+</p>
+
 
 [Table of Contents](./index.md)
 
