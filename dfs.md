@@ -82,7 +82,7 @@ New SCC: $E, G, F$
 
 New SCC: $A, B, C, D$.
 
-Therefore, the SCC's of $G$ are (1) $\{E, F, G\}$ and $\{A, B, C, D\}$.
+Therefore, the SCC's of $G$ are (1) $\{E, F, G\}$ and (2) $\{A, B, C, D\}$.
 
 [Table of Contents](./index.md)
 
