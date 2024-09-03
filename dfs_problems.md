@@ -3,7 +3,7 @@
 
 1. Find all SCC's in the following graph.
 
-   <img width="334" alt="scc_problem1" src="https://github.com/user-attachments/assets/74590a7e-c9fa-4c3f-bfa1-a4affe8e11cf">
+   <img width="300" alt="scc_problem1" src="https://github.com/user-attachments/assets/74590a7e-c9fa-4c3f-bfa1-a4affe8e11cf">
 
    We first find $G^R$ by reversing the direction of all the edges in $G$:
 
