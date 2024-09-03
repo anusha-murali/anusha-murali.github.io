@@ -7,7 +7,7 @@
 
    We first find $G^R$ by reversing the direction of all the edges in $G$.
 
-   <img width="670" alt="scc_problem1_b" src="https://github.com/user-attachments/assets/f41adc33-ca0b-416e-8399-e2e03632f0b9">
+   <img width="710" alt="scc_problem1_b" src="https://github.com/user-attachments/assets/f41adc33-ca0b-416e-8399-e2e03632f0b9">
 
 3. asdfasasd
 4. asdfdfass
