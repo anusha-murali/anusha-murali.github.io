@@ -13,6 +13,11 @@
    
 <img width="360" alt="scc_problem1_c" src="https://github.com/user-attachments/assets/1ffaf47b-1762-41dc-955c-8256f5743d38">
 
+The postorder numbers of DFS on $G^R$ are shown in red. Therefore, the vertices in decreasing postorder number are:
+
+$$
+B, G, C, A, D, H, E, F.
+$$
    
 
 3. asdfasasd
