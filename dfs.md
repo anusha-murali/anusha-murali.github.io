@@ -88,7 +88,9 @@ dfs(G, vList, explored) # Run DFS
 printStack(stack)       # Print out the post-order vists
 ```
 
-The preorder and postorder numbers are shown next to each vertices in the diagram below:
+The call to `printStack()` above prints out the DFS in postorder as: $A, D, C, E, B$. 
+
+The preorder and postorder numbers of the above DFS traversal are shown next to each vertices in the diagram below:
 
 <img width="320" alt="dfs_2" src="https://github.com/user-attachments/assets/bc2718f5-2e41-4d12-906f-0b2aee624442">
 
