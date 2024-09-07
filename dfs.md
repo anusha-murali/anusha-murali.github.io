@@ -40,7 +40,22 @@ def search(G, v, explored):
             search(G, neighbor, explored)
     stack.append(v)
 ```
+The main call to `dfs()` assumes that the vertices of $G$ are found in a list, `vList`.
 
+```
+def dfs(G, vList, explored):
+    for v in vList:
+        if v not in explored:
+            search(G, v, explored)
+```
+
+We represent the graph, $G$, as a dictionary, in which a key denotes a vertex and its corresponding value represents its immediate neighbors. The following function `addEdge()` adds an edge to $G$.
+
+```
+def addEdge(G, u, v):
+    G[u].append(v)
+```
+    
 ## Applications of DFS: Topological Sort
 
 **Problem**: Given a directed graph $G = (V, E)$, whose vertices $V = \{v_1, \ldots, v_n\}$ represent tasks, and whose edges represent precedence constraints such that a directed edge from $u$ to $v$ indicates that task $u$ must be completed before $v$, the problem of topological sort is to find the order in which the tasks be scheduled.
