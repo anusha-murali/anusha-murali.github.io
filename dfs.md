@@ -2,7 +2,7 @@
 
 DFS is a technique for exploring a graph using a stack as the basic data structure.
 
-We first define a recursive helper procedure called `search()`.
+We first define a recursive helper procedure called `search()`. 
 ```
 def search(v):
   explored(v) = 1
@@ -27,6 +27,10 @@ By designing `pre-visit()` and `post-visit()` appropriately, we can use DFS to s
 **Run-time** Assuming both `pre-visit()` and `post-visit()` take $O(1)$ time, `DFS()` takes $O(\|V\| + \|E\|)$ time.
 
 **Pre-order and Post-order Numbers** If we think of DFS as using an explicit stack, then the pre-order number is assigned when the vertex is first placed on the stack, and the post-order number is assigned when the vertex is removed from the stack.
+
+Following is an example in Python, which prints out DFS in post-order number:
+
+Whenever we visit a vertex for the first time, we add it to a set called `explored`. 
 
 ## Applications of DFS: Topological Sort
 
