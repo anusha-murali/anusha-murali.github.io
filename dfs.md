@@ -154,6 +154,17 @@ New SCC: $A, B, C, D$.
 
 Therefore, the SCC's of $G$ are (1) $\{E, F, G\}$ and (2) $\{A, B, C, D\}$.
 
+We can verify the above results using the Python code that we wrote earlier. All what we need in addition is a function to reverse the edges of the original graph $G$. The function `transpose()` below returns $G_R$, which represents $G$ with its edges reversed.
+
+```
+def transpose(G):
+    G_R = defaultdict(list)
+    for u in G.keys():
+        for v in G[u]:
+            addEdge(G_R, v, u)
+    return G_R
+```
+
 [DFS Problems](./dfs_problems.md)
 
 [Table of Contents](./index.md)
