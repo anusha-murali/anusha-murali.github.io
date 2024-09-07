@@ -197,6 +197,27 @@ while len(stack) > 0:
     vList.append(stack.pop())
 ```
 
+In order to print each SCC on a new line, we make the following minor modification to our  `dfs()` function as follows:
+
+```
+def dfs2(G, vList, explored):
+    for v in vList:
+        if v not in explored:
+            stack.append('\nNew SCC: ', end='')
+            search(G, v, explored)
+```
+
+Following is the rest of the Python code:
+
+```
+## Now run DFS on G using the new vList created on G_R above
+## Run DFS on G
+# Initialize stack and explored
+stack = []                # stack is represented as a list
+explored = set()          # explored is a set containing visited vertices
+dfs2(G, vList, explored) # Run DFS on G_R
+printStack(stack)         # Print out the post-order vists
+```
 
 [DFS Problems](./dfs_problems.md)
 
