@@ -28,7 +28,7 @@ By designing `pre-visit()` and `post-visit()` appropriately, we can use DFS to s
 
 **Pre-order and Post-order Numbers** If we think of DFS as using an explicit stack, then the pre-order number is assigned when the vertex is first placed on the stack, and the post-order number is assigned when the vertex is removed from the stack.
 
-Following is an example in Python, which prints out DFS in post-order number:
+Following is an example in Python, which prints out DFS in decreasing post-order number:
 
 Whenever we visit a vertex for the first time, we add it to a set called `explored`. 
 
