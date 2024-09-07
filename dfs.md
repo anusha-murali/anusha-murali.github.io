@@ -190,6 +190,11 @@ stack = []                # stack is represented as a list
 explored = set()          # explored is a set containing visited vertices
 dfs(G_R, vList, explored) # Run DFS on G_R
 printStack(stack)         # Print out the post-order vists
+
+## Create a new vList using the postorder DFS traversal on G_R above
+vList = []
+while len(stack) > 0:
+    vList.append(stack.pop())
 ```
 
 
