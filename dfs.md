@@ -30,7 +30,16 @@ By designing `pre-visit()` and `post-visit()` appropriately, we can use DFS to s
 
 Following is an example in Python, which prints out DFS in decreasing post-order number:
 
-Whenever we visit a vertex for the first time, we add it to a set called `explored`. 
+Whenever we visit a vertex for the first time, we add it to a set called `explored`. When we return to the vertex, after visiting all of its neighbors recursively, we push it to a stack. The position of the vertex in the stack tells us its post-order number.
+
+```
+def search(G, v, explored):
+    explored.add(v)
+    for neighbor in G[v]:
+        if neighbor not in explored:
+            search(G, neighbor, explored)
+    stack.append(v)
+```
 
 ## Applications of DFS: Topological Sort
 
