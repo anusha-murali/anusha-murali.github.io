@@ -67,7 +67,8 @@ def printStack(stack):
 Let us use the above function to run DFS on the following example:
 
 >Example: Run DFS on the following graph and print out the order in which the vertices are visited in postorder.
-><img width="398" alt="dfs_1" src="https://github.com/user-attachments/assets/be33e775-668a-4eda-8956-11de1f81e5e4">
+>
+><img width="250" alt="dfs_1" src="https://github.com/user-attachments/assets/be33e775-668a-4eda-8956-11de1f81e5e4">
 >
 
 ```
