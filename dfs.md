@@ -55,7 +55,17 @@ We represent the graph, $G$, as a dictionary, in which a key denotes a vertex an
 def addEdge(G, u, v):
     G[u].append(v)
 ```
-    
+
+The following function, `printStack()` prints the stack from top to bottom, which prints the DFS visit:
+
+```
+def printStack(stack):
+  while len(stack) > 0:
+      print(stack.pop(), end=' ')
+```
+
+
+
 ## Applications of DFS: Topological Sort
 
 **Problem**: Given a directed graph $G = (V, E)$, whose vertices $V = \{v_1, \ldots, v_n\}$ represent tasks, and whose edges represent precedence constraints such that a directed edge from $u$ to $v$ indicates that task $u$ must be completed before $v$, the problem of topological sort is to find the order in which the tasks be scheduled.
