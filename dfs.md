@@ -189,7 +189,6 @@ G_R = transpose(G)
 stack = []                # stack is represented as a list
 explored = set()          # explored is a set containing visited vertices
 dfs(G_R, vList, explored) # Run DFS on G_R
-printStack(stack)         # Print out the post-order vists
 
 ## Create a new vList using the postorder DFS traversal on G_R above
 vList = []
@@ -203,8 +202,8 @@ In order to print each SCC on a new line, we make the following minor modificati
 def dfs2(G, vList, explored):
     for v in vList:
         if v not in explored:
-            stack.append('\nNew SCC: ', end='')
             search(G, v, explored)
+            stack.append("\nNew SCC: ")
 ```
 
 Following is the rest of the Python code:
