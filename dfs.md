@@ -165,6 +165,34 @@ def transpose(G):
     return G_R
 ```
 
+Following is the complete Python code:
+
+```
+from collections import defaultdict
+# Create graph G
+vList = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
+G = defaultdict(list)
+addEdge(G, 'A', 'B')
+addEdge(G, 'B', 'C')
+addEdge(G, 'C', 'D')
+addEdge(G, 'D', 'A')
+addEdge(G, 'C', 'E')
+addEdge(G, 'E', 'G')
+addEdge(G, 'G', 'F')
+addEdge(G, 'F', 'E')
+
+# Reverse the edges of G
+G_R = transpose(G)
+
+## Run DFS on G_R
+# Initialize stack and explored
+stack = []                # stack is represented as a list
+explored = set()          # explored is a set containing visited vertices
+dfs(G_R, vList, explored) # Run DFS on G_R
+printStack(stack)         # Print out the post-order vists
+```
+
+
 [DFS Problems](./dfs_problems.md)
 
 [Table of Contents](./index.md)
