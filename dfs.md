@@ -28,7 +28,7 @@ By designing `pre-visit()` and `post-visit()` appropriately, we can use DFS to s
 
 **Pre-order and Post-order Numbers** If we think of DFS as using an explicit stack, then the pre-order number is assigned when the vertex is first placed on the stack, and the post-order number is assigned when the vertex is removed from the stack.
 
-Following is an example in Python, which prints out DFS in decreasing post-order number:
+Following is a minimalistic and fully-functional code in Python, which prints out DFS in decreasing post-order number:
 
 Whenever we visit a vertex for the first time, we add it to a set called `explored`. When we return to the vertex, after visiting all of its neighbors recursively, we push it to a stack. The position of the vertex in the stack tells us its post-order number.
 
@@ -64,6 +64,27 @@ def printStack(stack):
       print(stack.pop(), end=' ')
 ```
 
+Let us use the above function to run DFS on the following example:
+
+>Example: Run DFS on the following graph and print out the order in which the vertices are visited in postorder.
+>
+
+```
+from collections import defaultdict
+# Create graph G
+vList = ['A', 'B', 'C', 'D', 'E']
+G = defaultdict(list)
+addEdge(G, 'A', 'B')
+addEdge(G, 'A', 'C')
+addEdge(G, 'A', 'D')
+addEdge(G, 'C', 'E')
+
+# Initialize stack and explored
+stack = []              # stack is represented as a list
+explored = set()        # explored is a set containing visited vertices
+dfs(G, vList, explored) # Run DFS
+printStack(stack)       # Print out the post-order vists
+```
 
 
 ## Applications of DFS: Topological Sort
