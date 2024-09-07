@@ -68,7 +68,7 @@ Let us use the above function to run DFS on the following example:
 
 >Example: Run DFS on the following graph and print out the order in which the vertices are visited in postorder.
 >
-><img width="250" alt="dfs_1" src="https://github.com/user-attachments/assets/be33e775-668a-4eda-8956-11de1f81e5e4">
+><img width="220" alt="dfs_1" src="https://github.com/user-attachments/assets/be33e775-668a-4eda-8956-11de1f81e5e4">
 >
 
 ```
@@ -92,7 +92,7 @@ The call to `printStack()` above prints out the DFS in postorder as: $A, D, C, E
 
 The preorder and postorder numbers of the above DFS traversal are shown next to each vertices in the diagram below:
 
-<img width="320" alt="dfs_2" src="https://github.com/user-attachments/assets/bc2718f5-2e41-4d12-906f-0b2aee624442">
+<img width="280" alt="dfs_2" src="https://github.com/user-attachments/assets/bc2718f5-2e41-4d12-906f-0b2aee624442">
 
 
 
