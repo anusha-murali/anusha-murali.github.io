@@ -64,7 +64,7 @@ def printStack(stack):
       print(stack.pop(), end=' ')
 ```
 
-Let us use the above function to run DFS on the following example:
+Let us use the above functions to run DFS on the following example:
 
 >Example: Run DFS on the following graph and print out the order in which the vertices are visited in postorder.
 >
