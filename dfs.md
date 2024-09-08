@@ -240,6 +240,17 @@ def cycle_detected(G, v, explored):
     return False
 ```
 
+We now moidfy the function `dfs()` to immediately return `True` if `cycle_detected()` found a cycle. Otherwise, it will continue the DFS traversal until it terminates.
+
+```
+def dfs(G, vList, explored):
+    for v in vList:
+        if v not in explored:
+            if cycle_detected(G, v, explored):
+                return True
+    return False
+```
+
 [DFS Problems](./dfs_problems.md)
 
 [Table of Contents](./index.md)
