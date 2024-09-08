@@ -222,7 +222,7 @@ printStack(stack)         # Print out the post-order vists
 
 ## Applications of DFS: Detecting Cycles
 
-Run DFS on the graph until it finds a back edge or terminates without finding one.
+Run DFS on the graph until it finds a back edge or terminates without finding one. How do we find if there is a back-edge during DFS?
 
 Following Python code implements cycle detection using DFS. 
 
