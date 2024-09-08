@@ -1,7 +1,7 @@
 # Breadth First Search
 
 
-This is with modernist WORKING with TOC hmin = 1 and hmax = 2!!!
+BFS is a technique for exploring a graph using a queue as the basic data structure.
 
 
 [here](./README.md)
