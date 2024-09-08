@@ -226,30 +226,7 @@ Run DFS on the graph until it finds a back edge or terminates without finding on
 
 Following Python code implements cycle detection using DFS. 
 
-When we are currently at a given vertex and found one of its neighbors already in the stack, we have found a cycle. So, let us modify our original `search()` function as follows. We call the modified function `cycle_detected()`. It returns a boolean indicating whether a cycle was found or not.
 
-```
-def cycle_detected(G, v, explored):
-    explored.add(v)
-    for neighbor in G[v]:
-        if neighbor in stack:
-            return True
-        if neighbor not in explored:
-            cycle_detected(G, neighbor, explored)
-    stack.append(v)
-    return False
-```
-
-We now moidfy the function `dfs()` to immediately return `True` if `cycle_detected()` found a cycle. Otherwise, it will continue the DFS traversal until it terminates.
-
-```
-def dfs(G, vList, explored):
-    for v in vList:
-        if v not in explored:
-            if cycle_detected(G, v, explored):
-                return True
-    return False
-```
 
 [DFS Problems](./dfs_problems.md)
 
