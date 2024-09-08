@@ -220,6 +220,9 @@ dfs2(G, vList, explored) # Run DFS on G_R
 printStack(stack)         # Print out the post-order vists
 ```
 
+## Applications of DFS: Detecting Cycles
+
+Run DFS on the graph until it finds a back edge or terminates without finding one.
 
 [DFS Problems](./dfs_problems.md)
 
