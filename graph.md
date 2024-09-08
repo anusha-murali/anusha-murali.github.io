@@ -20,6 +20,8 @@ BFS is a simple alternate to the DFS strategy to exploring a graph. BFS first "e
 
 If each edge has unit length, then the number of hops equals the distance of a vertex from the source vertex. Therefore, we can use BFS to solve the shortest path problem.
 
+[Breadth First Search](./bfs.md)
+
 ## 3. Dijkstra's Algorithm
 
 ## 4. Bellman-Ford Algorithm
