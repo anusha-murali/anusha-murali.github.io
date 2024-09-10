@@ -224,9 +224,9 @@ printStack(stack)         # Print out the post-order vists
 
 Run DFS on the graph until it finds a back edge or terminates without finding one. 
 
-How do we find if there is a back-edge during DFS?
+**How do we find if there is a back-edge during DFS?** 
 
-During DFS traversal, let us add vertices to the stack during postvisit. Therefore, during DFS of the above graph, we first add $C$, then add $B$ and finally add $A$ to the stack. The 
+During DFS traversal, let us add vertices to the stack during postorder visit. Therefore, during DFS of the above graph, we first add $C$, then add $B$ and finally add $A$ to the stack. Each time when we add a vertex $v$ to the stack, we must check whether $v$'s parent is already in the stack.
 
 Following Python code implements cycle detection using DFS. 
 
