@@ -228,9 +228,8 @@ Run DFS on the graph until it finds a back edge or terminates without finding on
 
 During DFS traversal, let us add vertices to the stack during postorder visit.  Each time when we add a vertex $v$ to the stack, we must check whether $v$'s parent is already in the stack. If $v$'s parent is already in the stack, adding $v$ to the stack will introduce a back-edge, and therefore a cycle.
 
-<p align="center">
-<img width="200" alt="cycle" src="https://github.com/user-attachments/assets/72bdf5ae-a4b1-475a-a3b8-d0abadc5f0fb">
-</p>
+> Example: Is there a cycle in the following graph?
+> <p align="center"><img width="200" alt="cycle" src="https://github.com/user-attachments/assets/72bdf5ae-a4b1-475a-a3b8-d0abadc5f0fb"></p>
 
 In the above graph, during DFS of the above graph, we first add $C$, then add $B$ and finally add $A$ to the stack. When we add $A$, we find that $A$'s parent, $C$, is already in the stack. So, we have detected a cycle!
 
