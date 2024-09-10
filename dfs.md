@@ -231,9 +231,31 @@ During DFS traversal, let us add vertices to the stack during postorder visit.  
 In the above example, during DFS of the above graph, we first add $C$, then add $B$ and finally add $A$ to the stack. When we add $A$, we find that $A$'s parent, $C$, is already in the stack. So, we have detected a cycle!
 
 
-Following Python code implements cycle detection using DFS. 
+Following Python code implements cycle detection using DFS. We use a helper function called `parentInStack()`, which looks in the current stack for the parent of the current vertex being added to the stack.
 
+```
+def parentInStack(G, v):
+    global hasCycle             # hasCycle is a global boolean
+    for vertex in stack:
+        if v in G[vertex]:      # Is v a child of vertex? 
+            hasCycle = True     # Found a back-edge
+            return True
+    return False
+```
 
+We make minor modification to our original `search()` function so that we can immediately return upon finding a cycle.
+
+```
+def search(G, v, explored):
+    if hasCycle:
+        return
+    explored.add(v)
+    for neighbor in G[v]:
+        if neighbor not in explored:
+            search(G, neighbor, explored)
+    if not parentInStack(G, v):
+        stack.append(v)
+```
 
 [DFS Problems](./dfs_problems.md)
 
