@@ -257,6 +257,38 @@ def search(G, v, explored):
         stack.append(v)
 ```
 
+The following is the remainder of the code:
+
+```
+def dfs(G, vList, explored):
+    for v in vList:
+        if v not in explored:
+            search(G, v, explored)
+
+def addEdge(G, u, v):
+    G[u].append(v)
+
+from collections import defaultdict
+
+# Create graph G
+vList = ['A', 'B', 'C']
+G = defaultdict(list)
+addEdge(G, 'A', 'B')
+addEdge(G, 'B', 'C')
+addEdge(G, 'C', 'A')
+
+# Initialize stack and explored
+stack = []              # Stack is represented as a list
+explored = set()        # explored is a set containing visited vertices
+hasCycle = False        # Global variable
+dfs(G, vList, explored) # Run DFS
+
+if hasCycle:
+    print("Cycle detected!")
+else:
+    print("No cycle detected!")
+```
+
 [DFS Problems](./dfs_problems.md)
 
 [Table of Contents](./index.md)
