@@ -98,7 +98,11 @@ The preorder and postorder numbers of the above DFS traversal are shown next to 
 
 ## Applications of DFS: Topological Sort
 
-**Problem**: Given a directed graph $G = (V, E)$, whose vertices $V = \{v_1, \ldots, v_n\}$ represent tasks, and whose edges represent precedence constraints such that a directed edge from $u$ to $v$ indicates that task $u$ must be completed before $v$, the problem of topological sort is to find the order in which the tasks be scheduled.
+**Problem**: You have a list of tasks; some tasks must be done before others. How to order them?
+
+Formally, the problem is defined using a "precedence graph" $G$ as follows.
+
+Given a directed graph $G = (V, E)$, whose vertices $V = \{v_1, \ldots, v_n\}$ represent tasks, and whose edges represent precedence constraints such that a directed edge from $u$ to $v$ indicates that task $u$ must be completed before $v$, the problem of topological sort is to find the order in which the tasks be scheduled.
 
 > **Example**: In what order the ingredients should be added to make pomegranate ice cream?
 > <p align="center"><img width="300" alt="Pomegranate_Ice_Cream" src="https://github.com/user-attachments/assets/20765bed-28d2-41f3-9627-609181c10676"></p>
