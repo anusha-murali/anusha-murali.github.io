@@ -243,7 +243,7 @@ def parentInStack(G, v):
     return False
 ```
 
-We make minor modification to our original `search()` function so that we can immediately return upon finding a cycle.
+We make minor modification to our original `search()` function so that it can immediately return upon finding a cycle.
 
 ```
 def search(G, v, explored):
