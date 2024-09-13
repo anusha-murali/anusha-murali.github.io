@@ -11,9 +11,9 @@ There are two fundamental algorithms for searching a graph: *depth-first search*
 ## 1. Depth First Search
 
 DFS is a fundamental technique for exploring a graph using a stack as the basic data structure. It has the following applications:
-1. Traversing/searching a graph
-2. Cycle detection
-3. Topological sort of DAG 
+1. Traversing/searching a graph: From a given source vertex to the target vertex
+2. Cycle detection: Encounter a visited node or terminate
+3. Topological sort of DAG: Schedule tasks according to their precedence constraints
 
 **[Depth First Search](./dfs.md)**
 
