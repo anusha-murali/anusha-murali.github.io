@@ -19,7 +19,9 @@ DFS is a fundamental technique for exploring a graph using a stack as the basic 
 
 ## 2. Breadth First Search
 
-BFS is a fundamental technique for exploring a graph using a queue as the basic data structure.
+BFS is a fundamental technique for exploring a graph using a queue as the basic data structure. It has the following applications:
+1. Traversing/searching a graph: From a given source vertex to the target vertex
+2. Single Source Shortest Path (SSSP) when all edges have the same weight
 
 **[Breadth First Search](./bfs.md)**
 
