@@ -12,7 +12,7 @@ There are two fundamental algorithms for searching a graph: *depth-first search*
 
 DFS is a fundamental technique for exploring a graph using a stack as the basic data structure.
 
-[**Depth First Search**](./dfs.md)
+**[Depth First Search](./dfs.md)**
 
 ## 2. Breadth First Search
 
