@@ -1,6 +1,6 @@
 # Graph Algorithms
 
-A gaph $G = (V, E)$ can be represented in two standard ways, namely via the *adjacency matrix* or via the *adjacency list*.
+A graph $G = (V, E)$ can be represented in two standard ways, namely via the *adjacency matrix* or via the *adjacency list*.
 
 The *adjacency matrix* for $G = (V, E)$ is an $n \times n$ matrix $A$, where the entry $a_{i,j} = 1$ if $(i, j) \in E$ and $a_{i, j} = 0$ otherwise. The advantage of the adjacency matrix representation is that it takes $O(1)$ (i.e: constant time) to determine whether or not there is an edge between two arbitrary vertices $i$ and $j$. However, the adjacency matrix representation requires $\Omega(n^2)$ storage even if the graph has as few as $O(n)$ edges.
 
