@@ -22,6 +22,10 @@ def BFS(G, s):
   retrun d, pi
 ```
 
+We use the queue data structure to implement BFS.
+
+**Run-time** In the worst case, we will visit every vertex and every edge. So the run-time is $O(\|V\| + \|E\|)$.
+
 [BFS Problems](./bfs_problems.md)
 
 [Table of Contents](./index.md)
