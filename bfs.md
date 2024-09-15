@@ -19,7 +19,7 @@ def BFS(G, s):
       if not explored[w]:
         explored[w] <- 1; d[w] = d[v] + 1; pi[w] <- v
         inject(Q, w)
-  retrun d, pi
+  return d, pi
 ```
 
 We use the queue data structure to implement BFS.
