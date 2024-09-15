@@ -4,7 +4,9 @@ BFS is a simple alternate to the DFS strategy to exploring a graph. BFS first "e
 
 If each edge has unit length, then the number of hops equals the distance of a vertex from the source vertex. Therefore, we can use BFS to solve the shortest path problem.
 
-[here](./README.md)
+[BFS Problems](./bfs_problems.md)
+
+[Table of Contents](./index.md)
 
 * * *
 ###### anusha-murali.github.io
