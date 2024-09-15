@@ -24,7 +24,7 @@ def BFS(G, s):
 
 We use the queue data structure to implement BFS.
 
-**Run-time** In the worst case, we will visit every vertex and every edge. So the run-time is $O(\|V\| + \|E\|)$.
+**Run-time**: In the worst case, we will visit every vertex and every edge. So the run-time is $O(\|V\| + \|E\|)$.
 
 [BFS Problems](./bfs_problems.md)
 
