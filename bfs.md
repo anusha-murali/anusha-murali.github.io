@@ -14,6 +14,7 @@ def BFS(G, s):
   enqueue(Q, s)
   while Q is not empty:
     v <- dequeue(Q)
+    previsit(v)
     for (v, w) in E:
       if not explored[w]:
         explored[w] <- 1; d[w] = d[v] + 1; pi[w] <- v
