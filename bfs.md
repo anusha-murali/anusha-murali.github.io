@@ -4,6 +4,24 @@ BFS is a simple alternate to the DFS strategy to exploring a graph. BFS first "e
 
 If each edge has unit length, then the number of hops equals the distance of a vertex from the source vertex. Therefore, we can use BFS to solve the shortest path problem.
 
+Following is the pseduocode of BFS.
+
+```
+def BFS(G, s):
+  for all v in V:
+    d[v] <- infty; explored[v] <- 0
+  Q = []; explored[s] <- 1; d[s] <- 0; pi[s] <- null
+  inject(Q, s)
+  while Q is not empty:
+    v <- pop(Q)
+    previsit(v)
+    for (v, w) in E:
+      if not explored[w]:
+        explored[w] <- 1; d[w] = d[v] + 1; pi[w] <- v
+        inject(Q, w)
+  retrun d, pi
+```
+
 [BFS Problems](./bfs_problems.md)
 
 [Table of Contents](./index.md)
