@@ -3,7 +3,7 @@
 Dijkstra’s algorithm finds the shortest paths between nodes in a weighted graph. Following is the description of the algorithm.
 
 1. Mark all vertices as *unvisited*. Also initialize the distance of each vertex from the source vertex to $\infty$, but initialize this distance to 0 for the source vertex.
-2. When at a given vertex, consider all of its unvisited neighbors and calculate their distances *through the current vertex*. Compare the newly calculated distance to the current value and update it if the newly calculated distance is smaller.
+2. When at a given vertex, consider all of its unvisited neighbors and calculate their distances *through the current vertex*. Compare the newly calculated distance to the current value and update it if the newly calculated distance is smaller. (For example, if the distance to the current vertex $A$ is 5 and the length of the edge $A-B$ is 2, then the newly calculated distance from the source to $B$ via $A$ is 5 + 2 = 7. Suppose, $B$ was previously marked with a larger value (say 9), then update it to 7. Otherwise, do not update it.
 3. 
 
 
