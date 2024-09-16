@@ -43,6 +43,45 @@ Running BFS on the above graph yields the following shortest distances and paths
 | $G$    | 3   | $A \rightarrow B \rightarrow D \rightarrow G$ |
 | $H$    | $\infty$ | Null |
 
+Following Python implementation of BFS verifies the above results.
+
+```
+def bfs(G, s):
+    d = defaultdict(lambda: float('inf'))    # Initialize all d's to infinity
+    pi = defaultdict(str)
+    Q = []
+    d[s] = 0                                
+    explored = set()
+    Q.append(s)
+    explored.add(s)
+    while len(Q) > 0:
+        u = Q.pop(0)
+        for v in G[u]:
+            if v not in explored:
+                Q.append(v)
+                explored.add(v)
+                d[v] = d[u] + 1
+                pi[v] = u
+    return (d, pi)
+                
+def addEdge(G, u, v):
+    G[u].append(v)
+
+from collections import defaultdict
+vList = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
+G = defaultdict(list)
+addEdge(G, 'A', 'B')
+addEdge(G, 'A', 'C')
+addEdge(G, 'B', 'D')
+addEdge(G, 'C', 'E')
+addEdge(G, 'C', 'F')
+addEdge(G, 'D', 'C')
+addEdge(G, 'D', 'G')
+addEdge(G, 'H', 'D')
+d, pi = bfs(G, 'A')
+```
+
+
 [BFS Problems](./bfs_problems.md)
 
 [Table of Contents](./index.md)
