@@ -34,6 +34,17 @@ Dijkstra’s algorithm is used to find shortest paths in graphs with any positiv
 >
 ><img width="308" alt="dijkstra" src="https://github.com/user-attachments/assets/c4bf9eea-fa3e-4222-8ca5-e2f87b1c87b0">
 
+Running Dijkstra's algorithm on the above graph yields the following shortest distances and paths.
+
+| Vertex | $d$    | Path                                        |
+| :--: | :---:  | :---                                          |
+| $A$  | 0      | Null                                          |
+| $B$  | 3      | $A \rightarrow D \rightarrow B$               |
+| $C$  | 7      | $A \rightarrow D \rightarrow E \rightarrow C$ |
+| $D$  | 1      | $A \rightarrow D$                             |
+| $E$  | 2      | $A \rightarrow D \rightarrow E$               |
+
+Following Python implementation of BFS verifies the above results.
 
 [Back to Graph Algorithms](./graph.md)
 
