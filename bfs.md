@@ -26,6 +26,9 @@ We use the queue data structure to implement BFS.
 
 **Run-time**: In the worst case, we will visit every vertex and every edge. So the run-time is $O(\|V\| + \|E\|)$.
 
+>Example: Find the shortest distance from vertex $A$ to each other vertices in the graph as well as the path that results in the shortest distance
+><img width="531" alt="bfs" src="https://github.com/user-attachments/assets/77a505cc-7d06-4bb9-84ae-d7bcd0b5b984">
+>
 [BFS Problems](./bfs_problems.md)
 
 [Table of Contents](./index.md)
