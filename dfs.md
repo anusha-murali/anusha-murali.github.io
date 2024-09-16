@@ -298,6 +298,8 @@ else:
 
 [DFS Problems](./dfs_problems.md)
 
+[Back to Graph Algorithms](./graph.md)
+
 [Table of Contents](./index.md)
 
 * * *
