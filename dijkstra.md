@@ -31,6 +31,7 @@ Dijkstra’s algorithm is used to find shortest paths in graphs with any positiv
 **Run-time**: $O(\|V\| \cdot \text{deleteMin} + \|E\| \cdot \text{insert}$. The running time of Dijkstra’s algorithm depends on the implementation of the heap $H$. For each vertex, we perform a delete min, while for each edge we perform an insertion.
 
 >Example: Run Dijkstra's algorithm on the following graph and find the shortest distances to each vertex from the source vertex, $A$, and give their corresponding shortest path.
+>
 ><img width="308" alt="dijkstra" src="https://github.com/user-attachments/assets/c4bf9eea-fa3e-4222-8ca5-e2f87b1c87b0">
 
 
