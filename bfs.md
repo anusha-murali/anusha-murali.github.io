@@ -32,16 +32,16 @@ We use the queue data structure to implement BFS.
 
 Running BFS on the above graph yields the following shortest distances and paths.
 
-| Vertex | $d$ | Path |
-| :--: | :---: | :--- |
-| $A$    | 0   | Null |
-| $B$    | 1   | $A \rightarrow B$ |
-| $C$    | 1   | $A \rightarrow C$ |
-| $D$    | 2   | $A \rightarrow B \rightarrow D$ |
-| $E$    | 2   | $A \rightarrow C \rightarrow E$ |
-| $F$    | 2   | $A \rightarrow C \rightarrow F$ |
-| $G$    | 3   | $A \rightarrow B \rightarrow D \rightarrow G$ |
-| $H$    | $\infty$ | Null |
+| $V$  | $d$    | Path                                          |
+| :--: | :---:  | :---                                          |
+| $A$  | 0      | Null                                          |
+| $B$  | 1      | $A \rightarrow B$                             |
+| $C$  | 1      | $A \rightarrow C$                             |
+| $D$  | 2      | $A \rightarrow B \rightarrow D$               |
+| $E$  | 2      | $A \rightarrow C \rightarrow E$               |
+| $F$  | 2      | $A \rightarrow C \rightarrow F$               |
+| $G$  | 3      | $A \rightarrow B \rightarrow D \rightarrow G$ |
+| $H$  |$\infty$| Null                                          |
 
 Following Python implementation of BFS verifies the above results.
 
