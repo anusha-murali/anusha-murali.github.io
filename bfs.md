@@ -30,8 +30,10 @@ We use the queue data structure to implement BFS.
 >
 ><img width="331" alt="bfs" src="https://github.com/user-attachments/assets/77a505cc-7d06-4bb9-84ae-d7bcd0b5b984">
 
+Running BFS on the above graph yields the following shortest distances and paths.
+
 | Vertex | $d$ | Path |
-| ------ | --- | ---- |
+| :--: | :---: | :--- |
 | $A$    | 0   | Null |
 | $B$    | 1   | $A \rightarrow B$ |
 | $C$    | 1   | $A \rightarrow C$ |
