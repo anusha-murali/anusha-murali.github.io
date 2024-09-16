@@ -19,13 +19,15 @@ DFS is a fundamental technique for exploring a graph using a stack as the basic 
 
 ## 2. Breadth First Search
 
-BFS is a fundamental technique for exploring a graph using a queue as the basic data structure. It has the following applications:
+BFS is a fundamental technique for exploring a graph using a queue as the basic data structure. It is applicable only when all edges are of length 1. It has the following applications:
 1. Traversing/searching a graph: From a given source vertex to the target vertex
 2. Single Source Shortest Path (SSSP) when all edges have the same weight
 
 **[Breadth First Search](./bfs.md)**
 
 ## 3. Dijkstra's Algorithm
+
+Dijkstra's algorithm allows us to find the shortest paths when the edge lengths are non-negatives. Dijkstra’s algorithm will initially start with infinite distances and will try to improve them step by step.
 
 ## 4. Bellman-Ford Algorithm
 
