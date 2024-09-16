@@ -84,6 +84,8 @@ d, pi = bfs(G, 'A')
 
 [BFS Problems](./bfs_problems.md)
 
+[Back to Graph Algorithms](./graph.md)
+
 [Table of Contents](./index.md)
 
 * * *
