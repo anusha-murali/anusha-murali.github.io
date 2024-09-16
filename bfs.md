@@ -37,6 +37,11 @@ Running BFS on the above graph yields the following shortest distances and paths
 | $A$    | 0   | Null |
 | $B$    | 1   | $A \rightarrow B$ |
 | $C$    | 1   | $A \rightarrow C$ |
+| $D$    | 2   | $A \rightarrow B \rightarrow D$ |
+| $E$    | 2   | $A \rightarrow C \rightarrow E$ |
+| $F$    | 2   | $A \rightarrow C \rightarrow F$ |
+| $G$    | 3   | $A \rightarrow B \rightarrow D \rightarrow G$ |
+| $H$    | $\infty$ | Null |
 
 [BFS Problems](./bfs_problems.md)
 
