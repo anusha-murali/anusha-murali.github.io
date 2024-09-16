@@ -26,6 +26,10 @@ def Dijkstra(G, s, w):
         insert(w, d[w], H)
 ```
 
+Dijkstra’s algorithm is used to find shortest paths in graphs with any positive edge weights. It uses a heap to determine which node to consider next. When a vertex is popped off the heap, that means we have our final answer for that vertex’s distance and path from the source.
+
+**Run-time**: $O(\|V\| \cdot \text{deleteMin} + \|E\| \cdot \text{insert}$. The running time of Dijkstra’s algorithm depends on the implementation of the heap $H$. For each vertex, we perform a delete min, while for each edge we perform an insertion.
+
 [Back to Graph Algorithms](./graph.md)
 
 [Table of Contents](./index.md)
