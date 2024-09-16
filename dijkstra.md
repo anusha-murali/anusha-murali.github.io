@@ -9,6 +9,8 @@ Dijkstra’s algorithm finds the shortest paths between nodes in a weighted grap
 or if the smallest tentative distance among the vertices in the unvisited set is infinity (when planning a complete traversal), then stop. The algorithm has finished.
 5. Otherwise, select the unvisited vertex that is marked with the smallest tentative distance, set it as the new current vertex, and go back to step 2.
 
+The following pseudocode implements the above steps.
+
 
 
 [Back to Graph Algorithms](./graph.md)
