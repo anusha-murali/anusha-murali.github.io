@@ -29,6 +29,8 @@ BFS is a fundamental technique for exploring a graph using a queue as the basic 
 
 Dijkstra's algorithm allows us to find the shortest paths when the edge lengths are non-negatives. Dijkstra’s algorithm will initially start with infinite distances and will try to improve them step by step.
 
+**[Dijkstra's Algorithm](./dijkstra.md)**
+
 ## 4. Bellman-Ford Algorithm
 
 Bellman-Ford algorithm is useful when the graph has negative lengths (of course, negative cycles are still not allowed).
