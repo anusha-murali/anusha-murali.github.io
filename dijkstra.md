@@ -16,6 +16,14 @@ def Dijkstra(G, s, w):
   for all v in V:
     d[v] <- infty; pi[s] <- null
   d[s] = 0
+  H <- {(s, 0)}      # H is a MinHeap
+  while H is not empty:
+    v <- deleteMin(H)
+    for (v, w) in E:
+      if d[w] > d[v] + w(v, w):
+        d[w] <- d[v] + w(v, w)
+        pi[w] <- v
+        insert(w, d[w], H)
 ```
 
 [Back to Graph Algorithms](./graph.md)
