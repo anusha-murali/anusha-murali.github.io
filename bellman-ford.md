@@ -36,7 +36,7 @@ def bellman_ford(G, s):
 
 1. Initialize $d[]$ and $\pi[]$:
    
-<img width="1085" alt="bf2" src="https://github.com/user-attachments/assets/815a186d-ce59-4158-a60c-5579be8bb9bd">
+<img width="900" alt="bf2" src="https://github.com/user-attachments/assets/815a186d-ce59-4158-a60c-5579be8bb9bd">
 
 2. First iteration: 1 hop from $A$
 4. Second iteration: 2 hops from $A$
