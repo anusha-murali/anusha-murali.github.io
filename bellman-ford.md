@@ -31,7 +31,7 @@ def bellman_ford(G, s):
 
 >Example: Find the shortest path to all other nodes from node $A$.
 >
-><img width="343" alt="bf1" src="https://github.com/user-attachments/assets/e9970bc1-1eea-4b2b-af59-fa96ec22a0d4">
+><img width="243" alt="bf1" src="https://github.com/user-attachments/assets/e9970bc1-1eea-4b2b-af59-fa96ec22a0d4">
 >
 
 [Back to Graph Algorithms](./graph.md)
