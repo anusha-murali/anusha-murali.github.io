@@ -35,7 +35,7 @@ Dijkstra’s algorithm fails for graphs with negative edge weights.
 
 ## 4. Bellman-Ford Algorithm
 
-Bellman-Ford algorithm is useful when the graph has negative lengths (of course, negative cycles are still not allowed).
+Bellman-Ford algorithm is useful when the graph has negative edge weights (of course, negative cycles are still not allowed).
 
 [Bellman-Ford Algorithm](./bellman-ford.md)
 
