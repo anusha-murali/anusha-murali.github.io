@@ -59,7 +59,7 @@ The array representation of the Min-Heap is shown below:
 <p align="center">
 <img width="400" alt="minheap2" src="https://github.com/user-attachments/assets/3a421962-db9b-419b-83d5-487f72a811c3">
 </p>
-The array representation allows us to access a node's parent and children in $O(1)$ time. If the index of a non-root node is $k$, then the index of its parent is $\lfloor k/2 \rfloor$, and the indices of its right and left children, if they exist, are $2k$ and $2k+1$ respectively.
+The array representation allows us to access a node's parent and children in $O(1)$ time. If the index of a non-root node is $k$, then the index of its parent is $\lfloor k/2 \rfloor$, and the indices of its left and right children, if they exist, are $2k$ and $2k+1$ respectively.
 
 Following Python implementation of Dijkstra's algorithm verifies the above results.
 
