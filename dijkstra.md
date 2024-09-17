@@ -87,6 +87,19 @@ def dijkstra(G, s):
 def addEdge(G, u, v, weight):
     G[u].append((v, weight))
     G[v].append((u, weight))
+
+vList = ['A', 'B', 'C', 'D', 'E']
+G = defaultdict(list)
+
+addEdge(G, 'A', 'B', 6)
+addEdge(G, 'A', 'D', 1)
+addEdge(G, 'B', 'C', 5)
+addEdge(G, 'B', 'E', 2)
+addEdge(G, 'B', 'D', 2)
+addEdge(G, 'D', 'E', 1)
+addEdge(G, 'C', 'E', 5)
+
+d, pi =  dijkstra(G, 'A')
 ```
 
 [Back to Graph Algorithms](./graph.md)
