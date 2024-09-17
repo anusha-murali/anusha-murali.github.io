@@ -29,6 +29,11 @@ def bellman_ford(G, s):
 3. After $k$ rounds of looking at all edges and updating, all shortest paths with $k$ hops would be found and for a vertex $u$ for whom the shortest path is $k$ hops from $s$
 4. Since all paths have length at most $n − 1$ (why?) this implies that after $n − 1$ rounds, we ould have found the shortest paths for all $u$.
 
+>Example: Find the shortest path to all other nodes from node $A$.
+>
+><img width="343" alt="bf1" src="https://github.com/user-attachments/assets/e9970bc1-1eea-4b2b-af59-fa96ec22a0d4">
+>
+
 [Back to Graph Algorithms](./graph.md)
 
 [Table of Contents](./index.md)
