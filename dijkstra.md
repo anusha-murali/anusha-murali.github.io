@@ -65,6 +65,31 @@ The Min-Heap data structure is available in Python using the **heapq** module.
 
 Following Python implementation of Dijkstra's algorithm verifies the results of the example presented earlier. It uses Python's **heapq** module.
 
+```
+from collections import defaultdict
+import heapq
+
+def dijkstra(G, s):
+    d = defaultdict(lambda: float('inf'))    # Initialize all d's to infinity
+    pi = defaultdict(str)
+    PQ = []
+    d[s] = 0                                
+    heapq.heappush(PQ, (0, s))
+    while PQ:
+        x, u = heapq.heappop(PQ)
+        for v, weight in G[u]:
+            if d[v] > d[u] + weight:
+                d[v] = d[u] + weight
+                heapq.heappush(PQ, (d[v], v))
+                pi[v] = u
+    return (d, pi)
+                
+
+def addEdge(G, u, v, weight):
+    G[u].append((v, weight))
+    G[v].append((u, weight))
+```
+
 [Back to Graph Algorithms](./graph.md)
 
 [Table of Contents](./index.md)
