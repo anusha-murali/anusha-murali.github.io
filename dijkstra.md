@@ -51,6 +51,10 @@ In order to do `deleteMin()` and `insert()` operations efficiently (both in $O(\
 The (binary) heap data structure is an array object that we can view as a nearly complete binary tree.  Each node of the tree corresponds to an element of the array. The tree is completely filled on all levels except possibly the lowest, which is filled from the left up to a point. 
 The following binary heap represents a Min-Heap, which has the min-heap property where for every node $k$ other than the root, we have $A[\text{Parent}(k)] \leq A[k]$. Therefore, the smallest element in a Min-Heap is stored at the root, and the subtree rooted at a node contains values no smaller than that contained in the node itself. 
 
+The Min-Heap data structure, although is an array object, can be viewed as a binary tree as shown in the figure below:
+
+<img width="308" alt="minheap" src="https://github.com/user-attachments/assets/89e17549-0729-4344-992b-cccbc5f58ab4">
+
 
 Following Python implementation of Dijkstra's algorithm verifies the above results.
 
