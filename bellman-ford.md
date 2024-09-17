@@ -23,6 +23,12 @@ def bellman_ford(G, s):
    return (d, pi)
 ```
 
+**Notes**:
+1. How many times we should update? $n-1$ times
+2. What is the order in which we should consider the edges? Any arbitrary order
+3. After $k$ rounds of looking at all edges and updating, all shortest paths with $k$ hops would be found and for a vertex $u$ for whom the shortest path is $k$ hops from $s$
+4. Since all paths have length at most $n − 1$ (why?) this implies that after $n − 1$ rounds, we ould have found the shortest paths for all $u$.
+
 [Back to Graph Algorithms](./graph.md)
 
 [Table of Contents](./index.md)
