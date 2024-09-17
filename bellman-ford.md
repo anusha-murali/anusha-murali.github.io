@@ -38,7 +38,7 @@ def bellman_ford(G, s):
    
 <img width="700" alt="bf2" src="https://github.com/user-attachments/assets/815a186d-ce59-4158-a60c-5579be8bb9bd">
 
-2. First iteration: 1 hop from $A$
+2. First iteration: 1 hop from $A$ adfaf
    
 <img width="700" alt="bf3" src="https://github.com/user-attachments/assets/555796a8-3b95-4875-8192-b5614a5d9d55">
 
