@@ -52,9 +52,12 @@ The (binary) heap data structure is an array object that we can view as a nearly
 The following binary heap represents a Min-Heap, which has the min-heap property where for every node $k$ other than the root, we have $A[\text{Parent}(k)] \leq A[k]$. Therefore, the smallest element in a Min-Heap is stored at the root, and the subtree rooted at a node contains values no smaller than that contained in the node itself. 
 
 The Min-Heap data structure, although is an array object, can be viewed as a binary tree as shown in the figure below:
-
 <p align="center">
 <img width="408" alt="minheap" src="https://github.com/user-attachments/assets/89e17549-0729-4344-992b-cccbc5f58ab4">
+</p>
+The array representation of the Min-Heap is shown below:
+<p align="center">
+<img width="300" alt="minheap2" src="https://github.com/user-attachments/assets/3a421962-db9b-419b-83d5-487f72a811c3">
 </p>
 
 Following Python implementation of Dijkstra's algorithm verifies the above results.
