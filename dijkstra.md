@@ -101,6 +101,7 @@ addEdge(G, 'C', 'E', 5)
 
 d, pi =  dijkstra(G, 'A')
 ```
+The output of the above code is identical to the results listed in the table in the example earlier.
 
 [Back to Graph Algorithms](./graph.md)
 
