@@ -8,16 +8,19 @@ def update (u,v):
       d[v] = d[u] + length(u,v)
       prev[v] = u               # Remember the previous node
 ```
+The algorithm maintains the distance of a vertex so that it is always a conservative overestimate; it will only update the a
+value when a suitable path is discovered to show that the overestimate can be lowered.
+
 The following is the pseudocode for Bellman-Ford:
 ```
 def bellman_ford(G, s):
    for all v in V:
       d[v] <- infty; pi[s] <- null
    d[s] = 0
-for i in range(n-1):
-   for (v, w) in E:
-      update(v, w)
-return (d, pi)
+   for i in range(n-1):
+      for (v, w) in E:
+         update(v, w)
+   return (d, pi)
 ```
 
 
