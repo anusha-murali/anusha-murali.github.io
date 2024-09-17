@@ -44,7 +44,7 @@ def bellman_ford(G, s):
 
 3 Second iteration: 2 hops from $A$
    
-<img width="600" alt="bf4" src="https://github.com/user-attachments/assets/7e8b9bec-a196-4db1-82f5-04280d9710d4">
+<img width="700" alt="bf4" src="https://github.com/user-attachments/assets/7e8b9bec-a196-4db1-82f5-04280d9710d4">
    
 4 Third iteration: 3 hops from $A$
 
