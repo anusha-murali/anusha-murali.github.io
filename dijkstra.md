@@ -54,7 +54,7 @@ The following binary heap represents a Min-Heap, which has the min-heap property
 The Min-Heap data structure, although is an array object, can be viewed as a binary tree as shown in the figure below:
 
 <p align="center">
-<img width="308" alt="minheap" src="https://github.com/user-attachments/assets/89e17549-0729-4344-992b-cccbc5f58ab4">
+<img width="408" alt="minheap" src="https://github.com/user-attachments/assets/89e17549-0729-4344-992b-cccbc5f58ab4">
 </p>
 
 Following Python implementation of Dijkstra's algorithm verifies the above results.
