@@ -57,7 +57,7 @@ The Min-Heap data structure, although is an array object, can be viewed as a bin
 </p>
 The array representation of the Min-Heap is shown below:
 <p align="center">
-<img width="300" alt="minheap2" src="https://github.com/user-attachments/assets/3a421962-db9b-419b-83d5-487f72a811c3">
+<img width="400" alt="minheap2" src="https://github.com/user-attachments/assets/3a421962-db9b-419b-83d5-487f72a811c3">
 </p>
 
 Following Python implementation of Dijkstra's algorithm verifies the above results.
