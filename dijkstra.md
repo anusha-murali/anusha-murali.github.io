@@ -103,6 +103,9 @@ d, pi =  dijkstra(G, 'A')
 ```
 The output of the above code is identical to the results listed in the table in the example earlier.
 
+Dijkstra's algorithm fails for graphs with negative edge weights. 
+
+
 [Back to Graph Algorithms](./graph.md)
 
 [Table of Contents](./index.md)
