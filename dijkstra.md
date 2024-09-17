@@ -44,6 +44,11 @@ Running Dijkstra's algorithm on the above graph yields the following shortest di
 | $D$  | 1      | $A \rightarrow D$                             |
 | $E$  | 2      | $A \rightarrow D \rightarrow E$               |
 
+### Min-Heap
+
+In order to do `deleteMin()` and `insert()` operations efficiently (both in $O(\log n)$ time), we use a binary heap (Min-Heap). Using a Min-Heap leads to a total runtime for Dijkstra of $O(m + n)\log n$.
+
+
 Following Python implementation of Dijkstra's algorithm verifies the above results.
 
 [Back to Graph Algorithms](./graph.md)
