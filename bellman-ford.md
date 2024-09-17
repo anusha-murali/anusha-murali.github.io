@@ -34,6 +34,11 @@ def bellman_ford(G, s):
 ><img width="243" alt="bf1" src="https://github.com/user-attachments/assets/e9970bc1-1eea-4b2b-af59-fa96ec22a0d4">
 >
 
+1. Initialize $d[]$ and $\pi[]$:
+  <img width="1085" alt="bf2" src="https://github.com/user-attachments/assets/38787578-be63-4a91-8336-7f8dcd31e609">
+3. First iteration: 1 hop from $A$
+4. Second iteration: 2 hops from $A$
+
 [Back to Graph Algorithms](./graph.md)
 
 [Table of Contents](./index.md)
