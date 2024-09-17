@@ -40,8 +40,8 @@ def bellman_ford(G, s):
 
 2. First iteration: 1 hop from $A$
    
-<img width="700" alt="bf3" src="https://github.com/user-attachments/assets/574106ce-d5dd-4def-9b8b-401e7c8edb66">
-   
+<img width="700" alt="bf3" src="https://github.com/user-attachments/assets/555796a8-3b95-4875-8192-b5614a5d9d55">
+
 4. Second iteration: 2 hops from $A$
 
 [Back to Graph Algorithms](./graph.md)
