@@ -12,7 +12,7 @@ or if the smallest tentative distance among the vertices in the unvisited set is
 The following pseudocode implements the above steps.
 
 ```
-def Dijkstra(G, s, w):
+def dijkstra(G, s, w):
   for all v in V:
     d[v] <- infty; pi[s] <- null
   d[s] = 0
