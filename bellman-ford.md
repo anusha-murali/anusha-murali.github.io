@@ -56,6 +56,9 @@ def bellman_ford(G, s):
 1. The 4 hops from $A$ are: $A \rightarrow B \rightarrow D \rightarrow E \rightarrow C$, and $A \rightarrow B \rightarrow D \rightarrow C \rightarrow E$. Both of them don't provide smaller values for $C$ or $E$.
 2. So, no more edges to relax.
 
+<img width="600" alt="bf6" src="https://github.com/user-attachments/assets/969d51cf-aae5-4929-88cf-9487eb779a09">
+
+
 [Back to Graph Algorithms](./graph.md)
 
 [Table of Contents](./index.md)
