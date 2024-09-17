@@ -48,7 +48,7 @@ def bellman_ford(G, s):
    
 4 Third iteration: 3 hops from $A$
 
-<img width="600" alt="bf5" src="https://github.com/user-attachments/assets/3eeb0f7d-24dd-4ea7-965f-ef5eb0fdf988">
+<img width="600" alt="bf5" src="https://github.com/user-attachments/assets/10556230-ee9d-4f21-a30d-fff5890c2eab">
 
 
 [Back to Graph Algorithms](./graph.md)
