@@ -49,7 +49,7 @@ Running Dijkstra's algorithm on the above graph yields the following shortest di
 In order to do `deleteMin()` and `insert()` operations efficiently (both in $O(\log n)$ time), we use a binary heap (Min-Heap). Using a Min-Heap leads to a total runtime for Dijkstra of $O(m + n)\log n$.
 
 The (binary) heap data structure is an array object that we can view as a nearly complete binary tree.  Each node of the tree corresponds to an element of the array. The tree is completely filled on all levels except possibly the lowest, which is filled from the left up to a point. 
-The following binary heap represents a Min-Heap, which has the min-heap property where for every node $k$ other than the root, we have $A[\text{Parent}(k)] \leq A[i]$.
+The following binary heap represents a Min-Heap, which has the min-heap property where for every node $k$ other than the root, we have $A[\text{Parent}(k)] \leq A[k]$.
 
 
 Following Python implementation of Dijkstra's algorithm verifies the above results.
