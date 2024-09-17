@@ -74,17 +74,16 @@ def dijkstra(G, s):
     pi = defaultdict(str)
     PQ = []
     d[s] = 0                                
-    heapq.heappush(PQ, (0, s))
+    heapq.heappush(PQ, (0, s))   # Insert distance from source and v into PQ
     while PQ:
-        x, u = heapq.heappop(PQ)
+        _, u = heapq.heappop(PQ) # DeleteMin()
         for v, weight in G[u]:
             if d[v] > d[u] + weight:
                 d[v] = d[u] + weight
-                heapq.heappush(PQ, (d[v], v))
+                heapq.heappush(PQ, (d[v], v))  # Insert distance and v into PQ
                 pi[v] = u
     return (d, pi)
                 
-
 def addEdge(G, u, v, weight):
     G[u].append((v, weight))
     G[v].append((u, weight))
