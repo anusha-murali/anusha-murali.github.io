@@ -83,6 +83,11 @@ Algorithm terminates!
   - But no update in round $i$ implies no further update
   - So every round (including the $n$th) must have an update
 
+>Example: Check for negative cycle in the following graph.
+>
+><img width="295" alt="bf_negative_cycle" src="https://github.com/user-attachments/assets/85d1e238-9782-4888-8e29-c694c358f24d">
+
+
 [Back to Graph Algorithms](./graph.md)
 
 [Table of Contents](./index.md)
