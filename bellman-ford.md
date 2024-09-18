@@ -1,6 +1,8 @@
 
 # Bellman-Ford Algorithm
 
+## Single Source Shortest Path
+
 The Bellman-Ford algorithm allows us to find the shortest paths with arbitrary edge weights. We decrease $d[v]$ only when the current value of $d[v]$ is greater than  $d[u] + \text{length}(u,v)$. Whenever we updae $d[v]$, we also save its parent node. 
 ```
 def update (u,v):
@@ -59,6 +61,8 @@ Algorithm terminates!
 2. So, no more edges to relax. The $d$ array contains the shortest path distance and the $\pi$ array provides the shortest path.
 
   <img width="600" alt="bf6" src="https://github.com/user-attachments/assets/969d51cf-aae5-4929-88cf-9487eb779a09">
+
+## Negative Cycle Detection
 
 
 [Back to Graph Algorithms](./graph.md)
