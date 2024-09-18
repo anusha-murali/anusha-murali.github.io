@@ -95,7 +95,7 @@ The following diagram shows the shortest distances in red on the 5th iteration:
 
 <img width="295" alt="bf_negative_cycle_5th_iteration" src="https://github.com/user-attachments/assets/1b1b9d75-2bae-4335-855a-30b84408bf04">
 
-
+The 5-hop walk $A \rightarrow C  \rightarrow B  \rightarrow D  \rightarrow C  \rightarrow B$ updates $d[B]$ again. Therefore, Bellman-Ford has detected a cycle in this graph!
 
 [Back to Graph Algorithms](./graph.md)
 
