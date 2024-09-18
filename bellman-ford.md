@@ -34,11 +34,13 @@ def bellman_ford(G, s):
 ><img width="243" alt="bf1" src="https://github.com/user-attachments/assets/e9970bc1-1eea-4b2b-af59-fa96ec22a0d4">
 >
 
+We walk through the algorithm in steps as shown below:
+
 (1) Initialize $d[]$ and $\pi[]$:
    
 <img width="600" alt="bf2" src="https://github.com/user-attachments/assets/815a186d-ce59-4158-a60c-5579be8bb9bd">
 
-(2) First iteration: 1 hop from $A$ adfaf
+(2) First iteration: 1 hop from $A$
    
 <img width="600" alt="bf3" src="https://github.com/user-attachments/assets/555796a8-3b95-4875-8192-b5614a5d9d55">
 
@@ -52,7 +54,7 @@ def bellman_ford(G, s):
 
 (5) Fourth iteration: 4 hops from $A$
 
-**Algorithm terminates**
+Algorithm terminates!
 1. The 4 hops from $A$ are: $A \rightarrow B \rightarrow D \rightarrow E \rightarrow C$, and $A \rightarrow B \rightarrow D \rightarrow C \rightarrow E$. Both of them don't provide smaller values for $C$ or $E$.
 2. So, no more edges to relax.
 
