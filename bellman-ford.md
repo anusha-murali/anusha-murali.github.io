@@ -93,6 +93,9 @@ The following diagram shows the shortest distances in red after the 4th iteratio
 
 The following diagram shows the shortest distances in red on the 5th iteration:
 
+<img width="295" alt="bf_negative_cycle_5th_iteration" src="https://github.com/user-attachments/assets/1b1b9d75-2bae-4335-855a-30b84408bf04">
+
+
 
 [Back to Graph Algorithms](./graph.md)
 
