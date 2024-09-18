@@ -87,6 +87,12 @@ Algorithm terminates!
 >
 ><img width="295" alt="bf_negative_cycle" src="https://github.com/user-attachments/assets/85d1e238-9782-4888-8e29-c694c358f24d">
 
+The following diagram shows the shortest distances in red after the 4th iteration:
+
+
+
+The following diagram shows the shortest distances in red on the 5th iteration:
+
 
 [Back to Graph Algorithms](./graph.md)
 
