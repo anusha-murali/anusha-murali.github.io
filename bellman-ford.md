@@ -64,6 +64,7 @@ Algorithm terminates!
 
 ## Negative Cycle Detection
 
+**What is a negative cycle?** A negative-weight cycle is a cycle in a graph whose edges sum to a negative value.
 
 [Back to Graph Algorithms](./graph.md)
 
