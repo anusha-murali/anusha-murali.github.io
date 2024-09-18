@@ -66,6 +66,13 @@ Algorithm terminates!
 
 **What is a negative cycle?** A negative-weight cycle is a cycle in a graph whose edges sum to a negative value.
 
+**Steps**
+1. Run Bellman-Ford as above
+2. Run the inner loop once more: i.e: for every edge $(u, v) \in E$, call `update`$(u,v)$
+3. If any of the $d[\cdot]$ changes, then the graph has a negative cycle.
+
+**Run-time**: Run-time is still $O(|V||E|)$.
+
 [Back to Graph Algorithms](./graph.md)
 
 [Table of Contents](./index.md)
