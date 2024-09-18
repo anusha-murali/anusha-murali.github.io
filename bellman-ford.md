@@ -71,7 +71,7 @@ Algorithm terminates!
 2. Run the inner loop once more: i.e: for every edge $(u, v) \in E$, call `update`$(u,v)$
 3. If any of the $d[\cdot]$ changes, then the graph has a negative cycle.
 
-**Run-time**: Run-time is still $O(|V||E|)$.
+**Run-time**: Run-time is still $O(\|V\|\|E\|)$.
 
 **Claim**: If you run Bellman-Ford for $n$ rounds, there a change in $d[\cdot]$ iff graph has a negative cycle.
 
