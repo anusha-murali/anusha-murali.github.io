@@ -35,9 +35,9 @@ Dijkstra’s algorithm fails for graphs with negative edge weights.
 
 ## 4. Bellman-Ford Algorithm
 
-Bellman-Ford algorithm is useful for finding the single source shortest path when the graph has negative edge weights (of course, shortest paths with negative cycles are still not allowed). It has the following applications:
+Bellman-Ford algorithm is useful for finding the single source shortest path when the graph has negative edge weights (of course, finding shortest path does not make any sense in the presence of negative cycles!). It has the following applications:
 1. Single source shortest path: Finding the shortest path to every node from a given source node
-2. Detecting cycles
+2. Detecting negative cycles
 
 **[Bellman-Ford Algorithm](./bellman-ford.md)**
 
