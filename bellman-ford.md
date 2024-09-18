@@ -56,7 +56,7 @@ We walk through the algorithm in steps as shown below:
 
 Algorithm terminates!
 1. The 4 hops from $A$ are: $A \rightarrow B \rightarrow D \rightarrow E \rightarrow C$, and $A \rightarrow B \rightarrow D \rightarrow C \rightarrow E$. Both of them don't provide smaller values for $C$ or $E$.
-2. So, no more edges to relax.
+2. So, no more edges to relax. The $d$ array contains the shortest path distance and the $\pi$ array provides the shortest path.
 
   <img width="600" alt="bf6" src="https://github.com/user-attachments/assets/969d51cf-aae5-4929-88cf-9487eb779a09">
 
