@@ -94,15 +94,16 @@ def cutRod(p, n):
     return cutRodMemoized(p, n, r)
 
 def cutRodMemoized(p, n, r):
-    if r[n] > 0:   # If maximal r[n] was already computed, return it
-        return r[n]
     if n==0:
         q = 0
     else:
+        if r[n] > 0:   # If maximal r[n] was already computed, return it
+            return r[n]
+
         q = float('-inf')
-    for i in range(1, n+1):
-        q = max(q, p[i] + cutRodMemoized(p, n-i, r))
-    r[n] = q
+        for i in range(1, n+1):
+            q = max(q, p[i] + cutRodMemoized(p, n-i, r))
+        r[n] = q
     return q
 ```
 **Runtime**: Unlike Solution 1, the memoized version solves each subproblem only once. We note that the for loop results in an arithmetic series, which therefore results in a runtime of $\Theta(n^2)$. 
