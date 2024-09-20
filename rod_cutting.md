@@ -103,7 +103,7 @@ def cutRodMemoized(p, n, r):
         q = float('-inf')
         for i in range(1, n+1):
             q = max(q, p[i] + cutRodMemoized(p, n-i, r))
-        r[n] = q
+        r[n] = q       # Save the maximal revenue for current n
     return q
 ```
 **Runtime**: Unlike Solution 1, the memoized version solves each subproblem only once. We note that the for loop results in an arithmetic series, which therefore results in a runtime of $\Theta(n^2)$. 
