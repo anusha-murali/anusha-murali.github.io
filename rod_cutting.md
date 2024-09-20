@@ -94,7 +94,7 @@ def cutRod(p, n):
     return cutRodMemoized(p, n, r)
 
 def cutRodMemoized(p, n, r):
-    if r[n] > 0:   # If r[n] was already computed, return it
+    if r[n] > 0:   # If maximal r[n] was already computed, return it
         return r[n]
     if n==0:
         q = 0
