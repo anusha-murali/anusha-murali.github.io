@@ -7,7 +7,7 @@ A **dynamic programming** algorithm is suitable when the subproblems overlap. A 
 We have the following four steps in using dynamic programming to solving a problem where subproblems overlap:
 1. Define the structure of the subproblem.
 2. Define the recurrence for an optimal solution to the subproblem.
-3. Compute the value of an optimal solution solution to the original problem (with reuse, generally in a bottom-up fashion).
+3. Compute the value of an optimal solution to the original problem (with reuse, generally in a bottom-up fashion).
 4. Generate the optimal solution, in addition to the optimal value.
 
 
