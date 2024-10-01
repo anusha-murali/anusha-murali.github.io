@@ -1,6 +1,6 @@
 # Greedy Algorithms
 
-Dynamic programming could be an overkill for a number of optimization problems. For these problems, we can come up simpler, more efficient greedy algorithms. A greedy algorithm always makes the choice that looks best at the moment. That is, it makes a locally optimal choice in the hope that this choice will lead to a globally optimal solution. 
+Dynamic programming could be an overkill for a number of optimization problems. For these problems, we can come up with simpler, more efficient greedy algorithms. A greedy algorithm always makes the choice that looks best at the moment. That is, it makes a locally optimal choice in the hope that this choice will lead to a globally optimal solution. 
 
 Greedy algorithms do not always yield optimal solutions, but for many problems they do.
 
