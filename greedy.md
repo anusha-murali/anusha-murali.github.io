@@ -4,6 +4,9 @@ Dynamic programming could be an overkill for a number of optimization problems. 
 
 Greedy algorithms do not always yield optimal solutions, but for many problems they do. Some of the famous problems that can be solved using greedy algorithms are:
 1. Minimum Spanning Trees
+2. Huffman Coding
+3. Set Cover
+4. Union Find
 
 [Table of Contents](./index.md)
 
