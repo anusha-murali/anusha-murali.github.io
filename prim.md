@@ -5,7 +5,7 @@
 
 **Runtime**: $O(|E| \log |V|)$ (Fibonacci-heaps)
 
-[Back to Minimum Spanning Trees](./mst.md)
+[Back to Minimum Spanning Tree](./mst.md)
 
 [Table of Contents](./index.md)
 
