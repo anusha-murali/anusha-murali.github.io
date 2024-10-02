@@ -12,7 +12,7 @@ An MST is a spanning tree whose sum of edge weights is as small as possible.
 
 Two popular algorithms for finding MST in a graph are:
 1. Kruskal's MST Algorithm
-2. Prim's MST Algorithm
+2. [Prim's MST Algorithm](./prim.md)
 
 
 [Table of Contents](./index.md)
