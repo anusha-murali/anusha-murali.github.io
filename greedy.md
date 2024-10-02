@@ -6,8 +6,8 @@ The greedy method is quite powerful and works well for a wide range of prob- lem
 1. **[Minimum Spanning Trees](./mst.md)**
 2. **[Huffman Coding](./huffman.md)**
 3. **[Set Cover](./set_cover.md)**
-4. Union Find
-5. Horn Formula
+4. **[Union Find](./union_find.md)**
+5. **[Horn Formula](./horn.md)**
 
 [Table of Contents](./index.md)
 
