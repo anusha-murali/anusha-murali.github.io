@@ -6,7 +6,7 @@ Given $X = \{x_1,\ldots,x_n\}$, and a collection of subsets ${\mathcal S}$ of $X
 
 
 Greedily choose the set that covers the most number of the remaining uncovered elements at each iteration.
-{\bf Claim}: Let $k$ be the size of the smallest set cover for the instance $(X, \mathcal{S})$. Then the greedy heuristic finds a set cover of size at most $k \ln n$.
+**Claim**: Let $k$ be the size of the smallest set cover for the instance $(X, \mathcal{S})$. Then the greedy heuristic finds a set cover of size at most $k \ln n$.
 
 **Runtime**: $O(|U|)$
 
