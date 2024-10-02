@@ -11,7 +11,7 @@ An MST is a spanning tree whose sum of edge weights is as small as possible.
 **Cut Property**: For any cut of a connected, undirected graph, the minimum weight edge that crosses the cut belongs to MST.
 
 Two popular algorithms for finding MST in a graph are:
-1. Kruskal's MST Algorithm
+1. [Kruskal's MST Algorithm](./kruskal.md)
 2. [Prim's MST Algorithm](./prim.md)
 
 [Back to Greedy Algorithms](./greedy.md)
