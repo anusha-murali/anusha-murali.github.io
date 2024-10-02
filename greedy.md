@@ -7,6 +7,7 @@ The greedy method is quite powerful and works well for a wide range of prob- lem
 2. **[Huffman Coding](./huffman.md)**
 3. **[Set Cover](./set_cover.md)**
 4. Union Find
+5. Horn Formula
 
 [Table of Contents](./index.md)
 
