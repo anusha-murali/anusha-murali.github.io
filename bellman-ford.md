@@ -73,7 +73,7 @@ Algorithm terminates!
 
 **Run-time**: Run-time is still $O(\|V\|\|E\|)$.
 
-**Claim**: If you run Bellman-Ford for $n$ rounds, there a change in $d[\cdot]$ iff graph has a negative cycle.
+**Claim**: If you run Bellman-Ford for $n$ rounds, there will be a change in $d[\cdot]$ iff graph has a negative cycle.
 
 *Proof*: 
 1. Assume there is no negative cycle. Therefore the shortest walks from $s$ to $v$ are paths. Paths have length at most $n-1$. So, $n-1$ updates suffice and no updates required on the $n$th round.
