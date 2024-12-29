@@ -15,7 +15,7 @@ title: Table of Contents
 11. [Network Flows](./network_flows.md)
 
 
-1. SQL Problems
+1. [SQL Problems](./SQL/problems.md)
 * * *
 ###### anusha-murali.github.io
 
