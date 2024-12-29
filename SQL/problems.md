@@ -1,7 +1,7 @@
 # HackerRank SQL Problems: Solutions in Oracle
 
-* Problem 1: Revising the `SELECT` Query I | Easy
-* Problem 2: Revising the `SELECT` Query II | Easy
+1. Revising the `SELECT` Query I | Easy
+2. Problem 2: Revising the `SELECT` Query II | Easy
 
 
 * * *
