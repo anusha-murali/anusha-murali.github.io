@@ -6,7 +6,7 @@
 
 * * *
 
-[Table of Contents](./index.md)
+[Table of Contents](../index.md)
 
 * * *
 ###### anusha-murali.github.io
