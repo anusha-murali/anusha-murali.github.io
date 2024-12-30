@@ -4,7 +4,7 @@
 2. [Revising the SELECT Query II (Easy)](./p2.md)
 3. [SELECT All (Easy)](./p3.md)
 4. [SELECT by ID (Easy)](./p4.md)
-5. [Japanese Cities' Attributes (Easy(](./p5.md)
+5. [Japanese Cities' Attributes (Easy)](./p5.md)
 6. [Japanese Cities' Names (Easy)](./p6.md)
 7. [Average Population (Easy)](./p7.md)
 8. [Japan Population (Easy)](./p8.md)
