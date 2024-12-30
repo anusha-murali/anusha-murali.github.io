@@ -1,6 +1,4 @@
-# HackerRank SQL Problems
-
-## Solutions in Oracle
+# HackerRank SQL Problems and Solutions (in Oracle)
 
 1. Revising the `SELECT` Query I  (Easy)
 2. Revising the `SELECT` Query II (Easy)
