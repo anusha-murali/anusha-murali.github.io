@@ -2,6 +2,7 @@
 
 1. [Revising the SELECT Query I  (Easy)](./p1.md)
 2. [Revising the SELECT Query II (Easy)](./p2.md)
+3. [SELECT All (Easy)](./p3.md)
 
 
 * * *
