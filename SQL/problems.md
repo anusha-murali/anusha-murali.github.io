@@ -2,8 +2,8 @@
 
 ## Solutions in Oracle
 
-1. Revising the `SELECT` Query I | Easy
-2. Revising the `SELECT` Query II | Easy
+1. Revising the `SELECT` Query I  (Easy)
+2. Revising the `SELECT` Query II (Easy)
 
 
 * * *
