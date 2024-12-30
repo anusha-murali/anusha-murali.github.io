@@ -1,7 +1,7 @@
 # HackerRank SQL Problems and Solutions (in Oracle)
 
-1. [Revising the `SELECT` Query I  (Easy)](./p1.md) [**Solution**](./SQL/s1.md)
-2. Revising the `SELECT` Query II (Easy)
+1. [Revising the SELECT Query I  (Easy)](./p1.md) [**Solution**](./s1.md)
+2. [Revising the SELECT Query II (Easy)](./p2.md) [**Solution**](./s2.md)
 
 
 * * *
