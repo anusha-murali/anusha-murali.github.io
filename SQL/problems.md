@@ -30,6 +30,8 @@
 28. [Weather Observation Station 13 (Easy)](./p28.md)
 29. [Weather Observation Station 14 (Easy)](./p29.md)
 30. [Weather Observation Station 15 (Easy)](./p30.md)
+31. [Weather Observation Station 16 (Easy)](./p31.md)
+32. [Weather Observation Station 17 (Easy)](./p32.md)
 
 
 * * *
