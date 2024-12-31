@@ -20,6 +20,16 @@
 18. [Weather Observation Station 3 (Easy)](./p18.md)
 19. [Weather Observation Station 4 (Easy)](./p19.md)
 20. [Weather Observation Station 5 (Easy)](./p20.md)
+21. [Weather Observation Station 6 (Easy)](./p21.md)
+22. [Weather Observation Station 7 (Easy)](./p22.md)
+23. [Weather Observation Station 8 (Easy)](./p23.md)
+24. [Weather Observation Station 9 (Easy)](./p24.md)
+25. [Weather Observation Station 10 (Easy)](./p25.md)
+26. [Weather Observation Station 11 (Easy)](./p26.md)
+27. [Weather Observation Station 12 (Easy)](./p27.md)
+28. [Weather Observation Station 13 (Easy)](./p28.md)
+29. [Weather Observation Station 14 (Easy)](./p29.md)
+30. [Weather Observation Station 15 (Easy)](./p30.md)
 
 
 * * *
