@@ -42,6 +42,7 @@
 37. [Employee Names (Easy)](./p37.md)
 38. [Employee Salaries (Easy)](./p38.md)
 39. [Top Earners (Easy)](./p39.md)
+40. [The Blunder (Easy)](./p40.md)
 
 
 * * *
