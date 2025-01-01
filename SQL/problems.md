@@ -35,6 +35,10 @@
 30. [Weather Observation Station 15 (Easy)](./p30.md)
 31. [Weather Observation Station 16 (Easy)](./p31.md)
 32. [Weather Observation Station 17 (Easy)](./p32.md)
+33. [Weather Observation Station 18 (Medium)](./p33.md)
+34. [Weather Observation Station 19 (Medium)](./p34.md)
+35. [Weather Observation Station 20 (Medium)](./p35.md)
+36. [Higher than 75 Marks (Easy)](./p36.md)
 
 
 * * *
