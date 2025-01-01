@@ -40,6 +40,7 @@
 35. [Weather Observation Station 20 (Medium)](./p35.md)
 36. [Higher than 75 Marks (Easy)](./p36.md)
 37. [Employee Names (Easy)](./p37.md)
+38. [Employee Salaries (Easy)](./p38.md)
 
 
 * * *
