@@ -31,7 +31,9 @@ The table and earnings data is depicted above.
 The maximum earnings value is 69952. The only employee with earnings = 69952 is Kimberly, so we print the maximum earnings value (69952) and a 
 count of the number of employees who have earned $69952 (which is 1) as two space-separated values.
 
-We want to compute `MONTHS*SALARY` and count how many times each `MONTHS*SALARY` value is occurring. Then, we want to find the
+![solution_image5](https://github.com/user-attachments/assets/82f796e0-28cb-4ef0-bcdc-1a701ce7db53)
+
+ We want to compute `MONTHS*SALARY` and count how many times each `MONTHS*SALARY` value is occurring. Then, we want to find the
   maximum value of `MONTHS*SALARY` and the number of times it occurs. This can be achieved in Oracle as follows:
 
 ```
