@@ -1,4 +1,7 @@
-# HackerRank SQL Problems and Solutions (in Oracle)
+
+<p align="center">
+<img width="998" alt="HackerRank" src="https://github.com/user-attachments/assets/15da92bf-532e-45b6-8fad-6c32ac252aff" />
+</p>
 
 1. [Revising the SELECT Query I  (Easy)](./p1.md)
 2. [Revising the SELECT Query II (Easy)](./p2.md)
