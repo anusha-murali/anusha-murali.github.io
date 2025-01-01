@@ -1,6 +1,8 @@
 
 <p align="center">
 <img width="998" alt="HackerRank" src="https://github.com/user-attachments/assets/15da92bf-532e-45b6-8fad-6c32ac252aff" />
+  
+  <img width="1588" alt="HackerRank2" src="https://github.com/user-attachments/assets/309bef45-433f-441b-bba7-77954278516d" />
 </p>
 
 1. [Revising the SELECT Query I  (Easy)](./p1.md)
