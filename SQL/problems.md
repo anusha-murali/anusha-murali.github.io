@@ -45,6 +45,7 @@
 40. [The Blunder (Easy)](./p40.md)
 41. [Type of Triangle (Easy)](./p41.md)
 42. [The PADS (Medium)](./p42.md)
+43. [The Report (Medium)](./p43.md)
 
 
 * * *
