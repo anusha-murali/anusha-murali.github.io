@@ -44,6 +44,7 @@
 39. [Top Earners (Easy)](./p39.md)
 40. [The Blunder (Easy)](./p40.md)
 41. [Type of Triangle (Easy)](./p41.md)
+42. [The PADS (Medium)](./p42.md)
 
 
 * * *
