@@ -46,6 +46,7 @@
 41. [Type of Triangle (Easy)](./p41.md)
 42. [The PADS (Medium)](./p42.md)
 43. [The Report (Medium)](./p43.md)
+44. [Top Competitors (Medium)](./p44.md)
 
 
 * * *
