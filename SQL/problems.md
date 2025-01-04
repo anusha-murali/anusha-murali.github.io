@@ -49,6 +49,7 @@
 44. [Top Competitors (Medium)](./p44.md)
 45. [Challenges (Medium)](./p45.md)
 46. [Contest Leaderboard (Medium)](./p46.md)
+47. [15 Days of Learning SQL (Hard)](./p47.md)
 
 
 * * *
