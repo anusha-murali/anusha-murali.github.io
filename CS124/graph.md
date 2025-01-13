@@ -42,7 +42,7 @@ Bellman-Ford algorithm is useful for finding the single source shortest path whe
 **[Bellman-Ford Algorithm](./bellman-ford.md)**
 
 
-[Table of Contents](./index.md)
+[Table of Contents](./cs124.md)
 
 * * *
 ###### anusha-murali.github.io
