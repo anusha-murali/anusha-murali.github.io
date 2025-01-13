@@ -67,7 +67,7 @@ Given two strings $S_1$ and $S_2$ find the longest common subsequence or LCS of 
 
 * * *
 
-[Table of Contents](./index.md)
+[Table of Contents](./cs124.md)
 
 * * *
 ###### anusha-murali.github.io
