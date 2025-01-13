@@ -314,7 +314,7 @@ $$
    X reduces to Y means that if you had a black box to solve Y efficiently, you could use
     it to solve X efficiently. X is no harder than Y.
 
-[Table of Contents](./index.md)
+[Table of Contents](./cs124.md)
 <!--
 ![111596338](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/639243aa-2857-4595-a65a-7852762bb002)
 -->
