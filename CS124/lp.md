@@ -37,7 +37,7 @@ Now, we can write the dual LP, which is the column player, $B$'s **minimization*
 - $-2y_1 + 3y_2 + 2y_3 \leq y_4$
 - $y_1 -2y_2 + 4y_3 \leq y_4$
 
-[Table of Contents](./index.md)
+[Table of Contents](./cs124.md)
 
 * * *
 ###### anusha-murali.github.io
