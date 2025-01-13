@@ -7,7 +7,7 @@ Find the best encoding by greedily combining the two least frequently appearing 
 
 [Back to Greedy Algorithms](./greedy.md)
 
-[Table of Contents](./index.md)
+[Table of Contents](./cs124.md)
 
 * * *
 ###### anusha-murali.github.io
