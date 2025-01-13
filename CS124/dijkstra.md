@@ -108,7 +108,7 @@ Dijkstra's algorithm fails for graphs with negative edge weights.
 
 [Back to Graph Algorithms](./graph.md)
 
-[Table of Contents](./index.md)
+[Table of Contents](./cs124.md)
 
 * * *
 ###### anusha-murali.github.io
