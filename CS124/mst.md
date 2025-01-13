@@ -16,7 +16,7 @@ Two popular algorithms for finding MST in a graph are:
 
 [Back to Greedy Algorithms](./greedy.md)
 
-[Table of Contents](./index.md)
+[Table of Contents](./cs124.md)
 
 * * *
 ###### anusha-murali.github.io
