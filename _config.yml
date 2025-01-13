@@ -8,7 +8,7 @@ logo: "images/github-logo3.png"
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
-  These are my notes on CS124: Data Structures and Algorithms course at Harvard. Please see github.com/anusha-murali for my other repositories.
+  Please see github.com/anusha-murali for my other repositories.
 
 # Build settings
 
