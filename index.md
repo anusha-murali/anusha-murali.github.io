@@ -3,11 +3,12 @@ title: Table of Contents
 ---
 **Table of Contents**
 
-1. [Fundamentals](./fundamentals.md)
-2. [Graph Algorithms](./graph.md)
-3. [Greedy Algorithms](./greedy.md)
-4. [Dynamic Programming](./dp.md)
-5. [Divide and Combine](./dc.md)
+1. [Data Structures and Algorithms CS124](./CS124/cs124.md)
+2. [Fundamentals](./fundamentals.md)
+3. [Graph Algorithms](./graph.md)
+4. [Greedy Algorithms](./greedy.md)
+5. [Dynamic Programming](./dp.md)
+6. [Divide and Combine](./dc.md)
 7. [Hashing](./hashing.md)
 8. [Randomized Algorithms](./randomized_algos.md)
 9. [NP-Completeness & Approximations](./np.md)
