@@ -15,7 +15,7 @@ Greedily choose the set that covers the most number of the remaining uncovered e
 
 [Back to Greedy Algorithms](./greedy.md)
 
-[Table of Contents](./index.md)
+[Table of Contents](./cs124.md)
 
 * * *
 ###### anusha-murali.github.io
