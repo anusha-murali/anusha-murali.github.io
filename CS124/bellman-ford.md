@@ -103,7 +103,7 @@ The 5-hop walk $A \rightarrow C  \rightarrow B  \rightarrow D  \rightarrow C  \r
 
 [Back to Graph Algorithms](./graph.md)
 
-[Table of Contents](./index.md)
+[Table of Contents](./cs124.md)
 
 * * *
 ###### anusha-murali.github.io
