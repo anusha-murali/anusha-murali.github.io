@@ -252,7 +252,7 @@ Let $T(n)$ be the number of comparisons needed to search an element in an array 
 
 **Runtime**: $O(\log_2 n)$.
 
-[Table of Contents](./index.md)
+[Table of Contents](./cs124.md)
 
 * * *
 ###### anusha-murali.github.io
