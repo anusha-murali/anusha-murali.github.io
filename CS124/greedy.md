@@ -9,7 +9,7 @@ The greedy method is quite powerful and works well for a wide range of prob- lem
 4. **[Union Find](./union_find.md)**
 5. **[Horn Formula](./horn.md)**
 
-[Table of Contents](./index.md)
+[Table of Contents](./cs124.md)
 
 * * *
 ###### anusha-murali.github.io
