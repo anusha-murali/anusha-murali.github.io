@@ -333,7 +333,7 @@ As we can see only the first 3 have $\min(\\{\pi(a): a \in A \\}) = \min(\\{\pi(
 
 Suppose that for some positive integer $N$, $A$ and $B$ are subsets of $\[N\]$ (i.e: $\{0, 1, \ldots, N-1\}$) with $\|A\| \geq 2$ and $\|B\| \geq 2$. Prove or disprove: For every such  $A$ and $B$, if we choose a uniformly random permutation $\pi: \[N\] \rightarrow \[N\]$, the probability that $\text{second-largest}(\{\pi(a):a \in A\})$ = $\text{second-largest}(\{\pi(b):b \in B\})$ is $R(A, B)$. Note that given a set $X$, $\text{second-largest}(X)$ is the second-largest element of $X$.
 
-[Table of Contents](./index.md)
+[Table of Contents](./cs124.md)
 <!--
 ![111596338](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/639243aa-2857-4595-a65a-7852762bb002)
 -->
