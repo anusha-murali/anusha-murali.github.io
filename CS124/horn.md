@@ -7,7 +7,7 @@ Set all variables to false and greedily set ones to be true when forced to.
 
 [Back to Greedy Algorithms](./greedy.md)
 
-[Table of Contents](./index.md)
+[Table of Contents](./cs124.md)
 
 * * *
 ###### anusha-murali.github.io
