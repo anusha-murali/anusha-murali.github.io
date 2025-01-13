@@ -132,7 +132,7 @@ Let $f_{uv}$ be the amount of flow sent along the edge $(u, v)$ and $c_{uv}$ be 
 2. **Conservation**: For every vertex $w$ besides $w = s$ and $w = t$, we must have that $\displaystyle \sum_{u,w} f_{uw} - \sum_{w,v} f_{wv} = 0.$
 3. **Nonnegativity**: $f_{uv} \geq 0$.
 
-[Table of Contents](./index.md)
+[Table of Contents](./cs124.md)
 <!--
 ![111596338](https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/639243aa-2857-4595-a65a-7852762bb002)
 -->
