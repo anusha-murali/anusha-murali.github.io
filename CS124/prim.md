@@ -7,7 +7,7 @@
 
 [Back to Minimum Spanning Tree](./mst.md)
 
-[Table of Contents](./index.md)
+[Table of Contents](./cs124.md)
 
 * * *
 ###### anusha-murali.github.io
