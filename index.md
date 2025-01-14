@@ -3,7 +3,7 @@ title: Table of Contents
 ---
 **Table of Contents**
 
-1. [Data Structures and Algorithms CS124](./CS124/problems.md)
+1. [Data Structures and Algorithms CS124](./CS124/cs124.md)
 2. [HackerRank SQL Problems and Solutions](./SQL/problems.md)
 3. [Fundamentals](./fundamentals.md)
 4. [Graph Algorithms](./graph.md)
