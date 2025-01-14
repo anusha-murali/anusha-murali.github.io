@@ -6,18 +6,19 @@ title: Table of Contents
 <img width="1372" alt="toc" src="https://github.com/user-attachments/assets/9a96f514-33f9-4136-95bb-7ee88a4928e9" />
 </p>
 
-1. [Data Structures and Algorithms CS124](./CS124/cs124.md)
+1. [Data Structures and Algorithms (My Harvard CS124 notes)](./CS124/cs124.md)
 2. [HackerRank SQL Problems and Solutions](./SQL/problems.md)
-3. [Fundamentals](./fundamentals.md)
-4. [Graph Algorithms](./graph.md)
-5. [Greedy Algorithms](./greedy.md)
-6. [Dynamic Programming](./dp.md)
-7. [Divide and Combine](./dc.md)
-8. [Hashing](./hashing.md)
-9. [Randomized Algorithms](./randomized_algos.md)
-10. [NP-Completeness & Approximations](./np.md)
-11. [Linear Programming](./lp.md)
-12. [Network Flows](./network_flows.md)
+3. [Artificial Intelligence (My Harvard CS182 noes)](./CS182/cs182.md)
+4. [Fundamentals](./fundamentals.md)
+5. [Graph Algorithms](./graph.md)
+6. [Greedy Algorithms](./greedy.md)
+7. [Dynamic Programming](./dp.md)
+8. [Divide and Combine](./dc.md)
+9. [Hashing](./hashing.md)
+10. [Randomized Algorithms](./randomized_algos.md)
+11. [NP-Completeness & Approximations](./np.md)
+12. [Linear Programming](./lp.md)
+13. [Network Flows](./network_flows.md)
 
 <!---
 1. [SQL Problems](./SQL/problems.md)
