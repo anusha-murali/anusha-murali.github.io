@@ -3,17 +3,18 @@ title: Table of Contents
 ---
 **Table of Contents**
 
-1. [Data Structures and Algorithms CS124](./CS124/cs124.md)
-2. [Fundamentals](./fundamentals.md)
-3. [Graph Algorithms](./graph.md)
-4. [Greedy Algorithms](./greedy.md)
-5. [Dynamic Programming](./dp.md)
-6. [Divide and Combine](./dc.md)
-7. [Hashing](./hashing.md)
-8. [Randomized Algorithms](./randomized_algos.md)
-9. [NP-Completeness & Approximations](./np.md)
-10. [Linear Programming](./lp.md)
-11. [Network Flows](./network_flows.md)
+1. [Data Structures and Algorithms CS124](./CS124/problems.md)
+2. [HackerRank SQL Problems](./SQL/problems.md)
+3. [Fundamentals](./fundamentals.md)
+4. [Graph Algorithms](./graph.md)
+5. [Greedy Algorithms](./greedy.md)
+6. [Dynamic Programming](./dp.md)
+7. [Divide and Combine](./dc.md)
+8. [Hashing](./hashing.md)
+9. [Randomized Algorithms](./randomized_algos.md)
+10. [NP-Completeness & Approximations](./np.md)
+11. [Linear Programming](./lp.md)
+12. [Network Flows](./network_flows.md)
 
 <!---
 1. [SQL Problems](./SQL/problems.md)
