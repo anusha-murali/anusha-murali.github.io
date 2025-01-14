@@ -10,6 +10,7 @@ title: Table of Contents
 2. [HackerRank SQL Problems and Solutions](./SQL/problems.md)
 3. [Artificial Intelligence (My Harvard CS182 noes)](./CS182/cs182.md)
 4. [My favorite Dynamic Programming problems](./DP/problems.md)
+5. [Finding SCCs: Kosaraju's Algorithm](./MISC/kosaraju.md)
 
 <!---
 1. [SQL Problems](./SQL/problems.md)
