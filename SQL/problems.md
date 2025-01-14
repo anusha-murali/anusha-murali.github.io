@@ -54,7 +54,7 @@
 
 * * *
 
-[Table of Contents](../index.md)
+[Home](../index.md)
 
 * * *
 ###### anusha-murali.github.io
