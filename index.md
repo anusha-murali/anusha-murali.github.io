@@ -2,8 +2,9 @@
 title: Table of Contents
 ---
 
+<p align="center">
 <img width="1372" alt="toc" src="https://github.com/user-attachments/assets/9a96f514-33f9-4136-95bb-7ee88a4928e9" />
-
+</p>
 
 1. [Data Structures and Algorithms CS124](./CS124/cs124.md)
 2. [HackerRank SQL Problems and Solutions](./SQL/problems.md)
