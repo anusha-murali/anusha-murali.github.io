@@ -149,7 +149,7 @@ def longestTurbulentSubarray(A):
 
 The runtime of the above function is $O(n)$ as the for loop runs over the entire array only once.
 
-[Dynamic Programming Problems](./dp.md)
+[Dynamic Programming Problems](./problems.md)
 
 * * *
 ###### anusha-murali.github.io
