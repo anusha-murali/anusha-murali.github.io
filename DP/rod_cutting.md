@@ -156,7 +156,7 @@ def printCuts(p, n):
 > **Example**: Let $p = [0, 2, 7, 8, 10]$. Hence `printCuts(p, 3)` returns 1, 2, so the revenue is $p[1] + p[2] = 2 + 7 = \\$9$.  `printCuts(p, 4)` returns 2, 2, so the revenue is $p[2] + p[2] = 7 + 7 = \\$14$.
 
 
-[Dynamic Programming Problems](./problems.md)
+[Back to Dynamic Programming Problems](./problems.md)
 
 * * *
 ###### anusha-murali.github.io
