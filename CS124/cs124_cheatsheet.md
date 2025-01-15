@@ -1,4 +1,4 @@
-<object data="./cs124_cheatsheet_Anusha_Murali.pdf" width="700" height="3000" type='application/pdf'/>
+<object data="./cs124_cheatsheet_Anusha_Murali.pdf" width="700" height="2000" type='application/pdf'/>
 
 [Data Structures and Algorithms Table of Contents](./cs124.md)
 
