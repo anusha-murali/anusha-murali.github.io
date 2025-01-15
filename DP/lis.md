@@ -121,7 +121,7 @@ def lis_greedy(A):
 
 The advantage of the above greedy solution comparing to the dynamic programming solution discussed earlier is that the greedy approach is able to return the actual LIS in a single pass.
 
-[Dynamic Programming](./dp.md)
+[Dynamic Programming Problems](./dp.md)
 
 * * *
 ###### anusha-murali.github.io
