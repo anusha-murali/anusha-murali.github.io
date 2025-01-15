@@ -1,4 +1,4 @@
-### 1. Rod Cutting
+### Rod Cutting
 
 ***
 
