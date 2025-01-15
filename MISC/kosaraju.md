@@ -1,4 +1,4 @@
-## Kosaraju's Algorithm for Finding Stongly Connected Components (SCC)
+### Kosaraju's Algorithm for Finding Stongly Connected Components (SCC)
 
 This is an application of DFS.
 
