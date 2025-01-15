@@ -1,4 +1,4 @@
-<object data="./cs182_cheatsheet.pdf" width="700" height="2000" type='application/pdf'/>
+<object data="./cs182_cheatsheet.pdf" width="700" height="1000" type='application/pdf'/>
 
 [Artificial Intelligence Table of Contents](./cs182.md)
 
