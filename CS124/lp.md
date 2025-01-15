@@ -37,10 +37,13 @@ Now, we can write the dual LP, which is the column player, $B$'s **minimization*
 - $-2y_1 + 3y_2 + 2y_3 \leq y_4$
 - $y_1 -2y_2 + 4y_3 \leq y_4$
 
-[Table of Contents](./cs124.md)
+[Data Structures and Algorithms Table of Contents](./cs124.md)
 
 * * *
 ###### anusha-murali.github.io
 
-<img src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/639243aa-2857-4595-a65a-7852762bb002" width="50" height="50"/>
+<img src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/639243aa-2857-4595-a65a-7852762bb002" width="50" height="50" align="left">
+
+[<img src="https://github.com/user-attachments/assets/989cfb30-4fb8-40f8-a812-8a054869aa32" width="50" height="50" align="right">](../index.md)
+
 
