@@ -9,9 +9,7 @@
 5. [Longest Common Subsequence (LCS)](./lcs.md)
 
 
-[
-![house2](https://github.com/user-attachments/assets/73abb185-c1a4-47c1-9226-cf24c7374443)
- ](../index.md)
+[Home](../index.md)
 
 * * *
 ###### anusha-murali.github.io
