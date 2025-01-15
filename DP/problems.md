@@ -7,6 +7,8 @@ My Favorite DP Problems
 5. [Longest Common Subsequence (LCS)](./lcs.md)
 
 
+[Home](../index.md)
+
 * * *
 ###### anusha-murali.github.io
 
