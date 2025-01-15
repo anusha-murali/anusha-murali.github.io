@@ -1,4 +1,6 @@
-My Favorite DP Problems
+<p align="center">
+<img width="1375" alt="favorite_dp" src="https://github.com/user-attachments/assets/d16a688e-ed47-4a2d-a6b5-b9e85f740707" />
+</p>
 
 1. [Rod Cutting](./rod_cutting.md)
 2. [Fibonacci Sequence](./fibonacci.md)
