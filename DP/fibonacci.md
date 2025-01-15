@@ -65,7 +65,7 @@ def fib(n):
 
 **Runtime**: Unlike Solution 1, the memoized version above solves each subproblem only once. Since there are only $n-1$ additions, the runtime is $O(n)$.
 
-[Back to Dynamic Programming](./dp.md)
+[Back to Dynamic Programming](./problems.md)
 
 * * *
 ###### anusha-murali.github.io
