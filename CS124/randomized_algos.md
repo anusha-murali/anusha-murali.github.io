@@ -137,9 +137,12 @@ We fill-up the $a, b, q$ columns of the table top-down, then find $d = 1$, and t
 
 Reading off the $x$ and $y$ values from the top row, we find $x=-2$ and $y= 9$. We confirm that $37(-2) + 7(9) = 1$, and therefore the multiplicative inverse of 7 with respect to 31 is 9.
 
-[Table of Contents](./cs124.md)
+[Data Structures and Algorithms Table of Contents](./cs124.md)
 
 * * *
 ###### anusha-murali.github.io
 
-<img src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/639243aa-2857-4595-a65a-7852762bb002" width="50" height="50"/>
+<img src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/639243aa-2857-4595-a65a-7852762bb002" width="50" height="50" align="left">
+
+[<img src="https://github.com/user-attachments/assets/989cfb30-4fb8-40f8-a812-8a054869aa32" width="50" height="50" align="right">](../index.md)
+
