@@ -9,7 +9,8 @@
 5. [Longest Common Subsequence (LCS)](./lcs.md)
 
 
-[<img width="50" alt="home" src="https://github.com/user-attachments/assets/03fe382e-6a6e-4a60-b3b9-4a607058f529" />
+[
+![house2](https://github.com/user-attachments/assets/73abb185-c1a4-47c1-9226-cf24c7374443)
  ](../index.md)
 
 * * *
