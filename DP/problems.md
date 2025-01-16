@@ -8,6 +8,7 @@
 4. [Maximum Sub Subarray](./max_sum_subarray.md)
 5. [Longest Increasing Subsequence (LIS)](./lis.md)
 6. [Longest Common Subsequence (LCS)](./lcs.md)
+7. [Longest Consecutive 1's](./longestOnes.md)
 
 
 
