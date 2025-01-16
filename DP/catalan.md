@@ -7,6 +7,7 @@ C_n = C_0 C_{n-1} + C_1 C_{n-2} + C_2 C_{n-3} + \cdots + C_{n-1} C_0.
 $$
 
 First few Catalan numbers are:
+
 \begin{align*}
 C_0 &= 1\\
 C_1 &= C_0 C_0 = 1 \cdot 1 = 1, \\
