@@ -10,10 +10,23 @@
 The longest consecutive 1's for the above example is $A = [1,1,1,0,0,\textcolor{red}{1},1,1,1,1,\textcolor{red}{1}] $
 
 
+```
+def longestOnes(nums: list[int], k: int) -> int:
+    zeroList = [i for i in range(len(nums)) if nums[i] == 0]
+    zeroList.append(len(nums))
+    start = 0
+    end = zeroList[min(k, len(zeroList)-1)] - 1
+    maxLen = end - start + 1
+    for i in range(1, len(zeroList) - k):
+        start = zeroList[i-1] + 1
+        end = zeroList[i+k] - 1
+        maxLen = max(end-start+1, maxLen)
+    return maxLen
+```
 
 
 
-**Runtime**: The total number of additions and multiplications done by the two `for` loops result in a runtime of $O(n^2)$.
+**Runtime**: $O(n)$.
 
 [Back to Dynamic Programming Problems](./problems.md)
 
