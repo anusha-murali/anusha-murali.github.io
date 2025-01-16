@@ -1,4 +1,4 @@
-### Finding $n^th$ Catalan Number
+### Finding $n^{th}$ Catalan Number
 
 **Problem**: The $n^{\text{th}}$ Fibonacci number is given by,
 
