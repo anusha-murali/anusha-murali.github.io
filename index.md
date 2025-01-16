@@ -11,10 +11,8 @@ title: Table of Contents
 3. [Artificial Intelligence (My Harvard CS182 noes)](./CS182/cs182.md)
 4. [My favorite Dynamic Programming problems](./DP/problems.md)
 5. [Finding Strongly Connected Components (SCCs): Kosaraju's Algorithm](./MISC/kosaraju.md)
+6. [My DSA Cheatsheet](./CS124/cs124_cheatsheet.md)
 
-<!---
-1. [SQL Problems](./SQL/problems.md)
--->
 
 * * *
 ###### anusha-murali.github.io
