@@ -24,9 +24,18 @@ def longestOnes(nums: list[int], k: int) -> int:
     return maxLen
 ```
 
+Since there are $\binom{m}{k}$ ways to select $k$ 0's out of a total of $m$ 0's, the naive and brute force approach is exponential. Therefore, one approach is to transform the problem into windows of 1's, demarcated by 0's. These
+windows are represented by the {\tt zeroList} array above. Each entry in the {\tt zeroList}
+corresponds to the index of the respective zero. We can use Python's {\em list comprehension} to 
+create the {\tt zeroList} efficiently, as well as compactly in one line. The {\bf for} loop only scans the shorter {\tt zeroList}, each 
+time allowing at most $k$ 0's in the window and updating the maximum length if the length
+of the current consecutive 1's was found to be larger than the current {\tt maxLen}. Upon
+exiting the {\bf for} loop, {\tt maxLen} contains the length of the maximum number of consecutive
+1's in the array with at most $k$ 0's.
 
 
-**Runtime**: $O(n)$.
+
+**Runtime**: $O(n)$ as the {\bf for} loop iterates only {\tt len(zeroList)}$-k -1$ times, where {\tt len(zeroList) $\leq n$}. . Space complexity is also $O(n)$.
 
 [Back to Dynamic Programming Problems](./problems.md)
 
