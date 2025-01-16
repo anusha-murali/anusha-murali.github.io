@@ -19,68 +19,25 @@ C_4 &= C_0 C_3 + C_1 C_2 + C_2 C_1 + C_3 C_0 = 1 \cdot 5 + 1 \cdot 2 + 2 \cdot 1
 \end{align*}
 $$
 
-$$
-F(n) = 
-\begin{cases}
-0 & \text{for }n=0\\
-1 & \text{for }n=1\\
-F(n-1) + F(n-2) & \text{for }n >1
-\end{cases}
-$$
+Find the $n^{\text{th}}$ Catalan number.
 
-Find the $n^{\text{th}}$ Fibonacci number.
 
-#### Solution 1: Top-down Recursion
-
-```
-def fib(n):
-    if n == 0:
-        return 0
-    elif n == 1:
-        return 1
-    else:
-        return fib(n-1) + fib(n-2)
-```
-
-What is the runtime of the above recursive solution?
-
-Let $T(n)$ be the number of addition operations the above function requires in order to compute $F(n)$. We note that $T(0) = 0$ and $T(1) = 1$. In order to compute $F(n), n \geq 2$, we need to compute $F(n-1)$ and $F(n-2)$ and do one addition. Therefore, we have,
-
-$$
-T(n) = T(n-1) + T(n-2) + 1
-$$
-
-We can prove by induction that $F(n) = 2^{\Theta(n)}$.
-
-**Lemma 1**. *For $n > 5, 2^{n/2} \leq F(n) \leq 2^n$*.
-
-*Proof*. We can verify that the above inequality for the base cases of $n=6$ and $n=7$.  Now, let us assume that the above inequality holds for all $F(n), n \geq 6$. Hence, we find,
-
-$$
-F(n) = F(n-1) + F(n-2) \leq 2^{n-1} + 2^{n-2} \leq  2^{n-1} + 2^{n-1} \leq 2^n.
-$$
-
-Similarly,
-
-$$
-F(n) = F(n-1) + F(n-2) \geq 2^{(n-1)/2} + 2^{(n-2)/2} \geq  2^{(n-2)/2} + 2^{(n-2)/2} \geq 2^{n/2}.
-$$
-
-Hence, the Fibonacci numbers grow exponentially. Hence the runtime of the recursive solution is $2^{\Theta(n)}$.
-
-#### Solution 2: Dynamic Programming with Memoization
+#### Dynamic Programming with Memoization
 
 The reason why the recursive solution above has an exponential runtime is that it repeatedly calculates the subproblems. By saving the results of each subproblem in an array (memoization), we can avoid repeated calculations of the subproblems. We now have the following solution:
 
 ```
-def fib(n):
-    f = [0, 1]
-    for i in range(2, n+1):
-        f.append(f[i-1] + f[i-2])
-    return f[n]
+def catalan(n):
+    catList = [1]
+    for k in range(1,n+1):
+        total = 0
+        for i in range(k):
+            total += catList[i] * catList[k-1-i]
+        catList.append(total)
+    return catList[n]
 ```
 
-**Runtime**: Unlike Solution 1, the memoized version above solves each subproblem only once. Since there are only $n-1$ additions, the runtime is $O(n)$.
+**Runtime**: The total number of additions and multiplications done by the two `for` loops result in a runtime of $O(n^2)$.
 
 [Back to Dynamic Programming Problems](./problems.md)
 
