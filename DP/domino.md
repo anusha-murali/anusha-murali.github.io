@@ -11,20 +11,20 @@
 **Case II**
 
 <p align = "center">
-<img width="388" alt="domino_2" src="https://github.com/user-attachments/assets/b54ef092-7bd9-4de1-8aa8-b219cb30b26a" />
+<img width="260" alt="domino_2" src="https://github.com/user-attachments/assets/b54ef092-7bd9-4de1-8aa8-b219cb30b26a" />
 </p>
 
 
 **Case III**
 
 <p align = "center">
-<img width="360" alt="domino_3" src="https://github.com/user-attachments/assets/c77d43f9-2604-415b-be3f-379e098ea718" />
+<img width="260" alt="domino_3" src="https://github.com/user-attachments/assets/c77d43f9-2604-415b-be3f-379e098ea718" />
 </p>
 
 **Case IV**
 
 <p align = "center">
-<img width="360" alt="domino_4" src="https://github.com/user-attachments/assets/cf8c7d69-7935-4e2d-9ae8-d2d727d8e263" />
+<img width="260" alt="domino_4" src="https://github.com/user-attachments/assets/cf8c7d69-7935-4e2d-9ae8-d2d727d8e263" />
 </p>
 
 
