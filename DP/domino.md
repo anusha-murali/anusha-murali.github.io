@@ -4,9 +4,9 @@
 
 **Case I**
 
-<align = "center">
-<img width="300" alt="domino_1" src="https://github.com/user-attachments/assets/af80392c-0ecb-4b4f-a8b4-2b67e2d3b160" />
-</align>
+
+<img width="300" alt="domino_1" src="https://github.com/user-attachments/assets/af80392c-0ecb-4b4f-a8b4-2b67e2d3b160" align = "center"/>
+
 
 
 **Runtime**: The total number of additions and multiplications done by the two `for` loops result in a runtime of $O(n^2)$.
