@@ -11,7 +11,7 @@ We observe that we can create a $2 \times n$ rectangle from the following four d
 
 **Case 1**
 
-We can create a $2 \times n$ rectangle grid from a $2 \times n-1$ rectangle grid by adding a domino vertically as shown:
+We can create a $2 \times n$ rectangle grid from a $2 \times (n-1)$ rectangle grid by adding a domino vertically as shown:
 <p align = "center">
 <img width="251" alt="domino_1" src="https://github.com/user-attachments/assets/5d93db9b-a5de-4487-b65e-57337626cb93" />
 </p>
