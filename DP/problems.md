@@ -9,6 +9,7 @@
 5. [Longest Increasing Subsequence (LIS)](./lis.md)
 6. [Longest Common Subsequence (LCS)](./lcs.md)
 7. [Longest Consecutive 1's](./longestOnes.md)
+8. [Domino and Tromino Tiling](./domino.md)
 
 
 
