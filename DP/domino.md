@@ -5,7 +5,7 @@
 
 **Dynamic Programming Solution**
 
-We want to find the number of ways to create a $2 \times n$ rectangular grid using the given dominos and trominos.
+We want to find the number of ways to create a $2 \times n$ rectangular grid using the given dominos and trominos. Let $f(n)$ be the number of ways to create a $2 \times n$ rectangular grid is $f(n)$.
 
 We observe that we can create a $2 \times n$ rectangle from the following four distinct configurations:
 
@@ -16,7 +16,7 @@ We can create a $2 \times n$ rectangle grid from a $2 \times (n-1)$ rectangular 
 <img width="251" alt="domino_1" src="https://github.com/user-attachments/assets/5d93db9b-a5de-4487-b65e-57337626cb93" />
 </p>
 
-Let us say that the number of ways to create a $2 \times n$ rectangular grid is $f(n)$. Therefore, the number of ways to create a  $2 \times (n-1)$ rectangular grid is  $f(n-1)$. Hence Case 1 has $f(n-1)$ ways.
+Therefore, the number of ways to create a  $2 \times (n-1)$ rectangular grid is  $f(n-1)$. Hence Case 1 has $f(n-1)$ ways.
 
 **Case II**
 
