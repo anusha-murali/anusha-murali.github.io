@@ -2,8 +2,16 @@
 
 **Problem**: 
 
-**Case I**
 
+**Dynamic Programming Solution**
+
+We want to find the number of ways to create a $2 \times n$ rectangle using the given dominos and trominos.
+
+We observe that we can create a $2 \times n$ rectangle from the following four distinct configurations:
+
+**Case 1**
+
+We can create a $2 \times n$ rectangle grid from a $2 \times n-1$ rectangle grid by adding a domino vertically as shown:
 <p align = "center">
 <img width="251" alt="domino_1" src="https://github.com/user-attachments/assets/5d93db9b-a5de-4487-b65e-57337626cb93" />
 </p>
