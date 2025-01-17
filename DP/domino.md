@@ -24,7 +24,7 @@
 **Case IV**
 
 <p align = "center">
-<img width="260" alt="domino_4" src="https://github.com/user-attachments/assets/cf8c7d69-7935-4e2d-9ae8-d2d727d8e263" />
+<img width="230" alt="domino_4" src="https://github.com/user-attachments/assets/cf8c7d69-7935-4e2d-9ae8-d2d727d8e263" />
 </p>
 
 
