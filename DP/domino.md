@@ -21,6 +21,12 @@
 <img width="360" alt="domino_3" src="https://github.com/user-attachments/assets/c77d43f9-2604-415b-be3f-379e098ea718" />
 </p>
 
+**Case IV**
+
+<p align = "center">
+<img width="360" alt="domino_4" src="https://github.com/user-attachments/assets/cf8c7d69-7935-4e2d-9ae8-d2d727d8e263" />
+</p>
+
 
 **Runtime**: The total number of additions and multiplications done by the two `for` loops result in a runtime of $O(n^2)$.
 
