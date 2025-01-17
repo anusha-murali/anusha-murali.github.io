@@ -5,7 +5,7 @@
 **Case I**
 
 <p align = "center">
-<img width="300" alt="domino_1" src="https://github.com/user-attachments/assets/af80392c-0ecb-4b4f-a8b4-2b67e2d3b160" />
+<img width="451" alt="domino_1" src="https://github.com/user-attachments/assets/5d93db9b-a5de-4487-b65e-57337626cb93" />
 </p>
 
 
