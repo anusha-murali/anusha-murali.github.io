@@ -18,7 +18,7 @@
 **Case III**
 
 <p align = "center">
-<img width="380" alt="domino_3" src="https://github.com/user-attachments/assets/c77d43f9-2604-415b-be3f-379e098ea718" />
+<img width="360" alt="domino_3" src="https://github.com/user-attachments/assets/c77d43f9-2604-415b-be3f-379e098ea718" />
 </p>
 
 
