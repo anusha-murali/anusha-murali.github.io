@@ -55,7 +55,7 @@ Putting these all together, we have the following solution:
         maxLen = 0
         for k in range(len(zeroList)):
             if k == 0:
-                curLen = zeroList[1] -1
+                curLen = zeroList[1] - 1
             elif k == len(zeroList) - 1:
                 curLen = len(nums) - zeroList[k-1] - 2
             else:
