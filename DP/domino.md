@@ -96,6 +96,14 @@ We note that the structure in the left of the diagram in Case 4 can be construct
 <img width="500" alt="domino_7" src="https://github.com/user-attachments/assets/35fc2aaa-5479-44cd-bf06-d0af98c2fc3e" />
 </p>
 
+
+**(B)** It can also be constructed by adding a domino to the structure similar to the one in Case 3 above, but with a bottom length of $n-2$ as shown below.
+
+<p align = "center">
+<img width="500" alt="domino_8" src="https://github.com/user-attachments/assets/72c4ad02-c7ff-453f-958f-98849beb32d8" />
+</p>
+
+
 **Runtime**: The total number of additions and multiplications done by the two `for` loops result in a runtime of $O(n^2)$.
 
 [Back to Dynamic Programming Problems](./problems.md)
