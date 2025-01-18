@@ -135,7 +135,19 @@ For example, we find
 * When $n = 2$, $f[2] = f[1] + f[0] + g[1] + h[1] = 2$.
 * When $n = 3$, $f[3] = f[2] + f[1] + g[2] + h[2] = 2 + 1 + f(1) + h(2) + f(1) + g(2) = 5$.
 
+We will use a dictionary to initialize the values for $n=0, 1$ and construct a DP code as follows:
 
+```
+def numTilings(n):
+    f = {0: 1, 1: 1}
+    g = {1: 0}
+    h = {1: 0}
+    for i in range(2, n + 1): 
+        f[i] = f[i - 1] + f[i - 2] + g[i - 1] + h[i - 1]
+        g[i] = f[i - 2] + h[i - 1]
+        h[i] = f[i - 2] + g[i - 1]
+    return f[n] % (10 ** 9 + 7)
+```
 
 
 **Runtime**: 
