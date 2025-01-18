@@ -74,7 +74,7 @@ Now, let us determine $g(n)$ and $h(n)$.
 
 We note that a type $P$ structure, shown in the right below, can be constructed in the following 2 ways:
 
-**I** It can be constructed by adding a tromino to a $2 \times (n-3)$ rectangular grid as shown below.
+**(I)** It can be constructed by adding a tromino to a $2 \times (n-3)$ rectangular grid as shown below.
 
 <p align = "center">
 <img width="500" alt="domino_5" src="https://github.com/user-attachments/assets/29194a65-c22e-48ae-8172-7ad39d7eec1d" />
@@ -83,7 +83,7 @@ We note that a type $P$ structure, shown in the right below, can be constructed 
 Hence there are $f(n-2)$ possible ways to build a type $P$ structure with a bottom length of $n$, using the above construction.
 
 
-**II** The type $P$ structure can also be constructed by adding a domino to a type $Q$ structure with a top length of $n-2$ as shown below.
+**(II)** The type $P$ structure can also be constructed by adding a domino to a type $Q$ structure with a top length of $n-2$ as shown below.
 
 <p align = "center">
 <img width="500" alt="domino_6" src="https://github.com/user-attachments/assets/411c952c-4db9-4c50-b818-3c133b6d9d6a" />
@@ -102,7 +102,7 @@ $$
 
 We note that a type $Q$ structure, shown in the right below, can be constructed in the following 2 ways:
 
-**I** It can be constructed by adding a tromino to a $2 \times (n-3)$ rectangular grid as shown below.
+**(I)** It can be constructed by adding a tromino to a $2 \times (n-3)$ rectangular grid as shown below.
 
 <p align = "center">
 <img width="500" alt="domino_7" src="https://github.com/user-attachments/assets/35fc2aaa-5479-44cd-bf06-d0af98c2fc3e" />
@@ -110,7 +110,7 @@ We note that a type $Q$ structure, shown in the right below, can be constructed 
 
 Sine a rectangular grid of size $2 \times n$ can be created in $f(n)$ ways, there are $f(n-2)$ ways a type $Q$ structure with a top length of $n$ can be created.
 
-**II** It can also be constructed by adding a domino to a type $P$ structure with a bottom length of $n-2$ as shown below.
+**(II)** It can also be constructed by adding a domino to a type $P$ structure with a bottom length of $n-2$ as shown below.
 
 <p align = "center">
 <img width="500" alt="domino_8" src="https://github.com/user-attachments/assets/72c4ad02-c7ff-453f-958f-98849beb32d8" />
