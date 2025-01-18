@@ -14,7 +14,11 @@ Given an integer $n$, return the number of ways to tile an $2 \times n$ board. S
 
 In a tiling, every square must be covered by a tile. Two tilings are different if and only if there are two 4-directionally adjacent cells on the board such that exactly one of the tilings has both squares occupied by a tile.
 
+Example 1: Input: $n=3$; Output: 5. There are five different ways as shown below.
 
+<p align = "center">
+![lc-domino1](https://github.com/user-attachments/assets/c5bc719e-81bc-47a4-a7f3-38b72d812f11)
+</p>
 
 
 **Dynamic Programming Solution**
