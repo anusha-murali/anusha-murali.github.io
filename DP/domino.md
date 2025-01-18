@@ -47,6 +47,12 @@ We could also build a $2 \times n$ rectangular grid by adding a tromino to an ex
 Let $h(n)$ be the number of ways to create the structure, which has a $1\times 1$ hole at the right bottom and has a top length of $n$. We will find a recurrence expression to determine $h(n)$ below.
 
 
+Adding all four cases together, we find the total number of ways to create a $2 \times n$ rectangular grid from dominos and trominos is,
+
+$$
+f(n) = f(n-1) + f(n-2) + g(n-1) + h(n-1).
+$$
+
 **Runtime**: The total number of additions and multiplications done by the two `for` loops result in a runtime of $O(n^2)$.
 
 [Back to Dynamic Programming Problems](./problems.md)
