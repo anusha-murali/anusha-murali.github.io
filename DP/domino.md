@@ -65,7 +65,7 @@ We note that the structure in the left of the diagram in Case 3 can be construct
 (A) It can be constructed by adding a tromino to a $2 \times (n-3)$ rectangular grid as shown below.
 
 <p align = "center">
-<img width="550" alt="domino_5" src="https://github.com/user-attachments/assets/29194a65-c22e-48ae-8172-7ad39d7eec1d" />
+<img width="500" alt="domino_5" src="https://github.com/user-attachments/assets/29194a65-c22e-48ae-8172-7ad39d7eec1d" />
 </p>
 
 Hence there are $f(n-2)$ possible ways to build a structure similar to the one in Case 3 with a bottom length of $n$, using the above construction.
