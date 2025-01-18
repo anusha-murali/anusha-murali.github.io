@@ -72,9 +72,9 @@ Now, let us determine $g(n)$ and $h(n)$.
 
 **Recurrent expression for $g(n)$**
 
-We note that the type $P$ structure from Case 3 above, shown in the right below, can be constructed in the following 2 ways:
+We note that a type $P$ structure, shown in the right below, can be constructed in the following 2 ways:
 
-**(A)** It can be constructed by adding a tromino to a $2 \times (n-3)$ rectangular grid as shown below.
+**I** It can be constructed by adding a tromino to a $2 \times (n-3)$ rectangular grid as shown below.
 
 <p align = "center">
 <img width="500" alt="domino_5" src="https://github.com/user-attachments/assets/29194a65-c22e-48ae-8172-7ad39d7eec1d" />
@@ -83,7 +83,7 @@ We note that the type $P$ structure from Case 3 above, shown in the right below,
 Hence there are $f(n-2)$ possible ways to build a type $P$ structure with a bottom length of $n$, using the above construction.
 
 
-**(B)** The type $P$ structure can also be constructed by adding a domino to a type $Q$ structure (similar to the one in Case 4 above) with a top length of $n-2$ as shown below.
+**II** The type $P$ structure can also be constructed by adding a domino to a type $Q$ structure with a top length of $n-2$ as shown below.
 
 <p align = "center">
 <img width="500" alt="domino_6" src="https://github.com/user-attachments/assets/411c952c-4db9-4c50-b818-3c133b6d9d6a" />
@@ -91,7 +91,7 @@ Hence there are $f(n-2)$ possible ways to build a type $P$ structure with a bott
 
 In order to create a type $P$ structure with a bottom length of $n$, we need a type $Q$ structure with a top length of $n-1$. There are $h(n-1)$ possible ways to create a type $Q$ structure with a top length of $n-1$.
 
-Combining the results from **(A)** and **(B)** above, we obtain the following recurrent equation for $g(n)$:
+Combining the results from **I** and **II** above, we obtain the following recurrent equation for $g(n)$:
 
 $$
 g(n) = f(n-2) + h(n-1).
@@ -100,31 +100,29 @@ $$
 
 **Recurrent expression for $h(n)$**
 
-We note that the type $Q$ structure from Case 4, shown in the right below, can be constructed in the following 2 ways:
+We note that a type $Q$ structure, shown in the right below, can be constructed in the following 2 ways:
 
-**(A)** It can be constructed by adding a tromino to a $2 \times (n-3)$ rectangular grid as shown below.
+**I** It can be constructed by adding a tromino to a $2 \times (n-3)$ rectangular grid as shown below.
 
 <p align = "center">
 <img width="500" alt="domino_7" src="https://github.com/user-attachments/assets/35fc2aaa-5479-44cd-bf06-d0af98c2fc3e" />
 </p>
 
-Sine a rectangular grid of size $2 \times n$ can be created in $f(n)$ ways, there are $f(n-2)$ ways the structure 
-$X$ with a top length of $n$ can be created.
+Sine a rectangular grid of size $2 \times n$ can be created in $f(n)$ ways, there are $f(n-2)$ ways a type $Q$ structure with a top length of $n$ can be created.
 
-**(B)** It can also be constructed by adding a domino to a type $P$ structure (similar to the one in Case 3 above) with a bottom length of $n-2$ as shown below.
+**II** It can also be constructed by adding a domino to a type $P$ structure with a bottom length of $n-2$ as shown below.
 
 <p align = "center">
 <img width="500" alt="domino_8" src="https://github.com/user-attachments/assets/72c4ad02-c7ff-453f-958f-98849beb32d8" />
 </p>
 
-Sine the type $P$ structure  with a bottom length of $n$ can be created in $g(n)$ ways, there are $g(n-1)$ ways the type $Q$ structure with a top length of $n-1$ can be created.
+Sine the type $P$ structure with a bottom length of $n$ can be created in $g(n)$ ways, there are $g(n-1)$ ways the type $Q$ structure with a top length of $n-1$ can be created.
 
-Combining the results from **(A)** and **(B)** above, we obtain the following recurrent equation for $h(n)$:
+Combining the results from **I** and **II** above, we obtain the following recurrent equation for $h(n)$:
 
 $$
 h(n) = f(n-2) + g(n-1).
 $$
-
 
 Having determined the recurrent equations for $g(n)$ and $h(n)$, we can now find $f(n)$, the total number of ways to create a rectangular grid of size $2 \times n$, using the following three recurrences:
 
