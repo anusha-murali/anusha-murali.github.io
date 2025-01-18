@@ -10,6 +10,7 @@
 6. [Longest Common Subsequence (LCS)](./lcs.md)
 7. [Longest Consecutive 1's](./longestOnes.md)
 8. [Domino and Tromino Tiling](./domino.md)
+9. [Longest Subarray of 1's After Deleting One Element](./longestSubArray.md)
 
 
 
