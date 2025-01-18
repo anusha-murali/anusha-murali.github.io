@@ -65,7 +65,7 @@ Putting these all together, we have the following solution:
         return maxLen
 ```
 
-**Runtime**: 
+**Runtime**: The runtime is $O(n)$ as we iterate through `nums` to generate the `zeroList` once and then we iterate through the `zeroList` once to find the longest subarray. The space complexity is also $O(n)$ as the number of elements in `zeroList` is $\leq n$.
 
 [Back to Dynamic Programming Problems](./problems.md)
 
