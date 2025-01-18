@@ -28,7 +28,7 @@ Since the number of ways to create a $2 \times n$ rectangular grid is $f(n)$, th
 
 **Case 3**
 
-Since we are also using **trominos**, we could see that one way to build a $2 \times n$ rectangular grid is to add a tromino to an existing grid, which has a $1 \times 1$ hole at the top as shown in the following diagram.
+Since we are also using *trominos*, in addition to dominos, we could see that one way to build a $2 \times n$ rectangular grid is to add a tromino to an existing grid, which has a $1 \times 1$ hole at the top as shown in the following diagram.
 
 <p align = "center">
 <img width="230" alt="domino_3" src="https://github.com/user-attachments/assets/c77d43f9-2604-415b-be3f-379e098ea718" />
