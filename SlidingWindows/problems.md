@@ -2,9 +2,8 @@
 <img width="1375" alt="favorite_sw" src="https://github.com/user-attachments/assets/1a071081-07ed-4bf7-92fe-6e1bb7ff7df4" />
 </p>
 
-1. [Maximum Sub Subarray](./max_sum_subarray.md)
-2. [Longest Consecutive 1's](./longestOnes.md)
-3. [Longest Subarray of 1's After Deleting One Element](./longestSubArray.md)
+1. [Longest Consecutive 1's](./longestOnes.md)
+2. [Longest Subarray of 1's After Deleting One Element](./longestSubArray.md)
 
 
 * * *
