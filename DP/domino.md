@@ -85,6 +85,15 @@ $$
 g(n) = f(n-2) + h(n-1).
 $$
 
+
+**Recurrent expression for $h(n)$**
+
+We note that the structure in the left of the diagram in Case 4 can be constructed in the following 2 ways:
+
+**(A)** It can be constructed by adding a tromino to a $2 \times (n-3)$ rectangular grid as shown below.
+
+
+
 **Runtime**: The total number of additions and multiplications done by the two `for` loops result in a runtime of $O(n^2)$.
 
 [Back to Dynamic Programming Problems](./problems.md)
