@@ -91,7 +91,7 @@ Hence there are $f(n-2)$ possible ways to build a type $P$ structure with a bott
 
 In order to create a type $P$ structure with a bottom length of $n$, we need a type $Q$ structure with a top length of $n-1$. There are $h(n-1)$ possible ways to create a type $Q$ structure with a top length of $n-1$.
 
-Combining the results from **I** and **II** above, we obtain the following recurrent equation for $g(n)$:
+Combining the results from **(I)** and **(II)** above, we obtain the following recurrent equation for $g(n)$:
 
 $$
 g(n) = f(n-2) + h(n-1).
@@ -118,7 +118,7 @@ Sine a rectangular grid of size $2 \times n$ can be created in $f(n)$ ways, ther
 
 Sine the type $P$ structure with a bottom length of $n$ can be created in $g(n)$ ways, there are $g(n-1)$ ways the type $Q$ structure with a top length of $n-1$ can be created.
 
-Combining the results from **I** and **II** above, we obtain the following recurrent equation for $h(n)$:
+Combining the results from **(I)** and **(II)** above, we obtain the following recurrent equation for $h(n)$:
 
 $$
 h(n) = f(n-2) + g(n-1).
