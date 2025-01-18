@@ -69,6 +69,7 @@ We note that the structure in the left of the diagram in Case 3 can be construct
 </p>
 
 
+(B) It can also be constructed by adding a domino to the structure similar to the one in Case 4 above, but with a top length of $n-2$ as shown below.
 
 
 **Runtime**: The total number of additions and multiplications done by the two `for` loops result in a runtime of $O(n^2)$.
