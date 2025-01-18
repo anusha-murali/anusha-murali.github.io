@@ -42,7 +42,7 @@ Let $g(n)$ be the number of ways to create a type $P$ structure that has a botto
 
 We will find a recurrence expression to determine $g(n)$ below.
 
-Therefore the number of ways to create the type $P structure with a bottom length of $n-1$ is $g(n-1)$.
+Therefore the number of ways to create a type $P$ structure with a bottom length of $n-1$ is $g(n-1)$.
 
 **Case 4**
 
@@ -52,9 +52,15 @@ We could also build a $2 \times n$ rectangular grid by adding a tromino to an ex
 <img width="230" alt="domino_4" src="https://github.com/user-attachments/assets/cf8c7d69-7935-4e2d-9ae8-d2d727d8e263" />
 </p>
 
-Let $h(n)$ be the number of ways to create the structure, which has a $1\times 1$ hole at the bottom right and has a top length of $n$. We will find a recurrence expression to determine $h(n)$ below.
+Let $h(n)$ be the number of ways to create a type $Q$ structure that has a top length of $n$. 
 
-Therefore the number of ways to create the structure, which has a $1\times 1$ hole at the bottom right and has a top length of $n-1$ is $h(n-1)$.
+<p align = "center">
+<img width="230" alt="domino_type_Q" src="https://github.com/user-attachments/assets/63a16034-9f9d-4a5b-a675-52f00d294a7c" />
+</p>
+
+We will find a recurrence expression to determine $h(n)$ below.
+
+Therefore the number of ways to create a type $Q$ structure with a top length of $n-1$ is $h(n-1)$.
 
 Adding all four cases together, we find the total number of ways to create a $2 \times n$ rectangular grid from dominos and trominos is,
 
