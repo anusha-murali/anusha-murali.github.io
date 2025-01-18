@@ -64,6 +64,8 @@ Putting these all together, we have the following solution:
                 maxLen = curLen
         return maxLen
 ```
+For Example 2 above, where `nums = [0,1,1,1,0,1,1,0,1]`, the `zeroList = [0, 4, 7]`. The difference between every second indexes correspond to the maximum length of the subarray of 1's that can be constructed. This is why we are able to find the longest subarray in one iteration through the `zeroList`. 
+
 
 **Runtime**: The runtime is $O(n)$ as we iterate through `nums` to generate the `zeroList` once and then we iterate through the `zeroList` once to find the longest subarray. The space complexity is also $O(n)$ as the number of elements in `zeroList` is $\leq n$.
 
