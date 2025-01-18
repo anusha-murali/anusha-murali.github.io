@@ -33,8 +33,15 @@ We create a new list called `zeroList` that contains the positions of the 0's in
 ```
 If all the elements in `nums` are zero, then we return 0. If there are no 0's or only one 0 in `nums`, then we return `len(nums) - 1` as we must delete 1 element.
 
+Otherwise, we iterate through all the elements in the `zeroList` and determine the length of the longest subarray of 1's after deleting the 0 at the current position. 
 
+For an element in the `zeroList`, which is neither the first or the last, the length of the longest subarray of 1's after deleting the 0 at the current position is `curLen = zeroList[k+1] - zeroList[k-1] - 2`. 
 
+For the first element in the `zeroList`, this length is `curLen = zeroList[1] - 1`.
+
+For the last element in the `zeroList`, this length is `curLen = len(nums) - zeroList[k-1] - 2`.
+
+Putting these all together, we have the following solution:
 
 ```
   def longestSubarray(nums: List[int]) -> int:
