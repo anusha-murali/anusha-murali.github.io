@@ -124,8 +124,17 @@ h(n) &= f(n-2) + g(n-1)
 \end{align*}
 $$
 
+**Initial Values**
 
-**Runtime**: The total number of additions and multiplications done by the two `for` loops result in a runtime of $O(n^2)$.
+The following initial values are sufficient to build thee complete $f, g, h$ sequences:
+* $f[0] = 0$ and $f[1] = 1$.
+* $g[1] = 0$.
+* $h[1] = 0$.
+
+
+
+
+**Runtime**: 
 
 [Back to Dynamic Programming Problems](./problems.md)
 
