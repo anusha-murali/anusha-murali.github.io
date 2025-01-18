@@ -17,6 +17,10 @@ Example 2:
 
 Input: `cost = [1,100,1,1,1,100,1,1,100,1]`; Output: 6
 
+<p align="center"
+<img width="500" alt="stairs" src="https://github.com/user-attachments/assets/cb995c11-1284-4390-b9cc-548a78213a03" />
+</p>
+
 Explanation: You will start at index 0.
 - Pay 1 and climb two steps to reach index 2.
 - Pay 1 and climb two steps to reach index 4.
