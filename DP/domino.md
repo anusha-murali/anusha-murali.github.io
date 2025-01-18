@@ -160,7 +160,7 @@ def numTilings(n):
 ```
 
 
-**Runtime**: 
+**Runtime**: We use a **for** loop to build the entire sequence, each time computing the value of $f[i]$ from the previously computed values of $f, g,$ and $h$. Therefore, the runtime is $O(n)$. The space complexity is also $O(n)$ as we use 3 dictionaries of size at most $n$.
 
 [Back to Dynamic Programming Problems](./problems.md)
 
