@@ -96,6 +96,8 @@ We note that the structure in the left of the diagram in Case 4 can be construct
 <img width="500" alt="domino_7" src="https://github.com/user-attachments/assets/35fc2aaa-5479-44cd-bf06-d0af98c2fc3e" />
 </p>
 
+Sine a rectangular grid of size $2 \times n$ can be created in $f(n)$ ways, there are $f(n-2)$ ways the structure 
+$X$ with a top length of $n$ can be created.
 
 **(B)** It can also be constructed by adding a domino to the structure similar to the one in Case 3 above, but with a bottom length of $n-2$ as shown below.
 
@@ -103,6 +105,8 @@ We note that the structure in the left of the diagram in Case 4 can be construct
 <img width="500" alt="domino_8" src="https://github.com/user-attachments/assets/72c4ad02-c7ff-453f-958f-98849beb32d8" />
 </p>
 
+Sine the structure $X$ with bottom length of $n$ can be created in $g(n)$ ways, there are $g(n-1)$ ways the structure 
+$Y$ with a top length of $n-1$ can be created.
 
 **Runtime**: The total number of additions and multiplications done by the two `for` loops result in a runtime of $O(n^2)$.
 
