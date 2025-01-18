@@ -113,6 +113,16 @@ $$
 h(n) = f(n-2) + g(n-1).
 $$
 
+
+Having determined the recurrent equations for $g(n)$ and $h(n)$, we can now find $f(n)$, the total number of ways to create a rectangular grid of size $2 \times n$, as follows:
+
+$$
+\begin{align*}
+f(n) &= f(n-1) + f(n-2) + g(n-1) + h(n-1)\\
+\end{align*}
+$$
+
+
 **Runtime**: The total number of additions and multiplications done by the two `for` loops result in a runtime of $O(n^2)$.
 
 [Back to Dynamic Programming Problems](./problems.md)
