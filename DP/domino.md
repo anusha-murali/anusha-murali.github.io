@@ -79,6 +79,12 @@ Hence there are $f(n-2)$ possible ways to build a structure similar to the one i
 
 In order to create a structure similar to the one in Case 3 with a bottom length of $n$, we need a structure $Y$ with a top length of $n-1$. There are $h(n-1)$ possible ways to create a structure $Y$ with a top length of $n-1$.
 
+Combining the results from **(A)** and **(B)** above, we obtain the following recurrent equation for $g(h)$:
+
+$$
+g(n) = f(n-2) + h(n-1).
+$$
+
 **Runtime**: The total number of additions and multiplications done by the two `for` loops result in a runtime of $O(n^2)$.
 
 [Back to Dynamic Programming Problems](./problems.md)
