@@ -25,6 +25,39 @@ Input: `nums = [1,1,1]`; Output: 2
 
 Explanation: You must delete 1 element.
 
+**Solution**
+
+We create a new list called `zeroList` that contains the positions of the 0's in `nums`. Using list comprehension, we can create this list as follows:
+```
+        zeroList = [i for i in range(len(nums)) if nums[i] == 0]
+```
+If all the elements in `nums` are zero, then we return 0. If there are no 0's or only one 0 in `nums`, then we return `len(nums) - 1` as we must delete 1 element.
+
+
+
+
+```
+  def longestSubarray(nums: List[int]) -> int:
+        zeroList = [i for i in range(len(nums)) if nums[i] == 0]
+
+        if len(zeroList) == len(nums):
+            return 0
+        if len(zeroList) <= 1:
+            return len(nums) - 1
+
+        maxLen = 0
+        for k in range(len(zeroList)):
+            if k == 0:
+                curLen = zeroList[1] -1
+            elif k == len(zeroList) - 1:
+                curLen = len(nums) - zeroList[k-1] - 2
+            else:
+                curLen = zeroList[k+1] - zeroList[k-1] - 2
+            if curLen > maxLen:
+                maxLen = curLen
+        return maxLen
+```
+
 **Runtime**: 
 
 [Back to Dynamic Programming Problems](./problems.md)
