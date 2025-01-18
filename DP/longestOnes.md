@@ -35,7 +35,7 @@ exiting the **for** loop, `maxLen` contains the length of the maximum number of 
 
 
 
-**Runtime**: $O(n)$ as the {\bf for} loop iterates only `len(zeroList)`$-k -1$ times, where `len(zeroList` $\leq n$}. . Space complexity is also $O(n)$.
+**Runtime**: $O(n)$ as the `for` loop iterates only `len(zeroList)`$-k -1$ times, where `len(zeroList` $\leq n$}. . Space complexity is also $O(n)$.
 
 [Back to Dynamic Programming Problems](./problems.md)
 
