@@ -7,7 +7,7 @@ This is a beautiful problem from LeetCode (Problem #790).
 You have two types of tiles: a $2 \times 1$ domino shape and a tromino shape. You may rotate these shapes.
 
 <p align = "center">
-<img width="300" alt="domino_tromino" src="https://github.com/user-attachments/assets/fa5634d1-b5c3-4f6a-b17b-3cda2492c684" />
+<img width="280" alt="domino_tromino" src="https://github.com/user-attachments/assets/fa5634d1-b5c3-4f6a-b17b-3cda2492c684" />
 </p>
 
 Given an integer $n$, return the number of ways to tile an $2 \times n$ board. Since the answer may be very large, return it modulo $10^9 + 7$.
