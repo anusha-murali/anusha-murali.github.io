@@ -17,7 +17,7 @@ In a tiling, every square must be covered by a tile. Two tilings are different i
 Example 1: Input: $n=3$; Output: 5. There are five different ways as shown below.
 
 <p align = "center">
-<img width="380" alt="domino_tromino_2" src="https://github.com/user-attachments/assets/b744aa3e-ce8f-4e03-84b6-2335d0ada2ae" />
+<img width="380" alt="domino_tromino_2" src="https://github.com/user-attachments/assets/a1fc0054-871f-494a-9126-c3d3214caeb1" />
 </p>
 
 
