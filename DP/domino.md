@@ -42,7 +42,7 @@ Let $g(n)$ be the number of ways to create a type $P$ structure that has a botto
 
 We will find a recurrence expression to determine $g(n)$ below.
 
-Therefore the number of ways to create the structure, which has a $1\times 1$ hole at the top right and has a bottom length of $n-1$ is $g(n-1)$.
+Therefore the number of ways to create the type $P structure with a bottom length of $n-1$ is $g(n-1)$.
 
 **Case 4**
 
