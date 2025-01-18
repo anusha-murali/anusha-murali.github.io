@@ -28,7 +28,7 @@ Explanation: You will start at index 0.
 - Pay 1 and climb one step to reach index 7.
 - Pay 1 and climb two steps to reach index 9.
 - Pay 1 and climb one step to reach the top.
-The total cost is 6.
+The costs of the optimal stairs are indicated in red in the diagram above. The total cost is 6.
 
 **Solution 1** Recursion
 
