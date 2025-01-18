@@ -37,7 +37,7 @@ Since we are also using *trominos*, in addition to dominos, we could see that on
 Let $g(n)$ be the number of ways to create a type $P$ structure that has a bottom length of $n$. 
 
 <p align = "center">
-<img width="230" alt="domino_type_P" src="https://github.com/user-attachments/assets/10465f21-9fef-4250-86e7-e4d05a270126" />
+<img width="230" alt="domino_type_P" src="https://github.com/user-attachments/assets/208276f7-a94c-456e-9e8d-6f02afd44647" />
 </p>
 
 We will find a recurrence expression to determine $g(n)$ below.
