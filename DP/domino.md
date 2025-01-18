@@ -34,6 +34,8 @@ Since we are also using *trominos*, in addition to dominos, we could see that on
 <img width="230" alt="domino_3" src="https://github.com/user-attachments/assets/c77d43f9-2604-415b-be3f-379e098ea718" />
 </p>
 
+Let $g(n)$ be the number of ways to create the structure, which has a $1\times 1$ hole at the right top and has a bottom length of $n$. We will find a recurrence expression to determine $g(n)$ below.
+
 **Case 4**
 
 <p align = "center">
