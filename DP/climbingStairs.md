@@ -26,8 +26,25 @@ Explanation: You will start at index 0.
 - Pay 1 and climb one step to reach the top.
 The total cost is 6.
 
+**Solution 1** Recursion
 
+Let `minCost(n)` be the minimum cost to reach stair $n$. 
 
+Hence `minCost(n) = cost(n) + min(minCost(n-1), minCost(n-2))`.
+
+Hence, we have the following recursive solution:
+
+```
+def minCost(n):
+  if n < 2:
+    return cost[n]
+  return cost[n] + min(minCost(n-1), minCost(n-2))
+```
+Therefore, if the size of `cost` = $n$, we can find the minimum cost to reach the top of the stairs using:
+
+```
+min(minCost(n-1), minCost(n-2))
+```
 
 **Runtime**: Unlike Solution 1, the memoized version above solves each subproblem only once. Since there are only $n-1$ additions, the runtime is $O(n)$.
 
