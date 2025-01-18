@@ -68,6 +68,8 @@ We note that the structure in the left of the diagram in Case 3 can be construct
 <img width="550" alt="domino_5" src="https://github.com/user-attachments/assets/29194a65-c22e-48ae-8172-7ad39d7eec1d" />
 </p>
 
+Hence there are $f(n-3)$ possible ways to build a structure in Case 3 using the above construction.
+
 
 (B) It can also be constructed by adding a domino to the structure similar to the one in Case 4 above, but with a top length of $n-2$ as shown below.
 
