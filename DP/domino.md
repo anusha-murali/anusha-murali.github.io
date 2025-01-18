@@ -16,7 +16,7 @@ We can create a $2 \times n$ rectangle grid from a $2 \times (n-1)$ rectangular 
 <img width="251" alt="domino_1" src="https://github.com/user-attachments/assets/5d93db9b-a5de-4487-b65e-57337626cb93" />
 </p>
 
-Therefore, the number of ways to create a  $2 \times (n-1)$ rectangular grid is  $f(n-1)$. Hence Case 1 has $f(n-1)$ ways.
+Since the number of ways to create a  $2 \times (n-1)$ rectangular grid is  $f(n-1)$, Case 1 has $f(n-1)$ ways.
 
 **Case II**
 
