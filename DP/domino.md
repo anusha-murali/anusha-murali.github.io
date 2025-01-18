@@ -77,7 +77,7 @@ Hence there are $f(n-2)$ possible ways to build a structure similar to the one i
 <img width="500" alt="domino_6" src="https://github.com/user-attachments/assets/411c952c-4db9-4c50-b818-3c133b6d9d6a" />
 </p>
 
-
+In order to create a structure similar to the one in Case 3 with a bottom length of $n$, we need a structure $Y$ with a top length of $n-1$. There are $h(n-1)$ possible ways to create a structure $Y$ with a top length of $n-1$.
 
 **Runtime**: The total number of additions and multiplications done by the two `for` loops result in a runtime of $O(n^2)$.
 
