@@ -62,7 +62,7 @@ Now, let us determine $g(n)$ and $h(n)$.
 
 We note that the structure in the left of the diagram in Case 3 can be constructed in the following 2 ways:
 
-(A) It can be constructed by adding a tromino to a $2 \times (n-3)$ rectangular grid as shown below.
+**(A)** It can be constructed by adding a tromino to a $2 \times (n-3)$ rectangular grid as shown below.
 
 <p align = "center">
 <img width="500" alt="domino_5" src="https://github.com/user-attachments/assets/29194a65-c22e-48ae-8172-7ad39d7eec1d" />
@@ -71,7 +71,7 @@ We note that the structure in the left of the diagram in Case 3 can be construct
 Hence there are $f(n-2)$ possible ways to build a structure similar to the one in Case 3 with a bottom length of $n$, using the above construction.
 
 
-(B) It can also be constructed by adding a domino to the structure similar to the one in Case 4 above, but with a top length of $n-2$ as shown below.
+**(B)** It can also be constructed by adding a domino to the structure similar to the one in Case 4 above, but with a top length of $n-2$ as shown below.
 
 <p align = "center">
 <img width="500" alt="domino_6" src="https://github.com/user-attachments/assets/411c952c-4db9-4c50-b818-3c133b6d9d6a" />
