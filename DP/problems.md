@@ -8,9 +8,8 @@
 4. [Maximum Sum Subarray](./max_sum_subarray.md)
 5. [Longest Increasing Subsequence (LIS)](./lis.md)
 6. [Longest Common Subsequence (LCS)](./lcs.md)
-7. [Longest Consecutive 1's](./longestOnes.md)
-8. [Domino and Tromino Tiling](./domino.md)
-9. [Longest Subarray of 1's After Deleting One Element](./longestSubArray.md)
+7. [Domino and Tromino Tiling](./domino.md)
+
 
 
 
