@@ -1,5 +1,5 @@
 <p align="center">
-<img width="1375" alt="favorite_dp" src="https://github.com/user-attachments/assets/d16a688e-ed47-4a2d-a6b5-b9e85f740707" />
+<img width="1375" alt="favorite_sw" src="https://github.com/user-attachments/assets/1a071081-07ed-4bf7-92fe-6e1bb7ff7df4" />
 </p>
 
 1. [Maximum Sub Subarray](./max_sum_subarray.md)
