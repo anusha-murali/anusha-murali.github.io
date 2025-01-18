@@ -79,7 +79,7 @@ Hence there are $f(n-2)$ possible ways to build a type $P$ structure with a bott
 
 In order to create a type $P$ structure with a bottom length of $n$, we need a type $Q$ structure with a top length of $n-1$. There are $h(n-1)$ possible ways to create a type $Q$ structure with a top length of $n-1$.
 
-Combining the results from **(A)** and **(B)** above, we obtain the following recurrent equation for $g(h)$:
+Combining the results from **(A)** and **(B)** above, we obtain the following recurrent equation for $g(n)$:
 
 $$
 g(n) = f(n-2) + h(n-1).
@@ -88,7 +88,7 @@ $$
 
 **Recurrent expression for $h(n)$**
 
-We note that the structure in the left of the diagram in Case 4 can be constructed in the following 2 ways:
+We note that the type $Q$ structure from Case 4, shown in the right below, can be constructed in the following 2 ways:
 
 **(A)** It can be constructed by adding a tromino to a $2 \times (n-3)$ rectangular grid as shown below.
 
@@ -99,14 +99,19 @@ We note that the structure in the left of the diagram in Case 4 can be construct
 Sine a rectangular grid of size $2 \times n$ can be created in $f(n)$ ways, there are $f(n-2)$ ways the structure 
 $X$ with a top length of $n$ can be created.
 
-**(B)** It can also be constructed by adding a domino to the structure similar to the one in Case 3 above, but with a bottom length of $n-2$ as shown below.
+**(B)** It can also be constructed by adding a domino to a type $P$ structure (similar to the one in Case 3 above) with a bottom length of $n-2$ as shown below.
 
 <p align = "center">
 <img width="500" alt="domino_8" src="https://github.com/user-attachments/assets/72c4ad02-c7ff-453f-958f-98849beb32d8" />
 </p>
 
-Sine the structure $X$ with bottom length of $n$ can be created in $g(n)$ ways, there are $g(n-1)$ ways the structure 
-$Y$ with a top length of $n-1$ can be created.
+Sine the type $P$ structure  with a bottom length of $n$ can be created in $g(n)$ ways, there are $g(n-1)$ ways the type $Q$ structure with a top length of $n-1$ can be created.
+
+Combining the results from **(A)** and **(B)** above, we obtain the following recurrent equation for $h(n)$:
+
+$$
+h(n) = f(n-2) + g(n-1).
+$$
 
 **Runtime**: The total number of additions and multiplications done by the two `for` loops result in a runtime of $O(n^2)$.
 
