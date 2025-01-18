@@ -93,7 +93,7 @@ We note that the structure in the left of the diagram in Case 4 can be construct
 **(A)** It can be constructed by adding a tromino to a $2 \times (n-3)$ rectangular grid as shown below.
 
 <p align = "center">
-<img width="500" alt="domino_7" src="https://github.com/user-attachments/assets/26138584-b97e-412e-95a2-d66344c105d4" />
+<img width="500" alt="domino_7" src="https://github.com/user-attachments/assets/35fc2aaa-5479-44cd-bf06-d0af98c2fc3e" />
 </p>
 
 **Runtime**: The total number of additions and multiplications done by the two `for` loops result in a runtime of $O(n^2)$.
