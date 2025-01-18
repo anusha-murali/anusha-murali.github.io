@@ -126,10 +126,14 @@ $$
 
 **Initial Values**
 
-The following initial values are sufficient to build thee complete $f, g, h$ sequences:
+The following initial values are sufficient to build the complete $f, g, h$ sequences, starting from $n=2:
 * $f[0] = 0$ and $f[1] = 1$.
 * $g[1] = 0$.
 * $h[1] = 0$.
+
+For example, we find
+* When $n = 2$, $f[2] = f[1] + f[0] + g[1] + h[1] = 2$.
+* When $n = 3$, $f[3] = f[2] + f[1] + g[2] + h[2] = 2 + 1 + f(1) + h(2) + f(1) + g(2) = 2 + 1 + 1 + 0 + 1 + 0 = 5$.
 
 
 
