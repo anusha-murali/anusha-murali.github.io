@@ -50,6 +50,21 @@ Therefore, if the size of `cost` = $n$, we can find the minimum cost to reach th
 min(minCost(n-1), minCost(n-2))
 ```
 
+**Solution 2** Dynamic Programming
+
+The recursive solution above suffers from repeated recomuptation of the minimum costs. We can memoize the minimum cost to climb stair $i$ in an array and avoid the repeated recomputation of the minimum costs as follows:
+
+```
+def minCostClimbingStairs(cost):
+    dp = [0]*(len(cost))
+
+    for i in range(len(cost)):
+        dp[i] = cost[i] + min(dp[i-1],dp[i-2])
+
+    return min(dp[len(cost)-1], dp[len(cost)-2])
+```
+
+
 **Runtime**: Unlike Solution 1, the memoized version above solves each subproblem only once. Since there are only $n-1$ additions, the runtime is $O(n)$.
 
 [Back to Dynamic Programming Problems](./problems.md)
