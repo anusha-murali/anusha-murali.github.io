@@ -16,13 +16,15 @@ We can create a $2 \times n$ rectangle grid from a $2 \times (n-1)$ rectangular 
 <img width="251" alt="domino_1" src="https://github.com/user-attachments/assets/5d93db9b-a5de-4487-b65e-57337626cb93" />
 </p>
 
-Since the number of ways to create a  $2 \times (n-1)$ rectangular grid is  $f(n-1)$, Case 1 has $f(n-1)$ possible ways.
+Since the number of ways to create a $2 \times n$ rectangular grid is $f(n)$, the number of ways to create a $2 \times (n-1)$ rectangular grid is $f(n-1)$. Therefore, Case I has $f(n-1)$ possible ways.
 
 **Case II**
 
+We can also create a $2 \times n$ rectangle grid from a $2 \times (n-2)$ rectangular grid by adding two dominos horizontally as shown:
 <p align = "center">
 <img width="260" alt="domino_2" src="https://github.com/user-attachments/assets/b54ef092-7bd9-4de1-8aa8-b219cb30b26a" />
 </p>
+Since the number of ways to create a $2 \times n$ rectangular grid is $f(n)$, the number of ways to create a $2 \times (n-2)$ rectangular grid is $f(n-2)$. Therefore, Case II has $f(n-2)$ possible ways.
 
 
 **Case III**
