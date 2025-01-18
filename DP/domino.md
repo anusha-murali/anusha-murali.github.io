@@ -2,13 +2,19 @@
 
 This is a beautiful problem from LeetCode (Problem #790).
 
+**Problem**: 
+
 You have two types of tiles: a $2 \times 1$ domino shape and a tromino shape. You may rotate these shapes.
 
 <p align = "center">
 <img width="300" alt="domino_tromino" src="https://github.com/user-attachments/assets/fa5634d1-b5c3-4f6a-b17b-3cda2492c684" />
 </p>
 
-**Problem**: 
+Given an integer $n$, return the number of ways to tile an $2 \times n$ board. Since the answer may be very large, return it modulo $10^9 + 7$.
+
+In a tiling, every square must be covered by a tile. Two tilings are different if and only if there are two 4-directionally adjacent cells on the board such that exactly one of the tilings has both squares occupied by a tile.
+
+
 
 
 **Dynamic Programming Solution**
