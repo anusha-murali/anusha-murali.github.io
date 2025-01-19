@@ -37,7 +37,7 @@ def gcdOfStrings(str1, str2):
 
 **Runtime**: 
 
-[Back to String Problems](./problems.md)
+[Back to String and Array Problems](./problems.md)
 
 * * *
 ###### anusha-murali.github.io
