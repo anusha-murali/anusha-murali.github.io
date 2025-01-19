@@ -40,6 +40,22 @@ Output: Return 4, and the first 4 characters of the input array should be: `["a"
 Explanation: The groups are `"a"` and `"bbbbbbbbbbbb"`. This compresses to `"ab12"`.
 
 
+```
+ def compress(chars):
+        myDict = {}
+        for c in chars:
+            myDict[c] = chars.count(c)
+
+        s = ''
+        for key in myDict:
+            s = s + key
+            if myDict[key] > 1:
+                s = s + str(myDict[key])
+
+        chars[:] = list(s)
+        return len(chars)
+```
+
 **Runtime**:  $O(n)$.
 
 [Back to String Problems](./problems.md)
