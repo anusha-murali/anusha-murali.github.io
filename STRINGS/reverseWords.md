@@ -42,7 +42,7 @@ Explanation: You need to reduce multiple spaces between two words to a single sp
 **Runtime**: Since the **for** loop is iterating over the words in the original string $s$, the runtime is $O(n)$, where $n$ is the
 number of words in $s$.
 
-[Back to String Problems](./problems.md)
+[Back to String and Array Problems](./problems.md)
 
 * * *
 ###### anusha-murali.github.io
