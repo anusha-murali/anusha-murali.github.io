@@ -28,7 +28,7 @@ Total amount you can rob = 2 + 9 + 1 = 12.
 
 ### Solution 1: Top-down Recursion
 
-Let us say that the robber is currently robbing house $\#i-1$. Let `totlRobbed` be the total amount he could rob in the entire street starting from house $\#i-1$, including house $\#i-1$. So, he needs to compare his current `totalRobbed` with the case when he robs the adjacent house (house $\# i$). The latter quantity is `nums[i] + rob(nums[i+2:]`. In order to maximize the amount he robbed, he will have to select `max(totalRobbed, nums[i] + rob(nums[i+2:]))`. Hence, the code for the top-down recursion is as follows:
+Let us say that the robber is currently robbing house $i-1$. Let `totlRobbed` be the total amount he could rob in the entire street starting from house $i-1$, including house $i-1$. So, he needs to compare his current `totalRobbed` with the case when he robs the adjacent house (house $i$). The latter quantity is `nums[i] + rob(nums[i+2:]`. In order to maximize the amount he robbed, he will have to select `max(totalRobbed, nums[i] + rob(nums[i+2:]))`. Hence, the code for the top-down recursion is as follows:
 
 ```
 def rob(nums):
