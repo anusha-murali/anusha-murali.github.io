@@ -1,0 +1,53 @@
+### Increasing Triplet Sequence
+
+This is a nice problem from LeetCode (Problem #334)
+
+**Problem**: Given an integer array `nums`, return true if there exists a triple of indices $(i, j, k)$
+such that $i < j < k$ and `nums[i] < nums[j] < nums[k]`. If no such indices exists, return false.
+
+ 
+
+Example 1:
+
+Input: `nums = [1,2,3,4,5]`; Output: `true`
+
+Explanation: Any triplet where $i < j < k$ is valid.
+
+Example 2:
+
+Input: `nums = [5,4,3,2,1]`; Output: false
+
+Explanation: No triplet exists.
+
+Example 3:
+
+Input: `nums = [2,1,5,0,4,6]`; Output: true
+
+Explanation: The triplet `(3, 4, 5)` is valid because `nums[3] == 0 < nums[4] == 4 < nums[5] == 6`.
+
+**Solution**
+
+```
+    def increasingTriplet(nums):
+        first = second = float("inf")
+        for val in nums:
+            if val <= first:
+                first = val
+            elif val <= second:
+                second = val
+            else:
+                return True
+        return False
+```
+
+
+**Runtime**:  $O(n)$.
+
+[Back to String Problems](./problems.md)
+
+* * *
+###### anusha-murali.github.io
+
+<img src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/639243aa-2857-4595-a65a-7852762bb002" width="50" height="50" align="left">
+
+[<img src="https://github.com/user-attachments/assets/989cfb30-4fb8-40f8-a812-8a054869aa32" width="50" height="50" align="right">](../index.md)
