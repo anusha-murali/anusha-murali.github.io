@@ -1,5 +1,5 @@
 <p align="center">
-<img width="1375" alt="favorite_sw" src="https://github.com/user-attachments/assets/1a071081-07ed-4bf7-92fe-6e1bb7ff7df4" />
+<img width="1375" alt="favorite_strings" src="https://github.com/user-attachments/assets/3e786471-5b2f-4883-aec1-c82214ec2536" />
 </p>
 
 1. [GCD of Strings](./gcd.md)
