@@ -50,7 +50,7 @@ It is important to note that even though the above code correctly identifies the
 
 **Runtime**:  $O(n)$ as we iterate through `nums` only once.
 
-[Back to String Problems](./problems.md)
+[Back to String and Array Problems](./problems.md)
 
 * * *
 ###### anusha-murali.github.io
