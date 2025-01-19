@@ -58,7 +58,7 @@ Explanation: The groups are `"a"` and `"bbbbbbbbbbbb"`. This compresses to `"ab1
 
 **Runtime**:  $O(n)$.
 
-[Back to String Problems](./problems.md)
+[Back to String and Array Problems](./problems.md)
 
 * * *
 ###### anusha-murali.github.io
