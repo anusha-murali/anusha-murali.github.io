@@ -9,7 +9,7 @@ of money stashed, the only constraint stopping you from robbing each of them is 
 systems connected and it will automatically contact the police if two adjacent houses were broken into on the same 
 night.
 
-Given an integer array nums representing the amount of money of each house, return the maximum amount of money you 
+Given an integer array `nums` representing the amount of money of each house, return the maximum amount of money you 
 can rob tonight without alerting the police.
 
 Example 1:
@@ -30,13 +30,13 @@ Total amount you can rob = 2 + 9 + 1 = 12.
 ### Solution 1: Top-down Recursion
 
 ```
-def cutRod(p, n):
-    if n==0:
+def rob(nums):
+    if len(nums) == 0:
         return 0
-    q = float('-inf')
-    for i in range(1, n+1):
-        q = max(q, p[i] + cutRod(p, n-i))   
-    return q
+    totalRobbed = float('-inf')
+    for i in range(len(nums)):
+        totalRobbed = max(totalRobbed, nums[i] + rob(nums[i+2:]))
+    return totalRobbed
 ```
 
 > **Example**: Let $p = [0, 2, 7, 8, 10]$. Hence `cutRod(p, 3)` returns 9 and `cutRod(p, 4)` returns 14.
