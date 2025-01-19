@@ -23,6 +23,10 @@ Input: `str1 = "LEET"`, `str2 = "CODE"`; Output: `""`
 
 **Solution**
 
+We note that if there is a non-empty GCD of `str1` and `str`, then it must be that `str1 + str2 == str2 + str1`.
+
+If `str1 + str2 == str2 + str1`, then we want to return the slice of the length of GCD of either string. Hence, our code is as follows:
+
 ```
 def gcdOfStrings(str1, str2):
    if str1 + str2 == str2 + str1:
