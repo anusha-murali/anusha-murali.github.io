@@ -5,6 +5,7 @@
 1. [GCD of Strings](./gcd.md)
 2. [Reverse Words in a String](./reverseWords.md)
 3. [Product of Array Except Self](./arrayProduct.md)
+4. [Increasing Triplet Sequence](./triplet.md)
 
 
 * * *
