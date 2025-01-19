@@ -39,7 +39,7 @@ Input: `nums = [-1,1,0,-3,3]`; Output: `[0,0,9,0,0]`
 
 **Runtime**:  $O(n)$.
 
-[Back to String Problems](./problems.md)
+[Back to String and Array Problems](./problems.md)
 
 * * *
 ###### anusha-murali.github.io
