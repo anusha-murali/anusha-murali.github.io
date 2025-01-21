@@ -40,10 +40,10 @@ Hence, the code for the top-down recursion is as follows:
 def rob(nums):
     if len(nums) == 0:
         return 0
-    totalRobbed = float('-inf')
+    loot = float('-inf')
     for i in range(len(nums)):
-        totalRobbed = max(totalRobbed, nums[i] + rob(nums[i+2:]))
-    return totalRobbed
+        loot = max(loot, nums[i] + rob(nums[i+2:]))
+    return loot
 ```
 
 > **Example**: Let $p = [0, 2, 7, 8, 10]$. Hence `cutRod(p, 3)` returns 9 and `cutRod(p, 4)` returns 14.
