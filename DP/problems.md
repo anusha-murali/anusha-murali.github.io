@@ -10,6 +10,7 @@
 6. [Longest Common Subsequence (LCS)](./lcs.md)
 7. [Domino and Tromino Tiling](./domino.md)
 8. [Minimum Cost of Climbing Stairs](./climbingStairs.md)
+9. [Professional Robber](./robber.md)
 
 
 
