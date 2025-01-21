@@ -52,26 +52,28 @@ This problem is similar to the Rod Cutting problem and therefore the time comple
 
 This approach is identical to the top-down recursive solution above, except that we will save the result of each subproblem. Each recursive call now first checks to see whether it has previously solved this subproblem. If so, it returns the saved value, which avoids repeated calculations of the subproblem; if not, it computes the value and saves it.
 
-We save the revenues for each length from 0 to $n$ in array `r[0..n]`. 
+We save the loot amount for the robber starting from House 0 to House $n$ in array `lootArray[0..n]`. 
 
 ```
-def cutRod(p, n):
-    r = [0 for i in range(n+1)]  # Initialize revenue to 0
-    return cutRodMemoized(p, n, r)
+def rob(nums):
+    lootArray = ['-inf' for i in range(len(nums))]
+    return robMemoized(nums, lootArray)
 
-def cutRodMemoized(p, n, r):
-    if n==0:
-        q = 0
-    else:
-        if r[n] > 0:   # If maximal r[n] was already computed, return it
-            return r[n]
 
-        q = float('-inf')
-        for i in range(1, n+1):
-            q = max(q, p[i] + cutRodMemoized(p, n-i, r))
-        r[n] = q       # Save the maximal revenue for current n
-    return q
+def robMemoized(nums, lootArray):
+    if len(nums) == 0:
+        return 0
+
+    if lootArray[len(nums)-1] != '-inf':
+        return lootArray[len(nums)-1]
+        
+    loot = float(0)
+    for i in range(len(nums)):
+        loot = max(loot, nums[i] + robMemoized(nums[i+2:], lootArray))
+    lootArray[len(nums)-1] = loot
+    return loot
 ```
+
 **Runtime**: Unlike Solution 1, the memoized version solves each subproblem only once. We note that the for loop results in an arithmetic series, which therefore results in a runtime of $\Theta(n^2)$. 
 
 ### Solution 3: Dynamic Programming Bottom-up Approach
