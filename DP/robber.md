@@ -30,11 +30,11 @@ Total amount you can rob = 2 + 9 + 1 = 12.
 
 In order to find the best plan that maximizes his loot, the robber proceeds as follows. His recursion algorithm is called `rob()`, which takes an array of integers as input.
 
-He first starts at House 0, which has `nums[0]` amount of money, and calls `rob()` on `nums[2:]` as he cannot rob the adjacent house. `rob(nums[2:])` returns the maximum possible amount looted starting from House 2. So, the total he could optimally loot starting from House 0 is `nums[0] + rob(nums[2:])`. He stores this in `loot`.
+He first starts at House 0, which has `nums[0]` amount of money, and calls `rob()` on `nums[2:]` as he cannot rob the adjacent house. `rob(nums[2:])` returns the maximum possible amount looted starting from House 2. So, the total he could optimally loot starting from House 0 is `nums[0] + rob(nums[2:])`. He stores this in `loot` and `nums[0] + rob(nums[2:])` is larger than $-\infty$.
 
-He then moves to House 1, which has `[nums[1]` amount of money, and 
+He then moves to House 1, which has `[nums[1]` amount of money, and calls `rob()` on `nums[3:]` as he cannot rob the adjacent house. `rob(nums[3:])` returns the maximum possible amount looted starting from House 3. So, the total he could optimally loot starting from House 1 is `nums[1] + rob(nums[3:])`. He compares this to current `loot` and updates `loot` with `max(loot, nums[i] + rob(nums[i+2:]))`, where `i = 1`.
 
-Let us say that the robber is currently robbing house $i-1$. Let `totalRobbed` be the total amount he could rob in the entire street starting from house $i-1$, including house $i-1$. So, he needs to compare his current `totalRobbed` with the case when he robs the adjacent house (house $i$). The latter quantity is `nums[i] + rob(nums[i+2:]`. In order to maximize the amount he robbed, he will have to select `max(totalRobbed, nums[i] + rob(nums[i+2:]))`. Hence, the code for the top-down recursion is as follows:
+Hence, the code for the top-down recursion is as follows:
 
 ```
 def rob(nums):
