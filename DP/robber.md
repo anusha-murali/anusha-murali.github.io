@@ -28,11 +28,11 @@ Total amount you can rob = 2 + 9 + 1 = 12.
 
 ### Solution 1: Top-down Recursion
 
-In order to find the best plan that maximizes his loot, the robber proceeds as follows. His recursion algorithm is called `rob()`, which takes an array of integers as input.
+In order to find the best plan that maximizes his loot, the robber proceeds as follows. His recursion algorithm is called `rob()`, which takes an array of integers as input and returns the maximum amount of loot he can get without triggering a police alert.
 
 He first starts at House 0, which has `nums[0]` amount of money, and calls `rob()` on `nums[2:]` as he cannot rob the adjacent house. `rob(nums[2:])` returns the maximum possible amount looted starting from House 2. So, the total he could optimally loot starting from House 0 is `nums[0] + rob(nums[2:])`. He stores this in `loot` and `nums[0] + rob(nums[2:])` is larger than $-\infty$.
 
-He then moves to House 1, which has `[nums[1]` amount of money, and calls `rob()` on `nums[3:]` as he cannot rob the adjacent house. `rob(nums[3:])` returns the maximum possible amount looted starting from House 3. So, the total he could optimally loot starting from House 1 is `nums[1] + rob(nums[3:])`. He compares this to current `loot` and updates `loot` with `max(loot, nums[i] + rob(nums[i+2:]))`, where `i = 1`.
+He then moves to House 1, which has `[nums[1]` amount of money, and calls `rob()` on `nums[3:]` as he cannot rob the adjacent house. `rob(nums[3:])` returns the maximum possible amount looted starting from House 3. So, the total he could optimally loot starting from House 1 is `nums[1] + rob(nums[3:])`. He compares this to current `loot` and updates `loot` with `max(loot, nums[i] + rob(nums[i+2:]))`, where `i = 1`. He continues in this manner.
 
 Hence, the code for the top-down recursion is as follows:
 
