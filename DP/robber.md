@@ -46,35 +46,7 @@ def rob(nums):
     return loot
 ```
 
-> **Example**: Let $p = [0, 2, 7, 8, 10]$. Hence `cutRod(p, 3)` returns 9 and `cutRod(p, 4)` returns 14.
-
-Let's say that we are calling `cutRod()` for $n=4$, How many total number of calls to `cutRod()` will be made? When the first call to `cutRod()` is made, the for loop calls `cutRod()` $n$ times, for $i = 0$ to $i=3$. So, we obtain the following recursion tree:
-
-<p align="center">
-<img width="500" alt="recursion_tree" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/5198bf47-c8a4-4fd6-80ed-92200d399ece">
-</p>
-
-There are 16 nodes in the above recursion tree, which means `cutRod()` is called 16 times for $n = 4$. In fact, we only need to compute the optimal revenue for $n = 0, n = 1, n=2$ and $n= 3$. Therefore 12 out of the above 16 calls are redundant!
-
-For $n = 30$, on my Mac Mini, the above function takes at least 2 minutes to return the optimal value. 
-
-Why is this approach so inefficient? This is because, `cutRod()` calls itself recursively over and over again with the same parameter values. In other words, it solves the same subproblems repeatedly. Let $T(n)$ be the total number of calls to `CutRod()`. We have the following recursion:
-
-$$
-T(n) = 
-\begin{cases}
-1 & \text{for }n = 0\\
-1 + \displaystyle{\sum_{k = 0}^{n-1}} T(k) & \text{for } n > 0
-\end{cases}
-$$
-
-We can guess that $T(n) = 2^n$ is a solution to the above recurrence. For $n=0$, $2^0 = 1$. For $n>0$, we find,
-
-$$
-T(n) = 1 + \displaystyle{\sum_{k = 0}^{n-1}} T(k) = 1 + \displaystyle{\sum_{k = 0}^{n-1}} 2^k = 1 + (2^n -1) = 2^n.
-$$
-
-Hence the time complexity of the top-down recursive `cutRod()` is exponential in $n$.
+This problem is similar to the Rod Cutting problem and therefore the time complexity is exponential in $n$.
 
 ### Solution 2: Dynamic Programming with Memoization
 
