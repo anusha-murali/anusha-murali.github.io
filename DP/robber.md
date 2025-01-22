@@ -59,7 +59,6 @@ def rob(nums):
     lootArray = ['-inf' for i in range(len(nums))]
     return robMemoized(nums, lootArray)
 
-
 def robMemoized(nums, lootArray):
     if len(nums) == 0:
         return 0
