@@ -75,25 +75,6 @@ def robMemoized(nums, lootArray):
 
 **Runtime**: Unlike Solution 1, the memoized version solves each subproblem only once. We note that the for loop results in an arithmetic series, which therefore results in a runtime of $\Theta(n^2)$. 
 
-### Solution 3: $O(n)$ Dynamic Programming Solution
-
-We maintain two counters, `sum1` and `sum2`, which are both initialized to 0. We iterate through each house and add the current value to `sum2`, compare the sum to the current value of `sum1`, and pick the larger of the two. At each end of an iteration, `sum1` contains the largest possible loot so far. The code is as follows:
-
-```
-    def rob(self, nums: List[int]) -> int:
-        if len(nums) == 0:
-            return 0
-        if len(nums) == 1:
-            return nums[0]
-        sum1 = 0
-        sum2 = 0
-        for i in range(len(nums)):
-            currMax = max(sum1, sum2 + nums[i])
-            sum2 = sum1
-            sum1 = currMax
-        return sum1
-```
-
 ### Solution 3: Dynamic Programming Bottom-up Approach
 
 In the bottom-up approach, we solve the sub-problems of sizes $i = 0, 1, \ldots, n$ in increasing order. Hence, when a problem of size $k$ is encountered, it can make use of all the sub-problems of size $i < k$, as they have been already been computed. The results of the subproblems are saved in the revenue array $r$, where we initialize $r[0] = 0$ as there is no revenue from a rod of lengh 0.
@@ -116,6 +97,27 @@ def rob(self, nums: List[int]) -> int:
 ```
 
 **Runtime**: Due to the doubly-nested loop structure, the bottom-up `rob()` has a runtime of $\Theta(n^2)$. 
+
+
+### Solution 4: $O(n)$ Dynamic Programming Solution
+
+We maintain two counters, `sum1` and `sum2`, which are both initialized to 0. We iterate through each house and add the current value to `sum2`, compare the sum to the current value of `sum1`, and pick the larger of the two.  During each iteration, the current `sum1` replaces `sum2` and the current maximum value is assigned to `sum1`. This gurantees that we always add the current house `nums[i]` alternatively to either of these sums, without triggering a police alarm. At each end of an iteration, `sum1` contains the largest possible loot so far. The code is as follows:
+
+```
+    def rob(self, nums: List[int]) -> int:
+        if len(nums) == 0:
+            return 0
+        if len(nums) == 1:
+            return nums[0]
+        sum1 = 0
+        sum2 = 0
+        for i in range(len(nums)):
+            currMax = max(sum1, sum2 + nums[i])
+            sum2 = sum1
+            sum1 = currMax
+        return sum1
+```
+**Runtime**: We have only one `for` loop iterating through each of the $n$ houses, and therefore the runtime is $O(n)$.
 
 ### Reconstructing the solution
 
