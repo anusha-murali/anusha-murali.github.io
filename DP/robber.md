@@ -80,20 +80,24 @@ def robMemoized(nums, lootArray):
 
 In the bottom-up approach, we solve the sub-problems of sizes $i = 0, 1, \ldots, n$ in increasing order. Hence, when a problem of size $k$ is encountered, it can make use of all the sub-problems of size $i < k$, as they have been already been computed. The results of the subproblems are saved in the revenue array $r$, where we initialize $r[0] = 0$ as there is no revenue from a rod of lengh 0.
 
-We cut a piece of length $i$ (outer for loop) from the left end of the rod, and then find the maximum possible revenue for the remaining length of $j = n-i$ by iterating through every possible ways to cut it (inner for loop).
-
 ```
-def cutRod(p, n):    
-    r = [0 for i in range(n+1)]   
-    for i in range(1, n+1):
-        q = float('-inf')
-        for j in range(1, i+1):
-            q = max(q, p[j] + r[i-j])
-        r[i] = q       
-    return r[n]
+def rob(self, nums: List[int]) -> int:   
+    if len(nums) <= 2:
+        return max(nums)
+
+    lootArray = []
+    lootArray.append(nums[0])
+    lootArray.append(max(nums[0], nums[1]))
+    lootArray = lootArray + [0 for i in range(2,len(nums))]
+    for i in range(2,len(nums)):
+        loot = max(nums[0], nums[1])
+        for j in range(2, i+1):
+            loot = max(loot, nums[j] + lootArray[j-2])
+        lootArray[i] = loot
+    return lootArray[len(nums)-1]
 ```
 
-**Runtime**: Due to the doubly-nested loop structure, the bottom-up `cutRod()` has a runtime of $\Theta(n^2)$. 
+**Runtime**: Due to the doubly-nested loop structure, the bottom-up `rob()` has a runtime of $\Theta(n^2)$. 
 
 ### Reconstructing the solution
 
