@@ -77,7 +77,7 @@ def robMemoized(nums, lootArray):
 
 ### Solution 3: $O(n)$ Dynamic Programming Solution
 
-We maintain two counters, `oddSum` and `evenSum`, which are both initialized to 0. We iterate through each house and add the current value to `evenSum`, compare the sum to the current value of `oddSum`, and pick the larger of the two. At any given point during the iteration, `oddSum` contains the largest possible loot so far. The code is as follows:
+We maintain two counters, `sum1` and `sum2`, which are both initialized to 0. We iterate through each house and add the current value to `sum2`, compare the sum to the current value of `sum1`, and pick the larger of the two. At each end of an iteration, `sum1` contains the largest possible loot so far. The code is as follows:
 
 ```
     def rob(self, nums: List[int]) -> int:
@@ -85,13 +85,13 @@ We maintain two counters, `oddSum` and `evenSum`, which are both initialized to 
             return 0
         if len(nums) == 1:
             return nums[0]
-        oddSum = 0
-        evenSum = 0
+        sum1 = 0
+        sum2 = 0
         for i in range(len(nums)):
-            currMax = max(oddSum, evenSum + nums[i])
-            evenSum = oddSum
-            oddSum = currMax
-        return oddSum
+            currMax = max(sum1, sum2 + nums[i])
+            sum2 = sum1
+            sum1 = currMax
+        return sum1
 ```
 
 ### Solution 3: Dynamic Programming Bottom-up Approach
