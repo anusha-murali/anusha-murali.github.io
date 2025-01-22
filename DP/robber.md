@@ -76,6 +76,10 @@ def robMemoized(nums, lootArray):
 
 **Runtime**: Unlike Solution 1, the memoized version solves each subproblem only once. We note that the for loop results in an arithmetic series, which therefore results in a runtime of $\Theta(n^2)$. 
 
+### Solution 3: $O(n)$ Dynamic Programming Solution
+
+We maintain two counters, `oddSum` and `evenSum`.
+
 ### Solution 3: Dynamic Programming Bottom-up Approach
 
 In the bottom-up approach, we solve the sub-problems of sizes $i = 0, 1, \ldots, n$ in increasing order. Hence, when a problem of size $k$ is encountered, it can make use of all the sub-problems of size $i < k$, as they have been already been computed. The results of the subproblems are saved in the revenue array $r$, where we initialize $r[0] = 0$ as there is no revenue from a rod of lengh 0.
