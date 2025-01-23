@@ -143,7 +143,7 @@ We use one additional array, $s$, which saves the house numbers that need to be 
     def getHouses(nums):
         (maxLoot, s) = rob(nums)
         houseList = []
-        houseList.append(s[-1])  # Start from the last house
+        houseList.append(s[-1])  # Start from the last house in s
         for i in range(len(s) - 2, -1, -1):
             if s[i] != houseList[-1] - 1:
                 houseList.append(s[i])
