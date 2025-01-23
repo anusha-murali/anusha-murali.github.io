@@ -131,6 +131,7 @@ We use one additional array, $s$, which saves the house numbers that need to be 
         skip = nums[0]
         s = []
         s.append(0)  # Start comparing from the 1st house
+        s.append(1)
         for i in range(2, len(nums)):
             if steal < skip + nums[i]:
                 currMax = skip + nums[i]
