@@ -104,7 +104,7 @@ def rob(self, nums: List[int]) -> int:
 We maintain two counters, `sum1` and `sum2`, which are both initialized to 0. We iterate through each house and add the current value to `sum2`, compare the sum to the current value of `sum1`, and pick the larger of the two.  During each iteration, the current `sum1` replaces `sum2` and the current maximum value is assigned to `sum1`. This gurantees that we always add the current house `nums[i]` alternatively to either of these sums, without triggering a police alarm. At each end of an iteration, `sum1` contains the largest possible loot so far. The code is as follows:
 
 ```
-    def rob(self, nums: List[int]) -> int:
+    def rob(nums):
         if len(nums) == 0:
             return 0
         if len(nums) == 1:
@@ -121,31 +121,39 @@ We maintain two counters, `sum1` and `sum2`, which are both initialized to 0. We
 
 ### Reconstructing the solution
 
-In addition to finding the maximum possible revenue for a give rod length, we are also interested in finding the lengths of pieces, which led to the maximum revenue.
+In addition to finding the maximum possible amount the robber can take, we are also interested in finding the house numbers that he robs, which led to the maximum loot.
 
-We use one additional array, $s[0 \cdots n]$, which saves the optimal size of the first piece that was cut.
+We use one additional array, $s$, which saves the house numbers that need to be initially checked. We can then backtrack from the last element in this array and select the non-consecutive house numbers, which correspond to the houses that the robber would visit.
 
 ```
-def cutRod(p, n):
-    r = [0 for i in range(n+1)]
-    s = [0 for i in range(n+1)]
-    for i in range(1, n+1):
-        q = float('-inf')
-        for j in range(1, i+1):
-            if (q < p[j] + r[i-j]):
-                q = p[j] + r[i-j]
-                s[i] = j
-        r[i] = q
-    return (r, s)
+    def rob(nums):
+        if len(nums) == 0:
+            return 0
+        if len(nums) == 1:
+            return nums[0]
+        sum1 = 0
+        sum2 = 0
+        s = []
+        s.append(0)  # Start comparing from the 1st house
+        for i in range(len(nums)):
+            currMax = max(sum1, sum2 + nums[i])
+            if sum1 < sum2 + nums[i]:
+                curr = sum2 + nums[i]
+                if i > 0:
+                    s.append(i)    # This is a potential house to rob
+            sum2 = sum1
+            sum1 = currMax
+        return (sum1, s)
 
-def printCuts(p, n):
-    (r, s) = cutRod(p, n)
-    while n > 0:
-        print(s[n])
-        n = n - s[n]
+    def getHouses(nums):
+        (maxLoot, s) = rob(p, n)
+        houseList = []
+        houseList.append(s[-1])  # Start from the last house
+        for i in range(len(s) - 2, -1, -1):
+            if s[i] != houseList[-1] - 1:
+                houseList.append(s[i])
+        return houseList.reverse()
 ```
-
-> **Example**: Let $p = [0, 2, 7, 8, 10]$. Hence `printCuts(p, 3)` returns 1, 2, so the revenue is $p[1] + p[2] = 2 + 7 = \\$9$.  `printCuts(p, 4)` returns 2, 2, so the revenue is $p[2] + p[2] = 7 + 7 = \\$14$.
 
 
 [Back to Dynamic Programming Problems](./problems.md)
