@@ -146,7 +146,7 @@ We use one additional array, $s$, which saves the house numbers that need to be 
         return (sum1, s)
 
     def getHouses(nums):
-        (maxLoot, s) = rob(p, n)
+        (maxLoot, s) = rob(nums)
         houseList = []
         houseList.append(s[-1])  # Start from the last house
         for i in range(len(s) - 2, -1, -1):
