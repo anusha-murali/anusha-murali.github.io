@@ -99,23 +99,21 @@ def rob(self, nums: List[int]) -> int:
 **Runtime**: Due to the doubly-nested loop structure, the bottom-up `rob()` has a runtime of $\Theta(n^2)$. 
 
 
-### Solution 4: $O(n)$ Dynamic Programming Solution
+### Solution 4: $O(n)$ Solution with Constant Space
 
-We maintain two counters, `sum1` and `sum2`, which are both initialized to 0. We iterate through each house and add the current value to `sum2`, compare the sum to the current value of `sum1`, and pick the larger of the two.  During each iteration, the current `sum1` replaces `sum2` and the current maximum value is assigned to `sum1`. This gurantees that we always add the current house `nums[i]` alternatively to either of these sums, without triggering a police alarm. At each end of an iteration, `sum1` contains the largest possible loot so far. The code is as follows:
+We maintain two variables, `steal` and `skip`, where `steal` corresponds to the larger of the current sums and `skip` corresponds to the smaller of the two. We iterate through each house and add the current value to `skip`, compare the sum to the current value of `steal`, and pick the larger of the two.  During each iteration, the current `steal` replaces `skip` and the current maximum value is assigned to `steal`. This gurantees that we always add the current house `nums[i]` alternatively to either of these sums, without triggering a police alarm. At each end of an iteration, `steal` contains the largest possible loot so far. The code is as follows:
 
 ```
     def rob(nums):
-        if len(nums) == 0:
-            return 0
         if len(nums) == 1:
             return nums[0]
-        sum1 = 0
-        sum2 = 0
-        for i in range(len(nums)):
-            currMax = max(sum1, sum2 + nums[i])
-            sum2 = sum1
-            sum1 = currMax
-        return sum1
+        steal = max(nums[0], nums[1])
+        skip = nums[0]
+        for i in range(2, len(nums)):
+            currMax = max(steal, skip + nums[i])
+            skip = steal
+            steal = currMax
+        return steal
 ```
 **Runtime**: We have only one `for` loop iterating through each of the $n$ houses, and therefore the runtime is $O(n)$.
 
