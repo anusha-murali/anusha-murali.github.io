@@ -125,22 +125,19 @@ We use one additional array, $s$, which saves the house numbers that need to be 
 
 ```
     def rob(nums):
-        if len(nums) == 0:
-            return 0
         if len(nums) == 1:
             return nums[0]
-        sum1 = 0
-        sum2 = 0
+        steal = max(nums[0], nums[1])
+        skip = nums[0]
         s = []
         s.append(0)  # Start comparing from the 1st house
-        for i in range(len(nums)):
-            currMax = max(sum1, sum2 + nums[i])
-            if sum1 < sum2 + nums[i]:
-                curr = sum2 + nums[i]
+        for i in range(2, len(nums)):
+            if steal < skip + nums[i]:
+                currMax = skip + nums[i]
                 if i > 0:
                     s.append(i)    # This is a potential house to rob
-            sum2 = sum1
-            sum1 = currMax
+            skip = steal
+            steal = currMax
         return (sum1, s)
 
     def getHouses(nums):
