@@ -138,7 +138,7 @@ We use one additional array, $s$, which saves the house numbers that need to be 
                     s.append(i)    # This is a potential house to rob
             skip = steal
             steal = currMax
-        return (sum1, s)
+        return (steal, s)
 
     def getHouses(nums):
         (maxLoot, s) = rob(nums)
