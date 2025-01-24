@@ -28,7 +28,7 @@ Explanation: There are 3 equal row and column pairs:
 - (Row 2, Column 2): [2,4,2,2]
 - (Row 3, Column 2): [2,4,2,2]
 
-**Solution**
+**Solution** We can compare each row of the matrix with each column of the matrix by first creating a transpose of the original matrix. Then we can just compare the rows.
 
 **Runtime**:  
 
