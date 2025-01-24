@@ -11,18 +11,30 @@ A row and column pair is considered equal if they contain the same elements in t
 Example 1:
 
 
-Input: grid = [[3,2,1],[1,7,6],[2,7,7]]
+Input: grid = [[3,2,1],[1,7,6],[2,7,7]];
 Output: 1
+
 Explanation: There is 1 equal row and column pair:
 - (Row 2, Column 1): [2,7,7]
   
 Example 2:
 
 
-Input: grid = [[3,1,2,2],[1,4,4,5],[2,4,2,2],[2,4,2,2]]
+Input: grid = [[3,1,2,2],[1,4,4,5],[2,4,2,2],[2,4,2,2]];
 Output: 3
+
 Explanation: There are 3 equal row and column pairs:
 - (Row 0, Column 0): [3,1,2,2]
 - (Row 2, Column 2): [2,4,2,2]
 - (Row 3, Column 2): [2,4,2,2]
 
+**Runtime**:  
+
+[Back to Hash Map Problems](./problems.md)
+
+* * *
+###### anusha-murali.github.io
+
+<img src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/639243aa-2857-4595-a65a-7852762bb002" width="50" height="50" align="left">
+
+[<img src="https://github.com/user-attachments/assets/989cfb30-4fb8-40f8-a812-8a054869aa32" width="50" height="50" align="right">](../index.md)
