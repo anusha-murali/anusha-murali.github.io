@@ -2,7 +2,7 @@
 
 This is a nice problem from LeetCode (Problem #2352)
 
-**Problem**: Given a 0-indexed n x n integer matrix grid, return the number of pairs (ri, cj) such that row ri and column cj are equal.
+**Problem**: Given a 0-indexed $n \times n$ integer matrix grid, return the number of pairs $(r_i, c_j)$ such that row $r_i$ and column $c_j$ are equal.
 
 A row and column pair is considered equal if they contain the same elements in the same order (i.e., an equal array).
 
@@ -27,6 +27,8 @@ Explanation: There are 3 equal row and column pairs:
 - (Row 0, Column 0): [3,1,2,2]
 - (Row 2, Column 2): [2,4,2,2]
 - (Row 3, Column 2): [2,4,2,2]
+
+**Solution**
 
 **Runtime**:  
 
