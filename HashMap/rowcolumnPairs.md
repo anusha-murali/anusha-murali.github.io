@@ -30,6 +30,8 @@ Explanation: There are 3 equal row and column pairs:
 
 **Solution** We can compare each row of the matrix with each column of the matrix by first creating a transpose of the original matrix. Then we can just compare the rows.
 
+We can easily transpose a matrix, represented as list of lists, by using the `zip()` function. The `zip()` function takes iterables and aggregates them in a tuple.
+
 **Runtime**:  
 
 [Back to Hash Map Problems](./problems.md)
