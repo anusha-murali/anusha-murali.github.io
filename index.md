@@ -11,9 +11,10 @@ title: Table of Contents
 3. [Artificial Intelligence (My Harvard CS182 noes)](./CS182/cs182.md)
 4. [My favorite Dynamic Programming Problems](./DP/problems.md)
 5. [My favorite Sliding Window Problems](./SlidingWindows/problems.md)
-6. [My favorite String and Array Problems](./STRINGS/problems.md)
-7. [Finding Strongly Connected Components (SCCs): Kosaraju's Algorithm](./MISC/kosaraju.md)
-8. [My DSA Cheatsheet](./CS124/cs124_cheatsheet.md)
+6. [My favorite Hash Map Problems](./HashMaps/problems.md)
+7. [My favorite String and Array Problems](./STRINGS/problems.md)
+8. [Finding Strongly Connected Components (SCCs): Kosaraju's Algorithm](./MISC/kosaraju.md)
+9. [My DSA Cheatsheet](./CS124/cs124_cheatsheet.md)
 
 
 * * *
