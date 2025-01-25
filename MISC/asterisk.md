@@ -27,6 +27,16 @@ def multiply_list(*lst):
   for num in lst:
     result *= num
   return result
+
+multiply_list(10, 25)
+multiply_list(4,5,6,7,8,9,10)
+```
+
+When we run the above, we get the following output:
+
+```
+250
+604800
 ```
 
 * * *
