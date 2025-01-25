@@ -86,6 +86,19 @@ When we run the above, we get the following output:
 Value 1:  100  Value 2:  200  Value 3:  300
 ```
 
+An example usagee of `**` is as follows.
+
+```
+myDict = {"val1" : 5, "val2" : 12, "val3" : 40}
+printValues(**myDict)
+```
+When we run the above, we get the following output:
+```
+Value 1:  5  Value 2:  12  Value 3:  40
+```
+
+Note that the keys in `myDict` corresponds to the names of the arguments defined in the function.
+
 * * *
 ###### anusha-murali.github.io
 
