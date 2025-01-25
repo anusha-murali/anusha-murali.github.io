@@ -26,6 +26,14 @@ Explanation: There is 1 equal row and column pair:
   
 Example 2:
 
+$$
+\begin{bmatrix}
+3 & 1 & 2 & 2 \\
+1 & 4 & 4 & 5\\
+2 & 4 & 2 & 2\\
+2 & 4 & 2 & 2
+\end{bmatrix}
+$$
 
 Input: grid = [[3,1,2,2],[1,4,4,5],[2,4,2,2],[2,4,2,2]];
 Output: 3
