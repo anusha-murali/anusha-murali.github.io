@@ -11,9 +11,9 @@ A row and column pair is considered equal if they contain the same elements in t
 Example 1:
 
 $$
-\begin{matrix}
+\begin{bmatrix}
 3 & 2 & 1
-\end{matrix}
+\end{bmatrix}
 $$
 
 Input: grid = [[3,2,1],[1,7,6],[2,7,7]];
