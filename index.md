@@ -14,7 +14,7 @@ title: Table of Contents
 6. [My favorite Hash Map Problems](./HashMap/problems.md)
 7. [My favorite String and Array Problems](./STRINGS/problems.md)
 8. [Finding Strongly Connected Components (SCCs): Kosaraju's Algorithm](./MISC/kosaraju.md)
-9. [Using *args and **kwargs in Python](./MISC/asterisk.md)
+9. [Using `*args` and `**kwargs` in Python](./MISC/asterisk.md)
 10. [My DSA Cheatsheet](./CS124/cs124_cheatsheet.md)
 
 
