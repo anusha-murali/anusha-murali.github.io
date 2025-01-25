@@ -12,7 +12,9 @@ Example 1:
 
 $$
 \begin{bmatrix}
-3 & 2 & 1
+3 & 2 & 1 \\
+1 & 7 & 6 \\
+2 & 7 & 7 
 \end{bmatrix}
 $$
 
