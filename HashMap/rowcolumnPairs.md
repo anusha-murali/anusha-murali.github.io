@@ -97,6 +97,8 @@ def equalPairs(grid):
     return  sum(transpose_counts[item]*grid_counts[item] for item in transpose_counts)  
 ```
 
+**Runtime**: Since the `for` loop iterates through the number of rows in the transposed matrix, the runtime is $O(n)$.
+
 [Back to Hash Map Problems](./problems.md)
 
 * * *
