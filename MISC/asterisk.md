@@ -44,7 +44,7 @@ Since the function was defined using $^*$`args`,  we were able to pass in arbitr
 
 #### Understanding $^{**}$kwargs
 
-In Python, the double-asterisk form of `**kwargs` can be used as a parameter to pass a variable-length argument dictionary to a function. The main difference between $^*$`args` and `**kwargs` is that one needs to assign keywords when using `**kwargs`.
+In Python, the double-asterisk form of `**kwargs` can be used as a parameter to pass a variable-length argument dictionary to a function. The main difference between $^*$`args` and `**kwargs` is that one needs to assign keys when using `**kwargs`.
 
 *Example*: 
 
