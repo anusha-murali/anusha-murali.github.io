@@ -115,6 +115,7 @@ Our input is `grid = [[3,1,2,2],[1,4,4,5],[2,4,2,2],[2,4,2,2]]`. Hence,
 transpose_counts = Counter(zip(*grid)) = {(2, 4, 2, 2): 2, (3, 1, 2, 2): 1, (1, 4, 4, 5): 1}               
 grid_counts = Counter(map(tuple,grid)) = {(3, 1, 2, 2): 1, (1, 4, 4, 4): 1, (2, 4, 2, 2): 1, (2, 5, 2, 2): 1}
 ```
+The tuple `(2, 4, 2, 2)` has a count of 2 in the transposed matrix and a count of 1 in the original matrix. The tuple `(3, 1, 2, 2)` has a count of 1 in both the transposed matrix and the original matrix. Therefore, our answer is, $2 \times 1 + 1 \times 1 = 3$.
 
 **Runtime**: Since the `for` loop iterates through the number of rows in the transposed matrix, the runtime is $O(n)$.
 
