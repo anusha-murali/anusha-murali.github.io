@@ -64,8 +64,19 @@ $$
 $$
 
 We can easily transpose a matrix, represented as list of lists, by using the `zip()` function. The `zip()` function takes iterables and aggregates them in a tuple. For example, `list(zip([1, 2], [3, 4], [5, 6]))` will return `[[1, 3, 5], [2, 4, 6]]`, where we first iterate through the corresponding elements in each of
-the three lists and then generate a list.
+the three lists and then generate a list. Therefore, using the `zip()` function, we can construct the following solution to our problem:
 
+```
+def equalPairs(grid):
+    transpose =  list(map(list, zip(*grid)))
+    count = 0
+    for i in range(len(grid)):
+        if grid[i] in transpose:
+            count += transpose.count(grid[i])
+    return count
+```
+
+Note that the `zip()` function is being passed a packed argument. The packed argument syntax using `*` implies that given a sequence of arguments `args`, `zip(*args)` will call `zip()` such that each element in `args` is a separate positional argument of `zip()`. Since our argument `grid` is a list of lists (matrix), the `zip()` function will be called on each of the rows of the `grid`. 
 **Runtime**:  
 
 [Back to Hash Map Problems](./problems.md)
