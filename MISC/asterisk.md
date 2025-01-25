@@ -19,6 +19,16 @@ The $^{**}$`kwargs` is used to pass a varying number of dictionary arguments.
 
 In Python, the single-asterisk form of $^*$`args` can be used as a parameter to pass a variable-length argument list to a function.
 
+*Example* We want to multiply the numbers in a list of unknown length.
+
+```
+def multiply_list(*list):
+  result = 1
+  for num in list:
+    result *= num
+  return result
+```
+
 * * *
 ###### anusha-murali.github.io
 
