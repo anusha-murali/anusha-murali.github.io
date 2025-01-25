@@ -43,7 +43,19 @@ Explanation: There are 3 equal row and column pairs:
 - (Row 2, Column 2): [2,4,2,2]
 - (Row 3, Column 2): [2,4,2,2]
 
-**Solution** We can compare each row of the matrix with each column of the matrix by first creating a transpose of the original matrix. Then we can just compare the rows.
+**Solution** We can compare each row of the matrix with each row of its transpose matrix.
+
+For example, we can transpose the matrix in Example 2 and obtain the following transposed matrix:
+
+$$
+\begin{bmatrix}
+3 & 1 & 2 & 2 \\
+1 & 4 & 4 & 5\\
+2 & 4 & 2 & 2\\
+2 & 4 & 2 & 2
+\end{bmatrix}
+\longrightarrow
+$$
 
 We can easily transpose a matrix, represented as list of lists, by using the `zip()` function. The `zip()` function takes iterables and aggregates them in a tuple.
 
