@@ -54,7 +54,13 @@ $$
 2 & 4 & 2 & 2\\
 2 & 4 & 2 & 2
 \end{bmatrix}
-\longrightarrow
+\mbox \longrightarrow \mbox
+\begin{bmatrix}
+3 & 1 & 2 & 2 \\
+1 & 4 & 4 & 4 \\
+2 & 4 & 2 & 2 \\
+2 & 5 & 2 & 2
+\end{bmatrix}
 $$
 
 We can easily transpose a matrix, represented as list of lists, by using the `zip()` function. The `zip()` function takes iterables and aggregates them in a tuple.
