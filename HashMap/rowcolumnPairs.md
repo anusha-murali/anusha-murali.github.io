@@ -96,6 +96,7 @@ def equalPairs(grid):
     grid_counts = Counter(map(tuple,grid))             
     return  sum(transpose_counts[item]*grid_counts[item] for item in transpose_counts)  
 ```
+We iterate through each item in `transpose_counts` and multiply the count corresponding to the `item` with the count of the same `item` in `grid_counts`. The desired answer is the sum of these products.
 
 **Runtime**: Since the `for` loop iterates through the number of rows in the transposed matrix, the runtime is $O(n)$.
 
