@@ -39,7 +39,7 @@ When we run the above, we get the following output:
 604800
 ```
 
-Since the function was defined using $^*$`args`,  we were able to pass in arbitrary number of arguments as we into the function.
+Since the function was defined using $^*$`args`,  we were able to pass in arbitrary number of arguments as we wanted into the function (in the first call 2 arguments and in the second call 7 arguments respectively).
 
 * * *
 ###### anusha-murali.github.io
