@@ -54,7 +54,7 @@ $$
 2 & 4 & 2 & 2\\
 2 & 4 & 2 & 2
 \end{bmatrix}
-\mbox \longrightarrow \mbox
+\mbox $\longrightarrow$ \mbox
 \begin{bmatrix}
 3 & 1 & 2 & 2 \\
 1 & 4 & 4 & 4 \\
