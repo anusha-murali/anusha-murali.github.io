@@ -8,16 +8,16 @@ There are three types of parameters in Python, namely:
 
 The *Positional-or-Keyword* parameter is the most commonly used one, where one can either specify the name of the parameter or not when calling the function.
 
-The $^*$`args` and `$^{**}$kwargs` are typically used when a function has a varying (or arbitrary) number of
+The $^*$`args` and $^{**}$`kwargs` are typically used when a function has a varying (or arbitrary) number of
 parameters.
 
-The $^*$args is used to pass a varying number of arguments.
+The $^*$`args` is used to pass a varying number of arguments.
 
-The $^{**}$kwargs is used to pass a varying number of dictionary arguments.
+The $^{**}$`kwargs` is used to pass a varying number of dictionary arguments.
 
 #### Understanding $^*$args
 
-In Python, the single-asterisk form of $^*$args can be used as a parameter to pass a variable-length argument list to a function.
+In Python, the single-asterisk form of $^*$`args` can be used as a parameter to pass a variable-length argument list to a function.
 
 * * *
 ###### anusha-murali.github.io
