@@ -15,6 +15,10 @@ The **$^*$args** is used to pass a varying number of arguments.
 
 The **$^{**}$kwargs** is used to pass a varying number of dictionary arguments.
 
+#### Understanding $^*$args
+
+In Python, the single-asterisk form of $^*$args can be used as a parameter to pass a variable-length argument list to a function.
+
 * * *
 ###### anusha-murali.github.io
 
