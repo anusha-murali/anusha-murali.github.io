@@ -63,7 +63,8 @@ $$
 \end{bmatrix}
 $$
 
-We can easily transpose a matrix, represented as list of lists, by using the `zip()` function. The `zip()` function takes iterables and aggregates them in a tuple.
+We can easily transpose a matrix, represented as list of lists, by using the `zip()` function. The `zip()` function takes iterables and aggregates them in a tuple. For example, `list(zip([1, 2], [3, 4], [5, 6]))` will return `[[1, 3, 5], [2, 4, 6]]`, where we first iterate through the corresponding elements in each of
+the three lists and then generate a list.
 
 **Runtime**:  
 
