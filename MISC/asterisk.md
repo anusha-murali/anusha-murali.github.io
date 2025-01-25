@@ -39,6 +39,8 @@ When we run the above, we get the following output:
 604800
 ```
 
+Since the function was defined using $^*$`args`,  we were able to pass in arbitrary number of arguments as we into the function.
+
 * * *
 ###### anusha-murali.github.io
 
