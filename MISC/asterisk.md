@@ -72,6 +72,19 @@ z : 13
 
 As opposed to our discussion above, the functionality of `*` and `**`, when passed as arguments when calling a function, is to unpacking an iterable data structure (such as a list or a tuple) and a dictionary into individual arguments respectively.
 
+*Example*:
+
+```
+def printValues(val1, val2, val3):
+  print("Value 1: ", val1, " Value 2: ", val2, " Value 3: ", val3)
+
+myList = [100, 200, 300]
+printValues(*myList)
+```
+When we run the above, we get the following output:
+```
+Value 1:  100  Value 2:  200  Value 3:  300
+```
 
 * * *
 ###### anusha-murali.github.io
