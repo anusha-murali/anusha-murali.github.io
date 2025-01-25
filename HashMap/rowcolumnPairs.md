@@ -43,7 +43,7 @@ Explanation: There are 3 equal row and column pairs:
 - (Row 2, Column 2): [2,4,2,2]
 - (Row 3, Column 2): [2,4,2,2]
 
-**Solution** We can compare each row of the matrix with each row of its transposed matrix.
+**Solution 1**: We can compare each row of the matrix with each row of its transposed matrix.
 
 For example, we can transpose the matrix in Example 2 and obtain the following transposed matrix, and then compare each row of the original matrix with each row of its transposed matrix.
 
@@ -79,6 +79,23 @@ def equalPairs(grid):
 Note that the `zip()` function is being passed a packed argument. The packed argument syntax using `*` implies that given a sequence of arguments `args`, `zip(*args)` will call `zip()` such that each element in `args` is a separate positional argument of `zip()`. Since our argument `grid` is a list of lists (matrix), the `zip()` function will be called on each of the rows of the `grid`. 
 
 **Runtime**:  Ignoring the cost of transposing the matrix, the `for` loop gives us a runtime of $O(n)$.
+
+**Solution 2**: The `Counter` is a subclass of `dict` that can be used for counting hashable objects. The `Counter` is a dictionary that objects as keys and counts as values. We pass an iterable of hashable objects as an argument to the `Counter` class's constructor. For example, `Counter(list("California"))` returns `Counter({'a': 2, 'i': 2, 'C': 1, 'l': 1, 'f': 1, 'o': 1, 'r': 1, 'n': 1})`.
+
+We can find the counts of each row occurring in `grid` using, `Counter(map(tuple, grid))`.
+
+Similarly, we can find the counts of each row occurring in the transpose of `grid` using, `Counter(zip(*grid))`. 
+
+Therefore, our solution simplifies into the following:
+
+```
+def equalPairs(grid):
+    from collections import Counter
+    
+    transpose_counts = Counter(zip(*grid))                 
+    grid_counts = Counter(map(tuple,grid))             
+    return  sum(transpose_counts[item]*grid_counts[item] for item in transpose_counts)  
+```
 
 [Back to Hash Map Problems](./problems.md)
 
