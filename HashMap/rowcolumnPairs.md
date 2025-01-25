@@ -43,9 +43,9 @@ Explanation: There are 3 equal row and column pairs:
 - (Row 2, Column 2): [2,4,2,2]
 - (Row 3, Column 2): [2,4,2,2]
 
-**Solution** We can compare each row of the matrix with each row of its transpose matrix.
+**Solution** We can compare each row of the matrix with each row of its transposed matrix.
 
-For example, we can transpose the matrix in Example 2 and obtain the following transposed matrix:
+For example, we can transpose the matrix in Example 2 and obtain the following transposed matrix, and then compare each row of the original matrix with each row of its transposed matrix.
 
 $$
 \begin{bmatrix}
