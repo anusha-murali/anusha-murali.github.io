@@ -98,6 +98,24 @@ def equalPairs(grid):
 ```
 We iterate through each item in `transpose_counts` and multiply the count corresponding to the `item` with the count of the same `item` in `grid_counts`. The desired answer is the sum of these products.
 
+For example, let us consider the grid in Example 2 above:
+
+$$
+\begin{bmatrix}
+3 & 1 & 2 & 2 \\
+1 & 4 & 4 & 5\\
+2 & 4 & 2 & 2\\
+2 & 4 & 2 & 2
+\end{bmatrix}
+$$
+
+Our input is `grid = [[3,1,2,2],[1,4,4,5],[2,4,2,2],[2,4,2,2]]`. Hence,
+
+```
+transpose_counts = Counter(zip(*grid)) = {(2, 4, 2, 2): 2, (3, 1, 2, 2): 1, (1, 4, 4, 5): 1}               
+grid_counts = Counter(map(tuple,grid)) = {(3, 1, 2, 2): 1, (1, 4, 4, 4): 1, (2, 4, 2, 2): 1, (2, 5, 2, 2): 1}
+```
+
 **Runtime**: Since the `for` loop iterates through the number of rows in the transposed matrix, the runtime is $O(n)$.
 
 [Back to Hash Map Problems](./problems.md)
