@@ -77,7 +77,8 @@ def equalPairs(grid):
 ```
 
 Note that the `zip()` function is being passed a packed argument. The packed argument syntax using `*` implies that given a sequence of arguments `args`, `zip(*args)` will call `zip()` such that each element in `args` is a separate positional argument of `zip()`. Since our argument `grid` is a list of lists (matrix), the `zip()` function will be called on each of the rows of the `grid`. 
-**Runtime**:  
+
+**Runtime**:  Ignoring the cost of transposing the matrix, the `for` loop gives us a runtime of $O(n)$.
 
 [Back to Hash Map Problems](./problems.md)
 
