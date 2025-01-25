@@ -68,6 +68,11 @@ y : 5
 z : 13
 ```
 
+#### Using `*` and `**` as Arguments to a Function
+
+As opposed to our discussion above, the functionality of `*` and `**`, when passed as arguments when calling a function, is to unpacking an iterable data structure (such as a list or a tuple) and a dictionary into individual arguments respectively.
+
+
 * * *
 ###### anusha-murali.github.io
 
