@@ -22,9 +22,9 @@ In Python, the single-asterisk form of $^*$`args` can be used as a parameter to 
 *Example* We want to multiply the numbers in a list of unknown length.
 
 ```
-def multiply_list(*list):
+def multiply_list(*lst):
   result = 1
-  for num in list:
+  for num in lst:
     result *= num
   return result
 ```
