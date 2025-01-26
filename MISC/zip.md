@@ -46,6 +46,8 @@ We can find its transpose easily using the `zip()` function as shown below:
 grid = [[3,2,1],[1,7,6],[2,7,7]]
 transpose = list(zip(*grid))
 ```
+**Explanation**: First we unpack the matrix (list of lists) using `*grid`. This gives us the iterable, `[3, 2, 1] [1, 7, 6] [2, 7, 7]`. So, `zip(*grid)` zips the corresponding elements from each of the three lists and returns a zip object. Finally, `list()` turns the zip object into the list, `[([3, 2, 1],), ([1, 7, 6],), ([2, 7, 7],)]`.
+
 We can print `transpose` and confirm:
 ```
 print(transpose)
