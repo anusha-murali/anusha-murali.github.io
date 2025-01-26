@@ -34,6 +34,23 @@ print("scores = ", scores)
 courses =  ('CS124', 'CS50', 'CS182')
 scores =  (94, 97, 91)
 ```
+
+**Example 3**: **Transposing a matrix using the `zip()` function**
+
+Let us consider the following $3 \times 3$ matrix.
+
+
+We can find its transpose easily using the `zip()` function as shown below:
+
+```
+grid = [[3,2,1],[1,7,6],[2,7,7]]
+transpose = list(zip(*grid))
+```
+We can print `transpose` and confirm:
+```
+print(transpose)
+[([3, 2, 1],), ([1, 7, 6],), ([2, 7, 7],)]
+```
 * * *
 ###### anusha-murali.github.io
 
