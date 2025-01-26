@@ -74,7 +74,7 @@ $$
 \end{bmatrix}
 $$
 
-Note that `map(list, zip(*grid))` can also be written more elegantly using list comprehension with `[list(i) for i in zip(*grid)]`.
+Note that `transpose = list(map(list, zip(*grid)))` can also be written more elegantly using list comprehension with `transpose = [list(i) for i in zip(*grid)]`.
 
 Please see an example use case of the `zip()` function in [Equal Row and Column Pairs](../HashMap/rowcolumnPairs.md) hash map problem.
 
