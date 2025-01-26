@@ -97,7 +97,7 @@ When we run the above, we get the following output:
 Value 1:  5  Value 2:  12  Value 3:  40
 ```
 
-Note that the keys in `myDict` corresponds to the names of the arguments defined in the function, namely `"val1"`, `"val2"`, and `"val3"`.
+Note that the keys in `myDict` corresponds to the names of the arguments defined in the function, namely `val1`, `val2`, and `val3`.
 
 * * *
 ###### anusha-murali.github.io
