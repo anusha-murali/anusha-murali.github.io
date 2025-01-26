@@ -57,6 +57,9 @@ We can print `transpose` and confirm:
 print(transpose)
 [[3, 1, 2], [2, 7, 7], [1, 6, 7]]
 ```
+
+Please see an example use case of the `zip()` function in [Equal Row and Column Pairs](../HashMap/rowcolumnPairs.md) hash map problem.
+
 * * *
 ###### anusha-murali.github.io
 
