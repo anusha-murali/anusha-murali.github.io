@@ -2,6 +2,12 @@
 
 The `zip()` is one of the most useful functions in Python. It takes iterables such as lists and aggregate them into a **tuple**.
 
+The syntax of the `zip()` function is,
+```
+zip(*iterables)
+```
+where the `iterables` can be one of the built-in iterables such as list, string, dict or any user-defined iterables.
+
 * * *
 ###### anusha-murali.github.io
 
