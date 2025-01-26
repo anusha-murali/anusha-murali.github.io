@@ -37,7 +37,7 @@ scores =  (94, 97, 91)
 
 **Example 3**: **Transposing a matrix using the `zip()` function**
 
-Let us consider the following $3 \times 3$ matrix.
+Let us consider the following $3 \times 3$ matrix, `grid = [[3,2,1],[1,7,6],[2,7,7]]`.
 
 
 We can find its transpose easily using the `zip()` function as shown below:
