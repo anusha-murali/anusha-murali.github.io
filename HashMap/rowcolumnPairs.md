@@ -80,7 +80,7 @@ Note that the `zip()` function is being passed a packed argument. The packed arg
 
 **Runtime**:  Ignoring the cost of transposing the matrix, the `for` loop gives us a runtime of $O(n)$.
 
-**Solution 2**: The `Counter` is a subclass of `dict` that can be used for counting hashable objects. The `Counter` is a dictionary that objects as keys and counts as values. We pass an iterable of hashable objects as an argument to the `Counter` class's constructor. For example, `Counter(list("California"))` returns `Counter({'a': 2, 'i': 2, 'C': 1, 'l': 1, 'f': 1, 'o': 1, 'r': 1, 'n': 1})`.
+**Solution 2**: The `Counter` is a subclass of `dict` that can be used for counting hashable objects. The `Counter` is a dictionary that hashes the objects as keys and their counts as values. We pass an iterable of hashable objects as an argument to the `Counter` class's constructor. For example, `Counter(list("California"))` returns `Counter({'a': 2, 'i': 2, 'C': 1, 'l': 1, 'f': 1, 'o': 1, 'r': 1, 'n': 1})`.
 
 We can find the counts of each row occurring in `grid` using, `Counter(map(tuple, grid))`.
 
