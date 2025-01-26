@@ -66,6 +66,14 @@ print(transpose)
 ```
 The above list of lists represents the transposed matrix below:
 
+$$
+\begin{bmatrix}
+3 & 1 & 2 \\
+2 & 7 & 7 \\
+1 & 6 & 7
+\end{bmatrix}
+$$
+
 
 Please see an example use case of the `zip()` function in [Equal Row and Column Pairs](../HashMap/rowcolumnPairs.md) hash map problem.
 
