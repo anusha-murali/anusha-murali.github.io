@@ -15,7 +15,8 @@ title: Table of Contents
 7. [My favorite String and Array Problems](./STRINGS/problems.md)
 8. [Finding Strongly Connected Components (SCCs): Kosaraju's Algorithm](./MISC/kosaraju.md)
 9. [Using `*args` and `**kwargs` in Python](./MISC/asterisk.md)
-10. [My DSA Cheatsheet](./CS124/cs124_cheatsheet.md)
+10. [The `zip()` Function in Python](./MISC/zip.md)
+11. [My DSA Cheatsheet](./CS124/cs124_cheatsheet.md)
 
 
 * * *
