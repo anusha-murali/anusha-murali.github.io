@@ -1,5 +1,5 @@
 <p align="center">
-<img width="1375" alt="favorite_sw" src="https://github.com/user-attachments/assets/1a071081-07ed-4bf7-92fe-6e1bb7ff7df4" />
+<img width="1375" alt="favorite_sw" src="https://github.com/user-attachments/assets/7a4a8e65-5e94-4055-8626-fd641d7c9936" />
 </p>
 
 1. [Equal Row and Column Pairs](./rowcolumnPairs.md)
