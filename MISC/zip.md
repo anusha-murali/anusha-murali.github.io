@@ -39,6 +39,13 @@ scores =  (94, 97, 91)
 
 Let us consider the following $3 \times 3$ matrix, `grid = [[3,2,1],[1,7,6],[2,7,7]]`.
 
+$$
+\begin{bmatrix}
+3 & 2 & 1 \\
+1 & 7 & 6 \\
+2 & 7 & 7 
+\end{bmatrix}
+$$
 
 We can find its transpose easily using the `zip()` function as shown below:
 
@@ -57,6 +64,8 @@ We can print `transpose` and confirm:
 print(transpose)
 [[3, 1, 2], [2, 7, 7], [1, 6, 7]]
 ```
+The above list of lists represents the transposed matrix below:
+
 
 Please see an example use case of the `zip()` function in [Equal Row and Column Pairs](../HashMap/rowcolumnPairs.md) hash map problem.
 
