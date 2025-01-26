@@ -13,10 +13,10 @@ title: Table of Contents
 5. [My favorite Sliding Window Problems](./SlidingWindows/problems.md)
 6. [My favorite Hash Map Problems](./HashMap/problems.md)
 7. [My favorite String and Array Problems](./STRINGS/problems.md)
-8. [Finding Strongly Connected Components (SCCs): Kosaraju's Algorithm](./MISC/kosaraju.md)
-9. [Using `*args` and `**kwargs` in Python](./MISC/asterisk.md)
+8. [Using `*args` and `**kwargs` in Python](./MISC/asterisk.md)
 10. [The `zip()` Function in Python](./MISC/zip.md)
-11. [My DSA Cheatsheet](./CS124/cs124_cheatsheet.md)
+11. [Finding Strongly Connected Components (SCCs): Kosaraju's Algorithm](./MISC/kosaraju.md)
+12. [My DSA Cheatsheet](./CS124/cs124_cheatsheet.md)
 
 
 * * *
