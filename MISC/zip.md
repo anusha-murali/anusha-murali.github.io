@@ -8,6 +8,14 @@ zip(*iterables)
 ```
 where the `iterables` can be one of the built-in iterables such as list, string, dict or any user-defined iterables.
 
+**Example 1**
+```
+courses = ["CS124", "CS50", "CS182"]
+scores = [94, 97, 91]
+
+course_table = zip(courses, scores)
+```
+
 * * *
 ###### anusha-murali.github.io
 
