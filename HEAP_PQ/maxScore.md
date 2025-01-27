@@ -97,6 +97,19 @@ The *proof of correctness* is straight forward.
      $$
    - The algorithm ensures that (a) the sum of the selected `nums1` elements is maximized for the current `nums2` value (since we use a min-heap to keep the largest `nums1` elements). (b) The `nums2` value used in the calculation is the minimum in the current subset (because the tuples are sorted in descending order of `nums2`).
 
+**Proof of Optimality**
+
+1. Sorting by `nums2`
+   - Sorting the tuples in descending order of `nums2` ensures that when we consider a subset of size $k$, the minimum `nums2` value in the subset is as large as possible.
+   - This is because the `nums2` values are processed in descending order, so the minimum `nums2` value in any subset is determined by the smallest `nums2` value in the subset.
+2. Greedy Selection of `nums1` Elements
+   - By using a min-heap to maintain the top $k$ elements from `nums1`, we ensure that the sum of the selected `nums1` elements is maximized for the current `nums2` value.
+   - If a better subset exists (with a larger sum of `nums1` elements for the same `nums2` value), the min-heap ensures that we always keep the largest possible sum.
+3. Maximizing the Score
+   - The score is the product of two terms: (1) The sum of the selected nums1 elements. (2)The minimum nums2 value in the subset.
+   - By iterating through the sorted tuples and computing the score at each step, we ensure that we consider all possible subsets where the minimum `nums2` value is as large as possible.
+   - The algorithm guarantees that the maximum score is found because: (1) It explores all possible values of the minimum `nums2` in a systematic way (from largest to smallest). (2) For each value of the minimum `nums2`, it maximizes the sum of the corresponding `nums1` elements.
+
 
 **Runtime**: The time complexity is $O(n \log n)$ due to sorting and the min-heap operations. The space complexity is $O(n)$ for storing the pairs and the min-heap.
 
