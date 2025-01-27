@@ -3,7 +3,7 @@
 This is a beautiful problem from LeetCode (Problem #2542). Although this problem is categorized as a "medium" difficulty
 problem, I believe it should be moved to the "hard" category.
 
-**Problem**: You are given two 0-indexed integer arrays `nums1` and `nums2` of equal length $n$ and 
+**Problem**: You are given two $0$-indexed integer arrays `nums1` and `nums2` of equal length $n$ and 
 a positive integer $k$. You must choose a subsequence of indices from `nums1` of length $k$.
 
 For chosen indices $i_0, i_1, \ldots, i_{k - 1}$, your score is defined as:
@@ -40,6 +40,10 @@ Input: nums1 = [4,2,3,1,1], nums2 = [7,5,10,9,6], $k = 1$; Output: 30.
 
 Explanation: 
 Choosing index 2 is optimal: nums1[2] * nums2[2] = 3 * 10 = 30 is the maximum possible score.
+
+**Solution Using MinHeap**
+
+We fi
 
 **Runtime**: 
 
