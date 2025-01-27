@@ -43,7 +43,8 @@ Choosing index 2 is optimal: nums1[2] * nums2[2] = 3 * 10 = 30 is the maximum po
 
 **Solution Using MinHeap**
 
-We fi
+We are asked to select $k$ indices from the set $\{0, 1, \ldots, n-1\}$ in such a way that the sum of 
+integers from `nums1` corresponding to those $k$ indices multiplied by the minimum value among the $k$ integers from `nums2` corresponding to those $k$ indices.
 
 **Runtime**: 
 
