@@ -51,8 +51,13 @@ There are $\binom{n}{k}$ distinct sets of $k$ indices that can be selected from 
 We use the following approach to significantly reduce the runtime.
 
 1. We create a single list of $n$ elements, where each element is the pair `(nums1[i], nums2[i])`.
-> list(zip(nums1, nums2))
-2. asdds
+```
+list(zip(nums1, nums2))
+```
+2. We order the above list using the elements of `nums2` in descending order.
+```
+sorted(list(zip(nums1, nums2)), key=lambda x: -x[1])
+```
 3. asdfasdf
    
 
