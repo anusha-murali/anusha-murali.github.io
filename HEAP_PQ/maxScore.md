@@ -110,6 +110,18 @@ The *proof of correctness* is straight forward.
    - By iterating through the sorted tuples and computing the score at each step, we ensure that we consider all possible subsets where the minimum `nums2` value is as large as possible.
    - The algorithm guarantees that the maximum score is found because: (1) It explores all possible values of the minimum `nums2` in a systematic way (from largest to smallest). (2) For each value of the minimum `nums2`, it maximizes the sum of the corresponding `nums1` elements.
 
+**Inductive Argument**
+
+Base Case:
+
+  - For $k=1$, the algorithm selects the element with the largest `nums1[i] * nums2[i]`, which is clearly optimal.
+
+Inductive Step:
+
+  - Assume the algorithm works optimally for subsets of size $k−1$.
+  - For subsets of size $k$, the algorithm builds on the optimal subset of size $k−1$ by adding the next best element (in terms of `nums1` and `nums2`).
+  - The min-heap ensures that the sum of the selected `nums1` elements is maximized for the current `nums2` value.
+
 
 **Runtime**: The time complexity is $O(n \log n)$ due to sorting and the min-heap operations. The space complexity is $O(n)$ for storing the pairs and the min-heap.
 
