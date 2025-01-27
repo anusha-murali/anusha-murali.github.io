@@ -81,6 +81,23 @@ def maxScore(nums1, nums2, k):
 *Proof*: The very first time when the min-heap has $k$ pairs of `(nums1[i], nums2[i])`, it has the maximum possible minimum `nums2[i]`. If the $k$ `nums1[i]` in min-heap are the $k$ largest of `nums1`, then we have found our solution. Otherwise, we delete the root from min-heap (using `heappop()`) and replace it with another pair of `(nums1[i], nums2[i])`. Since `pairedSortedList` is sorted by descending order of `nums2`, 
 `nums2[i]` of the most recently inserted pair is the minimum among the $k$ elements in the min-heap. if the sum of `nums1` in min-heap is larger than the `currMax`, we will update `currMax`. otherwise we will keep the previous one. When we exhaust all the pairs in the list, the `currMax` is therefore the maximum possible value.
 
+The *proof of correctness* is straight forward.
+
+**Proof of Correctness**
+
+1. Subset Selection
+   - The algorithm selects a subset of size k by iterating through the sorted tuples and maintaining the top k elements from nums1 using a min-heap.
+   - At each step, the subset is valid because: (a) The size of the heap is always k after processing the first k elements. (b) The subset is derived from the original arrays by selecting indices in a valid way.
+     
+2. Score Calculation
+   - The score is calculated as:
+
+     $$
+        \text{score} = \left ( \sum_{i \in S} \text{nums1}[i] \right ) \times \min_{i \in S} \text{nums2}[i].
+     $$
+   - The algorithm ensures that (a) the sum of the selected `nums1` elements is maximized for the current `nums2` value (since we use a min-heap to keep the largest `nums1` elements). (b) The `nums2` value used in the calculation is the minimum in the current subset (because the tuples are sorted in descending order of `nums2`).
+
+
 **Runtime**: The time complexity is $O(n \log n)$ due to sorting and the min-heap operations. The space complexity is $O(n)$ for storing the pairs and the min-heap.
 
 [Back to Heap and Priority Queue Problems](./problems.md)
