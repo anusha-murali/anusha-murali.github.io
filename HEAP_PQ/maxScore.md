@@ -48,6 +48,14 @@ integers from `nums1` corresponding to those $k$ indices multiplied by the minim
 
 There are $\binom{n}{k}$ distinct sets of $k$ indices that can be selected from $n$ indices. This is exponential on $n$, which means, a brute-force approach examining all the $\binom{n}{k}$ possiblities will lead to exponential runtime.
 
+We use the following approach to significantly reduce the runtime.
+
+1. We create a single list of $n$ elements, where each element is the pair `(nums1[i], nums2[i])`.
+> list(zip(nums1, nums2))
+2. asdds
+3. asdfasdf
+   
+
 **Runtime**: 
 
 [Back to Heap and Priority Queue Problems](./problems.md)
