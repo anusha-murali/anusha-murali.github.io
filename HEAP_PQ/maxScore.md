@@ -13,7 +13,7 @@ from `nums2`.
 It can be defined simply as: 
 
 $$
-(nums1[i_0] + nums1[i_1] + \cdots + nums1[i_{k - 1}]) \times  \min(nums2[i_0] , nums2[i_1], \cdots ,nums2[i_{k - 1}]).
+({\tt nums1}[i_0] + nums1[i_1] + \cdots + nums1[i_{k - 1}]) \times  \min(nums2[i_0] , nums2[i_1], \cdots ,nums2[i_{k - 1}]).
 $$
 
 Return the maximum possible score.
