@@ -70,8 +70,7 @@ def maxScore(nums1, nums2, k):
     minHeap = []
     for n1, n2 in sorted(list(zip(nums1, nums2)), key=lambda x: -x[1]):
         heapq.heappush(minHeap, n1)
-        print(minHeap)
-        total += n1
+        currSum += n1
         if len(minHeap) == k:
             currMax = max(currMax, currSum * n2)
             currSum -= heapq.heappop(minHeap)
