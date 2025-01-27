@@ -59,7 +59,24 @@ list(zip(nums1, nums2))
 sorted(list(zip(nums1, nums2)), key=lambda x: -x[1])
 ```
 3. We maintain a min-heap of maximum size $k$. We note that each time we insert a new pair `(nums1[i], nums2[i])`, the current minimum value of `nums2` in the min-heap is `nums2[i]` and the current sum of the $k$ values in the min-heap is simply `sum(min-heap)`.
-   
+
+Our Python code is as follows:
+
+```
+def maxScore(nums1, nums2, k):
+    import heapq
+    
+    currSum = currMax = 0
+    minHeap = []
+    for n1, n2 in sorted(list(zip(nums1, nums2)), key=lambda x: -x[1]):
+        heapq.heappush(minHeap, n1)
+        print(minHeap)
+        total += n1
+        if len(minHeap) == k:
+            currMax = max(currMax, currSum * n2)
+            currSum -= heapq.heappop(minHeap)
+    return currMax
+```
 
 **Runtime**: 
 
