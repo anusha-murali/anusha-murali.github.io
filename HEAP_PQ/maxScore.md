@@ -54,21 +54,22 @@ We use the following approach to significantly reduce the runtime.
 ```
 list(zip(nums1, nums2))
 ```
-2. We order the above list using the elements of `nums2` in descending order.
+2. We order the above paired list using the elements of `nums2` in descending order. This ensures that we prioritize elements with larger `num2` values.
 ```
-sorted(list(zip(nums1, nums2)), key=lambda x: -x[1])
+pairedSortedList = sorted(list(zip(nums1, nums2)), key=lambda x: -x[1])
 ```
-3. We maintain a min-heap of maximum size $k$. We note that each time we insert a new pair `(nums1[i], nums2[i])`, the current minimum value of `nums2` in the min-heap is `nums2[i]` and the current sum of the $k$ values in the min-heap is simply `sum(min-heap)`.
+3. We maintain a min-heap of maximum size $k$. We note that each time we insert a new pair `(nums1[i], nums2[i])`, the current minimum value of `nums2` in the min-heap is `nums2[i]` and the current sum of the $k$ values in the min-heap is simply `sum(min-heap)`. The min-heap allows us to efficiently maintain the su of the largest $k$ elements.
 
 Our Python code is as follows:
 
 ```
 def maxScore(nums1, nums2, k):
     import heapq
-    
+
+    pairedSortedList = sorted(list(zip(nums1, nums2)), key=lambda x: -x[1])
     currSum = currMax = 0
     minHeap = []
-    for n1, n2 in sorted(list(zip(nums1, nums2)), key=lambda x: -x[1]):
+    for n1, n2 in pairedSortedList:
         heapq.heappush(minHeap, n1)
         currSum += n1
         if len(minHeap) == k:
@@ -79,7 +80,7 @@ def maxScore(nums1, nums2, k):
 
 *Proof* The very first time when the min-heap has $k$ pairs of `(nums1[i], nums2[i])`, it has the maximum possible minimum `nums2[i]`. If the $k$ `nums1[i]` in min-heap are the $k$ largest of `nums1`, then we have found our solution. Otherwise, we delete the root from min-heap (using `heappop()`) and replace it with another pair of `(nums1[i], nums2[i])`. 
 
-**Runtime**: 
+**Runtime**: The time complexity is $O(n \log n)$ due to sorting and the min-heap operations. The space complexity is $O(n)$ for storing the pairs and the min-heap.
 
 [Back to Heap and Priority Queue Problems](./problems.md)
 
