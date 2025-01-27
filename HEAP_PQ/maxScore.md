@@ -77,6 +77,8 @@ def maxScore(nums1, nums2, k):
     return currMax
 ```
 
+*Proof* The very first time when the min-heap has $k$ pairs of `(nums1[i], nums2[i])`, it has the maximum possible minimum `nums2[i]`. If the $k$ `nums1[i]` in min-heap are the $k$ largest of `nums1`, then we have found our solution. Otherwise, we delete the root from min-heap (using `heappop()`) and replace it with another pair of `(nums1[i], nums2[i])`. 
+
 **Runtime**: 
 
 [Back to Heap and Priority Queue Problems](./problems.md)
