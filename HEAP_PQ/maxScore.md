@@ -78,7 +78,8 @@ def maxScore(nums1, nums2, k):
     return currMax
 ```
 
-*Proof*: The very first time when the min-heap has $k$ pairs of `(nums1[i], nums2[i])`, it has the maximum possible minimum `nums2[i]`. If the $k$ `nums1[i]` in min-heap are the $k$ largest of `nums1`, then we have found our solution. Otherwise, we delete the root from min-heap (using `heappop()`) and replace it with another pair of `(nums1[i], nums2[i])`. 
+*Proof*: The very first time when the min-heap has $k$ pairs of `(nums1[i], nums2[i])`, it has the maximum possible minimum `nums2[i]`. If the $k$ `nums1[i]` in min-heap are the $k$ largest of `nums1`, then we have found our solution. Otherwise, we delete the root from min-heap (using `heappop()`) and replace it with another pair of `(nums1[i], nums2[i])`. Since `pairedSortedList` is sorted by descending order of `nums2`, 
+`nums2[i]` of the most recently inserted pair is the minimum among the $k$ elements in the min-heap. if the sum of `nums1` in min-heap is larger than the `currMax`, we will update `currMax`. otherwise we will keep the previous one. When we exhaust all the pairs in the list, the `currMax` is therefore the maximum possible value.
 
 **Runtime**: The time complexity is $O(n \log n)$ due to sorting and the min-heap operations. The space complexity is $O(n)$ for storing the pairs and the min-heap.
 
