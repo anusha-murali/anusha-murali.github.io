@@ -2,7 +2,7 @@
 
 ## Heaps
 
-Heaps (or Min-Heaps) are binary trees for which every parent node has a value less than or equal to any 
+Heaps (or Min-Heaps in this discussion) are binary trees for which every parent node has a value less than or equal to any 
 of its children. We refer to this condition as the **heap invariant**.
 
 This implementation uses arrays for which heap[$k$] <= heap[$2k+1$] and heap[$k$] $\leq$ heap[$2k+2$] for 
