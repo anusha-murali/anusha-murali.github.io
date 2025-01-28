@@ -78,10 +78,10 @@ def maxScore(nums1, nums2, k):
     return currMax
 ```
 
-*Proof*: The very first time when the min-heap has $k$ pairs of `(nums1[i], nums2[i])`, it has the maximum possible minimum `nums2[i]`. If the $k$ `nums1[i]` in min-heap are the $k$ largest of `nums1`, then we have found our solution. Otherwise, we delete the root from min-heap (using `heappop()`) and replace it with another pair of `(nums1[i], nums2[i])`. Since `pairedSortedList` is sorted by descending order of `nums2`, 
-`nums2[i]` of the most recently inserted pair is the minimum among the $k$ elements in the min-heap. if the sum of `nums1` in min-heap is larger than the `currMax`, we will update `currMax`. otherwise we will keep the previous one. When we exhaust all the pairs in the list, the `currMax` is therefore the maximum possible value.
+**Intuition**: The `pairedSortedList` in our algorithm is a sorted list on `nums2` in descending order, which allows us to maximize the minimum value of `nums2`.  Let us consider a concrete example, with $n = 5$ and $k = 3$. The first full min-heap will have the three `(nums1, nums2)` pairs, where the `nums2` correspond to the largest 3 of the 5. The smallest of the 3 `nums1` will be found at the root of the min-heap, which will be removed in the next iteration and will be replaced with another `(nums1, nums2)` pair. Since `pairedSortedList` is sorted in descending order, the `nums2` in the newly added pair will be smaller than either the one that was just removed or smaller than the two that are still present in the min-heap. Since we are dealing with `(nums1, nums2)` pairs, iterating through the `pairedSortedList` dictates which of the 3 `nums1` could be present in the min-heap during each iteration of the for loop.
 
-The *proof of correctness* is straight forward.
+Therefore, we see that this algorithm explores all possible values of the minimum `nums2` in a systematic way (from largest to smallest). For each value of the minimum `nums2`, it maximizes the sum of the corresponding `nums1` elements.
+
 
 **Proof of Correctness**
 
@@ -106,7 +106,7 @@ The *proof of correctness* is straight forward.
    - By using a min-heap to maintain the top $k$ elements from `nums1`, we ensure that the sum of the selected `nums1` elements is maximized for the current `nums2` value.
    - If a better subset exists (with a larger sum of `nums1` elements for the same `nums2` value), the min-heap ensures that we always keep the largest possible sum.
 3. Maximizing the Score
-   - The score is the product of two terms: (1) The sum of the selected nums1 elements. (2)The minimum nums2 value in the subset.
+   - The score is the product of two terms: (1) The sum of the selected `nums1` elements and (2) the minimum `nums2` value in the subset.
    - By iterating through the sorted tuples and computing the score at each step, we ensure that we consider all possible subsets where the minimum `nums2` value is as large as possible.
    - The algorithm guarantees that the maximum score is found because: (1) It explores all possible values of the minimum `nums2` in a systematic way (from largest to smallest). (2) For each value of the minimum `nums2`, it maximizes the sum of the corresponding `nums1` elements.
 
