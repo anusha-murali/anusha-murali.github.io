@@ -20,6 +20,14 @@ The min-heap shown above is represented in the form of a binary tree. It's array
 
 The number within the circle at each node in the tree is the value stored at that node. The number above a node is the corresponding index in the array. Above and below the array are lines showing parent-child relationships; parents are always to the left of their children. The tree has height three; the node at index 4 (with value 9) has height two.
 
+### Extracting the Minimum Element
+
+In a min-heap, the root is the minimum element. Therefore, the minimum element can be extracted in constant time, however the resulting tree will need to be reorganized to maintain the **heap invariant**, which requires $O(\log n)$ time.
+
+Following is a concrete example.
+
+
+
 ## Priority Queues
 
 [Data Structures and Algorithms Table of Contents](./cs124.md)
