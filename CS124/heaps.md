@@ -26,6 +26,9 @@ In a min-heap, the root is the minimum element. Therefore, the minimum element c
 
 Following is a concrete example.
 
+Consider the deleting the minimum element from the following min-heap.
+
+<img width="1383" alt="min-heap1" src="https://github.com/user-attachments/assets/7fc709e6-2c5e-41b3-bb18-cf08f4aab4a1" />
 
 
 ## Priority Queues
