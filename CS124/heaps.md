@@ -10,6 +10,8 @@ This implementation uses arrays for which heap[$k$] <= heap[$2k+1$] and heap[$k$
 all $k$, counting elements from zero. Non-existing elements are considered to be infinite. 
 The interesting property of a heap is that its smallest element is always the root, heap[$0$].
 
+![heap](https://github.com/user-attachments/assets/114213f2-d85c-4e9d-9581-a17ee8abb724)
+
 
 ## Priority Queues
 
