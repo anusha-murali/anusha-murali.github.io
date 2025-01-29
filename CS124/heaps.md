@@ -28,7 +28,11 @@ Following is a concrete example.
 
 Consider the deleting the minimum element from the following min-heap.
 
-<img width="1383" alt="min-heap1" src="https://github.com/user-attachments/assets/7fc709e6-2c5e-41b3-bb18-cf08f4aab4a1" />
+<img width="1375" alt="min-heap1" src="https://github.com/user-attachments/assets/7fc709e6-2c5e-41b3-bb18-cf08f4aab4a1" />
+
+Since the minimum value is found at the root of a min-heap, the minium is $A[0]$.  Therefore, we asssign $A[0]$ to `min`.
+
+<img width="1375" alt="min-heap2" src="https://github.com/user-attachments/assets/ec27d465-f977-4d00-91ee-c7fce871a3fa" />
 
 
 ## Priority Queues
