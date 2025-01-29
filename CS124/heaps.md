@@ -14,7 +14,7 @@ The interesting property of a heap is that its smallest element is always the ro
 
 The min-heap shown above is represented in the form of a binary tree. It's array representation is shown below. 
 
-<img width="772" alt="heap_array" src="https://github.com/user-attachments/assets/d98de70b-5a52-4178-98d1-a87652f03d2b" />
+<img width="500" alt="heap_array" src="https://github.com/user-attachments/assets/d98de70b-5a52-4178-98d1-a87652f03d2b" />
 
 The number within the circle at each node in the tree is the value stored at that node. The number above a node is the corresponding index in the array. Above and below the array are lines showing parent-child relationships; parents are always to the left of their children. The tree has height three; the node at index 4 (with value 9) has height two.
 
