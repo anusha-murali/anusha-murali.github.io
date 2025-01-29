@@ -40,6 +40,9 @@ We then move the very last element ($A[6]$ in the tree) to the root of the min-h
 
 Next, we call {\sc Min-Heapify()} on $A$ passing the index of the sub-tree to be min-heapified. In this case, we want to min-heapify from the root. Therefore, we call {\sc Min-Heapify($A, 0$)}.
 
+Min-heapify restores the min-heap property.
+
+<img width="1375" alt="min-heap4" src="https://github.com/user-attachments/assets/67011b11-3843-4ce1-b886-050210b18642" />
 
 
 ## Priority Queues
