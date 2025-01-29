@@ -44,6 +44,9 @@ Min-heapify restores the min-heap property.
 
 <img width="1375" alt="min-heap4" src="https://github.com/user-attachments/assets/67011b11-3843-4ce1-b886-050210b18642" />
 
+### Min-Heapify Restores the Min-Heap Property
+
+
 
 ## Priority Queues
 
