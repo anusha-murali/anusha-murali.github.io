@@ -34,6 +34,10 @@ Since the minimum value is found at the root of a min-heap, the minium is $A[0]$
 
 <img width="1375" alt="min-heap2" src="https://github.com/user-attachments/assets/ec27d465-f977-4d00-91ee-c7fce871a3fa" />
 
+We then move the very last element ($A[6]$ in the tree) to the root of the min-heap as shown below, and reduce the heap-size by 1.
+
+<img width="1375" alt="min-heap3" src="https://github.com/user-attachments/assets/f75fc281-803d-48db-96f6-b6ccff58ead2" />
+
 
 ## Priority Queues
 
