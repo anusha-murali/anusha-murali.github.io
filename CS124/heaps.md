@@ -66,6 +66,12 @@ Step 4: Since $A[5] = 3 < A[2] = 10$, we exchange them and the tree's Min-Heap p
 
 <img width="1375" alt="min-heapify4" src="https://github.com/user-attachments/assets/42a9dabb-a2cc-4d91-8870-b5e86bd690e2" />
 
+**Runtime** 
+
+The runtime of `Min-Heapify()` is equal to the depth of the tree, which is $O(\log n)$.
+
+Since `Extract-MinHeap()` returns the minimum element (root of the min-heap) in constant time and calls `Min-Heapify()` to restore the min-heap property, the runtime of `Extract-MinHeap()` is also $O(\log n)$.
+
 
 ## Priority Queues
 
