@@ -82,7 +82,10 @@ Step 1: A new node with value 7 is added to the right-most position of the last 
 
 Step 2: Since $A[\text{parent}(6)] = 10 > A[6] = 7$, we exchange their positions.
 
-<img width="1375" alt="insert-heap2" src="https://github.com/user-attachments/assets/4012c425-c2d6-497b-9df3-55273a20fa43" />
+<img width="1375" alt="insert-heap2" src="https://github.com/user-attachments/assets/7b8d1400-dc6b-4734-964f-c6646a769f42" />
+
+
+Step 3: Since $A[\text{parent}(5)] = 7 > A[5] = 3$, we exchange their positions.
 
 
 
