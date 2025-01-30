@@ -90,7 +90,11 @@ Step 3: Since $A[\text{parent}(5)] = 7 > A[5] = 3$, we exchange their positions.
 <img width="1375" alt="insert-heap3" src="https://github.com/user-attachments/assets/1ac7226b-9476-4e5d-969c-b024c132716e" />
 
 
+**Runtime**
 
+The runtime of `Insert-MinHeap()` used above is obviously equal to the height of the tree, so it is $O(\log n)$. 
+
+Suppose we start with an empty heap and insert n elements. By above, running time is $O(n \log n)$.
 
 ## Priority Queues
 
