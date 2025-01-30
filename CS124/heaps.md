@@ -48,7 +48,16 @@ Min-heapify restores the min-heap property.
 
 In a min-heap, every element is less than or equal to its children.  During an insert or delete operation in a min-heap, if the min-heap property is violated - that is given an array $A$ and an index $i$ such that the subtrees rooted at `left[i]` and `right[i]` are min-heaps, but $A[i]$ is greater than its children - we can use `Min-Heapify` to restore the min-heap property for the tree rooted at node $A[i]$.
 
+Following is a concrete example. Let us say that the element with value 10 is currently at the root (probably deletion of the previous root). We run the {\sc Min-Heapify()} algorithm on this node as follows.
+
+Step 1. Since 10 is larger than its left and right children, it violates the min-heap property. So, we compare its left and right children and find the index of the smallest of the three.
+
 <img width="1375" alt="min-heapify1" src="https://github.com/user-attachments/assets/dcf84690-8d88-40bc-93fc-127cad2020ab" />
+
+Step 2: Since $A[2] = 2$ is the smallest, we select it for exchange with its parent, $A[0] = 10$.
+
+<img width="1375" alt="min-heapify2" src="https://github.com/user-attachments/assets/7858545d-eee0-49e2-9594-ecd936eac6f5" />
+
 
 
 
