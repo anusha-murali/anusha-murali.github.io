@@ -58,6 +58,7 @@ Step 2: Since $A[2] = 2$ is the smallest, we select it for exchange with its par
 
 <img width="1375" alt="min-heapify2" src="https://github.com/user-attachments/assets/7858545d-eee0-49e2-9594-ecd936eac6f5" />
 
+<img width="1375" alt="min-heapify3" src="https://github.com/user-attachments/assets/d270dac2-af3d-4098-b3e8-8db8098b59f9" />
 
 
 
