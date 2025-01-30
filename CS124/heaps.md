@@ -58,7 +58,7 @@ Step 2: Since $A[2] = 2$ is the smallest, we select it for exchange with its par
 
 <img width="1375" alt="min-heapify2" src="https://github.com/user-attachments/assets/7858545d-eee0-49e2-9594-ecd936eac6f5" />
 
-Step 3: Recursively call {\sc Min-Heapify()} on $A[2]$ now.
+Step 3: Recursively call `Min-Heapify()` on $A[2]$ now.
 
 <img width="1375" alt="min-heapify3" src="https://github.com/user-attachments/assets/a6b33a94-87b5-4a0f-a254-93808c1aca86" />
 
