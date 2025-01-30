@@ -72,6 +72,14 @@ The runtime of `Min-Heapify()` is equal to the depth of the tree, which is $O(\l
 
 Since `Extract-MinHeap()` returns the minimum element (root of the min-heap) in constant time and calls `Min-Heapify()` to restore the min-heap property, the runtime of `Extract-MinHeap()` is also $O(\log n)$.
 
+### Inserting into Min-Heap
+
+Let us say that we are inserting a value 7 into the min-heap. It will be added to the right-most position of the last row as shown below. Then we will apply the `Insert-MinHeap()` algorithm shown on the right until the nodes have been reorganized to achieve the min-heap property.
+
+Step 1: A new node with value 7 is added to the right-most position of the last row.
+
+<img width="1375" alt="insert-heap1" src="https://github.com/user-attachments/assets/5c3f7bcf-6e38-47d1-9154-38187bd2668f" />
+
 
 ## Priority Queues
 
