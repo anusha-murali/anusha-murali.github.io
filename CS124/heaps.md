@@ -62,6 +62,9 @@ Step 3: Recursively call `Min-Heapify()` on $A[2]$ now.
 
 <img width="1375" alt="min-heapify3" src="https://github.com/user-attachments/assets/a6b33a94-87b5-4a0f-a254-93808c1aca86" />
 
+Step 4: Since $A[5] = 3 < A[2] = 10$, we exchange them and the tree's Min-Heap property has been completely restored now.
+
+<img width="1375" alt="min-heapify4" src="https://github.com/user-attachments/assets/42a9dabb-a2cc-4d91-8870-b5e86bd690e2" />
 
 
 ## Priority Queues
