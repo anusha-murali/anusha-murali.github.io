@@ -80,6 +80,8 @@ Step 1: A new node with value 7 is added to the right-most position of the last 
 
 <img width="1375" alt="insert-heap1" src="https://github.com/user-attachments/assets/5c3f7bcf-6e38-47d1-9154-38187bd2668f" />
 
+Step 2: Since $A[parent(6)] = 10 > A[6] = 7$, we exchange their positions.
+
 
 ## Priority Queues
 
