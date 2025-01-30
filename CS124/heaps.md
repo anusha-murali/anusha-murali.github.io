@@ -48,6 +48,8 @@ Min-heapify restores the min-heap property.
 
 In a min-heap, every element is less than or equal to its children.  During an insert or delete operation in a min-heap, if the min-heap property is violated - that is given an array $A$ and an index $i$ such that the subtrees rooted at `left[i]` and `right[i]` are min-heap, but $A[i]$ is greater than its children - we can use `Min-Heapify` to restore the min-heap property.
 
+[Small caps]{.smallcaps}
+
 ## Priority Queues
 
 [Data Structures and Algorithms Table of Contents](./cs124.md)
