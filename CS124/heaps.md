@@ -46,7 +46,7 @@ Min-heapify restores the min-heap property.
 
 ### `Min-Heapify()` Restores the Min-Heap Property
 
-In a min-heap, every element is less than or equal to its children.  During an insert or delete operation in a min-heap, if the min-heap property is violated - that is given an array $A$ and an index $i$ such that the subtrees rooted at `left[i]` and `right[i]` are min-heap, but $A[i]$ is greater than its children - we can use `Min-Heapify` to restore the min-heap property.
+In a min-heap, every element is less than or equal to its children.  During an insert or delete operation in a min-heap, if the min-heap property is violated - that is given an array $A$ and an index $i$ such that the subtrees rooted at `left[i]` and `right[i]` are min-heaps, but $A[i]$ is greater than its children - we can use `Min-Heapify` to restore the min-heap property for the tree rooted at node $A[i]$.
 
 
 
