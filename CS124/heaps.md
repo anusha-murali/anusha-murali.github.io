@@ -96,6 +96,22 @@ The runtime of `Insert-MinHeap()` used above is obviously equal to the height of
 
 Suppose we start with an empty heap and insert n elements. By above, running time is $O(n \log n)$.
 
+
+But, actually we can achieve $O(n)$ runtime. Let us say that the input is the array $A$ of $n$ elements and the output is MinHeap of $A$. We use the following algorithm to achieve this.
+
+```
+for (i = length[A]/2; i < 0; i--)
+   Min-Heapify(A, i)
+```
+
+As we know, `Min-Heapify()` takes $O(h)$ runtime, where $h$ is the height of the tree. Let us consider the number of trees of a given height $h$ and add them all up as shown below:
+
+$$
+\begin{align*}
+\text{Runtime} &= O \left ( \sum_{h < \log n} n/2^h \right ) h
+\end{align*}
+$$
+
 ## Priority Queues
 
 [Data Structures and Algorithms Table of Contents](./cs124.md)
