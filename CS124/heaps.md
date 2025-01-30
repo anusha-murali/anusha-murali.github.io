@@ -87,6 +87,9 @@ Step 2: Since $A[\text{parent}(6)] = 10 > A[6] = 7$, we exchange their positions
 
 Step 3: Since $A[\text{parent}(5)] = 7 > A[5] = 3$, we exchange their positions.
 
+<img width="1375" alt="insert-heap3" src="https://github.com/user-attachments/assets/1ac7226b-9476-4e5d-969c-b024c132716e" />
+
+
 
 
 ## Priority Queues
