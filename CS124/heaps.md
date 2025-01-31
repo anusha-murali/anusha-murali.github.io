@@ -1,3 +1,4 @@
+
 # Heaps and Priority Queues
 
 ## Heaps
@@ -77,7 +78,7 @@ $$
 T(n) \leq T(2n/3) + \Theta(1).
 $$
 
-From Case 2 of the Master Theorem, the solution to this recurrence is $T(n) = O(\log n)$.
+From Case 2 of the [Master Theorem](../fundamentals.md), the solution to this recurrence is $T(n) = O(\log n)$.
 
 The runtime of `Min-Heapify()` is equal to the depth of the tree, which is $O(\log n)$.
 
