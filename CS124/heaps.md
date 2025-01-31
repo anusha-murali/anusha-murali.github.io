@@ -123,8 +123,9 @@ Let us say that the input is the array $A$ of $n$ elements and the output is Min
 We use the following algorithm to build the min-heap.
 
 ```
-for (i = floor(length[A]/2) downto 1)
-   Min-Heapify(A, i)
+def Build-MinHeap(A):
+   for (i = floor(length[A]/2) downto 1)
+      Min-Heapify(A, i)
 ```
 
 The time required by `Min-Heapify()` when called on a node of height $h$ is $O(h)$, and so we can express the total cost of `Build-MinHeap()` as being bounded from above by,
