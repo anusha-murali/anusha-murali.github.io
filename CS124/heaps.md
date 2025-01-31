@@ -167,7 +167,8 @@ Step 2: Initially $i=n-1 = 4$. Exchange $A[0]$ with $A[4]$ and "discard it"; Dec
 
 Step 3: Current value of $i=3$. Exchange $A[0] with $A[3]$ and "discard it"; Decrease heap-size by 1 and `Max-Heapify()` the remaining tree
 
-<img width="1375" alt="heapsort3" src="https://github.com/user-attachments/assets/5b8ee104-fea1-43e6-9e01-fee6c13d9617" />
+<img width="1375" alt="heapsort3" src="https://github.com/user-attachments/assets/6eccc68e-6fa7-43e2-bf81-f3ee8e1e9402" />
+
 
 
 
