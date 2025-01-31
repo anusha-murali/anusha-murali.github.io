@@ -94,6 +94,8 @@ Step 3: Since $A[\text{parent}(5)] = 7 > A[5] = 3$, we exchange their positions.
 
 The runtime of `Insert-MinHeap()` used above is obviously equal to the height of the tree, so it is $O(\log n)$. 
 
+### Building a Min-Heap (`Build-Min-Heap`)
+
 Suppose we start with an empty heap and insert $n$ elements to build a min-heap of size $n$. By the above reasoning, the runtime to build a min-heap of size $n$ is $O(n \log n)$.
 
 
