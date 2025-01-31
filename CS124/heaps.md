@@ -181,6 +181,10 @@ Step 5: Current value of $i=1$. Exchange $A[0] with $A[1]$ and "discard it"; Dec
 
 <img width="1375" alt="heapsort5" src="https://github.com/user-attachments/assets/75e317a6-7f25-4adf-a63d-7865d931f469" />
 
+Hence the sorted array is as follows:
+<p align="center">
+<img width="250" alt="array_sorted" src="https://github.com/user-attachments/assets/ddc71b60-dfe9-4ccc-a73c-8f7eaf202987" />
+</p>
 
 ## Priority Queues
 
