@@ -114,10 +114,16 @@ The runtime of `Insert-MinHeap()` used above is bounded by the height of the tre
 
 Suppose we start with an empty heap and insert $n$ elements to build a min-heap of size $n$. By the above reasoning, the runtime to build a min-heap of size $n$ is bounded by $O(n \log n)$.
 
-But, actually we can achieve $O(n)$ runtime. Let us say that the input is the array $A$ of $n$ elements and the output is MinHeap of $A$. We use the following algorithm to build the min-heap.
+But, actually we can achieve $O(n)$ runtime.
+
+Let us say that the input is the array $A$ of $n$ elements and the output is MinHeap of $A$. We note that the leaves of the min-heap are the nodes indexed by $\lfloor n/2 \rfloor + 1, \lfloor n/2 \rfloor + 2, \ldots, n$. So, we start building our min-heap from the leaves, where each leaf is a 1-element heap. The procedure `Build-MinHeap()` goes through the remaining nodes of the tree and runs `Min-Heapify()` on each of them.
+
+
+
+We use the following algorithm to build the min-heap.
 
 ```
-for (i = length[A]/2; i < 0; i--)
+for (i = floor(length[A]/2) downto 1)
    Min-Heapify(A, i)
 ```
 
