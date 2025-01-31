@@ -169,7 +169,9 @@ Step 3: Current value of $i=3$. Exchange $A[0] with $A[3]$ and "discard it"; Dec
 
 <img width="1375" alt="heapsort3" src="https://github.com/user-attachments/assets/6eccc68e-6fa7-43e2-bf81-f3ee8e1e9402" />
 
+Step 4: Current value of $i=2$. Exchange $A[0] with $A[2]$ and "discard it"; Decrease heap-size by 1 and `Max-Heapify()` the remaining tree
 
+<img width="1375" alt="heapsort4" src="https://github.com/user-attachments/assets/473db612-0384-4014-967a-6a280815902f" />
 
 
 ## Priority Queues
