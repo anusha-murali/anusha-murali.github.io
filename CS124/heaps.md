@@ -157,6 +157,10 @@ Assume that we have an unordered array $A$ of $n$ elements. The heapsort algorit
 
 Let's use a concrete example to sort an unordered array using the heapsort algorithm. Consider the unordered array $A = [7, 4, 3, 1, 2]$ and run the heapsort algorithm on it.
 
+<p align="center">
+<img width="250" alt="array_unsorted" src="https://github.com/user-attachments/assets/959ebbb3-3c97-4a99-bb0d-c29e270ca514" />
+</p>
+
 Step 1: The first step is to build a Max-Heap from $A$.
 
 <img width="1375" alt="heapsort1" src="https://github.com/user-attachments/assets/df8e1b26-b7ad-47dd-8735-37235183e7e8" />
