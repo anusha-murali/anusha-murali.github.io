@@ -118,7 +118,7 @@ The above upper bound, though correct, is not asymptotically tight. We can deriv
 
 Our tighter analysis relies on the properties that an $n$-element heap has height $\lfloor \log n \rfloor$ and at most $\lceil n/2^{h+1} \rceil$ nodes of any height $h$.
 
-Let us say that the input is the array $A$ of $n$ elements and the output is MinHeap of $A$. We note that the leaves of the min-heap are the nodes indexed by $\lfloor n/2 \rfloor + 1, \lfloor n/2 \rfloor + 2, \ldots, n$. So, we start building our min-heap from the leaves, where each leaf is a 1-element heap. The procedure `Build-MinHeap()` goes through the remaining nodes of the tree and runs `Min-Heapify()` on each of them.
+Let us say that the input is the array $A$ of $n$ elements and the output is MinHeap of $A$. We note that the leaves of the min-heap are the nodes indexed by $\lfloor n/2 \rfloor, \lfloor n/2 \rfloor + 1, \ldots, n-1$. So, we start building our min-heap from the leaves, where each leaf is a 1-element heap. The procedure `Build-MinHeap()` goes through the remaining nodes of the tree and runs `Min-Heapify()` on each of them.
 
 We use the following algorithm to build the min-heap. Note that we use 0-indexing (CLRS and most other texts use 1-indexing).
 
