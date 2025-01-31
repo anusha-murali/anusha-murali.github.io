@@ -196,6 +196,14 @@ Though heapsort is a great algorithm, a well-implemented quicksort usually beats
 
 ## Priority Queues
 
+Heaps efficiently implement priority queues. We discuss max-priority queues implemented with max-heaps. Min-priority queues are implemented with min-heaps similarly.
+
+- A priority queue maintains a dynamic set $S$ of elements
+- Each set element has a **key**, which is an associated value for the element
+- Max-priority queue supports the following operations:
+  1. `insert`$(S, x, k)$: inserts element $x$ with key $k$ into set $S$.
+  2. `maximum`$(S)$: returns element of $S$ with the largest key.
+
 [Data Structures and Algorithms Table of Contents](./cs124.md)
 
 * * *
