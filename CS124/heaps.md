@@ -121,7 +121,7 @@ Our tighter analysis relies on the properties that an $n$-element heap has heigh
 The time required by `Min-Heapify()` when called on a node of height $h$ is $O(h)$, and so we can express the total cost of `Build-MinHeap()` as being bounded from above by,
 
 $$
-\Sum_{h=0}^{\lfloor \log n \rfloor} \lceil \frac{n}{2^{h+1}} \rceil O(h) = O \left ( n \Sum_{h=0}^{\lfloor \log n \rfloor} \frac{h}{2^h} \right ).
+\sum_{h=0}^{\lfloor \log n \rfloor} \lceil \frac{n}{2^{h+1}} \rceil O(h) = O \left ( n \sum_{h=0}^{\lfloor \log n \rfloor} \frac{h}{2^h} \right ).
 $$
 
 But, actually we can achieve $O(n)$ runtime.
