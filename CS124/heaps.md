@@ -38,7 +38,7 @@ We then move the very last element ($A[6]$ in the tree) to the root of the min-h
 
 <img width="1375" alt="min-heap3" src="https://github.com/user-attachments/assets/f75fc281-803d-48db-96f6-b6ccff58ead2" />
 
-Next, we call {\sc Min-Heapify()} on $A$ passing the index of the sub-tree to be min-heapified. In this case, we want to min-heapify from the root. Therefore, we call {\sc Min-Heapify($A, 0$)}.
+Next, we call `Min-Heapify()` on $A$ passing the index of the sub-tree to be min-heapified. In this case, we want to min-heapify from the root. Therefore, we call `Min-Heapify`($A, 0$).
 
 Min-heapify restores the min-heap property.
 
@@ -48,7 +48,7 @@ Min-heapify restores the min-heap property.
 
 In a min-heap, every element is less than or equal to its children.  During an insert or delete operation in a min-heap, if the min-heap property is violated - that is given an array $A$ and an index $i$ such that the subtrees rooted at `left[i]` and `right[i]` are min-heaps, but $A[i]$ is greater than its children - we can use `Min-Heapify` to restore the min-heap property for the tree rooted at node $A[i]$.
 
-Following is a concrete example. Let us say that the element with value 10 is currently at the root (probably deletion of the previous root). We run the {\sc Min-Heapify()} algorithm on this node as follows.
+Following is a concrete example. Let us say that the element with value 10 is currently at the root (probably deletion of the previous root). We run the `Min-Heapify()` algorithm on this node as follows.
 
 Step 1. Since 10 is larger than its left and right children, it violates the min-heap property. So, we compare its left and right children and find the index of the smallest of the three.
 
@@ -94,7 +94,7 @@ Step 3: Since $A[\text{parent}(5)] = 7 > A[5] = 3$, we exchange their positions.
 
 The runtime of `Insert-MinHeap()` used above is obviously equal to the height of the tree, so it is $O(\log n)$. 
 
-Suppose we start with an empty heap and insert n elements. By above, running time is $O(n \log n)$.
+Suppose we start with an empty heap and insert $n$ elements to build a min-heap of size $n$. By the above reasoning, the runtime to build a min-heap of size $n$ is $O(n \log n)$.
 
 
 But, actually we can achieve $O(n)$ runtime. Let us say that the input is the array $A$ of $n$ elements and the output is MinHeap of $A$. We use the following algorithm to achieve this.
