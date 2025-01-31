@@ -155,6 +155,14 @@ Assume that we have an unordered array $A$ of $n$ elements. The heapsort algorit
 - "Discard" this last node (knowing that it is in its correct place) by decreasing the heap size, and calling `Max-Heapify()` on the new (possibly incorrectly-placed) root.
 - Repeat this "discarding" process until only one node (the smallest element) remains, and therefore is in the correct place in the array.
 
+Let's use a concrete example to sort an unordered array using the heapsort algorithm. Consider the unordered array $A = [7, 4, 3, 1, 2]$ and run the heapsort algorithm on it.
+
+Step 1: The first step is to build a Max-Heap from $A$.
+
+<img width="1375" alt="heapsort1" src="https://github.com/user-attachments/assets/df8e1b26-b7ad-47dd-8735-37235183e7e8" />
+
+
+
 ## Priority Queues
 
 [Data Structures and Algorithms Table of Contents](./cs124.md)
