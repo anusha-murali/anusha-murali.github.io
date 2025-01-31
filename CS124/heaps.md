@@ -68,6 +68,17 @@ Step 4: Since $A[5] = 3 < A[2] = 10$, we exchange them and the tree's Min-Heap p
 
 **Runtime** 
 
+The running time of `Min-Heapify()` on a subtree of size $n$ rooted at a given node $i$ is the $\Theta(1)$
+time to fix up the relationships among the elements $A[i], A[\text{left}(i)]$ and $A[\text{right}(i)]$, plus the time to run `Min-Heapify` on a subtree rooted at one of the children of node $i$.
+
+The children's subtrees each have size at most $2n/3$ - the worst case occurs when the bottom level of the tree is exactly half full. Hence we can use the following recurrence to describe the runtime of `Min-Heapify()`:
+
+$$
+T(n) \leq T(2n/3) + \Theta(1).
+$$
+
+From Case 2 of the Master Theorem, the solution to this recurrence is $T(n) = O(\log n)$.
+
 The runtime of `Min-Heapify()` is equal to the depth of the tree, which is $O(\log n)$.
 
 Since `Extract-MinHeap()` returns the minimum element (root of the min-heap) in constant time and calls `Min-Heapify()` to restore the min-heap property, the runtime of `Extract-MinHeap()` is also $O(\log n)$.
