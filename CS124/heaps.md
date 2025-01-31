@@ -213,6 +213,22 @@ Heaps efficiently implement priority queues. We discuss max-priority queues impl
   4. `decrease-key`$(S, x, k)$: decreases value of element $x$'s key to $k$.
 - Example min-priority queue application: event-driven simulator. Events are simulated in order of time of occurrence by calling `extract-min()`.
 
+
+## Python's `heapq` Module
+
+The `heapq` module provides the Min-Heap implementation of the heap queue algorithm. Therefore, the smallest element is always at the root, `heap[0]`.
+
+The `heap.sort()` function maintains the heap invariant.
+
+To create a heap, use a list initialized to [], or you can transform a populated list into a heap via function `heapify()`.
+
+The `heapq` module provides the following functions:
+
+1. `heapq.heappush(heap, item)`: Push the value item onto the heap, maintaining the heap invariant.
+2. `heapq.heappop(heap)`: Pop and return the smallest item from the heap, maintaining the heap invariant. If the heap is empty, `IndexError` is raised. To access the smallest item without popping it, use heap[0].
+3. `heapq.heapify(A)`: Transform list $A$ into a heap, in-place, in linear time.
+
+
 [Data Structures and Algorithms Table of Contents](./cs124.md)
 
 * * *
