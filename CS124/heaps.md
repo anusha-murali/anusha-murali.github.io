@@ -108,7 +108,9 @@ As we know, `Min-Heapify()` takes $O(h)$ runtime, where $h$ is the height of the
 
 $$
 \begin{align*}
-\text{Runtime} &= O \left ( \sum_{h < \log n} n/2^h \right ) h
+\text{Runtime} &= O \left ( \sum_{h < \log n} n/2^h \right ) h \\
+&= n O \left ( \sum_{h < \log n} n/2^h \right ) \\
+&= O(n).
 \end{align*}
 $$
 
