@@ -173,6 +173,10 @@ Step 4: Current value of $i=2$. Exchange $A[0] with $A[2]$ and "discard it"; Dec
 
 <img width="1375" alt="heapsort4" src="https://github.com/user-attachments/assets/473db612-0384-4014-967a-6a280815902f" />
 
+Step 5: Current value of $i=1$. Exchange $A[0] with $A[1]$ and "discard it"; Decrease heap-size by 1 and `Max-Heapify()` the remaining tree
+
+<img width="1375" alt="heapsort5" src="https://github.com/user-attachments/assets/75e317a6-7f25-4adf-a63d-7865d931f469" />
+
 
 ## Priority Queues
 
