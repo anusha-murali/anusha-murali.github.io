@@ -146,6 +146,14 @@ $$
 
 Hence, we can build a min-heap from an unordered array in linear time.
 
+## The Heapsort Algorithm
+
+Assume that we have an unordered array $A$ of $n$ elements. The heapsort algorithm is as follows:
+
+- Builds a Max-Heap from $A$
+- Starting with the root (the maximum element), the algorithm places the maximum element into the correct place in $A$ by swapping it with the element in the last position of $A$.
+- "Discard" this last node (knowing that it is in its correct place) by decreasing the heap size, and calling `Max-Heapify()` on the new (possibly incorrectly-placed) root.
+
 ## Priority Queues
 
 [Data Structures and Algorithms Table of Contents](./cs124.md)
