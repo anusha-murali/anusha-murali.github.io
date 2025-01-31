@@ -203,6 +203,15 @@ Heaps efficiently implement priority queues. We discuss max-priority queues impl
 - Max-priority queue supports the following operations:
   1. `insert`$(S, x, k)$: inserts element $x$ with key $k$ into set $S$.
   2. `maximum`$(S)$: returns element of $S$ with the largest key.
+  3. `extract-max`$(S)$: removes and returns element of $S$ with the largest key.
+  4. `increase-key`$(S, x, k)$: increases value of element $x$'s key to $k$.
+- Example max-priority queue application: schedule jobs on a shared computer. The scheduler adds new jobs to run by calling `insert()` and runs the job with the highest priority among those pending by calling `extract-max()`.
+- Min-priority queue supports similar operations:
+  1. `insert`$(S, x, k)$: inserts element $x$ with key $k$ into set $S$.
+  2. `minimum`$(S)$: returns element of $S$ with the smallest key.
+  3. `extract-min`$(S)$: removes and returns element of $S$ with the smallest key.
+  4. `decrease-key`$(S, x, k)$: decreases value of element $x$'s key to $k$.
+- Example min-priority queue application: event-driven simulator. Events are simulated in order of time of occurrence by calling `extract-min()`.
 
 [Data Structures and Algorithms Table of Contents](./cs124.md)
 
