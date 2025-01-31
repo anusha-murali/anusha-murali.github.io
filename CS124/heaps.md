@@ -161,7 +161,7 @@ Step 1: The first step is to build a Max-Heap from $A$.
 
 <img width="1375" alt="heapsort1" src="https://github.com/user-attachments/assets/df8e1b26-b7ad-47dd-8735-37235183e7e8" />
 
-Step 2: Exchange $A[0]$ with $A[4]$ and "discard it"
+Step 2: Exchange $A[0]$ with $A[4]$ and "discard it"; Decrease heap-size by 1 and `Max-Heapify()` the remaining tree
 
 <img width="1375" alt="heapsort2" src="https://github.com/user-attachments/assets/6bfd2488-89d2-4720-92c5-65c4da763019" />
 
