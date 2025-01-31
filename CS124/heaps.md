@@ -214,7 +214,7 @@ Heaps efficiently implement priority queues. We discuss max-priority queues impl
 - Example min-priority queue application: event-driven simulator. Events are simulated in order of time of occurrence by calling `extract-min()`.
 
 
-## Python's `heapq` Module
+## Python's heapq Module
 
 The `heapq` module provides the Min-Heap implementation of the heap queue algorithm. Therefore, the smallest element is always at the root, `heap[0]`.
 
