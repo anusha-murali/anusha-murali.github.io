@@ -138,7 +138,7 @@ Let us consider the number of trees of a given height $h$ and add them all up as
 $$
 \begin{align*}
 \text{Runtime} &= O \left ( n \sum_{h=0}^{\lfloor \log n \rfloor} \frac{h}{2^h} \right ) \\
-&= O \left ( n \sum_{h=0}^{\infty} \frac{h}{2^h} \right )
+&= O \left ( n \sum_{h=0}^{\infty} \frac{h}{2^h} \right ) \\
 &= O(n).
 \end{align*}
 $$
