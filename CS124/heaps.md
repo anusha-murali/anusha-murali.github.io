@@ -161,9 +161,14 @@ Step 1: The first step is to build a Max-Heap from $A$.
 
 <img width="1375" alt="heapsort1" src="https://github.com/user-attachments/assets/df8e1b26-b7ad-47dd-8735-37235183e7e8" />
 
-Step 2: Exchange $A[0]$ with $A[4]$ and "discard it"; Decrease heap-size by 1 and `Max-Heapify()` the remaining tree
+Step 2: Initially $i=n-1 = 4$. Exchange $A[0]$ with $A[4]$ and "discard it"; Decrease heap-size by 1 and `Max-Heapify()` the remaining tree
 
 <img width="1375" alt="heapsort2" src="https://github.com/user-attachments/assets/6bfd2488-89d2-4720-92c5-65c4da763019" />
+
+Step 3: Current value of $i=3$. Exchange $A[0] with $A[3]$ and "discard it"; Decrease heap-size by 1 and `Max-Heapify()` the remaining tree
+
+<img width="1375" alt="heapsort3" src="https://github.com/user-attachments/assets/5b8ee104-fea1-43e6-9e01-fee6c13d9617" />
+
 
 
 ## Priority Queues
