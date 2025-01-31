@@ -186,6 +186,14 @@ Hence the sorted array is as follows:
 <img width="250" alt="array_sorted" src="https://github.com/user-attachments/assets/ddc71b60-dfe9-4ccc-a73c-8f7eaf202987" />
 </p>
 
+**Runtime**
+
+As we found earlier, `Build-MaxHeap()` takes $O(n)$ time. 
+
+The `for` loop runs $n-1$ times, each time calling exchange elements and `Max-Heapify()`. Exchange elements takes $O(1)$ time, while `Max-Heapify()` takes $O(\log n)$ time. Therefore, the `for` loop takes $O(n \log n)$ times. Hence the total runtime is $O(n \log n)$.
+
+Though heapsort is a great algorithm, a well-implemented quicksort usually beats it in practice.
+
 ## Priority Queues
 
 [Data Structures and Algorithms Table of Contents](./cs124.md)
