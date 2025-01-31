@@ -20,7 +20,7 @@ The min-heap shown above is represented in the form of a binary tree. It's array
 
 The number within the circle at each node in the tree is the value stored at that node. The number above a node is the corresponding index in the array. Above and below the array are lines showing parent-child relationships; parents are always to the left of their children. The tree has height three; the node at index 4 (with value 9) has height two.
 
-### Extracting the Minimum Element (`Extract-MinHeap()`)
+### 1. Extracting the Minimum Element (`Extract-MinHeap()`)
 
 In a min-heap, the root is the minimum element. Therefore, the minimum element can be extracted in constant time, however the resulting tree will need to be reorganized to maintain the **heap invariant**, which requires $O(\log n)$ time.
 
@@ -44,7 +44,7 @@ Min-heapify restores the min-heap property.
 
 <img width="1375" alt="min-heap4" src="https://github.com/user-attachments/assets/67011b11-3843-4ce1-b886-050210b18642" />
 
-###  Restoring the Min-Heap Property (`Min-Heapify()`)
+###  2. Restoring the Min-Heap Property (`Min-Heapify()`)
 
 In a min-heap, every element is less than or equal to its children.  During an insert or delete operation in a min-heap, if the min-heap property is violated - that is given an array $A$ and an index $i$ such that the subtrees rooted at `left[i]` and `right[i]` are min-heaps, but $A[i]$ is greater than its children - we can use `Min-Heapify` to restore the min-heap property for the tree rooted at node $A[i]$.
 
@@ -72,7 +72,7 @@ The runtime of `Min-Heapify()` is equal to the depth of the tree, which is $O(\l
 
 Since `Extract-MinHeap()` returns the minimum element (root of the min-heap) in constant time and calls `Min-Heapify()` to restore the min-heap property, the runtime of `Extract-MinHeap()` is also $O(\log n)$.
 
-### Inserting into Min-Heap (`Insert-MinHeap()`)
+### 3. Inserting into Min-Heap (`Insert-MinHeap()`)
 
 Let us say that we are inserting a value 7 into the min-heap. It will be added to the right-most position of the last row as shown below. Then we will apply the `Insert-MinHeap()` algorithm shown on the right until the nodes have been reorganized to achieve the min-heap property.
 
@@ -89,15 +89,13 @@ Step 3: Since $A[\text{parent}(5)] = 7 > A[5] = 3$, we exchange their positions.
 
 <img width="1375" alt="insert-heap3" src="https://github.com/user-attachments/assets/1ac7226b-9476-4e5d-969c-b024c132716e" />
 
-
 **Runtime**
 
 The runtime of `Insert-MinHeap()` used above is obviously equal to the height of the tree, so it is $O(\log n)$. 
 
-### Building a Min-Heap (`Build-Min-Heap()`)
+### 4. Building a Min-Heap (`Build-MinHeap()`)
 
 Suppose we start with an empty heap and insert $n$ elements to build a min-heap of size $n$. By the above reasoning, the runtime to build a min-heap of size $n$ is $O(n \log n)$.
-
 
 But, actually we can achieve $O(n)$ runtime. Let us say that the input is the array $A$ of $n$ elements and the output is MinHeap of $A$. We use the following algorithm to achieve this.
 
