@@ -114,21 +114,11 @@ The runtime of `Insert-MinHeap()` used above is bounded by the height of the tre
 
 Suppose we start with an empty heap and insert $n$ elements to build a min-heap of size $n$. By the above reasoning, the runtime to build a min-heap of size $n$ is *bounded* by $O(n \log n)$. 
 
-The above upper bound, though correct, is not asymptotically tight. We can derive a tighter bound by observing that the time for `Min-Heapify()` to run at a node varies with the height of the node in the tree, and the heights of most nodes are small.
+The above upper bound, though correct, is not asymptotically tight. We can derive a tighter bound of $O(n)$ by observing that the time for `Min-Heapify()` to run at a node varies with the height of the node in the tree, and the heights of most nodes are small.
 
 Our tighter analysis relies on the properties that an $n$-element heap has height $\lfloor \log n \rfloor$ and at most $\lceil n/2^{h+1} \rceil$ nodes of any height $h$.
 
-The time required by `Min-Heapify()` when called on a node of height $h$ is $O(h)$, and so we can express the total cost of `Build-MinHeap()` as being bounded from above by,
-
-$$
-\sum_{h=0}^{\lfloor \log n \rfloor} \lceil \frac{n}{2^{h+1}} \rceil O(h) = O \left ( n \sum_{h=0}^{\lfloor \log n \rfloor} \frac{h}{2^h} \right ).
-$$
-
-But, actually we can achieve $O(n)$ runtime.
-
 Let us say that the input is the array $A$ of $n$ elements and the output is MinHeap of $A$. We note that the leaves of the min-heap are the nodes indexed by $\lfloor n/2 \rfloor + 1, \lfloor n/2 \rfloor + 2, \ldots, n$. So, we start building our min-heap from the leaves, where each leaf is a 1-element heap. The procedure `Build-MinHeap()` goes through the remaining nodes of the tree and runs `Min-Heapify()` on each of them.
-
-
 
 We use the following algorithm to build the min-heap.
 
@@ -137,15 +127,23 @@ for (i = floor(length[A]/2) downto 1)
    Min-Heapify(A, i)
 ```
 
-As we know, `Min-Heapify()` takes $O(h)$ runtime, where $h$ is the height of the tree. Let us consider the number of trees of a given height $h$ and add them all up as shown below:
+The time required by `Min-Heapify()` when called on a node of height $h$ is $O(h)$, and so we can express the total cost of `Build-MinHeap()` as being bounded from above by,
+
+$$
+\sum_{h=0}^{\lfloor \log n \rfloor} \lceil \frac{n}{2^{h+1}} \rceil O(h) = O \left ( n \sum_{h=0}^{\lfloor \log n \rfloor} \frac{h}{2^h} \right ).
+$$
+
+Let us consider the number of trees of a given height $h$ and add them all up as shown below:
 
 $$
 \begin{align*}
-\text{Runtime} &= O \left ( \sum_{h < \log n} n/2^h \right ) h \\
-&= n~ O \left ( \sum_{h < \log n} n/2^h \right ) \\
+\text{Runtime} &= O \left ( n \sum_{h=0}^{\lfloor \log n \rfloor} \frac{h}{2^h} \right ) \\
+&= O \left ( n \sum_{h=0}^{\infty} \frac{h}{2^h} \right )
 &= O(n).
 \end{align*}
 $$
+
+Hence, we can build a min-heap from an unordered array in linear time.
 
 ## Priority Queues
 
