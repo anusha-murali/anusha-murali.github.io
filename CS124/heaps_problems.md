@@ -61,8 +61,13 @@
     
     which contradicts the property that an $n$-element heap has $\lceil n/2 \rceil$ leaves.
     
-23. 
-24. 
+23. What is the running time of HEAPSORT on an array $A$ of length $n$ that is already sorted in increasing order? What about decreasing order?
+
+    aaas
+    
+25. asfsaf
+26. asdfas
+27. sadfa
 
 
 [Back to Heaps and Priority Queues](./heaps.md)
