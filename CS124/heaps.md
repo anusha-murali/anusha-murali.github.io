@@ -241,7 +241,10 @@ The `heapq` module provides the following functions:
    And the minimum number occurs when the bottom row has only 1 element, and is $2^h - 1 + 1 = 2^h$.
 
    
-3. ass
+2. Show that an $n$-element heap has height $\lfloor \log n \rfloor$.
+
+   From the previous problem, we find $2^h \leq n \leq 2^{h+1} - 1 < 2^{h+1}. Hence $h \leq \log n < h + 1$. Since $h$ is an integer, we find $h = \lfloor \log n \rfloor$.
+4. asd
 
 [Data Structures and Algorithms Table of Contents](./cs124.md)
 
