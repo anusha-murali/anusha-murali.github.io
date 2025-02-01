@@ -251,8 +251,11 @@ The `heapq` module provides the following functions:
    
    The smallest element must reside in a leaf.
 7. Is an array that is in sorted order a min-heap?
+   
    Yes. This is because $A[i] \leq A[2i+1]$, where $2i \leq n$, and $A[i] \leq A[2i+2]$, where $2i+2 \leq n$. (Note that we are using 0-indexing here).
+
 9. adsasdf
+10. dfsfs
 
 [Data Structures and Algorithms Table of Contents](./cs124.md)
 
