@@ -1,6 +1,5 @@
-### My Solutions to Selected Exercises from Chapter 6 CLRS (3rd Ed)
 
-<img width="1636" alt="favorite_heaps" src="https://github.com/user-attachments/assets/ed134049-eb42-4302-a7a6-71d735ca402c" />
+<img width="1375" alt="favorite_heaps" src="https://github.com/user-attachments/assets/ed134049-eb42-4302-a7a6-71d735ca402c" />
 
 
 1. What are the minimum and maximum numbers of elements in a heap of height $h$?
