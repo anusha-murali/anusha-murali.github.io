@@ -40,6 +40,8 @@
     There will be no changes to the max-heap as the heap-invariant property is not violated at this node.
     
 15. What is the effect of calling MAX-HEAPIFY$(A, i)$ for $i > A.\text{heap-size}/2$?
+
+    The heap doesn't change as $A[i]$, when $i > A.\text{heap-size}/2$, is a leaf.
     
 17. asf
 
