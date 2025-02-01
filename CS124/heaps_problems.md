@@ -45,12 +45,15 @@
     
 17. Show that the worst-case running time of MAX-HEAPIFY on a heap of size $n$ is $\Omega(\log n)$. (*Hint*: For a heap with $n$ nodes, give node values that cause MAX_HEAPIFY to be called recursively at every node on a simple path from the root down to a leaf.)
     
-    If the root $A[0]$ of the max-heap contains a value that is smaller than all the values in the left and subtrees, then MAX-HEAPIFY() will be forced to recursively call itself until the smallest value is placed at a leaf. The height of the heap is $h = \log n$. So, placing the smallest value in the root will force MAX_HEAPIFY() to be called $h$ times. Given that each call of MAX_HEAPIFY() does $\Theta(1)$ work, the total cost of max-heapifying is $\Theta(h) = \Theta(\log n)$, which implies its worst-case running time is $\Omega(\log n)$.
+    If the root $A[0]$ of the max-heap contains a value that is smaller than all the values in the left and subtrees, then MAX-HEAPIFY() will be forced to recursively call itself until the smallest value is placed at a leaf. The height of the heap is $h = \log n$. So, placing the smallest value in the root will force MAX_HEAPIFY() to be called $h$ times. Given that each call of MAX_HEAPIFY() does $\Theta(1)$ work, the total cost of max-heapifying this heap is $\Theta(h) = \Theta(\log n)$, which implies its worst-case running time is $\Omega(\log n)$.
     
-19. ads
-20. adasd
-21. asdfad
-22. 
+19. Why do we want the loop index $i$ of `Build-MaxHeap()` (or `Build-MinHeap()`) to decrease from $\lfloor A.\text{length}/2\rfloor$ to 1 rather than increase from 1 to $\lfloor A.\text{length}/2\rfloor$?
+
+    `Build-MaxHeap()` (or `Build-MinHeap()`) assumes that both subtrees of the current node $i$ have the max-heap (or min-heap) property. Leaves, by default, satisfy the max-heap (or min-heap) property. Therefore, we want to proceed from the leaves to the root.
+    
+21. adasd
+22. asdfad
+23. 
 
 
 [Back to Heaps and Priority Queues](./heaps.md)
