@@ -39,8 +39,9 @@
 
     There will be no changes to the max-heap as the heap-invariant property is not violated at this node.
     
-15. asdf
-16. asf
+15. What is the effect of calling MAX-HEAPIFY$(A, i)$ for $i > A.\text{heap-size}/2$?
+    
+17. asf
 
 
 [Back to Heaps and Priority Queues](./heaps.md)
