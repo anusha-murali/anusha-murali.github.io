@@ -254,8 +254,10 @@ The `heapq` module provides the following functions:
    
    Yes. This is because $A[i] \leq A[2i+1]$, where $2i \leq n$, and $A[i] \leq A[2i+2]$, where $2i+2 \leq n$. (Note that we are using 0-indexing here).
 
-9. adsasdf
-10. dfsfs
+9. Is the array with values (23, 17, 14, 6, 13, 10, 1, 5, 7, 12) a max-heap?
+    No. For a max-heap, the parent at index $k$, $A[k]$ must be $\geq$ to both its children, $A[2k+1]$ and $A[2k+2$. However, the element $A[3] = 6$, which is the parent of $A[8]$, is smaller than $A[8] = 7$. Please note that I am using 0-based indexing to be consistent with Python.
+   
+11. dfsfs
 
 [Data Structures and Algorithms Table of Contents](./cs124.md)
 
