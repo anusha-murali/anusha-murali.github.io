@@ -51,9 +51,11 @@
 
     `Build-MaxHeap()` (or `Build-MinHeap()`) assumes that both subtrees of the current node $i$ have the max-heap (or min-heap) property. Leaves, by default, satisfy the max-heap (or min-heap) property. Therefore, we want to proceed from the leaves to the root.
     
-21. adasd
-22. asdfad
-23. 
+21. Show that there are at most $\lceil n/2^{h+1} \rceil$ nodes of height $h$ in any $n$-element heap.
+
+    The height $h$ of a binary heap is $0 \leq h \leq \lceil \log n \rceil$. Therefore, 
+23. asdfad
+24. 
 
 
 [Back to Heaps and Priority Queues](./heaps.md)
