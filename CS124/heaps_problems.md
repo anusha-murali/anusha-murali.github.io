@@ -63,7 +63,7 @@
     
 23. What is the running time of HEAPSORT on an array $A$ of length $n$ that is already sorted in increasing order? What about decreasing order?
 
-    aaas
+    The runtime of HEAPSORT will always be $O(n \log n)$ regardless of thee initial order of the array. This is because, the algorithm always removes the root and swaps it with the very last element (right-most element) of the bottom row, which then will have to bubble-down the heap taking $\log n$ time. This will happen for all $n$ elements. Therefore, the runtime is always $O(n \log n)$ regardless of thee initial order of the array.
     
 25. asfsaf
 26. asdfas
