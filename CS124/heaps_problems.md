@@ -43,7 +43,14 @@
 
     The heap doesn't change as $A[i]$, when $i > A.\text{heap-size}/2$, is a leaf.
     
-17. asf
+17. Show that the worst-case running time of MAX-HEAPIFY on a heap of size $n$ is $\Omega(\log n)$. (*Hint*: For a heap with $n$ nodes, give node values that cause MAX_HEAPIFY to be called recursively at every node on a simple path from the root down to a leaf.)
+    
+    adsfs
+    
+19. ads
+20. adasd
+21. asdfad
+22. 
 
 
 [Back to Heaps and Priority Queues](./heaps.md)
