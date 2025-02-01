@@ -231,7 +231,7 @@ The `heapq` module provides the following functions:
 
 ## My Solutions to Selected Exercises from CLRS
 
-Chapter 6 of CLRS contains many beautiful problems on heaps. [My solutions to a number of selected problems can be found here.](./heaps_problems.md)
+Chapter 6 of CLRS contains many beautiful problems on heaps. [My solutions to a number of selected problems from CLRS (3rd Ed) can be found here.](./heaps_problems.md)
 
 [Data Structures and Algorithms Table of Contents](./cs124.md)
 
