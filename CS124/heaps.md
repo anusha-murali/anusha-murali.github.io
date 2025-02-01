@@ -260,9 +260,9 @@ The `heapq` module provides the following functions:
    
 11. Show that, with the array representation for storing an $n$-element heap, the leaves are the nodes indexed by $\lfloor n/2 \rfloor +1, \lfloor n/2 \rfloor +2, \ldots, n$.
    
-    For a heap (both min-heap and max-heap), using 1-based indexing, the children of a node at index $k$ are at $2k$ and $2k+1$. Hence for the node at index $\lfloor n/2 \rfloor +1$, its left child will be at $2(\lfloor n/2 \rfloor +1) > n$, which is not possible as there are only $n$ elements in the heap. So, the node at index $\lfloor n/2 \rfloor +1$ must be a leaf. Using the same arguments we see that all the nodes indexed by $\lfloor n/2 \rfloor +1, \lfloor n/2 \rfloor +2, \ldots, n$ must be leaves. 
+    For a heap (both min-heap and max-heap), using 1-based indexing, the children of a node at index $k$ are at $2k$ and $2k+1$. Hence for the node at index $\lfloor n/2 \rfloor +1$, its left child will be at $2(\lfloor n/2 \rfloor +1) > n$, which is not possible as there are only $n$ elements in the heap. So, the node at index $\lfloor n/2 \rfloor +1$ must be a leaf. Using the same arguments we see that all the nodes indexed by $\lfloor n/2 \rfloor +1, \lfloor n/2 \rfloor +2, \ldots, n$ must be leaves.
 
-We also need to show that the previous node indexed by $k = \lfloor n/2 \rfloor$ is not a leaf. Its left child is indexed by $2k = 2  \lfloor n/2 \rfloor \leq n$. Therefore, the node indexed by $k = \lfloor n/2 \rfloor$ is not a leaf.
+    We also need to show that the previous node indexed by $k = \lfloor n/2 \rfloor$ is not a leaf. Its left child is indexed by $2k = 2  \lfloor n/2 \rfloor \leq n$. Therefore, the node indexed by $k = \lfloor n/2 \rfloor$ is not a leaf.
     
     
 13. sdaffda
