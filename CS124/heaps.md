@@ -237,6 +237,10 @@ The `heapq` module provides the following functions:
    $$
 1 + 2 + 2^2 + 2^h = 2^{h+1} -1.
    $$
+
+   And the minimum number is when the bottom row has only 1 element, and is $2^h - 1 + 1 = 2^h$.
+
+   
 3. ass
 
 [Data Structures and Algorithms Table of Contents](./cs124.md)
