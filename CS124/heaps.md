@@ -231,6 +231,8 @@ The `heapq` module provides the following functions:
 
 ## My Solutions to Selected Exercises from CLRS
 
+Chapter 6 of CLRS contains many beautiful problems on heaps. [My solutions to a number of selected problems can be found here.](./heaps_problems.md)
+
 1. What are the minimum and maximum numbers of elements in a heap of height $h$?
    The maximum number of elements is when the bottom row is full, which is,
 
