@@ -245,6 +245,7 @@ The `heapq` module provides the following functions:
 
    From the previous problem, we find $2^h \leq n \leq 2^{h+1} - 1 < 2^{h+1}$. Hence $h \leq \log n < h + 1$. Since $h$ is an integer, we find $h = \lfloor \log n \rfloor$.
 3. Show that in any subtree of a max-heap, the root of the subtree contains the largest value occurring anywhere in that subtree.
+   
    We prove this using contradiction. Assume the above claim is false - so there is a subtree whose root is not the largest element in the subtree, which implies that the maximum element is somewhere else in the subtree. Let $k$ be the index where the maximum appears. Since we assumed the maximum is not at the root of the subtree, then node $k$ has a parent. Therefore the parent's index is smaller than $k$, or $A[parent(k)] < A[k]$, which violates the max-heap property that any parent node must be larger than or equal to the node. Hence our assumption is false and therefore the claim is true.
 5. adfs
 
