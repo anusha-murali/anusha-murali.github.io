@@ -35,7 +35,7 @@
 
     We also need to show that the previous node indexed by $k = \lfloor n/2 \rfloor$ is not a leaf. Its left child is indexed by $2k = 2  \lfloor n/2 \rfloor \leq n$. Therefore, the node indexed by $k = \lfloor n/2 \rfloor$ is not a leaf.
     
-13. What is the effect of calling MAX-HEAPIFY$(A, i)$ when the element $A[i]$ is larger than its children?
+13. What is the effect of calling MAX-HEAPIFY$(A, i)$ when the element $A[i]$ is larger than its children?
 
     There will be no changes to the max-heap as the heap-invariant property is not violated at this node.
     
@@ -53,8 +53,13 @@
     
 21. Show that there are at most $\lceil n/2^{h+1} \rceil$ nodes of height $h$ in any $n$-element heap.
 
-    The height $h$ of a binary heap is $0 \leq h \leq \lceil \log n \rceil$. Therefore, 
-23. asdfad
+    From an earlier problem, we know that $n$-element heap has $\lceil n/2 \rceil$ leaves. Let us prove this using contradiction. Assume that an $n$-element heap has at least $\lceil n/2^{h+1} \rceil + 1$ nodes of height $h$. We see that exactly one node of height $h$ is on the unique simple path from the last leaf to the root, and the subtree rooted at this node has at least one leaf (which is the last leaf). Every other node of height $h$, of which the heap contains at least $\lceil n/2^{h+1} \rceil$, are the roots of complete binary subtrees, and each such node is the root of a subtree with $2^h$ leaves. Since each subtree whose root is at height $h$ is disjoint, the number of leaves in the entire heap is at least,
+    $$
+    \lceil \frac{n}{2^{h+1}} \rceil \cdot 2^h + 1 \geq \lceil n/2^{h+1} \cdot 2^h \rceil + 1 = \lceil \frac{n}{2} \rceil + 1,
+    $$
+    which contradicts the property that an $n$-element heap has $\lceil n/2 \rceil$ leaves.
+    
+23. 
 24. 
 
 
