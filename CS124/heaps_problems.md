@@ -1,4 +1,4 @@
-## My Solutions to Selected Exercises from Chapter 6 CLRS (3rd Ed)
+### My Solutions to Selected Exercises from Chapter 6 CLRS (3rd Ed)
 
 1. What are the minimum and maximum numbers of elements in a heap of height $h$?
    The maximum number of elements is when the bottom row is full, which is,
