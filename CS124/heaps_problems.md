@@ -35,8 +35,12 @@
 
     We also need to show that the previous node indexed by $k = \lfloor n/2 \rfloor$ is not a leaf. Its left child is indexed by $2k = 2  \lfloor n/2 \rfloor \leq n$. Therefore, the node indexed by $k = \lfloor n/2 \rfloor$ is not a leaf.
     
+13. What is the effect of calling MAX-HEAPIFY$(A, i)$ when the element $A[i]$ is larger than its children?
+
+    There will be no changes to the max-heap as the heap-invariant property is not violated at this node.
     
-13. sdaffda
+15. asdf
+16. asf
 
 
 [Back to Heaps and Priority Queues](./heaps.md)
