@@ -45,7 +45,7 @@
     
 17. Show that the worst-case running time of MAX-HEAPIFY on a heap of size $n$ is $\Omega(\log n)$. (*Hint*: For a heap with $n$ nodes, give node values that cause MAX_HEAPIFY to be called recursively at every node on a simple path from the root down to a leaf.)
     
-    adsfs
+    If the root $A[0]$ of the max-heap contains a value that is smaller than all the values in the left and subtrees, then MAX-HEAPIFY() will be forced to recursively call itself until the smallest value is placed at a leaf. The height of the heap is $h = \log n$. So, placing the smallest value in the root will force MAX_HEAPIFY() to be called $h$ times. Given that each call of MAX_HEAPIFY() does $\Theta(1)$ work, the total cost of max-heapifying is $\Theta(h) = \Theta(\log n)$, which implies its worst-case running time is $\Omega(\log n)$.
     
 19. ads
 20. adasd
