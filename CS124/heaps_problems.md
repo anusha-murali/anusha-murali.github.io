@@ -56,7 +56,7 @@
     From an earlier problem, we know that $n$-element heap has $\lceil n/2 \rceil$ leaves. Let us prove this using contradiction. Assume that an $n$-element heap has at least $\lceil n/2^{h+1} \rceil + 1$ nodes of height $h$. We see that exactly one node of height $h$ is on the unique simple path from the last leaf to the root, and the subtree rooted at this node has at least one leaf (which is the last leaf). Every other node of height $h$, of which the heap contains at least $\lceil n/2^{h+1} \rceil$, are the roots of complete binary subtrees, and each such node is the root of a subtree with $2^h$ leaves. Since each subtree whose root is at height $h$ is disjoint, the number of leaves in the entire heap is at least,
     
     $$
-    \lceil \frac{n}{2^{h+1}} \rceil \cdot 2^h + 1 \geq \lceil n/2^{h+1} \cdot 2^h \rceil + 1 = \lceil \frac{n}{2} \rceil + 1,
+   \left \lceil \frac{n}{2^{h+1}} \right \rceil \cdot 2^h + 1 \geq \left \lceil \frac{n}{2^{h+1}}  \cdot 2^h \right \rceil + 1 = \left \lceil \frac{n}{2} \right \rceil + 1,
     $$
     
     which contradicts the property that an $n$-element heap has $\lceil n/2 \rceil$ leaves.
