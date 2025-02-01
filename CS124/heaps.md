@@ -257,7 +257,9 @@ The `heapq` module provides the following functions:
 9. Is the array with values (23, 17, 14, 6, 13, 10, 1, 5, 7, 12) a max-heap?
     No. For a max-heap, the parent at index $k$, $A[k]$ must be $\geq$ to both its children, $A[2k+1]$ and $A[2k+2]$. However, the element $A[3] = 6,$ which is the parent of $A[8]$, is smaller than $A[8] = 7$. Please note that I am using 0-based indexing to be consistent with Python.
    
-11. dfsfs
+11. Show that, with the array representation for storing an $n$-element heap, the leaves are the nodes indexed by $\lfloor n/2 \rfloor +1, \lfloor n/2 \rfloor +2, \ldots, n$.
+    
+13. sdaffda
 
 [Data Structures and Algorithms Table of Contents](./cs124.md)
 
