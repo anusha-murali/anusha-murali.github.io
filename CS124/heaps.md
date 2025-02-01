@@ -255,9 +255,15 @@ The `heapq` module provides the following functions:
    Yes. This is because $A[i] \leq A[2i+1]$, where $2i \leq n$, and $A[i] \leq A[2i+2]$, where $2i+2 \leq n$. (Note that we are using 0-indexing here).
 
 9. Is the array with values (23, 17, 14, 6, 13, 10, 1, 5, 7, 12) a max-heap?
+    
     No. For a max-heap, the parent at index $k$, $A[k]$ must be $\geq$ to both its children, $A[2k+1]$ and $A[2k+2]$. However, the element $A[3] = 6,$ which is the parent of $A[8]$, is smaller than $A[8] = 7$. Please note that I am using 0-based indexing to be consistent with Python.
    
 11. Show that, with the array representation for storing an $n$-element heap, the leaves are the nodes indexed by $\lfloor n/2 \rfloor +1, \lfloor n/2 \rfloor +2, \ldots, n$.
+
+For a heap (both min-heap and max-heap), using 1-based indexing, the children of a node at index $k$ are at $2k$ and $2k+1$. Hence for the node at index $\lfloor n/2 \rfloor +1$, its left child will be at $2($\lfloor n/2 \rfloor +1) > n$, which is not possible as there are only $n$ elements in the heap. So, the node at index $\lfloor n/2 \rfloor +1$ must be a leaf. Using the same arguments we see that all the nodes indexed by $\lfloor n/2 \rfloor +1, \lfloor n/2 \rfloor +2, \ldots, n$ must be leaves. 
+
+We also need to show that the previous node indexed by $k = \lfloor n/2 \rfloor$ is not a leaf. Its left child is indexed by $2k = 2  \lfloor n/2 \rfloor \leq n$. Therefore, the node indexed by $k = \lfloor n/2 \rfloor$ is not a leaf.
+    
     
 13. sdaffda
 
