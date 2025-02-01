@@ -229,6 +229,16 @@ The `heapq` module provides the following functions:
 3. `heapq.heapify(A)`: Transform list $A$ into a heap, in-place, in linear time.
 
 
+## My Solutions to Selected Exercises from CLRS
+
+1. What are the minimum and maximum numbers of elements in a heap of height $h$?
+   The maximum number of elements is when the bottom row is full, which is,
+
+   $$
+1 + 2 + 2^2 + 2^h = 2^{h+1} -1.
+   $$
+3. ass
+
 [Data Structures and Algorithms Table of Contents](./cs124.md)
 
 * * *
