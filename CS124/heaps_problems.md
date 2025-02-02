@@ -68,8 +68,10 @@
 25. Give an $O(n \log k)$-time algorithm to merge $k$ sorted lists into one sorted list, where $n$ is the total number of elements in all the input lists. (*Hint:* Use a min-heap for $k$-way merging.)
 
     Assume that each of the $k$ lists is sorted in ascending order, so that the first element of each list contains the smallest in that list. Build a Min-Heap of $k$ elements, where the $k$ elements are the given $k$ lists. We use the first element in each list as the key value to build the Min-Heap.  Building a Min-Heap of $k$ element takes $O(k)$ time.
-    We remove the first element of the list at the top of the Min-Heap using the {\sc Heap-Extract-Min} operation, and add it to an initially empty output list. Removal of the first element of the list found at the top of the Min-Heap takes $O(1)$ time. Since the first value of the list at the top of the Min Heap has now changed,  {\sc Heap-Extract-Min} operation will Min-Heapify the heap, which takes $O(\log k)$ time as it involves at most $k$ items. (This is analogous to the {\sc Max-Heapify} algorithm from CLRS).
-    We will again remove the first element of the list at the top of the Min-Heap using the  {\sc Heap-Extract-Min} operation and add it to the growing output list. We repeat the above steps $n$ times until we have added all $n$ elements to the output list. Therefore, the total runtime of merging $k$ sorted lists is $O(k) + O(n \log k) = O(n \log k)$.
+    
+    We remove the first element of the list at the top of the Min-Heap using the `Heap-Extract-Min()` operation, and add it to an initially empty output list. Removal of the first element of the list found at the top of the Min-Heap takes $O(1)$ time. Since the first value of the list at the top of the Min Heap has now changed,  `Heap-Extract-Min()` operation will Min-Heapify the heap, which takes $O(\log k)$ time as it involves at most $k$ items. (This is analogous to the `Max-Heapify()` algorithm from CLRS).
+    
+    We will again remove the first element of the list at the top of the Min-Heap using the  `Heap-Extract-Min()` operation and add it to the growing output list. We repeat the above steps $n$ times until we have added all $n$ elements to the output list. Therefore, the total runtime of merging $k$ sorted lists is $O(k) + O(n \log k) = O(n \log k)$.
     
 27. asdfas
 28. sadfa
