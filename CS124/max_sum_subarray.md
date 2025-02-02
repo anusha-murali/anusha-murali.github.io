@@ -12,7 +12,7 @@ Using the above example, we see that there are 8 subarrays of length 1, namely $
 
 #### Solution 1: Brute-force algorithm
 
-```
+```python
 def maxSumSubarray(A):
     maxVal = float('-inf')
     for i in range(len(A)):
@@ -44,7 +44,7 @@ $$
 
 we can find the largest sum of array $A$ in just one pass over the array.
 
-```
+```python
 def maxSumSubarray(A):
     DP = [0]*len(A)  
     DP[0] = A[0]
@@ -57,7 +57,7 @@ Since we are only making a single pass over the array, the runtime of the dynami
 
 How do we find the contiguous subarray that gives the largest sum? Let us say that $DP[0\cdots n-1]$ contains the maximum sums for subarrays of size $0$ to $n-1$. The following routine returns the contiguous subarray that gives the largest sum.
 
-```
+```python
 def findSubarray(A, DP):
     m = max(DP)
     end = DP.index(m)
@@ -80,7 +80,7 @@ Find a non-empty contiguous subarray of a given circular array $A$ of length $n$
 
 We can view the circular array as a linear array of length $2n$, and apply Kadane algorithm $n$ times on an array of length $n$, each time shifting the starting position right by one index.
 
-```
+```python
 def maxSumCircularSubarray(A):
     B = A + A
     maxSum = float('-inf')
@@ -97,7 +97,7 @@ The runtime of this approach is $O(n^2)$ as we are calling Kadane algorithm (max
 We can find the minimum sum subarray using the Kadane algorithm. Let $x$ be the value obtained by subtracting this minimum sum from the linear sum of the entire array. The maximum sum of the circular subarray is the maximum of the maximum sum returned by the Kadane algorithm and $x$. 
 
 
-```
+```python
 def maxSumCircularSubarray(A):
     maxSum = maxSumSubarray(A)
     if maxSum < 0:
@@ -123,7 +123,7 @@ If all elements of the array are equal, then we assume the length of the longest
 
 > **Example**: $A = [6, 3, 2, 9, 5, 6, 4, 2, 7]$. The longest turbulent subarray is $[2, 9, 5, 6, 4]$ and its length is 5.
 
-```
+```python
 def longestTurbulentSubarray(A):
     # If all elements of the array are equal, just return 1
     allEqual = True
