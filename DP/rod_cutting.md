@@ -42,7 +42,7 @@ $$
 
 ### Solution 1: Top-down Recursion
 
-```
+```python
 def cutRod(p, n):
     if n==0:
         return 0
@@ -88,7 +88,7 @@ This approach is identical to the top-down recursive solution above, except that
 
 We save the revenues for each length from 0 to $n$ in array `r[0..n]`. 
 
-```
+```python
 def cutRod(p, n):
     r = [0 for i in range(n+1)]  # Initialize revenue to 0
     return cutRodMemoized(p, n, r)
@@ -114,7 +114,7 @@ In the bottom-up approach, we solve the sub-problems of sizes $i = 0, 1, \ldots,
 
 We cut a piece of length $i$ (outer for loop) from the left end of the rod, and then find the maximum possible revenue for the remaining length of $j = n-i$ by iterating through every possible ways to cut it (inner for loop).
 
-```
+```python
 def cutRod(p, n):    
     r = [0 for i in range(n+1)]   
     for i in range(1, n+1):
@@ -133,7 +133,7 @@ In addition to finding the maximum possible revenue for a give rod length, we ar
 
 We use one additional array, $s[0 \cdots n]$, which saves the optimal size of the first piece that was cut.
 
-```
+```python
 def cutRod(p, n):
     r = [0 for i in range(n+1)]
     s = [0 for i in range(n+1)]
