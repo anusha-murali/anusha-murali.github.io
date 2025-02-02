@@ -4,7 +4,7 @@
 ## Single Source Shortest Path
 
 The Bellman-Ford algorithm allows us to find the shortest paths with arbitrary edge weights. We decrease $d[v]$ only when the current value of $d[v]$ is greater than  $d[u] + \text{length}(u,v)$. Whenever we updae $d[v]$, we also save its parent node. 
-```
+```python
 def update (u,v):
    if d[v] > d[u] + length(u,v):
       d[v] = d[u] + length(u,v)
@@ -14,7 +14,7 @@ The algorithm maintains the distance of a vertex so that it is always a conserva
 value when a suitable path is discovered to show that the overestimate can be lowered.
 
 The following is the pseudocode for Bellman-Ford:
-```
+```python
 def bellman_ford(G, s):
    for all v in V:
       d[v] <- infty; pi[s] <- null
