@@ -48,7 +48,8 @@ f_6(n) = \begin{cases}
 
    *Proof*. Let's call our solution $T'(n) = \dfrac{n^3 -n}{3} + 1.$ We want to prove that $T'(n) = T(n)$ for all $n \geq1$ since this would mean our solution is fully correct. We prove this by induction as follows:
 
-   <ul>Base case:</ul>
+**Base case:** $T'(1) = \frac{1}{3}(1)^3 - \frac{1}{3} + 1 = 1 = T(1)$. Our function correctly calculates $T(1)$.
+
    
 7. dads
 8. asdf
