@@ -27,7 +27,7 @@ We note that if there is a non-empty GCD of `str1` and `str`, then it must be th
 
 If `str1 + str2 == str2 + str1`, then we want to return the slice of the length of GCD of either string. Hence, our code is as follows:
 
-```
+```python
 def gcdOfStrings(str1, str2):
    if str1 + str2 == str2 + str1:
       return str1[:math.gcd(len(str1), len(str2))]
