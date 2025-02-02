@@ -40,7 +40,7 @@ Output: Return 4, and the first 4 characters of the input array should be: `["a"
 Explanation: The groups are `"a"` and `"bbbbbbbbbbbb"`. This compresses to `"ab12"`.
 
 
-```
+```python
  def compress(chars):
         myDict = {}
         for c in chars:
