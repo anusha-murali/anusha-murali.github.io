@@ -37,7 +37,19 @@ f_6(n) = \begin{cases}
    $$
    
 5. Solve the following recurrence exactly, and then prove your solution is correct: $T(1) = 1, T(n) = T(n-1) + n^2 -n$.
-   sdfafds
+
+   We get the following values for $T(n)$ for the first few values of $n$:
+   
+   $$
+        T(1) = 1, T(2) = 3, T(3) = 9, T(4) = 21, T(5) = 41, T(6) = 71, \ldots
+   $$
+   
+   Guessing a closed form expression, we claim $T(n) = \dfrac{n^3 -n}{3} + 1.$
+
+   *Proof*. Let's call our solution $T'(n) = \dfrac{n^3 -n}{3} + 1.$ We want to prove that $T'(n) = T(n)$ for all $n \geq1$ since this would mean our solution is fully correct. We prove this by induction as follows:
+
+   Base case:
+   
 7. dads
 8. asdf
 
