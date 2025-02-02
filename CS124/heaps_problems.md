@@ -73,7 +73,7 @@
     
     We will again remove the first element of the list at the top of the Min-Heap using the  `Heap-Extract-Min()` operation and add it to the growing output list. We repeat the above steps $n$ times until we have added all $n$ elements to the output list. Therefore, the total runtime of merging $k$ sorted lists is $O(k) + O(n \log k) = O(n \log k)$.
     
-27. asdfas
+27. [The Maximum Subsequence Score LeetCode problem (Problem #2542)](../HEAP_PQ/maxScore.md) can be solved using a min-heap in $O(n \log n)$ time. 
 28. sadfa
 
 
