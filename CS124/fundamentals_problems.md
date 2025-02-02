@@ -44,9 +44,9 @@ f_6(n) = \begin{cases}
         T(1) = 1, T(2) = 3, T(3) = 9, T(4) = 21, T(5) = 41, T(6) = 71, \ldots
    $$
    
-   Guessing a closed form expression, we claim $T(n) = \dfrac{n^3 -n}{3} + 1.$
+   Guessing a closed form expression, we claim $T(n) = \frac{1}{3}n^3 - \frac{1}{3}n + 1.$
 
-   *Proof*. Let's call our solution $T'(n) = \dfrac{n^3 -n}{3} + 1.$ We want to prove that $T'(n) = T(n)$ for all $n \geq1$ since this would mean our solution is fully correct. We prove this by induction as follows:
+   *Proof*. Let's call our solution $T'(n) = \frac{1}{3}n^3 - \frac{1}{3}n + 1.$ We want to prove that $T'(n) = T(n)$ for all $n \geq1$ since this would mean our solution is fully correct. We prove this by induction as follows:
 
    **Base case**: $T'(1) = \frac{1}{3}(1)^3 - \frac{1}{3} + 1 = 1 = T(1)$. Our function correctly calculates $T(1)$.
 
