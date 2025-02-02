@@ -52,7 +52,15 @@ f_6(n) = \begin{cases}
 
    **Inductive Hypothesis**: Suppose it is true for some $n > 1$ that our formula correctly calculates $T(n-1)$, $T(n-1) = T'(n-1) = \frac{1}{3}(n-1)^3 - \frac{1}{3}(n-1) + 1$.
 
-   **Inductive Step**:
+   **Inductive Step**: We can now show that our formula will also correctly calculate $T(n)$:
+
+   $$
+   T(n) = T(n-1) + n^2 - n = \frac{1}{3}(n-1)^3 - \frac{1}{3}(n-1) + 1 +n^2 - n = \frac{1}{3}n^3 - \frac{1}{3}n + 1.
+   $$
+
+   Therefore, our solution corrrectly calculates $T(n) = T'(n)$.
+
+   **Conclusion**: By the principle of mathematical induction, our solution correctly calculates $T(n)$ for all $n \geq 1$.
 
    
 7. dads
