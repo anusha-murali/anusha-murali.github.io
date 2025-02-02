@@ -165,7 +165,7 @@ For example, we find
 
 We will use a dictionary to initialize the values for $n=0, 1$ and construct a DP code as follows:
 
-```
+```python
 def numTilings(n):
     f = {0: 1, 1: 1}
     g = {1: 0}
