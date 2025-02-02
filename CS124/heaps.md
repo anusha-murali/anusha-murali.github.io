@@ -122,7 +122,7 @@ Let us say that the input is the array $A$ of $n$ elements and the output is Min
 
 We use the following algorithm to build the min-heap. Note that we use 0-indexing (CLRS and most other texts use 1-indexing).
 
-```
+```python
 def Build-MinHeap(A):
    for (i = floor(length[A]/2) - 1 downto 0)
       Min-Heapify(A, i)
