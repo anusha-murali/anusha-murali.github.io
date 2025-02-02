@@ -42,7 +42,7 @@ $$
 \end{cases}
 $$
 
-```
+```python
 def lis(A):
     DP = [1]*len(A)
     for i in range(len(A)):
@@ -60,7 +60,7 @@ In the above discussion, we found the length of the $\text{LIS}$. How do we find
 
 Having found the $\text{DP}$ array, which stores the longest increasing subsequence for every sequence ending in index $i$, we can modify the above function to return the actual $\text{LIS}$ itself. We start from the largest value of the subsequence and backtrack to find the $\text{LIS}$. Note the following function returns just one of the possibly many $\text{LIS}$.
 
-```
+```python
 def lis(A):
     DP = [1]*len(A)
     for i in range(len(A)):
@@ -88,7 +88,7 @@ Starting from the left end of the given sequence of numbers, we build an increas
 
 The following helper function `bisect_left()` does a binary search on $\text{IS}$ to insert the number $A[i]$, whenever $A[i] < A[i-1]$.
 
-```
+```python
 def bisect_left(A, n):
     '''Returns the index i where all A[:i] is less than n'''
     left = 0
@@ -103,7 +103,7 @@ def bisect_left(A, n):
 ```
 Using the above helper function, we implement the greedy solution for LIS as follows:
 
-```
+```python
 def lis_greedy(A):
     IS = []
     for  a in A:
