@@ -1,8 +1,12 @@
 <img width="1375" alt="favorite_fundamentals" src="https://github.com/user-attachments/assets/894cbd0a-270b-4fbc-b551-cf0bc43b5697" />
 
 
-1. What are the minimum and maximum numbers of elements in a heap of height $h$?
-   The maximum number of elements is when the bottom row is full, which is,
+1. Make all true statements of the form $f_i \in o(f_j)$, $f_i \in O(f_j)$, $f_i \in \omega(f_j)$, and $f_i \in \Omega(f_j)$ that hold for $i \le j$, where $i, j \in \{1,2,3,4,5\}$ for the following functions. No proof is necessary. All logs are base 2 unless otherwise specified.
+   - $f_1 = (\log n)^{\log n}$
+   - $f_2 = 2^{\sqrt{\log n}}$
+   - $f_3 = 2^{2^{\sqrt[3]{\log\log\log n}}}$
+   - $f_4 = n^{\log\log n}$
+   - $f_5 = (\log\log n)^n$
 
    $$
 1 + 2 + 2^2 + 2^h = 2^{h+1} -1.
@@ -11,10 +15,9 @@
    And the minimum number occurs when the bottom row has only 1 element, and is $2^h - 1 + 1 = 2^h$.
 
    
-2. Show that an $n$-element heap has height $\lfloor \log n \rfloor$.
+3. asdf
 
-   From the previous problem, we find $2^h \leq n \leq 2^{h+1} - 1 < 2^{h+1}$. Hence $h \leq \log n < h + 1$. Since $h$ is an integer, we find $h = \lfloor \log n \rfloor$.
-3. 
+   asdfasd
 
 [Back to Fundamentals](./fundamentals.md)
 
