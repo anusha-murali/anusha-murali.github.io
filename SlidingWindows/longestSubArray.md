@@ -43,7 +43,7 @@ For the last element in the `zeroList`, this length is `curLen = len(nums) - zer
 
 Putting these all together, we have the following solution:
 
-```
+```python
   def longestSubarray(nums: List[int]) -> int:
         zeroList = [i for i in range(len(nums)) if nums[i] == 0]
 
