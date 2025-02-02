@@ -252,6 +252,10 @@ Let $T(n)$ be the number of comparisons needed to search an element in an array 
 
 **Runtime**: $O(\log_2 n)$.
 
+## My Solutions to Selected Exercises from CLRS and Miscellaneous Other Problems
+
+Chapter 3 of CLRS contains many beautiful problems on running times. [My solutions to a number of selected problems from CLRS (3rd Ed) can be found here.](./fundamentals_problems.md)
+
 [Data Structures and Algorithms Table of Contents](./cs124.md)
 
 * * *
