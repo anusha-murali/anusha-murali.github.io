@@ -6,7 +6,7 @@ If each edge has unit length, then the number of hops equals the distance of a v
 
 Following is the pseduocode of BFS.
 
-```
+```python
 def BFS(G, s):
   for all v in V:
     d[v] <- infty; explored[v] <- 0
@@ -45,7 +45,7 @@ Running BFS on the above graph yields the following shortest distances and paths
 
 Following Python implementation of BFS verifies the above results.
 
-```
+```python
 def bfs(G, s):
     d = defaultdict(lambda: float('inf'))    # Initialize all d's to infinity
     pi = defaultdict(str)
