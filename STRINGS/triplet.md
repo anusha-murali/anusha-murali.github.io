@@ -27,7 +27,7 @@ Explanation: The triplet `(3, 4, 5)` is valid because `nums[3] == 0 < nums[4] ==
 
 **Solution**
 
-```
+```python
     def increasingTriplet(nums):
         first = second = float("inf")
         for val in nums:
