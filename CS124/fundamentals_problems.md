@@ -8,15 +8,15 @@
    - $f_4 = n^{\log\log n}$
    - $f_5 = (\log\log n)^n$
   
-   <p align="center">
+
 
    |     | $f_1$     | $f_2$          | $f_3$          | $f_4$    |$f_5$ |
    |-----|-----------|----------------|----------------|----------|------|
    |$f_1$|$O, \Omega$|$\Omega, \omega$|$\Omega, \omega$|$O,\Omega$|$O, o$|
 
-   </p>
+ 
 
-   And the minimum number occurs when the bottom row has only 1 element, and is $2^h - 1 + 1 = 2^h$.
+   And the minimum number occurs 
 
    
 3. asdf
