@@ -26,7 +26,7 @@ Find the $n^{\text{th}}$ Catalan number.
 
 The reason why the recursive solution above has an exponential runtime is that it repeatedly calculates the subproblems. By saving the results of each subproblem in an array (memoization), we can avoid repeated calculations of the subproblems. We now have the following solution:
 
-```
+```python
 def catalan(n):
     catList = [1]
     for k in range(1,n+1):
