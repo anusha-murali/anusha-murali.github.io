@@ -21,7 +21,7 @@ In Python, the single-asterisk form of $^*$`args` can be used as a parameter to 
 
 *Example*: We want to multiply the numbers in a list of unknown length.
 
-```
+```python
 def multiplyList(*lst):
   result = 1
   for num in lst:
@@ -34,7 +34,7 @@ multiplyList(4,5,6,7,8,9,10)
 
 When we run the above, we get the following output:
 
-```
+```python
 250
 604800
 ```
@@ -48,7 +48,7 @@ In Python, the double-asterisk form of `**kwargs` can be used as a parameter to 
 
 *Example*: 
 
-```
+```python
 def printValues(**thisDict):
   for (key, value) in thisDict.items():
     print(key, ':', value)
@@ -58,7 +58,7 @@ printValues(w = 101, x = 7, y = 5, z = 13)
 ```
 When we run the above, we get the following output:
 
-```
+```python
 a : 10
 b : 20
 
@@ -74,7 +74,7 @@ As opposed to our discussion above, the functionality of `*` and `**`, when pass
 
 *Example*:
 
-```
+```python
 def printValues(val1, val2, val3):
   print("Value 1: ", val1, " Value 2: ", val2, " Value 3: ", val3)
 
@@ -82,18 +82,19 @@ myList = [100, 200, 300]
 printValues(*myList)
 ```
 When we run the above, we get the following output:
-```
+
+```python
 Value 1:  100  Value 2:  200  Value 3:  300
 ```
 
 An example usagee of `**` is as follows.
 
-```
+```python
 myDict = {"val1" : 5, "val2" : 12, "val3" : 40}
 printValues(**myDict)
 ```
 When we run the above, we get the following output:
-```
+```python
 Value 1:  5  Value 2:  12  Value 3:  40
 ```
 
