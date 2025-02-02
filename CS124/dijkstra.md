@@ -11,7 +11,7 @@ or if the smallest tentative distance among the vertices in the unvisited set is
 
 The following pseudocode implements the above steps.
 
-```
+```python
 def dijkstra(G, s, w):
   for all v in V:
     d[v] <- infty; pi[s] <- null
@@ -65,7 +65,7 @@ The Min-Heap data structure is available in Python using the **heapq** module.
 
 Following Python implementation of Dijkstra's algorithm verifies the results of the example presented earlier. It uses Python's **heapq** module.
 
-```
+```python
 from collections import defaultdict
 import heapq
 
