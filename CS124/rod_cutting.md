@@ -88,7 +88,7 @@ This approach is identical to the top-down recursive solution above, except that
 
 We save the revenues for each length from 0 to $n$ in array `r[0..n]`. 
 
-```
+```python
 def cutRod(p, n):
     r = [0 for i in range(n+1)]  # Initialize revenue to 0
     return cutRodMemoized(p, n, r)
