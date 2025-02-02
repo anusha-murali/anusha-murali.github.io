@@ -66,7 +66,7 @@ $$
 We can easily transpose a matrix, represented as list of lists, by using the `zip()` function. The `zip()` function takes iterables and aggregates them in a tuple. For example, `list(zip([1, 2], [3, 4], [5, 6]))` will return `[[1, 3, 5], [2, 4, 6]]`, where we first iterate through the corresponding elements in each of
 the three lists and then generate a list. Therefore, using the `zip()` function, we can construct the following solution to our problem:
 
-```
+```python
 def equalPairs(grid):
     transpose =  list(map(list, zip(*grid)))
     count = 0
@@ -88,7 +88,7 @@ Similarly, we can find the counts of each row occurring in the transpose of `gri
 
 Therefore, our solution simplifies into the following:
 
-```
+```python
 def equalPairs(grid):
     from collections import Counter
     
@@ -111,7 +111,7 @@ $$
 
 Our input is `grid = [[3,1,2,2],[1,4,4,5],[2,4,2,2],[2,4,2,2]]`. Hence,
 
-```
+```python
 transpose_counts = Counter(zip(*grid)) = {(2, 4, 2, 2): 2, (3, 1, 2, 2): 1, (1, 4, 4, 5): 1}               
 grid_counts = Counter(map(tuple,grid)) = {(3, 1, 2, 2): 1, (1, 4, 4, 4): 1, (2, 4, 2, 2): 1, (2, 5, 2, 2): 1}
 ```
