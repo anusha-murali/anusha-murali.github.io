@@ -11,6 +11,15 @@
    $$
 1 + 2 + 2^2 + 2^h = 2^{h+1} -1.
    $$
+\begin{tabular}{|c|c|c|c|c|c|}\hline
+ 	& $f_1$ & $f_2$ & $f_3$ & $f_4$ & $f_5$ \\ \hline
+ $f_1$ & $O, \Omega$ & $\Omega, \omega$ & $\Omega, \omega$ & $O, \Omega$ & $O, o$ \\ \hline
+ $f_2$ & $O, o$ & $O, \Omega$ & $\Omega, \omega $ & $O, o$ & $O, o$ \\ \hline
+ $f_3$ & $O, o$ & $O, o$ & $O, \Omega$ & $O, o$ & $O, o$ \\ \hline
+ $f_4$ & $O, \Omega$ & $\Omega, \omega$ & $\Omega, \omega$ & $O, \Omega$ & $O, o$ \\ \hline
+ $f_5$ & $\Omega, \omega$ & $\Omega, \omega$ & $\Omega, \omega$ & $\Omega, \omega$ & $O, \Omega$ \\ \hline
+\end{tabular}
+$$
 
    And the minimum number occurs when the bottom row has only 1 element, and is $2^h - 1 + 1 = 2^h$.
 
