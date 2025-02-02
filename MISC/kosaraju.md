@@ -47,7 +47,7 @@ Therefore, the SCC's of $G$ are (1) $\{E, G, F\}$ and (2) $\{A, B, C, D\}$.
 
 We can verify the above results using the Python code that we wrote earlier. All what we need in addition is a function to reverse the edges of the original graph $G$. The function `transpose()` below returns $G^R$, which represents $G$ with its edges reversed.
 
-```
+```python
 def transpose(G):
     G_R = defaultdict(list)
     for u in G.keys():
@@ -58,7 +58,7 @@ def transpose(G):
 
 Following is the complete Python code:
 
-```
+```python
 from collections import defaultdict
 # Create graph G
 vList = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
@@ -89,7 +89,7 @@ while len(stack) > 0:
 
 In order to print each SCC on a new line, we make the following minor modification to our  `dfs()` function as follows:
 
-```
+```python
 def dfs2(G, vList, explored):
     for v in vList:
         if v not in explored:
@@ -99,7 +99,7 @@ def dfs2(G, vList, explored):
 
 Following is the rest of the Python code:
 
-```
+```python
 ## Now run DFS on G using the new vList created on G_R above
 ## Run DFS on G
 # Initialize stack and explored
