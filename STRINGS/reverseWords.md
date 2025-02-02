@@ -28,7 +28,7 @@ Explanation: You need to reduce multiple spaces between two words to a single sp
 
 **Solution**
 
-```
+```python
     def reverseWords(s):
         tempList = list(s.split())
         newStr = ''
