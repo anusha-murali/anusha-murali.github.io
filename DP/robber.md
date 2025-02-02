@@ -36,7 +36,7 @@ He then moves to House 1, which has `[nums[1]` amount of money, and calls `rob()
 
 Hence, the code for the top-down recursion is as follows:
 
-```
+```python
 def rob(nums):
     if len(nums) == 0:
         return 0
@@ -54,7 +54,7 @@ This approach is identical to the top-down recursive solution above, except that
 
 We save the loot amount for the robber starting from House 0 to House $n$ in array `lootArray[0..n]`. 
 
-```
+```python
 def rob(nums):
     lootArray = ['-inf' for i in range(len(nums))]
     return robMemoized(nums, lootArray)
@@ -79,7 +79,7 @@ def robMemoized(nums, lootArray):
 
 In the bottom-up approach, we solve the sub-problems of sizes $i = 0, 1, \ldots, n$ in increasing order. Hence, when a problem of size $k$ is encountered, it can make use of all the sub-problems of size $i < k$, as they have been already been computed. The results of the subproblems are saved in the revenue array $r$, where we initialize $r[0] = 0$ as there is no revenue from a rod of lengh 0.
 
-```
+```python
 def rob(self, nums: List[int]) -> int:   
     if len(nums) <= 2:
         return max(nums)
@@ -103,7 +103,7 @@ def rob(self, nums: List[int]) -> int:
 
 We maintain two variables, `steal` and `skip`, where `steal` corresponds to the larger of the current sums and `skip` corresponds to the smaller of the two. We iterate through each house and add the current value to `skip`, compare the sum to the current value of `steal`, and pick the larger of the two.  During each iteration, the current `steal` replaces `skip` and the current maximum value is assigned to `steal`. This gurantees that we always add the current house `nums[i]` alternatively to either of these sums, without triggering a police alarm. At each end of an iteration, `steal` contains the largest possible loot so far. The code is as follows:
 
-```
+```python
     def rob(nums):
         if len(nums) == 1:
             return nums[0]
@@ -123,7 +123,7 @@ In addition to finding the maximum possible amount the robber can take, we are a
 
 We use one additional array, $s$, which saves the house numbers that need to be initially checked. We can then backtrack from the last element in this array and select the non-consecutive house numbers, which correspond to the houses that the robber would visit.
 
-```
+```python
     def rob(nums):
         if len(nums) == 1:
             return nums[0]
