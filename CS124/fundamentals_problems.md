@@ -8,9 +8,9 @@
    - $f_4 = n^{\log\log n}$
    - $f_5 = (\log\log n)^n$
 
-   |     | $f_1$     | $f_2$         | $f_3$          | $f_4$    |$f_5$ |
-   |-----|-----------|---------------|----------------|----------|------|
-   |$f_1$|$O, \Omega$|$\Omega, \omega|$\Omega, \omega$|$O,\Omega$|$O, o$|
+   |     | $f_1$     | $f_2$          | $f_3$          | $f_4$    |$f_5$ |
+   |-----|-----------|----------------|----------------|----------|------|
+   |$f_1$|$O, \Omega$|$\Omega, \omega$|$\Omega, \omega$|$O,\Omega$|$O, o$|
 
    And the minimum number occurs when the bottom row has only 1 element, and is $2^h - 1 + 1 = 2^h$.
 
