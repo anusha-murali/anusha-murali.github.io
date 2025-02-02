@@ -8,7 +8,8 @@
    - $f_4 = n^{\log\log n}$
    - $f_5 = (\log\log n)^n$
   
-
+   Ordering from smallest to largest, we have $f_3, f_2, f_1$ and $f_4$, then $f_5$. Rows in the table below denote the LHS of an order relation (e.g. $f_1 \in \Omega(f_2))$.
+   
 
    |     | $f_1$     | $f_2$          | $f_3$          | $f_4$    |$f_5$ |
    |-----|-----------|----------------|----------------|----------|------|
