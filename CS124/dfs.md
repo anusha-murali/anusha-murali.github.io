@@ -3,7 +3,7 @@
 DFS is a technique for exploring a graph using a stack as the basic data structure.
 
 We first define a recursive helper procedure called `search()`. 
-```
+```python
 def search(v):
   explored(v) = 1
   pre-visit(v)           # Push v onto stack
@@ -14,7 +14,7 @@ def search(v):
 ```
 
 We then define the actual DFS() as follows:
-```
+```python
 def DFS(G):
   for vertex v in V:
     explored(v) = 0
@@ -32,7 +32,7 @@ Following is a minimalistic and fully-functional code in Python, which prints ou
 
 Whenever we visit a vertex for the first time, we add it to a set called `explored`. When we return to the vertex, after visiting all of its neighbors recursively, we push it to a stack. The position of the vertex in the stack tells us its post-order number.
 
-```
+```python
 def search(G, v, explored):
     explored.add(v)
     for neighbor in G[v]:
@@ -42,7 +42,7 @@ def search(G, v, explored):
 ```
 The main call to `dfs()` assumes that the vertices of $G$ are found in a list, `vList`.
 
-```
+```python
 def dfs(G, vList, explored):
     for v in vList:
         if v not in explored:
@@ -51,14 +51,14 @@ def dfs(G, vList, explored):
 
 We represent the graph, $G$, as a dictionary, in which a key denotes a vertex and its corresponding value represents its immediate neighbors. The following function `addEdge()` adds an edge to $G$.
 
-```
+```python
 def addEdge(G, u, v):
     G[u].append(v)
 ```
 
 The following function, `printStack()` prints the stack from top to bottom, which prints the DFS visit:
 
-```
+```python
 def printStack(stack):
   while len(stack) > 0:
       print(stack.pop(), end=' ')
@@ -71,7 +71,7 @@ Let us use the above functions to run DFS on the following example:
 ><img width="220" alt="dfs_1" src="https://github.com/user-attachments/assets/be33e775-668a-4eda-8956-11de1f81e5e4">
 >
 
-```
+```python
 from collections import defaultdict
 # Create graph G
 vList = ['A', 'B', 'C', 'D', 'E']
@@ -162,7 +162,7 @@ Therefore, the SCC's of $G$ are (1) $\{E, G, F\}$ and (2) $\{A, B, C, D\}$.
 
 We can verify the above results using the Python code that we wrote earlier. All what we need in addition is a function to reverse the edges of the original graph $G$. The function `transpose()` below returns $G^R$, which represents $G$ with its edges reversed.
 
-```
+```python
 def transpose(G):
     G_R = defaultdict(list)
     for u in G.keys():
@@ -173,7 +173,7 @@ def transpose(G):
 
 Following is the complete Python code:
 
-```
+```python
 from collections import defaultdict
 # Create graph G
 vList = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
@@ -204,7 +204,7 @@ while len(stack) > 0:
 
 In order to print each SCC on a new line, we make the following minor modification to our  `dfs()` function as follows:
 
-```
+```python
 def dfs2(G, vList, explored):
     for v in vList:
         if v not in explored:
@@ -214,7 +214,7 @@ def dfs2(G, vList, explored):
 
 Following is the rest of the Python code:
 
-```
+```python
 ## Now run DFS on G using the new vList created on G_R above
 ## Run DFS on G
 # Initialize stack and explored
@@ -240,7 +240,7 @@ In the above graph, during DFS of the above graph, we first add $C$, then add $B
 
 Following Python code implements cycle detection using DFS. We use a helper function called `parentInStack()`, which looks in the current stack for the parent of the current vertex being added to the stack.
 
-```
+```python
 def parentInStack(G, v):
     global hasCycle             # hasCycle is a global boolean
     for vertex in stack:
@@ -252,7 +252,7 @@ def parentInStack(G, v):
 
 We make minor modification to our original `search()` function so that it can immediately return upon finding a cycle.
 
-```
+```python
 def search(G, v, explored):
     if hasCycle:
         return
@@ -266,7 +266,7 @@ def search(G, v, explored):
 
 The following is the remainder of the code:
 
-```
+```python
 def dfs(G, vList, explored):
     for v in vList:
         if v not in explored:
