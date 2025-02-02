@@ -36,8 +36,10 @@ f_6(n) = \begin{cases}
          \end{cases}
    $$
    
-5. adfa
-6. asdf
+5. Solve the following recurrence exactly, and then prove your solution is correct: $T(1) = 1, T(n) = T(n-1) + n^2 -n$.
+   sdfafds
+7. dads
+8. asdf
 
    
 
