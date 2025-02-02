@@ -38,7 +38,7 @@ Hence `minCost(n) = cost(n) + min(minCost(n-1), minCost(n-2))`.
 
 Hence, we have the following recursive solution:
 
-```
+```python
 def minCost(n):
   if n < 2:
     return cost[n]
@@ -46,7 +46,7 @@ def minCost(n):
 ```
 Therefore, if the size of `cost` = $n$, we can find the minimum cost to reach the top of the stairs using:
 
-```
+```python
 min(minCost(n-1), minCost(n-2))
 ```
 
@@ -54,7 +54,7 @@ min(minCost(n-1), minCost(n-2))
 
 The recursive solution above suffers from repeated recomuptation of the minimum costs. We can memoize the minimum cost to climb stair $i$ in an array and avoid the repeated recomputation of the minimum costs as follows:
 
-```
+```python
 def minCostClimbingStairs(cost):
     dp = [0]*(len(cost))
 
