@@ -15,7 +15,7 @@ Find the $n^{\text{th}}$ Fibonacci number.
 
 #### Solution 1: Top-down Recursion
 
-```
+```python
 def fib(n):
     if n == 0:
         return 0
@@ -55,7 +55,7 @@ Hence, the Fibonacci numbers grow exponentially. Hence the runtime of the recurs
 
 The reason why the recursive solution above has an exponential runtime is that it repeatedly calculates the subproblems. By saving the results of each subproblem in an array (memoization), we can avoid repeated calculations of the subproblems. We now have the following solution:
 
-```
+```python
 def fib(n):
     f = [0, 1]
     for i in range(2, n+1):
