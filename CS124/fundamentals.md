@@ -140,7 +140,7 @@ $$
 
 Following is the Python code for the recursive version of computing the $n$-th Fibonacci number:
 
-```
+```python
 def F(n):
   if n == 0:
     return 0
@@ -154,7 +154,7 @@ def F(n):
 
 ### 3.2. Iterative Fibonacci
 
-```
+```python
 def F(n):
   A = []
   A[0] = 0
@@ -191,7 +191,7 @@ $$
 
 We first define the function *merge()*, which takes two unsorted lists and outputs a single sorted list. 
 
-```
+```python
 def merge(s,t)
   if not s: return t
   if not t: return s
@@ -204,7 +204,7 @@ def merge(s,t)
 
 The function *mergeSort()* uses the above *merge()* to recursively merge two sorted lists:
 
-```
+```python
 def mergeSort(s):
   if len(s) == 1: return s
   split(s, s1, s2)
@@ -218,7 +218,7 @@ def mergeSort(s):
 
 ### 4.2. Insertion Sort
 
-```
+```python
 def insertionSort(x): # S is a list
   n = len(S)
   for i in range(n-1):
@@ -232,7 +232,7 @@ def insertionSort(x): # S is a list
 
 ### 4.3 Binary Search
 
-```
+```python
 def binarySearch(array, val):
   l = 0                    # Right index = 0
   r = len(array)           # Left index = length of array
