@@ -27,9 +27,19 @@
    And the minimum number occurs 
 
    
-3. asdf
+3. Give an example of a function $f_6: \mathbb{N} \to \mathbb{R}^+$ for which \emph{none} of the four statements $f_i \in o(f_6)$, $f_i \in O(f_6)$, $f_i \in \omega(f_6)$, and $f_i \in \Omega(f_6)$ is true for any $i \in \{1,2,3,4,5\}$.
 
-   asdfasd
+   $$
+f_6(n) = \begin{cases}
+            1, \text{for odd }n\\
+            n^n, \text{for even }n
+         \end{cases}
+   $$
+   
+5. adfa
+6. asdf
+
+   
 
 [Back to Fundamentals](./fundamentals.md)
 
