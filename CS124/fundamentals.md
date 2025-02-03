@@ -4,7 +4,8 @@
 
 <img width="856" alt="asymptotic" src="https://github.com/anusha-murali/anusha-murali.github.io/assets/111596338/cb2a42a0-56f8-4d5c-ac7e-4f37d72f9967">
 
-<img width="856" alt="asymptotes" src="https://github.com/user-attachments/assets/963dfb4b-f148-48a0-b16f-ce0084dba2b2" />
+<img width="856" alt="asymptotes" src="https://github.com/user-attachments/assets/06b25960-71da-4980-ba0d-f2445a6f1fc0" />
+
 
 
 ### 1.1. $\Theta$-notation
