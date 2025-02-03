@@ -154,7 +154,7 @@ When the inner loop iterates through $A[0], \ldots, A[k]$, no swaps are made.
 When the inner loop iterates through $A[k + 1], \ldots, A[i]$, it will always be true that the index currently being iterated on has an value greater than or equal to the value stored at $A[i +1]$ because $A[k + 1] \geq A[i]$. Because $A[k + 1], \ldots, A[i]$ are sorted, we will be swapping them into index $i + 1$ in increasing order and swapping them out only when a bigger element is encountered. This means everything that is at least as small as the current value of $A[i + 1]$ has already been iterated upon, and $A[i +1]$ is inserted after them. By the time we get to the iteration to swap $A[i]$ and $A[i + 1]$, we move the largest element of $A$ to $A[i + 1]$, and the final swap makes the first $A[i + 1]$ elements corrected sorted.
 No more swaps will be performed in this iteration of the outer loop since the largest element is already $A[i + 1]$.
 
-**Conclusion**: By the principle of mathematical induction, it is true for all $1 \leq i \leq n$ that after the $i$-th iteration of the outer loop, indices 0 to $i$ of the array are sorted.
+         **Conclusion**: By the principle of mathematical induction, it is true for all $1 \leq i \leq n$ that after the $i$-th iteration of the outer loop, indices 0 to $i$ of the array are sorted.
 
 
 14. adfsda
