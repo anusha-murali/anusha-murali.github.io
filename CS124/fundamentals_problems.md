@@ -193,7 +193,23 @@ No more swaps will be performed in this iteration of the outer loop since the la
 
     Write pseudocode for **linear search**, which scans through the array from beginning to end, looking for $x$. Using a loop invariant, prove that your algorithm is correct. Make sure that your loop invariant fulfills the three necessary properties.
 
-    asdfad
+    ```python
+    def linearSearch(A, n, x):
+       i = 1
+       while i <= n and A[i] != x:
+          i = i + 1
+       if i > n:
+          return NIL
+       else:
+          return i
+    ```
+    The above function checks each array element until either $i> n$ or $x$ is found.
+
+    **Loop invariant**: At the start of each iteration of the `while` loop, the value $x$ does not appear in the subarray $A[1:i-1]$.
+
+    **Initialization**: Upon entering the first iteration, $i=1$. The subarray $A[1:i-1]$ is empty, and the loop invariant is trivially true.
+
+    **Maintenance**:
 20. asdfads
 
    
