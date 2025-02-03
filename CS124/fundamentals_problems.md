@@ -120,15 +120,15 @@ f_6(n) = \begin{cases}
 
       In this problem we will study the behavior of a twisted version of BubbleSort, described below.
    
-   ```python
-       def TwistedBubbleSort(A[0..n-1]):
-          for i in range(len(A)):
-             for j in range(len(A))):
-                if $A[i] < A[j]:
-                   swap A[i] and A[j]
-   ```
-   
-   Your task is to prove that TwistedBubbleSort also correctly sorts every array. (While not necessary, you may assume for simplicity that the elements of $A$ are all distinct.)
+      ```python
+          def TwistedBubbleSort(A[0..n-1]):
+             for i in range(len(A)):
+                for j in range(len(A))):
+                   if $A[i] < A[j]:
+                      swap A[i] and A[j]
+      ```
+      
+      Your task is to prove that TwistedBubbleSort also correctly sorts every array. (While not necessary, you may assume for simplicity that the elements of $A$ are all distinct.)
 
    - Explain in plain English why TwistedBubbleSort is different from BubbleSort.
 
