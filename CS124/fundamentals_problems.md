@@ -85,9 +85,29 @@ f_6(n) = \begin{cases}
 
    **Conclusion**: By the principle of mathematical induction, our solution correctly calculates $T(n)$ for all $n \geq 1$.
 
-9. asdf
-10. adasd
-11. 
+   *Hint*: The recursive function gives us a hint that the solution likely includes some variation of $3^n$. For this question, it is probably easiest to try writing $T(n)$ in terms of $T(n−1),T(n − 2),T(n−3),\ldots$ and noticing the pattern through repeated substitution. 
+
+9. Give tight asymptotic bound for $T(n) = 9T(\lfloor n/3 \rfloor) + n^2 + 3n$ (i.e. $T(n) = \Theta(f(n))$ for some $f$).
+
+    Using the Master Theorem, with $a = 9, b = 3, c = 1, k = 2$, $T(n) = \Theta(n^2 \log n)$.
+   
+11. Give tight asymptotic bound for $T(n) = 4T (\lfloor \sqrt{n} \rfloor ) + \log n$ (Hint: it may help to apply a change of variable).
+
+    Let $T(2^n) = U(n)$. Now,
+
+    $$
+    U(n) = 4T \left ( 2^{n \times \frac{1}{2}} \right ) + \log_2(2^n) = 4U \left (\frac{n}{2} \right ) + n.
+    $$
+
+    Applying the Master Theorem to $U(n)$, with $a = 4, b = 2, c = 1, k = 1$,
+
+    $$
+    U(n) = \Theta \left (n^{\log_2 4} \right ) = \Theta (n^2).
+    $$
+
+    Hence, $T(n) = U(\log n) = \Theta \left ((\log n)^2 \right )$.
+13. adfafsd
+14. adfsda
 
    
 
