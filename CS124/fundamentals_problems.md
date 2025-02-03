@@ -69,9 +69,9 @@ f_6(n) = \begin{cases}
    $$
    T(1) = 1, T(2) = 2, T(3) = 4, T(4) = 9, T(5) = 23, T(6) = 64, \ldots
    $$
-   Guessing a closed form solution, we claim $T(n) = \dfrac{3^{n-1} + 2n + 1}{4}.$\\
+   Guessing a closed form solution, we claim $T(n) = \dfrac{3^{n-1} + 2n + 1}{4}.$
 
-   9. asdf
+9. asdf
 10. adasd
 11. 
 
