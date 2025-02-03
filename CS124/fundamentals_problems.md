@@ -218,9 +218,32 @@ No more swaps will be performed in this iteration of the outer loop since the la
     Both the iterative version and the recursive version of the binary-search take a sorted array $A$, a value $x$, and a range [*low:high*] of the array, in which we search for the value $x$. The function compares $x$ to the array element at the midpoint of the range and decides to eliminate half the range from further consideration.
 
     ```python
-      def iterativeBinarySearch(A, x, low, high):
-    
+       def iterativeBinarySearch(A, x, low, high):
+          while low <= high:
+             mid = floor((low+high)/2)
+             if x == A[mid]:
+                retun mid
+             elsif x > A[mid]:
+                low = mid + 1
+             else:
+                high = mid - 1
+          return NIL
     ```
+
+    ```python
+       def recursiveBinarySearch(A, x, low, high):
+          if low > high:
+             return NIL
+          mid = floor((low+high)/2)
+          if x == A[mid]:
+             return mid
+          elsif x > A[mid]:
+             return recursiveBinarySearch(A, x, mid + 1, high)
+          else:
+             return recursiveBinarySearch(A, x, low, mid - 1)
+    ```
+    Both functions terminate the search unsuccessfully when the range is empty (i.e., low > high) and terminate it successfully if the value $x$ has been found. Based on the comparison of $x$ to the middle element in the searched range, the search continues with the range halved. The recurrence for these functions is therefore $T(n) = T(n/2) + \Theta(1)$, whose solution is $T(n) = \Theta(\log n)$, where $\log$ is base-2.
+    
 22. asdfa
 
    
