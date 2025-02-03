@@ -66,9 +66,7 @@ f_6(n) = \begin{cases}
 7. Solve the following recurrence exactly, and then prove your solution is correct: $T(1) = 1, T(n) = 3T(n-1) -n + 1$.
 
    We get the following values for $T(n)$ for the first few values of $n$:
-   $$
-   T(1) = 1, T(2) = 2, T(3) = 4, T(4) = 9, T(5) = 23, T(6) = 64, \ldots
-   $$
+   $T(1) = 1, T(2) = 2, T(3) = 4, T(4) = 9, T(5) = 23, T(6) = 64, \ldots $
    Guessing a closed form solution, we claim $T(n) = \dfrac{3^{n-1} + 2n + 1}{4}.$
 
 9. asdf
