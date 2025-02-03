@@ -237,7 +237,10 @@ def insertionSort(x): # S is a list
 **Runtime** $O(n^2)$.
 
 **Example**
-<img width="400" alt="insertion_sort" src="https://github.com/user-attachments/assets/b786c1f5-3734-4369-ba36-0afadd8019eb" />
+
+<p align="center">
+<img width="600" alt="insertion_sort" src="https://github.com/user-attachments/assets/b786c1f5-3734-4369-ba36-0afadd8019eb" />
+</p>
 
 Note that $i$ indexes the "current card" being inserted into the hand. Elements to the left of $A[i]$ that are greater than $A[i]$ move one position to the right, and $A[i]$ moves into the evacuated position. The heavy vertical lines separate the part of the array in which an iteration works - $A[1:i]$ - from the part of the array that is unaffected by this iteration - $A[i + 1:n]$. The last part of the figure shows the final sorted array.
 
