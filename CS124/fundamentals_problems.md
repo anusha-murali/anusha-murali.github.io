@@ -130,9 +130,14 @@ f_6(n) = \begin{cases}
       
       Your task is to prove that TwistedBubbleSort also correctly sorts every array. (While not necessary, you may assume for simplicity that the elements of $A$ are all distinct.)
 
-    (a) Explain in plain English why TwistedBubbleSort is different from BubbleSort.
+    1. Explain in plain English why TwistedBubbleSort is different from BubbleSort.
+      
+       TwistedBubbleSort() compares $A[i]$ to $A[j]$ for *every* $i$ and $j$ and swaps them if $A[i] < A[j]$, while regular bubble sort only compares and swaps *adjacent elements* $A[j]$ and $A[j+1]$.
 
-     TwistedBubbleSort() compares $A[i]$ to $A[j]$ for *every* $i$ and $j$ and swaps them if $A[i] < A[j]$, while regular bubble sort only compares and swaps *adjacent elements* $A[j]$ and $A[j+1]$.
+    2. Prove that after the $i$-th iteration of the outer loop, the largest element of $A$ is at the $i$-th index.
+   
+       During the $i$-th iteration of the loop, the elements at every index $j$ from $0\ldotsn-1$ are compared to $A[i]$ for $i$ ($i$ is constant for the duration of this iteration). If $A[j] > A[i]$, the elements at $i$ and $j$ get swapped. If $A[i]$ already holds the largest element, then no changes are made to the array, and at the end of the $i$-th iteration $A[i]$ continues to hold the largest element. Else, since we iterate through the entire array, there must exist some $A[j] > A[i]$ for some index $j$ that holds the largest element. These two elements must get swapped, after which $A[i]$ holds the largest element, following which there are no more swaps and this reverts to the first case, such that at
+the end of the $i$-th iteration $A[i]$ then holds the largest element.
      
    - Prove that
 
