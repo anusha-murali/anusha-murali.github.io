@@ -159,7 +159,20 @@ No more swaps will be performed in this iteration of the outer loop since the la
 
 14. You can also think of insertion sort as a recursive algorithm. In order to sort $A[1:n]$, recursively sort the subarray $A[1:n-1]$ and then insert $A[n]$ into the sorted subarray $A[1:n-1]$. Write pseudocode for this recursive version of insertion sort. Give a recurrence for its worst-case running time.
 
-    asdfsaf
+    Following is the pseudocode for the recursive version of the insertion sort:
+
+    ```python
+    def recursiveInsertionSort(A, n):
+       if n > 1:
+          recursiveInsertionSort(A, n-1):
+          key = A[n]
+          j = n - 1
+          while j > 0 and A[j] > key:
+             A[j+1] = A[j]
+             j = j -1
+          A[j+1] = key
+    ```
+    
 16. asdas
 
    
