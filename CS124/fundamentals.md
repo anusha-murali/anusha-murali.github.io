@@ -7,21 +7,14 @@
 <img width="856" alt="asymptotes" src="https://github.com/user-attachments/assets/06b25960-71da-4980-ba0d-f2445a6f1fc0" />
 
 
-
-### 1.1. $\Theta$-notation
-
-The $\Theta$-notation asymptotically bounds a function from above and below.
-
-$\Theta(g(n)) = \\{f(n):$ there exist positive constants $c_1, c_2$ and $n_0$ such that $0 \leq c_1g(n) \leq f(n) \leq c_2g(n)$ for all $n \geq n_0 \\}$.
-
-### 1.2. $O$-notation
+### 1.1. $O$-notation
 
 When we have only an **asymptotic upper bound**, we use $O$-notation.
 
 $O(g(n)) = \\{f(n):$ there exist positive constants $c$ and $n_0$ such that $0  \leq f(n) \leq cg(n)$ for all $n \geq n_0 \\}$.
 
 
-### 1.3. $\Omega$-notation
+### 1.2. $\Omega$-notation
 
 $\Omega$-notation provides an **asymptotic lower bound**.
 
@@ -29,6 +22,12 @@ $\Omega(g(n)) = \\{f(n):$ there exist positive constants $c$ and $n_0$ such that
 
 
 **Theorem**: For any two functions $f(n)$ and $g(n)$, we have $f(n) = \Theta(g(n))$ if and only if $f(n) = O(g(n))$ and $f(n) = \Omega(g(n))$.
+
+### 1.3. $\Theta$-notation
+
+The $\Theta$-notation asymptotically bounds a function from above and below.
+
+$\Theta(g(n)) = \\{f(n):$ there exist positive constants $c_1, c_2$ and $n_0$ such that $0 \leq c_1g(n) \leq f(n) \leq c_2g(n)$ for all $n \geq n_0 \\}$.
 
 
 ### 1.4. $o$-notation
