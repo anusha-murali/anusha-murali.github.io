@@ -106,8 +106,36 @@ f_6(n) = \begin{cases}
     $$
 
     Hence, $T(n) = U(\log n) = \Theta \left ((\log n)^2 \right )$.
-13. adfafsd
+    
+13. One of the simplest algorithms for sorting is BubbleSort - see code below.
+
+    ```python
+    def BubbleSort(A[0..n-1]):
+       for i in range(len(A)):
+          for j in range(len(A) - 1)):
+             if $A[j] > A[j+1]:
+                swap A[j] and A[j+1]
+    ```
+
+
+   In this problem we will study the behavior of a twisted version of BubbleSort, described below.
+   
+   ```python
+       def TwistedBubbleSort(A[0..n-1]):
+          for i in range(len(A)):
+             for j in range(len(A))):
+                if $A[i] < A[j]:
+                   swap A[i] and A[j]
+   ```
+   
+   Your task is to prove that TwistedBubbleSort also correctly sorts every array. (While not necessary, you may assume for simplicity that the elements of $A$ are all distinct.)
+
+   - Explain in plain English why TwistedBubbleSort is different from BubbleSort.
+
+
+
 14. adfsda
+15. asdas
 
    
 
