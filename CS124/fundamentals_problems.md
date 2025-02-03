@@ -213,8 +213,15 @@ No more swaps will be performed in this iteration of the outer loop since the la
 
     **Termination**: The `while` loop terminates for one of two reasons. If it terminated because $i > n$, then $i = n+1$ at that time. By the loop invariant, the value $x$ does not appear in the subarray $A[1:i-1]$, which is the entire array $A[1:n]$. The function correctly returns `NIL` in this casee. If the loop terminated because $i \leq n$ and $A[i] =x$, then the function correctly returns the index $i$.
     
-20. asdfads
-21. asdfa
+20. In the previous problem, observe that if the subarray being searched is already sorted, the searching algorithm can check the midpoint of the subarray against $x$ and eliminate half of the subarray from further consideration. The **binary search** algorithm repeats this procedure, halving the size of the remaining portion of the subarray each time. Write pseudocode for both iterative and recursive binary search. Argue the worst-case running time of binary search is $\Theta(\log n)$.
+
+    Both the iterative version and the recursive version of the binary-search take a sorted array $A$, a value $x$, and a range [*low:high*] of the array, in which we search for the value $x$. The function compares $x$ to the array element at the midpoint of the range and decides to eliminate half the range from further consideration.
+
+    ```python
+      def iterativeBinarySearch(A, x, low, high):
+    
+    ```
+22. asdfa
 
    
 
