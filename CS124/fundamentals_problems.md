@@ -182,7 +182,12 @@ No more swaps will be performed in this iteration of the outer loop since the la
     $$
     
     The solution to the above recurrence is $T(n) = \Theta(n^2)$.
-16. asdas
+16. Describe an algorithm that, given a set $S$ of $n$ integers and another integer $x$, determines whether $S$ contains two elements that sum to exactly $x$. Your algorithm should take $\Theta(n \log n)$ time in the worst case.
+
+    Given that $S$ is a set, if  $x/2 \in S$, then it cannot appear twice. Therefore $x/2$ cannot be a solution and can be removed from $S$. We first sort the elements in $S$, which takes $\Theta(n \log n)$ time. For each element $y \in S$, we do a binary search fo $x-y$ in $S$, which takes $\Theta(\log n)$ time in the worst case. Since there are at most $n$ of $y$, the worst-case runtime for all the binary searches is $\Theta (n \log n)$. Hence the running time of our algorithm is $\Theta (n \log n)$.
+    
+18. adsdf
+19. asdfads
 
    
 
