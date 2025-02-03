@@ -244,7 +244,8 @@ No more swaps will be performed in this iteration of the outer loop since the la
     ```
     Both functions terminate the search unsuccessfully when the range is empty (i.e., low > high) and terminate it successfully if the value $x$ has been found. Based on the comparison of $x$ to the middle element in the searched range, the search continues with the range halved. The recurrence for these functions is therefore $T(n) = T(n/2) + \Theta(1)$, whose solution is $T(n) = \Theta(\log n)$, where $\log$ is base-2.
     
-22. asdfa
+22. Although merge sort runs in $\Theta n \lg n)$ worst-case time and insertion sort runs in $\Theta(n^2)$ worst-case time, the constant factors in insertion sort can make it faster in practice for small problem sizes on many machines. Thus, it makes sense to coarsen the leaves of the recursion by using insertion sort within merge sort when
+23. adfsa
 
    
 
