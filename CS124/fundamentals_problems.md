@@ -130,7 +130,7 @@ f_6(n) = \begin{cases}
       
       Your task is to prove that TwistedBubbleSort also correctly sorts every array. (While not necessary, you may assume for simplicity that the elements of $A$ are all distinct.)
 
-   - Explain in plain English why TwistedBubbleSort is different from BubbleSort.
+    (a) Explain in plain English why TwistedBubbleSort is different from BubbleSort.
 
      TwistedBubbleSort() compares $A[i]$ to $A[j]$ for *every* $i$ and $j$ and swaps them if $A[i] < A[j]$, while regular bubble sort only compares and swaps *adjacent elements* $A[j]$ and $A[j+1]$.
      
