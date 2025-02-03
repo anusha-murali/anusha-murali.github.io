@@ -253,8 +253,8 @@ No more swaps will be performed in this iteration of the outer loop since the la
     3. Show how to merge the sublists in $\Theta(n \lg (n/k))$ worst-case time.
    
        Just extending the 2-list merge to merge all the lists at once would take $\Theta(n \cdot n/k) = \Theta(n^2/k)$ time ($n$ from copying each element once into the result list, $n/k$ from examining $n/k$  lists at each step to select next item for result list).
-       
-      To achieve $\Theta(n \lg(n/k))$-time merging, merge the lists pairwise, then merge the resulting lists pairwise, and so on, until there’s just one list. The pair- wise merging requires $\Theta(n)$ work at each level, since it is still working on $n$ elements, even if they are partitioned among sublists. The number of levels, starting with $n/k$ lists (with $k$ elements each) and finishing with 1 list (with $n$ elements), is $\lceil \lg(n/k) \rceil$. Therefore, the total running time for the merging is $\Theta (n \lg(n/k))$.
+
+       To achieve $\Theta(n \lg(n/k))$-time merging, merge the lists pairwise, then merge the resulting lists pairwise, and so on, until there’s just one list. The pair- wise merging requires $\Theta(n)$ work at each level, since it is still working on $n$ elements, even if they are partitioned among sublists. The number of levels, starting with $n/k$ lists (with $k$ elements each) and finishing with 1 list (with $n$ elements), is $\lceil \lg(n/k) \rceil$. Therefore, the total running time for the merging is $\Theta (n \lg(n/k))$.
 
     5. Given that the modified algorithm runs in $\Theta(nk + n \lg (n/k))$ worst-case time, what is the largest value of $k$ as a function of $n$ for which the modified algorithm has the same running time as standard merge sort, in terms of $\Theta$-notation?
     6. How should we choose $k$ in practice?
