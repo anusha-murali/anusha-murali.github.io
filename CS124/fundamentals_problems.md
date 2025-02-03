@@ -118,7 +118,7 @@ f_6(n) = \begin{cases}
     ```
 
 
-   In this problem we will study the behavior of a twisted version of BubbleSort, described below.
+      In this problem we will study the behavior of a twisted version of BubbleSort, described below.
    
    ```python
        def TwistedBubbleSort(A[0..n-1]):
