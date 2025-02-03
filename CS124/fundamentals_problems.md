@@ -172,7 +172,16 @@ No more swaps will be performed in this iteration of the outer loop since the la
              j = j -1
           A[j+1] = key
     ```
+    It takes $\Theta(n)$ time in the worst case to insert $A[n]$ into the sorted array, $A[1:n-1]$. Therefore, our recurrence is as follows:
+
+    $$
+      T(n) = \begin{cases}
+             \Theta(1) & \text{if }n=1,\\
+             T(n-1) + \Theta(n) & \text{if }n> 1.
+             \end{cases}
+    $$
     
+    The solution to the above recurrence is $T(n) = \Theta(n^2)$.
 16. asdas
 
    
