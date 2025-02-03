@@ -63,7 +63,7 @@ f_6(n) = \begin{cases}
    **Conclusion**: By the principle of mathematical induction, our solution correctly calculates $T(n)$ for all $n \geq 1$.
 
    
-7. dads
+7. Solve the following recurrence exactly, and then prove your solution is correct: $T(1) = 1, T(n) = 3T(n-1) -n + 1$.
 8. asdf
 
    
