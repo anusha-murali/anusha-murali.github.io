@@ -132,6 +132,10 @@ f_6(n) = \begin{cases}
 
    - Explain in plain English why TwistedBubbleSort is different from BubbleSort.
 
+     TwistedBubbleSort() compares $A[i]$ to $A[j]$ for *every* $i$ and $j$ and swaps them if $A[i] < A[j]$, while regular bubble sort only compares and swaps *adjacent elements* $A[j]$ and $A[j+1]$.
+     
+   - Prove that
+
 
 
 14. adfsda
