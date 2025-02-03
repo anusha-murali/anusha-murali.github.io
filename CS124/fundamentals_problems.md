@@ -247,10 +247,17 @@ No more swaps will be performed in this iteration of the outer loop since the la
 22. Although merge sort runs in $\Theta (n \lg n)$ worst-case time and insertion sort runs in $\Theta(n^2)$ worst-case time, the constant factors in insertion sort can make it faster in practice for small problem sizes on many machines. Thus, it makes sense to coarsen the leaves of the recursion by using insertion sort within merge sort when subproblems become sufficiently small. Consider a modification to merge sort in which $n/k$ sublists of length $k$ are sorted using insertion sort and then merged using the standard merging mechanism, where $k$ is a value to be determined.
 
     1. Show that insertion sort can sort the $n/k$ sublists, each of length $k$, in $\Theta(n k)$ worst-case time.
+       
        Insertion sort takes $\Theta(k^2)$ time per $k$-element list in the worst case. Therefore, sorting $n/k$ lists of $k$ elements takes $\Theta(k^2 n/k) = \Theta(nk)$ worst-case time.
+       
     3. Show how to merge the sublists in $\Theta(n \lg (n/k))$ worst-case time.
-    4. Given that the modified algorithm runs in $\Theta(nk + n \lg (n/k))$ worst-case time, what is the largest value of $k$ as a function of $n$ for which the modified algorithm has the same running time as standard merge sort, in terms of $\Theta$-notation?
-    5. How should we choose $k$ in practice?
+   
+       Just extending the 2-list merge to merge all the lists at once would take $\Theta(n \cdot n/k) = \Theta(n^2/k)$ time ($n$ from copying each element once into the result list, $n/k$ from examining $n/k$  lists at each step to select next item for result list).
+       
+      To achieve $\Theta(n \lg(n/k))$-time merging, merge the lists pairwise, then merge the resulting lists pairwise, and so on, until there’s just one list. The pair- wise merging requires $\Theta(n)$ work at each level, since it is still working on $n$ elements, even if they are partitioned among sublists. The number of levels, starting with $n/k$ lists (with $k$ elements each) and finishing with 1 list (with $n$ elements), is $\lceil \lg(n/k) \rceil$. Therefore, the total running time for the merging is $\Theta (n \lg(n/k))$.
+
+    5. Given that the modified algorithm runs in $\Theta(nk + n \lg (n/k))$ worst-case time, what is the largest value of $k$ as a function of $n$ for which the modified algorithm has the same running time as standard merge sort, in terms of $\Theta$-notation?
+    6. How should we choose $k$ in practice?
        
 24. adfsa
 
