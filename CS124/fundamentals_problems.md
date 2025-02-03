@@ -257,7 +257,14 @@ No more swaps will be performed in this iteration of the outer loop since the la
        To achieve $\Theta(n \lg(n/k))$-time merging, merge the lists pairwise, then merge the resulting lists pairwise, and so on, until there’s just one list. The pair- wise merging requires $\Theta(n)$ work at each level, since it is still working on $n$ elements, even if they are partitioned among sublists. The number of levels, starting with $n/k$ lists (with $k$ elements each) and finishing with 1 list (with $n$ elements), is $\lceil \lg(n/k) \rceil$. Therefore, the total running time for the merging is $\Theta (n \lg(n/k))$.
 
     5. Given that the modified algorithm runs in $\Theta(nk + n \lg (n/k))$ worst-case time, what is the largest value of $k$ as a function of $n$ for which the modified algorithm has the same running time as standard merge sort, in terms of $\Theta$-notation?
-    6. How should we choose $k$ in practice?
+   
+       The modified algorithm has the same asymptotic running time as standard merge sort when $\Theta(nk + n \lg(n/k)) = \Theta(n \lg n)$. The largest asymptotic value of $k$ as a function of $n$ that satisfies this condition is $k = \Theta(\lg n)$.
+
+       To see why, first observe that $k$ cannot be more than $\Theta(\lg n)$ (i.e., it can’t have a higher-order term than $\lg n$), for otherwise the left-hand expression wouldn’t be $\Theta(n \lg n)$  (because it would have a higher-order term than $n \lg n$). So all we need to do is verify that  $k = \Theta(\lg n)$ works, which we can do by plugging $k = \lg n$ into $\Theta(nk + n \lg(n/k)) = \Theta(nk + n \lg n - n \lg k)$ to obtain $\Theta(n \lg n + n \lg n - n \lg \lg n) = \Theta(2n \lg n - n \lg \lg n)$, which, by taking just the high-order term and ignoring the constant coefficient becomes $\Theta(n \lg n)$.
+       
+    7. How should we choose $k$ in practice?
+   
+       In practice, $k$ should be the largest list length on which insertion sort is faster than merge sort.
        
 24. adfsa
 
