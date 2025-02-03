@@ -209,8 +209,12 @@ No more swaps will be performed in this iteration of the outer loop since the la
 
     **Initialization**: Upon entering the first iteration, $i=1$. The subarray $A[1:i-1]$ is empty, and the loop invariant is trivially true.
 
-    **Maintenance**:
+    **Maintenance**: At the start of an iteration for index $i$, the loop invariant says that $x$ does not appear in the subarray $A[1:i-1]$. If $i \leq n$, then either $A[i] =x$ or $A[i] \neq x$. In the former case, the test in the `while` loop header comes up `FALSE`, and there is no iteration for $i+1$. In the latter case, the test comes  up `TRUE`. Since $A[i] \neq x$ and $x$ does not appear in $A[1:i-1]$, we have that $x$ does not appear in $A[1:i]$. Incrementing $i$ for the next iteration preserves the loop invariant. If $i>n$, then the test in the `while` loop header comes up `FALSE`, and there is no iteration for $i+1$.
+
+    **Termination**: The `while` loop terminates for one of two reasons. If it terminated because $i > n$, then $i = n+1$ at that time. By the loop invariant, the value $x$ does not appear in the subarray $A[1:i-1]$, which is the entire array $A[1:n]$. The function correctly returns `NIL` in this casee. If the loop terminated because $i \leq n$ and $A[i] =x$, then the function correctly returns the index $i$.
+    
 20. asdfads
+21. asdfa
 
    
 
