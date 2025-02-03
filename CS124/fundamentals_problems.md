@@ -157,8 +157,10 @@ No more swaps will be performed in this iteration of the outer loop since the la
          **Conclusion**: By the principle of mathematical induction, it is true for all $1 \leq i \leq n$ that after the $i$-th iteration of the outer loop, indices 0 to $i$ of the array are sorted.
 
 
-14. adfsda
-15. asdas
+14. You can also think of insertion sort as a recursive algorithm. In order to sort $A[1:n]$, recursively sort the subarray $A[1:n-1]$ and then insert $A[n]$ into the sorted subarray $A[1:n-1]$. Write pseudocode for this recursive version of insertion sort. Give a recurrence for its worst-case running time.
+
+    asdfsaf
+16. asdas
 
    
 
