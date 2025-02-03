@@ -186,8 +186,15 @@ No more swaps will be performed in this iteration of the outer loop since the la
 
     Given that $S$ is a set, if  $x/2 \in S$, then it cannot appear twice. Therefore $x/2$ cannot be a solution and can be removed from $S$. We first sort the elements in $S$, which takes $\Theta(n \log n)$ time. For each element $y \in S$, we do a binary search fo $x-y$ in $S$, which takes $\Theta(\log n)$ time in the worst case. Since there are at most $n$ of $y$, the worst-case runtime for all the binary searches is $\Theta (n \log n)$. Hence the running time of our algorithm is $\Theta (n \log n)$.
     
-18. adsdf
-19. asdfads
+18. Consider the searching problem:
+
+    **Input**: A sequence of $n$ numbers $(a_1, a_2, \ldots, a_n)$ stored in array $A[1:n]$ and a value $x$.
+    **Output**: An index $i$ such that $x$ equals $A[i]$ or the special value `NIL` if $x$ does not appear in $A$.
+
+    Write pseudocode for **linear search**, which scans through the array from beginning to end, looking for $x$. Using a loop invariant, prove that your algorithm is correct. Make sure that your loop invariant fulfills the three necessary properties.
+
+    asdfad
+20. asdfads
 
    
 
