@@ -218,6 +218,12 @@ def mergeSort(s):
 
 ### 4.2. Insertion Sort
 
+A good algorithm for sorting a small number of elements. It works the way you might sort a hand of playing cards:
+- Start with an empty left hand and the cards face down on the table.
+- Then remove one card at a time from the table, and insert it into the correct position in the left hand.
+- To find the correct position for a card, compare it with each of the cards already in the hand, from right to left.
+- At all times, the cards held in the left hand are sorted, and these cards were originally the top cards of the pile on the table.
+
 ```python
 def insertionSort(x): # S is a list
   n = len(S)
