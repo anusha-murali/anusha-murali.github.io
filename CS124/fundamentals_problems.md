@@ -140,7 +140,21 @@ f_6(n) = \begin{cases}
 the end of the $i$-th iteration $A[i]$ then holds the largest element.
      
       3. Prove that after the $i$-th iteration of the outer loop, indices 0 to $i$ of the array are sorted.
+   
+         We shall prove this using induction.
 
+         **Base case**: After the first iteration of the outer loop, the subarray of length one at index 0 is sorted.
+
+         **Inductive hypothesis**: Suppose it is true for some $1 \leq i < n$ that after the $i$-th iteration of the outer loop, indices 0 to $i$ of the array are sorted.
+
+         **Inductive step**: We can now show that after the next iteration of the outer loop, the $i + 1$th iteration, indices 0 to $i + 1$ of the array are sorted.
+To do this, let’s prove that after the $j$-th iteration of the inner loop, the first $j$ elements are sorted.
+Before the iteration, let’s split the current first $i$ elements into two parts, $A[0], \ldots, A[k]$, and $A[k + 1], \ldots, A[i]$, such that the first part has everything less than or equal to the value in $A[i + 1]$ and the second has everything greater. These two parts remain sorted in increasing order, as given by our inductive hypothesis. (Note that the first part can be of length 0 when $A[i +1]$ is the smallest element encountered so far.)
+When the inner loop iterates through $A[0], \ldots, A[k]$, no swaps are made.
+When the inner loop iterates through $A[k + 1], \ldots, A[i]$, it will always be true that the index currently being iterated on has an value greater than or equal to the value stored at $A[i +1]$ because $A[k + 1] \geq A[i]$. Because $A[k + 1], \ldots, A[i]$ are sorted, we will be swapping them into index $i + 1$ in increasing order and swapping them out only when a bigger element is encountered. This means everything that is at least as small as the current value of $A[i + 1]$ has already been iterated upon, and $A[i +1]$ is inserted after them. By the time we get to the iteration to swap $A[i]$ and $A[i + 1]$, we move the largest element of $A$ to $A[i + 1]$, and the final swap makes the first $A[i + 1]$ elements corrected sorted.
+No more swaps will be performed in this iteration of the outer loop since the largest element is already $A[i + 1]$.
+
+**Conclusion**: By the principle of mathematical induction, it is true for all $1 \leq i \leq n$ that after the $i$-th iteration of the outer loop, indices 0 to $i$ of the array are sorted.
 
 
 14. adfsda
