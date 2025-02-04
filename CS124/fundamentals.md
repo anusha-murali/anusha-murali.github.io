@@ -277,8 +277,9 @@ def mergeSort(A):
 
 **Example** The following example illustrates how the above merge sort algorithm sorts the initially unordered sequence $A = [5, 2, 4, 7, 1, 3, 2, 6]$.
 
+<p align="center">
 <img width="400" alt="merge_sort" src="https://github.com/user-attachments/assets/1216e2af-dba5-4cb5-a86e-a79c75e2c86f" />
-
+</p>
 
 **Recurrence relation**: $T(n) \leq 2T(n/2) + n - 1$. This is because each call of `mergeSort()` in turn makes two recursive calls to `mergeSort()` and performs a linear time merge.
 
