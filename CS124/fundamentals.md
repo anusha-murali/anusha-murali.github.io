@@ -253,13 +253,20 @@ def merge(s,t)
 The function `mergeSort()` uses the above `merge()` to recursively merge two sorted lists:
 
 ```python
-def mergeSort(s):
-  if len(s) == 1: return s
-  split(s, s1, s2)
-  s1 = mergeSort(s1)
-  s2 = mergeSort(s2)
-  return merge(s1,s2)
+def mergeSort(A):
+  if len(A) <= 1:
+    return A
+
+  middle = len(A) // 2
+  leftHalf = A[:middle]
+  rightHalf = A[middle:]
+
+  sortedLeft = mergeSort(leftHalf)
+  sortedRight = mergeSort(rightHalf)
+
+  return merge(sortedLeft, sortedRight)
 ```
+
 **Recurrence relation**: $T(n) \leq 2T(n/2) + n - 1$. This is because each call of `mergeSort()` in turn makes two recursive calls to `mergeSort()` and performs a linear time merge.
 
 **Runtime**: From the Master theorem, we find $T(n) = \Theta(n \log n)$.
