@@ -200,17 +200,6 @@ A good algorithm for sorting a small number of elements. It works the way you mi
 - At all times, the cards held in the left hand are sorted, and these cards were originally the top cards of the pile on the table.
 
 ```python
-def insertionSort(x): # S is a list
-  n = len(S)
-  for i in range(n-1):
-    j = i
-    while j > 0 and S[j+1] < S[j]:
-      S[j], S[j+1] = S[j+1], S[j] # swap
-      j = j-1
-  return S
-```
-
-```python
 def insertionSort(A):
   for i in range(1, len(A)):
       key = A[i]
