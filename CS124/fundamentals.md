@@ -240,14 +240,22 @@ Merge Sort is a sorting algorithm based on divide and conquer. Its worst-case ru
 We first define the function `merge()`, which takes two unsorted lists and outputs a single sorted list. 
 
 ```python
-def merge(s,t)
-  if not s: return t
-  if not t: return s
-  if s[0] <= t[0]:
-    u = pop(s)
-  else:
-    u = pop(t)
-  return u 
+def merge(left, right)
+  result = []
+  i = j = 0
+
+  while i < len(left) and j < len(len(right):
+      if left[i] < right[j]:
+          result.append(left[i])
+          i += 1
+      else:
+          result.append(right[j])
+          j += 1
+
+  result.extend(left[i:])
+  result.extend(right[j:])
+
+  return result
 ```
 
 The function `mergeSort()` uses the above `merge()` to recursively merge two sorted lists:
