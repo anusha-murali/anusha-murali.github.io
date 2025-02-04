@@ -209,8 +209,6 @@ def insertionSort(A):
   return A
 ```
 
-**Insertion Sort Visualizer**: A nice graphical visualizer of insertion sort can be found [here](https://opendsa-server.cs.vt.edu/OpenDSA/AV/Sorting/insertionsortAV.html) and [here](https://www.hackerearth.com/practice/algorithms/sorting/insertion-sort/visualize/).
-
 In the best case, the input list $A$ is already sorted, so the check $A[j] < A[j-1]$ in the `while` loop fails. Hence the best case runtime is the cost of the `for` loop, which is $O(n)$.
 
 In the worst case, the input list $A$ is in reverse order, so we will go through the `while` loop every time, and the runtime is obviously $O(n^2)$.
@@ -224,6 +222,8 @@ In the worst case, the input list $A$ is in reverse order, so we will go through
 </p>
 
 Note that $i$ indexes the "current card" being inserted into the hand. Elements to the left of $A[i]$ that are greater than $A[i]$ move one position to the right, and $A[i]$ moves into the evacuated position. The heavy vertical lines separate the part of the array in which an iteration works - $A[1:i]$ - from the part of the array that is unaffected by this iteration - $A[i + 1:n]$. The last part of the figure shows the final sorted array.
+
+**Insertion Sort Visualizer**: A nice graphical visualizer of insertion sort can be found [here](https://opendsa-server.cs.vt.edu/OpenDSA/AV/Sorting/insertionsortAV.html) and [here](https://www.hackerearth.com/practice/algorithms/sorting/insertion-sort/visualize/).
 
 ### 4.2. Merge Sort
 
