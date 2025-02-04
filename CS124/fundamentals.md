@@ -235,7 +235,7 @@ Another common sorting approach is to use **divide and conquer**:
     - ***Base case***: If the sub-problems are small enough, just solve them by brute force.
   - **Combine** the subproblem solutions to give a solution to the original problem.
 
-
+Merge Sort is a sorting algorithm based on divide and conquer. Its worst-case running time has a lower order of growth than insertion sort.
 
 We first define the function `merge()`, which takes two unsorted lists and outputs a single sorted list. 
 
