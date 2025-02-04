@@ -232,7 +232,10 @@ The insertion sort is **incremental**: having sorted the first $i-1$ elements, w
 Another common sorting approach is to use **divide and conquer**: 
   - **Divide** the problem into a number of subproblems that are smaller instances of the same problem.
   - **Conquer** the subproblems by solving them recursively.
+    - ***Base case***: If the sub-problems are small enough, just solve them by brute force.
   - **Combine** the subproblem solutions to give a solution to the original problem.
+
+
 
 We first define the function `merge()`, which takes two unsorted lists and outputs a single sorted list. 
 
