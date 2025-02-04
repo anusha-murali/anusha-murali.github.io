@@ -212,6 +212,10 @@ def insertionSort(A):
   return A
 ```
 
+In the best case, the input list $A$ is already sorted, so the check $A[j] > key$ in the `while` loop fails. Hence the best case runtime is the cost of the `for` loop, which is $O(n)$.
+
+In the worst case, the input list $A$ is in reverse order, so we will go through the `while` loop every time, and the runtime is obviously $O(n^2)$.
+
 **Runtime** $O(n^2)$.
 
 **Example**
