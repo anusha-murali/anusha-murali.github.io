@@ -227,7 +227,14 @@ Note that $i$ indexes the "current card" being inserted into the hand. Elements 
 
 ### 4.2. Merge Sort
 
-We first define the function *merge()*, which takes two unsorted lists and outputs a single sorted list. 
+The insertion sort is **incremental**: having sorted the first $i-1$ elements, we place $A[i]$ correctly, so that $A[0:i]$ is sorted.
+
+Another common sorting approach is to use **divide and conquer**: 
+  - **Divide** the problem into a number of subproblems that are smaller instances of the same problem.
+  - **Conquer** the subproblems by solving them recursively.
+  - **Combine** the subproblem solutions to give a solution to the original problem.
+
+We first define the function `merge()`, which takes two unsorted lists and outputs a single sorted list. 
 
 ```python
 def merge(s,t)
@@ -240,7 +247,7 @@ def merge(s,t)
   return u 
 ```
 
-The function *mergeSort()* uses the above *merge()* to recursively merge two sorted lists:
+The function `mergeSort()` uses the above `merge()` to recursively merge two sorted lists:
 
 ```python
 def mergeSort(s):
@@ -250,7 +257,7 @@ def mergeSort(s):
   s2 = mergeSort(s2)
   return merge(s1,s2)
 ```
-**Recurrence relation**: $T(n) \leq 2T(n/2) + n - 1$. This is because each call of *mergeSort()* in turn makes two recursive calls to *mergeSort()* and performs a linear time merge.
+**Recurrence relation**: $T(n) \leq 2T(n/2) + n - 1$. This is because each call of `mergeSort()` in turn makes two recursive calls to `mergeSort()` and performs a linear time merge.
 
 **Runtime**: From the Master theorem, we find $T(n) = \Theta(n \log n)$.
 
