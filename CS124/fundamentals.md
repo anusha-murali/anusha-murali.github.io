@@ -209,6 +209,20 @@ def insertionSort(x): # S is a list
       j = j-1
   return S
 ```
+
+```python
+def insertionSort(A):
+  for i in range(1, len(A)):
+      key = A[i]
+      # Insert key into the sorted subarray A[0:i-1]
+      j = i - 1
+      while j >= 0 and A[j] > key:
+          A[j+1] = A[j]
+          j = j - 1
+      A[j+1] = key    # Insert key at the correct position
+  return A
+```
+
 **Runtime** $O(n^2)$.
 
 **Example**
