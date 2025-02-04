@@ -201,6 +201,16 @@ A good algorithm for sorting a small number of elements. It works the way you mi
 
 ```python
 def insertionSort(A):
+  for i in range(len(A)):
+      j = i   # Insert i'th element in the correct place
+      while (j != 0) and (A[j] < A[j-1]):
+          swap(A, j, j-1)
+          j -= 1
+  return A
+```
+
+```python
+def insertionSort(A):
   for i in range(1, len(A)):
       key = A[i]
       # Insert key into the sorted subarray A[0:i-1]
