@@ -209,18 +209,7 @@ def insertionSort(A):
   return A
 ```
 
-```python
-def insertionSort(A):
-  for i in range(1, len(A)):
-      key = A[i]
-      # Insert key into the sorted subarray A[0:i-1]
-      j = i - 1
-      while j >= 0 and A[j] > key:
-          A[j+1] = A[j]
-          j = j - 1
-      A[j+1] = key    # Insert key at the correct position
-  return A
-```
+**Insertion Sort Visualizer**: A nice graphical visualizer of insertion sort can be found [here](https://opendsa-server.cs.vt.edu/OpenDSA/AV/Sorting/insertionsortAV.html).
 
 In the best case, the input list $A$ is already sorted, so the check $A[j] > key$ in the `while` loop fails. Hence the best case runtime is the cost of the `for` loop, which is $O(n)$.
 
