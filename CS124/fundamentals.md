@@ -209,7 +209,7 @@ def insertionSort(A):
   return A
 ```
 
-**Insertion Sort Visualizer**: A nice graphical visualizer of insertion sort can be found [here](https://opendsa-server.cs.vt.edu/OpenDSA/AV/Sorting/insertionsortAV.html).
+**Insertion Sort Visualizer**: A nice graphical visualizer of insertion sort can be found [here](https://opendsa-server.cs.vt.edu/OpenDSA/AV/Sorting/insertionsortAV.html) and [here](https://www.hackerearth.com/practice/algorithms/sorting/insertion-sort/visualize/).
 
 In the best case, the input list $A$ is already sorted, so the check $A[j] > key$ in the `while` loop fails. Hence the best case runtime is the cost of the `for` loop, which is $O(n)$.
 
