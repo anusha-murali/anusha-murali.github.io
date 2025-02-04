@@ -191,7 +191,35 @@ $$
 
 ## 4. Sorting and Searching
 
-### 4.1. Merge Sort
+### 4.1. Insertion Sort
+
+A good algorithm for sorting a small number of elements. It works the way you might sort a hand of playing cards:
+- Start with an empty left hand and the cards face down on the table.
+- Then remove one card at a time from the table, and insert it into the correct position in the left hand.
+- To find the correct position for a card, compare it with each of the cards already in the hand, from right to left.
+- At all times, the cards held in the left hand are sorted, and these cards were originally the top cards of the pile on the table.
+
+```python
+def insertionSort(x): # S is a list
+  n = len(S)
+  for i in range(n-1):
+    j = i
+    while j > 0 and S[j+1] < S[j]:
+      S[j], S[j+1] = S[j+1], S[j] # swap
+      j = j-1
+  return S
+```
+**Runtime** $O(n^2)$.
+
+**Example**
+
+<p align="center">
+<img width="600" alt="insertion_sort" src="https://github.com/user-attachments/assets/b786c1f5-3734-4369-ba36-0afadd8019eb" />
+</p>
+
+Note that $i$ indexes the "current card" being inserted into the hand. Elements to the left of $A[i]$ that are greater than $A[i]$ move one position to the right, and $A[i]$ moves into the evacuated position. The heavy vertical lines separate the part of the array in which an iteration works - $A[1:i]$ - from the part of the array that is unaffected by this iteration - $A[i + 1:n]$. The last part of the figure shows the final sorted array.
+
+### 4.2. Merge Sort
 
 We first define the function *merge()*, which takes two unsorted lists and outputs a single sorted list. 
 
@@ -219,34 +247,6 @@ def mergeSort(s):
 **Recurrence relation**: $T(n) \leq 2T(n/2) + n - 1$. This is because each call of *mergeSort()* in turn makes two recursive calls to *mergeSort()* and performs a linear time merge.
 
 **Runtime**: From the Master theorem, we find $T(n) = \Theta(n \log n)$.
-
-### 4.2. Insertion Sort
-
-A good algorithm for sorting a small number of elements. It works the way you might sort a hand of playing cards:
-- Start with an empty left hand and the cards face down on the table.
-- Then remove one card at a time from the table, and insert it into the correct position in the left hand.
-- To find the correct position for a card, compare it with each of the cards already in the hand, from right to left.
-- At all times, the cards held in the left hand are sorted, and these cards were originally the top cards of the pile on the table.
-
-```python
-def insertionSort(x): # S is a list
-  n = len(S)
-  for i in range(n-1):
-    j = i
-    while j > 0 and S[j+1] < S[j]:
-      S[j], S[j+1] = S[j+1], S[j] # swap
-      j = j-1
-  return S
-```
-**Runtime** $O(n^2)$.
-
-**Example**
-
-<p align="center">
-<img width="600" alt="insertion_sort" src="https://github.com/user-attachments/assets/b786c1f5-3734-4369-ba36-0afadd8019eb" />
-</p>
-
-Note that $i$ indexes the "current card" being inserted into the hand. Elements to the left of $A[i]$ that are greater than $A[i]$ move one position to the right, and $A[i]$ moves into the evacuated position. The heavy vertical lines separate the part of the array in which an iteration works - $A[1:i]$ - from the part of the array that is unaffected by this iteration - $A[i + 1:n]$. The last part of the figure shows the final sorted array.
 
 ### 4.3 Binary Search
 
