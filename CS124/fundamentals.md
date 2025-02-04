@@ -275,6 +275,10 @@ def mergeSort(A):
   return merge(sortedLeft, sortedRight)
 ```
 
+**Example**
+<img width="596" alt="merge_sort" src="https://github.com/user-attachments/assets/1216e2af-dba5-4cb5-a86e-a79c75e2c86f" />
+
+
 **Recurrence relation**: $T(n) \leq 2T(n/2) + n - 1$. This is because each call of `mergeSort()` in turn makes two recursive calls to `mergeSort()` and performs a linear time merge.
 
 **Runtime**: From the Master theorem, we find $T(n) = \Theta(n \log n)$.
