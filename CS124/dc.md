@@ -126,6 +126,39 @@ $$
 
 which yields a runtime of $T(n) = \Theta(n^{\log_2 7}) \approx \Theta(n^{2.81})$.
 
+### Strassen's Algorithm: Programming Assignment
+
+Strassen's divide and conquer matrix multiplication algorithm for $n$
+by $n$ matrices is asymptotically faster than the conventional
+$\O(n^3)$ algorithm.  This means that for sufficiently large values of
+$n$, Strassen's algorithm will run faster than the conventional
+algorithm.  For small values of $n$, however, the conventional
+algorithm may be faster.  Indeed, the textbook Algorithms in C (1990
+edition) suggests that $n$ would have to be in the thousands before
+offering an improvement to standard multiplication, and ``Thus the
+algorithm is a theoretical, not practical, contribution.''  Here we
+test this armchair analysis.
+
+Here is a key point, though (for any recursive algorithm!).  Since
+Strassen's algorithm is a recursive algorithm, at some point in the
+recursion, once the matrices are small enough, we may want to switch
+from recursively calling Strassen's algorithm and just do a
+conventional matrix multiplication.  That is, the proper way to do
+Strassen's algorithm is to not recurse all the way down to a *base
+case* of a 1 by 1 matrix, but to switch earlier and use conventional
+matrix multiplication.  That is, there's no reason to do a *base
+case* of a 1 by 1 matrix; it might be faster to use a larger-sized
+base case, as conventional matrix multiplication might be faster up to
+some reasonable size.  Let us define the ***cross-over point***
+between the two algorithms to be the value of $n$ for which we want to
+stop using Strassen's algorithm and switch to conventional matrix
+multiplication. The goal of this assignment is to implement the
+conventional algorithm and Strassen's algorithm and to determine their
+cross-over point, both analytically and experimentally. One important
+factor our simple analysis will not take into account is memory
+management, which may significantly affect the speed of your
+implementation.
+
 
 [Data Structures and Algorithms Table of Contents](./cs124.md)
 
