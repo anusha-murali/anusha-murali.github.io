@@ -112,8 +112,20 @@ Now, we can find the four entries of the product matrix as follows:
 $$
 \begin{align*}
 AE + BG &= -P_2 + P_4 + P_5 + P_6\\
+AF + BH\ &= P_1 + P_2 \\
+CE + DG &= P_3 + P_4 \\
+CF + DH &= P_1 - P_3 + P_5 + P_7
 \end{align*}
 $$
+
+Since there are only seven multiplications in computing $P_1, P_2, \ldots, P_7$, our recurrence becomes,
+
+$$
+T(n) = 7T(n/2) + \Theta(n^2),
+$$
+
+which yields a runtime of $T(n) = \Theta(n^{\log_2 7}) \approx \Theta(n^{2.81})$.
+
 
 [Data Structures and Algorithms Table of Contents](./cs124.md)
 
