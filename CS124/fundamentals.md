@@ -15,6 +15,11 @@ When we have only an **asymptotic upper bound**, we use $O$-notation.
 
 $O(g(n)) = \\{f(n):$ there exist positive constants $c$ and $n_0$ such that $0  \leq f(n) \leq cg(n)$ for all $n \geq n_0 \\}$.
 
+$g(n)$ is an ***asymptotic upper bound*** for $f(n)$.
+
+> **Example**:
+> $2n^2 = O(n^3)$, with $c = 1$ and $n_0 = 2$.
+> Examples of functions in $O(n^2)$: $f(n) = n^2, f(n) = n^2 + n, f(n) = 1000n^2 + 1000n, f(n) = n, f(n) =  n/10000, f(n) =  n^{1.9999}, f(n) = n^2/{\lg \lg \lg n}$.
 
 ### 1.2. $\Omega$-notation
 
