@@ -23,7 +23,7 @@ $$
 
 where the 2 comes from the two comparisons for the maximum and minimum in the *combine* step. Using induction, we find $T(n) = 3n/2 -2$, which provides a 25% speed up over the naive approach.
 
-## 2. Integer Multiplication
+## 2. Integer Multiplication: Karatsuba's Algorithm
 
 The "grade-school" algorithm for multiplying two $n$-digit numbers $x,y$ takes $\Theta(n^2)$ time. Let us try a divide and conquer approach as follows.
 
@@ -40,7 +40,23 @@ T(n) = 4T(n/2) + O(n),
 $$
 where $4T(n/2)$ comes from solving the four smaller subproblems on $n/2$-digit numbers, and the $O(n)$ term comes from the time to combine these problems into the final solution. 
 
-The above recurrence has the solution $T(n) = \Theta(n^2)$, which is the same as the "grade-school" multiplication algorithm.
+Unfortunately, the above recurrence has the solution $T(n) = \Theta(n^2)$, which is the same as the "grade-school" multiplication algorithm.
+
+The ***key trick** is to notice is that four multiplications is too many and we would already get a polynomial improvement in the asymptotic runtime if we could reduce it to three.
+
+The trick is that we do not need to compute ad and bc separately; we only need their sum ad + bc. Now note that,
+
+$$
+(a + b)(c + d) = (ad + bc) + (ac + bd). 
+$$
+
+So if we calculate $ac, bd,$ and $(a + b)(c + d)$, we can compute $ad + bc$ by the subtracting the first two terms from the third! Of course, we have to do a bit more addition, but since the bottleneck to speeding up this multiplication algorithm is the number of smaller multiplications required, that does not matter. The recurrence for $T(n)$ is now,
+
+$$
+T(n) = 3T(n/2) + O(n),
+$$
+
+which has the solution $T(n) = n^{\log_2 3} \approx n^{1.59}$, which is an improvement over the $O(n^2)$ algorithm.
 
 [Data Structures and Algorithms Table of Contents](./cs124.md)
 
