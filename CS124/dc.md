@@ -42,7 +42,7 @@ where $4T(n/2)$ comes from solving the four smaller subproblems on $n/2$-digit n
 
 Unfortunately, the above recurrence has the solution $T(n) = \Theta(n^2)$, which is the same as the "grade-school" multiplication algorithm.
 
-The ***key trick** is to notice is that four multiplications is too many and we would already get a polynomial improvement in the asymptotic runtime if we could reduce it to three.
+The ***key trick*** is to notice is that four multiplications is too many and we would already get a polynomial improvement in the asymptotic runtime if we could reduce it to three.
 
 The trick is that we do not need to compute ad and bc separately; we only need their sum ad + bc. Now note that,
 
