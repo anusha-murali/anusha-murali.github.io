@@ -285,7 +285,7 @@ def mergeSort(A):
 <img width="400" alt="merge_sort" src="https://github.com/user-attachments/assets/1216e2af-dba5-4cb5-a86e-a79c75e2c86f" />
 </p>
 
-**Merge Sort Visualizer**: A nice graphical visualizer of merge sort can be found [here](https://opendsa-server.cs.vt.edu/embed/mergesortAV).
+> **Merge Sort Visualizer**: A nice graphical visualizer of merge sort can be found [here](https://opendsa-server.cs.vt.edu/embed/mergesortAV).
 
 ### 4.3 Binary Search
 
