@@ -64,7 +64,7 @@ $$
 > ***Example***
 > $5n = o(n^2)$, but $5n^2 \neq o(n^2)$
 >
-> $n^{1.9999} = o(n^2)$, $n^2/\lg n = o(n^2)$, $n^2 \neq o(n^2)$ (just like $2 \not < 2$, $n^2/1000 \neq o(n^2)$.
+> $n^{1.9999} = o(n^2)$, $n^2/\lg n = o(n^2)$, $n^2 \neq o(n^2)$ (just like $2 \not < 2$), $n^2/1000 \neq o(n^2)$.
 
 ### 1.5. $\omega$-notation
 
