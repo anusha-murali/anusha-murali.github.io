@@ -19,7 +19,7 @@ $g(n)$ is an ***asymptotic upper bound*** for $f(n)$.
 
 > **Example**:
 > $2n^2 = O(n^3)$, with $c = 1$ and $n_0 = 2$.
-> Examples of functions in $O(n^2)$: $f(n) = n^2, f(n) = n^2 + n, f(n) = 1000n^2 + 1000n, f(n) = n, f(n) =  n/10000, f(n) =  n^{1.9999}, f(n) = n^2/{\lg \lg \lg n}$.
+> Examples of functions in $O(n^2)$: $f(n) = n^2, f(n) = n^2 + n,$ $f(n) = 1000n^2 + 1000n, f(n) = n, f(n) =  n/10000, f(n) =  n^{1.9999}, f(n) = n^2/{\lg \lg \lg n}$.
 
 ### 1.2. $\Omega$-notation
 
