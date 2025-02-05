@@ -107,6 +107,13 @@ P_4 = D(G-E) & ~~~& ~~~&
 \end{matrix}
 $$
 
+Now, we can find the four entries of the product matrix as follows:
+
+$$
+\begin{align*}
+AE + BG &= -P_2 + P_4 + P_5 + P_6\\
+\end{align*}
+$$
 
 [Data Structures and Algorithms Table of Contents](./cs124.md)
 
