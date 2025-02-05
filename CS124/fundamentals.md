@@ -70,13 +70,15 @@ $$
 
 $\omega(g(n)) = \\{f(n):$ for any positive constant $c > 0$, there exists a constant $n_0 > 0$ such that $0  \leq  cg(n) < f(n)$ for all $n \geq n_0 \\}$.
 
-Example: $n^2/3 = \omega(n)$, but $n^2/3 \neq \omega(n^2)$.
 
 If $f(n) = \omega(g(n))$, then
 
 $$
 \lim_{n \rightarrow \infty} \frac{f(n)}{g(n)} = \infty.
 $$
+
+>***Examples***: $n^{2.0001} = \omega(n^2)$, $n^2\lg n = \omega(n^2)$, $n^2 \neq \omega(n^2)$.
+>$n^2/3 = \omega(n)$, but $n^2/3 \neq \omega(n^2)$
 
 ### 1.6. Comparing functions
 
