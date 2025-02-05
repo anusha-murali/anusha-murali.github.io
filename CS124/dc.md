@@ -6,7 +6,7 @@ The **divide and conquer** paradigm (used for merge sort) uses the following ste
     - ***Base case***: If the sub-problems are small enough, just solve them by brute force.
   - **Combine** the subproblem solutions to give a solution to the original problem.
 
-## Seaching for maximum and minimum in a list
+## 1. Seaching for maximum and minimum in a list
 
 The naive approach to finding the maximum and minimum in a list requires at most $n-1$ comparisons to compute each of the maximum and the minimum element. Using the divide and conquer (or divide and combine) approach, we can achieve this using $3n/2 - 2) comparisons.
 
@@ -22,6 +22,25 @@ T(n) = 2T(n/2) + 2,
 $$
 
 where the 2 comes from the two comparisons for the maximum and minimum in the *combine* step. Using induction, we find $T(n) = 3n/2 -2$, which provides a 25% speed up over the naive approach.
+
+## 2. Integer Multiplication
+
+The "grade-school" algorithm for multiplying two $n$-digit numbers $x,y$ takes $\Theta(n^2)$ time. Let us try a divide and conquer approach as follows.
+
+Let us represent $x$ and $y$ as, $x = 10^{n/2}a + b, y = 10^{n/2}c + d$, where $a, b, c, d$ are $n/2$ digit numbers. Then,
+
+$$
+xy = 10^n ac + 10^{n/2} (ad + bc) + bd.
+$$
+
+Letting $T(n)$ be the time to multiply two $n$-digit numbers, we obtain the recursion,
+
+$$
+T(n) = 4T(n/2) + O(n),
+$$
+where $4T(n/2)$ comes from solving the four smaller subproblems on $n/2$-digit numbers, and the $O(n)$ term comes from the time to combine these problems into the final solution. 
+
+The above recurrence has the solution $T(n) = \Theta(n^2)$, which is the same as the "grade-school" multiplication algorithm.
 
 [Data Structures and Algorithms Table of Contents](./cs124.md)
 
