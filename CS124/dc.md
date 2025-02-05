@@ -8,7 +8,7 @@ The **divide and conquer** paradigm (used for merge sort) uses the following ste
 
 ## 1. Seaching for maximum and minimum in a list
 
-The naive approach to finding the maximum and minimum in a list requires at most $n-1$ comparisons to compute each of the maximum and the minimum element. Using the divide and conquer (or divide and combine) approach, we can achieve this using $3n/2 - 2) comparisons.
+The naive approach to finding the maximum and minimum in a list requires at most $n-1$ comparisons to compute each of the maximum and the minimum element. Using the divide and conquer (or divide and combine) approach, we can achieve this using $3n/2 - 2$ comparisons.
 
 For simplicity, let's assume that the list size is a power to two. We use the following three steps:
 - *Divide* the list into two equal sized sublists
