@@ -46,6 +46,11 @@ $\Theta(g(n)) = \\{f(n):$ there exist positive constants $c_1, c_2$ and $n_0$ su
 
 **Theorem**: For any two functions $f(n)$ and $g(n)$, we have $f(n) = \Theta(g(n))$ if and only if $f(n) = O(g(n))$ and $f(n) = \Omega(g(n))$.
 
+$g(n)$ is an ***asymptotically tight bound*** for $f(n)$.
+
+> **Example**: $n^2/2 - 2n = \Theta(n^2)$, with $c_1 = 1/4, c2 = 1/2,$ and $n_0 = 8$.
+
+
 ### 1.4. $o$-notation
 
 $o(g(n)) = \\{f(n):$ for any positive constant $c > 0$, there exists a constant $n_0 > 0$ such that $0  \leq f(n) < cg(n)$ for all $n \geq n_0 \\}$.
