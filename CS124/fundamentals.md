@@ -20,7 +20,7 @@ $g(n)$ is an ***asymptotic upper bound*** for $f(n)$.
 > **Example**:
 > $2n^2 = O(n^3)$, with $c = 1$ and $n_0 = 2$.
 > 
-> Examples of functions in $O(n^2)$: $f(n) = n^2, f(n) = n^2 + n,$ $f(n) = 1000n^2 + 1000n, f(n) = n, f(n) =  n/10000, f(n) =  n^{1.9999}, f(n) = n^2/{\lg \lg \lg n}$.
+> Examples of functions in $O(n^2)$: $f(n) = n^2, f(n) = n^2 + n, f(n) = 1000n^2 + 1000n,$ $ f(n) = n, f(n) =  n/10000, f(n) =  n^{1.9999}, f(n) = n^2/{\lg \lg \lg n}$.
 
 ### 1.2. $\Omega$-notation
 
@@ -28,15 +28,16 @@ $\Omega$-notation provides an **asymptotic lower bound**.
 
 $\Omega(g(n)) = \\{f(n):$ there exist positive constants $c$ and $n_0$ such that $0  \leq  cg(n) \leq f(n)$ for all $n \geq n_0 \\}$.
 
+$g(n)$ is an ***asymptotic lower bound*** for $f(n)$.
 
-**Theorem**: For any two functions $f(n)$ and $g(n)$, we have $f(n) = \Theta(g(n))$ if and only if $f(n) = O(g(n))$ and $f(n) = \Omega(g(n))$.
-
+> **Example**:
 ### 1.3. $\Theta$-notation
 
 The $\Theta$-notation asymptotically bounds a function from above and below.
 
 $\Theta(g(n)) = \\{f(n):$ there exist positive constants $c_1, c_2$ and $n_0$ such that $0 \leq c_1g(n) \leq f(n) \leq c_2g(n)$ for all $n \geq n_0 \\}$.
 
+**Theorem**: For any two functions $f(n)$ and $g(n)$, we have $f(n) = \Theta(g(n))$ if and only if $f(n) = O(g(n))$ and $f(n) = \Omega(g(n))$.
 
 ### 1.4. $o$-notation
 
