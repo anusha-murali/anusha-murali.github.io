@@ -170,14 +170,25 @@ implementations as efficient as possible.  The actual cross-over
 point, which you would like to make as small as possible, will depend
 on how efficiently you implement Strassen's algorithm.  Your implementation
 should work for any size matrices, not just those whose dimensions are a power
-of 2.
-
-To test your algorithm, you might try matrices where each entry is
+of 2. To test your algorithm, you might try matrices where each entry is
 randomly selected to be 0 or 1; similarly, you might try matrices
 where each entry is randomly selected to be 0, 1 or 2, or instead 0,
 1, or $-1$.  We will test on integer matrices, possibly of this form.
 (You may assume integer inputs.)  You need not try all of these, but
 do test your algorithm adequately.
+3. Triangle in random graphs:  Recall that you can represent the
+adjacency matrix of a graph by a matrix $A$.  Consider an undirected
+graph.  It turns out that $A^3$ can be used to determine the number
+of triangles in a graph: the $(ij)$th entry
+in the matrix $A^2$ counts the paths from $i$ to $j$ of lenth two,
+and the $(ij)$th entry in the matrix $A^3$ counts the path from $i$ to
+$j$ of length 3.  To count the number of triangles in in graph, we can
+simply add the entries in the diagonal, and divide by 6.  This is because
+the $j$th diagonal entry counts the number of paths of length 3 from $j$
+to $j$.  Each such path is a triangle, and each triangle is counted 6 times
+(for each of the vertices in the triangle, it is counted once in each direction).  
+
+  Create a random graph on $1024$ vertices where each edge is included with probability $p$ for each of the following values of $p$:  $p = 0.01, 0.02, 0.03, 0.04,$ and $0.05$.  Use your (Strassen's) matrix multiplication code to count the number of triangles in each of these graphs, and compare it to the expected number of triangles, which is ${1024 \choose 3} p^3$.  Create a chart showing your results compared to the epectation.  
 
 
 [Data Structures and Algorithms Table of Contents](./cs124.md)
