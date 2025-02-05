@@ -277,7 +277,7 @@ def mergeSort(A):
 
 **Recurrence relation**: $T(n) \leq 2T(n/2) + n - 1$. This is because each call of `mergeSort()` in turn makes two recursive calls to `mergeSort()` and performs a linear time merge.
 
-**Runtime**: From the Master theorem, we find $T(n) = \Theta(n \log n)$.
+**Runtime**: From the Master theorem, we find $T(n) = \Theta(n \log_2 n)$.
 
 **Example** The following example illustrates how the above merge sort algorithm sorts the initially unordered sequence $A = [5, 2, 4, 7, 1, 3, 2, 6]$.
 
