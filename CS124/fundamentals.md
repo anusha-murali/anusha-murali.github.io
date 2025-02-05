@@ -34,6 +34,7 @@ $g(n)$ is an ***asymptotic lower bound*** for $f(n)$.
 
 > **Example**:
 > $\sqrt{n} = \Omega(\lg n)$, with $c = 1$ and $n_0 = 16$.
+> 
 > Examples of functions in $\Omega(n^2)$:
 > $n^2, n^2 + n, n^2 - n, 1000n^2 + 1000n, n^3, n^{2.00001}, n^2 \lg \lg \lg n, 2^{2^n}$.
 
