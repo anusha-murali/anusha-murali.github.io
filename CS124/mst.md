@@ -1,6 +1,6 @@
 # Minimum Spanning Tree (MST)
 
-A tree is connected, acyclic, and has $|V|-1$ edges (any two implies the third).
+A tree is connected, acyclic, and has $\|V\|-1$ edges (any two implies the third).
 
 A spanning tree is a subgraph of a connected, undirected graph that includes all the vertices of the graph.
 
