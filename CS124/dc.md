@@ -58,6 +58,8 @@ $$
 
 which has the solution $T(n) = n^{\log_2 3} \approx n^{1.59}$, which is an improvement over the $O(n^2)$ algorithm.
 
+## Matrix Multiplication: Strassen's Algorithm
+
 [Data Structures and Algorithms Table of Contents](./cs124.md)
 
 * * *
