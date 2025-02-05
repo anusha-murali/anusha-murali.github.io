@@ -100,7 +100,10 @@ The ***key trick*** is to bring the number of subproblems we generate down from 
 
 $$
 \begin{matrix}
-P_1 = A(F-H) & ~~~& ~~~& P_5 = (A+D)(E+H)
+P_1 = A(F-H) & ~~~& ~~~& P_5 = (A+D)(E+H) \\
+P_2 = (A+B)H &~~~ & ~~~& P_6 = (B-D)(G+H) \\
+P_3 = (C+D)E &~~~ & ~~~& P_7 = (C-A)(E+F) \\
+P_4 & D(G-E) & 
 \end{matrix}
 $$
 
