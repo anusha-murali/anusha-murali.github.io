@@ -15,6 +15,14 @@ For simplicity, let's assume that the list size is a power to two. We use the fo
 - Recursively *solve* for the maximum and minimum for each sublist
 - *Combine* these two subproblem solutions by comparing the two minimums and comparing the two maximums.
 
+**Runtime** Let $T(n)$ denote the number of comparisons needed for the list size is $n$. The base case is $T(2) = 1$. Therefore, we have the following recursion:
+
+$$
+T(n) = 2T(n/2) + 2,
+$$
+
+where the 2 comes from the two comparisons for the maximum and minimum in the *combine* step. Using induction, we find $T(n) = 3n/2 -2$, which provides a 25% speed up over the naive approach.
+
 [Data Structures and Algorithms Table of Contents](./cs124.md)
 
 * * *
