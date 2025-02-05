@@ -88,6 +88,15 @@ CE + DG & CF + DH
 .
 $$
 
+Hence, the time to multiply two $n \times n$ matrices using the above approach is,
+
+$$
+T(n) = 8T(n/2) + \Theta(n^2),
+$$
+
+where the factor 8 comes from the eight matrix multiplications, and the $\Theta(n^2)$ comes from the work required to sum together four pairs of matrices, since adding together two matrices takes $O(n^2)$ time. Hence, we see that this divide and conquer approach does not yet improve upon the naive "grade-school" algorithm.
+
+
 [Data Structures and Algorithms Table of Contents](./cs124.md)
 
 * * *
