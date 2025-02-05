@@ -266,7 +266,7 @@ No more swaps will be performed in this iteration of the outer loop since the la
    
        In practice, $k$ should be the largest list length on which insertion sort is faster than merge sort.
        
-24. adfsa
+24. 
 
    
 
