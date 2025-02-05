@@ -188,7 +188,7 @@ the $j$th diagonal entry counts the number of paths of length 3 from $j$
 to $j$.  Each such path is a triangle, and each triangle is counted 6 times
 (for each of the vertices in the triangle, it is counted once in each direction).
 
-Create a random graph on $1024$ vertices where each edge is included with probability $p$ for each of the following values of $p$:  $p = 0.01, 0.02, 0.03, 0.04,$ and $0.05$.  Use your (Strassen's) matrix multiplication code to count the number of triangles in each of these graphs, and compare it to the expected number of triangles, which is ${1024 \choose 3} p^3$.  Create a chart showing your results compared to the epectation.  
+  Create a random graph on $1024$ vertices where each edge is included with probability $p$ for each of the following values of $p$:  $p = 0.01, 0.02, 0.03, 0.04,$ and $0.05$.  Use your (Strassen's) matrix multiplication code to count the number of triangles in each of these graphs, and compare it to the expected number of triangles, which is ${1024 \choose 3} p^3$.  Create a chart showing your results compared to the epectation.  
 
 
 [Data Structures and Algorithms Table of Contents](./cs124.md)
