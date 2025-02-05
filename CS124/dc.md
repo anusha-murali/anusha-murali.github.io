@@ -99,9 +99,9 @@ where the factor 8 comes from the eight matrix multiplications, and the $\Theta(
 The ***key trick*** is to bring the number of subproblems we generate down from 8. The Strassen's algorithm achieves this by first computing the following seven products:
 
 $$
-\begin{array*}
-P_1 &= A(F-H) 
-\end{array*}
+\begin{matrix}
+P_1 = A(F-H) & P_5 = (A+D)(E+H)
+\end{matrix}
 $$
 
 
