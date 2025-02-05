@@ -78,6 +78,7 @@ $$
 $$
 
 >***Examples***: $n^{2.0001} = \omega(n^2)$, $n^2\lg n = \omega(n^2)$, $n^2 \neq \omega(n^2)$.
+>
 >$n^2/3 = \omega(n)$, but $n^2/3 \neq \omega(n^2)$
 
 ### 1.6. Comparing functions
