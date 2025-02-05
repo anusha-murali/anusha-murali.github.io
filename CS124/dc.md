@@ -94,7 +94,15 @@ $$
 T(n) = 8T(n/2) + \Theta(n^2),
 $$
 
-where the factor 8 comes from the eight matrix multiplications, and the $\Theta(n^2)$ comes from the work required to sum together four pairs of matrices, since adding together two matrices takes $O(n^2)$ time. Hence, we see that this divide and conquer approach does not yet improve upon the naive "grade-school" algorithm.
+where the factor 8 comes from the eight matrix multiplications, and the $\Theta(n^2)$ comes from the work required to sum together four pairs of matrices, since adding together two matrices takes $O(n^2)$ time. From the Master Theorem, we see the runtime of this algorithm is $O(n^3)$. Hence, we see that this divide and conquer approach does not yet improve upon the naive "grade-school" algorithm. 
+
+The ***key trick*** is to bring the number of subproblems we generate down from 8. The Strassen's algorithm achieves this by first computing the following seven products:
+
+$$
+\begin{array*}
+P_1 &= A(F-H) 
+\end{array*}
+$$
 
 
 [Data Structures and Algorithms Table of Contents](./cs124.md)
