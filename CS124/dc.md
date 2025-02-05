@@ -130,7 +130,7 @@ which yields a runtime of $T(n) = \Theta(n^{\log_2 7}) \approx \Theta(n^{2.81})$
 
 Strassen's divide and conquer matrix multiplication algorithm for $n$
 by $n$ matrices is asymptotically faster than the conventional
-$\O(n^3)$ algorithm.  This means that for sufficiently large values of
+$O(n^3)$ algorithm.  This means that for sufficiently large values of
 $n$, Strassen's algorithm will run faster than the conventional
 algorithm.  For small values of $n$, however, the conventional
 algorithm may be faster.  Indeed, the textbook Algorithms in C (1990
