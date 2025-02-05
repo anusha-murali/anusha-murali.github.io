@@ -70,6 +70,23 @@ $$
 
 We note that computation  of $Z_{ij}$ takes $O(n)$ time, and there are $n^2$ such computations required. Therefore, the traditional "grade-school" matrix multipilcation of $Z = XY$ takes $O(n^3)$ time.
 
+We will now attempt to improve upon this using divide and conquer as follows. For simplicity, we assume that $n$ is a power of two. We can break each $n \times n$ matrix into four submatrices, each of size $n/2 \times n/2$. Multiplying the original matrices can be broken down into eight matrix multiplications with some matrix additions:
+
+$$
+\begin{bmatrix}
+A & B \\
+C & D 
+\end{bmatrix}
+\begin{bmatrix}
+E & F \\
+G & H 
+\end{bmatrix} 
+= \begin{bmatrix}
+AE + BG & AF + BH \\
+CE + DG & CF + DH
+\end{bmatrix}
+.
+$$
 
 [Data Structures and Algorithms Table of Contents](./cs124.md)
 
