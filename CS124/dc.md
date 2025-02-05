@@ -82,7 +82,7 @@ E & F \\
 G & H 
 \end{bmatrix} 
 = \begin{bmatrix}
-AE + BG & AF + BH \\
+AE + BG & AF + BH\\
 CE + DG & CF + DH
 \end{bmatrix}
 .
@@ -100,7 +100,7 @@ The ***key trick*** is to bring the number of subproblems we generate down from 
 
 $$
 \begin{matrix}
-P_1 = A(F-H) & P_5 = (A+D)(E+H)
+P_1 = A(F-H) & ~~~& ~~~& P_5 = (A+D)(E+H)
 \end{matrix}
 $$
 
