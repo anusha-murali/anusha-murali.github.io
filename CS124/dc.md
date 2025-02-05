@@ -58,7 +58,18 @@ $$
 
 which has the solution $T(n) = n^{\log_2 3} \approx n^{1.59}$, which is an improvement over the $O(n^2)$ algorithm.
 
-## Matrix Multiplication: Strassen's Algorithm
+## 3. Matrix Multiplication: Strassen's Algorithm
+
+In this section, we will consider an approach to speed up matrix multiplication. Let us consider an $n \times n$ matrix $A$. Let $A_{ij}$ denote the entry of $A$ in the $i$-th row and $j$-th column, where $1 \leq i, j \leq n$.  
+
+Given two $n \times n$ matrices $X, Y$, the product $Z= XY$ is the $n \times n$ matrix such that for any indices $1 \leq i, j \leq n$,
+
+$$
+Z_{ij} = (XY)_{ij} = \sum_{k=1}^n X_{ik} Y{kj}.
+$$
+
+We note that computation  of $Z_{ij}$ takes $O(n)$ time, and there are $n^2$ such computations required. Therefore, the traditional "grade-school" matrix multipilcation of $Z = XY$ takes $O(n^3)$ time.
+
 
 [Data Structures and Algorithms Table of Contents](./cs124.md)
 
