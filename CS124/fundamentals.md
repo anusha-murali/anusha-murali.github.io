@@ -55,14 +55,16 @@ $g(n)$ is an ***asymptotically tight bound*** for $f(n)$.
 
 $o(g(n)) = \\{f(n):$ for any positive constant $c > 0$, there exists a constant $n_0 > 0$ such that $0  \leq f(n) < cg(n)$ for all $n \geq n_0 \\}$.
 
-Example: $5n = o(n^2)$, but $5n^2 \neq o(n^2)$.
-
 If $f(n) = o(g(n))$, then
 
 $$
 \lim_{n \rightarrow \infty} \frac{f(n)}{g(n)} = 0.
 $$
 
+> ***Example***
+> $5n = o(n^2)$, but $5n^2 \neq o(n^2)$
+>
+> $n^{1.9999} = o(n^2)$, $n^2/\lg n = o(n^2)$, $n^2 \neq o(n^2)$ (just like $2 \not < 2$, $n^2/1000 \neq o(n^2)$.
 
 ### 1.5. $\omega$-notation
 
