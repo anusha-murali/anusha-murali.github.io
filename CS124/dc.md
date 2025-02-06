@@ -186,7 +186,12 @@ $j$ of length 3.  To count the number of triangles in in graph, we can
 simply add the entries in the diagonal, and divide by 6.  This is because
 the $j$th diagonal entry counts the number of paths of length 3 from $j$
 to $j$.  Each such path is a triangle, and each triangle is counted 6 times
-(for each of the vertices in the triangle, it is counted once in each direction). Create a random graph on $1024$ vertices where each edge is included with probability $p$ for each of the following values of $p$:  $p = 0.01, 0.02, 0.03, 0.04,$ and $0.05$.  Use your (Strassen's) matrix multiplication code to count the number of triangles in each of these graphs, and compare it to the expected number of triangles, which is ${1024 \choose 3} p^3$.  Create a chart showing your results compared to the epectation.  
+(for each of the vertices in the triangle, it is counted once in each direction). Create a random graph on $1024$ vertices where each edge is included with probability $p$ for each of the following values of $p$:  $p = 0.01, 0.02, 0.03, 0.04,$ and $0.05$.  Use your (Strassen's) matrix multiplication code to count the number of triangles in each of these graphs, and compare it to the expected number of triangles, which is ${1024 \choose 3} p^3$.  Create a chart showing your results compared to the epectation.
+
+**Hints** It is hard to make the conventional algorithm inefficient; however, you may get better caching perfor- mance by looping through the variables in the right order (really, try it!). For Strassen’s algorithm:
+- Avoid excessive memory allocation and deallocation. This requires some thinking.
+- Avoid copying large blocks of data unnecessarily. This requires some thinking.
+- Your implementation of Strassen’s algorithm should work even when n is odd! This requires some additional work, and thinking. (One option is to pad with 0’s; how can this be done most effectively?) However, you may want to first get it to work when n is a power of 2 – this will get you most of the credit – and then refine it to work for more general values of $n$.
 
 
 [My solution to the above programming assignment](https://drive.google.com/file/d/1oX_03RZ8zfq3xS_NG55SYYkRstmKEyD4/view?usp=sharing)
