@@ -1,9 +1,9 @@
 # Kruskal's Algorithm
 
 1. Sort edges in ascending order of weight.
-2. Repeatedly add the lightest edge that does not create a cycle until we have $|V|-1$ edges.
+2. Repeatedly add the lightest edge that does not create a cycle until we have $\|V\|-1$ edges.
 
-**Runtime**: $O(|E| \log |V|)$ (Union-Find)
+**Runtime**: $O(\|E\| \log \|V\|)$ (Union-Find)
 
 [Back to Minimum Spanning Tree](./mst.md)
 
