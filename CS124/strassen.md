@@ -313,14 +313,13 @@ else:
     dim = 4
     fileName = "t4.txt"
     
-##    # Count the number of triangles in an undirected graph with 1024 vertices
-##    #
-##    pArray = [0.01, 0.02, 0.03, 0.04, 0.05]
-##    
-##    for p in pArray:
-##        A = randomMat(1024, p)
-##        n = countTriangles(A)
-##        print("p = ", p, "m = ", expectedNoOfTriangles(p), "n = ", n)
+# Count the number of triangles in an undirected graph with 1024 vertices
+#
+pArray = [0.01, 0.02, 0.03, 0.04, 0.05]
+for p in pArray:
+    A = randomMat(1024, p)
+    n = countTriangles(A)
+    print("p = ", p, "m = ", expectedNoOfTriangles(p), "n = ", n)
     
 # Read the input matrices A and B from the input file
 A, B = readMatrix(fileName, dim)
