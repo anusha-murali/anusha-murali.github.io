@@ -30,6 +30,13 @@ An MST is a spanning tree whose sum of edge weights is as small as possible.
 <img width="400" alt="mst1" src="https://github.com/user-attachments/assets/a297bfa8-7506-4aec-ab46-6556971ea4ab" />
 </p>
 
+**Properties of an MST**
+- It has $\|V\|-1$ edges
+- It has no cycles
+- It may not be unique
+
+**Building an MST**
+
 **Cut Property**: For any cut of a connected, undirected graph, the minimum weight edge that crosses the cut belongs to MST.
 
 Two popular algorithms for finding MST in a graph are:
