@@ -171,6 +171,7 @@ point, which you would like to make as small as possible, will depend
 on how efficiently you implement Strassen's algorithm.  Your implementation
 should work for any size matrices, not just those whose dimensions are a power
 of 2.
+
 To test your algorithm, you might try matrices where each entry is
 randomly selected to be 0 or 1; similarly, you might try matrices
 where each entry is randomly selected to be 0, 1 or 2, or instead 0,
