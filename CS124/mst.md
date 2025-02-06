@@ -4,7 +4,8 @@
 
 - A town has a set of houses and a set of roads.
 - A road connects 2 and only 2 houses.
-- A road connecting houses u and v has a repair cost w.u; v/. Goal: Repair enough (and no more) roads such that
+- A road connecting houses $u$ and $v$ has a repair cost $w(u,v)$.
+- ***Goal***: Repair enough (and no more) roads such that
     - everyone stays connected: can reach every house from all other houses, and
     - total repair cost is minimum.
 
