@@ -334,6 +334,8 @@ strassenGeneral(A, B, C)
 printDiagonals(C)
 ```
 
+[Back to Divide and Conquer](./dc.md)
+
 [Data Structures and Algorithms Table of Contents](./cs124.md)
 
 * * *
