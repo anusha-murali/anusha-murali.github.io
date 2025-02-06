@@ -53,6 +53,11 @@ An MST is a spanning tree whose sum of edge weights is as small as possible.
             A.append({u,v})
         return A
 ```
+We can use the loop invariant to show that this generic algorithm works.
+
+- **Initialization**: The empty set trivially satisfies the loop invariant.
+- **Maintenance**: Since only safe edges are added, $A$ remains a subset of some MST.
+- **Termination**: The loop must terminate by the time it considers all edges. All edges added to $A$ are in an MST, so upon termination. $A$ is a spanning tree that is also an MST.
 
 **Cut Property**: For any cut of a connected, undirected graph, the minimum weight edge that crosses the cut belongs to MST.
 
