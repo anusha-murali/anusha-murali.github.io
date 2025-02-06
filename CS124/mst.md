@@ -9,7 +9,7 @@ A minimum spanning tree (MST) is a subset of the edges of a **connected, edge-we
 An MST is a spanning tree whose sum of edge weights is as small as possible.
 
 <p align="center">
-<img width="600" alt="mst1" src="https://github.com/user-attachments/assets/7783c841-2c3e-47b1-b984-bdc45d99a018" />
+<img width="600" alt="mst1" src="https://github.com/user-attachments/assets/a297bfa8-7506-4aec-ab46-6556971ea4ab" />
 </p>
 
 **Cut Property**: For any cut of a connected, undirected graph, the minimum weight edge that crosses the cut belongs to MST.
