@@ -193,7 +193,8 @@ to $j$.  Each such path is a triangle, and each triangle is counted 6 times
 - Avoid copying large blocks of data unnecessarily. This requires some thinking.
 - Your implementation of Strassen’s algorithm should work even when n is odd! This requires some additional work, and thinking. (One option is to pad with 0’s; how can this be done most effectively?) However, you may want to first get it to work when n is a power of 2 – this will get you most of the credit – and then refine it to work for more general values of $n$.
 
-[My Python solution](./strassen.md)
+[**My Python solution**](./strassen.md)
+
 [My Written Report](https://drive.google.com/file/d/1oX_03RZ8zfq3xS_NG55SYYkRstmKEyD4/view?usp=sharing)
 
 [Data Structures and Algorithms Table of Contents](./cs124.md)
