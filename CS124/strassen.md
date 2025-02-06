@@ -45,14 +45,12 @@ def readMatrix(fileName, d):
                 
     return A, B
 
-
 # Add matrix A and B and store the result in matrix C
 def add(A, B, C):
     dim = len(A)
     for i in range(dim):
         for j in range(dim):
             C[i][j] = A[i][j] + B[i][j]
-
 
 # Subtract matrix B from A and store the result in matrix C
 def sub(A, B, C):
