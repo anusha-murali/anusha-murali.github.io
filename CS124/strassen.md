@@ -191,3 +191,59 @@ def strassen(A, B, C):
                 C[i + dim][j] = c21[i][j]
                 C[i + dim][j + dim] = c22[i][j]
 ```
+
+```python
+################################################################################
+##                                                                            ##
+##    Conventional ijk matrix multiplication, which takes O(n^3) runtime      ##
+##                                                                            ##
+################################################################################
+#
+def conventionalMatMul(A, B, C):
+
+    for i in range(len(A)):
+        for j in range(len(B[0])):
+            for k in range(len(B)):
+                C[i][j] += A[i][k] * B[k][j]
+                
+    return C
+
+################################################################################
+##                                                                            ##
+##       Generalized Strassen's algorithm for arbitrary sized matrices        ##
+##                                                                            ##
+################################################################################
+#
+#
+def strassenGeneral(A, B, C):
+
+    # Get the power of two, which is equal to or larger than the dimension of
+    # the input matrices. For example, if the input matrices A and B have a
+    # dimension 8 x 8, then this function will return 8. On the other hand, if
+    # the dimensions are 9 x 9, then this function will return 16. We will pad
+    # the additional rows and columns with 0 entries.
+    n = nextPowerOfTwo(A)
+    
+    if n > len(A):
+        # Initialize padded matrices that are of size n x n
+        tempA = [[0 for j in range(n)] for i in range(n)]
+        tempB = [[0 for j in range(n)] for i in range(n)]
+        tempC = [[0 for j in range(n)] for i in range(n)]
+
+        # Copy over the values of the original matrices A and B onto tempA
+        # and tempB
+        for i in range(len(A)):
+            for j in range(len(A)):
+                tempA[i][j] = A[i][j]
+                tempB[i][j] = B[i][j]
+
+        strassen(tempA, tempB, tempC)
+
+        # Now, copy only the entries required for the original mutliplication
+        # of matrices A and B.
+        for i in range(len(C)):
+            for j in range(len(C)):
+                C[i][j] = tempC[i][j]
+    else:
+        strassen(A, B, C)
+```
