@@ -171,14 +171,12 @@ point, which you would like to make as small as possible, will depend
 on how efficiently you implement Strassen's algorithm.  Your implementation
 should work for any size matrices, not just those whose dimensions are a power
 of 2.
-
-- To test your algorithm, you might try matrices where each entry is
+  - To test your algorithm, you might try matrices where each entry is
 randomly selected to be 0 or 1; similarly, you might try matrices
 where each entry is randomly selected to be 0, 1 or 2, or instead 0,
 1, or $-1$.  We will test on integer matrices, possibly of this form.
 (You may assume integer inputs.)  You need not try all of these, but
 do test your algorithm adequately.
-
 4. Triangle in random graphs:  Recall that you can represent the
 adjacency matrix of a graph by a matrix $A$.  Consider an undirected
 graph.  It turns out that $A^3$ can be used to determine the number
