@@ -43,6 +43,17 @@ An MST is a spanning tree whose sum of edge weights is as small as possible.
   - **Loop invariant**: $A$ is a subset of some MST.
 - Add only edges that maintain the invariant. If $A$ is a subset of some MST, an edge $(u,v)$ is ***safe*** for $A$ if and only if $A \cup \{(u,v)\}$ is also a subset of some MST. So, add only safe edges.
 
+### Generic MST Algorithm
+
+```python
+    def genericMST(G, w)
+        A = []
+        while A does not form a spanning tree:
+            find an edge (u,v) that is safe for A
+            A.append({u,v})
+        return A
+```
+
 **Cut Property**: For any cut of a connected, undirected graph, the minimum weight edge that crosses the cut belongs to MST.
 
 Two popular algorithms for finding MST in a graph are:
