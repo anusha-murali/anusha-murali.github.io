@@ -39,7 +39,7 @@ An MST is a spanning tree whose sum of edge weights is as small as possible.
 - Build a set $A$ of edges
 - Initially, $A$ has no edges.
 - As edges are added to $A$, maintain a **loop invariant**:
-      - **Loop invariant**: $A$ is a subset of some MST.
+  - **Loop invariant**: $A$ is a subset of some MST.
 - Add only edges that maintain the invariant. If $A$ is a subset of some MST, an edge $(u,v)$ is ***safe*** for $A$ if and only if $A \cup \{(u,v)\}$ is also a subset of some MST. So, add only safe edges.
 
 **Cut Property**: For any cut of a connected, undirected graph, the minimum weight edge that crosses the cut belongs to MST.
