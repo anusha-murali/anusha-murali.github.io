@@ -295,3 +295,42 @@ def expectedNoOfTriangles(p):
     # math.comb(1024,3) = 178433024
     return int (178433024*pow(p, 3))
 ```
+
+```python
+################################################################################
+##                                                                            ##
+##                             Main Driver                                    ##
+##                                                                            ##
+################################################################################
+#
+
+# Obtain the input arguments
+if len(sys.argv) > 1:
+    flag = int(sys.argv[1])
+    dim = int(sys.argv[2])
+    fileName = sys.argv[3]
+else:
+    dim = 4
+    fileName = "t4.txt"
+    
+##    # Count the number of triangles in an undirected graph with 1024 vertices
+##    #
+##    pArray = [0.01, 0.02, 0.03, 0.04, 0.05]
+##    
+##    for p in pArray:
+##        A = randomMat(1024, p)
+##        n = countTriangles(A)
+##        print("p = ", p, "m = ", expectedNoOfTriangles(p), "n = ", n)
+    
+# Read the input matrices A and B from the input file
+A, B = readMatrix(fileName, dim)
+
+# Initialize the output matrix C
+C = [[0 for j in range(dim)] for i in range(dim)]
+
+# Strassen algorithm for square matrices of odd or even dimensions
+strassenGeneral(A, B, C)
+
+# Print the diagonal entries of the matrix product
+printDiagonals(C)
+```
