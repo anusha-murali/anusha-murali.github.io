@@ -59,6 +59,10 @@ We can use the loop invariant to show that this generic algorithm works.
 - **Maintenance**: Since only safe edges are added, $A$ remains a subset of some MST.
 - **Termination**: The loop must terminate by the time it considers all edges. All edges added to $A$ are in an MST, so upon termination. $A$ is a spanning tree that is also an MST.
 
+** How to find a safe edge?**
+
+Consider an arbitrary edge $(u, v) \in E$. $Let $S \subset V$ be any proper subset of vertices that includes $u$, but not $v$. In other words $f \in V - S$. In any MST, there has to be one edge (at least) that connects $S$ with $V-S$. Therefore, intuitively, we must choose the edge between $S$ and $V-S$ such that it has the minimum weight.
+
 **Cut Property**: For any cut of a connected, undirected graph, the minimum weight edge that crosses the cut belongs to MST.
 
 Two popular algorithms for finding MST in a graph are:
