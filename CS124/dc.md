@@ -195,7 +195,7 @@ to $j$.  Each such path is a triangle, and each triangle is counted 6 times
 
 [**My Python solution**](./strassen.md)
 
-[My Written Report](https://drive.google.com/file/d/1oX_03RZ8zfq3xS_NG55SYYkRstmKEyD4/view?usp=sharing)
+[**My Written Report**](https://drive.google.com/file/d/1oX_03RZ8zfq3xS_NG55SYYkRstmKEyD4/view?usp=sharing)
 
 [Data Structures and Algorithms Table of Contents](./cs124.md)
 
