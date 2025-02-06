@@ -247,3 +247,51 @@ def strassenGeneral(A, B, C):
     else:
         strassen(A, B, C)
 ```
+
+
+```python
+################################################################################
+##                                                                            ##
+##                      Triangles in Random Graphs                            ##
+##                                                                            ##
+################################################################################
+#
+# Create an adjacency matrix of dimension, dim representing an undirected graph. 
+# The edges of the graph are created using the given propability p.
+#
+def randomMat(dim, p):
+    A = matInitialize(dim)
+    for i in range(dim):
+        for j in range(i):
+            n = np.random.choice([1, 0], p= [p, 1-p])
+            if (n == 1):
+                A[i][j] = 1
+                A[j][i] = 1
+
+    return A
+
+# Count the number of triangles in an undirected graph represented by the
+# adjacency matrix A. We compute A^3 using the modified Strassen's algorithm.
+# Then divide the sum of the diagonals by 6 to find the number of triangles.
+#
+def countTriangles(A):
+    B = matInitialize(len(A))
+    C = matInitialize(len(A))
+    strassen(A, A, B)
+    strassen(A, B, C)
+
+    count = 0
+    # Sum the diagonal entries
+    for i in range(len(C)):
+        count = count + C[i][i]
+
+    # Return the number oof triangles
+    return (int (count / 6))
+
+# This function computes binom(1024,3)*p^3, which is the expected number of
+# triangles in a graph where the edges are created with probability p.
+#
+def expectedNoOfTriangles(p):
+    # math.comb(1024,3) = 178433024
+    return int (178433024*pow(p, 3))
+```
