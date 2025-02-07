@@ -97,7 +97,9 @@ Since $T'$ is a spanning tree, $w(T') \leq w(T)$, and $T$ is an MST, then $T'$ m
 
 We will now show that $(u,v)$ is safe for $A$.
 
-- $A \subseteq T$
+- $A \subseteq T$ and $(x,y) \notin A \implies A \subseteq T'$.
+- $A \cup \{(u,v)\} \subseteq T'$.
+- Since $T'$ is an MST, $(u,v)$ is safe for $A$. 
 
 
 Two popular algorithms for finding MST in a graph are:
