@@ -63,6 +63,9 @@ We can use the loop invariant to show that this generic algorithm works.
 
 Consider an arbitrary edge $(u, v) \in E$. $Let $S \subset V$ be any proper subset of vertices that includes $u$, but not $v$. In other words $f \in V - S$. In any MST, there has to be one edge (at least) that connects $S$ with $V-S$. Therefore, intuitively, we must choose the edge between $S$ and $V-S$ such that it has the minimum weight.
 
+- A **cut** $(S, V-S)$ is a partition of vertices into disjoint sets $V$ and $S-V$.
+- Edge $(u,v) \in E$ **crosses** cut $(S, V-S)$ if one endpoint is in $S$and the other is in $V-S$.
+
 **Cut Property**: For any cut of a connected, undirected graph, the minimum weight edge that crosses the cut belongs to MST.
 
 Two popular algorithms for finding MST in a graph are:
