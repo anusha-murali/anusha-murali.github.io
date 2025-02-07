@@ -81,7 +81,23 @@ If $T$ contains $(u, v)$, we're done.
 
 So, let's assume that $T$ does not contain $(u,v)$. Construct a different MST $T'$ that includes $A \cup \{(u,v)\}$.
 
+Recall: a tree has unique path between each pair of vertices. Since $T$ is an MST, it contains a unique path $p$ between $u$ and $v$. Path $p$ must cross the cut $(S, V-S)$ at least once. Let $(x, y)$ be an edge of $p$ that crosses the cut. From how we chose $(u,v)$, we know that $w(u,v) \leq w(x, y)$.
 
+Since the cut respects $A$, edge $(x, y)$ is not in $A$.
+
+To form $T'$ from $T$
+- Remove $(x,y)$. This breaks $T$ into two components
+- Add $(u,v)$. This reconnects the two components.
+
+So, $T' = T - \{(x,y)\} \cup \{(u,v)\}$.
+
+$T'$ is a spanning tree. It's weight is $w(T') = w(T) - w(x, y) + w(u,v) \leq w(T)$ since $w(u,v) \leq w(x,y)$.
+
+Since $T'$ is a spanning tree, $w(T') \leq w(T)$, and $T$ is an MST, then $T'$ must be an MST.
+
+We will now show that $(u,v)$ is safe for $A$.
+
+- $A \subseteq T$
 
 
 Two popular algorithms for finding MST in a graph are:
