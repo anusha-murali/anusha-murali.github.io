@@ -63,7 +63,7 @@ We can use the loop invariant to show that this generic algorithm works.
 
 Consider an arbitrary edge $(u, v) \in E$. Let $S \subset V$ be any proper subset of vertices that includes $u$, but not $v$. In other words $v \in V - S$. In any MST, there has to be one edge (at least) that connects $S$ with $V-S$. Therefore, intuitively, we must choose the edge between $S$ and $V-S$ such that it has the minimum weight.
 
-$Let $A \in E$ a set that grows to become an MST (Please see the above function `genericMST()`).
+Let $A \in E$ a set that grows to become an MST (Please see the above function `genericMST()`).
 
 - A **cut** $(S, V-S)$ is a partition of vertices into disjoint sets $V$ and $S-V$.
 - Edge $(u,v) \in E$ **crosses** cut $(S, V-S)$ if one endpoint is in $S$and the other is in $V-S$.
