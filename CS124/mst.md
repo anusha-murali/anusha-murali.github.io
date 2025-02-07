@@ -72,6 +72,18 @@ Let $A \in E$ a set that grows to become an MST (Please see the above function `
 
 **Cut Property**: For any cut of a connected, undirected graph, the minimum weight edge that crosses the cut belongs to MST.
 
+
+**Theorem**: Let $A$ be a subset of some MST, $(S, V - S)$ be a cut that respects $A$, and $(u, v)$ be a light edge crossing $(S, V-S)$. Then $(u,v)$ is safe for $A$.
+
+***Proof***: Let $T$ be an MST that includes $A$. 
+
+If $T$ contains $(u, v)$, we're done.
+
+So, let's assume that $T$ does not contain $(u,v)$. Construct a different MST $T'$ that includes $A \cup \{(u,v)\}$.
+
+
+
+
 Two popular algorithms for finding MST in a graph are:
 1. [Kruskal's MST Algorithm](./kruskal.md)
 2. [Prim's MST Algorithm](./prim.md)
