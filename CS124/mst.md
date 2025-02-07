@@ -84,7 +84,7 @@ So, let's assume that $T$ does not contain $(u,v)$. Construct a different MST $T
 Recall: a tree has unique path between each pair of vertices. Since $T$ is an MST, it contains a unique path $p$ between $u$ and $v$. Path $p$ must cross the cut $(S, V-S)$ at least once. Let $(x, y)$ be an edge of $p$ that crosses the cut. From how we chose $(u,v)$, we know that $w(u,v) \leq w(x, y)$.
 
 <p align="center">
-<img width="400" alt="mst2" src="https://github.com/user-attachments/assets/a99e98a3-2342-4a5b-b0ec-1d5fb7fe7844" />
+<img width="350" alt="mst2" src="https://github.com/user-attachments/assets/a99e98a3-2342-4a5b-b0ec-1d5fb7fe7844" />
 </p>
 
 Since the cut respects $A$, edge $(x, y)$ is not in $A$.
