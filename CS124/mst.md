@@ -67,6 +67,8 @@ Let $A \in E$ a set that grows to become an MST (Please see the above function `
 
 - A **cut** $(S, V-S)$ is a partition of vertices into disjoint sets $V$ and $S-V$.
 - Edge $(u,v) \in E$ **crosses** cut $(S, V-S)$ if one endpoint is in $S$and the other is in $V-S$.
+- A cut ***respects*** $A$ if and only if no edge in $A$ crosses the cut.
+- An edge is a ***light edge*** crossing a cut if and only if its weight is minimum over all edges crossing the cut. (Noe that for a given cut, there can be $> 1$ light edge crossing it.)
 
 **Cut Property**: For any cut of a connected, undirected graph, the minimum weight edge that crosses the cut belongs to MST.
 
