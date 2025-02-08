@@ -10,6 +10,8 @@
 The longest consecutive 1's for the above example is $A = [1,1,1,0,0,\textcolor{red}{1},1,1,1,1,\textcolor{red}{1}] $
 
 
+**Solution**
+
 ```python
 def longestOnes(nums: list[int], k: int) -> int:
     zeroList = [i for i in range(len(nums)) if nums[i] == 0]
