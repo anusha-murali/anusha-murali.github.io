@@ -1,5 +1,5 @@
 <p align="center">
-<img width="1375" alt="favorite_sw" src="https://github.com/user-attachments/assets/1a071081-07ed-4bf7-92fe-6e1bb7ff7df4" />
+<img width="1375" alt="favorite_two_pointers" src="https://github.com/user-attachments/assets/0a738556-c0dd-4c7d-b93a-f2d26722f937" />
 </p>
 
 1. [Container with Most Water](./11.md)
