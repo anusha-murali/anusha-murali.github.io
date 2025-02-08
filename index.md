@@ -11,13 +11,14 @@ title: Table of Contents
 3. [Artificial Intelligence (My Harvard CS182 noes)](./CS182/cs182.md)
 4. [My Favorite Dynamic Programming Problems](./DP/problems.md)
 5. [My Favorite Sliding Window Problems](./SlidingWindows/problems.md)
-6. [My Favorite Hash Map Problems](./HashMap/problems.md)
-7. [My Favorite String and Array Problems](./STRINGS/problems.md)
-8. [My Favorite Heap and Priority Queue Problems](./HEAP_PQ/problems.md)
-9. [Using `*args` and `**kwargs` in Python](./MISC/asterisk.md)
-10. [The `zip()` Function in Python](./MISC/zip.md)
-11. [Finding Strongly Connected Components (SCCs): Kosaraju's Algorithm](./MISC/kosaraju.md)
-12. [My DSA Cheatsheet](./CS124/cs124_cheatsheet.md)
+6. [My Favorite Two Pointers Problems](./TwoPointers/problems.md)
+7. [My Favorite Hash Map Problems](./HashMap/problems.md)
+8. [My Favorite String and Array Problems](./STRINGS/problems.md)
+9. [My Favorite Heap and Priority Queue Problems](./HEAP_PQ/problems.md)
+10. [Using `*args` and `**kwargs` in Python](./MISC/asterisk.md)
+11. [The `zip()` Function in Python](./MISC/zip.md)
+12. [Finding Strongly Connected Components (SCCs): Kosaraju's Algorithm](./MISC/kosaraju.md)
+13. [My DSA Cheatsheet](./CS124/cs124_cheatsheet.md)
 
 
 * * *
