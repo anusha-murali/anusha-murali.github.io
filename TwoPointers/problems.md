@@ -7,6 +7,7 @@
 3. [Move Zeroes](./283.md)
 4. [Is Subsequence?](./392.md)
 5. [Assign Cookies](./455.md)
+6. [Squares of a Sorted Array](./977.md)
 
 
 * * *
