@@ -27,10 +27,26 @@ Use two pointers, one to iterate through the array and another to mark the posit
 
 Maintain a "sliding window" using two pointers to track the start and end of the window, adjusting the window size as needed. 
 
-
 #### Checking for a palindrome
 
 Use two pointers, one at the beginning and one at the end of the string, to compare characters and move inwards. 
+
+#### Example: Finding two numbers that sum to a target in a sorted array
+
+```python
+def two_sum(nums, target):
+    left, right = 0, len(nums) - 1
+    while left < right:
+        current_sum = nums[left] + nums[right]
+        if current_sum == target:
+            return [left, right]
+        elif current_sum < target:
+            left += 1
+        else:
+            right -= 1
+    return [] 
+```
+
 
 1. [Container with Most Water](./11.md)
 2. [Maximum Number of $k$-sum Pairs](./1679.md)
