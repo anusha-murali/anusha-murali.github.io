@@ -11,7 +11,7 @@ The "two pointer" solution approach is an algorithmic technique that uses two po
 
 1. **Two pointers**: Two variables are used as pointers, usually called "left" and "right", which point to different positions within the data structure.
 2. **Movement based on conditions**: Depending on the problem, one or both pointers move forward or backward based on the comparison between the elements they point to.
-3. **Efficient traversal**: By only accessing elements once, this approach can significantly improve the time complexity compared to nested loops.
+3. **Efficient traversal**: By only accessing elements ***once***, this approach can significantly improve the time complexity compared to nested loops.
 
 ### Common use cases for the two pointer technique
 
