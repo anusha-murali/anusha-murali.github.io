@@ -49,12 +49,13 @@ def two_sum(nums, target):
 
 
 1. [Container with Most Water](./11.md)
-2. [Maximum Number of $k$-sum Pairs](./1679.md)
-3. [Move Zeroes](./283.md)
-4. [Is Subsequence?](./392.md)
-5. [Assign Cookies](./455.md)
-6. [Squares of a Sorted Array](./977.md)
-7. [Linked List Cycle](./141.md)
+2. [Valid Palindrome](./125.md)
+3. [Maximum Number of $k$-sum Pairs](./1679.md)
+4. [Move Zeroes](./283.md)
+5. [Is Subsequence?](./392.md)
+6. [Assign Cookies](./455.md)
+7. [Squares of a Sorted Array](./977.md)
+8. [Linked List Cycle](./141.md)
 
 
 * * *
