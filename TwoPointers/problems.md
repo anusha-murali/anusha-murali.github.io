@@ -54,6 +54,7 @@ def two_sum(nums, target):
 4. [Is Subsequence?](./392.md)
 5. [Assign Cookies](./455.md)
 6. [Squares of a Sorted Array](./977.md)
+7. [Linked List Cycle](./141.md)
 
 
 * * *
