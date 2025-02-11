@@ -4,7 +4,7 @@
 
 ### Introduction
 
-The "two pointer" solution approach is an algorithmic technique that uses two pointers (indices) to traverse a data structure like an array or linked list, often moving them in different directions, to efficiently solve problems by comparing elements at those positions and making decisions based on those comparisons, typically achieving a time complexity of O(n) where n is the size of the data structure; it's particularly useful for problems involving sorted arrays or finding pairs that meet certain conditions. 
+The "two pointer" solution approach is an algorithmic technique that uses two pointers (indices) to traverse a data structure like an array or linked list, often moving them in different directions, to efficiently solve problems by comparing elements at those positions and making decisions based on those comparisons, typically achieving a time complexity of $O(n)$ where $n$ is the size of the data structure; it's particularly useful for problems involving sorted arrays or finding pairs that meet certain conditions. 
 
 
 ### Key points about the two pointer approach
