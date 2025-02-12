@@ -56,6 +56,7 @@ def two_sum(nums, target):
 6. [Assign Cookies](./455.md)
 7. [Squares of a Sorted Array](./977.md)
 8. [Linked List Cycle](./141.md)
+9. [Trapping Rain Water](./42.md)
 
 
 * * *
