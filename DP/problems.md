@@ -11,6 +11,7 @@
 7. [Domino and Tromino Tiling](./domino.md)
 8. [Minimum Cost of Climbing Stairs](./climbingStairs.md)
 9. [Professional Robber](./robber.md)
+10. [Maximum Repeating Substring](./1668.md)
 
 
 
