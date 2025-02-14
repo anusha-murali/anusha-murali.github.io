@@ -58,6 +58,7 @@ def two_sum(nums, target):
 8. [Linked List Cycle](./141.md)
 9. [Trapping Rain Water](./42.md)
 10. [Merge Sorted Array](./88.md)
+11. [Best Time to Buy and Sell Stock](./121.md)
 
 
 * * *
