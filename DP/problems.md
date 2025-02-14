@@ -4,7 +4,7 @@
 
 ### Introduction
 
-Dynamic programming (DP) is a method for solving complex problems by breaking them down into simpler subproblems. It is applicable when the problem has overlapping subproblems and optimal substructure. Here are some common techniques used in dynamic programming:
+Dynamic programming (DP) is a method for solving complex problems by breaking them down into simpler subproblems. It is applicable when the problem has overlapping subproblems and optimal substructure. Following are some common techniques used in dynamic programming:
 
 ### 1. **Memoization (Top-Down Approach)**
    - **Description**: Memoization involves storing the results of expensive function calls and reusing them when the same inputs occur again. This is typically implemented using recursion and a cache (e.g., a hash table or array).
