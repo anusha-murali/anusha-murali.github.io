@@ -57,6 +57,7 @@ def two_sum(nums, target):
 7. [Squares of a Sorted Array](./977.md)
 8. [Linked List Cycle](./141.md)
 9. [Trapping Rain Water](./42.md)
+10. [Merge Sorted Array](./88.md)
 
 
 * * *
