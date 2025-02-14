@@ -2,7 +2,7 @@
 <img width="1375" alt="favorite_dp" src="https://github.com/user-attachments/assets/d16a688e-ed47-4a2d-a6b5-b9e85f740707" />
 </p>
 
-## Introduction
+### Introduction
 
 Dynamic programming (DP) is a method for solving complex problems by breaking them down into simpler subproblems. It is applicable when the problem has overlapping subproblems and optimal substructure. Here are some common techniques used in dynamic programming:
 
