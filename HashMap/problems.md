@@ -2,7 +2,8 @@
 <img width="1375" alt="favorite_sw" src="https://github.com/user-attachments/assets/7a4a8e65-5e94-4055-8626-fd641d7c9936" />
 </p>
 
-1. [Equal Row and Column Pairs](./rowcolumnPairs.md)
+1. [Two Sum](./1.md)
+2. [Equal Row and Column Pairs](./rowcolumnPairs.md)
    
 
 
