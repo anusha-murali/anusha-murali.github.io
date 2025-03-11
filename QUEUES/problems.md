@@ -1,5 +1,5 @@
 <p align="center">
-<img width="1375" alt="favorite_sw" src="https://github.com/user-attachments/assets/7a4a8e65-5e94-4055-8626-fd641d7c9936" />
+<img width="1375" alt="favorite_queues" src="https://github.com/user-attachments/assets/44db6842-16f1-46ca-9cc9-55af7ee84112" />
 </p>
 
 1. [Two Sum](./1.md)
