@@ -15,10 +15,11 @@ title: Table of Contents
 8.  [My Favorite Two Pointers Problems](./TwoPointers/problems.md)
 9. [My Favorite String and Array Problems](./STRINGS/problems.md)
 10. [My Favorite Heap and Priority Queue Problems](./HEAP_PQ/problems.md)
-11. [Using `*args` and `**kwargs` in Python](./MISC/asterisk.md)
-12. [The `zip()` Function in Python](./MISC/zip.md)
-13. [Finding Strongly Connected Components (SCCs): Kosaraju's Algorithm](./MISC/kosaraju.md)
-14. [My DSA Cheatsheet](./CS124/cs124_cheatsheet.md)
+11. [My Favorite Queue Problems](./QUEUES/problems.md)
+12. [Using `*args` and `**kwargs` in Python](./MISC/asterisk.md)
+13. [The `zip()` Function in Python](./MISC/zip.md)
+14. [Finding Strongly Connected Components (SCCs): Kosaraju's Algorithm](./MISC/kosaraju.md)
+15. [My DSA Cheatsheet](./CS124/cs124_cheatsheet.md)
 
 
 * * *
