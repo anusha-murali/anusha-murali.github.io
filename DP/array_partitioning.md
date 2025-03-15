@@ -9,6 +9,9 @@ Determine the maximum value and the minimum value of partitioning $A$ into $k$ p
 
 Let `dp_max[i][j]` denote the maximum value when partitioning the first `i` elements of $A$ into `j` partitions.
 
+In an analagous manner, let `dp_min[i][j]` denote the minimum value when partitioning the first `i` elements of $A$ into `j` partitions.
+
+
 
 **Runtime**: The total number of additions and multiplications done by the two `for` loops result in a runtime of $O(n^2)$.
 
