@@ -69,7 +69,7 @@ def partitionMinMax(A, p):
 
 
 
-**Runtime**: The total number of additions and multiplications done by the two `for` loops result in a runtime of $O(n^2)$.
+**Runtime**: The time complexity is $O(n^2\cdot p)$, where $n$ is the length of the array and $p$ is the number of partitions. The space complexity is $O(n \cdot p)$ for the DP tabless.
 
 [Back to Dynamic Programming Problems](./problems.md)
 
