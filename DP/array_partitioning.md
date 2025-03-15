@@ -5,6 +5,11 @@ The value of a partition $P$ is computed as follows. Value = $P[0] + P[-1]$. If 
 only one element, then the value of the partition is Value = $2\cdot P[0]$.
 Determine the maximum value and the minimum value of partitioning $A$ into $k$ partitions.
 
+**Solution**
+
+Let `dp_max[i][j]` denote the maximum value when partitioning the first `i` elements of $A$ into `j` partitions.
+
+
 **Runtime**: The total number of additions and multiplications done by the two `for` loops result in a runtime of $O(n^2)$.
 
 [Back to Dynamic Programming Problems](./problems.md)
