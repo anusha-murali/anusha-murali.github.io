@@ -23,7 +23,7 @@ A[k] + A[i-1] & \text{otherwise (multi-element partition)}
 \end{cases}
 $$
 
-Hence we can update `dp_max[i][j]` as the larger value of `dp_max[i][j]` or `dp_max[l][j-1] + value`.
+Hence we can update `dp_max[i][j]` as the larger value of `dp_max[i][j]` or `dp_max[i'][j-1] + value`, where `i' < i`.
 
 
 **Runtime**: The total number of additions and multiplications done by the two `for` loops result in a runtime of $O(n^2)$.
