@@ -36,6 +36,42 @@ In an analogous manner,
   dp_min[i][j] = min(dp_min[i][j], dp_min[k][j - 1] + value).
 ```
 
+We use $(p+1) \times (n+1)$ arrays (1-indexed arrays) to build both `dp_max` and `dp_min`. We initialize `dp_max[0][0] = 0` and `dp_min[0][0] = 0`. 
+
+Our function is as follows:
+
+```python
+def partitionMinMax(A, p):
+    n = len(A)
+    if p > n:
+        return None  
+    
+    dp_max = [[-float('inf')] * (p + 1) for _ in range(n + 1)]
+    dp_min = [[float('inf')] * (p + 1) for _ in range(n + 1)]
+    
+    dp_max[0][0] = 0
+    dp_min[0][0] = 0
+    
+    # Fill the DP tables
+    for i in range(1, n + 1):
+        for j in range(1, p + 1):
+            for k in range(i):
+                # Value of the partition from k to i-1
+                if k == i - 1:
+                    partition_value = 2 * A[k]
+                else:
+                    partition_value = A[k] + A[i - 1]
+                
+                # Update dp_max and dp_min
+                if dp_max[k][j - 1] != -float('inf'):
+                    dp_max[i][j] = max(dp_max[i][j], dp_max[k][j - 1] + partition_value)
+                if dp_min[k][j - 1] != float('inf'):
+                    dp_min[i][j] = min(dp_min[i][j], dp_min[k][j - 1] + partition_value)
+    
+    return dp_max[n][p], dp_min[n][p]
+```
+
+
 
 **Runtime**: The total number of additions and multiplications done by the two `for` loops result in a runtime of $O(n^2)$.
 
