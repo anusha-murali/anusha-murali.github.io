@@ -25,14 +25,14 @@ $$
 
 Hence we can update `dp_max[i][j]` as the larger value of `dp_max[i][j]` or `dp_max[k][j-1] + value`, where `k < i` (i.e: $1 \leq k < i$). In other words,
 
-```
+```python
   dp_max[i][j] = max(dp_max[i][j], dp_max[k][j - 1] + value),
 ```
 where `value` is computed as shown above.
 
 In an analogous manner,
 
-```
+```python
   dp_min[i][j] = min(dp_min[i][j], dp_min[k][j - 1] + value).
 ```
 
