@@ -30,6 +30,12 @@ Hence we can update `dp_max[i][j]` as the larger value of `dp_max[i][j]` or `dp_
 ```
 where `value` is computed as shown above.
 
+In an analogous manner,
+
+```
+  dp_min[i][j] = min(dp_min[i][j], dp_min[k][j - 1] + value).
+```
+
 
 **Runtime**: The total number of additions and multiplications done by the two `for` loops result in a runtime of $O(n^2)$.
 
