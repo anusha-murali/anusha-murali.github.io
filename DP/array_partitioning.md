@@ -56,17 +56,13 @@ def partitionMinMax(A, p):
     for i in range(1, n + 1):
         for j in range(1, p + 1):
             for k in range(i):
-                # Value of the partition from k to i-1
                 if k == i - 1:
-                    partition_value = 2 * A[k]
+                    value = 2 * A[k]
                 else:
-                    partition_value = A[k] + A[i - 1]
-                
-                # Update dp_max and dp_min
-                if dp_max[k][j - 1] != -float('inf'):
-                    dp_max[i][j] = max(dp_max[i][j], dp_max[k][j - 1] + partition_value)
-                if dp_min[k][j - 1] != float('inf'):
-                    dp_min[i][j] = min(dp_min[i][j], dp_min[k][j - 1] + partition_value)
+                    value = A[k] + A[i - 1]
+
+                dp_max[i][j] = max(dp_max[i][j], dp_max[k][j - 1] + value)
+                dp_min[i][j] = min(dp_min[i][j], dp_min[k][j - 1] + value)
     
     return dp_max[n][p], dp_min[n][p]
 ```
