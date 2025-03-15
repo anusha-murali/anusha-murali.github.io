@@ -2,7 +2,7 @@
 
 **Problem**: You have an array $A$ of $n$ integers. You must partition it into $k$ partitions. 
 The value of a partition $P$ is computed as follows. Value = $P[0] + P[-1]$. If the partition $P$ contains 
-only one element, then the value of the partition is Value = $2\cdotP[0]$.
+only one element, then the value of the partition is Value = $2\cdot P[0]$.
 Determine the maximum value and the minimum value of partitioning $A$ into $k$ partitions.
 
 **Runtime**: The total number of additions and multiplications done by the two `for` loops result in a runtime of $O(n^2)$.
