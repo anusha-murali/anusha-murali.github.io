@@ -162,6 +162,11 @@ Again $k$ is incremented to $k = 3$. So, $i=4, j = 1, k = 3$. So `value = 2*A[3]
 Now $j$ is incremented to $j = 2$. So, $i=4, j=2, k=0$.  So `value = A[0] + A[3] = 7`. Hence evaluating,
 `dp_max[j][i] = dp_max[2][4] = max(dp_max[j][i], dp_max[j - 1][k] + value) =` $\max(-\infty, -\infty + 7) = -\infty$. Hence `dp_max`, does not change.
 
+Now $k$ is incremented to $k = 1$. So, $i=4, j = 2, k = 1$. So `value = A[1] + A[4-1] = 4 + 5 = 9`. Hence evaluating,
+`dp_max[j][i] = dp_max[2][4] = max(dp_max[j][i], dp_max[j - 1][k] + value) =` $\max(-\infty, 4 + 9) = 13$
+
+
+
 **Runtime**: The time complexity is $O(n^2\cdot p)$, where $n$ is the length of the array and $p$ is the number of partitions. The space complexity is $O(n \cdot p)$ for the DP tabless.
 
 [Back to Dynamic Programming Problems](./problems.md)
