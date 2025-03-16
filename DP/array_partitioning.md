@@ -110,7 +110,12 @@ Now $k$ is incremened to $k=1$. So, $i=2, j=2, k=1$. So `value = 2*A[1] = 8`.  H
 We have now completed the iteration for $i=2$. So, $i$ now becomes $i=3$.
 
 When $i=3, j = 1, k =0$, `value = A[0] + A[2] = 2 + 3 = 5`. Hence evaluating,
-`dp_max[j][i] = dp_max[1][3] = max(dp_max[j][i], dp_max[j - 1][k] + value) =` $\max(-\infty, -\infty + 5) = -\infty$. Therefore, `dp_max` does not change.
+`dp_max[j][i] = dp_max[1][3] = max(dp_max[j][i], dp_max[j - 1][k] + value) =` $\max(-\infty, 0 + 5) = 5$. Therefore, `dp_max` becomes:
+
+<p align="center"> 
+<img width="350" alt="DP5" src="https://github.com/user-attachments/assets/351d3556-45fc-4c6a-9304-ba8ed201393a" />
+</p>
+
 
 Now $k$ is incremented to $k = 1$. So, $i=3, j = 1, k = 1$. So `value = A[1] + A[3-1] = 4 + 3 = 7$. Hence evaluating,
 `dp_max[j][i] = dp_max[1][3] = max(dp_max[j][i], dp_max[j - 1][k] + value) =` $\max(-\infty, -\infty + 7) = -\infty$. Therefore, `dp_max` does not change.
