@@ -126,10 +126,17 @@ Now $j$ is incremented to $j = 2$. So, $i=3, j=2, k=0$.  So `value = A[0] + A[2]
 `dp_max[j][i] = dp_max[2][3] = max(dp_max[j][i], dp_max[j - 1][k] + value) =` $\max(-\infty, -\infty + 5) = -\infty$. Hence `dp_max`, does not change.
 
 Now $k$ is incremened to $k=1$. So, $i=3, j=2, k=1$. So `value = A[1] + A[2] = 7`.  Hence evaluating,
-`dp_max[j][i] = dp_max[2][3] = max(dp_max[j][i], dp_max[j - 1][k] + value) = ` $\max(-\infty, 4 + 7) = 11`. Therefore, `dp_max` becomes:
+`dp_max[j][i] = dp_max[2][3] = max(dp_max[j][i], dp_max[j - 1][k] + value) = ` $\max(-\infty, 4 + 7) = 11$. Therefore, `dp_max` becomes:
 
 <p align="center"> 
 <img width="350" alt="DP6" src="https://github.com/user-attachments/assets/c13b2480-8ce6-4231-9907-d14a087831ec" />
+</p>
+
+Now $k$ is incremened to $k=2$. So, $i=3, j=2, k=2$. So `value = 2*A[2] = 6`.  Hence evaluating,
+`dp_max[j][i] = dp_max[2][3] = max(dp_max[j][i], dp_max[j - 1][k] + value) = ` $\max(11, 6+6) = 12$. Therefore, `dp_max` becomes:
+
+<p align="center"> 
+<img width="350" alt="DP7" src="https://github.com/user-attachments/assets/97ef27ab-cc50-422c-8cce-90c90ff3724a" />
 </p>
 
 **Runtime**: The time complexity is $O(n^2\cdot p)$, where $n$ is the length of the array and $p$ is the number of partitions. The space complexity is $O(n \cdot p)$ for the DP tabless.
