@@ -98,7 +98,7 @@ When $i=2, j = 1, k =0$, `value = A[0] + A[1] = 6`. Hence evaluating,
 Now $k$ is incremented to $k = 1$. So, $i=2, j = 1, k = 1$. We find that `dp_max[1][2]` doesn't change and still remains `dp_max[1][2] = 6`.
 
 Now $j$ is incremented to $j = 2$. So, $i=2, j=2, k=0$.  Hence evaluating,
-`dp_max[j][i] = dp_max[2][2] = max(dp_max[j][i], dp_max[j - 1][k] + value) =` $\max(6, -infty) = 6$. Hence `dp_max`, does not change.
+`dp_max[j][i] = dp_max[2][2] = max(dp_max[j][i], dp_max[j - 1][k] + value) =` $\max(-\infty, -infty) = -\infty$. Hence `dp_max`, does not change.
 
 Now $k$ is incremened to $k=1$. So, $i=2, j=2, k=1$. So `value = 2*A[1] = 8`.  Hence evaluating,
 `dp_max[j][i] = dp_max[2][2] = max(dp_max[j][i], dp_max[j - 1][k] + value) = max(6, 4 + 8) = 12`.
