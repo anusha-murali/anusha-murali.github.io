@@ -172,6 +172,17 @@ Therefore, `dp_max` becomes:
 </p>
 
 
+Now $k$ is incremented to $k = 2$. So, $i=4, j = 2, k = 2$. So `value =A[2] + A[4-1] = 3 + 5 = 8`. Hence evaluating,
+`dp_max[j][i] = dp_max[2][4] = max(dp_max[j][i], dp_max[j - 1][k] + value) =` $\max(-\infty, 6 + 8) = 14$. 
+
+Therefore, `dp_max` becomes:
+
+<p align="center"> 
+<img width="350" alt="DP10" src="https://github.com/user-attachments/assets/7317b76f-cdbc-490c-81fa-e0a309aed497" />
+</p>
+
+
+
 **Runtime**: The time complexity is $O(n^2\cdot p)$, where $n$ is the length of the array and $p$ is the number of partitions. The space complexity is $O(n \cdot p)$ for the DP tabless.
 
 [Back to Dynamic Programming Problems](./problems.md)
