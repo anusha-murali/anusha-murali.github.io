@@ -173,7 +173,7 @@ Therefore, `dp_max` becomes:
 
 
 Now $k$ is incremented to $k = 2$. So, $i=4, j = 2, k = 2$. So `value =A[2] + A[4-1] = 3 + 5 = 8`. Hence evaluating,
-`dp_max[j][i] = dp_max[2][4] = max(dp_max[j][i], dp_max[j - 1][k] + value) =` $\max(13, 6 + 8) = 14$. 
+`dp_max[j][i] = dp_max[2][4] = max(dp_max[j][i], dp_max[j - 1][k] + value) =` $\max(13, 6 + 8) = 14.$ 
 
 Therefore, `dp_max` becomes:
 
@@ -182,7 +182,7 @@ Therefore, `dp_max` becomes:
 </p>
 
 Finally $k$ is incremented to $k = 3$. So, $i=4, j = 2, k = 3$. So `value =2*A[3] = 10`. Hence evaluating,
-`dp_max[j][i] = dp_max[2][4] = max(dp_max[j][i], dp_max[j - 1][k] + value) =` $\max(14, 5 + 10) = 15$. 
+`dp_max[j][i] = dp_max[2][4] = max(dp_max[j][i], dp_max[j - 1][k] + value) =` $\max(14, 5 + 10) = 15.$ 
 
 Therefore, `dp_max` becomes:
 
