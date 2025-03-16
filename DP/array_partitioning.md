@@ -17,6 +17,14 @@ We will consider `dp_max[j][i]` for the following discussion.
 
 Let us consider an array with $i$ integers and say that we want to partition it into $j$ partitions. As defined above, `dp_max[j][i]` denotes the maximum possible value when partitioning an array of size $i$ into $j$ partitions. Our question is how to determine `dp_max[j][i]`.
 
+Let us first initialize `dp_max[j][i]`  = $-\infty$. We remove one partition from the right of the array at index $k$. If this right partition contains just one element, then its value is $2A[k]$. Otherwise its value is $A[k] + A[i-1]$. Therefore, using the definition of `dp_max[j][i]`, we can now write,
+
+```python
+  dp_max[j][i] = max(dp_max[j][i], dp_max[j - 1][k] + value),
+```
+
+By varying the index $k$ from $1 \leq k \leq i-1$, we could find the maximum value of `dp_max[j][i]` of partitioning an array of $i$ integers into $j$ partitions.
+
 
 
 *Approach*: For each position `i` in $A$ (i.e: each subarray $A[1\cdots i]$), we consider all possible ways to partition $A$ into `j` partitions.
