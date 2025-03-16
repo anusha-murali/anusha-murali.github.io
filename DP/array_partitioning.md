@@ -77,7 +77,7 @@ def partitionMinMax(A, p):
 >
 > <p align="center"> <img width="350" alt="DP1" src="https://github.com/user-attachments/assets/1ea9e871-d8f5-489e-b745-128e425e901e" /> </p>
 >
-> Let $i = 1$. So, we are considering the subarray of $A$ with just 1 element, which is 2.  For $i=1, j=1, k=0$, `value = 2*A[0] = 4$.
+> Let $i = 1$. So, we are considering the subarray of $A$ with just 1 element, which is 2.  For $i=1, j=1, k=0$, `value = 2*A[0] = 4`.
 > So, `dp_max[j][i] = max(dp_max[j][i], dp_max[j - 1][k] + value)` = $\max(-\infty, 0 + 4) = 4$. So `dp_max[1][1] = 4$. Hence our 2D array, `dp_max[][]`, will become:
 >
 
