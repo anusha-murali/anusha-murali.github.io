@@ -190,6 +190,7 @@ Therefore, `dp_max` becomes:
 <img width="350" alt="DP11" src="https://github.com/user-attachments/assets/59240158-b9d6-4f2e-a45f-912b0bc278b1" />
 </p>
 
+Now the program terminates and `dp_max[p][n] = dp_max[2][4] = 15` is the maximum value possible.
 
 **Runtime**: The time complexity is $O(n^2\cdot p)$, where $n$ is the length of the array and $p$ is the number of partitions. The space complexity is $O(n \cdot p)$ for the DP tabless.
 
