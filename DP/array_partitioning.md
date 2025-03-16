@@ -86,7 +86,6 @@ So, `dp_max[j][i] = max(dp_max[j][i], dp_max[j - 1][k] + value)` = $\max(-\infty
 Now while $i$ is still $i = 1$, $j$ becomes $j = 2$. For $i=1, j=2, k=0$, `value = 2*A[0] = 4`. 
 So, `dp_max[2][1] = max(dp_max[2][1], dp_max[2 - 1][0] + value)` = $\max(-\infty, -\infty + 4) = -\infty$. So `dp_max[2][1] =` $-\infty$. Hence `dp_max`, does not change.
 
-
 We have now completed the iteration for $i=1$. So, $i$ now becomes $i=2$.
 
 When $i=2, j = 1, k =0$, `value = A[0] + A[1] = 6`. Hence evaluating,
@@ -96,6 +95,7 @@ When $i=2, j = 1, k =0$, `value = A[0] + A[1] = 6`. Hence evaluating,
 <img width="350" alt="DP3" src="https://github.com/user-attachments/assets/147428da-ac2e-4ce0-827b-0ba2e5dfc929" />
 </p>
 
+Now $k$ is incremented to $k = 1$. So, $i=2, j = 1, k = 1$. We find that `dp_max[1][2]` doesn't change and still remains `dp_max[1][2] = 6`.
 
 
 **Runtime**: The time complexity is $O(n^2\cdot p)$, where $n$ is the length of the array and $p$ is the number of partitions. The space complexity is $O(n \cdot p)$ for the DP tabless.
