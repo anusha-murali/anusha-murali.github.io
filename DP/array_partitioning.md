@@ -69,8 +69,16 @@ def partitionMinMax(A, p):
     return dp_max[n][p], dp_min[n][p]
 ```
 
-> **Example**
-> 
+> **Example** `A = [2, 4, 3, 5], p = 2`.
+>
+> We will find the maximum value by stepping through the above function below. The minimum value can be found similarly.
+>
+> Our 2D array, `dp_max[][]`, is first initialized as follows:
+>
+> <img width="400" alt="DP1" src="https://github.com/user-attachments/assets/1ea9e871-d8f5-489e-b745-128e425e901e" />
+
+> 1. Let $i = 1$. So, we are considering the subarray of $A$ with just 1 element, which is 2. 
+> 2. 
 
 **Runtime**: The time complexity is $O(n^2\cdot p)$, where $n$ is the length of the array and $p$ is the number of partitions. The space complexity is $O(n \cdot p)$ for the DP tabless.
 
