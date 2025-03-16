@@ -48,8 +48,8 @@ def partitionMinMax(A, p):
     if p > n:
         return None  
     
-    dp_max = [[-float('inf')] * (p + 1) for _ in range(n + 1)]
-    dp_min = [[float('inf')] * (p + 1) for _ in range(n + 1)]
+    dp_max = [[-float('inf')] * (n + 1) for _ in range(p + 1)]
+    dp_min = [[float('inf')] * (n + 1) for _ in range(p + 1)]
     
     dp_max[0][0] = 0
     dp_min[0][0] = 0
@@ -63,8 +63,8 @@ def partitionMinMax(A, p):
                 else:
                     value = A[k] + A[i - 1]
 
-                dp_max[i][j] = max(dp_max[i][j], dp_max[k][j - 1] + value)
-                dp_min[i][j] = min(dp_min[i][j], dp_min[k][j - 1] + value)
+                dp_max[j][i] = max(dp_max[j][i], dp_max[j - 1][k] + value)
+                dp_min[j][i] = min(dp_min[j][i], dp_min[j - 1][k] + value)
     
     return dp_max[n][p], dp_min[n][p]
 ```
