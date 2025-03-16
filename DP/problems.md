@@ -93,7 +93,7 @@ These techniques can be combined or adapted depending on the specific problem at
 8. [Minimum Cost of Climbing Stairs](./climbingStairs.md)
 9. [Professional Robber](./robber.md)
 10. [Maximum Repeating Substring](./1668.md)
-11. [Maximum and Minimum Values of Partitioning Array](./array_partitioning.md)
+
 
 
 
