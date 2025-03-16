@@ -139,6 +139,17 @@ Now $k$ is incremened to $k=2$. So, $i=3, j=2, k=2$. So `value = 2*A[2] = 6`.  H
 <img width="350" alt="DP7" src="https://github.com/user-attachments/assets/97ef27ab-cc50-422c-8cce-90c90ff3724a" />
 </p>
 
+
+We have now completed the iteration for $i=3$. So, $i$ now becomes $i=4$.
+
+When $i=4, j = 1, k =0$, `value = A[0] + A[3] = 2 + 5 = 7`. Hence evaluating,
+`dp_max[j][i] = dp_max[1][4] = max(dp_max[j][i], dp_max[j - 1][k] + value) =` $\max(-\infty, 0 + 7) = 7$. Therefore, `dp_max` becomes:
+
+<p align="center"> 
+<img width="350" alt="DP8" src="https://github.com/user-attachments/assets/eb45c6a5-6672-4080-9c4e-3e7ed70277d6" />
+</p>
+
+
 **Runtime**: The time complexity is $O(n^2\cdot p)$, where $n$ is the length of the array and $p$ is the number of partitions. The space complexity is $O(n \cdot p)$ for the DP tabless.
 
 [Back to Dynamic Programming Problems](./problems.md)
