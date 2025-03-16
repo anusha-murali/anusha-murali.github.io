@@ -71,19 +71,20 @@ def partitionMinMax(A, p):
 
 > **Example** `A = [2, 4, 3, 5], p = 2`.
 >
-> We will find the maximum value by stepping through the above function below. The minimum value can be found similarly.
->
-> Our 2D array, `dp_max[][]`, is first initialized as follows:
->
-> <p align="center"> <img width="350" alt="DP1" src="https://github.com/user-attachments/assets/1ea9e871-d8f5-489e-b745-128e425e901e" /> </p>
->
-> Let $i = 1$. So, we are considering the subarray of $A$ with just 1 element, which is 2.  For $i=1, j=1, k=0$, `value = 2*A[0] = 4`.
-> So, `dp_max[j][i] = max(dp_max[j][i], dp_max[j - 1][k] + value)` = $\max(-\infty, 0 + 4) = 4$. So `dp_max[1][1] = 4`. Hence our 2D array, `dp_max[][]`, will become:
->
-> <p align="center"> <img width="350" alt="DP2" src="https://github.com/user-attachments/assets/3fb37e9c-ed03-4fc5-9e8b-6692080b2026" /> </p>
->
-> Now while $i$ is still $i = 1$, $j$ becomes $j = 2$. For $i=1, j=2, k=0$, `value = 2*A[0] = 4`. 
-> So, `dp_max[2][1] = max(dp_max[2][1], dp_max[2 - 1][0] + value)` = $\max(-\infty, -\infty + 4) = -\infty$. So `dp_max[2][1] = -\infty`. Hence our 2D array, `dp_max[][]`, does not change.
+
+We will find the maximum value by stepping through the above function below. The minimum value can be found similarly.
+
+Our 2D array, `dp_max[][]`, is first initialized as follows:
+
+<p align="center"> <img width="350" alt="DP1" src="https://github.com/user-attachments/assets/1ea9e871-d8f5-489e-b745-128e425e901e" /> </p>
+
+Let $i = 1$. So, we are considering the subarray of $A$ with just 1 element, which is 2.  For $i=1, j=1, k=0$, `value = 2*A[0] = 4`.
+So, `dp_max[j][i] = max(dp_max[j][i], dp_max[j - 1][k] + value)` = $\max(-\infty, 0 + 4) = 4$. So `dp_max[1][1] = 4`. Hence our 2D array, `dp_max[][]`, will become:
+
+<p align="center"> <img width="350" alt="DP2" src="https://github.com/user-attachments/assets/3fb37e9c-ed03-4fc5-9e8b-6692080b2026" /> </p>
+
+Now while $i$ is still $i = 1$, $j$ becomes $j = 2$. For $i=1, j=2, k=0$, `value = 2*A[0] = 4`. 
+So, `dp_max[2][1] = max(dp_max[2][1], dp_max[2 - 1][0] + value)` = $\max(-\infty, -\infty + 4) = -\infty$. So `dp_max[2][1] = -\infty`. Hence our 2D array, `dp_max[][]`, does not change.
 
 
 
