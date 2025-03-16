@@ -15,7 +15,7 @@ In an analagous manner, let `dp_min[j][i]` denote the minimum value when partiti
 
 We will consider `dp_max[j][i]` for the following discussion.
 
-Let us consider an array with $i$ integers and we want to partition it into $j$ partitions.
+Let us consider an array with $i$ integers and say that we want to partition it into $j$ partitions. As defined above, `dp_max[j][i]` denotes the maximum possible value when partitioning an array of size $i$ into $j$ partitions. Our question is how to determine `dp_max[j][i]`.
 
 
 
