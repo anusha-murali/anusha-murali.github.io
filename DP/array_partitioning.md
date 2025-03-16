@@ -36,7 +36,7 @@ In an analogous manner,
   dp_min[i][j] = min(dp_min[i][j], dp_min[k][j - 1] + value).
 ```
 
-We use $(p+1) \times (n+1)$ arrays (1-indexed arrays) to build both `dp_max` and `dp_min`. We initialize `dp_max[0][0] = 0` and `dp_min[0][0] = 0`. 
+We use $(p+1) \times (n+1)$ sized 2-dimensional arrays (1-based) to build both `dp_max` and `dp_min`. We initialize `dp_max[0][0] = 0` and `dp_min[0][0] = 0`. 
 
 Our function is as follows:
 
