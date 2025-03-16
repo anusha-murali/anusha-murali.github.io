@@ -117,7 +117,7 @@ When $i=3, j = 1, k =0$, `value = A[0] + A[2] = 2 + 3 = 5`. Hence evaluating,
 </p>
 
 
-Now $k$ is incremented to $k = 1$. So, $i=3, j = 1, k = 1$. So `value = A[1] + A[3-1] = 4 + 3 = 7$. Hence evaluating,
+Now $k$ is incremented to $k = 1$. So, $i=3, j = 1, k = 1$. So `value = A[1] + A[3-1] = 4 + 3 = 7`. Hence evaluating,
 `dp_max[j][i] = dp_max[1][3] = max(dp_max[j][i], dp_max[j - 1][k] + value) =` $\max(-\infty, -\infty + 7) = -\infty$. Therefore, `dp_max` does not change.
 
 
