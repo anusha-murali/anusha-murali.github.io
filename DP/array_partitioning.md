@@ -101,7 +101,7 @@ Now $j$ is incremented to $j = 2$. So, $i=2, j=2, k=0$.  Hence evaluating,
 `dp_max[j][i] = dp_max[2][2] = max(dp_max[j][i], dp_max[j - 1][k] + value) =` $\max(-\infty, -\infty) = -\infty$. Hence `dp_max`, does not change.
 
 Now $k$ is incremened to $k=1$. So, $i=2, j=2, k=1$. So `value = 2*A[1] = 8`.  Hence evaluating,
-`dp_max[j][i] = dp_max[2][2] = max(dp_max[j][i], dp_max[j - 1][k] + value) = max(6, 4 + 8) = 12`.
+`dp_max[j][i] = dp_max[2][2] = max(dp_max[j][i], dp_max[j - 1][k] + value) = ` $\max(-\infty, 4 + 8) = 12`. Therefore, `dp_max` becomes:
 
 **Runtime**: The time complexity is $O(n^2\cdot p)$, where $n$ is the length of the array and $p$ is the number of partitions. The space complexity is $O(n \cdot p)$ for the DP tabless.
 
