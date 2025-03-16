@@ -69,7 +69,8 @@ def partitionMinMax(A, p):
     return dp_max[n][p], dp_min[n][p]
 ```
 
-
+> **Example**
+> 
 
 **Runtime**: The time complexity is $O(n^2\cdot p)$, where $n$ is the length of the array and $p$ is the number of partitions. The space complexity is $O(n \cdot p)$ for the DP tabless.
 
