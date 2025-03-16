@@ -82,6 +82,11 @@ def partitionMinMax(A, p):
 >
 > <p align="center"> <img width="350" alt="DP2" src="https://github.com/user-attachments/assets/3fb37e9c-ed03-4fc5-9e8b-6692080b2026" /> </p>
 >
+> Now while $i$ is still $i == 1$, $j$ becomes $j = 2$. For $i=1, j=2, k=0$, `value = 2*A[0] = 4`. 
+> So, `dp_max[2][1] = max(dp_max[2][1], dp_max[2 - 1][0] + value)` = $\max(-\infty, -\infty + 4) = -\infty$. So `dp_max[2][1] = -\infty`. Hence our 2D array, `dp_max[][]`, does not change.
+
+
+
 **Runtime**: The time complexity is $O(n^2\cdot p)$, where $n$ is the length of the array and $p$ is the number of partitions. The space complexity is $O(n \cdot p)$ for the DP tabless.
 
 [Back to Dynamic Programming Problems](./problems.md)
