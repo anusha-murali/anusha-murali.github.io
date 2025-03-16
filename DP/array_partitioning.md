@@ -66,7 +66,7 @@ def partitionMinMax(A, p):
                 dp_max[j][i] = max(dp_max[j][i], dp_max[j - 1][k] + value)
                 dp_min[j][i] = min(dp_min[j][i], dp_min[j - 1][k] + value)
     
-    return dp_max[n][p], dp_min[n][p]
+    return dp_max[p][n], dp_min[p][n]
 ```
 
 > **Example** `A = [2, 4, 3, 5], p = 2`.
