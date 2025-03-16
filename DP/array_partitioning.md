@@ -173,7 +173,7 @@ Therefore, `dp_max` becomes:
 
 
 Now $k$ is incremented to $k = 2$. So, $i=4, j = 2, k = 2$. So `value =A[2] + A[4-1] = 3 + 5 = 8`. Hence evaluating,
-`dp_max[j][i] = dp_max[2][4] = max(dp_max[j][i], dp_max[j - 1][k] + value) =` $\max(-\infty, 6 + 8) = 14$. 
+`dp_max[j][i] = dp_max[2][4] = max(dp_max[j][i], dp_max[j - 1][k] + value) =` $\max(13, 6 + 8) = 14$. 
 
 Therefore, `dp_max` becomes:
 
@@ -181,6 +181,14 @@ Therefore, `dp_max` becomes:
 <img width="350" alt="DP10" src="https://github.com/user-attachments/assets/7317b76f-cdbc-490c-81fa-e0a309aed497" />
 </p>
 
+Finally $k$ is incremented to $k = 3$. So, $i=4, j = 2, k = 3$. So `value =2*A[3] = 10`. Hence evaluating,
+`dp_max[j][i] = dp_max[2][4] = max(dp_max[j][i], dp_max[j - 1][k] + value) =` $\max(14, 5 + 10) = 15$. 
+
+Therefore, `dp_max` becomes:
+
+<p align="center">     
+<img width="350" alt="DP11" src="https://github.com/user-attachments/assets/59240158-b9d6-4f2e-a45f-912b0bc278b1" />
+</p>
 
 
 **Runtime**: The time complexity is $O(n^2\cdot p)$, where $n$ is the length of the array and $p$ is the number of partitions. The space complexity is $O(n \cdot p)$ for the DP tabless.
