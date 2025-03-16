@@ -89,8 +89,8 @@ So, `dp_max[2][1] = max(dp_max[2][1], dp_max[2 - 1][0] + value)` = $\max(-\infty
 
 We have now completed the iteration for $i=1$. So, $i$ now becomes $i=2$.
 
-When $i=2, j = 1, k =0$, `value = A[0] + A[1] = 6$. Hence evaluating,
-`dp_max[j][i] = dp_max[1][2] = max(dp_max[j][i], dp_max[j - 1][k] + value) = 6$. Therefore, `dp_max` becomes:
+When $i=2, j = 1, k =0$, `value = A[0] + A[1] = 6`. Hence evaluating,
+`dp_max[j][i] = dp_max[1][2] = max(dp_max[j][i], dp_max[j - 1][k] + value) = 6`. Therefore, `dp_max` becomes:
 
 <p align="center"> 
 <img width="350" alt="DP3" src="https://github.com/user-attachments/assets/147428da-ac2e-4ce0-827b-0ba2e5dfc929" />
