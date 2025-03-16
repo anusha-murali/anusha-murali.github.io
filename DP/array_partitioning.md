@@ -31,17 +31,17 @@ A[k] + A[i-1] & \text{otherwise (multi-element partition)}
 \end{cases}
 $$
 
-Hence we can update `dp_max[i][j]` with the larger value of `dp_max[i][j]` or `dp_max[k][j-1] + value`, where `k < i` (i.e: $1 \leq k < i$). In other words,
+Hence we can update `dp_max[j][i]` with the larger value of `dp_max[j][i]` or `dp_max[j-1][k] + value`, where `k < i` (i.e: $1 \leq k < i$). In other words,
 
 ```python
-  dp_max[i][j] = max(dp_max[i][j], dp_max[k][j - 1] + value),
+  dp_max[j][i] = max(dp_max[j][i], dp_max[j - 1][k] + value),
 ```
 where `value` is computed as shown above.
 
 In an analogous manner,
 
 ```python
-  dp_min[i][j] = min(dp_min[i][j], dp_min[k][j - 1] + value).
+  dp_min[j][i] = min(dp_min[j][i], dp_min[j-1][k] + value).
 ```
 
 We use $(p+1) \times (n+1)$ sized 2-dimensional arrays (1-based) to build both `dp_max` and `dp_min`. We initialize `dp_max[0][0] = 0` and `dp_min[0][0] = 0`. 
