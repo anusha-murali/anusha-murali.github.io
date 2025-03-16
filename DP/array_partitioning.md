@@ -75,7 +75,7 @@ def partitionMinMax(A, p):
 >
 > Our 2D array, `dp_max[][]`, is first initialized as follows:
 >
-> <img width="400" alt="DP1" src="https://github.com/user-attachments/assets/1ea9e871-d8f5-489e-b745-128e425e901e" />
+> <p align="center"> <img width="350" alt="DP1" src="https://github.com/user-attachments/assets/1ea9e871-d8f5-489e-b745-128e425e901e" /> </p>
 
 > 1. Let $i = 1$. So, we are considering the subarray of $A$ with just 1 element, which is 2. 
 > 2. 
