@@ -20,7 +20,7 @@ Let's say that a given partition starts at index `k` and ends at index `i-1`. So
 $$
 \text{value} = 
 \begin{cases}
-2A[k] & \text{if }k = i-1 \text{(single-element partition)} \\
+2A[k] & \text{if }k = i-1 ~\text{(single-element partition)} \\
 A[k] + A[i-1] & \text{otherwise (multi-element partition)}
 \end{cases}
 $$
