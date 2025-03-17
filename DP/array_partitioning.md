@@ -25,19 +25,7 @@ Let us first initialize `dp_max[j][i]`  = $-\infty$. We remove one partition fro
 </p>
 
 
-If this right partition contains just one element, then its value is $2A[k]$. Otherwise its value is $A[k] + A[i-1]$. Therefore, using the definition of `dp_max[j][i]`, we can now write,
-
-```python
-  dp_max[j][i] = max(dp_max[j][i], dp_max[j - 1][k] + value),
-```
-
-By varying the index $k$ from $1 \leq k \leq i-1$, we could find the maximum value of `dp_max[j][i]` of partitioning an array of $i$ integers into $j$ partitions.
-
-
-
-*Approach*: For each position `i` in $A$ (i.e: each subarray $A[1\cdots i]$), we consider all possible ways to partition $A$ into `j` partitions.
-
-Let's say that a given partition starts at index `k` and ends at index `i-1`. So its value is,
+If this right partition contains just one element, then its value is $2A[k]$. Otherwise its value is $A[k] + A[i-1].$  In other words,
 
 $$
 \text{value} = 
@@ -47,12 +35,14 @@ A[k] + A[i-1] & \text{otherwise (multi-element partition)}
 \end{cases}
 $$
 
-Hence we can update `dp_max[j][i]` with the larger value of `dp_max[j][i]` or `dp_max[j-1][k] + value`, where `k < i` (i.e: $1 \leq k < i$). In other words,
+Therefore, using the definition of `dp_max[j][i]`, we can now write,
 
 ```python
   dp_max[j][i] = max(dp_max[j][i], dp_max[j - 1][k] + value),
 ```
-where `value` is computed as shown above.
+
+Hence we can update `dp_max[j][i]` with the larger value of `dp_max[j][i]` or `dp_max[j-1][k] + value`, where `k < i` (i.e: $1 \leq k < i$). In other words, by varying the index $k$ from $1 \leq k \leq i-1$, we could find the maximum value of `dp_max[j][i]` of partitioning an array of $i$ integers into $j$ partitions.
+
 
 In an analogous manner,
 
