@@ -83,6 +83,11 @@ def partitionMinMax(A, p):
     return dp_max[p][n], dp_min[p][n]
 ```
 
+**Memoization**: Since `dp_max[j][i]` is computed from the previously computed values of `dp_max[j-1][k]`, we avoid unnecessary repeated calculations.
+
+
+**Runtime**: The time complexity is $O(n^2\cdot p)$, where $n$ is the length of the array and $p$ is the number of partitions. The space complexity is $O(n \cdot p)$ for the DP tabless.
+
 > **Example** `A = [2, 4, 3, 5], p = 2`.
 >
 
@@ -206,7 +211,7 @@ Therefore, `dp_max` becomes:
 
 Now the program terminates and `dp_max[p][n] = dp_max[2][4] = 15` is the maximum value possible.
 
-**Runtime**: The time complexity is $O(n^2\cdot p)$, where $n$ is the length of the array and $p$ is the number of partitions. The space complexity is $O(n \cdot p)$ for the DP tabless.
+
 
 [Back to Dynamic Programming Problems](./problems.md)
 
