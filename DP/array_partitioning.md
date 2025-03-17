@@ -17,7 +17,9 @@ We will consider `dp_max[j][i]` for the following discussion.
 
 Let us consider an array with $i$ integers and say that we want to partition it into $j$ partitions. As defined above, `dp_max[j][i]` denotes the maximum possible value when partitioning an array of size $i$ into $j$ partitions. Our question is how to determine `dp_max[j][i]`.
 
-Let us first initialize `dp_max[j][i]`  = $-\infty$. We remove one partition from the right of the array at index $k$. 
+Let us first initialize `dp_max` such that `dp_max[j][i]`  = $-\infty$ for $0 \leq j \leq p, 0 \leq i \leq n$. 
+
+We remove one partition from the right of the array at index $k$. 
 
 
 <p align="center">
