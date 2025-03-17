@@ -1,6 +1,4 @@
-### Maximum and Minimum Values of Partitioning Array
-
-### Array Partitioning Example
+### Maximum and Minimum Values of Partitioning Array: Example
 
 Given the integer array, $A = [2, 4, 3, 5]$, find the maximum and minimum values of partitioning $A$ into $p=2$ contiguous partitions. 
 
