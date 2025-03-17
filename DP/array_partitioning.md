@@ -1,6 +1,4 @@
 ### Maximum and Minimum Values of Partitioning Array
-
-11. [Maximum and Minimum Values of Partitioning Array](./array_partitioning.md)
     
 **Problem**: You have an array $A$ of $n$ integers. You must partition it into $p$ partitions. 
 The value of a partition $P$ is computed as follows. Value = $P[0] + P[-1]$, where $P[-1]$ denotes the value of the last element of the partition. If the partition $P$ contains 
