@@ -4,6 +4,7 @@
 
 1. [Two Sum](./1.md)
 2. [Equal Row and Column Pairs](./rowcolumnPairs.md)
+3. [Contiguous Array](./525.md)
    
 
 
