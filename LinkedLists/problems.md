@@ -2,8 +2,8 @@
 <img width="1375" alt="favorite_queues" src="https://github.com/user-attachments/assets/44db6842-16f1-46ca-9cc9-55af7ee84112" />
 </p>
 
-1. [Reverse Linked List](./206.md)
-2.
+1. [Middle of the Linked List](./876.md)
+2. [Reverse Linked List](./206.md)
    
 
 
