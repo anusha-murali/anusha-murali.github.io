@@ -16,11 +16,12 @@ title: Table of Contents
 9. [My Favorite String and Array Problems](./STRINGS/problems.md)
 10. [My Favorite Heap and Priority Queue Problems](./HEAP_PQ/problems.md)
 11. [My Favorite Queue Problems](./QUEUES/problems.md)
-12. [My Favorite Linked List Problems](./LinkedLists/problems.md)
-13. [Using `*args` and `**kwargs` in Python](./MISC/asterisk.md)
-14. [The `zip()` Function in Python](./MISC/zip.md)
-15. [Finding Strongly Connected Components (SCCs): Kosaraju's Algorithm](./MISC/kosaraju.md)
-16. [My DSA Cheatsheet](./CS124/cs124_cheatsheet.md)
+12. [My Favorite Binary Tree Problems](./BINARY_TREES/problems.md)
+13. [My Favorite Linked List Problems](./LinkedLists/problems.md)
+14. [Using `*args` and `**kwargs` in Python](./MISC/asterisk.md)
+15. [The `zip()` Function in Python](./MISC/zip.md)
+16. [Finding Strongly Connected Components (SCCs): Kosaraju's Algorithm](./MISC/kosaraju.md)
+17. [My DSA Cheatsheet](./CS124/cs124_cheatsheet.md)
 
 
 * * *
