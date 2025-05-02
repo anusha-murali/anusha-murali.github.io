@@ -6,17 +6,9 @@ This is a simple problem from LeetCode (Problem #226).
 
 Example 1:
 
-Input: `str1 = "ABCABC", str2 = "ABC"`; Output: `"ABC"`
+<img width="1300" alt="binary_tree_1" src="https://github.com/user-attachments/assets/460d5dc6-58f3-460d-a49d-e08509060605" />
 
 
-Example 2:
-
-Input: `str1 = "ABABAB", str2 = "ABAB"`; Output: `"AB"`
-
-
-Example 3:
-
-Input: `str1 = "LEET"`, `str2 = "CODE"`; Output: `""`
 
 **Solution**
 
