@@ -1,5 +1,5 @@
 <p align="center">
-<img <img width="1375" alt="favorite_strings" src="https://github.com/user-attachments/assets/291972a1-bce6-41e7-91d5-c4fbb713f834" />
+<img width="1376" alt="favorite_binary_tree" src="https://github.com/user-attachments/assets/3dfa84eb-f540-46a2-a2c2-aa90233e6745" />
 </p>
 
 1. [Invert Binary Tree](./invert_binary_tree.md)
