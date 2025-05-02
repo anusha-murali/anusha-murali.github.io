@@ -14,7 +14,7 @@ Output: `[4, 7, 2, 9, 6, 3, 1]`
 
 Example 2:
 
-Input: `root = []'
+Input: `root = []`
 
 Output: `[]`
 
