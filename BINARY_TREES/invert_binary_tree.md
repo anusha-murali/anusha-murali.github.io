@@ -8,20 +8,35 @@ Example 1:
 
 <img width="1300" alt="binary_tree_1" src="https://github.com/user-attachments/assets/460d5dc6-58f3-460d-a49d-e08509060605" />
 
+Input: `root = [4, 2, 7, 1, 3, 6, 9]`
 
+Output: `[4, 7, 2, 9, 6, 3, 1]`
+
+Example 2:
+
+Input: `root = []'
+
+Output: `[]`
 
 **Solution**
 
-We note that if there is a non-empty GCD of `str1` and `str`, then it must be that `str1 + str2 == str2 + str1`.
-
-If `str1 + str2 == str2 + str1`, then we want to return the slice of the length of GCD of either string. Hence, our code is as follows:
+We can implement a simple solution using recursion as follows
 
 ```python
-def gcdOfStrings(str1, str2):
-   if str1 + str2 == str2 + str1:
-      return str1[:math.gcd(len(str1), len(str2))]
-   else:
-      return ""
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+        if not root:
+            return root
+        temp = self.invertTree(root.left)
+        root.left = self.invertTree(root.right)
+        root.right = temp
+        return root
 ```
 
 **Runtime**: 
