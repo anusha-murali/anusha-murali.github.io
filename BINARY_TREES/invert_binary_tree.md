@@ -39,7 +39,7 @@ class Solution:
         return root
 ```
 
-**Runtime**: 
+**Runtime**: Time complexity $O(n)$. Space complexity $O(n)$.
 
 [Back to Binary Tree Problems](./problems.md)
 
