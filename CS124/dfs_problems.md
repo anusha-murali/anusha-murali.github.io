@@ -59,6 +59,14 @@ Given an array rooms where `rooms[i]` is the set of keys that you can obtain if 
 > Output: false
 > Explanation: We can not enter room number 2 since the only key that unlocks it is in that room.
 
+Let us illustrate this problem with the following example.
+
+Let the array `rooms` be `rooms = [[1,2], [3,4], [6,7], [], [5], [], [], []]'.
+
+We can construct the following graph for the above array:
+
+<img width="360" height="438" alt="841" src="https://github.com/user-attachments/assets/ee1adab7-685e-487e-84ff-4bea6db922ae" />
+
 
 [Back to DFS](./dfs.md)
 
