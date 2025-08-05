@@ -54,7 +54,7 @@ Given an array rooms where `rooms[i]` is the set of keys that you can obtain if 
 > Since we were able to visit every room, we return true.
 
 > *Example 2*
-
+>
 > Input: `rooms = [[1,3],[3,0,1],[2],[0]]`
 > Output: false
 > Explanation: We can not enter room number 2 since the only key that unlocks it is in that room.
