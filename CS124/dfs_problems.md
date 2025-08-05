@@ -32,7 +32,9 @@ Therefore, there are 4 SCCs in the given graph $G$, namely $(B, G, C), (A), (D, 
 <img width="370" alt="scc_problem1_d" src="https://github.com/user-attachments/assets/b08196b8-fbbf-4706-9b40-38d5863112b0">
 
 
-3. Following is a simple graph traversal problem from LeetCode (Problem 841), which can be solved using DFS
+2. Following is a simple graph traversal problem from LeetCode (Problem 841), which can be solved using DFS
+
+**Problem**
 
 There are $n$ rooms labeled from 0 to $n - 1$ and all the rooms are locked except for room 0. Your goal is to visit all the rooms. However, you cannot enter a locked room without having its key.
 
@@ -40,6 +42,22 @@ When you visit a room, you may find a set of distinct keys in it. Each key has a
 
 Given an array rooms where `rooms[i]` is the set of keys that you can obtain if you visited room `i`, return true if you can visit all the rooms, or false otherwise.
 
+> *Example 1*
+> 
+> Input: `rooms = [[1],[2],[3],[]]`
+> Output: true
+> Explanation:
+> We visit room 0 and pick up key 1.
+> We then visit room 1 and pick up key 2.
+> We then visit room 2 and pick up key 3.
+> We then visit room 3.
+> Since we were able to visit every room, we return true.
+
+> *Example 2*
+
+> Input: `rooms = [[1,3],[3,0,1],[2],[0]]`
+> Output: false
+> Explanation: We can not enter room number 2 since the only key that unlocks it is in that room.
 
 
 [Back to DFS](./dfs.md)
