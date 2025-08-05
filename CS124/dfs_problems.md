@@ -61,7 +61,7 @@ Given an array rooms where `rooms[i]` is the set of keys that you can obtain if 
 
 Let us illustrate this problem with the following example.
 
-Let the array `rooms` be `rooms = [[1,2], [3,4], [6,7], [], [5], [], [], []]'.
+Let the array `rooms` be `rooms = [[1,2], [3,4], [6,7], [], [5], [], [], []]`.
 
 We can construct the following graph for the above array:
 
